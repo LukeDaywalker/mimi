@@ -15,199 +15,199 @@
 
 
 # static fields
-.field public static final enum A:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum B:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum C:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum D:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum E:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum F:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum G:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum H:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum I:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum J:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum K:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum L:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum M:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum N:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum O:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum P:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum Q:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum R:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum S:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum T:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum U:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum V:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum W:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum X:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum Y:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum Z:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum a:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aA:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aB:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aC:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aD:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aE:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aF:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aG:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aH:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aI:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aJ:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aK:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aL:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aM:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aN:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aO:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aP:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aQ:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aR:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aa:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ab:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ac:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ad:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ae:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum af:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ag:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ah:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ai:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aj:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ak:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum al:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum am:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum an:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ao:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ap:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aq:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ar:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum as:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum at:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum au:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum av:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum aw:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ax:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum ay:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum az:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum b:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum c:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum d:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum e:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum f:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum g:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum h:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum i:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum j:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum k:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum l:Lcom/squareup/okhttp/CipherSuite;
-
-.field public static final enum m:Lcom/squareup/okhttp/CipherSuite;
-
 .field private static final synthetic mArrayCipherSuiteaT:[Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum n:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteA:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum o:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteB:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum p:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteC:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum q:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteD:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum r:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteE:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum s:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteF:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum t:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteG:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum u:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteH:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum v:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteI:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum w:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteJ:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum x:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteK:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum y:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteL:Lcom/squareup/okhttp/CipherSuite;
 
-.field public static final enum z:Lcom/squareup/okhttp/CipherSuite;
+.field public static final enum mCipherSuiteM:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteN:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteO:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteP:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteQ:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteR:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteS:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteT:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteU:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteV:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteW:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteX:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteY:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteZ:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitea:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaA:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaB:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaC:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaD:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaE:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaF:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaG:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaH:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaI:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaJ:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaK:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaL:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaM:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaN:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaO:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaP:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaQ:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaR:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaa:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteab:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteac:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitead:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteae:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaf:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteag:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteah:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteai:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaj:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteak:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteal:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteam:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitean:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteao:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteap:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaq:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitear:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteas:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteat:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteau:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteav:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaw:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteax:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteay:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteaz:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteb:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitec:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuited:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitee:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitef:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteg:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteh:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitei:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitej:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitek:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitel:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitem:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiten:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteo:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitep:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteq:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiter:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuites:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitet:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuiteu:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitev:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitew:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitex:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitey:Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final enum mCipherSuitez:Lcom/squareup/okhttp/CipherSuite;
 
 
 # instance fields
@@ -238,7 +238,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->a:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitea:Lcom/squareup/okhttp/CipherSuite;
 
     .line 37
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -259,7 +259,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->b:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteb:Lcom/squareup/okhttp/CipherSuite;
 
     .line 38
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -280,7 +280,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->c:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitec:Lcom/squareup/okhttp/CipherSuite;
 
     .line 39
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -301,7 +301,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->d:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuited:Lcom/squareup/okhttp/CipherSuite;
 
     .line 40
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -322,7 +322,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->e:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitee:Lcom/squareup/okhttp/CipherSuite;
 
     .line 43
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -343,7 +343,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->f:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitef:Lcom/squareup/okhttp/CipherSuite;
 
     .line 44
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -364,7 +364,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->g:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteg:Lcom/squareup/okhttp/CipherSuite;
 
     .line 45
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -385,7 +385,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->h:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteh:Lcom/squareup/okhttp/CipherSuite;
 
     .line 52
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -406,7 +406,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->i:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitei:Lcom/squareup/okhttp/CipherSuite;
 
     .line 53
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -427,7 +427,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->j:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitej:Lcom/squareup/okhttp/CipherSuite;
 
     .line 54
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -448,7 +448,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->k:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitek:Lcom/squareup/okhttp/CipherSuite;
 
     .line 55
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -469,7 +469,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->l:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitel:Lcom/squareup/okhttp/CipherSuite;
 
     .line 56
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -490,7 +490,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->m:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitem:Lcom/squareup/okhttp/CipherSuite;
 
     .line 57
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -511,7 +511,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->n:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiten:Lcom/squareup/okhttp/CipherSuite;
 
     .line 58
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -532,7 +532,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->o:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteo:Lcom/squareup/okhttp/CipherSuite;
 
     .line 59
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -553,7 +553,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->p:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitep:Lcom/squareup/okhttp/CipherSuite;
 
     .line 60
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -574,7 +574,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->q:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteq:Lcom/squareup/okhttp/CipherSuite;
 
     .line 61
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -595,7 +595,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->r:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiter:Lcom/squareup/okhttp/CipherSuite;
 
     .line 62
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -616,7 +616,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->s:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuites:Lcom/squareup/okhttp/CipherSuite;
 
     .line 63
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -637,7 +637,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->t:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitet:Lcom/squareup/okhttp/CipherSuite;
 
     .line 64
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -658,7 +658,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->u:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteu:Lcom/squareup/okhttp/CipherSuite;
 
     .line 65
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -679,7 +679,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->v:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitev:Lcom/squareup/okhttp/CipherSuite;
 
     .line 67
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -700,7 +700,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->w:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitew:Lcom/squareup/okhttp/CipherSuite;
 
     .line 68
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -721,7 +721,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->x:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitex:Lcom/squareup/okhttp/CipherSuite;
 
     .line 69
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -742,7 +742,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->y:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitey:Lcom/squareup/okhttp/CipherSuite;
 
     .line 71
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -763,7 +763,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->z:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitez:Lcom/squareup/okhttp/CipherSuite;
 
     .line 73
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -784,7 +784,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->A:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteA:Lcom/squareup/okhttp/CipherSuite;
 
     .line 74
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -805,7 +805,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->B:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteB:Lcom/squareup/okhttp/CipherSuite;
 
     .line 76
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -826,7 +826,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->C:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteC:Lcom/squareup/okhttp/CipherSuite;
 
     .line 80
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -847,7 +847,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->D:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteD:Lcom/squareup/okhttp/CipherSuite;
 
     .line 83
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -868,7 +868,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->E:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteE:Lcom/squareup/okhttp/CipherSuite;
 
     .line 84
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -889,7 +889,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->F:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteF:Lcom/squareup/okhttp/CipherSuite;
 
     .line 85
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -910,7 +910,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->G:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteG:Lcom/squareup/okhttp/CipherSuite;
 
     .line 86
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -931,7 +931,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->H:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteH:Lcom/squareup/okhttp/CipherSuite;
 
     .line 89
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -952,7 +952,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->I:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteI:Lcom/squareup/okhttp/CipherSuite;
 
     .line 90
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -973,7 +973,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->J:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteJ:Lcom/squareup/okhttp/CipherSuite;
 
     .line 91
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -994,7 +994,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->K:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteK:Lcom/squareup/okhttp/CipherSuite;
 
     .line 92
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1015,7 +1015,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->L:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteL:Lcom/squareup/okhttp/CipherSuite;
 
     .line 93
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1036,7 +1036,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->M:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteM:Lcom/squareup/okhttp/CipherSuite;
 
     .line 94
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1057,7 +1057,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->N:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteN:Lcom/squareup/okhttp/CipherSuite;
 
     .line 97
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1078,7 +1078,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->O:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteO:Lcom/squareup/okhttp/CipherSuite;
 
     .line 104
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1099,7 +1099,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->P:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteP:Lcom/squareup/okhttp/CipherSuite;
 
     .line 107
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1120,7 +1120,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->Q:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteQ:Lcom/squareup/okhttp/CipherSuite;
 
     .line 108
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1141,7 +1141,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->R:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteR:Lcom/squareup/okhttp/CipherSuite;
 
     .line 109
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1162,7 +1162,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->S:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteS:Lcom/squareup/okhttp/CipherSuite;
 
     .line 110
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1183,7 +1183,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->T:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteT:Lcom/squareup/okhttp/CipherSuite;
 
     .line 135
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1204,7 +1204,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->U:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteU:Lcom/squareup/okhttp/CipherSuite;
 
     .line 136
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1225,7 +1225,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->V:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteV:Lcom/squareup/okhttp/CipherSuite;
 
     .line 137
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1246,7 +1246,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->W:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteW:Lcom/squareup/okhttp/CipherSuite;
 
     .line 138
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1267,7 +1267,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->X:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteX:Lcom/squareup/okhttp/CipherSuite;
 
     .line 141
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1288,7 +1288,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->Y:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteY:Lcom/squareup/okhttp/CipherSuite;
 
     .line 142
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1309,7 +1309,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->Z:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteZ:Lcom/squareup/okhttp/CipherSuite;
 
     .line 145
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1330,7 +1330,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aa:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaa:Lcom/squareup/okhttp/CipherSuite;
 
     .line 146
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1351,7 +1351,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ab:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteab:Lcom/squareup/okhttp/CipherSuite;
 
     .line 177
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1372,7 +1372,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ac:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteac:Lcom/squareup/okhttp/CipherSuite;
 
     .line 178
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1393,7 +1393,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ad:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitead:Lcom/squareup/okhttp/CipherSuite;
 
     .line 179
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1414,7 +1414,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ae:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteae:Lcom/squareup/okhttp/CipherSuite;
 
     .line 180
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1435,7 +1435,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->af:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaf:Lcom/squareup/okhttp/CipherSuite;
 
     .line 181
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1456,7 +1456,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ag:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteag:Lcom/squareup/okhttp/CipherSuite;
 
     .line 182
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1477,7 +1477,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ah:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteah:Lcom/squareup/okhttp/CipherSuite;
 
     .line 183
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1498,7 +1498,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ai:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteai:Lcom/squareup/okhttp/CipherSuite;
 
     .line 184
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1519,7 +1519,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aj:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaj:Lcom/squareup/okhttp/CipherSuite;
 
     .line 185
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1540,7 +1540,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ak:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteak:Lcom/squareup/okhttp/CipherSuite;
 
     .line 186
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1561,7 +1561,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->al:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteal:Lcom/squareup/okhttp/CipherSuite;
 
     .line 187
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1582,7 +1582,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->am:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteam:Lcom/squareup/okhttp/CipherSuite;
 
     .line 188
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1603,7 +1603,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->an:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitean:Lcom/squareup/okhttp/CipherSuite;
 
     .line 189
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1624,7 +1624,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ao:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteao:Lcom/squareup/okhttp/CipherSuite;
 
     .line 190
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1645,7 +1645,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ap:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteap:Lcom/squareup/okhttp/CipherSuite;
 
     .line 191
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1666,7 +1666,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aq:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaq:Lcom/squareup/okhttp/CipherSuite;
 
     .line 192
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1687,7 +1687,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ar:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitear:Lcom/squareup/okhttp/CipherSuite;
 
     .line 193
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1708,7 +1708,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->as:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteas:Lcom/squareup/okhttp/CipherSuite;
 
     .line 194
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1729,7 +1729,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->at:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteat:Lcom/squareup/okhttp/CipherSuite;
 
     .line 195
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1750,7 +1750,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->au:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteau:Lcom/squareup/okhttp/CipherSuite;
 
     .line 196
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1771,7 +1771,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->av:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteav:Lcom/squareup/okhttp/CipherSuite;
 
     .line 197
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1792,7 +1792,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aw:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaw:Lcom/squareup/okhttp/CipherSuite;
 
     .line 198
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1813,7 +1813,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ax:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteax:Lcom/squareup/okhttp/CipherSuite;
 
     .line 199
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1834,7 +1834,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->ay:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteay:Lcom/squareup/okhttp/CipherSuite;
 
     .line 200
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1855,7 +1855,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->az:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaz:Lcom/squareup/okhttp/CipherSuite;
 
     .line 201
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1876,7 +1876,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aA:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaA:Lcom/squareup/okhttp/CipherSuite;
 
     .line 202
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1897,7 +1897,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aB:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaB:Lcom/squareup/okhttp/CipherSuite;
 
     .line 212
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1918,7 +1918,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aC:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaC:Lcom/squareup/okhttp/CipherSuite;
 
     .line 213
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1939,7 +1939,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aD:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaD:Lcom/squareup/okhttp/CipherSuite;
 
     .line 214
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1960,7 +1960,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aE:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaE:Lcom/squareup/okhttp/CipherSuite;
 
     .line 215
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -1981,7 +1981,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aF:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaF:Lcom/squareup/okhttp/CipherSuite;
 
     .line 216
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2002,7 +2002,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aG:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaG:Lcom/squareup/okhttp/CipherSuite;
 
     .line 217
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2023,7 +2023,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aH:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaH:Lcom/squareup/okhttp/CipherSuite;
 
     .line 218
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2044,7 +2044,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aI:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaI:Lcom/squareup/okhttp/CipherSuite;
 
     .line 219
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2065,7 +2065,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aJ:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaJ:Lcom/squareup/okhttp/CipherSuite;
 
     .line 220
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2086,7 +2086,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aK:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaK:Lcom/squareup/okhttp/CipherSuite;
 
     .line 221
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2107,7 +2107,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aL:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaL:Lcom/squareup/okhttp/CipherSuite;
 
     .line 222
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2128,7 +2128,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aM:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaM:Lcom/squareup/okhttp/CipherSuite;
 
     .line 223
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2149,7 +2149,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aN:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaN:Lcom/squareup/okhttp/CipherSuite;
 
     .line 224
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2170,7 +2170,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aO:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaO:Lcom/squareup/okhttp/CipherSuite;
 
     .line 225
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2191,7 +2191,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aP:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaP:Lcom/squareup/okhttp/CipherSuite;
 
     .line 226
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2212,7 +2212,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aQ:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaQ:Lcom/squareup/okhttp/CipherSuite;
 
     .line 227
     new-instance v0, Lcom/squareup/okhttp/CipherSuite;
@@ -2233,7 +2233,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/squareup/okhttp/CipherSuite;-><init>(Ljava/lang/String;ILjava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aR:Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaR:Lcom/squareup/okhttp/CipherSuite;
 
     .line 32
     const/16 v0, 0x60
@@ -2242,577 +2242,577 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->a:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitea:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->b:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteb:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->c:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitec:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->d:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuited:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->e:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitee:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->f:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitef:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->g:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteg:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->h:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteh:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->i:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitei:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->j:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitej:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->k:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitek:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->l:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitel:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xc
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->m:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitem:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xd
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->n:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiten:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xe
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->o:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteo:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xf
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->p:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitep:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x10
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->q:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteq:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x11
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->r:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiter:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x12
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->s:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuites:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x13
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->t:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitet:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x14
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->u:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteu:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x15
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->v:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitev:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x16
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->w:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitew:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x17
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->x:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitex:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x18
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->y:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitey:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x19
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->z:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitez:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1a
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->A:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteA:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1b
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->B:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteB:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1c
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->C:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteC:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1d
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->D:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteD:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1e
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->E:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteE:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1f
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->F:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteF:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x20
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->G:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteG:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x21
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->H:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteH:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x22
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->I:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteI:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x23
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->J:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteJ:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x24
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->K:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteK:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x25
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->L:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteL:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x26
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->M:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteM:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x27
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->N:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteN:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x28
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->O:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteO:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x29
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->P:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteP:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2a
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->Q:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteQ:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2b
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->R:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteR:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2c
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->S:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteS:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2d
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->T:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteT:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2e
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->U:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteU:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2f
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->V:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteV:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x30
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->W:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteW:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x31
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->X:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteX:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x32
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->Y:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteY:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x33
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->Z:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteZ:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x34
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aa:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaa:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x35
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ab:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteab:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x36
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ac:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteac:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x37
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ad:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitead:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x38
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ae:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteae:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x39
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->af:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaf:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3a
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ag:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteag:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3b
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ah:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteah:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3c
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ai:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteai:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3d
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aj:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaj:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3e
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ak:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteak:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3f
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->al:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteal:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x40
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->am:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteam:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x41
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->an:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitean:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x42
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ao:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteao:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x43
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ap:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteap:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x44
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aq:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaq:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x45
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ar:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuitear:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x46
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->as:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteas:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x47
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->at:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteat:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x48
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->au:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteau:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x49
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->av:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteav:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4a
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aw:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaw:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4b
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ax:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteax:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4c
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->ay:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteay:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4d
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->az:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaz:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4e
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aA:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaA:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4f
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aB:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaB:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x50
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aC:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaC:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x51
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aD:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaD:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x52
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aE:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaE:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x53
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aF:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaF:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x54
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aG:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaG:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x55
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aH:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaH:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x56
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aI:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaI:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x57
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aJ:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaJ:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x58
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aK:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaK:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x59
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aL:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaL:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5a
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aM:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaM:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5b
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aN:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaN:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5c
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aO:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaO:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5d
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aP:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaP:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5e
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aQ:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaQ:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5f
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aR:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaR:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 

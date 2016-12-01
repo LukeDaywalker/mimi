@@ -787,9 +787,9 @@
 
     move-result-object v1
 
-    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsData;->a:Lio/fabric/sdk/android/services/settings/AppSettingsData;
+    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsData;->mAppSettingsDataa:Lio/fabric/sdk/android/services/settings/AppSettingsData;
 
-    iget-object v2, v2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->d:Ljava/lang/String;
+    iget-object v2, v2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringd:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsCore;->mHttpRequestFactoryv:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
@@ -1399,9 +1399,9 @@
     .line 354
     :cond_0
     :try_start_1
-    iget-object v2, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->d:Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;
+    iget-object v2, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->mFeaturesSettingsDatad:Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;
 
-    iget-boolean v2, v2, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->c:Z
+    iget-boolean v2, v2, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->isZc:Z
 
     if-eqz v2, :cond_1
 
@@ -1928,7 +1928,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, v0, Lio/fabric/sdk/android/services/settings/SettingsData;->b:Lio/fabric/sdk/android/services/settings/SessionSettingsData;
+    iget-object v0, v0, Lio/fabric/sdk/android/services/settings/SettingsData;->mSessionSettingsDatab:Lio/fabric/sdk/android/services/settings/SessionSettingsData;
 
     goto :goto_0
 .end method

@@ -4,26 +4,26 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mDb:D
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public b:D
+.field public mICyd:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
+    .end annotation
+.end field
+
+.field public mStringa:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public c:Ljava/lang/String;
+.field public mStringc:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
-    .end annotation
-.end field
-
-.field public d:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
-    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
     .end annotation
 .end field
 

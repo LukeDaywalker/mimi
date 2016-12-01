@@ -9,9 +9,9 @@
 
 .field private static mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
-.field private static final mStringt:Ljava/lang/String;
+.field public static mICdq:Lcom/tencent/mm/sdk/b/ICd;
 
-.field public static q:Lcom/tencent/mm/sdk/b/ICd;
+.field private static final mStringt:Ljava/lang/String;
 
 
 # direct methods
@@ -542,11 +542,11 @@
 .method private static i(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->q:Lcom/tencent/mm/sdk/b/ICd;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICdq:Lcom/tencent/mm/sdk/b/ICd;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->q:Lcom/tencent/mm/sdk/b/ICd;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICdq:Lcom/tencent/mm/sdk/b/ICd;
 
     invoke-virtual {v0, p0}, Lcom/tencent/mm/sdk/b/ICd;->i(Ljava/lang/String;)Ljava/lang/String;
 

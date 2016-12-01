@@ -28,7 +28,7 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubAck;->a:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubAck;->mIa:I
 
     .line 35
     invoke-virtual {v1}, Ljava/io/DataInputStream;->close()V

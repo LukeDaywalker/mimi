@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lio/fabric/sdk/android/services/network/HttpMethod;
-
-.field public static final enum b:Lio/fabric/sdk/android/services/network/HttpMethod;
-
-.field public static final enum c:Lio/fabric/sdk/android/services/network/HttpMethod;
-
-.field public static final enum d:Lio/fabric/sdk/android/services/network/HttpMethod;
-
 .field private static final synthetic mArrayHttpMethode:[Lio/fabric/sdk/android/services/network/HttpMethod;
+
+.field public static final enum mHttpMethoda:Lio/fabric/sdk/android/services/network/HttpMethod;
+
+.field public static final enum mHttpMethodb:Lio/fabric/sdk/android/services/network/HttpMethod;
+
+.field public static final enum mHttpMethodc:Lio/fabric/sdk/android/services/network/HttpMethod;
+
+.field public static final enum mHttpMethodd:Lio/fabric/sdk/android/services/network/HttpMethod;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2}, Lio/fabric/sdk/android/services/network/HttpMethod;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->a:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethoda:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     .line 22
     new-instance v0, Lio/fabric/sdk/android/services/network/HttpMethod;
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, v1, v3}, Lio/fabric/sdk/android/services/network/HttpMethod;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->b:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodb:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     .line 23
     new-instance v0, Lio/fabric/sdk/android/services/network/HttpMethod;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4}, Lio/fabric/sdk/android/services/network/HttpMethod;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->c:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodc:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     .line 24
     new-instance v0, Lio/fabric/sdk/android/services/network/HttpMethod;
@@ -73,26 +73,26 @@
 
     invoke-direct {v0, v1, v5}, Lio/fabric/sdk/android/services/network/HttpMethod;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->d:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodd:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     .line 20
     const/4 v0, 0x4
 
     new-array v0, v0, [Lio/fabric/sdk/android/services/network/HttpMethod;
 
-    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->a:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethoda:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->b:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodb:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->c:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodc:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->d:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodd:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     aput-object v1, v0, v5
 

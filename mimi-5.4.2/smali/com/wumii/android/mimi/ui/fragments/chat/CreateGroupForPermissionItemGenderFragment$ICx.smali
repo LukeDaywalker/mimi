@@ -37,7 +37,7 @@
     .line 42
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->mCreateGroupForPermissionItemGenderFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->getCheckedPostion()I
 
@@ -48,7 +48,7 @@
     .line 43
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->mCreateGroupForPermissionItemGenderFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->getCheckedPostion()I
 

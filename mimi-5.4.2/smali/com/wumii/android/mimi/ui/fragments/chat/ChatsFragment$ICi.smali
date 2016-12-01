@@ -27,7 +27,7 @@
 
     .prologue
     .line 261
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -38,7 +38,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b(Ljava/lang/String;)V
 
     .line 262
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -90,7 +90,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 256
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "nearby/knock"
 

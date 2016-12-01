@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttAck;->a:I
+    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttAck;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 

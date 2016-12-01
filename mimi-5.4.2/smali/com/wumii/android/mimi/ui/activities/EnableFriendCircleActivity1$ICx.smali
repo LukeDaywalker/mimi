@@ -43,7 +43,7 @@
 
     invoke-direct {v0, p2}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p1, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object v0, p1, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 141
     return-void
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager;->a:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager;->mStringa:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 

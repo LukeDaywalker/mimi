@@ -566,7 +566,7 @@
 
     invoke-direct {p0}, Lcom/tencent/wxop/stat/b/ICi;-><init>()V
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/b/ICj;->a:[B
+    iput-object p1, p0, Lcom/tencent/wxop/stat/b/ICj;->mArrayBa:[B
 
     sget-object v0, Lcom/tencent/wxop/stat/b/ICj;->mArrayIc:[I
 
@@ -608,7 +608,7 @@
 
     iget v1, p0, Lcom/tencent/wxop/stat/b/ICj;->mIf:I
 
-    iget-object v7, p0, Lcom/tencent/wxop/stat/b/ICj;->a:[B
+    iget-object v7, p0, Lcom/tencent/wxop/stat/b/ICj;->mArrayBa:[B
 
     iget-object v8, p0, Lcom/tencent/wxop/stat/b/ICj;->mArrayIg:[I
 
@@ -917,7 +917,7 @@
     :pswitch_6
     iput v5, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
-    iput v0, p0, Lcom/tencent/wxop/stat/b/ICj;->b:I
+    iput v0, p0, Lcom/tencent/wxop/stat/b/ICj;->mIb:I
 
     const/4 v0, 0x1
 

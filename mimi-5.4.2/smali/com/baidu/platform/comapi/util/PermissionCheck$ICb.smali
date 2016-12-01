@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field public a:I
+.field public mIa:I
 
-.field public b:Ljava/lang/String;
+.field public mStringb:Ljava/lang/String;
 
-.field public c:Ljava/lang/String;
+.field public mStringc:Ljava/lang/String;
 
-.field public d:Ljava/lang/String;
+.field public mStringd:Ljava/lang/String;
 
-.field public e:Ljava/lang/String;
+.field public mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -22,19 +22,19 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
+    iput v0, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mIa:I
 
     const-string/jumbo v0, "-1"
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v0, "-1"
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringd:Ljava/lang/String;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
+    iget v3, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mIa:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -62,19 +62,19 @@
 
     const/4 v2, 0x1
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->b:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringb:Ljava/lang/String;
 
     aput-object v3, v1, v2
 
     const/4 v2, 0x2
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->c:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringc:Ljava/lang/String;
 
     aput-object v3, v1, v2
 
     const/4 v2, 0x3
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->d:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringd:Ljava/lang/String;
 
     aput-object v3, v1, v2
 

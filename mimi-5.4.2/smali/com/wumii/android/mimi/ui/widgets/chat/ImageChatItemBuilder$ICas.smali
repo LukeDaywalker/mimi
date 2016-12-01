@@ -57,7 +57,7 @@
     .line 38
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder$ICas;->mImageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;->d:Landroid/content/Context;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;->mContextd:Landroid/content/Context;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgImgBase;->getUrl()Ljava/lang/String;
 

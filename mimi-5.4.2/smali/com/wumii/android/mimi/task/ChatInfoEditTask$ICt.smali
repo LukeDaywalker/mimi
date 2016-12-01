@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
-
-.field public static final enum b:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
-
-.field public static final enum c:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
-
-.field public static final enum d:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
-
-.field public static final enum e:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
-
 .field private static final synthetic mArrayICti:[Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+
+.field public static final enum mICta:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+
+.field public static final enum mICtb:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+
+.field public static final enum mICtc:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+
+.field public static final enum mICtd:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+
+.field public static final enum mICte:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
 
 # instance fields
@@ -64,7 +64,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->a:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICta:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     .line 119
     new-instance v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
@@ -81,7 +81,7 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->b:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sput-object v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtb:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     .line 120
     new-instance v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
@@ -98,7 +98,7 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->c:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sput-object v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtc:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     .line 121
     new-instance v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
@@ -115,7 +115,7 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->d:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sput-object v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtd:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     .line 122
     new-instance v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
@@ -132,30 +132,30 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->e:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sput-object v3, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICte:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     .line 117
     const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
-    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->a:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICta:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->b:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtb:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     aput-object v1, v0, v9
 
-    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->c:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtc:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     aput-object v1, v0, v10
 
-    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->d:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtd:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     aput-object v1, v0, v11
 
-    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->e:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICte:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     aput-object v1, v0, v12
 

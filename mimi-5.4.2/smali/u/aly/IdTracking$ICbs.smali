@@ -19,13 +19,13 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/IdTracking$ICbs;
-
-.field public static final enum b:Lu/aly/IdTracking$ICbs;
-
-.field public static final enum c:Lu/aly/IdTracking$ICbs;
-
 .field private static final synthetic mArrayICbsg:[Lu/aly/IdTracking$ICbs;
+
+.field public static final enum mICbsa:Lu/aly/IdTracking$ICbs;
+
+.field public static final enum mICbsb:Lu/aly/IdTracking$ICbs;
+
+.field public static final enum mICbsc:Lu/aly/IdTracking$ICbs;
 
 .field private static final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v5, v3, v2}, Lu/aly/IdTracking$ICbs;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdTracking$ICbs;->a:Lu/aly/IdTracking$ICbs;
+    sput-object v0, Lu/aly/IdTracking$ICbs;->mICbsa:Lu/aly/IdTracking$ICbs;
 
     .line 52
     new-instance v0, Lu/aly/IdTracking$ICbs;
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/IdTracking$ICbs;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdTracking$ICbs;->b:Lu/aly/IdTracking$ICbs;
+    sput-object v0, Lu/aly/IdTracking$ICbs;->mICbsb:Lu/aly/IdTracking$ICbs;
 
     .line 53
     new-instance v0, Lu/aly/IdTracking$ICbs;
@@ -90,20 +90,20 @@
 
     invoke-direct {v0, v1, v4, v6, v2}, Lu/aly/IdTracking$ICbs;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdTracking$ICbs;->c:Lu/aly/IdTracking$ICbs;
+    sput-object v0, Lu/aly/IdTracking$ICbs;->mICbsc:Lu/aly/IdTracking$ICbs;
 
     .line 50
     new-array v0, v6, [Lu/aly/IdTracking$ICbs;
 
-    sget-object v1, Lu/aly/IdTracking$ICbs;->a:Lu/aly/IdTracking$ICbs;
+    sget-object v1, Lu/aly/IdTracking$ICbs;->mICbsa:Lu/aly/IdTracking$ICbs;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/IdTracking$ICbs;->b:Lu/aly/IdTracking$ICbs;
+    sget-object v1, Lu/aly/IdTracking$ICbs;->mICbsb:Lu/aly/IdTracking$ICbs;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/IdTracking$ICbs;->c:Lu/aly/IdTracking$ICbs;
+    sget-object v1, Lu/aly/IdTracking$ICbs;->mICbsc:Lu/aly/IdTracking$ICbs;
 
     aput-object v1, v0, v4
 

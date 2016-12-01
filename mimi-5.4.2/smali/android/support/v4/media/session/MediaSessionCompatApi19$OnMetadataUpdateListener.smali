@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;
+.field protected final mCallbacka:Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -43,7 +43,7 @@
     if-eqz v0, :cond_0
 
     .line 97
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompatApi19$OnMetadataUpdateListener;->a:Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompatApi19$OnMetadataUpdateListener;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;
 
     invoke-interface {v0, p2}, Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;->a(Ljava/lang/Object;)V
 

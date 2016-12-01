@@ -36,7 +36,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttDeliveryToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttDeliveryToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->i()Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 

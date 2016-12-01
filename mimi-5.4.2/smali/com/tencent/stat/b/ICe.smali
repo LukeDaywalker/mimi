@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field protected b:Ljava/lang/String;
+.field protected mContextf:Landroid/content/Context;
 
-.field protected c:J
+.field protected mICne:Lcom/tencent/stat/a/ICn;
 
-.field protected d:I
+.field protected mId:I
 
-.field protected e:Lcom/tencent/stat/a/ICn;
+.field protected mJc:J
 
-.field protected f:Landroid/content/Context;
+.field protected mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -22,15 +22,15 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/stat/b/ICe;->e:Lcom/tencent/stat/a/ICn;
+    iput-object v0, p0, Lcom/tencent/stat/b/ICe;->mICne:Lcom/tencent/stat/a/ICn;
 
-    iput-object p1, p0, Lcom/tencent/stat/b/ICe;->f:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/stat/b/ICe;->mContextf:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/tencent/stat/ICb;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/stat/b/ICe;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/stat/b/ICe;->mStringb:Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -40,9 +40,9 @@
 
     div-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/tencent/stat/b/ICe;->c:J
+    iput-wide v0, p0, Lcom/tencent/stat/b/ICe;->mJc:J
 
-    iput p2, p0, Lcom/tencent/stat/b/ICe;->d:I
+    iput p2, p0, Lcom/tencent/stat/b/ICe;->mId:I
 
     invoke-static {p1}, Lcom/tencent/stat/ICo;->a(Landroid/content/Context;)Lcom/tencent/stat/ICo;
 
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/stat/b/ICe;->e:Lcom/tencent/stat/a/ICn;
+    iput-object v0, p0, Lcom/tencent/stat/b/ICe;->mICne:Lcom/tencent/stat/a/ICn;
 
     return-void
 .end method
@@ -68,7 +68,7 @@
 .method public b()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/tencent/stat/b/ICe;->c:J
+    iget-wide v0, p0, Lcom/tencent/stat/b/ICe;->mJc:J
 
     return-wide v0
 .end method
@@ -79,7 +79,7 @@
     :try_start_0
     const-string/jumbo v0, "ky"
 
-    iget-object v1, p0, Lcom/tencent/stat/b/ICe;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/stat/b/ICe;->mStringb:Ljava/lang/String;
 
     invoke-static {p1, v0, v1}, Lcom/tencent/stat/a/ICj;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -97,7 +97,7 @@
 
     const-string/jumbo v0, "ui"
 
-    iget-object v1, p0, Lcom/tencent/stat/b/ICe;->e:Lcom/tencent/stat/a/ICn;
+    iget-object v1, p0, Lcom/tencent/stat/b/ICe;->mICne:Lcom/tencent/stat/a/ICn;
 
     invoke-virtual {v1}, Lcom/tencent/stat/a/ICn;->a()Ljava/lang/String;
 
@@ -105,7 +105,7 @@
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    iget-object v0, p0, Lcom/tencent/stat/b/ICe;->e:Lcom/tencent/stat/a/ICn;
+    iget-object v0, p0, Lcom/tencent/stat/b/ICe;->mICne:Lcom/tencent/stat/a/ICn;
 
     invoke-virtual {v0}, Lcom/tencent/stat/a/ICn;->b()Ljava/lang/String;
 
@@ -117,13 +117,13 @@
 
     const-string/jumbo v0, "si"
 
-    iget v1, p0, Lcom/tencent/stat/b/ICe;->d:I
+    iget v1, p0, Lcom/tencent/stat/b/ICe;->mId:I
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string/jumbo v0, "ts"
 
-    iget-wide v2, p0, Lcom/tencent/stat/b/ICe;->c:J
+    iget-wide v2, p0, Lcom/tencent/stat/b/ICe;->mJc:J
 
     invoke-virtual {p1, v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
@@ -153,7 +153,7 @@
 .method public c()Landroid/content/Context;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/stat/b/ICe;->f:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/stat/b/ICe;->mContextf:Landroid/content/Context;
 
     return-object v0
 .end method

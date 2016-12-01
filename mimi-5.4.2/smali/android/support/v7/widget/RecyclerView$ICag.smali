@@ -54,7 +54,7 @@
 
     iget-object v2, v2, Landroid/support/v7/widget/RecyclerView;->mChildHelperc:Landroid/support/v7/widget/ChildHelper;
 
-    iget-object v3, v1, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v3, v1, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-virtual {v2, v3}, Landroid/support/v7/widget/ChildHelper;->c(Landroid/view/View;)Z
 

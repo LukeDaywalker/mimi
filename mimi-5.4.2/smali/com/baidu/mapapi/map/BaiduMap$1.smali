@@ -25,7 +25,7 @@
     :try_start_0
     sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIb:[I
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/A;->b:Lcom/baidu/platform/comapi/map/A;
+    sget-object v1, Lcom/baidu/platform/comapi/map/A;->mAb:Lcom/baidu/platform/comapi/map/A;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/A;->ordinal()I
 
@@ -41,7 +41,7 @@
     :try_start_1
     sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIb:[I
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/A;->a:Lcom/baidu/platform/comapi/map/A;
+    sget-object v1, Lcom/baidu/platform/comapi/map/A;->mAa:Lcom/baidu/platform/comapi/map/A;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/A;->ordinal()I
 

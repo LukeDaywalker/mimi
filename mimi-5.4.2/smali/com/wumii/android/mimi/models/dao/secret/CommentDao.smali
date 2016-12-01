@@ -947,14 +947,14 @@
     move-result-object v2
 
     .line 115
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, v3, v1}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v1
 
     .line 116
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, v3, v2}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Ljava/util/List;
 
@@ -979,7 +979,7 @@
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "comment"
 
@@ -1039,13 +1039,13 @@
     check-cast v1, Ljava/util/List;
 
     .line 141
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
     .line 143
     :try_start_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v3, "comment"
 
@@ -1070,7 +1070,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 145
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, v3, p1, v0}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
     :try_end_0
@@ -1082,7 +1082,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -1091,7 +1091,7 @@
     .line 148
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v2, "hot_comment"
 
@@ -1142,7 +1142,7 @@
     invoke-virtual {v2, v3, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 154
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v3, "hot_comment"
 
@@ -1154,14 +1154,14 @@
 
     .line 158
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 160
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 

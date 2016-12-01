@@ -158,7 +158,7 @@
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/tencent/b/a/Pro$ICh;->a:Lcom/tencent/b/a/Pro$ICh;
+    sget-object v2, Lcom/tencent/b/a/Pro$ICh;->mICha:Lcom/tencent/b/a/Pro$ICh;
 
     invoke-direct {p0, v0, v1, v2, p1}, Lcom/tencent/b/a/Pro;-><init>(IZLcom/tencent/b/a/Pro$ICh;Lcom/tencent/b/a/Pro$ICb;)V
 

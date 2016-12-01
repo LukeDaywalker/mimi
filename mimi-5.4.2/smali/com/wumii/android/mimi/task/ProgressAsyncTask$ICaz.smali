@@ -32,7 +32,7 @@
     .line 49
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;->mProgressAsyncTaska:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mActivityEventManagerj:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 

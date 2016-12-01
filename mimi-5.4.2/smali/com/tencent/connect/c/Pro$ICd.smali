@@ -98,7 +98,7 @@
     .line 390
     const-string/jumbo v6, "appId"
 
-    iget-object v7, p0, Lcom/tencent/connect/c/Pro$ICd;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v7, p0, Lcom/tencent/connect/c/Pro$ICd;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v7}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
 
@@ -375,9 +375,9 @@
     move-result-object v0
 
     .line 364
-    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICd;->d:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICd;->mContextd:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/tencent/connect/c/Pro$ICd;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v2, p0, Lcom/tencent/connect/c/Pro$ICd;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     const-string/jumbo v3, "requireApi"
 
@@ -549,7 +549,7 @@
     .line 280
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v3}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
 
@@ -558,7 +558,7 @@
     .line 281
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v3}, Lcom/tencent/connect/b/Pro$ICt;->d()Ljava/lang/String;
 
@@ -1087,11 +1087,11 @@
     .line 332
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->d:Landroid/content/Context;
+    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->mContextd:Landroid/content/Context;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/tencent/connect/c/Pro$ICd;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v4, v0, Lcom/tencent/connect/c/Pro$ICd;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     const-string/jumbo v5, "requireApi"
 
@@ -1116,12 +1116,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->f:Landroid/content/Intent;
+    iput-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->mIntentf:Landroid/content/Intent;
 
     .line 335
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->f:Landroid/content/Intent;
+    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->mIntentf:Landroid/content/Intent;
 
     invoke-virtual {v6}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -1201,7 +1201,7 @@
     .line 346
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->f:Landroid/content/Intent;
+    iget-object v3, v0, Lcom/tencent/connect/c/Pro$ICd;->mIntentf:Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -1816,7 +1816,7 @@
     .line 236
     new-instance v1, Lcom/tencent/connect/c/Pro;
 
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICd;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICd;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-direct {v1, p1, v0}, Lcom/tencent/connect/c/Pro;-><init>(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
 

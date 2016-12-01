@@ -157,7 +157,7 @@
     .line 99
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
@@ -194,7 +194,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
 

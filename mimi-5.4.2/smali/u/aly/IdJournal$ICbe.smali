@@ -19,15 +19,15 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/IdJournal$ICbe;
-
-.field public static final enum b:Lu/aly/IdJournal$ICbe;
-
-.field public static final enum c:Lu/aly/IdJournal$ICbe;
-
-.field public static final enum d:Lu/aly/IdJournal$ICbe;
-
 .field private static final synthetic mArrayICbeh:[Lu/aly/IdJournal$ICbe;
+
+.field public static final enum mICbea:Lu/aly/IdJournal$ICbe;
+
+.field public static final enum mICbeb:Lu/aly/IdJournal$ICbe;
+
+.field public static final enum mICbec:Lu/aly/IdJournal$ICbe;
+
+.field public static final enum mICbed:Lu/aly/IdJournal$ICbe;
 
 .field private static final mMape:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -72,7 +72,7 @@
 
     invoke-direct {v0, v1, v6, v3, v2}, Lu/aly/IdJournal$ICbe;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdJournal$ICbe;->a:Lu/aly/IdJournal$ICbe;
+    sput-object v0, Lu/aly/IdJournal$ICbe;->mICbea:Lu/aly/IdJournal$ICbe;
 
     .line 54
     new-instance v0, Lu/aly/IdJournal$ICbe;
@@ -83,7 +83,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/IdJournal$ICbe;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdJournal$ICbe;->b:Lu/aly/IdJournal$ICbe;
+    sput-object v0, Lu/aly/IdJournal$ICbe;->mICbeb:Lu/aly/IdJournal$ICbe;
 
     .line 55
     new-instance v0, Lu/aly/IdJournal$ICbe;
@@ -94,7 +94,7 @@
 
     invoke-direct {v0, v1, v4, v5, v2}, Lu/aly/IdJournal$ICbe;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdJournal$ICbe;->c:Lu/aly/IdJournal$ICbe;
+    sput-object v0, Lu/aly/IdJournal$ICbe;->mICbec:Lu/aly/IdJournal$ICbe;
 
     .line 56
     new-instance v0, Lu/aly/IdJournal$ICbe;
@@ -105,24 +105,24 @@
 
     invoke-direct {v0, v1, v5, v7, v2}, Lu/aly/IdJournal$ICbe;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdJournal$ICbe;->d:Lu/aly/IdJournal$ICbe;
+    sput-object v0, Lu/aly/IdJournal$ICbe;->mICbed:Lu/aly/IdJournal$ICbe;
 
     .line 52
     new-array v0, v7, [Lu/aly/IdJournal$ICbe;
 
-    sget-object v1, Lu/aly/IdJournal$ICbe;->a:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbea:Lu/aly/IdJournal$ICbe;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lu/aly/IdJournal$ICbe;->b:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbeb:Lu/aly/IdJournal$ICbe;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/IdJournal$ICbe;->c:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbec:Lu/aly/IdJournal$ICbe;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/IdJournal$ICbe;->d:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbed:Lu/aly/IdJournal$ICbe;
 
     aput-object v1, v0, v5
 

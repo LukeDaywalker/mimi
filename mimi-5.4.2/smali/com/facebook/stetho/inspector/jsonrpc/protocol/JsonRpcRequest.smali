@@ -13,19 +13,19 @@
 
 
 # instance fields
-.field public a:Ljava/lang/Long;
+.field public mJSONObjectc:Lorg/json/JSONObject;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
     .end annotation
 .end field
 
-.field public b:Ljava/lang/String;
+.field public mLonga:Ljava/lang/Long;
+    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
+    .end annotation
+.end field
+
+.field public mStringb:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
-    .end annotation
-.end field
-
-.field public c:Lorg/json/JSONObject;
-    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
     .end annotation
 .end field
 
@@ -50,13 +50,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 28
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->a:Ljava/lang/Long;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->mLonga:Ljava/lang/Long;
 
     .line 29
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->mStringb:Ljava/lang/String;
 
     .line 30
-    iput-object p3, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->c:Lorg/json/JSONObject;
+    iput-object p3, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->mJSONObjectc:Lorg/json/JSONObject;
 
     .line 31
     return-void

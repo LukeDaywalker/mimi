@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Landroid/view/LayoutInflater;
-
 .field private mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+
+.field protected mLayoutInflatera:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 26
     return-void
@@ -55,7 +55,7 @@
     if-nez p2, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300f3
 

@@ -52,7 +52,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lch/qos/logback/classic/db/names/ColumnName;->I:Lch/qos/logback/classic/db/names/ColumnName;
+    sget-object v2, Lch/qos/logback/classic/db/names/ColumnName;->mColumnNameI:Lch/qos/logback/classic/db/names/ColumnName;
 
     invoke-interface {p0, v2}, Lch/qos/logback/classic/db/names/DBNameResolver;->getColumnName(Ljava/lang/Enum;)Ljava/lang/String;
 
@@ -106,7 +106,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lch/qos/logback/classic/db/names/ColumnName;->I:Lch/qos/logback/classic/db/names/ColumnName;
+    sget-object v2, Lch/qos/logback/classic/db/names/ColumnName;->mColumnNameI:Lch/qos/logback/classic/db/names/ColumnName;
 
     invoke-interface {p0, v2}, Lch/qos/logback/classic/db/names/DBNameResolver;->getColumnName(Ljava/lang/Enum;)Ljava/lang/String;
 
@@ -692,7 +692,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lch/qos/logback/classic/db/names/ColumnName;->I:Lch/qos/logback/classic/db/names/ColumnName;
+    sget-object v2, Lch/qos/logback/classic/db/names/ColumnName;->mColumnNameI:Lch/qos/logback/classic/db/names/ColumnName;
 
     invoke-interface {p0, v2}, Lch/qos/logback/classic/db/names/DBNameResolver;->getColumnName(Ljava/lang/Enum;)Ljava/lang/String;
 

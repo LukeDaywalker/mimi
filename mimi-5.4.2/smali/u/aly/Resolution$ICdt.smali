@@ -19,11 +19,11 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/Resolution$ICdt;
-
-.field public static final enum b:Lu/aly/Resolution$ICdt;
-
 .field private static final synthetic mArrayICdtf:[Lu/aly/Resolution$ICdt;
+
+.field public static final enum mICdta:Lu/aly/Resolution$ICdt;
+
+.field public static final enum mICdtb:Lu/aly/Resolution$ICdt;
 
 .field private static final mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4, v3, v2}, Lu/aly/Resolution$ICdt;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Resolution$ICdt;->a:Lu/aly/Resolution$ICdt;
+    sput-object v0, Lu/aly/Resolution$ICdt;->mICdta:Lu/aly/Resolution$ICdt;
 
     .line 50
     new-instance v0, Lu/aly/Resolution$ICdt;
@@ -75,16 +75,16 @@
 
     invoke-direct {v0, v1, v3, v5, v2}, Lu/aly/Resolution$ICdt;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Resolution$ICdt;->b:Lu/aly/Resolution$ICdt;
+    sput-object v0, Lu/aly/Resolution$ICdt;->mICdtb:Lu/aly/Resolution$ICdt;
 
     .line 48
     new-array v0, v5, [Lu/aly/Resolution$ICdt;
 
-    sget-object v1, Lu/aly/Resolution$ICdt;->a:Lu/aly/Resolution$ICdt;
+    sget-object v1, Lu/aly/Resolution$ICdt;->mICdta:Lu/aly/Resolution$ICdt;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/Resolution$ICdt;->b:Lu/aly/Resolution$ICdt;
+    sget-object v1, Lu/aly/Resolution$ICdt;->mICdtb:Lu/aly/Resolution$ICdt;
 
     aput-object v1, v0, v3
 

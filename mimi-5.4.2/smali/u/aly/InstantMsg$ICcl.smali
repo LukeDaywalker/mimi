@@ -289,7 +289,7 @@
     .line 625
     new-instance v0, Ljava/util/ArrayList;
 
-    iget v4, v3, Lu/aly/TList;->b:I
+    iget v4, v3, Lu/aly/TList;->mIb:I
 
     invoke-direct {v0, v4}, Ljava/util/ArrayList;-><init>(I)V
 
@@ -299,7 +299,7 @@
 
     .line 626
     :goto_0
-    iget v4, v3, Lu/aly/TList;->b:I
+    iget v4, v3, Lu/aly/TList;->mIb:I
 
     if-ge v0, v4, :cond_0
 
@@ -345,7 +345,7 @@
     .line 639
     new-instance v0, Ljava/util/ArrayList;
 
-    iget v4, v3, Lu/aly/TList;->b:I
+    iget v4, v3, Lu/aly/TList;->mIb:I
 
     invoke-direct {v0, v4}, Ljava/util/ArrayList;-><init>(I)V
 
@@ -355,7 +355,7 @@
 
     .line 640
     :goto_1
-    iget v4, v3, Lu/aly/TList;->b:I
+    iget v4, v3, Lu/aly/TList;->mIb:I
 
     if-ge v0, v4, :cond_2
 
@@ -403,7 +403,7 @@
     .line 653
     new-instance v2, Ljava/util/ArrayList;
 
-    iget v3, v0, Lu/aly/TList;->b:I
+    iget v3, v0, Lu/aly/TList;->mIb:I
 
     invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
 
@@ -411,7 +411,7 @@
 
     .line 654
     :goto_2
-    iget v2, v0, Lu/aly/TList;->b:I
+    iget v2, v0, Lu/aly/TList;->mIb:I
 
     if-ge v1, v2, :cond_4
 

@@ -80,7 +80,7 @@
 
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/baidu/location/ICy;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICy;->mStringI:Ljava/lang/String;
 
     sget-object v2, Lcom/baidu/location/ICy;->mStringfc:Ljava/lang/String;
 
@@ -475,7 +475,7 @@
 
     invoke-direct {v2, v8}, Ljava/lang/String;-><init>([B)V
 
-    sget v0, Lcom/baidu/location/ICc;->aQ:I
+    sget v0, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-ge v6, v0, :cond_6
 
@@ -495,7 +495,7 @@
     goto :goto_0
 
     :cond_6
-    sget v0, Lcom/baidu/location/ICc;->aQ:I
+    sget v0, Lcom/baidu/location/ICc;->mIaQ:I
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -766,11 +766,11 @@
     goto :goto_0
 
     :cond_3
-    sget-boolean v2, Lcom/baidu/location/ICc;->ac:Z
+    sget-boolean v2, Lcom/baidu/location/ICc;->isZac:Z
 
     if-eqz v2, :cond_6
 
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-eq v3, v2, :cond_4
 
@@ -795,7 +795,7 @@
     :cond_4
     if-ne v6, v1, :cond_5
 
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     :goto_1
     invoke-direct {p0, v2}, Lcom/baidu/location/ICy;->for(I)Ljava/lang/String;
@@ -890,7 +890,7 @@
     goto/16 :goto_0
 
     :cond_9
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -915,7 +915,7 @@
     goto :goto_2
 
     :cond_a
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -925,7 +925,7 @@
 
     invoke-virtual {v4, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     invoke-virtual {v4, v2}, Ljava/io/RandomAccessFile;->writeInt(I)V
 
@@ -952,14 +952,14 @@
     :cond_d
     if-ne v6, v5, :cond_10
 
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-ne v6, v2, :cond_e
 
     move v3, v1
 
     :goto_3
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-ne v3, v2, :cond_f
 
@@ -989,7 +989,7 @@
     goto :goto_4
 
     :cond_10
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-ne v6, v2, :cond_12
 
@@ -998,7 +998,7 @@
     :goto_5
     if-ne v3, v5, :cond_11
 
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-ne v3, v2, :cond_13
 
@@ -1044,7 +1044,7 @@
 
     if-ltz p0, :cond_0
 
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-le p0, v2, :cond_2
 
@@ -1074,7 +1074,7 @@
 
     if-gt p2, v2, :cond_5
 
-    sget v2, Lcom/baidu/location/ICc;->aQ:I
+    sget v2, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-le p2, v2, :cond_1
 
@@ -1089,7 +1089,7 @@
 
     if-eqz p1, :cond_0
 
-    sget-boolean v0, Lcom/baidu/location/ICc;->aj:Z
+    sget-boolean v0, Lcom/baidu/location/ICc;->isZaj:Z
 
     if-eqz v0, :cond_0
 
@@ -1097,7 +1097,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Lcom/baidu/location/ICaa;->gq:Z
+    sget-boolean v0, Lcom/baidu/location/ICaa;->isZgq:Z
 
     if-nez v0, :cond_1
 
@@ -1108,7 +1108,7 @@
     return v0
 
     :cond_1
-    sget v0, Lcom/baidu/location/ICc;->aZ:I
+    sget v0, Lcom/baidu/location/ICc;->mIaZ:I
 
     const/4 v1, 0x5
 
@@ -1116,11 +1116,11 @@
 
     const/4 v0, 0x5
 
-    sput v0, Lcom/baidu/location/ICc;->aZ:I
+    sput v0, Lcom/baidu/location/ICc;->mIaZ:I
 
     :cond_2
     :goto_1
-    sget v0, Lcom/baidu/location/ICc;->a4:I
+    sget v0, Lcom/baidu/location/ICc;->mIa4:I
 
     const/4 v1, 0x5
 
@@ -1128,7 +1128,7 @@
 
     const/4 v0, 0x5
 
-    sput v0, Lcom/baidu/location/ICc;->a4:I
+    sput v0, Lcom/baidu/location/ICc;->mIa4:I
 
     :cond_3
     :goto_2
@@ -1265,7 +1265,7 @@
     goto/16 :goto_0
 
     :cond_4
-    sget v0, Lcom/baidu/location/ICc;->aZ:I
+    sget v0, Lcom/baidu/location/ICc;->mIaZ:I
 
     const/16 v1, 0x3e8
 
@@ -1273,12 +1273,12 @@
 
     const/16 v0, 0x3e8
 
-    sput v0, Lcom/baidu/location/ICc;->aZ:I
+    sput v0, Lcom/baidu/location/ICc;->mIaZ:I
 
     goto/16 :goto_1
 
     :cond_5
-    sget v0, Lcom/baidu/location/ICc;->a4:I
+    sget v0, Lcom/baidu/location/ICc;->mIa4:I
 
     const/16 v1, 0xe10
 
@@ -1286,7 +1286,7 @@
 
     const/16 v0, 0xe10
 
-    sput v0, Lcom/baidu/location/ICc;->a4:I
+    sput v0, Lcom/baidu/location/ICc;->mIa4:I
 
     goto/16 :goto_2
 
@@ -1309,7 +1309,7 @@
 
     aget v6, v8, v6
 
-    sget v7, Lcom/baidu/location/ICc;->aZ:I
+    sget v7, Lcom/baidu/location/ICc;->mIaZ:I
 
     int-to-float v7, v7
 
@@ -1317,7 +1317,7 @@
 
     if-gez v6, :cond_7
 
-    sget v6, Lcom/baidu/location/ICc;->a4:I
+    sget v6, Lcom/baidu/location/ICc;->mIa4:I
 
     int-to-long v6, v6
 
@@ -1464,7 +1464,7 @@
     :cond_8
     sget v0, Lcom/baidu/location/ICy;->mIfd:I
 
-    sget v1, Lcom/baidu/location/ICc;->aQ:I
+    sget v1, Lcom/baidu/location/ICc;->mIaQ:I
 
     if-lt v0, v1, :cond_9
 
@@ -1615,9 +1615,9 @@
 .method public do(Landroid/location/Location;)Z
     .locals 2
 
-    sget v0, Lcom/baidu/location/ICc;->aZ:I
+    sget v0, Lcom/baidu/location/ICc;->mIaZ:I
 
-    sget v1, Lcom/baidu/location/ICc;->a4:I
+    sget v1, Lcom/baidu/location/ICc;->mIa4:I
 
     invoke-direct {p0, p1, v0, v1}, Lcom/baidu/location/ICy;->if(Landroid/location/Location;II)Z
 

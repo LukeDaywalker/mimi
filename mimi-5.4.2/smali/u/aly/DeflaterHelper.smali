@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:I
+.field public static mIa:I
 
 
 # direct methods
@@ -46,7 +46,7 @@
     new-array v3, v1, [B
 
     .line 48
-    sput v4, Lu/aly/DeflaterHelper;->a:I
+    sput v4, Lu/aly/DeflaterHelper;->mIa:I
 
     .line 51
     :try_start_0
@@ -91,11 +91,11 @@
     move-result v0
 
     .line 54
-    sget v4, Lu/aly/DeflaterHelper;->a:I
+    sget v4, Lu/aly/DeflaterHelper;->mIa:I
 
     add-int/2addr v4, v0
 
-    sput v4, Lu/aly/DeflaterHelper;->a:I
+    sput v4, Lu/aly/DeflaterHelper;->mIa:I
 
     .line 55
     const/4 v4, 0x0

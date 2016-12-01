@@ -71,7 +71,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/Contact;
 
     .line 39
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AnonymousLetterReceiversActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AnonymousLetterReceiversActivity;->mBaseContactSectionedAdapters:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->a(Lcom/wumii/android/mimi/models/entities/Contact;)V
 

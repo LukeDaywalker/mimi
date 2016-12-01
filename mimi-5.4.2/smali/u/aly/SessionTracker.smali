@@ -181,7 +181,7 @@
 
     sub-long v2, v6, v2
 
-    sget-wide v8, Lcom/umeng/analytics/AnalyticsConfig;->n:J
+    sget-wide v8, Lcom/umeng/analytics/AnalyticsConfig;->mJn:J
 
     cmp-long v1, v2, v8
 
@@ -203,7 +203,7 @@
     :cond_1
     sub-long v2, v6, v4
 
-    sget-wide v4, Lcom/umeng/analytics/AnalyticsConfig;->n:J
+    sget-wide v4, Lcom/umeng/analytics/AnalyticsConfig;->mJn:J
 
     cmp-long v1, v2, v4
 
@@ -608,7 +608,7 @@
 
     if-nez v1, :cond_1
 
-    sget-boolean v1, Lcom/umeng/analytics/AnalyticsConfig;->j:Z
+    sget-boolean v1, Lcom/umeng/analytics/AnalyticsConfig;->isZj:Z
 
     if-eqz v1, :cond_1
 

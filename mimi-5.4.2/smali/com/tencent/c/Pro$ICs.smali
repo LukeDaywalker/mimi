@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mJb:J
 
-.field public b:J
+.field public mJc:J
 
-.field public c:J
+.field public mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,20 +20,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 213
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICs;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICs;->mStringa:Ljava/lang/String;
 
     .line 214
     int-to-long v0, p2
 
-    iput-wide v0, p0, Lcom/tencent/c/Pro$ICs;->b:J
+    iput-wide v0, p0, Lcom/tencent/c/Pro$ICs;->mJb:J
 
     .line 215
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICs;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICs;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 216
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICs;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICs;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -41,7 +41,7 @@
 
     int-to-long v0, v0
 
-    iput-wide v0, p0, Lcom/tencent/c/Pro$ICs;->c:J
+    iput-wide v0, p0, Lcom/tencent/c/Pro$ICs;->mJc:J
 
     .line 217
     :cond_0

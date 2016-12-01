@@ -36,13 +36,13 @@
 
     const/4 v2, 0x1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICd;->e:Lcom/tencent/wxop/stat/b/ICc;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICd;->mICce:Lcom/tencent/wxop/stat/b/ICc;
 
     if-eqz v0, :cond_0
 
     const-string/jumbo v0, "ut"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICd;->e:Lcom/tencent/wxop/stat/b/ICc;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICd;->mICce:Lcom/tencent/wxop/stat/b/ICc;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/b/ICc;->d()I
 
@@ -62,7 +62,7 @@
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     :cond_1
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->l:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->mContextl:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/b/ICl;->v(Landroid/content/Context;)Z
 
@@ -87,7 +87,7 @@
 .method public final b()Lcom/tencent/wxop/stat/a/ICe;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/a/ICe;->b:Lcom/tencent/wxop/stat/a/ICe;
+    sget-object v0, Lcom/tencent/wxop/stat/a/ICe;->mICeb:Lcom/tencent/wxop/stat/a/ICe;
 
     return-object v0
 .end method

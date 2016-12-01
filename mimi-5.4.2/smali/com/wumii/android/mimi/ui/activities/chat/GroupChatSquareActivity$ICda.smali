@@ -52,7 +52,7 @@
     if-eqz v1, :cond_0
 
     .line 145
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->V:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafV:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -71,7 +71,7 @@
     if-eqz v0, :cond_1
 
     .line 147
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->W:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafW:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -79,7 +79,7 @@
 
     .line 149
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->X:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafX:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

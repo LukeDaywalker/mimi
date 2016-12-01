@@ -32,11 +32,11 @@
     .line 55
     iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mActivitya:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mActivitya:Landroid/app/Activity;
 
     const v2, 0x7f060349
 

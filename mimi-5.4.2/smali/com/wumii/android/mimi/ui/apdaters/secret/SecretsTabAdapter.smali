@@ -22,7 +22,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;->mContexta:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -36,7 +36,7 @@
     .line 26
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;->mContexta:Landroid/content/Context;
 
     move-object v1, p0
 

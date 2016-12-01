@@ -3,15 +3,13 @@
 
 
 # static fields
-.field public static A:Landroid/content/Context;
-
-.field public static final B:I
-
-.field public static C:F
-
-.field public static D:Ljava/lang/String;
-
 .field private static isZF:Z
+
+.field public static mContextA:Landroid/content/Context;
+
+.field public static mFC:F
+
+.field public static final mIB:I
 
 .field static mICaa:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
 
@@ -30,6 +28,8 @@
 .field static mIk:I
 
 .field static mIl:I
+
+.field public static mStringD:Ljava/lang/String;
 
 .field private static final mStringE:Ljava/lang/String;
 
@@ -130,11 +130,11 @@
 
     move-result v0
 
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->B:I
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mIB:I
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->C:F
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mFC:F
 
     const/4 v0, 0x1
 
@@ -248,7 +248,7 @@
 
     const-string/jumbo v1, "signature"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->A:Landroid/content/Context;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mContextA:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/baidu/platform/comapi/util/ICf;->a(Landroid/content/Context;)[B
 
@@ -258,7 +258,7 @@
 
     const-string/jumbo v1, "pcn"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->A:Landroid/content/Context;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mContextA:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -372,7 +372,7 @@
 
     const/4 v2, 0x0
 
-    sput-object p0, Lcom/baidu/platform/comapi/util/ICf;->A:Landroid/content/Context;
+    sput-object p0, Lcom/baidu/platform/comapi/util/ICf;->mContextA:Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
@@ -667,7 +667,7 @@
 
     const-string/jumbo v1, "pcn"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->A:Landroid/content/Context;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mContextA:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -703,7 +703,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->D:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringD:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -713,7 +713,7 @@
 
     const-string/jumbo v1, "token"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->D:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringD:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -775,7 +775,7 @@
     :cond_0
     iget v0, v2, Landroid/util/DisplayMetrics;->density:F
 
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->C:F
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mFC:F
 
     iget v0, v2, Landroid/util/DisplayMetrics;->xdpi:F
 
@@ -789,7 +789,7 @@
 
     sput v0, Lcom/baidu/platform/comapi/util/ICf;->mIk:I
 
-    sget v0, Lcom/baidu/platform/comapi/util/ICf;->B:I
+    sget v0, Lcom/baidu/platform/comapi/util/ICf;->mIB:I
 
     const/4 v1, 0x3
 
@@ -954,7 +954,7 @@
     .locals 1
 
     :try_start_0
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->A:Landroid/content/Context;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->mContextA:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/android/bbalbs/common/util/CommonParam;->a(Landroid/content/Context;)Ljava/lang/String;
     :try_end_0

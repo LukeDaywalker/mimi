@@ -76,7 +76,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CircleAdviceTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CircleAdviceTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "circle/advice"
 

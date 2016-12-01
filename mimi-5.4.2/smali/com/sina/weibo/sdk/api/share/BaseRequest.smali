@@ -32,7 +32,7 @@
     .line 42
     const-string/jumbo v0, "_weibo_transaction"
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/BaseRequest;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/BaseRequest;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 

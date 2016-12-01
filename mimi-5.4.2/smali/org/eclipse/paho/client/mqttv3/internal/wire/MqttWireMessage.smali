@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field protected a:I
-
-.field protected b:Z
+.field protected isZb:Z
 
 .field private mBd:B
+
+.field protected mIa:I
 
 
 # direct methods
@@ -134,13 +134,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 61
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->b:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->isZb:Z
 
     .line 65
     iput-byte p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mBd:B
 
     .line 68
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->a:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mIa:I
 
     .line 69
     return-void
@@ -631,7 +631,7 @@
 
     .prologue
     .line 102
-    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->a:I
+    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mIa:I
 
     .line 103
     return-void
@@ -710,7 +710,7 @@
 
     .prologue
     .line 291
-    iput-boolean p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->b:Z
+    iput-boolean p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->isZb:Z
 
     .line 292
     return-void
@@ -790,7 +790,7 @@
 
     .prologue
     .line 95
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->a:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mIa:I
 
     return v0
 .end method
@@ -898,7 +898,7 @@
     invoke-direct {v1, v0}, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
 
     .line 277
-    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->a:I
+    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mIa:I
 
     invoke-virtual {v1, v2}, Ljava/io/DataOutputStream;->writeShort(I)V
 

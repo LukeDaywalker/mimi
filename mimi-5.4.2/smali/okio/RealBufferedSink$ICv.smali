@@ -111,7 +111,7 @@
     :cond_0
     iget-object v0, p0, Lokio/RealBufferedSink$ICv;->mRealBufferedSinka:Lokio/RealBufferedSink;
 
-    iget-object v0, v0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, v0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     int-to-byte v1, p1
 
@@ -151,7 +151,7 @@
     :cond_0
     iget-object v0, p0, Lokio/RealBufferedSink$ICv;->mRealBufferedSinka:Lokio/RealBufferedSink;
 
-    iget-object v0, v0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, v0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->b([BII)Lokio/Buffer;
 

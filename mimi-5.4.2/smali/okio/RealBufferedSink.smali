@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final a:Lokio/Buffer;
-
-.field public final b:Lokio/Sink;
-
 .field private isZc:Z
+
+.field public final mBuffera:Lokio/Buffer;
+
+.field public final mSinkb:Lokio/Sink;
 
 
 # direct methods
@@ -50,10 +50,10 @@
 
     .line 30
     :cond_0
-    iput-object p2, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iput-object p2, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     .line 31
-    iput-object p1, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iput-object p1, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
     .line 32
     return-void
@@ -92,7 +92,7 @@
 
     .line 102
     :goto_0
-    iget-object v2, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v2, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     const-wide/16 v4, 0x800
 
@@ -124,7 +124,7 @@
 
     .prologue
     .line 251
-    iget-object v0, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
     invoke-interface {v0}, Lokio/Sink;->a()Lokio/Timeout;
 
@@ -152,7 +152,7 @@
 
     .line 45
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->a_(Lokio/Buffer;J)V
 
@@ -182,7 +182,7 @@
 
     .line 57
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1}, Lokio/Buffer;->a(Ljava/lang/String;)Lokio/Buffer;
 
@@ -213,7 +213,7 @@
 
     .line 51
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1}, Lokio/Buffer;->a(Lokio/ByteString;)Lokio/Buffer;
 
@@ -230,7 +230,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     return-object v0
 .end method
@@ -254,7 +254,7 @@
 
     .line 89
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1}, Lokio/Buffer;->b([B)Lokio/Buffer;
 
@@ -285,7 +285,7 @@
 
     .line 95
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->b([BII)Lokio/Buffer;
 
@@ -317,7 +317,7 @@
 
     .line 233
     :try_start_0
-    iget-object v1, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v1, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     iget-wide v2, v1, Lokio/Buffer;->mJb:J
 
@@ -328,11 +328,11 @@
     if-lez v1, :cond_2
 
     .line 234
-    iget-object v1, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iget-object v1, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
-    iget-object v2, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v2, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
-    iget-object v3, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v3, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     iget-wide v4, v3, Lokio/Buffer;->mJb:J
 
@@ -344,7 +344,7 @@
     :cond_2
     :goto_1
     :try_start_1
-    iget-object v1, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iget-object v1, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
     invoke-interface {v1}, Lokio/Sink;->close()V
     :try_end_1
@@ -413,7 +413,7 @@
 
     .line 182
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
@@ -426,9 +426,9 @@
 
     if-lez v2, :cond_1
 
-    iget-object v2, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iget-object v2, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
-    iget-object v3, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v3, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-interface {v2, v3, v0, v1}, Lokio/Sink;->a_(Lokio/Buffer;J)V
 
@@ -456,7 +456,7 @@
 
     .line 139
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1}, Lokio/Buffer;->d(I)Lokio/Buffer;
 
@@ -487,7 +487,7 @@
 
     .line 220
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     iget-wide v0, v0, Lokio/Buffer;->mJb:J
 
@@ -498,11 +498,11 @@
     if-lez v0, :cond_1
 
     .line 221
-    iget-object v0, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
-    iget-object v1, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v1, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
-    iget-object v2, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v2, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     iget-wide v2, v2, Lokio/Buffer;->mJb:J
 
@@ -510,7 +510,7 @@
 
     .line 223
     :cond_1
-    iget-object v0, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
     invoke-interface {v0}, Lokio/Sink;->flush()V
 
@@ -537,7 +537,7 @@
 
     .line 127
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1}, Lokio/Buffer;->c(I)Lokio/Buffer;
 
@@ -568,7 +568,7 @@
 
     .line 121
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1}, Lokio/Buffer;->b(I)Lokio/Buffer;
 
@@ -599,7 +599,7 @@
 
     .line 169
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2}, Lokio/Buffer;->h(J)Lokio/Buffer;
 
@@ -626,7 +626,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iget-object v1, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -664,7 +664,7 @@
 
     .line 175
     :cond_0
-    iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->i()J
 
@@ -677,9 +677,9 @@
 
     if-lez v2, :cond_1
 
-    iget-object v2, p0, Lokio/RealBufferedSink;->b:Lokio/Sink;
+    iget-object v2, p0, Lokio/RealBufferedSink;->mSinkb:Lokio/Sink;
 
-    iget-object v3, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
+    iget-object v3, p0, Lokio/RealBufferedSink;->mBuffera:Lokio/Buffer;
 
     invoke-interface {v2, v3, v0, v1}, Lokio/Sink;->a_(Lokio/Buffer;J)V
 

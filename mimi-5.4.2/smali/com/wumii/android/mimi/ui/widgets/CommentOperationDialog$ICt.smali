@@ -15,21 +15,21 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
-
-.field public static final enum b:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
-
-.field public static final enum c:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
-
-.field public static final enum d:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
-
-.field public static final enum e:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
-
-.field public static final enum f:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
-
-.field public static final enum g:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
-
 .field private static final synthetic mArrayICtj:[Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+
+.field public static final enum mICta:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+
+.field public static final enum mICtb:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+
+.field public static final enum mICtc:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+
+.field public static final enum mICtd:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+
+.field public static final enum mICte:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+
+.field public static final enum mICtf:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+
+.field public static final enum mICtg:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
 
 # instance fields
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v5, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICta:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     .line 230
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
@@ -77,7 +77,7 @@
 
     invoke-direct {v0, v1, v6, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->b:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtb:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     .line 231
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
@@ -90,7 +90,7 @@
 
     invoke-direct {v0, v1, v7, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->c:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtc:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     .line 232
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
@@ -103,7 +103,7 @@
 
     invoke-direct {v0, v1, v8, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->d:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtd:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     .line 233
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
@@ -116,7 +116,7 @@
 
     invoke-direct {v0, v1, v9, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICte:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     .line 234
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
@@ -131,7 +131,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->f:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtf:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     .line 235
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
@@ -146,42 +146,42 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->g:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtg:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     .line 228
     const/4 v0, 0x7
 
     new-array v0, v0, [Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICta:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->b:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtb:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->c:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtc:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->d:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtd:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     aput-object v1, v0, v8
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICte:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     aput-object v1, v0, v9
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->f:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtf:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->g:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtg:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     aput-object v2, v0, v1
 

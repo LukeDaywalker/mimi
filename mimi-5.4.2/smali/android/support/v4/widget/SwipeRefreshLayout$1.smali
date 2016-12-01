@@ -155,7 +155,7 @@
 
     iget-object v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$1;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
-    iget v1, v1, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iget v1, v1, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
     iget-object v2, p0, Landroid/support/v4/widget/SwipeRefreshLayout$1;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 

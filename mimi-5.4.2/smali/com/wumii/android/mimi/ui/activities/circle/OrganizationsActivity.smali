@@ -65,9 +65,9 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -109,7 +109,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -152,13 +152,13 @@
     move-result-object v1
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->s:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mTextViews:Landroid/widget/TextView;
 
     const v2, 0x7f06008a
 
     new-array v3, v5, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -175,9 +175,9 @@
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->q:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleStorageq:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -197,7 +197,7 @@
     if-nez v0, :cond_0
 
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->t:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mViewt:Landroid/view/View;
 
     const v2, 0x7f0b01ae
 
@@ -230,9 +230,9 @@
 
     new-array v3, v5, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->q:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleStorageq:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -288,11 +288,11 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleCategoryAdaptero:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->q:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleStorageq:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -322,11 +322,11 @@
     invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleCategoryAdaptero:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->q:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleStorageq:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -373,7 +373,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->onDestroy()V
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/CircleManager;->e()V
 
@@ -381,9 +381,9 @@
     invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->q:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircleStorageq:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -411,7 +411,7 @@
 
     .line 91
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->C:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mProgressingDialogC:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 

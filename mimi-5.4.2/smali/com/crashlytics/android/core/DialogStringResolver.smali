@@ -101,7 +101,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
-    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->a:Ljava/lang/String;
+    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/core/DialogStringResolver;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -119,7 +119,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
-    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->b:Ljava/lang/String;
+    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringb:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/core/DialogStringResolver;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -137,7 +137,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
-    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->c:Ljava/lang/String;
+    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringc:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/core/DialogStringResolver;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -155,7 +155,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
-    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->g:Ljava/lang/String;
+    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringg:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/core/DialogStringResolver;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -173,7 +173,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
-    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->e:Ljava/lang/String;
+    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringe:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/core/DialogStringResolver;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

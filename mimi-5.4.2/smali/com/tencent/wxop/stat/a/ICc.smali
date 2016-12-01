@@ -116,7 +116,7 @@
     :cond_0
     new-instance v0, Lcom/tencent/wxop/stat/b/ICd;
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICc;->l:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICc;->mContextl:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/tencent/wxop/stat/b/ICd;-><init>(Landroid/content/Context;)V
 
@@ -133,7 +133,7 @@
 .method public final b()Lcom/tencent/wxop/stat/a/ICe;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/a/ICe;->c:Lcom/tencent/wxop/stat/a/ICe;
+    sget-object v0, Lcom/tencent/wxop/stat/a/ICe;->mICec:Lcom/tencent/wxop/stat/a/ICe;
 
     return-object v0
 .end method

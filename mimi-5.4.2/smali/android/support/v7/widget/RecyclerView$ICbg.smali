@@ -4,8 +4,6 @@
 
 
 # instance fields
-.field public final a:Landroid/view/View;
-
 .field private mICaxl:Landroid/support/v7/widget/RecyclerView$ICax;
 
 .field mICbgg:Landroid/support/v7/widget/RecyclerView$ICbg;
@@ -27,6 +25,8 @@
 .field mJd:J
 
 .field mRecyclerViewi:Landroid/support/v7/widget/RecyclerView;
+
+.field public final mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -107,7 +107,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-static {v0}, Landroid/support/v4/view/ViewCompat;->c(Landroid/view/View;)Z
 
@@ -246,7 +246,7 @@
     iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->mIb:I
 
     .line 7989
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -255,7 +255,7 @@
     if-eqz v0, :cond_3
 
     .line 7990
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -762,7 +762,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-static {v0}, Landroid/support/v4/view/ViewCompat;->c(Landroid/view/View;)Z
 
@@ -1009,7 +1009,7 @@
 
     .line 8204
     :cond_9
-    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 

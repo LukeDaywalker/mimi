@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaa$ICa;->cZ:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/location/ICaa$ICa;->mListcZ:Ljava/util/List;
 
     return-void
 .end method
@@ -48,11 +48,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaa$ICa;->cX:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICaa$ICa;->mStringcX:Ljava/lang/String;
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/baidu/location/ICaa$ICa;->c8:I
+    iput v0, p0, Lcom/baidu/location/ICaa$ICa;->mIc8:I
 
     iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->mStringdD:Ljava/lang/String;
 
@@ -68,7 +68,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->cZ:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->mListcZ:Ljava/util/List;
 
     new-instance v2, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -81,7 +81,7 @@
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :goto_0
-    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->cZ:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->mListcZ:Ljava/util/List;
 
     new-instance v2, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -94,7 +94,7 @@
     return-void
 
     :cond_0
-    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->cZ:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->mListcZ:Ljava/util/List;
 
     new-instance v2, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -114,7 +114,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     if-eqz v0, :cond_2
 
@@ -124,16 +124,16 @@
 
     iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->mICaadB:Lcom/baidu/location/ICaa;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICaa;->if(Lcom/baidu/location/ICaa;Lorg/apache/http/HttpEntity;)V
 
     :goto_0
-    iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->mListcZ:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->mListcZ:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -147,7 +147,7 @@
     :cond_1
     iget-object v0, p0, Lcom/baidu/location/ICaa$ICa;->mICaadB:Lcom/baidu/location/ICaa;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v1, p0, Lcom/baidu/location/ICaa$ICa;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICaa;->do(Lcom/baidu/location/ICaa;Lorg/apache/http/HttpEntity;)V
 

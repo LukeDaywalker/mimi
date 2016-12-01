@@ -229,7 +229,7 @@
     iput-boolean v1, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->isZc:Z
 
     .line 79
-    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-boolean v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->isZd:Z
 

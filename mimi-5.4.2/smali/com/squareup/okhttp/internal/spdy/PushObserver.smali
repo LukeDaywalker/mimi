@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/squareup/okhttp/internal/spdy/PushObserver;
+.field public static final mPushObservera:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/spdy/PushObserver$ICx;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/PushObserver;->a:Lcom/squareup/okhttp/internal/spdy/PushObserver;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/PushObserver;->mPushObservera:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 
     return-void
 .end method

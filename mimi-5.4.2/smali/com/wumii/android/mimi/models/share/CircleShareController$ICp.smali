@@ -32,7 +32,7 @@
     .line 39
     iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICp;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/CircleShareController;->a:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/CircleShareController;->mActivitya:Landroid/app/Activity;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

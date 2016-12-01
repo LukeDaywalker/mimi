@@ -15,19 +15,19 @@
 
 
 # static fields
-.field public static final enum a:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
-
-.field public static final enum b:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
-
-.field public static final enum c:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
-
-.field public static final enum d:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
-
-.field public static final enum e:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
-
-.field public static final enum f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
-
 .field private static final synthetic mArrayImageScaleTypeg:[Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+
+.field public static final enum mImageScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+
+.field public static final enum mImageScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+
+.field public static final enum mImageScaleTypec:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+
+.field public static final enum mImageScaleTyped:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+
+.field public static final enum mImageScaleTypee:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+
+.field public static final enum mImageScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 35
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
@@ -61,7 +61,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 43
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
@@ -70,7 +70,7 @@
 
     invoke-direct {v0, v1, v5}, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->c:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypec:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 50
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, v1, v6}, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->d:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTyped:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 63
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
@@ -88,7 +88,7 @@
 
     invoke-direct {v0, v1, v7}, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->e:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypee:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 77
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
@@ -99,36 +99,36 @@
 
     invoke-direct {v0, v1, v2}, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 24
     const/4 v0, 0x6
 
     new-array v0, v0, [Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->c:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypec:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->d:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTyped:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->e:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypee:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     aput-object v1, v0, v7
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     aput-object v2, v0, v1
 

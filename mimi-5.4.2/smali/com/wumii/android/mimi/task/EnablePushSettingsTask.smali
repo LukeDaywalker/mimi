@@ -95,7 +95,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/EnablePushSettingsTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/EnablePushSettingsTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 
@@ -182,7 +182,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 31
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/EnablePushSettingsTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/EnablePushSettingsTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "settings"
 

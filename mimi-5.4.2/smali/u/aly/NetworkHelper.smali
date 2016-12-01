@@ -687,14 +687,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v2, Lcom/umeng/analytics/AnalyticsConstants;->a:[Ljava/lang/String;
+    sget-object v2, Lcom/umeng/analytics/AnalyticsConstants;->mArrayStringa:[Ljava/lang/String;
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_0
 
     .line 86
-    sget-object v1, Lcom/umeng/analytics/AnalyticsConstants;->a:[Ljava/lang/String;
+    sget-object v1, Lcom/umeng/analytics/AnalyticsConstants;->mArrayStringa:[Ljava/lang/String;
 
     aget-object v1, v1, v0
 

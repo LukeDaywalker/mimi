@@ -21,7 +21,7 @@
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/tencent/b/a/Pro$ICh;->a:Lcom/tencent/b/a/Pro$ICh;
+    sget-object v2, Lcom/tencent/b/a/Pro$ICh;->mICha:Lcom/tencent/b/a/Pro$ICh;
 
     invoke-direct {p0, v0, v1, v2}, Lcom/tencent/b/a/Pro$ICi;-><init>(IZLcom/tencent/b/a/Pro$ICh;)V
 
@@ -47,7 +47,7 @@
     iput-boolean v0, p0, Lcom/tencent/b/a/Pro$ICi;->isZb:Z
 
     .line 21
-    sget-object v0, Lcom/tencent/b/a/Pro$ICh;->a:Lcom/tencent/b/a/Pro$ICh;
+    sget-object v0, Lcom/tencent/b/a/Pro$ICh;->mICha:Lcom/tencent/b/a/Pro$ICh;
 
     iput-object v0, p0, Lcom/tencent/b/a/Pro$ICi;->mIChc:Lcom/tencent/b/a/Pro$ICh;
 

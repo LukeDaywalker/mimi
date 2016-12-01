@@ -7,18 +7,6 @@
 
 
 # instance fields
-.field public hA:Ljava/lang/String;
-
-.field public hC:Ljava/lang/String;
-
-.field public hF:Ljava/lang/String;
-
-.field public hv:Ljava/lang/String;
-
-.field public hx:Ljava/lang/String;
-
-.field public hz:Ljava/lang/String;
-
 .field private isZhE:Z
 
 .field private isZhy:Z
@@ -28,6 +16,18 @@
 .field private mDhw:D
 
 .field private mFhB:F
+
+.field public mStringhA:Ljava/lang/String;
+
+.field public mStringhC:Ljava/lang/String;
+
+.field public mStringhF:Ljava/lang/String;
+
+.field public mStringhv:Ljava/lang/String;
+
+.field public mStringhx:Ljava/lang/String;
+
+.field public mStringhz:Ljava/lang/String;
 
 
 # direct methods
@@ -56,27 +56,27 @@
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICai;->hA:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICai;->mStringhA:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICai;->hx:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICai;->mStringhx:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICai;->hz:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICai;->mStringhz:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICai;->hF:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICai;->mStringhF:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICai;->hC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICai;->mStringhC:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICai;->hv:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICai;->mStringhv:Ljava/lang/String;
 
     return-void
 .end method
@@ -106,27 +106,27 @@
 
     const-string/jumbo v2, ""
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hA:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhA:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hx:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhx:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hz:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhz:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hF:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhF:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hC:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhC:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hv:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhv:Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/util/Xml;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
@@ -326,7 +326,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hx:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhx:Ljava/lang/String;
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_4
 
@@ -354,7 +354,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hz:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhz:Ljava/lang/String;
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_5
 
@@ -382,7 +382,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hF:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhF:Ljava/lang/String;
     :try_end_b
     .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_6
 
@@ -410,7 +410,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hv:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhv:Ljava/lang/String;
     :try_end_d
     .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_7
 
@@ -438,7 +438,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hA:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhA:Ljava/lang/String;
     :try_end_f
     .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_8
 
@@ -466,7 +466,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/baidu/location/ICai;->hC:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICai;->mStringhC:Ljava/lang/String;
     :try_end_11
     .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_9
 
@@ -593,19 +593,19 @@
 
     const/4 v3, 0x3
 
-    iget-object v4, p0, Lcom/baidu/location/ICai;->hx:Ljava/lang/String;
+    iget-object v4, p0, Lcom/baidu/location/ICai;->mStringhx:Ljava/lang/String;
 
     aput-object v4, v2, v3
 
     const/4 v3, 0x4
 
-    iget-object v4, p0, Lcom/baidu/location/ICai;->hA:Ljava/lang/String;
+    iget-object v4, p0, Lcom/baidu/location/ICai;->mStringhA:Ljava/lang/String;
 
     aput-object v4, v2, v3
 
     const/4 v3, 0x5
 
-    iget-object v4, p0, Lcom/baidu/location/ICai;->hC:Ljava/lang/String;
+    iget-object v4, p0, Lcom/baidu/location/ICai;->mStringhC:Ljava/lang/String;
 
     aput-object v4, v2, v3
 

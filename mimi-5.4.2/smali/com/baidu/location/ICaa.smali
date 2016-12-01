@@ -7,31 +7,31 @@
 
 
 # static fields
-.field public static gi:Z = false
+.field public static isZgi:Z = false
 
-.field public static gj:Z = false
+.field public static isZgj:Z = false
 
-.field public static gm:I = 0x0
+.field public static isZgn:Z = false
 
-.field public static gn:Z = false
+.field public static isZgo:Z = false
 
-.field public static go:Z = false
-
-.field public static gq:Z = false
-
-.field public static gu:Z = false
-
-.field public static gv:I = 0x0
-
-.field public static gw:Z = false
-
-.field public static gx:I = 0x0
+.field public static isZgq:Z = false
 
 .field static isZgs:Z = false
 
+.field public static isZgu:Z = false
+
+.field public static isZgw:Z = false
+
 .field private static mICaagr:Lcom/baidu/location/ICaa; = null
 
+.field public static mIgm:I = 0x0
+
 .field private static final mIgp:I = 0x80
+
+.field public static mIgv:I
+
+.field public static mIgx:I
 
 .field private static final mStringgk:Ljava/lang/String;
 
@@ -56,19 +56,19 @@
 
     sput-object v0, Lcom/baidu/location/ICaa;->mICaagr:Lcom/baidu/location/ICaa;
 
-    sput-boolean v1, Lcom/baidu/location/ICaa;->go:Z
+    sput-boolean v1, Lcom/baidu/location/ICaa;->isZgo:Z
 
-    sput-boolean v1, Lcom/baidu/location/ICaa;->gq:Z
+    sput-boolean v1, Lcom/baidu/location/ICaa;->isZgq:Z
 
-    sput-boolean v2, Lcom/baidu/location/ICaa;->gu:Z
+    sput-boolean v2, Lcom/baidu/location/ICaa;->isZgu:Z
 
-    sput-boolean v1, Lcom/baidu/location/ICaa;->gi:Z
+    sput-boolean v1, Lcom/baidu/location/ICaa;->isZgi:Z
 
-    sput-boolean v1, Lcom/baidu/location/ICaa;->gw:Z
+    sput-boolean v1, Lcom/baidu/location/ICaa;->isZgw:Z
 
-    sput-boolean v1, Lcom/baidu/location/ICaa;->gj:Z
+    sput-boolean v1, Lcom/baidu/location/ICaa;->isZgj:Z
 
-    sput-boolean v1, Lcom/baidu/location/ICaa;->gn:Z
+    sput-boolean v1, Lcom/baidu/location/ICaa;->isZgn:Z
 
     sput-boolean v2, Lcom/baidu/location/ICaa;->isZgs:Z
 
@@ -76,7 +76,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICaa;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICaa;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -94,11 +94,11 @@
 
     sput-object v0, Lcom/baidu/location/ICaa;->mStringgk:Ljava/lang/String;
 
-    sput v3, Lcom/baidu/location/ICaa;->gv:I
+    sput v3, Lcom/baidu/location/ICaa;->mIgv:I
 
-    sput v3, Lcom/baidu/location/ICaa;->gm:I
+    sput v3, Lcom/baidu/location/ICaa;->mIgm:I
 
-    sput v2, Lcom/baidu/location/ICaa;->gx:I
+    sput v2, Lcom/baidu/location/ICaa;->mIgx:I
 
     return-void
 .end method
@@ -136,7 +136,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/baidu/location/ICaa;->I:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICaa;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -152,14 +152,14 @@
 
     move-result-object v4
 
-    sget-boolean v0, Lcom/baidu/location/ICc;->aj:Z
+    sget-boolean v0, Lcom/baidu/location/ICc;->isZaj:Z
 
     if-eqz v0, :cond_4
 
     move v0, v1
 
     :goto_0
-    sget-boolean v3, Lcom/baidu/location/ICc;->ac:Z
+    sget-boolean v3, Lcom/baidu/location/ICc;->isZac:Z
 
     if-eqz v3, :cond_3
 
@@ -174,7 +174,7 @@
 
     new-array v7, v7, [Ljava/lang/Object;
 
-    sget v8, Lcom/baidu/location/ICc;->ap:I
+    sget v8, Lcom/baidu/location/ICc;->mIap:I
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -182,7 +182,7 @@
 
     aput-object v8, v7, v2
 
-    sget v2, Lcom/baidu/location/ICc;->bg:F
+    sget v2, Lcom/baidu/location/ICc;->mFbg:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -192,7 +192,7 @@
 
     const/4 v1, 0x2
 
-    sget v2, Lcom/baidu/location/ICc;->am:F
+    sget v2, Lcom/baidu/location/ICc;->mFam:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -202,7 +202,7 @@
 
     const/4 v1, 0x3
 
-    sget v2, Lcom/baidu/location/ICc;->aJ:F
+    sget v2, Lcom/baidu/location/ICc;->mFaJ:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -212,7 +212,7 @@
 
     const/4 v1, 0x4
 
-    sget v2, Lcom/baidu/location/ICc;->aY:F
+    sget v2, Lcom/baidu/location/ICc;->mFaY:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -222,7 +222,7 @@
 
     const/4 v1, 0x5
 
-    sget v2, Lcom/baidu/location/ICc;->ax:I
+    sget v2, Lcom/baidu/location/ICc;->mIax:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -232,7 +232,7 @@
 
     const/4 v1, 0x6
 
-    sget v2, Lcom/baidu/location/ICc;->aP:I
+    sget v2, Lcom/baidu/location/ICc;->mIaP:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -242,7 +242,7 @@
 
     const/4 v1, 0x7
 
-    sget v2, Lcom/baidu/location/ICc;->a1:I
+    sget v2, Lcom/baidu/location/ICc;->mIa1:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -252,7 +252,7 @@
 
     const/16 v1, 0x8
 
-    sget v2, Lcom/baidu/location/ICc;->ab:I
+    sget v2, Lcom/baidu/location/ICc;->mIab:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -262,7 +262,7 @@
 
     const/16 v1, 0x9
 
-    sget v2, Lcom/baidu/location/ICc;->Z:I
+    sget v2, Lcom/baidu/location/ICc;->mIZ:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -272,7 +272,7 @@
 
     const/16 v1, 0xa
 
-    sget v2, Lcom/baidu/location/ICc;->a7:I
+    sget v2, Lcom/baidu/location/ICc;->mIa7:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -282,7 +282,7 @@
 
     const/16 v1, 0xb
 
-    sget v2, Lcom/baidu/location/ICc;->ai:I
+    sget v2, Lcom/baidu/location/ICc;->mIai:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -292,7 +292,7 @@
 
     const/16 v1, 0xc
 
-    sget v2, Lcom/baidu/location/ICc;->aH:F
+    sget v2, Lcom/baidu/location/ICc;->mFaH:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -302,7 +302,7 @@
 
     const/16 v1, 0xd
 
-    sget v2, Lcom/baidu/location/ICc;->aG:F
+    sget v2, Lcom/baidu/location/ICc;->mFaG:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -312,7 +312,7 @@
 
     const/16 v1, 0xe
 
-    sget v2, Lcom/baidu/location/ICc;->bd:F
+    sget v2, Lcom/baidu/location/ICc;->mFbd:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -322,7 +322,7 @@
 
     const/16 v1, 0xf
 
-    sget v2, Lcom/baidu/location/ICc;->aW:F
+    sget v2, Lcom/baidu/location/ICc;->mFaW:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -332,7 +332,7 @@
 
     const/16 v1, 0x10
 
-    sget v2, Lcom/baidu/location/ICc;->a2:I
+    sget v2, Lcom/baidu/location/ICc;->mIa2:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -342,7 +342,7 @@
 
     const/16 v1, 0x11
 
-    sget v2, Lcom/baidu/location/ICc;->ad:F
+    sget v2, Lcom/baidu/location/ICc;->mFad:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -352,7 +352,7 @@
 
     const/16 v1, 0x12
 
-    sget v2, Lcom/baidu/location/ICc;->aX:I
+    sget v2, Lcom/baidu/location/ICc;->mIaX:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -362,7 +362,7 @@
 
     const/16 v1, 0x13
 
-    sget v2, Lcom/baidu/location/ICc;->X:F
+    sget v2, Lcom/baidu/location/ICc;->mFX:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -372,7 +372,7 @@
 
     const/16 v1, 0x14
 
-    sget v2, Lcom/baidu/location/ICc;->aB:F
+    sget v2, Lcom/baidu/location/ICc;->mFaB:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -382,7 +382,7 @@
 
     const/16 v1, 0x15
 
-    sget v2, Lcom/baidu/location/ICc;->aA:F
+    sget v2, Lcom/baidu/location/ICc;->mFaA:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -392,7 +392,7 @@
 
     const/16 v1, 0x16
 
-    sget v2, Lcom/baidu/location/ICc;->az:I
+    sget v2, Lcom/baidu/location/ICc;->mIaz:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -402,7 +402,7 @@
 
     const/16 v1, 0x17
 
-    sget v2, Lcom/baidu/location/ICc;->ay:I
+    sget v2, Lcom/baidu/location/ICc;->mIay:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -428,7 +428,7 @@
 
     const/16 v0, 0x1a
 
-    sget v1, Lcom/baidu/location/ICc;->aZ:I
+    sget v1, Lcom/baidu/location/ICc;->mIaZ:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -438,7 +438,7 @@
 
     const/16 v0, 0x1b
 
-    sget v1, Lcom/baidu/location/ICc;->aQ:I
+    sget v1, Lcom/baidu/location/ICc;->mIaQ:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -448,7 +448,7 @@
 
     const/16 v0, 0x1c
 
-    sget-wide v2, Lcom/baidu/location/ICc;->a6:J
+    sget-wide v2, Lcom/baidu/location/ICc;->mJa6:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -458,7 +458,7 @@
 
     const/16 v0, 0x1d
 
-    sget v1, Lcom/baidu/location/ICc;->ba:I
+    sget v1, Lcom/baidu/location/ICc;->mIba:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -468,7 +468,7 @@
 
     const/16 v0, 0x1e
 
-    sget v1, Lcom/baidu/location/ICc;->aD:F
+    sget v1, Lcom/baidu/location/ICc;->mFaD:F
 
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -478,7 +478,7 @@
 
     const/16 v0, 0x1f
 
-    sget v1, Lcom/baidu/location/ICc;->a0:F
+    sget v1, Lcom/baidu/location/ICc;->mFa0:F
 
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -488,7 +488,7 @@
 
     const/16 v0, 0x20
 
-    sget v1, Lcom/baidu/location/ICc;->aC:I
+    sget v1, Lcom/baidu/location/ICc;->mIaC:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -498,7 +498,7 @@
 
     const/16 v0, 0x21
 
-    sget v1, Lcom/baidu/location/ICc;->a9:I
+    sget v1, Lcom/baidu/location/ICc;->mIa9:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -508,7 +508,7 @@
 
     const/16 v0, 0x22
 
-    sget v1, Lcom/baidu/location/ICc;->ah:I
+    sget v1, Lcom/baidu/location/ICc;->mIah:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -518,7 +518,7 @@
 
     const/16 v0, 0x23
 
-    sget v1, Lcom/baidu/location/ICc;->aa:I
+    sget v1, Lcom/baidu/location/ICc;->mIaa:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -528,7 +528,7 @@
 
     const/16 v0, 0x24
 
-    sget v1, Lcom/baidu/location/ICc;->ae:I
+    sget v1, Lcom/baidu/location/ICc;->mIae:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -538,7 +538,7 @@
 
     const/16 v0, 0x25
 
-    sget v1, Lcom/baidu/location/ICc;->aM:F
+    sget v1, Lcom/baidu/location/ICc;->mFaM:F
 
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -548,7 +548,7 @@
 
     const/16 v0, 0x26
 
-    sget v1, Lcom/baidu/location/ICc;->ak:I
+    sget v1, Lcom/baidu/location/ICc;->mIak:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -577,7 +577,7 @@
 
     new-instance v2, Ljava/io/File;
 
-    sget-object v3, Lcom/baidu/location/ICaa;->I:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICaa;->mStringI:Ljava/lang/String;
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -683,7 +683,7 @@
 
     new-instance v1, Ljava/io/File;
 
-    sget-object v2, Lcom/baidu/location/ICaa;->I:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICaa;->mStringI:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -773,7 +773,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/baidu/location/ICc;->ap:I
+    sget v1, Lcom/baidu/location/ICc;->mIap:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -803,7 +803,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -815,7 +815,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/baidu/location/ICa2;->jh:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICa2;->mStringjh:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -841,7 +841,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICaa;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICaa;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -870,7 +870,7 @@
 
     new-instance v0, Ljava/io/File;
 
-    sget-object v2, Lcom/baidu/location/ICaa;->I:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICaa;->mStringI:Ljava/lang/String;
 
     invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -928,27 +928,27 @@
 
     invoke-virtual {v0, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    sget-wide v2, Lcom/baidu/location/ICc;->Y:D
+    sget-wide v2, Lcom/baidu/location/ICc;->mDY:D
 
     invoke-virtual {v0, v2, v3}, Ljava/io/RandomAccessFile;->writeDouble(D)V
 
-    sget-wide v2, Lcom/baidu/location/ICc;->au:D
+    sget-wide v2, Lcom/baidu/location/ICc;->mDau:D
 
     invoke-virtual {v0, v2, v3}, Ljava/io/RandomAccessFile;->writeDouble(D)V
 
-    sget-boolean v1, Lcom/baidu/location/ICc;->bb:Z
+    sget-boolean v1, Lcom/baidu/location/ICc;->isZbb:Z
 
     invoke-virtual {v0, v1}, Ljava/io/RandomAccessFile;->writeBoolean(Z)V
 
-    sget-boolean v1, Lcom/baidu/location/ICc;->bb:Z
+    sget-boolean v1, Lcom/baidu/location/ICc;->isZbb:Z
 
     if-eqz v1, :cond_2
 
-    sget-object v1, Lcom/baidu/location/ICc;->ar:[B
+    sget-object v1, Lcom/baidu/location/ICc;->mArrayBar:[B
 
     if-eqz v1, :cond_2
 
-    sget-object v1, Lcom/baidu/location/ICc;->ar:[B
+    sget-object v1, Lcom/baidu/location/ICc;->mArrayBar:[B
 
     invoke-virtual {v0, v1}, Ljava/io/RandomAccessFile;->write([B)V
 
@@ -1007,7 +1007,7 @@
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/location/ICaa;->gx:I
+    sput v0, Lcom/baidu/location/ICaa;->mIgx:I
 
     invoke-static {}, Lcom/baidu/location/ICaa;->be()V
 
@@ -1065,7 +1065,7 @@
 
     invoke-static {}, Lcom/baidu/location/ICa2;->cC()Lcom/baidu/location/ICa2;
 
-    sget-object v5, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sget-object v5, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1077,14 +1077,14 @@
 
     move-result v1
 
-    sput v1, Lcom/baidu/location/ICaa;->gv:I
+    sput v1, Lcom/baidu/location/ICaa;->mIgv:I
 
-    sput v0, Lcom/baidu/location/ICaa;->gx:I
+    sput v0, Lcom/baidu/location/ICaa;->mIgx:I
 
     :cond_2
     if-ne v0, v3, :cond_3
 
-    sput v3, Lcom/baidu/location/ICaa;->gx:I
+    sput v3, Lcom/baidu/location/ICaa;->mIgx:I
 
     :cond_3
     invoke-virtual {v2}, Ljava/io/RandomAccessFile;->close()V
@@ -1119,7 +1119,7 @@
 
     const/4 v0, 0x0
 
-    sput v1, Lcom/baidu/location/ICaa;->gm:I
+    sput v1, Lcom/baidu/location/ICaa;->mIgm:I
 
     if-eqz p1, :cond_1
 
@@ -1165,7 +1165,7 @@
 
     move-result v0
 
-    sput v0, Lcom/baidu/location/ICaa;->gm:I
+    sput v0, Lcom/baidu/location/ICaa;->mIgm:I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1174,13 +1174,13 @@
     :try_start_2
     invoke-static {}, Lcom/baidu/location/ICaa;->bk()V
 
-    sget v0, Lcom/baidu/location/ICaa;->gm:I
+    sget v0, Lcom/baidu/location/ICaa;->mIgm:I
 
     if-eq v0, v1, :cond_3
 
-    sget v0, Lcom/baidu/location/ICaa;->gm:I
+    sget v0, Lcom/baidu/location/ICaa;->mIgm:I
 
-    sget v2, Lcom/baidu/location/ICaa;->gm:I
+    sget v2, Lcom/baidu/location/ICaa;->mIgm:I
 
     invoke-static {v2}, Lcom/baidu/location/ICaa;->new(I)V
 
@@ -1210,11 +1210,11 @@
     return-void
 
     :cond_3
-    sget v0, Lcom/baidu/location/ICaa;->gv:I
+    sget v0, Lcom/baidu/location/ICaa;->mIgv:I
 
     if-eq v0, v1, :cond_4
 
-    sget v0, Lcom/baidu/location/ICaa;->gv:I
+    sget v0, Lcom/baidu/location/ICaa;->mIgv:I
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -1287,19 +1287,19 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/baidu/location/ICc;->bb:Z
+    sput-boolean v0, Lcom/baidu/location/ICc;->isZbb:Z
 
-    sget-wide v2, Lcom/baidu/location/ICc;->a3:D
+    sget-wide v2, Lcom/baidu/location/ICc;->mDa3:D
 
     add-double/2addr v2, v6
 
-    sput-wide v2, Lcom/baidu/location/ICc;->au:D
+    sput-wide v2, Lcom/baidu/location/ICc;->mDau:D
 
-    sget-wide v2, Lcom/baidu/location/ICc;->aO:D
+    sget-wide v2, Lcom/baidu/location/ICc;->mDaO:D
 
     sub-double/2addr v2, v6
 
-    sput-wide v2, Lcom/baidu/location/ICc;->Y:D
+    sput-wide v2, Lcom/baidu/location/ICc;->mDY:D
 
     move v0, v1
 
@@ -1308,7 +1308,7 @@
     :cond_2
     const/4 v3, 0x1
 
-    sput-boolean v3, Lcom/baidu/location/ICc;->bb:Z
+    sput-boolean v3, Lcom/baidu/location/ICc;->isZbb:Z
 
     const/4 v3, 0x7
 
@@ -1426,7 +1426,7 @@
 
     move-result-wide v4
 
-    sput-wide v4, Lcom/baidu/location/ICc;->Y:D
+    sput-wide v4, Lcom/baidu/location/ICc;->mDY:D
 
     const/16 v3, 0xf
 
@@ -1544,20 +1544,20 @@
 
     move-result-wide v4
 
-    sput-wide v4, Lcom/baidu/location/ICc;->au:D
+    sput-wide v4, Lcom/baidu/location/ICc;->mDau:D
 
     const/16 v3, 0x271
 
     new-array v3, v3, [B
 
-    sput-object v3, Lcom/baidu/location/ICc;->ar:[B
+    sput-object v3, Lcom/baidu/location/ICc;->mArrayBar:[B
 
     :goto_2
     const/16 v3, 0x271
 
     if-ge v0, v3, :cond_3
 
-    sget-object v3, Lcom/baidu/location/ICc;->ar:[B
+    sget-object v3, Lcom/baidu/location/ICc;->mArrayBar:[B
 
     add-int/lit8 v4, v0, 0x10
 
@@ -1619,7 +1619,7 @@
 
     move-result v2
 
-    sget v3, Lcom/baidu/location/ICaa;->gx:I
+    sget v3, Lcom/baidu/location/ICaa;->mIgx:I
 
     mul-int/2addr v0, v3
 
@@ -1633,7 +1633,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1665,7 +1665,7 @@
 
     invoke-virtual {v1, p0}, Ljava/io/RandomAccessFile;->writeInt(I)V
 
-    sget v0, Lcom/baidu/location/ICaa;->gx:I
+    sget v0, Lcom/baidu/location/ICaa;->mIgx:I
 
     if-ne v2, v0, :cond_1
 
@@ -1709,7 +1709,7 @@
     move v0, v1
 
     :goto_0
-    sput-boolean v0, Lcom/baidu/location/ICaa;->go:Z
+    sput-boolean v0, Lcom/baidu/location/ICaa;->isZgo:Z
 
     and-int/lit8 v0, p0, 0x2
 
@@ -1720,7 +1720,7 @@
     move v0, v1
 
     :goto_1
-    sput-boolean v0, Lcom/baidu/location/ICaa;->gq:Z
+    sput-boolean v0, Lcom/baidu/location/ICaa;->isZgq:Z
 
     and-int/lit8 v0, p0, 0x4
 
@@ -1731,7 +1731,7 @@
     move v0, v1
 
     :goto_2
-    sput-boolean v0, Lcom/baidu/location/ICaa;->gu:Z
+    sput-boolean v0, Lcom/baidu/location/ICaa;->isZgu:Z
 
     and-int/lit8 v0, p0, 0x8
 
@@ -1742,7 +1742,7 @@
     move v0, v1
 
     :goto_3
-    sput-boolean v0, Lcom/baidu/location/ICaa;->gi:Z
+    sput-boolean v0, Lcom/baidu/location/ICaa;->isZgi:Z
 
     and-int v0, p0, v4
 
@@ -1751,14 +1751,14 @@
     move v0, v1
 
     :goto_4
-    sput-boolean v0, Lcom/baidu/location/ICaa;->gj:Z
+    sput-boolean v0, Lcom/baidu/location/ICaa;->isZgj:Z
 
     and-int v0, p0, v5
 
     if-ne v0, v5, :cond_6
 
     :goto_5
-    sput-boolean v1, Lcom/baidu/location/ICaa;->gn:Z
+    sput-boolean v1, Lcom/baidu/location/ICaa;->isZgn:Z
 
     and-int/lit8 v0, p0, 0x10
 
@@ -1766,7 +1766,7 @@
 
     if-ne v0, v1, :cond_0
 
-    sput-boolean v2, Lcom/baidu/location/ICaa;->gw:Z
+    sput-boolean v2, Lcom/baidu/location/ICaa;->isZgw:Z
 
     :cond_0
     return-void
@@ -1811,7 +1811,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICaa;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICaa;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1889,21 +1889,21 @@
 
     move-result-wide v2
 
-    sput-wide v2, Lcom/baidu/location/ICc;->Y:D
+    sput-wide v2, Lcom/baidu/location/ICc;->mDY:D
 
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->readDouble()D
 
     move-result-wide v2
 
-    sput-wide v2, Lcom/baidu/location/ICc;->au:D
+    sput-wide v2, Lcom/baidu/location/ICc;->mDau:D
 
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->readBoolean()Z
 
     move-result v1
 
-    sput-boolean v1, Lcom/baidu/location/ICc;->bb:Z
+    sput-boolean v1, Lcom/baidu/location/ICc;->isZbb:Z
 
-    sget-boolean v1, Lcom/baidu/location/ICc;->bb:Z
+    sget-boolean v1, Lcom/baidu/location/ICc;->isZbb:Z
 
     if-eqz v1, :cond_1
 
@@ -1911,9 +1911,9 @@
 
     new-array v1, v1, [B
 
-    sput-object v1, Lcom/baidu/location/ICc;->ar:[B
+    sput-object v1, Lcom/baidu/location/ICc;->mArrayBar:[B
 
-    sget-object v1, Lcom/baidu/location/ICc;->ar:[B
+    sget-object v1, Lcom/baidu/location/ICc;->mArrayBar:[B
 
     const/4 v2, 0x0
 
@@ -2021,11 +2021,11 @@
 
     move-result v3
 
-    sget v4, Lcom/baidu/location/ICc;->ap:I
+    sget v4, Lcom/baidu/location/ICc;->mIap:I
 
     if-le v3, v4, :cond_29
 
-    sput v3, Lcom/baidu/location/ICc;->ap:I
+    sput v3, Lcom/baidu/location/ICc;->mIap:I
 
     const-string/jumbo v3, "gps"
 
@@ -2079,7 +2079,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->bg:F
+    sput v4, Lcom/baidu/location/ICc;->mFbg:F
 
     :cond_0
     const/4 v4, 0x1
@@ -2108,7 +2108,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->am:F
+    sput v4, Lcom/baidu/location/ICc;->mFam:F
 
     :cond_1
     const/4 v4, 0x2
@@ -2137,7 +2137,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aJ:F
+    sput v4, Lcom/baidu/location/ICc;->mFaJ:F
 
     :cond_2
     const/4 v4, 0x3
@@ -2166,7 +2166,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aY:F
+    sput v4, Lcom/baidu/location/ICc;->mFaY:F
 
     :cond_3
     const/4 v4, 0x4
@@ -2195,7 +2195,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->ax:I
+    sput v4, Lcom/baidu/location/ICc;->mIax:I
 
     :cond_4
     const/4 v4, 0x5
@@ -2224,7 +2224,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aP:I
+    sput v4, Lcom/baidu/location/ICc;->mIaP:I
 
     :cond_5
     const/4 v4, 0x6
@@ -2253,7 +2253,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->a1:I
+    sput v4, Lcom/baidu/location/ICc;->mIa1:I
 
     :cond_6
     const/4 v4, 0x7
@@ -2282,7 +2282,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->ab:I
+    sput v4, Lcom/baidu/location/ICc;->mIab:I
 
     :cond_7
     const/16 v4, 0x8
@@ -2311,7 +2311,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->Z:I
+    sput v4, Lcom/baidu/location/ICc;->mIZ:I
 
     :cond_8
     const/16 v4, 0x9
@@ -2340,7 +2340,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->a7:I
+    sput v4, Lcom/baidu/location/ICc;->mIa7:I
 
     :cond_9
     const/16 v4, 0xa
@@ -2369,7 +2369,7 @@
 
     move-result v3
 
-    sput v3, Lcom/baidu/location/ICc;->ai:I
+    sput v3, Lcom/baidu/location/ICc;->mIai:I
 
     :cond_a
     const-string/jumbo v3, "up"
@@ -2422,7 +2422,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aH:F
+    sput v4, Lcom/baidu/location/ICc;->mFaH:F
 
     :cond_b
     const/4 v4, 0x1
@@ -2451,7 +2451,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aG:F
+    sput v4, Lcom/baidu/location/ICc;->mFaG:F
 
     :cond_c
     const/4 v4, 0x2
@@ -2480,7 +2480,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->bd:F
+    sput v4, Lcom/baidu/location/ICc;->mFbd:F
 
     :cond_d
     const/4 v4, 0x3
@@ -2509,7 +2509,7 @@
 
     move-result v3
 
-    sput v3, Lcom/baidu/location/ICc;->aW:F
+    sput v3, Lcom/baidu/location/ICc;->mFaW:F
 
     :cond_e
     const-string/jumbo v3, "wf"
@@ -2562,7 +2562,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->a2:I
+    sput v4, Lcom/baidu/location/ICc;->mIa2:I
 
     :cond_f
     const/4 v4, 0x1
@@ -2591,7 +2591,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->ad:F
+    sput v4, Lcom/baidu/location/ICc;->mFad:F
 
     :cond_10
     const/4 v4, 0x2
@@ -2620,7 +2620,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aX:I
+    sput v4, Lcom/baidu/location/ICc;->mIaX:I
 
     :cond_11
     const/4 v4, 0x3
@@ -2649,7 +2649,7 @@
 
     move-result v3
 
-    sput v3, Lcom/baidu/location/ICc;->X:F
+    sput v3, Lcom/baidu/location/ICc;->mFX:F
 
     :cond_12
     const-string/jumbo v3, "ab"
@@ -2702,7 +2702,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aB:F
+    sput v4, Lcom/baidu/location/ICc;->mFaB:F
 
     :cond_13
     const/4 v4, 0x1
@@ -2731,7 +2731,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aA:F
+    sput v4, Lcom/baidu/location/ICc;->mFaA:F
 
     :cond_14
     const/4 v4, 0x2
@@ -2760,7 +2760,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->az:I
+    sput v4, Lcom/baidu/location/ICc;->mIaz:I
 
     :cond_15
     const/4 v4, 0x3
@@ -2789,7 +2789,7 @@
 
     move-result v3
 
-    sput v3, Lcom/baidu/location/ICc;->ay:I
+    sput v3, Lcom/baidu/location/ICc;->mIay:I
 
     :cond_16
     const-string/jumbo v3, "zxd"
@@ -2842,7 +2842,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aD:F
+    sput v4, Lcom/baidu/location/ICc;->mFaD:F
 
     :cond_17
     const/4 v4, 0x1
@@ -2871,7 +2871,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->a0:F
+    sput v4, Lcom/baidu/location/ICc;->mFa0:F
 
     :cond_18
     const/4 v4, 0x2
@@ -2900,7 +2900,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aC:I
+    sput v4, Lcom/baidu/location/ICc;->mIaC:I
 
     :cond_19
     const/4 v4, 0x3
@@ -2929,7 +2929,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->a9:I
+    sput v4, Lcom/baidu/location/ICc;->mIa9:I
 
     :cond_1a
     const/4 v4, 0x4
@@ -2958,7 +2958,7 @@
 
     move-result v3
 
-    sput v3, Lcom/baidu/location/ICc;->ah:I
+    sput v3, Lcom/baidu/location/ICc;->mIah:I
 
     :cond_1b
     const-string/jumbo v3, "gpc"
@@ -3017,7 +3017,7 @@
 
     const/4 v4, 0x1
 
-    sput-boolean v4, Lcom/baidu/location/ICc;->aj:Z
+    sput-boolean v4, Lcom/baidu/location/ICc;->isZaj:Z
 
     :cond_1c
     :goto_0
@@ -3051,7 +3051,7 @@
 
     const/4 v4, 0x1
 
-    sput-boolean v4, Lcom/baidu/location/ICc;->ac:Z
+    sput-boolean v4, Lcom/baidu/location/ICc;->isZac:Z
 
     :cond_1d
     :goto_1
@@ -3081,7 +3081,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aZ:I
+    sput v4, Lcom/baidu/location/ICc;->mIaZ:I
 
     :cond_1e
     const/4 v4, 0x3
@@ -3110,7 +3110,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aQ:I
+    sput v4, Lcom/baidu/location/ICc;->mIaQ:I
 
     :cond_1f
     const/4 v4, 0x4
@@ -3143,9 +3143,9 @@
 
     int-to-long v4, v4
 
-    sput-wide v4, Lcom/baidu/location/ICc;->a6:J
+    sput-wide v4, Lcom/baidu/location/ICc;->mJa6:J
 
-    sget-wide v4, Lcom/baidu/location/ICc;->a6:J
+    sget-wide v4, Lcom/baidu/location/ICc;->mJa6:J
 
     const-wide/16 v6, 0x3e8
 
@@ -3155,13 +3155,13 @@
 
     mul-long/2addr v4, v6
 
-    sput-wide v4, Lcom/baidu/location/ICc;->aR:J
+    sput-wide v4, Lcom/baidu/location/ICc;->mJaR:J
 
-    sget-wide v4, Lcom/baidu/location/ICc;->aR:J
+    sget-wide v4, Lcom/baidu/location/ICc;->mJaR:J
 
     shr-long/2addr v4, v8
 
-    sput-wide v4, Lcom/baidu/location/ICc;->bf:J
+    sput-wide v4, Lcom/baidu/location/ICc;->mJbf:J
 
     :cond_20
     :goto_2
@@ -3191,7 +3191,7 @@
 
     move-result v3
 
-    sput v3, Lcom/baidu/location/ICc;->ba:I
+    sput v3, Lcom/baidu/location/ICc;->mIba:I
 
     :cond_21
     const-string/jumbo v3, "shak"
@@ -3244,7 +3244,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->aa:I
+    sput v4, Lcom/baidu/location/ICc;->mIaa:I
 
     :cond_22
     const/4 v4, 0x1
@@ -3273,7 +3273,7 @@
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICc;->ae:I
+    sput v4, Lcom/baidu/location/ICc;->mIae:I
 
     :cond_23
     const/4 v4, 0x2
@@ -3302,7 +3302,7 @@
 
     move-result v3
 
-    sput v3, Lcom/baidu/location/ICc;->aM:F
+    sput v3, Lcom/baidu/location/ICc;->mFaM:F
 
     :cond_24
     const-string/jumbo v3, "dmx"
@@ -3319,7 +3319,7 @@
 
     move-result v2
 
-    sput v2, Lcom/baidu/location/ICc;->ak:I
+    sput v2, Lcom/baidu/location/ICc;->mIak:I
 
     :cond_25
     :goto_3
@@ -3331,7 +3331,7 @@
     :cond_26
     const/4 v4, 0x0
 
-    sput-boolean v4, Lcom/baidu/location/ICc;->aj:Z
+    sput-boolean v4, Lcom/baidu/location/ICc;->isZaj:Z
 
     goto/16 :goto_0
 
@@ -3343,14 +3343,14 @@
     :cond_27
     const/4 v4, 0x0
 
-    sput-boolean v4, Lcom/baidu/location/ICc;->ac:Z
+    sput-boolean v4, Lcom/baidu/location/ICc;->isZac:Z
 
     goto/16 :goto_1
 
     :cond_28
     const/4 v4, 0x0
 
-    sput-boolean v4, Lcom/baidu/location/ICc;->aK:Z
+    sput-boolean v4, Lcom/baidu/location/ICc;->isZaK:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

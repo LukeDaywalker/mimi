@@ -89,17 +89,17 @@
 
     if-ne v3, v11, :cond_4
 
-    sget v1, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v1, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
-    sget v3, Lcom/baidu/platform/comapi/map/C;->b:I
+    sget v3, Lcom/baidu/platform/comapi/map/C;->mIb:I
 
     mul-int/2addr v1, v3
 
     new-array v1, v1, [I
 
-    sget v3, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v3, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
-    sget v5, Lcom/baidu/platform/comapi/map/C;->b:I
+    sget v5, Lcom/baidu/platform/comapi/map/C;->mIb:I
 
     mul-int/2addr v3, v5
 
@@ -123,9 +123,9 @@
 
     iget-object v3, v3, Lcom/baidu/platform/comapi/map/ICc;->mICaf:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    sget v6, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v6, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
-    sget v7, Lcom/baidu/platform/comapi/map/C;->b:I
+    sget v7, Lcom/baidu/platform/comapi/map/C;->mIb:I
 
     invoke-virtual {v3, v1, v6, v7}, Lcom/baidu/platform/comjni/map/basemap/ICa;->a([III)[I
 
@@ -134,18 +134,18 @@
     move v1, v2
 
     :goto_1
-    sget v3, Lcom/baidu/platform/comapi/map/C;->b:I
+    sget v3, Lcom/baidu/platform/comapi/map/C;->mIb:I
 
     if-ge v1, v3, :cond_3
 
     move v3, v2
 
     :goto_2
-    sget v7, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v7, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
     if-ge v3, v7, :cond_2
 
-    sget v7, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v7, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
     mul-int/2addr v7, v1
 
@@ -171,13 +171,13 @@
 
     or-int/2addr v7, v8
 
-    sget v8, Lcom/baidu/platform/comapi/map/C;->b:I
+    sget v8, Lcom/baidu/platform/comapi/map/C;->mIb:I
 
     sub-int/2addr v8, v1
 
     add-int/lit8 v8, v8, -0x1
 
-    sget v9, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v9, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
     mul-int/2addr v8, v9
 
@@ -195,9 +195,9 @@
     goto :goto_1
 
     :cond_3
-    sget v1, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v1, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
-    sget v3, Lcom/baidu/platform/comapi/map/C;->b:I
+    sget v3, Lcom/baidu/platform/comapi/map/C;->mIb:I
 
     sget-object v6, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -251,11 +251,11 @@
 
     if-nez v0, :cond_a
 
-    sget v0, Lcom/baidu/platform/comapi/map/C;->b:I
+    sget v0, Lcom/baidu/platform/comapi/map/C;->mIb:I
 
     if-lez v0, :cond_a
 
-    sget v0, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v0, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
     if-lez v0, :cond_a
 

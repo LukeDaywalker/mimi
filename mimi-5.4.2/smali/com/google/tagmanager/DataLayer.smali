@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/Object;
-
 .field static final mArrayStringb:[Ljava/lang/String;
+
+.field public static final mObjecta:Ljava/lang/Object;
 
 .field private static final mPatternc:Ljava/util/regex/Pattern;
 
@@ -67,7 +67,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/google/tagmanager/DataLayer;->a:Ljava/lang/Object;
+    sput-object v0, Lcom/google/tagmanager/DataLayer;->mObjecta:Ljava/lang/Object;
 
     .line 168
     const-string/jumbo v0, "gtm.lifetime"
@@ -1242,7 +1242,7 @@
 
     .line 614
     :cond_5
-    sget-object v1, Lcom/google/tagmanager/DataLayer;->a:Ljava/lang/Object;
+    sget-object v1, Lcom/google/tagmanager/DataLayer;->mObjecta:Ljava/lang/Object;
 
     if-eq v0, v1, :cond_2
 

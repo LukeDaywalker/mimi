@@ -85,7 +85,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 101
-    sget-object v1, Lu/aly/PropertyValue$ICdl;->a:Lu/aly/PropertyValue$ICdl;
+    sget-object v1, Lu/aly/PropertyValue$ICdl;->mICdla:Lu/aly/PropertyValue$ICdl;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -100,7 +100,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 103
-    sget-object v1, Lu/aly/PropertyValue$ICdl;->b:Lu/aly/PropertyValue$ICdl;
+    sget-object v1, Lu/aly/PropertyValue$ICdl;->mICdlb:Lu/aly/PropertyValue$ICdl;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -152,7 +152,7 @@
     const/4 v0, 0x0
 
     .line 157
-    iget-short v1, p2, Lu/aly/TField;->c:S
+    iget-short v1, p2, Lu/aly/TField;->mSc:S
 
     invoke-static {v1}, Lu/aly/PropertyValue$ICdl;->a(I)Lu/aly/PropertyValue$ICdl;
 
@@ -183,11 +183,11 @@
 
     .line 161
     :pswitch_0
-    iget-byte v1, p2, Lu/aly/TField;->b:B
+    iget-byte v1, p2, Lu/aly/TField;->mBb:B
 
     sget-object v2, Lu/aly/PropertyValue;->e:Lu/aly/TField;
 
-    iget-byte v2, v2, Lu/aly/TField;->b:B
+    iget-byte v2, v2, Lu/aly/TField;->mBb:B
 
     if-ne v1, v2, :cond_1
 
@@ -203,7 +203,7 @@
 
     .line 166
     :cond_1
-    iget-byte v1, p2, Lu/aly/TField;->b:B
+    iget-byte v1, p2, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v1}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -211,11 +211,11 @@
 
     .line 170
     :pswitch_1
-    iget-byte v1, p2, Lu/aly/TField;->b:B
+    iget-byte v1, p2, Lu/aly/TField;->mBb:B
 
     sget-object v2, Lu/aly/PropertyValue;->f:Lu/aly/TField;
 
-    iget-byte v2, v2, Lu/aly/TField;->b:B
+    iget-byte v2, v2, Lu/aly/TField;->mBb:B
 
     if-ne v1, v2, :cond_2
 
@@ -232,7 +232,7 @@
 
     .line 175
     :cond_2
-    iget-byte v1, p2, Lu/aly/TField;->b:B
+    iget-byte v1, p2, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v1}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -440,7 +440,7 @@
 
     .prologue
     .line 289
-    sget-object v0, Lu/aly/PropertyValue$ICdl;->b:Lu/aly/PropertyValue$ICdl;
+    sget-object v0, Lu/aly/PropertyValue$ICdl;->mICdlb:Lu/aly/PropertyValue$ICdl;
 
     iput-object v0, p0, Lu/aly/PropertyValue;->c:Lu/aly/TFieldIdEnum;
 
@@ -470,7 +470,7 @@
 
     .line 276
     :cond_0
-    sget-object v0, Lu/aly/PropertyValue$ICdl;->a:Lu/aly/PropertyValue$ICdl;
+    sget-object v0, Lu/aly/PropertyValue$ICdl;->mICdla:Lu/aly/PropertyValue$ICdl;
 
     iput-object v0, p0, Lu/aly/PropertyValue;->c:Lu/aly/TFieldIdEnum;
 

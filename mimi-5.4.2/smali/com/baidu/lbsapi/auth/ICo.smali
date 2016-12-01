@@ -70,7 +70,7 @@
 .method public a()V
     .locals 1
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -174,7 +174,7 @@
 
     iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mHandlera:Landroid/os/Handler;
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -185,7 +185,7 @@
     :cond_0
     invoke-static {}, Landroid/os/Looper;->loop()V
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_1
 

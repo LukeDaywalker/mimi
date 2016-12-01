@@ -7,8 +7,6 @@
 
 
 # instance fields
-.field protected a:Landroid/view/View;
-
 .field private isZf:Z
 
 .field private mFe:F
@@ -24,6 +22,8 @@
 .field private mIi:I
 
 .field private mOnScrollListenerb:Landroid/widget/AbsListView$OnScrollListener;
+
+.field protected mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -243,7 +243,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -270,7 +270,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -279,7 +279,7 @@
     invoke-virtual {p1, v3, v3, v1, v2}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
     .line 159
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     invoke-virtual {v1, p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
@@ -360,7 +360,7 @@
 
     .line 77
     :cond_1
-    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     .line 78
     iput v5, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mFe:F
@@ -422,10 +422,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     .line 93
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     invoke-direct {p0, v0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a(Landroid/view/View;)V
 
@@ -467,7 +467,7 @@
     int-to-float v3, v3
 
     .line 102
-    iget-object v4, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iget-object v4, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -507,7 +507,7 @@
 
     .line 92
     :cond_5
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     goto :goto_1
 
@@ -571,7 +571,7 @@
     .line 65
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
+    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mViewa:Landroid/view/View;
 
     move-object v0, p1
 

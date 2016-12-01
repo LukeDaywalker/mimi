@@ -64,9 +64,9 @@
     invoke-virtual {v3, v1, v0}, Landroid/os/Bundle;->putByteArray(Ljava/lang/String;[B)V
 
     .line 529
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICk;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICk;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ICk;->d:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ICk;->mContextd:Landroid/content/Context;
 
     const-string/jumbo v2, "user/set_user_face"
 

@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;
+.field protected final mCallbacka:Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -34,7 +34,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompatApi18$OnPlaybackPositionUpdateListener;->a:Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompatApi18$OnPlaybackPositionUpdateListener;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/media/session/MediaSessionCompatApi14$Callback;->a(J)V
 

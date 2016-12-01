@@ -168,7 +168,7 @@
 
     .line 175
     :try_start_3
-    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->a:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->mLoggera:Ljava/util/logging/Logger;
 
     sget-object v2, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 

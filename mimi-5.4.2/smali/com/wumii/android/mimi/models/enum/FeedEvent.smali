@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
-
-.field public static final enum b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
-
-.field public static final enum c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
-
 .field private static final synthetic mArrayFeedEventd:[Lcom/wumii/android/mimi/models/enum/FeedEvent;
+
+.field public static final enum mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+
+.field public static final enum mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+
+.field public static final enum mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/enum/FeedEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     .line 5
     new-instance v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/wumii/android/mimi/models/enum/FeedEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     .line 6
     new-instance v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;
@@ -60,22 +60,22 @@
 
     invoke-direct {v0, v1, v4}, Lcom/wumii/android/mimi/models/enum/FeedEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     .line 3
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     aput-object v1, v0, v4
 

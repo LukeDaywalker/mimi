@@ -10,11 +10,11 @@
 
     if-eqz p0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, ""
 
@@ -35,17 +35,17 @@
 
     invoke-direct {v0}, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;-><init>()V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringa:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringa:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringb:Ljava/lang/String;
 
     new-instance v1, Lcom/baidu/mapapi/model/LatLng;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v2, v2, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -53,7 +53,7 @@
 
     div-double/2addr v2, v6
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -65,19 +65,19 @@
 
     iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringe:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringe:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringf:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringf:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringd:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringd:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringh:Ljava/lang/String;
 
     invoke-static {v1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
@@ -233,7 +233,7 @@
 
     iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringb:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     new-instance v1, Lcom/baidu/mapapi/model/inner/Point;
 
@@ -255,23 +255,23 @@
 
     invoke-direct {v1, v2, v3}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
 
-    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringd:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->d:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringd:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringe:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->e:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringe:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringf:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->f:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringf:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->i:Z
+    iput-boolean v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->isZi:Z
 
     goto :goto_0
 .end method

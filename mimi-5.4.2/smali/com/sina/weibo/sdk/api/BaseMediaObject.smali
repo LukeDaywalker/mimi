@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mArrayBf:[B
 
-.field public b:Ljava/lang/String;
+.field public mStringa:Ljava/lang/String;
 
-.field public c:Ljava/lang/String;
+.field public mStringb:Ljava/lang/String;
 
-.field public d:Ljava/lang/String;
+.field public mStringc:Ljava/lang/String;
 
-.field public e:Ljava/lang/String;
+.field public mStringd:Ljava/lang/String;
 
-.field public f:[B
+.field public mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -44,42 +44,42 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringa:Ljava/lang/String;
 
     .line 78
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringb:Ljava/lang/String;
 
     .line 79
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringc:Ljava/lang/String;
 
     .line 80
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringd:Ljava/lang/String;
 
     .line 81
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringe:Ljava/lang/String;
 
     .line 82
     invoke-virtual {p1}, Landroid/os/Parcel;->createByteArray()[B
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->f:[B
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mArrayBf:[B
 
     .line 83
     return-void
@@ -96,11 +96,11 @@
     const/4 v1, 0x0
 
     .line 149
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -124,11 +124,11 @@
 
     .line 153
     :cond_1
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringc:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -151,11 +151,11 @@
 
     .line 157
     :cond_3
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->f:[B
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mArrayBf:[B
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->f:[B
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mArrayBf:[B
 
     array-length v0, v0
 
@@ -174,11 +174,11 @@
     invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 159
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->f:[B
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mArrayBf:[B
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->f:[B
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mArrayBf:[B
 
     array-length v0, v0
 
@@ -213,11 +213,11 @@
 
     .line 162
     :cond_6
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringd:Ljava/lang/String;
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -240,11 +240,11 @@
 
     .line 166
     :cond_8
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringe:Ljava/lang/String;
 
     if-eqz v0, :cond_9
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -292,32 +292,32 @@
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 125
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringb:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 126
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringc:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 127
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringd:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 128
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mStringe:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 129
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->f:[B
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/BaseMediaObject;->mArrayBf:[B
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeByteArray([B)V
 

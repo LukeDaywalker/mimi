@@ -26,7 +26,7 @@
     if-nez v0, :cond_1
 
     .line 16
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "mobileChat is not an instance of MobileGroupChat"
 

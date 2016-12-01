@@ -12,8 +12,6 @@
 
 
 # instance fields
-.field protected a:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
-
 .field private volatile isZe:Z
 
 .field private isZf:Z
@@ -31,6 +29,8 @@
 .field private mIq:I
 
 .field private mMqttExceptionk:Lorg/eclipse/paho/client/mqttv3/MqttException;
+
+.field protected mMqttMessagea:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
 .field private mMqttWireMessagej:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;
 
@@ -134,7 +134,7 @@
     iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/Token;->mObjecti:Ljava/lang/Object;
 
     .line 41
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/Token;->a:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/Token;->mMqttMessagea:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     .line 42
     iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/Token;->mMqttWireMessagej:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;
@@ -315,7 +315,7 @@
     .line 181
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/Token;->a:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/Token;->mMqttMessagea:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     .line 183
     :cond_0
@@ -779,7 +779,7 @@
 
     .prologue
     .line 304
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/Token;->a:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/Token;->mMqttMessagea:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     return-object v0
 .end method

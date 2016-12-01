@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/SDKType;
-
-.field public static final enum b:Lu/aly/SDKType;
-
-.field public static final enum c:Lu/aly/SDKType;
-
-.field public static final enum d:Lu/aly/SDKType;
-
 .field private static final synthetic mArraySDKTypef:[Lu/aly/SDKType;
+
+.field public static final enum mSDKTypea:Lu/aly/SDKType;
+
+.field public static final enum mSDKTypeb:Lu/aly/SDKType;
+
+.field public static final enum mSDKTypec:Lu/aly/SDKType;
+
+.field public static final enum mSDKTyped:Lu/aly/SDKType;
 
 
 # instance fields
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lu/aly/SDKType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/SDKType;->a:Lu/aly/SDKType;
+    sput-object v0, Lu/aly/SDKType;->mSDKTypea:Lu/aly/SDKType;
 
     .line 17
     new-instance v0, Lu/aly/SDKType;
@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1, v3, v3}, Lu/aly/SDKType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/SDKType;->b:Lu/aly/SDKType;
+    sput-object v0, Lu/aly/SDKType;->mSDKTypeb:Lu/aly/SDKType;
 
     .line 18
     new-instance v0, Lu/aly/SDKType;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v4, v4}, Lu/aly/SDKType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/SDKType;->c:Lu/aly/SDKType;
+    sput-object v0, Lu/aly/SDKType;->mSDKTypec:Lu/aly/SDKType;
 
     .line 19
     new-instance v0, Lu/aly/SDKType;
@@ -77,26 +77,26 @@
 
     invoke-direct {v0, v1, v5, v5}, Lu/aly/SDKType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/SDKType;->d:Lu/aly/SDKType;
+    sput-object v0, Lu/aly/SDKType;->mSDKTyped:Lu/aly/SDKType;
 
     .line 15
     const/4 v0, 0x4
 
     new-array v0, v0, [Lu/aly/SDKType;
 
-    sget-object v1, Lu/aly/SDKType;->a:Lu/aly/SDKType;
+    sget-object v1, Lu/aly/SDKType;->mSDKTypea:Lu/aly/SDKType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lu/aly/SDKType;->b:Lu/aly/SDKType;
+    sget-object v1, Lu/aly/SDKType;->mSDKTypeb:Lu/aly/SDKType;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/SDKType;->c:Lu/aly/SDKType;
+    sget-object v1, Lu/aly/SDKType;->mSDKTypec:Lu/aly/SDKType;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/SDKType;->d:Lu/aly/SDKType;
+    sget-object v1, Lu/aly/SDKType;->mSDKTyped:Lu/aly/SDKType;
 
     aput-object v1, v0, v5
 
@@ -139,25 +139,25 @@
 
     .line 41
     :pswitch_0
-    sget-object v0, Lu/aly/SDKType;->a:Lu/aly/SDKType;
+    sget-object v0, Lu/aly/SDKType;->mSDKTypea:Lu/aly/SDKType;
 
     goto :goto_0
 
     .line 43
     :pswitch_1
-    sget-object v0, Lu/aly/SDKType;->b:Lu/aly/SDKType;
+    sget-object v0, Lu/aly/SDKType;->mSDKTypeb:Lu/aly/SDKType;
 
     goto :goto_0
 
     .line 45
     :pswitch_2
-    sget-object v0, Lu/aly/SDKType;->c:Lu/aly/SDKType;
+    sget-object v0, Lu/aly/SDKType;->mSDKTypec:Lu/aly/SDKType;
 
     goto :goto_0
 
     .line 47
     :pswitch_3
-    sget-object v0, Lu/aly/SDKType;->d:Lu/aly/SDKType;
+    sget-object v0, Lu/aly/SDKType;->mSDKTyped:Lu/aly/SDKType;
 
     goto :goto_0
 

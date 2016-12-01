@@ -126,7 +126,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->mImageViewa:Landroid/widget/ImageView;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaaa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;)V
 
@@ -146,7 +146,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->mChatInfoItemSummaryViewb:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaab:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;)V
 
@@ -163,7 +163,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->mChatInfoItemSummaryViewc:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaac:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;)V
 
@@ -180,7 +180,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->mChatInfoItemSummaryViewd:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaad:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;)V
 

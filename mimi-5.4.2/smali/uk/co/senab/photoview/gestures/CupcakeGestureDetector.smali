@@ -7,8 +7,6 @@
 
 
 # instance fields
-.field protected a:Luk/co/senab/photoview/gestures/OnGestureListener;
-
 .field private isZg:Z
 
 .field mFb:F
@@ -18,6 +16,8 @@
 .field final mFd:F
 
 .field final mFe:F
+
+.field protected mOnGestureListenera:Luk/co/senab/photoview/gestures/OnGestureListener;
 
 .field private mVelocityTrackerf:Landroid/view/VelocityTracker;
 
@@ -76,7 +76,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->a:Luk/co/senab/photoview/gestures/OnGestureListener;
+    iput-object p1, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mOnGestureListenera:Luk/co/senab/photoview/gestures/OnGestureListener;
 
     .line 37
     return-void
@@ -228,7 +228,7 @@
     if-eqz v0, :cond_0
 
     .line 90
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->a:Luk/co/senab/photoview/gestures/OnGestureListener;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mOnGestureListenera:Luk/co/senab/photoview/gestures/OnGestureListener;
 
     invoke-interface {v0, v4, v5}, Luk/co/senab/photoview/gestures/OnGestureListener;->a(FF)V
 
@@ -336,7 +336,7 @@
     if-ltz v3, :cond_4
 
     .line 126
-    iget-object v3, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->a:Luk/co/senab/photoview/gestures/OnGestureListener;
+    iget-object v3, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mOnGestureListenera:Luk/co/senab/photoview/gestures/OnGestureListener;
 
     iget v4, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFb:F
 

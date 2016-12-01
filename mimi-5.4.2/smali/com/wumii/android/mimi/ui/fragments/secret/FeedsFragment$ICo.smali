@@ -36,7 +36,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x0
 
@@ -55,7 +55,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-wide/16 v2, 0x0
 

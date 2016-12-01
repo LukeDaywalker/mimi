@@ -3,17 +3,17 @@
 
 
 # instance fields
-.field public final a:D
+.field public final mDa:D
 
-.field public final b:D
+.field public final mDb:D
 
-.field public final c:D
+.field public final mDc:D
 
-.field public final d:D
+.field public final mDd:D
 
-.field public final e:D
+.field public final mDe:D
 
-.field public final f:D
+.field public final mDf:D
 
 
 # direct methods
@@ -24,25 +24,25 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide p1, p0, Lcom/baidu/mapapi/map/ICe;->a:D
+    iput-wide p1, p0, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
-    iput-wide p5, p0, Lcom/baidu/mapapi/map/ICe;->b:D
+    iput-wide p5, p0, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
-    iput-wide p3, p0, Lcom/baidu/mapapi/map/ICe;->c:D
+    iput-wide p3, p0, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
-    iput-wide p7, p0, Lcom/baidu/mapapi/map/ICe;->d:D
+    iput-wide p7, p0, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     add-double v0, p1, p3
 
     div-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->e:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDe:D
 
     add-double v0, p5, p7
 
     div-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->f:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDf:D
 
     return-void
 .end method
@@ -52,25 +52,25 @@
 .method public a(DD)Z
     .locals 3
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
     cmpg-double v0, v0, p1
 
     if-gtz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
     cmpg-double v0, p1, v0
 
     if-gtz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
     cmpg-double v0, v0, p3
 
     if-gtz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     cmpg-double v0, p3, v0
 
@@ -90,25 +90,25 @@
 .method public a(DDDD)Z
     .locals 3
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
     cmpg-double v0, p1, v0
 
     if-gez v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
     cmpg-double v0, v0, p3
 
     if-gez v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     cmpg-double v0, p5, v0
 
     if-gez v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
     cmpg-double v0, v0, p7
 
@@ -146,13 +146,13 @@
 .method public a(Lcom/baidu/mapapi/map/ICe;)Z
     .locals 10
 
-    iget-wide v2, p1, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v2, p1, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
-    iget-wide v4, p1, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v4, p1, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
-    iget-wide v6, p1, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v6, p1, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
-    iget-wide v8, p1, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v8, p1, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     move-object v1, p0
 
@@ -166,33 +166,33 @@
 .method public b(Lcom/baidu/mapapi/map/ICe;)Z
     .locals 4
 
-    iget-wide v0, p1, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v0, p1, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
     cmpl-double v0, v0, v2
 
     if-ltz v0, :cond_0
 
-    iget-wide v0, p1, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v0, p1, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
     cmpg-double v0, v0, v2
 
     if-gtz v0, :cond_0
 
-    iget-wide v0, p1, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v0, p1, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
     cmpl-double v0, v0, v2
 
     if-ltz v0, :cond_0
 
-    iget-wide v0, p1, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v0, p1, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     cmpg-double v0, v0, v2
 
@@ -226,7 +226,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -248,7 +248,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -270,7 +270,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -292,7 +292,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -314,7 +314,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->e:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDe:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -336,7 +336,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->f:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/ICe;->mDf:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 

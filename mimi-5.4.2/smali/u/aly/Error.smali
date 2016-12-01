@@ -164,7 +164,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 128
-    sget-object v1, Lu/aly/Error$ICao;->a:Lu/aly/Error$ICao;
+    sget-object v1, Lu/aly/Error$ICao;->mICaoa:Lu/aly/Error$ICao;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -179,7 +179,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 130
-    sget-object v1, Lu/aly/Error$ICao;->b:Lu/aly/Error$ICao;
+    sget-object v1, Lu/aly/Error$ICao;->mICaob:Lu/aly/Error$ICao;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -194,7 +194,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 132
-    sget-object v1, Lu/aly/Error$ICao;->c:Lu/aly/Error$ICao;
+    sget-object v1, Lu/aly/Error$ICao;->mICaoc:Lu/aly/Error$ICao;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -247,7 +247,7 @@
 
     new-array v0, v0, [Lu/aly/Error$ICao;
 
-    sget-object v1, Lu/aly/Error$ICao;->c:Lu/aly/Error$ICao;
+    sget-object v1, Lu/aly/Error$ICao;->mICaoc:Lu/aly/Error$ICao;
 
     aput-object v1, v0, v2
 

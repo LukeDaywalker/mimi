@@ -127,7 +127,7 @@
     const-wide/16 v6, 0x0
 
     .line 172
-    iget-object v0, p1, Lcom/tencent/tauth/Pro$ICc;->b:Ljava/lang/String;
+    iget-object v0, p1, Lcom/tencent/tauth/Pro$ICc;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -135,7 +135,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p1, Lcom/tencent/tauth/Pro$ICc;->b:Ljava/lang/String;
+    iget-object v1, p1, Lcom/tencent/tauth/Pro$ICc;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -191,7 +191,7 @@
 
     move-result-wide v4
 
-    iget v10, p1, Lcom/tencent/tauth/Pro$ICc;->a:I
+    iget v10, p1, Lcom/tencent/tauth/Pro$ICc;->mIa:I
 
     iget-object v11, p0, Lcom/tencent/connect/b/Pro$ICo;->mStringb:Ljava/lang/String;
 

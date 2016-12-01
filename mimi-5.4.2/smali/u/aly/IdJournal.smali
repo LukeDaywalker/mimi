@@ -177,7 +177,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 125
-    sget-object v1, Lu/aly/IdJournal$ICbe;->a:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbea:Lu/aly/IdJournal$ICbe;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -192,7 +192,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 127
-    sget-object v1, Lu/aly/IdJournal$ICbe;->b:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbeb:Lu/aly/IdJournal$ICbe;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -207,7 +207,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 129
-    sget-object v1, Lu/aly/IdJournal$ICbe;->c:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbec:Lu/aly/IdJournal$ICbe;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -222,7 +222,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 131
-    sget-object v1, Lu/aly/IdJournal$ICbe;->d:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbed:Lu/aly/IdJournal$ICbe;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -271,7 +271,7 @@
 
     new-array v0, v0, [Lu/aly/IdJournal$ICbe;
 
-    sget-object v1, Lu/aly/IdJournal$ICbe;->b:Lu/aly/IdJournal$ICbe;
+    sget-object v1, Lu/aly/IdJournal$ICbe;->mICbeb:Lu/aly/IdJournal$ICbe;
 
     aput-object v1, v0, v2
 

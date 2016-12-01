@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:B
+.field public final mBa:B
 
-.field public final b:I
+.field public final mIb:I
 
 
 # direct methods
@@ -31,10 +31,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-byte p1, p0, Lu/aly/TList;->a:B
+    iput-byte p1, p0, Lu/aly/TList;->mBa:B
 
     .line 33
-    iput p2, p0, Lu/aly/TList;->b:I
+    iput p2, p0, Lu/aly/TList;->mIb:I
 
     .line 34
     return-void

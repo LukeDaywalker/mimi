@@ -71,27 +71,27 @@
     throw v0
 
     :cond_0
-    iget v0, v1, Lcom/tencent/wxop/stat/b/ICj;->b:I
+    iget v0, v1, Lcom/tencent/wxop/stat/b/ICj;->mIb:I
 
-    iget-object v2, v1, Lcom/tencent/wxop/stat/b/ICj;->a:[B
+    iget-object v2, v1, Lcom/tencent/wxop/stat/b/ICj;->mArrayBa:[B
 
     array-length v2, v2
 
     if-ne v0, v2, :cond_1
 
-    iget-object v0, v1, Lcom/tencent/wxop/stat/b/ICj;->a:[B
+    iget-object v0, v1, Lcom/tencent/wxop/stat/b/ICj;->mArrayBa:[B
 
     :goto_0
     return-object v0
 
     :cond_1
-    iget v0, v1, Lcom/tencent/wxop/stat/b/ICj;->b:I
+    iget v0, v1, Lcom/tencent/wxop/stat/b/ICj;->mIb:I
 
     new-array v0, v0, [B
 
-    iget-object v2, v1, Lcom/tencent/wxop/stat/b/ICj;->a:[B
+    iget-object v2, v1, Lcom/tencent/wxop/stat/b/ICj;->mArrayBa:[B
 
-    iget v1, v1, Lcom/tencent/wxop/stat/b/ICj;->b:I
+    iget v1, v1, Lcom/tencent/wxop/stat/b/ICj;->mIb:I
 
     invoke-static {v2, v3, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -111,7 +111,7 @@
 
     mul-int/lit8 v0, v0, 0x4
 
-    iget-boolean v1, v3, Lcom/tencent/wxop/stat/b/ICk;->d:Z
+    iget-boolean v1, v3, Lcom/tencent/wxop/stat/b/ICk;->isZd:Z
 
     if-eqz v1, :cond_2
 
@@ -124,7 +124,7 @@
     :cond_0
     :goto_0
     :pswitch_0
-    iget-boolean v1, v3, Lcom/tencent/wxop/stat/b/ICk;->e:Z
+    iget-boolean v1, v3, Lcom/tencent/wxop/stat/b/ICk;->isZe:Z
 
     if-eqz v1, :cond_1
 
@@ -136,7 +136,7 @@
 
     add-int/lit8 v4, v1, 0x1
 
-    iget-boolean v1, v3, Lcom/tencent/wxop/stat/b/ICk;->f:Z
+    iget-boolean v1, v3, Lcom/tencent/wxop/stat/b/ICk;->isZf:Z
 
     if-eqz v1, :cond_3
 
@@ -150,7 +150,7 @@
     :cond_1
     new-array v1, v0, [B
 
-    iput-object v1, v3, Lcom/tencent/wxop/stat/b/ICk;->a:[B
+    iput-object v1, v3, Lcom/tencent/wxop/stat/b/ICk;->mArrayBa:[B
 
     invoke-virtual {v3, p0, v2}, Lcom/tencent/wxop/stat/b/ICk;->a([BI)Z
 
@@ -158,7 +158,7 @@
 
     if-nez v1, :cond_4
 
-    iget v1, v3, Lcom/tencent/wxop/stat/b/ICk;->b:I
+    iget v1, v3, Lcom/tencent/wxop/stat/b/ICk;->mIb:I
 
     if-eq v1, v0, :cond_4
 
@@ -191,7 +191,7 @@
     goto :goto_1
 
     :cond_4
-    iget-object v0, v3, Lcom/tencent/wxop/stat/b/ICk;->a:[B
+    iget-object v0, v3, Lcom/tencent/wxop/stat/b/ICk;->mArrayBa:[B
 
     return-object v0
 

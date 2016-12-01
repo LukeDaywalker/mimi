@@ -190,7 +190,7 @@
     .line 979
     iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mPromptSettingsDatad:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
-    iget-boolean v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->d:Z
+    iget-boolean v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->isZd:Z
 
     if-eqz v1, :cond_0
 
@@ -212,7 +212,7 @@
     :cond_0
     iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mPromptSettingsDatad:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
-    iget-boolean v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->f:Z
+    iget-boolean v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->isZf:Z
 
     if-eqz v1, :cond_1
 

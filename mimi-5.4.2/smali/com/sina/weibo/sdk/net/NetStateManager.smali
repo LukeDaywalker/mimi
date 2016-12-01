@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static a:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
-
 .field private static mContextb:Landroid/content/Context;
+
+.field public static mICfa:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 40
-    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->a:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mICfa:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->a:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->mICfa:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     return-void
 .end method

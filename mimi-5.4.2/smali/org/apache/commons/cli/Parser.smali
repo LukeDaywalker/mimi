@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected a:Lorg/apache/commons/cli/CommandLine;
+.field protected mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
 .field private mListc:Ljava/util/List;
 
@@ -72,7 +72,7 @@
 
     invoke-direct {v0}, Lorg/apache/commons/cli/CommandLine;-><init>()V
 
-    iput-object v0, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iput-object v0, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     .line 156
     if-nez p2, :cond_1
@@ -156,7 +156,7 @@
     if-nez v4, :cond_4
 
     .line 224
-    iget-object v4, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iget-object v4, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     invoke-virtual {v4, v0}, Lorg/apache/commons/cli/CommandLine;->b(Ljava/lang/String;)V
 
@@ -182,7 +182,7 @@
 
     .line 185
     :cond_6
-    iget-object v4, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iget-object v4, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     invoke-virtual {v4, v0}, Lorg/apache/commons/cli/CommandLine;->b(Ljava/lang/String;)V
 
@@ -212,7 +212,7 @@
     if-nez v4, :cond_8
 
     .line 195
-    iget-object v1, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iget-object v1, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     invoke-virtual {v1, v0}, Lorg/apache/commons/cli/CommandLine;->b(Ljava/lang/String;)V
 
@@ -228,7 +228,7 @@
 
     .line 206
     :cond_9
-    iget-object v4, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iget-object v4, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     invoke-virtual {v4, v0}, Lorg/apache/commons/cli/CommandLine;->b(Ljava/lang/String;)V
 
@@ -248,7 +248,7 @@
     invoke-virtual {p0}, Lorg/apache/commons/cli/Parser;->c()V
 
     .line 233
-    iget-object v0, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iget-object v0, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     return-object v0
 .end method
@@ -404,7 +404,7 @@
 
     .line 397
     :cond_4
-    iget-object v1, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iget-object v1, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     invoke-virtual {v1, v0}, Lorg/apache/commons/cli/CommandLine;->a(Lorg/apache/commons/cli/Option;)V
 
@@ -448,7 +448,7 @@
     move-result-object v1
 
     .line 252
-    iget-object v2, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iget-object v2, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     invoke-virtual {v2, v1}, Lorg/apache/commons/cli/CommandLine;->a(Ljava/lang/String;)Z
 
@@ -502,7 +502,7 @@
     .line 282
     :cond_4
     :goto_2
-    iget-object v1, p0, Lorg/apache/commons/cli/Parser;->a:Lorg/apache/commons/cli/CommandLine;
+    iget-object v1, p0, Lorg/apache/commons/cli/Parser;->mCommandLinea:Lorg/apache/commons/cli/CommandLine;
 
     invoke-virtual {v1, v2}, Lorg/apache/commons/cli/CommandLine;->a(Lorg/apache/commons/cli/Option;)V
 

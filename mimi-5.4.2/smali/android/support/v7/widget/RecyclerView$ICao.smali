@@ -47,7 +47,7 @@
     .line 9166
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICao;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-static {v0, v1}, Landroid/support/v7/widget/RecyclerView;->c(Landroid/support/v7/widget/RecyclerView;Landroid/view/View;)Z
 
@@ -64,7 +64,7 @@
     .line 9167
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICao;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -94,7 +94,7 @@
     .line 9175
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICao;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-static {v0, v1}, Landroid/support/v7/widget/RecyclerView;->c(Landroid/support/v7/widget/RecyclerView;Landroid/view/View;)Z
 
@@ -122,7 +122,7 @@
     .line 9183
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICao;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-static {v0, v1}, Landroid/support/v7/widget/RecyclerView;->c(Landroid/support/v7/widget/RecyclerView;Landroid/view/View;)Z
 
@@ -177,7 +177,7 @@
     .line 9225
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICao;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-static {v0, v1}, Landroid/support/v7/widget/RecyclerView;->c(Landroid/support/v7/widget/RecyclerView;Landroid/view/View;)Z
 

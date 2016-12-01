@@ -127,13 +127,13 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewi:Landroid/view/View;
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mIb:I
 
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 

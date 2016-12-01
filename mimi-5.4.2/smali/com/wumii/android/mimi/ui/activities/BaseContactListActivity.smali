@@ -10,23 +10,23 @@
 # instance fields
 .field private isZE:Z
 
+.field protected mBaseContactListAdaptert:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
+
+.field protected mBaseContactSectionedAdapters:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
+
 .field private mContactSectionMapD:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
 .field private mFileHelpero:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
 .field private mICalF:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
+.field protected mListViewr:Landroid/widget/ListView;
+
 .field private mPinnedHeaderListViewq:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
 .field private mQuickSelectionBarp:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
 .field private mReadContactsTaskC:Lcom/wumii/android/mimi/task/ReadContactsTask;
-
-.field protected r:Landroid/widget/ListView;
-
-.field protected s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
-
-.field protected t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
 
 # direct methods
@@ -260,19 +260,19 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->r:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mListViewr:Landroid/widget/ListView;
 
     .line 192
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->j()Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactListAdaptert:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
     .line 193
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->r:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mListViewr:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactListAdaptert:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -309,7 +309,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->c:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrc:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
 
@@ -334,9 +334,9 @@
     .line 275
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -429,7 +429,7 @@
     if-eqz v0, :cond_0
 
     .line 205
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactSectionedAdapters:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 
     if-nez v0, :cond_1
 
@@ -440,7 +440,7 @@
 
     .line 209
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->r:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mListViewr:Landroid/widget/ListView;
 
     if-nez v0, :cond_2
 
@@ -449,16 +449,16 @@
 
     .line 212
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->r:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mListViewr:Landroid/widget/ListView;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 213
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactListAdaptert:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactSectionedAdapters:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->a()Ljava/util/List;
 
@@ -601,20 +601,20 @@
     .line 169
     new-instance v0, Lcom/wumii/android/mimi/task/ReadContactsTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mFileHelpero:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-direct {v0, p0, v1, v2, v3}, Lcom/wumii/android/mimi/task/ReadContactsTask;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/models/helper/FileHelper;Lcom/wumii/android/mimi/util/ContextToast;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mReadContactsTaskC:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
     .line 171
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICe;
 

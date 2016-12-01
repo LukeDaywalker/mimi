@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mIb:I
 
-.field public final b:I
+.field public final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 808
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICj;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICj;->mStringa:Ljava/lang/String;
 
     .line 809
-    iput p2, p0, Lcom/tencent/c/Pro$ICj;->b:I
+    iput p2, p0, Lcom/tencent/c/Pro$ICj;->mIb:I
 
     .line 810
     return-void

@@ -65,7 +65,7 @@
     .line 131
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->f:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->mContextf:Landroid/content/Context;
 
     const v2, 0x7f0603c4
 
@@ -84,7 +84,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->f:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->mContextf:Landroid/content/Context;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->getErrMsg()Ljava/lang/String;
 
@@ -99,7 +99,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->c()Ljava/lang/String;
 
@@ -128,7 +128,7 @@
     .line 140
     iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->E()Lcom/wumii/android/mimi/models/storage/SurveyStorage;
 

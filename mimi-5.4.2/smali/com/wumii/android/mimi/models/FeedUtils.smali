@@ -431,11 +431,11 @@
 
     .prologue
     .line 217
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq p0, v0, :cond_0
 
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne p0, v0, :cond_1
 
@@ -452,11 +452,11 @@
 
     .line 221
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq p0, v0, :cond_2
 
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne p0, v0, :cond_3
 

@@ -56,7 +56,7 @@
     .line 26
     if-nez p1, :cond_0
 
-    sget-object p1, Lcom/hp/hpl/sparta/BuildDocument;->a:Lcom/hp/hpl/sparta/ParseLog;
+    sget-object p1, Lcom/hp/hpl/sparta/BuildDocument;->mParseLoga:Lcom/hp/hpl/sparta/ParseLog;
 
     :cond_0
     iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mParseLogc:Lcom/hp/hpl/sparta/ParseLog;

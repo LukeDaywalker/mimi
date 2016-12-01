@@ -39,7 +39,7 @@
     .line 126
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter$ICb;->mChatAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->b:Landroid/content/Context;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mContextb:Landroid/content/Context;
 
     check-cast v1, Landroid/app/Activity;
 

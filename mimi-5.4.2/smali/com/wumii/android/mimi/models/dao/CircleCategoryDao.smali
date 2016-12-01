@@ -70,7 +70,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     .line 99
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -166,7 +166,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->b:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v2, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
 
@@ -183,7 +183,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     .line 108
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -239,7 +239,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->a:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v2, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
 
@@ -256,7 +256,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     .line 117
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -282,7 +282,7 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "org_category"
 
@@ -324,7 +324,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->a:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
 
@@ -351,7 +351,7 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "org_category"
 
@@ -393,7 +393,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->b:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
 
@@ -462,7 +462,7 @@
     move-result-object v0
 
     .line 73
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/models/entities/circle/CircleDao;->getCircleById(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -501,7 +501,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->e(Ljava/lang/String;)V
 
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -529,7 +529,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->a:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-direct {p0, p1, v2, v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/database/Cursor;
 
@@ -543,7 +543,7 @@
     if-nez v3, :cond_0
 
     .line 41
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v4, "org_category"
 
@@ -553,7 +553,7 @@
 
     move-result-object v0
 
-    sget-object v6, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->a:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v6, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-direct {p0, p1, v0, v6}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/content/ContentValues;
 
@@ -573,7 +573,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -582,14 +582,14 @@
     .line 45
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -642,7 +642,7 @@
     move-result-object v0
 
     .line 85
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/models/entities/circle/CircleDao;->getCircleById(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -681,7 +681,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->f(Ljava/lang/String;)V
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -709,7 +709,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->b:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-direct {p0, v2, p1, v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/database/Cursor;
 
@@ -723,7 +723,7 @@
     if-nez v3, :cond_0
 
     .line 58
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v4, "org_category"
 
@@ -733,7 +733,7 @@
 
     move-result-object v0
 
-    sget-object v6, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->b:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v6, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-direct {p0, v0, p1, v6}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/content/ContentValues;
 
@@ -753,7 +753,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -762,14 +762,14 @@
     .line 62
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 

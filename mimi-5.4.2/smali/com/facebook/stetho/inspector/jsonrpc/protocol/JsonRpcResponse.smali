@@ -13,19 +13,19 @@
 
 
 # instance fields
-.field public a:J
+.field public mJSONObjectb:Lorg/json/JSONObject;
+    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
+    .end annotation
+.end field
+
+.field public mJSONObjectc:Lorg/json/JSONObject;
+    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
+    .end annotation
+.end field
+
+.field public mJa:J
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
-    .end annotation
-.end field
-
-.field public b:Lorg/json/JSONObject;
-    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
-    .end annotation
-.end field
-
-.field public c:Lorg/json/JSONObject;
-    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
     .end annotation
 .end field
 

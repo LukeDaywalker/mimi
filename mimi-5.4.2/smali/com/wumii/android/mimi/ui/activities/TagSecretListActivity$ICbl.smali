@@ -41,7 +41,7 @@
     move-result-object v0
 
     .line 119
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v0, v1, :cond_0
 
@@ -58,7 +58,7 @@
 
     .line 123
     :cond_0
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v0, v1, :cond_1
 
@@ -181,7 +181,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne v0, v1, :cond_0
 
@@ -247,7 +247,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne v0, v1, :cond_0
 
@@ -335,7 +335,7 @@
     .line 105
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbl;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/network/Result;->getErrMsg()Ljava/lang/String;
 
@@ -351,7 +351,7 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbl;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06038d
 

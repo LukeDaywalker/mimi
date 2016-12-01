@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 18
-    sget-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->b:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatb:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     iput-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
@@ -99,7 +99,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v1}, Lcom/google/analytics/tracking/android/Logger$ICat;->ordinal()I
 
@@ -132,7 +132,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->b:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatb:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v1}, Lcom/google/analytics/tracking/android/Logger$ICat;->ordinal()I
 
@@ -165,7 +165,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->c:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatc:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v1}, Lcom/google/analytics/tracking/android/Logger$ICat;->ordinal()I
 
@@ -198,7 +198,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->d:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatd:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v1}, Lcom/google/analytics/tracking/android/Logger$ICat;->ordinal()I
 

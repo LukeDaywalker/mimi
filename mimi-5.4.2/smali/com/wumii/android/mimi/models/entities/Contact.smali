@@ -51,7 +51,7 @@
     .line 22
     sget-object v0, Lcom/wumii/android/mimi/models/entities/Contact;->OUTPUT_FORMAT:Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;
 
-    sget-object v1, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+    sget-object v1, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->mHanyuPinyinToneTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     invoke-virtual {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->a(Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;)V
 

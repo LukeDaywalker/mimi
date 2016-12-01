@@ -32,7 +32,7 @@
     .line 36
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder$ICai;->mGroupChatMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->d:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->mContextd:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 

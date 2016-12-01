@@ -19,15 +19,15 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/UserInfo$ICfd;
-
-.field public static final enum b:Lu/aly/UserInfo$ICfd;
-
-.field public static final enum c:Lu/aly/UserInfo$ICfd;
-
-.field public static final enum d:Lu/aly/UserInfo$ICfd;
-
 .field private static final synthetic mArrayICfdh:[Lu/aly/UserInfo$ICfd;
+
+.field public static final enum mICfda:Lu/aly/UserInfo$ICfd;
+
+.field public static final enum mICfdb:Lu/aly/UserInfo$ICfd;
+
+.field public static final enum mICfdc:Lu/aly/UserInfo$ICfd;
+
+.field public static final enum mICfdd:Lu/aly/UserInfo$ICfd;
 
 .field private static final mMape:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -72,7 +72,7 @@
 
     invoke-direct {v0, v1, v6, v3, v2}, Lu/aly/UserInfo$ICfd;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UserInfo$ICfd;->a:Lu/aly/UserInfo$ICfd;
+    sput-object v0, Lu/aly/UserInfo$ICfd;->mICfda:Lu/aly/UserInfo$ICfd;
 
     .line 62
     new-instance v0, Lu/aly/UserInfo$ICfd;
@@ -83,7 +83,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/UserInfo$ICfd;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UserInfo$ICfd;->b:Lu/aly/UserInfo$ICfd;
+    sput-object v0, Lu/aly/UserInfo$ICfd;->mICfdb:Lu/aly/UserInfo$ICfd;
 
     .line 63
     new-instance v0, Lu/aly/UserInfo$ICfd;
@@ -94,7 +94,7 @@
 
     invoke-direct {v0, v1, v4, v5, v2}, Lu/aly/UserInfo$ICfd;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UserInfo$ICfd;->c:Lu/aly/UserInfo$ICfd;
+    sput-object v0, Lu/aly/UserInfo$ICfd;->mICfdc:Lu/aly/UserInfo$ICfd;
 
     .line 64
     new-instance v0, Lu/aly/UserInfo$ICfd;
@@ -105,24 +105,24 @@
 
     invoke-direct {v0, v1, v5, v7, v2}, Lu/aly/UserInfo$ICfd;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UserInfo$ICfd;->d:Lu/aly/UserInfo$ICfd;
+    sput-object v0, Lu/aly/UserInfo$ICfd;->mICfdd:Lu/aly/UserInfo$ICfd;
 
     .line 56
     new-array v0, v7, [Lu/aly/UserInfo$ICfd;
 
-    sget-object v1, Lu/aly/UserInfo$ICfd;->a:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfda:Lu/aly/UserInfo$ICfd;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lu/aly/UserInfo$ICfd;->b:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdb:Lu/aly/UserInfo$ICfd;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/UserInfo$ICfd;->c:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdc:Lu/aly/UserInfo$ICfd;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/UserInfo$ICfd;->d:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdd:Lu/aly/UserInfo$ICfd;
 
     aput-object v1, v0, v5
 

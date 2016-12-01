@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
+.field public static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     move-result-object v0
 
     .line 38
-    sput-object v0, Lu/aly/Helper;->a:Ljava/lang/String;
+    sput-object v0, Lu/aly/Helper;->mStringa:Ljava/lang/String;
 
     .line 40
     return-void

@@ -7,19 +7,19 @@
 
 
 # static fields
-.field private static final i:Ljava/lang/String; = "GeofenceMan"
-
-.field public static final iB:I = 0xa
-
 .field private static mICaxiH:Lcom/baidu/location/ICax; = null
 
 .field private static final mIiA:I = 0x3
+
+.field public static final mIiB:I = 0xa
 
 .field private static final mIiJ:I = 0x5
 
 .field private static final mIiK:I = 0x2
 
 .field private static final mIiL:I = 0x1
+
+.field private static final mStringi:Ljava/lang/String; = "GeofenceMan"
 
 .field private static final mStringiC:Ljava/lang/String; = "http://loc.map.baidu.com/fence"
 

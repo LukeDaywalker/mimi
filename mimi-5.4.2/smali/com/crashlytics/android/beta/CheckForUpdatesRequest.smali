@@ -13,7 +13,7 @@
 
     .prologue
     .line 29
-    sget-object v5, Lio/fabric/sdk/android/services/network/HttpMethod;->a:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v5, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethoda:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     move-object v0, p0
 
@@ -59,7 +59,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v3, p0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v3}, Lio/fabric/sdk/android/Kit;->a()Ljava/lang/String;
 
@@ -95,7 +95,7 @@
 
     const-string/jumbo v1, "X-CRASHLYTICS-API-CLIENT-VERSION"
 
-    iget-object v2, p0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v2, p0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v2}, Lio/fabric/sdk/android/Kit;->a()Ljava/lang/String;
 
@@ -144,21 +144,21 @@
     .line 81
     const-string/jumbo v1, "build_version"
 
-    iget-object v2, p1, Lcom/crashlytics/android/beta/BuildProperties;->a:Ljava/lang/String;
+    iget-object v2, p1, Lcom/crashlytics/android/beta/BuildProperties;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 82
     const-string/jumbo v1, "display_version"
 
-    iget-object v2, p1, Lcom/crashlytics/android/beta/BuildProperties;->b:Ljava/lang/String;
+    iget-object v2, p1, Lcom/crashlytics/android/beta/BuildProperties;->mStringb:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 83
     const-string/jumbo v1, "instance"
 
-    iget-object v2, p1, Lcom/crashlytics/android/beta/BuildProperties;->c:Ljava/lang/String;
+    iget-object v2, p1, Lcom/crashlytics/android/beta/BuildProperties;->mStringc:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

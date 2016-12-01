@@ -7,25 +7,25 @@
 
 
 # static fields
-.field protected static final a:Ljava/lang/CharSequence;
+.field protected static final mCharSequencea:Ljava/lang/CharSequence;
 
 
 # instance fields
-.field protected b:Lcom/viewpagerindicator/IcsLinearLayout;
+.field protected mICff:Lcom/viewpagerindicator/TabPageIndicator$ICf;
 
-.field protected c:Landroid/support/v4/view/ViewPager;
+.field protected mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
-.field protected d:I
+.field protected mId:I
 
-.field protected e:I
-
-.field protected f:Lcom/viewpagerindicator/TabPageIndicator$ICf;
+.field protected mIe:I
 
 .field private final mOnClickListenerh:Landroid/view/View$OnClickListener;
 
 .field private mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
 .field private mRunnableg:Ljava/lang/Runnable;
+
+.field protected mViewPagerc:Landroid/support/v4/view/ViewPager;
 
 
 # direct methods
@@ -36,7 +36,7 @@
     .line 41
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/viewpagerindicator/TabPageIndicator;->a:Ljava/lang/CharSequence;
+    sput-object v0, Lcom/viewpagerindicator/TabPageIndicator;->mCharSequencea:Ljava/lang/CharSequence;
 
     return-void
 .end method
@@ -80,10 +80,10 @@
 
     invoke-direct {v0, p1, v1}, Lcom/viewpagerindicator/IcsLinearLayout;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->b:Lcom/viewpagerindicator/IcsLinearLayout;
+    iput-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
     .line 89
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->b:Lcom/viewpagerindicator/IcsLinearLayout;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
     new-instance v1, Landroid/view/ViewGroup$LayoutParams;
 
@@ -148,7 +148,7 @@
 
     .line 167
     :cond_0
-    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->b:Lcom/viewpagerindicator/IcsLinearLayout;
+    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
@@ -169,7 +169,7 @@
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->b:Lcom/viewpagerindicator/IcsLinearLayout;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
     invoke-virtual {v0, p1}, Lcom/viewpagerindicator/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
@@ -211,12 +211,12 @@
     const/4 v3, 0x0
 
     .line 211
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->b:Lcom/viewpagerindicator/IcsLinearLayout;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
     invoke-virtual {v0}, Lcom/viewpagerindicator/IcsLinearLayout;->removeAllViews()V
 
     .line 212
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mViewPagerc:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->getAdapter()Landroid/support/v4/view/PagerAdapter;
 
@@ -256,7 +256,7 @@
     if-nez v2, :cond_4
 
     .line 221
-    sget-object v2, Lcom/viewpagerindicator/TabPageIndicator;->a:Ljava/lang/CharSequence;
+    sget-object v2, Lcom/viewpagerindicator/TabPageIndicator;->mCharSequencea:Ljava/lang/CharSequence;
 
     move-object v4, v2
 
@@ -282,18 +282,18 @@
 
     .line 229
     :cond_1
-    iget v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->e:I
+    iget v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIe:I
 
     if-le v0, v6, :cond_2
 
     .line 230
     add-int/lit8 v0, v6, -0x1
 
-    iput v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->e:I
+    iput v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIe:I
 
     .line 232
     :cond_2
-    iget v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->e:I
+    iget v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIe:I
 
     invoke-virtual {p0, v0}, Lcom/viewpagerindicator/TabPageIndicator;->setCurrentItem(I)V
 
@@ -441,7 +441,7 @@
     invoke-virtual {p0, v0}, Lcom/viewpagerindicator/TabPageIndicator;->setFillViewport(Z)V
 
     .line 102
-    iget-object v3, p0, Lcom/viewpagerindicator/TabPageIndicator;->b:Lcom/viewpagerindicator/IcsLinearLayout;
+    iget-object v3, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
     invoke-virtual {v3}, Lcom/viewpagerindicator/IcsLinearLayout;->getChildCount()I
 
@@ -475,7 +475,7 @@
 
     float-to-int v1, v1
 
-    iput v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->d:I
+    iput v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mId:I
 
     .line 113
     :goto_1
@@ -497,7 +497,7 @@
     if-eq v1, v2, :cond_1
 
     .line 119
-    iget v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->e:I
+    iget v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIe:I
 
     invoke-virtual {p0, v0}, Lcom/viewpagerindicator/TabPageIndicator;->setCurrentItem(I)V
 
@@ -519,7 +519,7 @@
 
     div-int/lit8 v1, v1, 0x2
 
-    iput v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->d:I
+    iput v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mId:I
 
     goto :goto_1
 
@@ -527,7 +527,7 @@
     :cond_4
     const/4 v1, -0x1
 
-    iput v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->d:I
+    iput v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mId:I
 
     goto :goto_1
 .end method
@@ -539,7 +539,7 @@
     const/4 v1, 0x0
 
     .line 244
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mViewPagerc:Landroid/support/v4/view/ViewPager;
 
     if-nez v0, :cond_0
 
@@ -554,15 +554,15 @@
 
     .line 247
     :cond_0
-    iput p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->e:I
+    iput p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIe:I
 
     .line 248
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mViewPagerc:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/view/ViewPager;->setCurrentItem(I)V
 
     .line 250
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->b:Lcom/viewpagerindicator/IcsLinearLayout;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
     invoke-virtual {v0}, Lcom/viewpagerindicator/IcsLinearLayout;->getChildCount()I
 
@@ -575,7 +575,7 @@
     if-ge v2, v3, :cond_3
 
     .line 252
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->b:Lcom/viewpagerindicator/IcsLinearLayout;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mIcsLinearLayoutb:Lcom/viewpagerindicator/IcsLinearLayout;
 
     invoke-virtual {v0, v2}, Lcom/viewpagerindicator/IcsLinearLayout;->getChildAt(I)Landroid/view/View;
 
@@ -631,7 +631,7 @@
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->f:Lcom/viewpagerindicator/TabPageIndicator$ICf;
+    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mICff:Lcom/viewpagerindicator/TabPageIndicator$ICf;
 
     .line 94
     return-void
@@ -642,7 +642,7 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mViewPagerc:Landroid/support/v4/view/ViewPager;
 
     if-ne v0, p1, :cond_0
 
@@ -652,12 +652,12 @@
 
     .line 197
     :cond_0
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mViewPagerc:Landroid/support/v4/view/ViewPager;
 
     if-eqz v0, :cond_1
 
     .line 198
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mViewPagerc:Landroid/support/v4/view/ViewPager;
 
     const/4 v1, 0x0
 
@@ -683,7 +683,7 @@
 
     .line 204
     :cond_2
-    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
+    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mViewPagerc:Landroid/support/v4/view/ViewPager;
 
     .line 205
     invoke-virtual {p1, p0}, Landroid/support/v4/view/ViewPager;->setOnPageChangeListener(Landroid/support/v4/view/ViewPager$OnPageChangeListener;)V

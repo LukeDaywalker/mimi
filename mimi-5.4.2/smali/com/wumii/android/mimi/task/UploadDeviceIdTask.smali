@@ -24,7 +24,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UploadDeviceIdTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UploadDeviceIdTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -73,7 +73,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 25
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/UploadDeviceIdTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/UploadDeviceIdTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "device"
 
@@ -102,7 +102,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UploadDeviceIdTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UploadDeviceIdTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 

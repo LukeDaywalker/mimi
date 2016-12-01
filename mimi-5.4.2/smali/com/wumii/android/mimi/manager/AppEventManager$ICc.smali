@@ -61,7 +61,7 @@
     .line 72
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/AppEventManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/AppEventManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 

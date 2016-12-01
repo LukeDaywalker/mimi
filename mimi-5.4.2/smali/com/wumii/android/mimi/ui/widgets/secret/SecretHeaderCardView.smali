@@ -55,7 +55,7 @@
     move-result v0
 
     .line 35
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIb:I
 
     mul-int/lit8 v0, v0, 0x2
 
@@ -120,9 +120,9 @@
 
     .prologue
     .line 65
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mMimiTextViewd:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mSecretl:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getThumbnail()Lcom/wumii/android/mimi/models/entities/Image;
 
@@ -130,13 +130,13 @@
 
     if-nez v0, :cond_0
 
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->k:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIk:I
 
     :goto_0
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->setMinimumHeight(I)V
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mSecretl:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getContent()Ljava/lang/String;
 
@@ -150,15 +150,15 @@
 
     .line 65
     :cond_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->j:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIj:I
 
     goto :goto_0
 
     .line 71
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mMimiTextViewd:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mSecretl:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getContent()Ljava/lang/String;
 
@@ -168,21 +168,21 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->m:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIm:I
 
     const/4 v3, 0x7
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->setContent(Ljava/lang/String;II)V
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mMimiTextViewd:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->n:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIn:I
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->setTextColor(I)V
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mTextViewe:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
@@ -198,7 +198,7 @@
     const/4 v6, 0x0
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mSecretl:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getImage()Lcom/wumii/android/mimi/models/entities/Image;
 
@@ -208,7 +208,7 @@
     if-nez v10, :cond_0
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->f:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mViewGroupf:Landroid/view/ViewGroup;
 
     const/16 v1, 0x8
 
@@ -220,12 +220,12 @@
 
     .line 47
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->f:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mViewGroupf:Landroid/view/ViewGroup;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->f:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mViewGroupf:Landroid/view/ViewGroup;
 
     invoke-virtual {v10}, Lcom/wumii/android/mimi/models/entities/Image;->getWidth()I
 
@@ -244,7 +244,7 @@
     invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/util/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mImageViewg:Landroid/widget/ImageView;
 
     invoke-virtual {v10}, Lcom/wumii/android/mimi/models/entities/Image;->getWidth()I
 
@@ -263,7 +263,7 @@
     invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/util/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mSecretl:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getThumbnail()Lcom/wumii/android/mimi/models/entities/Image;
 
@@ -276,7 +276,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mSecretl:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getThumbnail()Lcom/wumii/android/mimi/models/entities/Image;
 
@@ -286,13 +286,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mImageViewg:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 57
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mImageViewg:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -301,7 +301,7 @@
     .line 58
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mImageViewg:Landroid/widget/ImageView;
 
     invoke-virtual {v10}, Lcom/wumii/android/mimi/models/entities/Image;->getWidth()I
 

@@ -40,7 +40,7 @@
     .line 395
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager$ICal;->mFeedManagerc:Lcom/wumii/android/mimi/manager/FeedManager;
 
-    iget-object v6, v0, Lcom/wumii/android/mimi/manager/FeedManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v6, v0, Lcom/wumii/android/mimi/manager/FeedManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 

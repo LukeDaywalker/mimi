@@ -15,27 +15,27 @@
 
 
 # static fields
-.field public static final enum a:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum c:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum d:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum e:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum f:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum g:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum h:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum i:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
-.field public static final enum j:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
 .field private static final synthetic mArrayICak:[Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICaa:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICac:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICad:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICae:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICaf:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICag:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICah:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICai:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+
+.field public static final enum mICaj:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
 
 # direct methods
@@ -60,7 +60,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->a:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICaa:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 10
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -69,7 +69,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 11
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -78,7 +78,7 @@
 
     invoke-direct {v0, v1, v5}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->c:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICac:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 12
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -87,7 +87,7 @@
 
     invoke-direct {v0, v1, v6}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->d:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICad:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 13
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -96,7 +96,7 @@
 
     invoke-direct {v0, v1, v7}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->e:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICae:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 14
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -107,7 +107,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->f:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICaf:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 15
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -118,7 +118,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->g:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICag:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 16
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -129,7 +129,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->h:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICah:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 17
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -140,7 +140,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->i:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICai:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 18
     new-instance v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;
@@ -151,60 +151,60 @@
 
     invoke-direct {v0, v1, v2}, Lcom/hikvh/media/amr/AmrEncoder$ICa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->j:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICaj:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 8
     const/16 v0, 0xa
 
     new-array v0, v0, [Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
-    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->a:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICaa:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->c:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICac:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->d:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICad:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->e:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v1, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICae:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v1, v0, v7
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->f:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICaf:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->g:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICag:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->h:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICah:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->i:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICai:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->j:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v2, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICaj:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     aput-object v2, v0, v1
 

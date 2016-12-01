@@ -20,19 +20,17 @@
 
 
 # static fields
-.field protected static final l:Ljava/util/concurrent/Executor;
+.field protected static final mExecutorl:Ljava/util/concurrent/Executor;
 
 .field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field protected m:Landroid/os/Handler;
+.field protected mArrayStackTraceElemento:[Ljava/lang/StackTraceElement;
 
-.field protected n:Ljava/util/concurrent/Executor;
+.field protected mExecutorn:Ljava/util/concurrent/Executor;
 
-.field protected o:[Ljava/lang/StackTraceElement;
-
-.field protected p:Ljava/util/concurrent/FutureTask;
+.field protected mFutureTaskp:Ljava/util/concurrent/FutureTask;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/FutureTask",
@@ -42,6 +40,8 @@
         }
     .end annotation
 .end field
+
+.field protected mHandlerm:Landroid/os/Handler;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->l:Ljava/util/concurrent/Executor;
+    sput-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mExecutorl:Ljava/util/concurrent/Executor;
 
     .line 38
     const-class v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;
@@ -78,9 +78,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 51
-    sget-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->l:Ljava/util/concurrent/Executor;
+    sget-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mExecutorl:Ljava/util/concurrent/Executor;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->n:Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mExecutorn:Ljava/util/concurrent/Executor;
 
     .line 52
     return-void
@@ -94,12 +94,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 58
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->m:Landroid/os/Handler;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mHandlerm:Landroid/os/Handler;
 
     .line 59
-    sget-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->l:Ljava/util/concurrent/Executor;
+    sget-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mExecutorl:Ljava/util/concurrent/Executor;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->n:Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mExecutorn:Ljava/util/concurrent/Executor;
 
     .line 60
     return-void
@@ -161,10 +161,10 @@
 
     .prologue
     .line 103
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->o:[Ljava/lang/StackTraceElement;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mArrayStackTraceElemento:[Ljava/lang/StackTraceElement;
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->n:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mExecutorn:Ljava/util/concurrent/Executor;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/SafeAsyncTask;->d()Ljava/util/concurrent/FutureTask;
 
@@ -181,7 +181,7 @@
 
     .prologue
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     if-nez v0, :cond_0
 
@@ -196,7 +196,7 @@
 
     .line 111
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/FutureTask;->cancel(Z)Z
 
@@ -246,10 +246,10 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     return-object v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:I
+.field protected mIa:I
 
 
 # direct methods
@@ -18,7 +18,7 @@
     .line 39
     const/4 v0, 0x0
 
-    iput v0, p0, Lu/aly/TProtocolException;->a:I
+    iput v0, p0, Lu/aly/TProtocolException;->mIa:I
 
     .line 43
     return-void
@@ -34,7 +34,7 @@
     .line 39
     const/4 v0, 0x0
 
-    iput v0, p0, Lu/aly/TProtocolException;->a:I
+    iput v0, p0, Lu/aly/TProtocolException;->mIa:I
 
     .line 57
     return-void

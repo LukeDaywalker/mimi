@@ -56,7 +56,7 @@
 
     .prologue
     .line 67
-    sget-object v0, Lokio/Timeout;->b:Lokio/Timeout;
+    sget-object v0, Lokio/Timeout;->mTimeoutb:Lokio/Timeout;
 
     return-object v0
 .end method

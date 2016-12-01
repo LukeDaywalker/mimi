@@ -4,15 +4,15 @@
 
 
 # static fields
-.field protected static final a:Lorg/slf4j/Logger;
+.field protected static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field protected b:Lcom/wumii/android/mimi/models/entities/share/ShareType;
+.field protected mActivityd:Landroid/app/Activity;
 
-.field protected c:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
+.field protected mShareActionc:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
-.field protected d:Landroid/app/Activity;
+.field protected mShareTypeb:Lcom/wumii/android/mimi/models/entities/share/ShareType;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/share/BaseShareController;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/share/BaseShareController;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 22
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/BaseShareController;->d:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/BaseShareController;->mActivityd:Landroid/app/Activity;
 
     .line 23
     return-void
@@ -53,15 +53,15 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/BaseShareController;->b:Lcom/wumii/android/mimi/models/entities/share/ShareType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/BaseShareController;->mShareTypeb:Lcom/wumii/android/mimi/models/entities/share/ShareType;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/share/ShareType;->umengClickEventId()Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/BaseShareController;->d:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/BaseShareController;->mActivityd:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/BaseShareController;->c:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/BaseShareController;->mShareActionc:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->nameResId()I
 

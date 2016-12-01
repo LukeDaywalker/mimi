@@ -38,7 +38,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactSectionedAdapters:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 
     invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b(I)I
 

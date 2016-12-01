@@ -50,7 +50,7 @@
 
     .line 190
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const/4 v1, 0x1
 
@@ -200,7 +200,7 @@
 
     .line 172
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "appeal/organization"
 

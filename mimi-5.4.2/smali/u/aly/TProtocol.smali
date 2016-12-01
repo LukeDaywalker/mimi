@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected e:Lu/aly/TTransport;
+.field protected mTTransporte:Lu/aly/TTransport;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 52
-    iput-object p1, p0, Lu/aly/TProtocol;->e:Lu/aly/TTransport;
+    iput-object p1, p0, Lu/aly/TProtocol;->mTTransporte:Lu/aly/TTransport;
 
     .line 53
     return-void

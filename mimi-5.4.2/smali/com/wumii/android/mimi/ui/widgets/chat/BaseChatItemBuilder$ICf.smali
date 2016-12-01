@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected a:Landroid/widget/ImageView;
+.field protected mImageViewa:Landroid/widget/ImageView;
 
-.field protected b:Landroid/widget/ProgressBar;
+.field protected mImageViewc:Landroid/widget/ImageView;
 
-.field protected c:Landroid/widget/ImageView;
+.field protected mProgressBarb:Landroid/widget/ProgressBar;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mImageViewa:Landroid/widget/ImageView;
 
     .line 262
     const v0, 0x7f0b00b9
@@ -39,7 +39,7 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->b:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mProgressBarb:Landroid/widget/ProgressBar;
 
     .line 263
     const v0, 0x7f0b018e
@@ -50,7 +50,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mImageViewc:Landroid/widget/ImageView;
 
     .line 264
     return-void

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/crashlytics/android/core/ByteString;
+.field public static final mByteStringa:Lcom/crashlytics/android/core/ByteString;
 
 
 # instance fields
@@ -27,7 +27,7 @@
 
     invoke-direct {v0, v1}, Lcom/crashlytics/android/core/ByteString;-><init>([B)V
 
-    sput-object v0, Lcom/crashlytics/android/core/ByteString;->a:Lcom/crashlytics/android/core/ByteString;
+    sput-object v0, Lcom/crashlytics/android/core/ByteString;->mByteStringa:Lcom/crashlytics/android/core/ByteString;
 
     return-void
 .end method

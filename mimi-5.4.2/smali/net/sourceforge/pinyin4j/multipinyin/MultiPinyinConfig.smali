@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:Ljava/lang/String;
+.field public static mStringa:Ljava/lang/String;
 
 
 # direct methods

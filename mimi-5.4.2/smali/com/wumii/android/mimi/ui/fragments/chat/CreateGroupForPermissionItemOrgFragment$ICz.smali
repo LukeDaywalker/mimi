@@ -37,7 +37,7 @@
     .line 57
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment$ICz;->mCreateGroupForPermissionItemOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->getCheckedPostion()I
 
@@ -50,7 +50,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment$ICz;->mCreateGroupForPermissionItemOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
+    iget-object v2, v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->getCheckedRadio()Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 

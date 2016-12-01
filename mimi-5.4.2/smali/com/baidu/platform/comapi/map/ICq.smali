@@ -3,15 +3,7 @@
 
 
 # instance fields
-.field public a:I
-
-.field public b:Ljava/lang/String;
-
-.field public c:I
-
-.field public d:I
-
-.field public e:Ljava/util/ArrayList;
+.field public mArrayListe:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -21,6 +13,14 @@
         }
     .end annotation
 .end field
+
+.field public mIa:I
+
+.field public mIc:I
+
+.field public mId:I
+
+.field public mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICq;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICq;->mArrayListe:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -63,7 +63,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICq;->e:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICq;->mArrayListe:Ljava/util/ArrayList;
 
     return-void
 .end method

@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
-
-.field public static final enum b:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
-
-.field public static final enum c:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
-
-.field public static final enum d:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
-
 .field private static final synthetic mArrayICaye:[Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+
+.field public static final enum mICaya:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+
+.field public static final enum mICayb:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+
+.field public static final enum mICayc:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+
+.field public static final enum mICayd:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->a:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICaya:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     new-instance v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->b:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayb:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     new-instance v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
@@ -62,7 +62,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->c:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayc:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     new-instance v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
@@ -70,26 +70,26 @@
 
     invoke-direct {v0, v1, v5}, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->d:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayd:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     .line 30
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->a:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICaya:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->b:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayb:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->c:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayc:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->d:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayd:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     aput-object v1, v0, v5
 

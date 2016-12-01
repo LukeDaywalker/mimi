@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/ErrorSource;
-
-.field public static final enum b:Lu/aly/ErrorSource;
-
 .field private static final synthetic mArrayErrorSourced:[Lu/aly/ErrorSource;
+
+.field public static final enum mErrorSourcea:Lu/aly/ErrorSource;
+
+.field public static final enum mErrorSourceb:Lu/aly/ErrorSource;
 
 
 # instance fields
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lu/aly/ErrorSource;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/ErrorSource;->a:Lu/aly/ErrorSource;
+    sput-object v0, Lu/aly/ErrorSource;->mErrorSourcea:Lu/aly/ErrorSource;
 
     .line 17
     new-instance v0, Lu/aly/ErrorSource;
@@ -53,16 +53,16 @@
 
     invoke-direct {v0, v1, v2, v4}, Lu/aly/ErrorSource;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/ErrorSource;->b:Lu/aly/ErrorSource;
+    sput-object v0, Lu/aly/ErrorSource;->mErrorSourceb:Lu/aly/ErrorSource;
 
     .line 15
     new-array v0, v4, [Lu/aly/ErrorSource;
 
-    sget-object v1, Lu/aly/ErrorSource;->a:Lu/aly/ErrorSource;
+    sget-object v1, Lu/aly/ErrorSource;->mErrorSourcea:Lu/aly/ErrorSource;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/ErrorSource;->b:Lu/aly/ErrorSource;
+    sget-object v1, Lu/aly/ErrorSource;->mErrorSourceb:Lu/aly/ErrorSource;
 
     aput-object v1, v0, v2
 
@@ -105,13 +105,13 @@
 
     .line 39
     :pswitch_0
-    sget-object v0, Lu/aly/ErrorSource;->a:Lu/aly/ErrorSource;
+    sget-object v0, Lu/aly/ErrorSource;->mErrorSourcea:Lu/aly/ErrorSource;
 
     goto :goto_0
 
     .line 41
     :pswitch_1
-    sget-object v0, Lu/aly/ErrorSource;->b:Lu/aly/ErrorSource;
+    sget-object v0, Lu/aly/ErrorSource;->mErrorSourceb:Lu/aly/ErrorSource;
 
     goto :goto_0
 

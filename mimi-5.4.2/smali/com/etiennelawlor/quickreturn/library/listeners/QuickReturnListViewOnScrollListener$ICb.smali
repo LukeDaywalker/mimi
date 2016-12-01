@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     invoke-virtual {v1}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->b:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypeb:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     invoke-virtual {v1}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->c:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypec:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     invoke-virtual {v1}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->ordinal()I
 
@@ -74,7 +74,7 @@
     :try_start_3
     sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->e:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypee:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     invoke-virtual {v1}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->ordinal()I
 

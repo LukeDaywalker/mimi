@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
-
-.field public static final enum b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
-
 .field private static final synthetic mArrayICkd:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+
+.field public static final enum mICka:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+
+.field public static final enum mICkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
 
 # instance fields
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->a:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICka:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
     .line 48
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
@@ -55,18 +55,18 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
     .line 46
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->a:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICka:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
     aput-object v1, v0, v4
 

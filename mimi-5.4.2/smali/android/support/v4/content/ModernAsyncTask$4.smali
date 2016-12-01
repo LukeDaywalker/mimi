@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Landroid/support/v4/content/ModernAsyncTask$4;->mArrayIa:[I
 
-    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->b:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusb:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     invoke-virtual {v1}, Landroid/support/v4/content/ModernAsyncTask$Status;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Landroid/support/v4/content/ModernAsyncTask$4;->mArrayIa:[I
 
-    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->c:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusc:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     invoke-virtual {v1}, Landroid/support/v4/content/ModernAsyncTask$Status;->ordinal()I
 

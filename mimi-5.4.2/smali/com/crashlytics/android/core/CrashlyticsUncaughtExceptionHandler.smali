@@ -1006,7 +1006,7 @@
     const/4 v0, 0x0
 
     .line 1171
-    sget-object v1, Lio/fabric/sdk/android/services/common/CommonUtils;->a:Ljava/util/Comparator;
+    sget-object v1, Lio/fabric/sdk/android/services/common/CommonUtils;->mComparatora:Ljava/util/Comparator;
 
     invoke-static {p2, v1}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
@@ -3379,11 +3379,11 @@
     :try_start_2
     iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
-    iget-object v4, v0, Lcom/crashlytics/android/core/UserMetaData;->b:Ljava/lang/String;
+    iget-object v4, v0, Lcom/crashlytics/android/core/UserMetaData;->mStringb:Ljava/lang/String;
 
-    iget-object v5, v0, Lcom/crashlytics/android/core/UserMetaData;->c:Ljava/lang/String;
+    iget-object v5, v0, Lcom/crashlytics/android/core/UserMetaData;->mStringc:Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/crashlytics/android/core/UserMetaData;->d:Ljava/lang/String;
+    iget-object v0, v0, Lcom/crashlytics/android/core/UserMetaData;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v3, v1, v4, v5, v0}, Lcom/crashlytics/android/core/SessionDataWriter;->a(Lcom/crashlytics/android/core/CodedOutputStream;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_2
@@ -3670,7 +3670,7 @@
     if-eqz v0, :cond_0
 
     .line 618
-    iget v1, v0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->c:I
+    iget v1, v0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->mIc:I
 
     .line 620
     invoke-static {}, Lio/fabric/sdk/android/Fabric;->h()Lio/fabric/sdk/android/Logger;

@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final a:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
+.field public static final mOkHostnameVerifiera:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
 
 .field private static final mPatternb:Ljava/util/regex/Pattern;
 
@@ -22,7 +22,7 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->a:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
+    sput-object v0, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->mOkHostnameVerifiera:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
 
     .line 52
     const-string/jumbo v0, "([0-9a-fA-F]*:[0-9a-fA-F:.]*)|([\\d.]+)"

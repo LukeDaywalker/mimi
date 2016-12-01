@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICa;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->a:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mICba:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICa;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->b:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mICbb:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->ordinal()I
 

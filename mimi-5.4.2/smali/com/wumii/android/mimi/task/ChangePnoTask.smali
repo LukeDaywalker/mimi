@@ -78,7 +78,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mActivityEventManagerj:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -134,7 +134,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mActivityEventManagerj:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -294,7 +294,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 43
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "change-pno"
 

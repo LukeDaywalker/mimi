@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mIb:I
 
-.field public b:I
+.field public mIc:I
 
-.field public c:I
+.field public mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,13 +20,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/vi/ICc;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/vi/ICc;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/vi/ICc;->b:I
+    iput v0, p0, Lcom/baidu/vi/ICc;->mIb:I
 
     sget-object v0, Lcom/baidu/vi/ICc$1;->mArrayIa:[I
 
@@ -44,7 +44,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/vi/ICc;->c:I
+    iput v0, p0, Lcom/baidu/vi/ICc;->mIc:I
 
     :goto_0
     return-void
@@ -52,14 +52,14 @@
     :pswitch_0
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/baidu/vi/ICc;->c:I
+    iput v0, p0, Lcom/baidu/vi/ICc;->mIc:I
 
     goto :goto_0
 
     :pswitch_1
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/vi/ICc;->c:I
+    iput v0, p0, Lcom/baidu/vi/ICc;->mIc:I
 
     goto :goto_0
 

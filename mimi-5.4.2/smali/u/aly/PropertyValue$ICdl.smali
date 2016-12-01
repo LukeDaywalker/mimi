@@ -19,11 +19,11 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/PropertyValue$ICdl;
-
-.field public static final enum b:Lu/aly/PropertyValue$ICdl;
-
 .field private static final synthetic mArrayICdlf:[Lu/aly/PropertyValue$ICdl;
+
+.field public static final enum mICdla:Lu/aly/PropertyValue$ICdl;
+
+.field public static final enum mICdlb:Lu/aly/PropertyValue$ICdl;
 
 .field private static final mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4, v3, v2}, Lu/aly/PropertyValue$ICdl;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/PropertyValue$ICdl;->a:Lu/aly/PropertyValue$ICdl;
+    sput-object v0, Lu/aly/PropertyValue$ICdl;->mICdla:Lu/aly/PropertyValue$ICdl;
 
     .line 40
     new-instance v0, Lu/aly/PropertyValue$ICdl;
@@ -75,16 +75,16 @@
 
     invoke-direct {v0, v1, v3, v5, v2}, Lu/aly/PropertyValue$ICdl;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/PropertyValue$ICdl;->b:Lu/aly/PropertyValue$ICdl;
+    sput-object v0, Lu/aly/PropertyValue$ICdl;->mICdlb:Lu/aly/PropertyValue$ICdl;
 
     .line 38
     new-array v0, v5, [Lu/aly/PropertyValue$ICdl;
 
-    sget-object v1, Lu/aly/PropertyValue$ICdl;->a:Lu/aly/PropertyValue$ICdl;
+    sget-object v1, Lu/aly/PropertyValue$ICdl;->mICdla:Lu/aly/PropertyValue$ICdl;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/PropertyValue$ICdl;->b:Lu/aly/PropertyValue$ICdl;
+    sget-object v1, Lu/aly/PropertyValue$ICdl;->mICdlb:Lu/aly/PropertyValue$ICdl;
 
     aput-object v1, v0, v3
 
@@ -176,13 +176,13 @@
 
     .line 56
     :pswitch_0
-    sget-object v0, Lu/aly/PropertyValue$ICdl;->a:Lu/aly/PropertyValue$ICdl;
+    sget-object v0, Lu/aly/PropertyValue$ICdl;->mICdla:Lu/aly/PropertyValue$ICdl;
 
     goto :goto_0
 
     .line 58
     :pswitch_1
-    sget-object v0, Lu/aly/PropertyValue$ICdl;->b:Lu/aly/PropertyValue$ICdl;
+    sget-object v0, Lu/aly/PropertyValue$ICdl;->mICdlb:Lu/aly/PropertyValue$ICdl;
 
     goto :goto_0
 

@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils$ICc;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils$ICc;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->ordinal()I
 

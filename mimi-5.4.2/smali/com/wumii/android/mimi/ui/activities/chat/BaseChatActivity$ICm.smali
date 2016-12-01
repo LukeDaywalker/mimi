@@ -43,7 +43,7 @@
     .line 289
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;->mBaseChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->mChatManagerN:Lcom/wumii/android/mimi/manager/ChatManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;->mBaseChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 

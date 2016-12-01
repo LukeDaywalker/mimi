@@ -32,9 +32,9 @@
     invoke-direct {v5, p0, p1}, Lcom/tencent/connect/common/Pro$ICc;-><init>(Lcom/tencent/connect/common/Pro;Lcom/tencent/tauth/Pro$ICb;)V
 
     .line 31
-    iget-object v0, p0, Lcom/tencent/connect/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
-    iget-object v1, p0, Lcom/tencent/connect/Pro;->d:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/connect/Pro;->mContextd:Landroid/content/Context;
 
     const-string/jumbo v2, "user/get_simple_userinfo"
 

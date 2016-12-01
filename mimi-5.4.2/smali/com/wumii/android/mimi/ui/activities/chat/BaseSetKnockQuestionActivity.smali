@@ -4,17 +4,9 @@
 
 
 # instance fields
-.field private mMenuItemq:Landroid/view/MenuItem;
+.field protected mEditTextn:Landroid/widget/EditText;
 
-.field private mSpannableStringr:Landroid/text/SpannableString;
-
-.field private mSpannableStrings:Landroid/text/SpannableString;
-
-.field protected n:Landroid/widget/EditText;
-
-.field protected o:Landroid/widget/TextView;
-
-.field protected p:Ljava/util/List;
+.field protected mListp:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -24,6 +16,14 @@
         }
     .end annotation
 .end field
+
+.field private mMenuItemq:Landroid/view/MenuItem;
+
+.field private mSpannableStringr:Landroid/text/SpannableString;
+
+.field private mSpannableStrings:Landroid/text/SpannableString;
+
+.field protected mTextViewo:Landroid/widget/TextView;
 
 
 # direct methods
@@ -286,7 +286,7 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mListp:Ljava/util/List;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
@@ -313,7 +313,7 @@
     if-nez v0, :cond_1
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mListp:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -327,9 +327,9 @@
 
     .line 105
     :goto_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->n:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mEditTextn:Landroid/widget/EditText;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mListp:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -359,7 +359,7 @@
     add-int/lit8 v0, v0, 0x1
 
     .line 100
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mListp:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 

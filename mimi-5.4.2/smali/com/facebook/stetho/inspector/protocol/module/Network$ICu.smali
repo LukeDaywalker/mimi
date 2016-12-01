@@ -4,55 +4,55 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mDf:D
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public b:Ljava/lang/String;
+.field public mICpg:Lcom/facebook/stetho/inspector/protocol/module/Network$ICp;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public c:Ljava/lang/String;
+.field public mICte:Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public d:Ljava/lang/String;
+.field public mICvh:Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;
+    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
+    .end annotation
+.end field
+
+.field public mICyi:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
+    .end annotation
+.end field
+
+.field public mStringa:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public e:Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;
+.field public mStringb:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public f:D
+.field public mStringc:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public g:Lcom/facebook/stetho/inspector/protocol/module/Network$ICp;
+.field public mStringd:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
-    .end annotation
-.end field
-
-.field public h:Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;
-    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
-    .end annotation
-.end field
-
-.field public i:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
-    .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
     .end annotation
 .end field
 

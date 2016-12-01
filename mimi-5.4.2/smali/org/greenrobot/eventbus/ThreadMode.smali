@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lorg/greenrobot/eventbus/ThreadMode;
-
-.field public static final enum b:Lorg/greenrobot/eventbus/ThreadMode;
-
-.field public static final enum c:Lorg/greenrobot/eventbus/ThreadMode;
-
-.field public static final enum d:Lorg/greenrobot/eventbus/ThreadMode;
-
 .field private static final synthetic mArrayThreadModee:[Lorg/greenrobot/eventbus/ThreadMode;
+
+.field public static final enum mThreadModea:Lorg/greenrobot/eventbus/ThreadMode;
+
+.field public static final enum mThreadModeb:Lorg/greenrobot/eventbus/ThreadMode;
+
+.field public static final enum mThreadModec:Lorg/greenrobot/eventbus/ThreadMode;
+
+.field public static final enum mThreadModed:Lorg/greenrobot/eventbus/ThreadMode;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->a:Lorg/greenrobot/eventbus/ThreadMode;
+    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModea:Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 39
     new-instance v0, Lorg/greenrobot/eventbus/ThreadMode;
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, v1, v3}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->b:Lorg/greenrobot/eventbus/ThreadMode;
+    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModeb:Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 47
     new-instance v0, Lorg/greenrobot/eventbus/ThreadMode;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->c:Lorg/greenrobot/eventbus/ThreadMode;
+    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModec:Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 56
     new-instance v0, Lorg/greenrobot/eventbus/ThreadMode;
@@ -73,26 +73,26 @@
 
     invoke-direct {v0, v1, v5}, Lorg/greenrobot/eventbus/ThreadMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->d:Lorg/greenrobot/eventbus/ThreadMode;
+    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModed:Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 25
     const/4 v0, 0x4
 
     new-array v0, v0, [Lorg/greenrobot/eventbus/ThreadMode;
 
-    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->a:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModea:Lorg/greenrobot/eventbus/ThreadMode;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->b:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModeb:Lorg/greenrobot/eventbus/ThreadMode;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->c:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModec:Lorg/greenrobot/eventbus/ThreadMode;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->d:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModed:Lorg/greenrobot/eventbus/ThreadMode;
 
     aput-object v1, v0, v5
 

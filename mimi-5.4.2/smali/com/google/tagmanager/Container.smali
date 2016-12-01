@@ -157,7 +157,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/tagmanager/TagManager$ICbj;->b:Lcom/google/tagmanager/TagManager$ICbj;
+    sget-object v1, Lcom/google/tagmanager/TagManager$ICbj;->mICbjb:Lcom/google/tagmanager/TagManager$ICbj;
 
     if-ne v0, v1, :cond_0
 
@@ -328,7 +328,7 @@
 
     iget-object v1, p0, Lcom/google/tagmanager/Container;->mICjb:Lcom/google/analytics/containertag/proto/Serving$ICj;
 
-    iget-object v1, v1, Lcom/google/analytics/containertag/proto/Serving$ICj;->d:Ljava/lang/String;
+    iget-object v1, v1, Lcom/google/analytics/containertag/proto/Serving$ICj;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, p1, p2, v1}, Lcom/google/tagmanager/Container$ICe;->a(JLjava/lang/String;)V
     :try_end_0

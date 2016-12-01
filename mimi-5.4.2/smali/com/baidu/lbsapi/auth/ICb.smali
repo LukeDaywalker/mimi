@@ -283,7 +283,7 @@
 
     aput-object v4, v1, v0
 
-    sget-boolean v4, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v4, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v4, :cond_0
 
@@ -595,7 +595,7 @@
 
     :cond_1
     :goto_0
-    sget-boolean v1, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v1, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v1, :cond_2
 
@@ -642,7 +642,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    sget-boolean v1, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v1, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v1, :cond_0
 
@@ -733,7 +733,7 @@
     invoke-static {v1, v3}, Landroid/util/Base64;->encode([BI)[B
 
     :cond_0
-    sget-boolean v1, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v1, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v1, :cond_1
 
@@ -773,7 +773,7 @@
 
     :cond_2
     :try_start_2
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_3
 
@@ -798,7 +798,7 @@
     move-object v1, v6
 
     :goto_1
-    sget-boolean v2, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v2, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v2, :cond_1
 

@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lio/fabric/sdk/android/services/concurrency/Priority;
-
-.field public static final enum b:Lio/fabric/sdk/android/services/concurrency/Priority;
-
-.field public static final enum c:Lio/fabric/sdk/android/services/concurrency/Priority;
-
-.field public static final enum d:Lio/fabric/sdk/android/services/concurrency/Priority;
-
 .field private static final synthetic mArrayPrioritye:[Lio/fabric/sdk/android/services/concurrency/Priority;
+
+.field public static final enum mPrioritya:Lio/fabric/sdk/android/services/concurrency/Priority;
+
+.field public static final enum mPriorityb:Lio/fabric/sdk/android/services/concurrency/Priority;
+
+.field public static final enum mPriorityc:Lio/fabric/sdk/android/services/concurrency/Priority;
+
+.field public static final enum mPriorityd:Lio/fabric/sdk/android/services/concurrency/Priority;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2}, Lio/fabric/sdk/android/services/concurrency/Priority;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->a:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->mPrioritya:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     .line 25
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/Priority;
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, v1, v3}, Lio/fabric/sdk/android/services/concurrency/Priority;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->b:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->mPriorityb:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     .line 26
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/Priority;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4}, Lio/fabric/sdk/android/services/concurrency/Priority;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->c:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->mPriorityc:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     .line 27
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/Priority;
@@ -73,26 +73,26 @@
 
     invoke-direct {v0, v1, v5}, Lio/fabric/sdk/android/services/concurrency/Priority;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->d:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->mPriorityd:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     .line 23
     const/4 v0, 0x4
 
     new-array v0, v0, [Lio/fabric/sdk/android/services/concurrency/Priority;
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/Priority;->a:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/Priority;->mPrioritya:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/Priority;->b:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/Priority;->mPriorityb:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/Priority;->c:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/Priority;->mPriorityc:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/Priority;->d:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/Priority;->mPriorityd:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     aput-object v1, v0, v5
 
@@ -161,7 +161,7 @@
 
     .line 41
     :cond_0
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->b:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->mPriorityb:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     goto :goto_0
 .end method

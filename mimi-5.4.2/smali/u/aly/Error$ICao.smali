@@ -19,13 +19,13 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/Error$ICao;
-
-.field public static final enum b:Lu/aly/Error$ICao;
-
-.field public static final enum c:Lu/aly/Error$ICao;
-
 .field private static final synthetic mArrayICaog:[Lu/aly/Error$ICao;
+
+.field public static final enum mICaoa:Lu/aly/Error$ICao;
+
+.field public static final enum mICaob:Lu/aly/Error$ICao;
+
+.field public static final enum mICaoc:Lu/aly/Error$ICao;
 
 .field private static final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v5, v3, v2}, Lu/aly/Error$ICao;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Error$ICao;->a:Lu/aly/Error$ICao;
+    sput-object v0, Lu/aly/Error$ICao;->mICaoa:Lu/aly/Error$ICao;
 
     .line 56
     new-instance v0, Lu/aly/Error$ICao;
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/Error$ICao;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Error$ICao;->b:Lu/aly/Error$ICao;
+    sput-object v0, Lu/aly/Error$ICao;->mICaob:Lu/aly/Error$ICao;
 
     .line 61
     new-instance v0, Lu/aly/Error$ICao;
@@ -90,20 +90,20 @@
 
     invoke-direct {v0, v1, v4, v6, v2}, Lu/aly/Error$ICao;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Error$ICao;->c:Lu/aly/Error$ICao;
+    sput-object v0, Lu/aly/Error$ICao;->mICaoc:Lu/aly/Error$ICao;
 
     .line 54
     new-array v0, v6, [Lu/aly/Error$ICao;
 
-    sget-object v1, Lu/aly/Error$ICao;->a:Lu/aly/Error$ICao;
+    sget-object v1, Lu/aly/Error$ICao;->mICaoa:Lu/aly/Error$ICao;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/Error$ICao;->b:Lu/aly/Error$ICao;
+    sget-object v1, Lu/aly/Error$ICao;->mICaob:Lu/aly/Error$ICao;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/Error$ICao;->c:Lu/aly/Error$ICao;
+    sget-object v1, Lu/aly/Error$ICao;->mICaoc:Lu/aly/Error$ICao;
 
     aput-object v1, v0, v4
 

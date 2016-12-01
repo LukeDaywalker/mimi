@@ -58,15 +58,15 @@
     .line 120
     iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->mDefaultItemAnimatorb:Landroid/support/v7/widget/DefaultItemAnimator;
 
-    iget-object v1, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iget-object v1, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
-    iget v2, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->b:I
+    iget v2, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mIb:I
 
-    iget v3, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->c:I
+    iget v3, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mIc:I
 
-    iget v4, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->d:I
+    iget v4, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mId:I
 
-    iget v5, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->e:I
+    iget v5, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mIe:I
 
     invoke-static/range {v0 .. v5}, Landroid/support/v7/widget/DefaultItemAnimator;->a(Landroid/support/v7/widget/DefaultItemAnimator;Landroid/support/v7/widget/RecyclerView$ICbg;IIII)V
 

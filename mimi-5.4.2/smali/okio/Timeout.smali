@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final b:Lokio/Timeout;
+.field public static final mTimeoutb:Lokio/Timeout;
 
 
 # instance fields
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Lokio/Timeout$ICad;-><init>()V
 
-    sput-object v0, Lokio/Timeout;->b:Lokio/Timeout;
+    sput-object v0, Lokio/Timeout;->mTimeoutb:Lokio/Timeout;
 
     return-void
 .end method

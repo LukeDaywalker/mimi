@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mIb:I
 
-.field public final b:I
+.field public final mIc:I
 
-.field public final c:I
+.field public final mId:I
 
-.field public final d:I
+.field public final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -22,16 +22,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 38
-    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/IconRequest;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/IconRequest;->mStringa:Ljava/lang/String;
 
     .line 39
-    iput p2, p0, Lio/fabric/sdk/android/services/settings/IconRequest;->b:I
+    iput p2, p0, Lio/fabric/sdk/android/services/settings/IconRequest;->mIb:I
 
     .line 40
-    iput p3, p0, Lio/fabric/sdk/android/services/settings/IconRequest;->c:I
+    iput p3, p0, Lio/fabric/sdk/android/services/settings/IconRequest;->mIc:I
 
     .line 41
-    iput p4, p0, Lio/fabric/sdk/android/services/settings/IconRequest;->d:I
+    iput p4, p0, Lio/fabric/sdk/android/services/settings/IconRequest;->mId:I
 
     .line 42
     return-void

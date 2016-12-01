@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AnonymousLetterSingleChatInfoActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AnonymousLetterSingleChatInfoActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-static {p0, v0, v1}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 

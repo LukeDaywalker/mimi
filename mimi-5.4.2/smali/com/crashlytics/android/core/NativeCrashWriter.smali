@@ -72,7 +72,7 @@
     .line 551
     new-instance v1, Lcom/crashlytics/android/core/NativeCrashWriter$ICbh;
 
-    iget v0, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->f:I
+    iget v0, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->mIf:I
 
     int-to-float v0, v0
 
@@ -80,21 +80,21 @@
 
     div-float v2, v0, v2
 
-    iget v3, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->g:I
+    iget v3, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->mIg:I
 
-    iget-boolean v4, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->h:Z
+    iget-boolean v4, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->isZh:Z
 
-    iget v5, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->a:I
+    iget v5, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->mIa:I
 
-    iget-wide v6, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->b:J
+    iget-wide v6, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->mJb:J
 
-    iget-wide v8, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->d:J
+    iget-wide v8, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->mJd:J
 
     sub-long/2addr v6, v8
 
-    iget-wide v8, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->c:J
+    iget-wide v8, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->mJc:J
 
-    iget-wide v10, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->e:J
+    iget-wide v10, p0, Lcom/crashlytics/android/core/internal/models/DeviceData;->mJe:J
 
     sub-long/2addr v8, v10
 
@@ -121,11 +121,11 @@
 
     .prologue
     .line 496
-    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->b:Lcom/crashlytics/android/core/internal/models/SignalData;
+    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->mSignalDatab:Lcom/crashlytics/android/core/internal/models/SignalData;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->b:Lcom/crashlytics/android/core/internal/models/SignalData;
+    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->mSignalDatab:Lcom/crashlytics/android/core/internal/models/SignalData;
 
     .line 498
     :goto_0
@@ -134,14 +134,14 @@
     invoke-direct {v1, v0}, Lcom/crashlytics/android/core/NativeCrashWriter$ICbp;-><init>(Lcom/crashlytics/android/core/internal/models/SignalData;)V
 
     .line 500
-    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->c:[Lcom/crashlytics/android/core/internal/models/ThreadData;
+    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->mArrayThreadDatac:[Lcom/crashlytics/android/core/internal/models/ThreadData;
 
     invoke-static {v0}, Lcom/crashlytics/android/core/NativeCrashWriter;->a([Lcom/crashlytics/android/core/internal/models/ThreadData;)Lcom/crashlytics/android/core/NativeCrashWriter$ICbo;
 
     move-result-object v0
 
     .line 501
-    iget-object v2, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->d:[Lcom/crashlytics/android/core/internal/models/BinaryImageData;
+    iget-object v2, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->mArrayBinaryImageDatad:[Lcom/crashlytics/android/core/internal/models/BinaryImageData;
 
     invoke-static {v2}, Lcom/crashlytics/android/core/NativeCrashWriter;->a([Lcom/crashlytics/android/core/internal/models/BinaryImageData;)Lcom/crashlytics/android/core/NativeCrashWriter$ICbo;
 
@@ -153,7 +153,7 @@
     invoke-direct {v3, v1, v0, v2}, Lcom/crashlytics/android/core/NativeCrashWriter$ICbj;-><init>(Lcom/crashlytics/android/core/NativeCrashWriter$ICbp;Lcom/crashlytics/android/core/NativeCrashWriter$ICbo;Lcom/crashlytics/android/core/NativeCrashWriter$ICbo;)V
 
     .line 506
-    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->e:[Lcom/crashlytics/android/core/internal/models/CustomAttributeData;
+    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->mArrayCustomAttributeDatae:[Lcom/crashlytics/android/core/internal/models/CustomAttributeData;
 
     invoke-static {v0, p2}, Lcom/crashlytics/android/core/NativeCrashWriter;->a([Lcom/crashlytics/android/core/internal/models/CustomAttributeData;Ljava/util/Map;)[Lcom/crashlytics/android/core/internal/models/CustomAttributeData;
 
@@ -169,7 +169,7 @@
     invoke-direct {v1, v3, v0}, Lcom/crashlytics/android/core/NativeCrashWriter$ICbe;-><init>(Lcom/crashlytics/android/core/NativeCrashWriter$ICbj;Lcom/crashlytics/android/core/NativeCrashWriter$ICbo;)V
 
     .line 512
-    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->f:Lcom/crashlytics/android/core/internal/models/DeviceData;
+    iget-object v0, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->mDeviceDataf:Lcom/crashlytics/android/core/internal/models/DeviceData;
 
     invoke-static {v0}, Lcom/crashlytics/android/core/NativeCrashWriter;->a(Lcom/crashlytics/android/core/internal/models/DeviceData;)Lcom/crashlytics/android/core/NativeCrashWriter$ICbh;
 
@@ -209,7 +209,7 @@
     :goto_1
     new-instance v3, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;
 
-    iget-wide v4, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->a:J
+    iget-wide v4, p0, Lcom/crashlytics/android/core/internal/models/SessionEventData;->mJa:J
 
     const-string/jumbo v6, "ndk-crash"
 
@@ -421,7 +421,7 @@
     .line 566
     new-instance v3, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;
 
-    iget-object v4, v2, Lcom/crashlytics/android/core/internal/models/ThreadData;->c:[Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;
+    iget-object v4, v2, Lcom/crashlytics/android/core/internal/models/ThreadData;->mArrayICgc:[Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;
 
     invoke-static {v4}, Lcom/crashlytics/android/core/NativeCrashWriter;->a([Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;)Lcom/crashlytics/android/core/NativeCrashWriter$ICbo;
 
@@ -528,9 +528,9 @@
     aget-object v4, p0, v0
 
     .line 536
-    iget-object v5, v4, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->a:Ljava/lang/String;
+    iget-object v5, v4, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->mStringa:Ljava/lang/String;
 
-    iget-object v4, v4, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->b:Ljava/lang/String;
+    iget-object v4, v4, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->mStringb:Ljava/lang/String;
 
     invoke-interface {v2, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

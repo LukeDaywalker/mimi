@@ -4,8 +4,6 @@
 
 
 # static fields
-.field public static a:Ljava/lang/String;
-
 .field private static final mEventBusBuilderc:Lorg/greenrobot/eventbus/EventBusBuilder;
 
 .field static volatile mEventBusb:Lorg/greenrobot/eventbus/EventBus;
@@ -24,6 +22,8 @@
         }
     .end annotation
 .end field
+
+.field public static mStringa:Ljava/lang/String;
 
 
 # instance fields
@@ -111,7 +111,7 @@
     .line 42
     const-string/jumbo v0, "Event"
 
-    sput-object v0, Lorg/greenrobot/eventbus/EventBus;->a:Ljava/lang/String;
+    sput-object v0, Lorg/greenrobot/eventbus/EventBus;->mStringa:Ljava/lang/String;
 
     .line 46
     new-instance v0, Lorg/greenrobot/eventbus/EventBusBuilder;
@@ -539,7 +539,7 @@
     if-eqz v0, :cond_1
 
     .line 390
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->a:Ljava/lang/String;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -939,7 +939,7 @@
     if-eqz v0, :cond_0
 
     .line 510
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->a:Ljava/lang/String;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -977,7 +977,7 @@
     check-cast p2, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;
 
     .line 513
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->a:Ljava/lang/String;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -989,7 +989,7 @@
 
     move-result-object v1
 
-    iget-object v2, p2, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->c:Ljava/lang/Object;
+    iget-object v2, p2, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->mObjectc:Ljava/lang/Object;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1001,7 +1001,7 @@
 
     move-result-object v1
 
-    iget-object v2, p2, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->d:Ljava/lang/Object;
+    iget-object v2, p2, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->mObjectd:Ljava/lang/Object;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1011,7 +1011,7 @@
 
     move-result-object v1
 
-    iget-object v2, p2, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->b:Ljava/lang/Throwable;
+    iget-object v2, p2, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->mThrowableb:Ljava/lang/Throwable;
 
     invoke-static {v0, v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -1042,7 +1042,7 @@
     if-eqz v0, :cond_3
 
     .line 521
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->a:Ljava/lang/String;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1549,7 +1549,7 @@
     .line 245
     :cond_1
     :try_start_2
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->a:Ljava/lang/String;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

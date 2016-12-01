@@ -34,7 +34,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaf;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
-    sget-object v2, Lcom/crashlytics/android/core/ClsFileOutputStream;->a:Ljava/io/FilenameFilter;
+    sget-object v2, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFilenameFiltera:Ljava/io/FilenameFilter;
 
     invoke-static {v1, v2}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->a(Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;Ljava/io/FilenameFilter;)[Ljava/io/File;
 

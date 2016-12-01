@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mReportb:Lcom/crashlytics/android/core/Report;
 
-.field public final b:Lcom/crashlytics/android/core/Report;
+.field public final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 14
-    iput-object p1, p0, Lcom/crashlytics/android/core/CreateReportRequest;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CreateReportRequest;->mStringa:Ljava/lang/String;
 
     .line 15
-    iput-object p2, p0, Lcom/crashlytics/android/core/CreateReportRequest;->b:Lcom/crashlytics/android/core/Report;
+    iput-object p2, p0, Lcom/crashlytics/android/core/CreateReportRequest;->mReportb:Lcom/crashlytics/android/core/Report;
 
     .line 16
     return-void

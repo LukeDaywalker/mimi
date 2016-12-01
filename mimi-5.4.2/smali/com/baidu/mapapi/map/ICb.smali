@@ -261,11 +261,11 @@
 
     const/4 v2, 0x0
 
-    iput v2, v1, Lcom/baidu/platform/comapi/map/B;->c:I
+    iput v2, v1, Lcom/baidu/platform/comapi/map/B;->mIc:I
 
     const/4 v2, 0x0
 
-    iput v2, v1, Lcom/baidu/platform/comapi/map/B;->b:I
+    iput v2, v1, Lcom/baidu/platform/comapi/map/B;->mIb:I
 
     iget-object v2, p0, Lcom/baidu/mapapi/map/ICb;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 

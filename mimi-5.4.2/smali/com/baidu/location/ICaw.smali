@@ -6,7 +6,7 @@
 
 
 # static fields
-.field public static kY:Ljava/lang/String;
+.field public static mStringkY:Ljava/lang/String;
 
 
 # instance fields
@@ -20,8 +20,6 @@
 
 .field private isZlb:Z
 
-.field public kT:I
-
 .field private mCk2:C
 
 .field private mDk1:D
@@ -33,6 +31,8 @@
 .field private mIk7:I
 
 .field private mIk8:I
+
+.field public mIkT:I
 
 .field private mIkU:I
 
@@ -53,7 +53,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICaw;->kY:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICaw;->mStringkY:Ljava/lang/String;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
 
     iput-boolean v1, p0, Lcom/baidu/location/ICaw;->isZkW:Z
 
-    iput v1, p0, Lcom/baidu/location/ICaw;->kT:I
+    iput v1, p0, Lcom/baidu/location/ICaw;->mIkT:I
 
     iput-object p1, p0, Lcom/baidu/location/ICaw;->mListkV:Ljava/util/List;
 

@@ -1973,7 +1973,7 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 725
     invoke-static {p0}, Landroid/support/v4/view/ViewCompat;->h(Landroid/view/View;)I
@@ -1998,7 +1998,7 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     if-nez v0, :cond_0
 
@@ -2024,7 +2024,7 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 1130
     invoke-static {p1}, Landroid/support/v4/view/ViewCompat;->h(Landroid/view/View;)I
@@ -2912,7 +2912,7 @@
 
     .line 926
     :goto_3
-    iget v4, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iget v4, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     and-int/lit8 v4, v4, 0x70
 
@@ -3253,7 +3253,7 @@
     if-eqz v3, :cond_9
 
     .line 854
-    iget v9, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iget v9, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     invoke-static {v9, v6}, Landroid/support/v4/view/GravityCompat;->a(II)I
 
@@ -3565,7 +3565,7 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     iput v0, v1, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIa:I
 
@@ -4029,7 +4029,7 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iget v0, v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 526
     invoke-virtual {p0, p1, v0}, Landroid/support/v4/widget/DrawerLayout;->setDrawerLockMode(II)V

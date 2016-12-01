@@ -139,9 +139,9 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->d:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleTyped:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;)V
 
@@ -174,7 +174,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mListViewj:Landroid/widget/ListView;
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleObserverk:Lcom/wumii/android/mimi/models/observer/CircleObserver;
 
@@ -210,7 +210,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->onDestroyView()V
 
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleObserverk:Lcom/wumii/android/mimi/models/observer/CircleObserver;
 

@@ -1011,7 +1011,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Landroid/database/Cursor;
 
@@ -1048,7 +1048,7 @@
 
     .prologue
     .line 170
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->b(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
@@ -1070,7 +1070,7 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -1094,7 +1094,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     .line 144
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
@@ -1112,7 +1112,7 @@
     if-nez v3, :cond_0
 
     .line 146
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, v3, v0}, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->a(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
@@ -1128,7 +1128,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -1137,14 +1137,14 @@
     .line 150
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -1157,7 +1157,7 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "secret"
 
@@ -1191,7 +1191,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -1215,7 +1215,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     .line 161
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, v2, v0}, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->b(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
     :try_end_0
@@ -1227,7 +1227,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -1236,14 +1236,14 @@
     .line 163
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 

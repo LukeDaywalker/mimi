@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public b:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
+.field public mWeiboMultiMessageb:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
 
 
 # direct methods
@@ -39,7 +39,7 @@
     invoke-super {p0, p1}, Lcom/sina/weibo/sdk/api/share/BaseRequest;->a(Landroid/os/Bundle;)V
 
     .line 56
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->b:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->mWeiboMultiMessageb:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
 
     invoke-virtual {v0, p1}, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a(Landroid/os/Bundle;)Landroid/os/Bundle;
 
@@ -58,7 +58,7 @@
     const/4 v0, 0x0
 
     .line 61
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->b:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->mWeiboMultiMessageb:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
 
     if-nez v1, :cond_1
 
@@ -72,7 +72,7 @@
     if-eqz p2, :cond_2
 
     .line 66
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->b:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->mWeiboMultiMessageb:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
 
     invoke-virtual {p2, p1, v1}, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->a(Landroid/content/Context;Lcom/sina/weibo/sdk/api/WeiboMultiMessage;)Z
 
@@ -82,7 +82,7 @@
 
     .line 71
     :cond_2
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->b:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->mWeiboMultiMessageb:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
 
     invoke-virtual {v0}, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a()Z
 

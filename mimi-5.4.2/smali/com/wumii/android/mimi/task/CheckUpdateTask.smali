@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -158,7 +158,7 @@
     .line 171
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mContextb:Landroid/content/Context;
 
     const-class v2, Lcom/wumii/android/mimi/services/AppDownloadService;
 
@@ -197,7 +197,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 176
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
@@ -235,7 +235,7 @@
     const/4 v7, 0x0
 
     .line 117
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
@@ -296,9 +296,9 @@
     if-nez v0, :cond_0
 
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->b:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mContextb:Landroid/content/Context;
 
     const v3, 0x7f0601e2
 
@@ -359,7 +359,7 @@
     :cond_2
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->b:Landroid/content/Context;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mContextb:Landroid/content/Context;
 
     iget-object v4, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mDisplayMetricsd:Landroid/util/DisplayMetrics;
 
@@ -376,7 +376,7 @@
     if-ne v2, v3, :cond_4
 
     .line 140
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->b:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mContextb:Landroid/content/Context;
 
     const v3, 0x7f0603e4
 
@@ -482,7 +482,7 @@
     if-nez v0, :cond_0
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060086
 
@@ -555,7 +555,7 @@
 
     .line 105
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "android/update/check"
 
@@ -597,7 +597,7 @@
     if-eqz v0, :cond_1
 
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

@@ -34,7 +34,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mSecretHeaderCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->i:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mViewi:Landroid/view/View;
 
     const/16 v1, 0x8
 

@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventa:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     if-ne v0, v1, :cond_1
 
@@ -94,7 +94,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventb:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     if-ne v0, v1, :cond_2
 
@@ -109,7 +109,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEvente:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     if-ne v0, v1, :cond_3
 
@@ -124,7 +124,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->d:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventd:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     if-ne v0, v1, :cond_4
 
@@ -139,7 +139,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->c:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventc:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     if-ne v0, v1, :cond_0
 

@@ -1789,9 +1789,9 @@
     .line 699
     new-instance v2, Lorg/apache/http/HttpHost;
 
-    iget-object v3, v0, Lcom/tencent/c/Pro$ICj;->a:Ljava/lang/String;
+    iget-object v3, v0, Lcom/tencent/c/Pro$ICj;->mStringa:Ljava/lang/String;
 
-    iget v0, v0, Lcom/tencent/c/Pro$ICj;->b:I
+    iget v0, v0, Lcom/tencent/c/Pro$ICj;->mIb:I
 
     invoke-direct {v2, v3, v0}, Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String;I)V
 
@@ -2085,7 +2085,7 @@
     move-result-object v12
 
     .line 234
-    iget-object v11, v12, Lcom/tencent/c/Pro$ICs;->a:Ljava/lang/String;
+    iget-object v11, v12, Lcom/tencent/c/Pro$ICs;->mStringa:Ljava/lang/String;
 
     .line 235
     invoke-static {v11}, Lcom/tencent/c/Pro$ICq;->d(Ljava/lang/String;)Lorg/json/JSONObject;
@@ -2119,10 +2119,10 @@
     .line 242
     :goto_1
     :try_start_2
-    iget-wide v10, v12, Lcom/tencent/c/Pro$ICs;->b:J
+    iget-wide v10, v12, Lcom/tencent/c/Pro$ICs;->mJb:J
 
     .line 243
-    iget-wide v12, v12, Lcom/tencent/c/Pro$ICs;->c:J
+    iget-wide v12, v12, Lcom/tencent/c/Pro$ICs;->mJc:J
     :try_end_2
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/net/SocketTimeoutException; {:try_start_2 .. :try_end_2} :catch_2

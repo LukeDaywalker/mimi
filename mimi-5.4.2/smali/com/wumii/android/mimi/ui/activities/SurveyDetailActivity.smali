@@ -233,7 +233,7 @@
     if-eqz v0, :cond_0
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603c3
 
@@ -245,7 +245,7 @@
 
     .line 76
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->a()Ljava/lang/String;
 

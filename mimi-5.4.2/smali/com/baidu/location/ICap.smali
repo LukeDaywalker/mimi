@@ -111,7 +111,7 @@
 
     const/4 v5, 0x2
 
-    iget v6, v2, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v6, v2, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -346,7 +346,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/baidu/location/ICap;->I:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICap;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -445,7 +445,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, v0, Lcom/baidu/location/ICap$ICa;->if:D
+    iput-wide v2, v0, Lcom/baidu/location/ICap$ICa;->mDif:D
 
     invoke-direct {p0}, Lcom/baidu/location/ICap;->b1()Z
 
@@ -457,7 +457,7 @@
 
     move-result v1
 
-    iput v1, v0, Lcom/baidu/location/ICap$ICa;->do:I
+    iput v1, v0, Lcom/baidu/location/ICap$ICa;->mIdo:I
 
     invoke-direct {p0}, Lcom/baidu/location/ICap;->b0()J
 
@@ -717,7 +717,7 @@
 
     aput-object v5, v4, v8
 
-    iget v5, v1, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v5, v1, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -848,7 +848,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/baidu/location/ICap;->I:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICap;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

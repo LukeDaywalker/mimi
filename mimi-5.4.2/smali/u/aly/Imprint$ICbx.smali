@@ -149,7 +149,7 @@
     .line 464
     new-instance v0, Ljava/util/HashMap;
 
-    iget v2, v1, Lu/aly/TMap;->c:I
+    iget v2, v1, Lu/aly/TMap;->mIc:I
 
     mul-int/lit8 v2, v2, 0x2
 
@@ -161,7 +161,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v2, v1, Lu/aly/TMap;->c:I
+    iget v2, v1, Lu/aly/TMap;->mIc:I
 
     if-ge v0, v2, :cond_0
 

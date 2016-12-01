@@ -48,7 +48,7 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->c(Ljava/lang/Exception;)V
 
     .line 308
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06037a
 
@@ -79,7 +79,7 @@
     const/4 v1, 0x0
 
     .line 270
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -156,7 +156,7 @@
     move-result-object v5
 
     .line 279
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     new-instance v6, Ljava/lang/StringBuilder;
 

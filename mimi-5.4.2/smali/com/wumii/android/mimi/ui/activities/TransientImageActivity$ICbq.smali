@@ -50,7 +50,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mTransientImageActivityb:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->n:Luk/co/senab/photoview/PhotoView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mBitmapa:Landroid/graphics/Bitmap;
 

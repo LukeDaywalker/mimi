@@ -105,7 +105,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBuildPropertiesg:Lcom/crashlytics/android/beta/BuildProperties;
 
-    iget-object v1, v1, Lcom/crashlytics/android/beta/BuildProperties;->d:Ljava/lang/String;
+    iget-object v1, v1, Lcom/crashlytics/android/beta/BuildProperties;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v6, v1}, Lio/fabric/sdk/android/services/common/IdManager;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -124,7 +124,7 @@
 
     iget-object v3, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBetaSettingsDataf:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
 
-    iget-object v3, v3, Lio/fabric/sdk/android/services/settings/BetaSettingsData;->a:Ljava/lang/String;
+    iget-object v3, v3, Lio/fabric/sdk/android/services/settings/BetaSettingsData;->mStringa:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mHttpRequestFactoryj:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
@@ -304,7 +304,7 @@
     .line 125
     iget-object v2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBetaSettingsDataf:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
 
-    iget v2, v2, Lio/fabric/sdk/android/services/settings/BetaSettingsData;->b:I
+    iget v2, v2, Lio/fabric/sdk/android/services/settings/BetaSettingsData;->mIb:I
 
     int-to-long v2, v2
 

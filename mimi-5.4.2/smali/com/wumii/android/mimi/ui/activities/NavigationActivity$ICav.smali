@@ -40,7 +40,7 @@
     const/4 v3, 0x0
 
     .line 666
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u9996\u9875\u70b9\u51fb\u6d6e\u5c42+\u53d1\u5e03\u6309\u94ae\u7684\u6b21\u6570"
 

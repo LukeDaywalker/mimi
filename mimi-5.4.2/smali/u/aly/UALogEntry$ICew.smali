@@ -19,25 +19,25 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/UALogEntry$ICew;
-
-.field public static final enum b:Lu/aly/UALogEntry$ICew;
-
-.field public static final enum c:Lu/aly/UALogEntry$ICew;
-
-.field public static final enum d:Lu/aly/UALogEntry$ICew;
-
-.field public static final enum e:Lu/aly/UALogEntry$ICew;
-
-.field public static final enum f:Lu/aly/UALogEntry$ICew;
-
-.field public static final enum g:Lu/aly/UALogEntry$ICew;
-
-.field public static final enum h:Lu/aly/UALogEntry$ICew;
-
-.field public static final enum i:Lu/aly/UALogEntry$ICew;
-
 .field private static final synthetic mArrayICewm:[Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewa:Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewb:Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewc:Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewd:Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewe:Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewf:Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewg:Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewh:Lu/aly/UALogEntry$ICew;
+
+.field public static final enum mICewi:Lu/aly/UALogEntry$ICew;
 
 .field private static final mMapj:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -84,7 +84,7 @@
 
     invoke-direct {v0, v1, v2, v5, v3}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->a:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewa:Lu/aly/UALogEntry$ICew;
 
     .line 64
     new-instance v0, Lu/aly/UALogEntry$ICew;
@@ -95,7 +95,7 @@
 
     invoke-direct {v0, v1, v5, v6, v2}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->b:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewb:Lu/aly/UALogEntry$ICew;
 
     .line 65
     new-instance v0, Lu/aly/UALogEntry$ICew;
@@ -106,7 +106,7 @@
 
     invoke-direct {v0, v1, v6, v7, v2}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->c:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewc:Lu/aly/UALogEntry$ICew;
 
     .line 66
     new-instance v0, Lu/aly/UALogEntry$ICew;
@@ -117,7 +117,7 @@
 
     invoke-direct {v0, v1, v7, v8, v2}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->d:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewd:Lu/aly/UALogEntry$ICew;
 
     .line 67
     new-instance v0, Lu/aly/UALogEntry$ICew;
@@ -128,7 +128,7 @@
 
     invoke-direct {v0, v1, v8, v9, v2}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->e:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewe:Lu/aly/UALogEntry$ICew;
 
     .line 68
     new-instance v0, Lu/aly/UALogEntry$ICew;
@@ -141,7 +141,7 @@
 
     invoke-direct {v0, v1, v9, v2, v3}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->f:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewf:Lu/aly/UALogEntry$ICew;
 
     .line 69
     new-instance v0, Lu/aly/UALogEntry$ICew;
@@ -156,7 +156,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->g:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewg:Lu/aly/UALogEntry$ICew;
 
     .line 70
     new-instance v0, Lu/aly/UALogEntry$ICew;
@@ -171,7 +171,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->h:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewh:Lu/aly/UALogEntry$ICew;
 
     .line 71
     new-instance v0, Lu/aly/UALogEntry$ICew;
@@ -186,7 +186,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/UALogEntry$ICew;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UALogEntry$ICew;->i:Lu/aly/UALogEntry$ICew;
+    sput-object v0, Lu/aly/UALogEntry$ICew;->mICewi:Lu/aly/UALogEntry$ICew;
 
     .line 62
     const/16 v0, 0x9
@@ -195,45 +195,45 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lu/aly/UALogEntry$ICew;->a:Lu/aly/UALogEntry$ICew;
+    sget-object v2, Lu/aly/UALogEntry$ICew;->mICewa:Lu/aly/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 
-    sget-object v1, Lu/aly/UALogEntry$ICew;->b:Lu/aly/UALogEntry$ICew;
+    sget-object v1, Lu/aly/UALogEntry$ICew;->mICewb:Lu/aly/UALogEntry$ICew;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/UALogEntry$ICew;->c:Lu/aly/UALogEntry$ICew;
+    sget-object v1, Lu/aly/UALogEntry$ICew;->mICewc:Lu/aly/UALogEntry$ICew;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lu/aly/UALogEntry$ICew;->d:Lu/aly/UALogEntry$ICew;
+    sget-object v1, Lu/aly/UALogEntry$ICew;->mICewd:Lu/aly/UALogEntry$ICew;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lu/aly/UALogEntry$ICew;->e:Lu/aly/UALogEntry$ICew;
+    sget-object v1, Lu/aly/UALogEntry$ICew;->mICewe:Lu/aly/UALogEntry$ICew;
 
     aput-object v1, v0, v8
 
-    sget-object v1, Lu/aly/UALogEntry$ICew;->f:Lu/aly/UALogEntry$ICew;
+    sget-object v1, Lu/aly/UALogEntry$ICew;->mICewf:Lu/aly/UALogEntry$ICew;
 
     aput-object v1, v0, v9
 
     const/4 v1, 0x6
 
-    sget-object v2, Lu/aly/UALogEntry$ICew;->g:Lu/aly/UALogEntry$ICew;
+    sget-object v2, Lu/aly/UALogEntry$ICew;->mICewg:Lu/aly/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lu/aly/UALogEntry$ICew;->h:Lu/aly/UALogEntry$ICew;
+    sget-object v2, Lu/aly/UALogEntry$ICew;->mICewh:Lu/aly/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lu/aly/UALogEntry$ICew;->i:Lu/aly/UALogEntry$ICew;
+    sget-object v2, Lu/aly/UALogEntry$ICew;->mICewi:Lu/aly/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 

@@ -45,7 +45,7 @@
 
     iget-object v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
-    iget v1, v1, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iget v1, v1, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
     invoke-static {v1}, Ljava/lang/Math;->abs(I)I
 
@@ -61,11 +61,11 @@
     :goto_0
     iget-object v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
-    iget v1, v1, Landroid/support/v4/widget/SwipeRefreshLayout;->a:I
+    iget v1, v1, Landroid/support/v4/widget/SwipeRefreshLayout;->mIa:I
 
     iget-object v2, p0, Landroid/support/v4/widget/SwipeRefreshLayout$6;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
-    iget v2, v2, Landroid/support/v4/widget/SwipeRefreshLayout;->a:I
+    iget v2, v2, Landroid/support/v4/widget/SwipeRefreshLayout;->mIa:I
 
     sub-int/2addr v0, v2
 

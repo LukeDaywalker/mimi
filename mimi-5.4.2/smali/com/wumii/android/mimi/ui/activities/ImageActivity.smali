@@ -7,7 +7,11 @@
 
 
 # instance fields
+.field protected mDisplayImageOptionsp:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+
 .field private final mFq:F
+
+.field protected mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
 .field private mRoundProgressBarr:Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
 
@@ -15,13 +19,9 @@
 
 .field private mStringt:Ljava/lang/String;
 
+.field protected mViewo:Landroid/view/View;
+
 .field private mViews:Landroid/view/View;
-
-.field protected n:Luk/co/senab/photoview/PhotoView;
-
-.field protected o:Landroid/view/View;
-
-.field protected p:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 
 # direct methods
@@ -132,7 +132,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mStringC:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
     new-instance v3, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICad;
 
@@ -151,7 +151,7 @@
 
     .prologue
     .line 156
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
     invoke-virtual {v0, p3}, Luk/co/senab/photoview/PhotoView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
@@ -190,7 +190,7 @@
 
     check-cast v0, Luk/co/senab/photoview/PhotoView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
     .line 73
     const v0, 0x7f0b0054
@@ -199,7 +199,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->o:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mViewo:Landroid/view/View;
 
     .line 74
     const v0, 0x7f0b00ad
@@ -222,7 +222,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mViews:Landroid/view/View;
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->o:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mViewo:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -232,14 +232,14 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
     const/high16 v1, 0x41200000    # 10.0f
 
     invoke-virtual {v0, v1}, Luk/co/senab/photoview/PhotoView;->setMaxScale(F)V
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;
 
@@ -274,7 +274,7 @@
 
     new-instance v2, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
     invoke-virtual {v3}, Luk/co/senab/photoview/PhotoView;->getWidth()I
 
@@ -282,7 +282,7 @@
 
     mul-int/lit8 v3, v3, 0x2
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
     invoke-virtual {v4}, Luk/co/senab/photoview/PhotoView;->getHeight()I
 
@@ -292,7 +292,7 @@
 
     invoke-direct {v2, v3, v4}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;-><init>(II)V
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->p:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mDisplayImageOptionsp:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     new-instance v4, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;
 
@@ -327,7 +327,7 @@
 
     .line 169
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->o:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mViewo:Landroid/view/View;
 
     if-ne p1, v0, :cond_0
 
@@ -399,7 +399,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->p:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mDisplayImageOptionsp:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 64
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mStringC:Ljava/lang/String;

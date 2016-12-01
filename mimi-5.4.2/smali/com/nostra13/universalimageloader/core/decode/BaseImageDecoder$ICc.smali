@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+.field public final mICbb:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
 
-.field public final b:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+.field public final mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 248
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     .line 249
-    iput-object p2, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->b:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+    iput-object p2, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->mICbb:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
 
     .line 250
     return-void

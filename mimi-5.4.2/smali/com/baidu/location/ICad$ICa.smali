@@ -24,7 +24,7 @@
 
     const/4 v2, 0x1
 
-    sget-boolean v0, Lcom/baidu/location/ICad;->gP:Z
+    sget-boolean v0, Lcom/baidu/location/ICad;->isZgP:Z
 
     if-ne v0, v2, :cond_0
 

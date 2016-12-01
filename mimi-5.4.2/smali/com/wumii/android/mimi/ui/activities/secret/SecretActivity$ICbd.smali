@@ -116,7 +116,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->d:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjd:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     const/4 v3, 0x0
 

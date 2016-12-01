@@ -60,7 +60,7 @@
 
     iget v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICag;->mIa:I
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-interface {v0, v1, v2}, Lcom/squareup/okhttp/internal/spdy/FrameWriter;->a(ILcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 

@@ -30,7 +30,7 @@
 
     .prologue
     .line 132
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

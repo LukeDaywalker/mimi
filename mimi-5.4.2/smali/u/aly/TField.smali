@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mBb:B
 
-.field public final b:B
+.field public final mSc:S
 
-.field public final c:S
+.field public final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -35,13 +35,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lu/aly/TField;->a:Ljava/lang/String;
+    iput-object p1, p0, Lu/aly/TField;->mStringa:Ljava/lang/String;
 
     .line 33
-    iput-byte p2, p0, Lu/aly/TField;->b:B
+    iput-byte p2, p0, Lu/aly/TField;->mBb:B
 
     .line 34
-    iput-short p3, p0, Lu/aly/TField;->c:S
+    iput-short p3, p0, Lu/aly/TField;->mSc:S
 
     .line 35
     return-void
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lu/aly/TField;->a:Ljava/lang/String;
+    iget-object v1, p0, Lu/aly/TField;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    iget-byte v1, p0, Lu/aly/TField;->b:B
+    iget-byte v1, p0, Lu/aly/TField;->mBb:B
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -88,7 +88,7 @@
 
     move-result-object v0
 
-    iget-short v1, p0, Lu/aly/TField;->c:S
+    iget-short v1, p0, Lu/aly/TField;->mSc:S
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

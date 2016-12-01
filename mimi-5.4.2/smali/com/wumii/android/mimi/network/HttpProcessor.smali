@@ -220,7 +220,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
 
@@ -324,7 +324,7 @@
     if-eqz v1, :cond_1
 
     .line 232
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->b:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafb:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v3, "HttpProcessor EOF Exception"
 

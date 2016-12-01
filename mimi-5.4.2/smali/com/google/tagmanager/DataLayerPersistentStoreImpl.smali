@@ -1128,9 +1128,9 @@
     .line 129
     new-instance v3, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;
 
-    iget-object v4, v0, Lcom/google/tagmanager/DataLayer$ICi;->a:Ljava/lang/String;
+    iget-object v4, v0, Lcom/google/tagmanager/DataLayer$ICi;->mStringa:Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/google/tagmanager/DataLayer$ICi;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/google/tagmanager/DataLayer$ICi;->mObjectb:Ljava/lang/Object;
 
     invoke-direct {p0, v0}, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->a(Ljava/lang/Object;)[B
 

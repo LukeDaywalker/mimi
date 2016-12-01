@@ -20,12 +20,6 @@
 
 
 # instance fields
-.field public a:F
-
-.field public b:F
-
-.field public i:I
-
 .field private isZY:Z
 
 .field isZc:Z
@@ -68,6 +62,10 @@
 
 .field private mFX:F
 
+.field public mFa:F
+
+.field public mFb:F
+
 .field private mHF:Lcom/baidu/platform/comapi/map/H;
 
 .field private mICaJ:Lcom/baidu/platform/comapi/map/ICa;
@@ -97,6 +95,8 @@
 .field private mIO:I
 
 .field private mIV:I
+
+.field public mIi:I
 
 .field private mIy:Lcom/baidu/platform/comapi/map/I;
 
@@ -171,11 +171,11 @@
 
     const/high16 v0, 0x41a00000    # 20.0f
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->a:F
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->mFa:F
 
     const/high16 v0, 0x40400000    # 3.0f
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->b:F
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->mFb:F
 
     iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICc;->isZq:Z
 
@@ -296,7 +296,7 @@
 
     move-result v1
 
-    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->d:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->mICfd:Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
 
@@ -316,7 +316,7 @@
     return-void
 
     :cond_0
-    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->f:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->mICff:Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
 
@@ -335,7 +335,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->b:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->mICfb:Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
 
@@ -371,7 +371,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->d:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICfd:Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
 
@@ -390,7 +390,7 @@
     goto :goto_0
 
     :cond_4
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->f:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICff:Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
 
@@ -409,7 +409,7 @@
     goto :goto_0
 
     :cond_5
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->b:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICfb:Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
 
@@ -855,7 +855,7 @@
 
     const/16 v0, 0x12
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->i:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->mIi:I
 
     :goto_0
     invoke-static {}, Lcom/baidu/mapapi/common/SysOSUtil;->getModuleFileName()Ljava/lang/String;
@@ -1080,7 +1080,7 @@
 
     const/16 v0, 0x19
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->i:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->mIi:I
 
     goto/16 :goto_0
 
@@ -1095,14 +1095,14 @@
 
     const/16 v0, 0x25
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->i:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->mIi:I
 
     goto/16 :goto_0
 
     :cond_2
     const/16 v0, 0x32
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->i:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICc;->mIi:I
 
     goto/16 :goto_0
 
@@ -1409,7 +1409,7 @@
 
     iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICc;->mICaf:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICy;->a:Lcom/baidu/platform/comapi/map/ICy;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICy;->mICya:Lcom/baidu/platform/comapi/map/ICy;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICy;->ordinal()I
 
@@ -2826,7 +2826,7 @@
 
     move-result-object v2
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/B;->a:F
+    iget v2, v2, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     move-object/from16 v0, p0
 
@@ -2842,7 +2842,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/baidu/platform/comapi/map/ICc;->a:F
+    iget v3, v0, Lcom/baidu/platform/comapi/map/ICc;->mFa:F
 
     cmpl-float v2, v2, v3
 
@@ -2882,7 +2882,7 @@
     :cond_14
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/baidu/platform/comapi/map/ICc;->b:F
+    iget v3, v0, Lcom/baidu/platform/comapi/map/ICc;->mFb:F
 
     cmpg-float v2, v2, v3
 
@@ -3040,13 +3040,13 @@
 
     if-eqz v2, :cond_b
 
-    iget v3, v2, Lcom/baidu/platform/comapi/map/B;->a:F
+    iget v3, v2, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     const/high16 v8, 0x3f800000    # 1.0f
 
     sub-float/2addr v3, v8
 
-    iput v3, v2, Lcom/baidu/platform/comapi/map/B;->a:F
+    iput v3, v2, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     const/16 v3, 0x12c
 
@@ -4514,7 +4514,7 @@
 
     move-result-object v0
 
-    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/B;->m:D
+    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/B;->mDm:D
 
     return-wide v0
 .end method

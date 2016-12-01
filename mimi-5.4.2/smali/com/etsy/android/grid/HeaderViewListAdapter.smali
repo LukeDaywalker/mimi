@@ -192,7 +192,7 @@
     check-cast v0, Lcom/etsy/android/grid/ExtendableListView$ICd;
 
     .line 93
-    iget-boolean v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->c:Z
+    iget-boolean v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->isZc:Z
 
     if-nez v0, :cond_0
 
@@ -370,7 +370,7 @@
 
     check-cast v0, Lcom/etsy/android/grid/ExtendableListView$ICd;
 
-    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->mObjectb:Ljava/lang/Object;
 
     .line 190
     :goto_0
@@ -419,7 +419,7 @@
 
     check-cast v0, Lcom/etsy/android/grid/ExtendableListView$ICd;
 
-    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->mObjectb:Ljava/lang/Object;
 
     goto :goto_0
 .end method
@@ -537,7 +537,7 @@
 
     check-cast v0, Lcom/etsy/android/grid/ExtendableListView$ICd;
 
-    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->a:Landroid/view/View;
+    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->mViewa:Landroid/view/View;
 
     .line 230
     :goto_0
@@ -586,7 +586,7 @@
 
     check-cast v0, Lcom/etsy/android/grid/ExtendableListView$ICd;
 
-    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->a:Landroid/view/View;
+    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->mViewa:Landroid/view/View;
 
     goto :goto_0
 .end method
@@ -703,7 +703,7 @@
 
     check-cast v0, Lcom/etsy/android/grid/ExtendableListView$ICd;
 
-    iget-boolean v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->c:Z
+    iget-boolean v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->isZc:Z
 
     .line 169
     :goto_0
@@ -752,7 +752,7 @@
 
     check-cast v0, Lcom/etsy/android/grid/ExtendableListView$ICd;
 
-    iget-boolean v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->c:Z
+    iget-boolean v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICd;->isZc:Z
 
     goto :goto_0
 .end method

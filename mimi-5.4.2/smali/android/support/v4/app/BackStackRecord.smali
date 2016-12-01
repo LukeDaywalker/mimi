@@ -158,7 +158,7 @@
 
     invoke-direct {v0, v1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, v2, Landroid/support/v4/app/BackStackRecord$TransitionState;->d:Landroid/view/View;
+    iput-object v0, v2, Landroid/support/v4/app/BackStackRecord$TransitionState;->mViewd:Landroid/view/View;
 
     move v6, v7
 
@@ -871,7 +871,7 @@
     if-eqz v3, :cond_1
 
     .line 1378
-    iget-object v3, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->b:Ljava/util/ArrayList;
+    iget-object v3, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayListb:Ljava/util/ArrayList;
 
     iget-object v4, v0, Landroid/support/v4/app/Fragment;->mView:Landroid/view/View;
 
@@ -889,7 +889,7 @@
     invoke-static {p3, v3, v4}, Landroid/support/v4/app/FragmentTransitionCompat21;->a(Ljava/lang/Object;Landroid/view/View;Z)V
 
     .line 1381
-    iget-object v3, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->b:Ljava/util/ArrayList;
+    iget-object v3, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayListb:Ljava/util/ArrayList;
 
     iget-object v0, v0, Landroid/support/v4/app/Fragment;->mView:Landroid/view/View;
 
@@ -911,7 +911,7 @@
     invoke-static {p3, v3, v2}, Landroid/support/v4/app/FragmentTransitionCompat21;->a(Ljava/lang/Object;Landroid/view/View;Z)V
 
     .line 1386
-    iget-object v3, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->b:Ljava/util/ArrayList;
+    iget-object v3, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayListb:Ljava/util/ArrayList;
 
     iget-object v0, v0, Landroid/support/v4/app/Fragment;->mView:Landroid/view/View;
 
@@ -1053,7 +1053,7 @@
     if-eqz p3, :cond_2
 
     .line 1427
-    iget-object v4, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v4, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-static {v4, v0, v1}, Landroid/support/v4/app/BackStackRecord;->a(Landroid/support/v4/util/ArrayMap;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1080,7 +1080,7 @@
 
     .line 1429
     :cond_2
-    iget-object v4, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v4, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-static {v4, v1, v0}, Landroid/support/v4/app/BackStackRecord;->a(Landroid/support/v4/util/ArrayMap;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1189,7 +1189,7 @@
     check-cast v1, Ljava/lang/String;
 
     .line 1412
-    iget-object v3, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v3, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-static {v3, v0, v1}, Landroid/support/v4/app/BackStackRecord;->a(Landroid/support/v4/util/ArrayMap;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1281,9 +1281,9 @@
     if-eqz v0, :cond_0
 
     .line 1280
-    iget-object v1, p2, Landroid/support/v4/app/BackStackRecord$TransitionState;->c:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
+    iget-object v1, p2, Landroid/support/v4/app/BackStackRecord$TransitionState;->mEpicenterViewc:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
-    iput-object v0, v1, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;->a:Landroid/view/View;
+    iput-object v0, v1, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;->mViewa:Landroid/view/View;
 
     .line 1283
     :cond_0
@@ -1571,7 +1571,7 @@
     .line 1153
     move-object/from16 v0, p2
 
-    iget-object v5, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->d:Landroid/view/View;
+    iget-object v5, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mViewd:Landroid/view/View;
 
     invoke-virtual {v11, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1623,7 +1623,7 @@
     .line 1168
     move-object/from16 v0, p2
 
-    iget-object v5, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->d:Landroid/view/View;
+    iget-object v5, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mViewd:Landroid/view/View;
 
     move-object/from16 v0, v26
 
@@ -1727,19 +1727,19 @@
     .line 1207
     move-object/from16 v0, p2
 
-    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->d:Landroid/view/View;
+    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mViewd:Landroid/view/View;
 
     move-object/from16 v16, v0
 
     move-object/from16 v0, p2
 
-    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->c:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
+    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mEpicenterViewc:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
     move-object/from16 v17, v0
 
     move-object/from16 v0, p2
 
-    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     move-object/from16 v18, v0
 
@@ -1765,7 +1765,7 @@
     .line 1215
     move-object/from16 v0, p2
 
-    iget-object v4, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->d:Landroid/view/View;
+    iget-object v4, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mViewd:Landroid/view/View;
 
     const/4 v5, 0x1
 
@@ -1792,13 +1792,13 @@
     .line 1221
     move-object/from16 v0, p2
 
-    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->d:Landroid/view/View;
+    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mViewd:Landroid/view/View;
 
     move-object/from16 v22, v0
 
     move-object/from16 v0, p2
 
-    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->b:Ljava/util/ArrayList;
+    iget-object v0, v0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayListb:Ljava/util/ArrayList;
 
     move-object/from16 v30, v0
 
@@ -1995,7 +1995,7 @@
     if-eqz p3, :cond_0
 
     .line 1442
-    iget-object v4, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v4, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-static {v4, v0, v1}, Landroid/support/v4/app/BackStackRecord;->a(Landroid/support/v4/util/ArrayMap;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2009,7 +2009,7 @@
 
     .line 1444
     :cond_0
-    iget-object v4, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v4, p1, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-static {v4, v1, v0}, Landroid/support/v4/app/BackStackRecord;->a(Landroid/support/v4/util/ArrayMap;Ljava/lang/String;Ljava/lang/String;)V
 

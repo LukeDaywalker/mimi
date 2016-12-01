@@ -83,7 +83,7 @@
     .line 113
     if-eqz v0, :cond_3
 
-    iget-object v2, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->a:Ljava/lang/String;
+    iget-object v2, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -299,10 +299,10 @@
     invoke-direct {v0}, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;-><init>()V
 
     .line 210
-    iput-object v3, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->a:Ljava/lang/String;
+    iput-object v3, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
 
     .line 211
-    iput v2, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->b:I
+    iput v2, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mIb:I
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -751,10 +751,10 @@
     invoke-direct {v0}, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;-><init>()V
 
     .line 296
-    iput-object p1, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->a:Ljava/lang/String;
+    iput-object p1, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
 
     .line 297
-    iput v3, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->b:I
+    iput v3, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mIb:I
     :try_end_6
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_6 .. :try_end_6} :catch_0
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_d

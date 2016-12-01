@@ -47,7 +47,7 @@
     if-eqz v0, :cond_0
 
     .line 158
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ax:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafax:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -76,7 +76,7 @@
 
     .line 160
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

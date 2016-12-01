@@ -34,7 +34,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/XListView;->a:Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/XListView;->mXListViewHeadera:Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->getViewContent()Landroid/widget/RelativeLayout;
 

@@ -10,8 +10,6 @@
 
 
 # instance fields
-.field public final a:Ljava/net/URL;
-
 .field private isZg:Z
 
 .field private isZh:Z
@@ -30,6 +28,8 @@
 
 .field private mStringk:Ljava/lang/String;
 
+.field public final mURLa:Ljava/net/URL;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -44,7 +44,7 @@
     sput-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->mArrayStringb:[Ljava/lang/String;
 
     .line 378
-    sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest$ICh;->a:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
+    sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest$ICh;->mICha:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
     sput-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIChc:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
@@ -88,7 +88,7 @@
 
     invoke-direct {v0, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->a:Ljava/net/URL;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mURLa:Ljava/net/URL;
     :try_end_0
     .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -713,7 +713,7 @@
     .line 1350
     sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIChc:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->a:Ljava/net/URL;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mURLa:Ljava/net/URL;
 
     invoke-direct {p0}, Lio/fabric/sdk/android/services/network/HttpRequest;->q()Ljava/net/Proxy;
 
@@ -736,7 +736,7 @@
     :cond_0
     sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIChc:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->a:Ljava/net/URL;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mURLa:Ljava/net/URL;
 
     invoke-interface {v0, v1}, Lio/fabric/sdk/android/services/network/HttpRequest$ICh;->a(Ljava/net/URL;)Ljava/net/HttpURLConnection;
     :try_end_0

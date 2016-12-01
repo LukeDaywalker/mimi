@@ -173,7 +173,7 @@
 
     .line 87
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v2, "notification"
 
@@ -255,13 +255,13 @@
     move-result-object v0
 
     .line 48
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
     .line 50
     :try_start_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v6, 0x0
 
@@ -366,7 +366,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -426,7 +426,7 @@
     invoke-static {v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/database/Cursor;)V
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_2
@@ -434,7 +434,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -443,7 +443,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -485,13 +485,13 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
     .line 103
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "DELETE FROM notification"
 
@@ -527,7 +527,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/notification/Notification;
 
     .line 109
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v3, "notification"
 
@@ -573,7 +573,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -604,7 +604,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -628,7 +628,7 @@
 
     .line 119
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_3
@@ -636,7 +636,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 

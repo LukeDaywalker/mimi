@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICda:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->b:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdb:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 

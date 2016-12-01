@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public a:Landroid/view/View;
-
-.field public b:Ljava/lang/Object;
-
-.field public c:Z
+.field public isZc:Z
 
 .field final synthetic mExtendableListViewd:Lcom/etsy/android/grid/ExtendableListView;
+
+.field public mObjectb:Ljava/lang/Object;
+
+.field public mViewa:Landroid/view/View;
 
 
 # direct methods

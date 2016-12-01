@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Lcom/squareup/okhttp/Request;
+.field public final mRequesta:Lcom/squareup/okhttp/Request;
 
-.field public final b:Lcom/squareup/okhttp/Response;
+.field public final mResponseb:Lcom/squareup/okhttp/Response;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 41
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/CacheStrategy;->a:Lcom/squareup/okhttp/Request;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/CacheStrategy;->mRequesta:Lcom/squareup/okhttp/Request;
 
     .line 42
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/CacheStrategy;->b:Lcom/squareup/okhttp/Response;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/CacheStrategy;->mResponseb:Lcom/squareup/okhttp/Response;
 
     .line 43
     return-void

@@ -151,13 +151,13 @@
     if-eqz v0, :cond_1
 
     .line 1843
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICta:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 1846
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->c:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtc:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -169,7 +169,7 @@
     if-eqz v0, :cond_2
 
     .line 1849
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->b:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtb:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -182,7 +182,7 @@
     if-eqz v0, :cond_3
 
     .line 1853
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->f:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtf:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -222,7 +222,7 @@
     if-eqz v0, :cond_7
 
     .line 1858
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICte:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -279,7 +279,7 @@
     if-nez v0, :cond_5
 
     .line 1868
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->g:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtg:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -300,7 +300,7 @@
     invoke-direct {v6, v0, v1, v3}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;-><init>(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;Landroid/content/Context;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 1874
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mCommentOperationDialoga:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
@@ -320,7 +320,7 @@
 
     .line 1860
     :cond_7
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->d:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtd:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

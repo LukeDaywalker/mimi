@@ -93,7 +93,7 @@
     if-nez p3, :cond_0
 
     .line 328
-    sget-object p3, Lcom/squareup/okhttp/internal/Util;->b:[Ljava/lang/String;
+    sget-object p3, Lcom/squareup/okhttp/internal/Util;->mArrayStringb:[Ljava/lang/String;
 
     .line 330
     :cond_0

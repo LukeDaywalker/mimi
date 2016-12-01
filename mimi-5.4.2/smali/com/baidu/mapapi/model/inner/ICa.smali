@@ -3,13 +3,7 @@
 
 
 # instance fields
-.field public a:I
-
-.field public b:Lcom/baidu/mapapi/model/inner/Point;
-
-.field public c:Lcom/baidu/mapapi/model/inner/Point;
-
-.field public d:Ljava/util/ArrayList;
+.field public mArrayListd:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -21,6 +15,12 @@
         }
     .end annotation
 .end field
+
+.field public mIa:I
+
+.field public mPointb:Lcom/baidu/mapapi/model/inner/Point;
+
+.field public mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
 
 # direct methods

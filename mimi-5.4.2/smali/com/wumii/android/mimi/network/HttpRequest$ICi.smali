@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
-
-.field public static final enum b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
-
-.field public static final enum c:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
-
 .field private static final synthetic mArrayICid:[Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+
+.field public static final enum mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+
+.field public static final enum mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+
+.field public static final enum mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/network/HttpRequest$ICi;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/wumii/android/mimi/network/HttpRequest$ICi;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
@@ -58,22 +58,22 @@
 
     invoke-direct {v0, v1, v4}, Lcom/wumii/android/mimi/network/HttpRequest$ICi;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->c:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     .line 8
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->c:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     aput-object v1, v0, v4
 

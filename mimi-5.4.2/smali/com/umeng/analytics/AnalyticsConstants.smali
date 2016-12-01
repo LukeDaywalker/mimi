@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:[Ljava/lang/String;
+.field public static final mArrayStringa:[Ljava/lang/String;
 
-.field public static final b:[Ljava/lang/String;
+.field public static final mArrayStringb:[Ljava/lang/String;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/umeng/analytics/AnalyticsConstants;->a:[Ljava/lang/String;
+    sput-object v0, Lcom/umeng/analytics/AnalyticsConstants;->mArrayStringa:[Ljava/lang/String;
 
     .line 16
     new-array v0, v4, [Ljava/lang/String;
@@ -44,7 +44,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/umeng/analytics/AnalyticsConstants;->b:[Ljava/lang/String;
+    sput-object v0, Lcom/umeng/analytics/AnalyticsConstants;->mArrayStringb:[Ljava/lang/String;
 
     return-void
 .end method

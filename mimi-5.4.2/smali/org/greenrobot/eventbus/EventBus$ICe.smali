@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lorg/greenrobot/eventbus/EventBus$ICe;->mArrayIa:[I
 
-    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->a:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModea:Lorg/greenrobot/eventbus/ThreadMode;
 
     invoke-virtual {v1}, Lorg/greenrobot/eventbus/ThreadMode;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lorg/greenrobot/eventbus/EventBus$ICe;->mArrayIa:[I
 
-    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->b:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModeb:Lorg/greenrobot/eventbus/ThreadMode;
 
     invoke-virtual {v1}, Lorg/greenrobot/eventbus/ThreadMode;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lorg/greenrobot/eventbus/EventBus$ICe;->mArrayIa:[I
 
-    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->c:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModec:Lorg/greenrobot/eventbus/ThreadMode;
 
     invoke-virtual {v1}, Lorg/greenrobot/eventbus/ThreadMode;->ordinal()I
 
@@ -74,7 +74,7 @@
     :try_start_3
     sget-object v0, Lorg/greenrobot/eventbus/EventBus$ICe;->mArrayIa:[I
 
-    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->d:Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v1, Lorg/greenrobot/eventbus/ThreadMode;->mThreadModed:Lorg/greenrobot/eventbus/ThreadMode;
 
     invoke-virtual {v1}, Lorg/greenrobot/eventbus/ThreadMode;->ordinal()I
 

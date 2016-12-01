@@ -425,7 +425,7 @@
 
     iget-object v2, p0, Lcom/sina/weibo/sdk/api/share/WeiboShareAPIImpl;->mICbc:Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;
 
-    iget-object v2, v2, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->a:Ljava/lang/String;
+    iget-object v2, v2, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;-><init>(Ljava/lang/String;)V
 
@@ -465,7 +465,7 @@
 
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboShareAPIImpl;->mICbc:Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;
 
-    iget-object v3, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->a:Ljava/lang/String;
+    iget-object v3, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/sina/weibo/sdk/api/share/WeiboShareAPIImpl;->mStringb:Ljava/lang/String;
 
@@ -557,7 +557,7 @@
     :cond_3
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboShareAPIImpl;->mICbc:Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;
 
-    iget v0, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->b:I
+    iget v0, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mIb:I
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/api/share/ApiUtils;->a(I)Z
 
@@ -580,7 +580,7 @@
 
     iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/WeiboShareAPIImpl;->mICbc:Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;
 
-    iget-object v1, v1, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->a:Ljava/lang/String;
+    iget-object v1, v1, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/api/share/ApiUtils;->b(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -621,7 +621,7 @@
     :cond_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboShareAPIImpl;->mICbc:Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;
 
-    iget v0, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->b:I
+    iget v0, v0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mIb:I
 
     goto :goto_0
 .end method

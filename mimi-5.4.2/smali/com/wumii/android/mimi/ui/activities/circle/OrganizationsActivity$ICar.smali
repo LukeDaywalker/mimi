@@ -34,7 +34,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->mOrganizationsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->mOrganizationsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
 

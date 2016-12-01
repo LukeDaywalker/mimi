@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/google/tagmanager/PreviewManager$ICan;
-
-.field public static final enum b:Lcom/google/tagmanager/PreviewManager$ICan;
-
-.field public static final enum c:Lcom/google/tagmanager/PreviewManager$ICan;
-
 .field private static final synthetic mArrayICand:[Lcom/google/tagmanager/PreviewManager$ICan;
+
+.field public static final enum mICana:Lcom/google/tagmanager/PreviewManager$ICan;
+
+.field public static final enum mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
+
+.field public static final enum mICanc:Lcom/google/tagmanager/PreviewManager$ICan;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/tagmanager/PreviewManager$ICan;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->a:Lcom/google/tagmanager/PreviewManager$ICan;
+    sput-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->mICana:Lcom/google/tagmanager/PreviewManager$ICan;
 
     .line 14
     new-instance v0, Lcom/google/tagmanager/PreviewManager$ICan;
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/google/tagmanager/PreviewManager$ICan;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    sput-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     .line 16
     new-instance v0, Lcom/google/tagmanager/PreviewManager$ICan;
@@ -60,22 +60,22 @@
 
     invoke-direct {v0, v1, v4}, Lcom/google/tagmanager/PreviewManager$ICan;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->c:Lcom/google/tagmanager/PreviewManager$ICan;
+    sput-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->mICanc:Lcom/google/tagmanager/PreviewManager$ICan;
 
     .line 12
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/google/tagmanager/PreviewManager$ICan;
 
-    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->a:Lcom/google/tagmanager/PreviewManager$ICan;
+    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->mICana:Lcom/google/tagmanager/PreviewManager$ICan;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->c:Lcom/google/tagmanager/PreviewManager$ICan;
+    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->mICanc:Lcom/google/tagmanager/PreviewManager$ICan;
 
     aput-object v1, v0, v4
 

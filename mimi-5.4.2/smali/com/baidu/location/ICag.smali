@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field public hm:Landroid/os/Handler;
+.field public mHandlerhm:Landroid/os/Handler;
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICag;->hm:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICag;->mHandlerhm:Landroid/os/Handler;
 
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICag;->hm:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICag;->mHandlerhm:Landroid/os/Handler;
 
     return-void
 .end method

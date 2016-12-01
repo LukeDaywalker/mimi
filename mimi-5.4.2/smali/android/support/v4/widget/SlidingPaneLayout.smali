@@ -3077,7 +3077,7 @@
 
     .line 511
     :cond_5
-    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->a:F
+    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mFa:F
 
     const/4 v5, 0x0
 
@@ -3086,7 +3086,7 @@
     if-lez v4, :cond_6
 
     .line 512
-    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->a:F
+    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mFa:F
 
     add-float/2addr v3, v4
 
@@ -3346,7 +3346,7 @@
 
     if-nez v4, :cond_13
 
-    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->a:F
+    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mFa:F
 
     const/4 v5, 0x0
 
@@ -3383,7 +3383,7 @@
 
     if-gt v5, v14, :cond_12
 
-    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->a:F
+    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mFa:F
 
     const/4 v5, 0x0
 
@@ -3485,7 +3485,7 @@
 
     .line 600
     :cond_18
-    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->a:F
+    iget v4, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mFa:F
 
     const/4 v9, 0x0
 
@@ -3593,7 +3593,7 @@
     move-result v9
 
     .line 631
-    iget v1, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->a:F
+    iget v1, v1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mFa:F
 
     int-to-float v9, v9
 

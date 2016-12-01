@@ -368,7 +368,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 192
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->a:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICaha:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -383,7 +383,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 194
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->b:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahb:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -398,7 +398,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 196
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->c:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahc:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -413,7 +413,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 198
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->d:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahd:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -428,7 +428,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 200
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->e:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahe:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -443,7 +443,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 202
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->f:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahf:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -458,7 +458,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 204
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->g:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahg:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -473,7 +473,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 206
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->h:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahh:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -488,7 +488,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 208
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->i:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahi:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -505,7 +505,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 210
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->j:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahj:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -520,7 +520,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 212
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->k:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahk:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -535,7 +535,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 214
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->l:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahl:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -550,7 +550,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 216
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->m:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahm:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -565,7 +565,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 218
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->n:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahn:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -580,7 +580,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 220
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->o:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICaho:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -595,7 +595,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 222
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->p:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahp:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -610,7 +610,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 224
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->q:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahq:Lu/aly/DeviceInfo$ICah;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -659,103 +659,103 @@
 
     new-array v0, v0, [Lu/aly/DeviceInfo$ICah;
 
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->a:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICaha:Lu/aly/DeviceInfo$ICah;
 
     aput-object v1, v0, v2
 
     const/4 v1, 0x1
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->b:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahb:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->c:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahc:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->d:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahd:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->e:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahe:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->f:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahf:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->g:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahg:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->h:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahh:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->i:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahi:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->j:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahj:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->k:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahk:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->l:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahl:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xc
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->m:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahm:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xd
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->n:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahn:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xe
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->o:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICaho:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xf
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->p:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahp:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x10
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->q:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahq:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 

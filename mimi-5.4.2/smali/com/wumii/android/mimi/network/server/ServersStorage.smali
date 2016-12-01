@@ -4,10 +4,6 @@
 
 
 # static fields
-.field public static final b:Lcom/wumii/android/mimi/network/server/Server;
-
-.field public static final c:Lcom/wumii/android/mimi/network/server/Server;
-
 .field private static mListe:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -18,6 +14,10 @@
         }
     .end annotation
 .end field
+
+.field public static final mServerb:Lcom/wumii/android/mimi/network/server/Server;
+
+.field public static final mServerc:Lcom/wumii/android/mimi/network/server/Server;
 
 .field private static mServersStoraged:Lcom/wumii/android/mimi/network/server/ServersStorage;
 
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v3, v3, v1, v2}, Lcom/wumii/android/mimi/network/server/Server;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->b:Lcom/wumii/android/mimi/network/server/Server;
+    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     .line 27
     new-instance v0, Lcom/wumii/android/mimi/network/server/Server;
@@ -57,7 +57,7 @@
 
     invoke-direct {v0, v3, v3, v1, v2}, Lcom/wumii/android/mimi/network/server/Server;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->c:Lcom/wumii/android/mimi/network/server/Server;
+    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServerc:Lcom/wumii/android/mimi/network/server/Server;
 
     .line 31
     new-instance v0, Ljava/util/ArrayList;
@@ -181,7 +181,7 @@
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 113
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     const/4 v1, 0x0
 
@@ -204,7 +204,7 @@
     iput-boolean p1, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->isZh:Z
 
     .line 119
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     const/4 v1, 0x0
 
@@ -240,7 +240,7 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lcom/wumii/android/mimi/network/server/ServersStorage;->c:Lcom/wumii/android/mimi/network/server/Server;
+    sget-object v2, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServerc:Lcom/wumii/android/mimi/network/server/Server;
 
     aput-object v2, v0, v1
 
@@ -293,7 +293,7 @@
     .line 62
     sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/server/ServersStorage;->b:Lcom/wumii/android/mimi/network/server/Server;
+    sget-object v1, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -382,7 +382,7 @@
     if-eqz v0, :cond_0
 
     .line 85
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->c:Lcom/wumii/android/mimi/network/server/Server;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServerc:Lcom/wumii/android/mimi/network/server/Server;
 
     .line 88
     :goto_0
@@ -457,14 +457,14 @@
     if-eqz v0, :cond_0
 
     .line 102
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->c:Lcom/wumii/android/mimi/network/server/Server;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServerc:Lcom/wumii/android/mimi/network/server/Server;
 
     .line 104
     :goto_0
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->b:Lcom/wumii/android/mimi/network/server/Server;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     goto :goto_0
 .end method

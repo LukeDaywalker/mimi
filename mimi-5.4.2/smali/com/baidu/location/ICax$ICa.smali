@@ -3,11 +3,11 @@
 
 
 # static fields
-.field public static final do:I = 0x2
-
 .field public static final for:I = 0x3
 
-.field public static final if:I
+.field public static final mIdo:I = 0x2
+
+.field public static final mIif:I
 
 
 # instance fields

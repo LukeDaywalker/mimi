@@ -333,7 +333,7 @@
 
     const/4 v8, -0x1
 
-    iget-object v9, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v9, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     const/high16 v10, 0x42480000    # 50.0f
 

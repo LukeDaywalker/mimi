@@ -106,7 +106,7 @@
 
     move-result v2
 
-    iput v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->a:I
+    iput v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mIa:I
 
     .line 66
     :cond_2
@@ -261,7 +261,7 @@
 
     if-nez v1, :cond_1
 
-    iget-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->b:Z
+    iget-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->isZb:Z
 
     if-eqz v1, :cond_2
 
@@ -331,7 +331,7 @@
     if-lez v2, :cond_0
 
     .line 166
-    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->a:I
+    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mIa:I
 
     invoke-virtual {v1, v2}, Ljava/io/DataOutputStream;->writeShort(I)V
 
@@ -459,7 +459,7 @@
 
     move-result-object v4
 
-    iget v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->a:I
+    iget v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mIa:I
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
@@ -486,7 +486,7 @@
 
     move-result-object v4
 
-    iget-boolean v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->b:Z
+    iget-boolean v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->isZb:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(Z)Ljava/lang/StringBuffer;
 

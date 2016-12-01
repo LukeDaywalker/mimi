@@ -158,7 +158,7 @@
 
     .line 37
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "chat/group/check"
 

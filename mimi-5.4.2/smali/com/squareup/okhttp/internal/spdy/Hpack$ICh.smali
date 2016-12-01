@@ -619,7 +619,7 @@
 
     aget-object v0, v0, p1
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     .line 273
     :goto_0
@@ -642,7 +642,7 @@
 
     aget-object v0, v0, v1
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     goto :goto_0
 .end method

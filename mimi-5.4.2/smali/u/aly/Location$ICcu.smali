@@ -19,13 +19,13 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/Location$ICcu;
-
-.field public static final enum b:Lu/aly/Location$ICcu;
-
-.field public static final enum c:Lu/aly/Location$ICcu;
-
 .field private static final synthetic mArrayICcug:[Lu/aly/Location$ICcu;
+
+.field public static final enum mICcua:Lu/aly/Location$ICcu;
+
+.field public static final enum mICcub:Lu/aly/Location$ICcu;
+
+.field public static final enum mICcuc:Lu/aly/Location$ICcu;
 
 .field private static final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v5, v3, v2}, Lu/aly/Location$ICcu;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Location$ICcu;->a:Lu/aly/Location$ICcu;
+    sput-object v0, Lu/aly/Location$ICcu;->mICcua:Lu/aly/Location$ICcu;
 
     .line 52
     new-instance v0, Lu/aly/Location$ICcu;
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/Location$ICcu;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Location$ICcu;->b:Lu/aly/Location$ICcu;
+    sput-object v0, Lu/aly/Location$ICcu;->mICcub:Lu/aly/Location$ICcu;
 
     .line 53
     new-instance v0, Lu/aly/Location$ICcu;
@@ -90,20 +90,20 @@
 
     invoke-direct {v0, v1, v4, v6, v2}, Lu/aly/Location$ICcu;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Location$ICcu;->c:Lu/aly/Location$ICcu;
+    sput-object v0, Lu/aly/Location$ICcu;->mICcuc:Lu/aly/Location$ICcu;
 
     .line 50
     new-array v0, v6, [Lu/aly/Location$ICcu;
 
-    sget-object v1, Lu/aly/Location$ICcu;->a:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$ICcu;->mICcua:Lu/aly/Location$ICcu;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/Location$ICcu;->b:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$ICcu;->mICcub:Lu/aly/Location$ICcu;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/Location$ICcu;->c:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$ICcu;->mICcuc:Lu/aly/Location$ICcu;
 
     aput-object v1, v0, v4
 

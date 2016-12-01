@@ -44,9 +44,9 @@
 
     move-result-object v0
 
-    iget-object v3, v0, Lcom/baidu/location/b/a/ICb$ICa;->if:Ljava/lang/String;
+    iget-object v3, v0, Lcom/baidu/location/b/a/ICb$ICa;->mStringif:Ljava/lang/String;
 
-    iget-boolean v0, v0, Lcom/baidu/location/b/a/ICb$ICa;->a:Z
+    iget-boolean v0, v0, Lcom/baidu/location/b/a/ICb$ICa;->isZa:Z
 
     if-nez v0, :cond_1
 
@@ -545,7 +545,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/baidu/location/b/a/ICb$ICa;->if:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/b/a/ICb$ICa;->mStringif:Ljava/lang/String;
 
     return-object v0
 .end method

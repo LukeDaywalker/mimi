@@ -108,15 +108,15 @@
     .line 501
     new-instance v0, Landroid/support/v4/media/session/MediaControllerCompat$PlaybackInfo;
 
-    iget v1, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->a:I
+    iget v1, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->mIa:I
 
-    iget v2, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->b:I
+    iget v2, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->mIb:I
 
-    iget v3, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->c:I
+    iget v3, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->mIc:I
 
-    iget v4, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->d:I
+    iget v4, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->mId:I
 
-    iget v5, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->e:I
+    iget v5, p1, Landroid/support/v4/media/session/ParcelableVolumeInfo;->mIe:I
 
     invoke-direct/range {v0 .. v5}, Landroid/support/v4/media/session/MediaControllerCompat$PlaybackInfo;-><init>(IIIII)V
 

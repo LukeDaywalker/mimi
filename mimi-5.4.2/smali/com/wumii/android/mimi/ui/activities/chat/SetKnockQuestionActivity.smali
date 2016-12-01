@@ -50,7 +50,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->n:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->mEditTextn:Landroid/widget/EditText;
 
     .line 37
     const v0, 0x7f0b0216
@@ -61,7 +61,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->mTextViewo:Landroid/widget/TextView;
 
     .line 38
     const/4 v0, 0x1
@@ -77,7 +77,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->mEditTextn:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -115,7 +115,7 @@
     .line 50
     const-string/jumbo v1, "knockQuestion"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->n:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getEditableText()Landroid/text/Editable;
 
@@ -139,7 +139,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->j()V
 
     .line 66
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->h:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafh:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -174,7 +174,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->setContentView(I)V
 
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Lcom/wumii/android/mimi/models/entities/NearbyUser;
 

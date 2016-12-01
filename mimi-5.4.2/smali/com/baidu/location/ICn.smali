@@ -7,8 +7,8 @@
 
 
 # static fields
-.field public static final U:Ljava/lang/String; = "5.0"
+.field public static final mFW:F = 5.0f
 
-.field public static final V:I = 0x5
+.field public static final mIV:I = 0x5
 
-.field public static final W:F = 5.0f
+.field public static final mStringU:Ljava/lang/String; = "5.0"

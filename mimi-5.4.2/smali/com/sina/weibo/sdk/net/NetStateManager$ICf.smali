@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
-
-.field public static final enum b:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
-
-.field public static final enum c:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
-
 .field private static final synthetic mArrayICfd:[Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+
+.field public static final enum mICfa:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+
+.field public static final enum mICfb:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+
+.field public static final enum mICfc:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->a:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mICfa:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     new-instance v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->b:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mICfb:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     new-instance v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
@@ -58,22 +58,22 @@
 
     invoke-direct {v0, v1, v4}, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->c:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mICfc:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     .line 42
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
-    sget-object v1, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->a:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sget-object v1, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mICfa:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->b:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sget-object v1, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mICfb:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->c:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sget-object v1, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mICfc:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     aput-object v1, v0, v4
 

@@ -864,7 +864,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected a:[C
+.field protected mArrayCa:[C
 
-.field protected b:I
+.field protected mIb:I
 
 .field private mStringc:Ljava/lang/String;
 
@@ -45,7 +45,7 @@
     :cond_0
     new-array v0, p1, [C
 
-    iput-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iput-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     .line 116
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 186
-    iget v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iget v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
     return v0
 .end method
@@ -70,26 +70,26 @@
     const/4 v3, 0x0
 
     .line 232
-    iget-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     array-length v0, v0
 
     if-le p1, v0, :cond_0
 
     .line 233
-    iget-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     .line 234
     mul-int/lit8 v1, p1, 0x2
 
     new-array v1, v1, [C
 
-    iput-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iput-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     .line 235
-    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
-    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -165,16 +165,16 @@
     .line 480
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     invoke-virtual {p1, v2, v0, v3, v1}, Ljava/lang/String;->getChars(II[CI)V
 
     .line 481
-    iget v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iget v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iput v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
     goto :goto_0
 .end method
@@ -197,9 +197,9 @@
 
     .line 2515
     :cond_1
-    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
-    iget v3, p1, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iget v3, p1, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
     if-eq v2, v3, :cond_2
 
@@ -210,13 +210,13 @@
 
     .line 2518
     :cond_2
-    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     .line 2519
-    iget-object v4, p1, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v4, p1, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     .line 2520
-    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -279,20 +279,20 @@
     check-cast v0, Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 2589
-    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     array-length v1, v1
 
     new-array v1, v1, [C
 
-    iput-object v1, v0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iput-object v1, v0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     .line 2590
-    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
-    iget-object v2, v0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v2, v0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
-    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     array-length v3, v3
 
@@ -333,13 +333,13 @@
 
     .prologue
     .line 2548
-    iget-object v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     .line 2549
     const/4 v1, 0x0
 
     .line 2550
-    iget v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iget v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
     add-int/lit8 v0, v0, -0x1
 
@@ -370,11 +370,11 @@
     .line 2567
     new-instance v0, Ljava/lang/String;
 
-    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
+    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->mArrayCa:[C
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
+    iget v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->mIb:I
 
     invoke-direct {v0, v1, v2, v3}, Ljava/lang/String;-><init>([CII)V
 

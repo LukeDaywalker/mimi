@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:Ljava/util/logging/Logger;
+.field public static mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
-.field public static b:Lcom/squareup/okhttp/internal/Internal;
+.field public static final mLoggera:Ljava/util/logging/Logger;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/Internal;->a:Ljava/util/logging/Logger;
+    sput-object v0, Lcom/squareup/okhttp/internal/Internal;->mLoggera:Ljava/util/logging/Logger;
 
     return-void
 .end method

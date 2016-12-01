@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected a:Landroid/widget/TextView;
+.field protected mImageViewc:Landroid/widget/ImageView;
 
-.field protected b:Landroid/widget/TextView;
+.field protected mTextViewa:Landroid/widget/TextView;
 
-.field protected c:Landroid/widget/ImageView;
+.field protected mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->mTextViewa:Landroid/widget/TextView;
 
     .line 54
     const v0, 0x7f0b008b
@@ -39,7 +39,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->mTextViewb:Landroid/widget/TextView;
 
     .line 55
     const v0, 0x7f0b0095
@@ -50,7 +50,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->mImageViewc:Landroid/widget/ImageView;
 
     .line 56
     return-void

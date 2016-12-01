@@ -32,7 +32,7 @@
 
     move-result-object v3
 
-    iput-object v3, v0, Lcom/baidu/location/ICt;->cX:Ljava/lang/String;
+    iput-object v3, v0, Lcom/baidu/location/ICt;->mStringcX:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/baidu/location/ICt$1;->mICta:Lcom/baidu/location/ICt;
 
@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/ICt$1;->mICta:Lcom/baidu/location/ICt;
 
-    iget v0, v0, Lcom/baidu/location/ICt;->c8:I
+    iget v0, v0, Lcom/baidu/location/ICt;->mIc8:I
 
     iget-object v3, p0, Lcom/baidu/location/ICt$1;->mICta:Lcom/baidu/location/ICt;
 
@@ -64,7 +64,7 @@
 
     iget-object v5, p0, Lcom/baidu/location/ICt$1;->mICta:Lcom/baidu/location/ICt;
 
-    iget-object v5, v5, Lcom/baidu/location/ICt;->cX:Ljava/lang/String;
+    iget-object v5, v5, Lcom/baidu/location/ICt;->mStringcX:Ljava/lang/String;
 
     invoke-direct {v4, v5}, Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V
 
@@ -172,7 +172,7 @@
 
     move-result-object v5
 
-    iput-object v5, v4, Lcom/baidu/location/ICt;->cY:Lorg/apache/http/HttpEntity;
+    iput-object v5, v4, Lcom/baidu/location/ICt;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     iget-object v4, p0, Lcom/baidu/location/ICt$1;->mICta:Lcom/baidu/location/ICt;
 
@@ -185,17 +185,17 @@
     :cond_1
     if-gtz v3, :cond_4
 
-    sget v0, Lcom/baidu/location/ICt;->c6:I
+    sget v0, Lcom/baidu/location/ICt;->mIc6:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/baidu/location/ICt;->c6:I
+    sput v0, Lcom/baidu/location/ICt;->mIc6:I
 
     iget-object v0, p0, Lcom/baidu/location/ICt$1;->mICta:Lcom/baidu/location/ICt;
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, Lcom/baidu/location/ICt;->cY:Lorg/apache/http/HttpEntity;
+    iput-object v1, v0, Lcom/baidu/location/ICt;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     iget-object v0, p0, Lcom/baidu/location/ICt$1;->mICta:Lcom/baidu/location/ICt;
 
@@ -236,7 +236,7 @@
     goto :goto_3
 
     :cond_4
-    sput v2, Lcom/baidu/location/ICt;->c6:I
+    sput v2, Lcom/baidu/location/ICt;->mIc6:I
 
     goto :goto_2
 

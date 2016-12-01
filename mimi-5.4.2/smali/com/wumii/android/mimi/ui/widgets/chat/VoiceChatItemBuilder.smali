@@ -134,7 +134,7 @@
     .line 149
     :goto_2
     :pswitch_0
-    iget-object v2, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->b:Landroid/widget/ProgressBar;
+    iget-object v2, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mProgressBarb:Landroid/widget/ProgressBar;
 
     if-eqz v1, :cond_4
 
@@ -144,7 +144,7 @@
     invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 150
-    iget-object v2, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->a:Landroid/widget/ImageView;
+    iget-object v2, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mImageViewa:Landroid/widget/ImageView;
 
     if-eqz v4, :cond_5
 
@@ -154,7 +154,7 @@
     invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 151
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->c:Landroid/widget/ImageView;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mImageViewc:Landroid/widget/ImageView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->isFromLoginUser()Z
 
@@ -181,7 +181,7 @@
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 153
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->a:Landroid/widget/ImageView;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mImageViewa:Landroid/widget/ImageView;
 
     const v1, 0x7f0b0008
 
@@ -273,7 +273,7 @@
 
     .line 45
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030089
 
@@ -452,25 +452,25 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     invoke-static {v3, v8}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     invoke-static {v6, v9}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v6
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     invoke-static {v7, v10}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v7
 
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     invoke-static {v8, v9}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
@@ -487,7 +487,7 @@
     .line 92
     iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIe:I
 
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->c:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIc:I
 
     iget v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIe:I
 
@@ -604,25 +604,25 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     invoke-static {v3, v10}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     invoke-static {v6, v9}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v6
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     invoke-static {v7, v8}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v7
 
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     invoke-static {v8, v9}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 

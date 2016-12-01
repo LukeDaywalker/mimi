@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final isZa:Z
 
-.field public final if:Ljava/lang/String;
+.field public final mStringif:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/baidu/location/b/a/ICb$ICa;->if:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/b/a/ICb$ICa;->mStringif:Ljava/lang/String;
 
-    iput-boolean p2, p0, Lcom/baidu/location/b/a/ICb$ICa;->a:Z
+    iput-boolean p2, p0, Lcom/baidu/location/b/a/ICb$ICa;->isZa:Z
 
     return-void
 .end method

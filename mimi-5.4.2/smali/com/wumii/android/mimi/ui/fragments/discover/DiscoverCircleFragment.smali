@@ -134,7 +134,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/RecommendedCircle;
 
     .line 118
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->a:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 119
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/RecommendedCircle;->isNew()Z
@@ -144,7 +144,7 @@
     if-eqz v5, :cond_1
 
     .line 120
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICib:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 124
     :cond_0
@@ -176,12 +176,12 @@
 
     if-ne v2, v5, :cond_2
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->f:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICif:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     goto :goto_2
 
     :cond_2
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->d:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICid:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     goto :goto_2
 

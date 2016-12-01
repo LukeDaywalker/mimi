@@ -74,7 +74,7 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/SecretShareController;->k()Ljava/lang/String;
 
@@ -124,7 +124,7 @@
     move-result-object v0
 
     .line 36
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     new-instance v2, Lcom/wumii/android/mimi/models/share/SecretShareController$ICak;
 
@@ -143,7 +143,7 @@
     .line 60
     new-instance v0, Lcom/wumii/android/mimi/models/share/ShareInsideController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/share/ShareInsideController;-><init>(Landroid/app/Activity;)V
 
@@ -181,7 +181,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/SecretShareController;->o()Ljava/lang/String;
 
@@ -202,7 +202,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     const v1, 0x7f060269
 
@@ -350,7 +350,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->getSecretSharePrefix()Ljava/lang/String;
 

@@ -36,8 +36,6 @@
 
 .field public static final enum FORMATTED_MESSAGE:Lch/qos/logback/classic/db/names/ColumnName;
 
-.field public static final enum I:Lch/qos/logback/classic/db/names/ColumnName;
-
 .field public static final enum LEVEL_STRING:Lch/qos/logback/classic/db/names/ColumnName;
 
 .field public static final enum LOGGER_NAME:Lch/qos/logback/classic/db/names/ColumnName;
@@ -53,6 +51,8 @@
 .field public static final enum TIMESTMP:Lch/qos/logback/classic/db/names/ColumnName;
 
 .field public static final enum TRACE_LINE:Lch/qos/logback/classic/db/names/ColumnName;
+
+.field public static final enum mColumnNameI:Lch/qos/logback/classic/db/names/ColumnName;
 
 
 # direct methods
@@ -237,7 +237,7 @@
 
     invoke-direct {v0, v1, v2}, Lch/qos/logback/classic/db/names/ColumnName;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lch/qos/logback/classic/db/names/ColumnName;->I:Lch/qos/logback/classic/db/names/ColumnName;
+    sput-object v0, Lch/qos/logback/classic/db/names/ColumnName;->mColumnNameI:Lch/qos/logback/classic/db/names/ColumnName;
 
     new-instance v0, Lch/qos/logback/classic/db/names/ColumnName;
 
@@ -347,7 +347,7 @@
 
     const/16 v1, 0x11
 
-    sget-object v2, Lch/qos/logback/classic/db/names/ColumnName;->I:Lch/qos/logback/classic/db/names/ColumnName;
+    sget-object v2, Lch/qos/logback/classic/db/names/ColumnName;->mColumnNameI:Lch/qos/logback/classic/db/names/ColumnName;
 
     aput-object v2, v0, v1
 

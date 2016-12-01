@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Landroid/support/v4/content/ModernAsyncTask$Status;
-
-.field public static final enum b:Landroid/support/v4/content/ModernAsyncTask$Status;
-
-.field public static final enum c:Landroid/support/v4/content/ModernAsyncTask$Status;
-
 .field private static final synthetic mArrayStatusd:[Landroid/support/v4/content/ModernAsyncTask$Status;
+
+.field public static final enum mStatusa:Landroid/support/v4/content/ModernAsyncTask$Status;
+
+.field public static final enum mStatusb:Landroid/support/v4/content/ModernAsyncTask$Status;
+
+.field public static final enum mStatusc:Landroid/support/v4/content/ModernAsyncTask$Status;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/support/v4/content/ModernAsyncTask$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->a:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusa:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     .line 97
     new-instance v0, Landroid/support/v4/content/ModernAsyncTask$Status;
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1, v3}, Landroid/support/v4/content/ModernAsyncTask$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->b:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusb:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     .line 101
     new-instance v0, Landroid/support/v4/content/ModernAsyncTask$Status;
@@ -60,22 +60,22 @@
 
     invoke-direct {v0, v1, v4}, Landroid/support/v4/content/ModernAsyncTask$Status;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->c:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusc:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     .line 89
     const/4 v0, 0x3
 
     new-array v0, v0, [Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->a:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusa:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->b:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusb:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->c:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusc:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     aput-object v1, v0, v4
 

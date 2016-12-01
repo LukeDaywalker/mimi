@@ -70,11 +70,11 @@
     .locals 1
 
     :try_start_0
-    sget-boolean v0, Lcom/baidu/location/ICaa;->gu:Z
+    sget-boolean v0, Lcom/baidu/location/ICaa;->isZgu:Z
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Lcom/baidu/location/ICc;->aK:Z
+    sget-boolean v0, Lcom/baidu/location/ICc;->isZaK:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -239,7 +239,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mImageViewc:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->f:Landroid/util/DisplayMetrics;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     const/high16 v4, 0x42480000    # 50.0f
 

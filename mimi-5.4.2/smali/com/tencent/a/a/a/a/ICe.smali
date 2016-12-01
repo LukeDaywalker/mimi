@@ -25,7 +25,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICe;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICe;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -56,7 +56,7 @@
 .method protected final a()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICe;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICe;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v1, "android.permission.WRITE_SETTINGS"
 
@@ -79,7 +79,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICe;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICe;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

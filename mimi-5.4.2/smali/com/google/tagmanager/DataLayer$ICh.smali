@@ -61,9 +61,9 @@
 
     iget-object v3, p0, Lcom/google/tagmanager/DataLayer$ICh;->mDataLayera:Lcom/google/tagmanager/DataLayer;
 
-    iget-object v4, v0, Lcom/google/tagmanager/DataLayer$ICi;->a:Ljava/lang/String;
+    iget-object v4, v0, Lcom/google/tagmanager/DataLayer$ICi;->mStringa:Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/google/tagmanager/DataLayer$ICi;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/google/tagmanager/DataLayer$ICi;->mObjectb:Ljava/lang/Object;
 
     invoke-virtual {v3, v4, v0}, Lcom/google/tagmanager/DataLayer;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
 

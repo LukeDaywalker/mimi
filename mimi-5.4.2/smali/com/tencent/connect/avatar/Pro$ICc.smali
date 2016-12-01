@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public b:Z
+.field public isZb:Z
 
 .field private isZi:Z
 
@@ -103,7 +103,7 @@
     iput v0, p0, Lcom/tencent/connect/avatar/Pro$ICc;->mFo:F
 
     .line 41
-    iput-boolean v2, p0, Lcom/tencent/connect/avatar/Pro$ICc;->b:Z
+    iput-boolean v2, p0, Lcom/tencent/connect/avatar/Pro$ICc;->isZb:Z
 
     .line 43
     new-instance v0, Landroid/graphics/Rect;
@@ -1076,7 +1076,7 @@
     :cond_1
     :goto_1
     :pswitch_0
-    iput-boolean v4, p0, Lcom/tencent/connect/avatar/Pro$ICc;->b:Z
+    iput-boolean v4, p0, Lcom/tencent/connect/avatar/Pro$ICc;->isZb:Z
 
     goto :goto_0
 

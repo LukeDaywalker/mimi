@@ -38,7 +38,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     const-string/jumbo v1, ""
 
@@ -50,7 +50,7 @@
 
     iget-object v3, v3, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     const v4, 0x7f06034a
 

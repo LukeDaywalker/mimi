@@ -14,21 +14,21 @@
 
 
 # static fields
-.field public static final enum a:Lcom/tencent/stat/ICh;
-
-.field public static final enum b:Lcom/tencent/stat/ICh;
-
-.field public static final enum c:Lcom/tencent/stat/ICh;
-
-.field public static final enum d:Lcom/tencent/stat/ICh;
-
-.field public static final enum e:Lcom/tencent/stat/ICh;
-
-.field public static final enum f:Lcom/tencent/stat/ICh;
-
-.field public static final enum g:Lcom/tencent/stat/ICh;
-
 .field private static final synthetic mArrayIChi:[Lcom/tencent/stat/ICh;
+
+.field public static final enum mICha:Lcom/tencent/stat/ICh;
+
+.field public static final enum mIChb:Lcom/tencent/stat/ICh;
+
+.field public static final enum mIChc:Lcom/tencent/stat/ICh;
+
+.field public static final enum mIChd:Lcom/tencent/stat/ICh;
+
+.field public static final enum mIChe:Lcom/tencent/stat/ICh;
+
+.field public static final enum mIChf:Lcom/tencent/stat/ICh;
+
+.field public static final enum mIChg:Lcom/tencent/stat/ICh;
 
 
 # instance fields
@@ -57,7 +57,7 @@
 
     invoke-direct {v0, v1, v2, v4}, Lcom/tencent/stat/ICh;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/stat/ICh;->a:Lcom/tencent/stat/ICh;
+    sput-object v0, Lcom/tencent/stat/ICh;->mICha:Lcom/tencent/stat/ICh;
 
     new-instance v0, Lcom/tencent/stat/ICh;
 
@@ -65,7 +65,7 @@
 
     invoke-direct {v0, v1, v4, v5}, Lcom/tencent/stat/ICh;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/stat/ICh;->b:Lcom/tencent/stat/ICh;
+    sput-object v0, Lcom/tencent/stat/ICh;->mIChb:Lcom/tencent/stat/ICh;
 
     new-instance v0, Lcom/tencent/stat/ICh;
 
@@ -73,7 +73,7 @@
 
     invoke-direct {v0, v1, v5, v6}, Lcom/tencent/stat/ICh;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/stat/ICh;->c:Lcom/tencent/stat/ICh;
+    sput-object v0, Lcom/tencent/stat/ICh;->mIChc:Lcom/tencent/stat/ICh;
 
     new-instance v0, Lcom/tencent/stat/ICh;
 
@@ -81,7 +81,7 @@
 
     invoke-direct {v0, v1, v6, v7}, Lcom/tencent/stat/ICh;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/stat/ICh;->d:Lcom/tencent/stat/ICh;
+    sput-object v0, Lcom/tencent/stat/ICh;->mIChd:Lcom/tencent/stat/ICh;
 
     new-instance v0, Lcom/tencent/stat/ICh;
 
@@ -89,7 +89,7 @@
 
     invoke-direct {v0, v1, v7, v8}, Lcom/tencent/stat/ICh;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/stat/ICh;->e:Lcom/tencent/stat/ICh;
+    sput-object v0, Lcom/tencent/stat/ICh;->mIChe:Lcom/tencent/stat/ICh;
 
     new-instance v0, Lcom/tencent/stat/ICh;
 
@@ -99,7 +99,7 @@
 
     invoke-direct {v0, v1, v8, v2}, Lcom/tencent/stat/ICh;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/stat/ICh;->f:Lcom/tencent/stat/ICh;
+    sput-object v0, Lcom/tencent/stat/ICh;->mIChf:Lcom/tencent/stat/ICh;
 
     new-instance v0, Lcom/tencent/stat/ICh;
 
@@ -111,7 +111,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/tencent/stat/ICh;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/stat/ICh;->g:Lcom/tencent/stat/ICh;
+    sput-object v0, Lcom/tencent/stat/ICh;->mIChg:Lcom/tencent/stat/ICh;
 
     const/4 v0, 0x7
 
@@ -119,33 +119,33 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lcom/tencent/stat/ICh;->a:Lcom/tencent/stat/ICh;
+    sget-object v2, Lcom/tencent/stat/ICh;->mICha:Lcom/tencent/stat/ICh;
 
     aput-object v2, v0, v1
 
-    sget-object v1, Lcom/tencent/stat/ICh;->b:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChb:Lcom/tencent/stat/ICh;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/tencent/stat/ICh;->c:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChc:Lcom/tencent/stat/ICh;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/tencent/stat/ICh;->d:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChd:Lcom/tencent/stat/ICh;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/tencent/stat/ICh;->e:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChe:Lcom/tencent/stat/ICh;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/tencent/stat/ICh;->f:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChf:Lcom/tencent/stat/ICh;
 
     aput-object v1, v0, v8
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/tencent/stat/ICh;->g:Lcom/tencent/stat/ICh;
+    sget-object v2, Lcom/tencent/stat/ICh;->mIChg:Lcom/tencent/stat/ICh;
 
     aput-object v2, v0, v1
 

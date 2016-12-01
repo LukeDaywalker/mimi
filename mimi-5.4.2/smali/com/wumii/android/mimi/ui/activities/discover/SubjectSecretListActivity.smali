@@ -80,7 +80,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     return-object v0
 .end method
@@ -90,7 +90,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     return-object v0
 .end method
@@ -115,7 +115,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -250,7 +250,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->mDiscoverManagerp:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -267,7 +267,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->mDiscoverManagerp:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -284,7 +284,7 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->mDiscoverManagerp:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -311,7 +311,7 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
@@ -339,7 +339,7 @@
     if-nez p1, :cond_0
 
     .line 149
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->mDiscoverManagerp:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 

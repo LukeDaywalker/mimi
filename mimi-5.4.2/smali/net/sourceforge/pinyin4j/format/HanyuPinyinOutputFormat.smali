@@ -33,17 +33,17 @@
 
     .prologue
     .line 129
-    sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+    sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->mHanyuPinyinVCharTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
     iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinVCharTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
     .line 130
-    sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
+    sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->mHanyuPinyinCaseTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
     iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinCaseTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
     .line 131
-    sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+    sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->mHanyuPinyinToneTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinToneTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 

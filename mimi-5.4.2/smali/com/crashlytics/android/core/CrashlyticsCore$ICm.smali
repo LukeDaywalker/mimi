@@ -44,9 +44,9 @@
     const/4 v0, 0x0
 
     .line 882
-    iget-object v1, p1, Lio/fabric/sdk/android/services/settings/SettingsData;->d:Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;
+    iget-object v1, p1, Lio/fabric/sdk/android/services/settings/SettingsData;->mFeaturesSettingsDatad:Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;
 
-    iget-boolean v1, v1, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->a:Z
+    iget-boolean v1, v1, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->isZa:Z
 
     if-eqz v1, :cond_1
 

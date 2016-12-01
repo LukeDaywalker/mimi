@@ -134,15 +134,15 @@
     .line 57
     new-array v0, v5, [Lcom/squareup/okhttp/Protocol;
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     aput-object v1, v0, v4
 
@@ -155,15 +155,15 @@
     .line 60
     new-array v0, v5, [Lcom/squareup/okhttp/ConnectionSpec;
 
-    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->a:Lcom/squareup/okhttp/ConnectionSpec;
+    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpeca:Lcom/squareup/okhttp/ConnectionSpec;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->b:Lcom/squareup/okhttp/ConnectionSpec;
+    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpecb:Lcom/squareup/okhttp/ConnectionSpec;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->c:Lcom/squareup/okhttp/ConnectionSpec;
+    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpecc:Lcom/squareup/okhttp/ConnectionSpec;
 
     aput-object v1, v0, v4
 
@@ -178,7 +178,7 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/OkHttpClient$ICaj;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sput-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     .line 161
     return-void
@@ -563,7 +563,7 @@
     move-result-object v0
 
     .line 547
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -598,7 +598,7 @@
 
     .line 550
     :cond_0
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -1180,7 +1180,7 @@
     if-nez v1, :cond_4
 
     .line 626
-    sget-object v1, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->a:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
+    sget-object v1, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->mOkHostnameVerifiera:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
 
     iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mHostnameVerifierq:Ljavax/net/ssl/HostnameVerifier;
 
@@ -1191,7 +1191,7 @@
     if-nez v1, :cond_5
 
     .line 629
-    sget-object v1, Lcom/squareup/okhttp/CertificatePinner;->a:Lcom/squareup/okhttp/CertificatePinner;
+    sget-object v1, Lcom/squareup/okhttp/CertificatePinner;->mCertificatePinnera:Lcom/squareup/okhttp/CertificatePinner;
 
     iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mCertificatePinnerr:Lcom/squareup/okhttp/CertificatePinner;
 
@@ -1202,7 +1202,7 @@
     if-nez v1, :cond_6
 
     .line 632
-    sget-object v1, Lcom/squareup/okhttp/internal/http/AuthenticatorAdapter;->a:Lcom/squareup/okhttp/Authenticator;
+    sget-object v1, Lcom/squareup/okhttp/internal/http/AuthenticatorAdapter;->mAuthenticatora:Lcom/squareup/okhttp/Authenticator;
 
     iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mAuthenticators:Lcom/squareup/okhttp/Authenticator;
 
@@ -1248,7 +1248,7 @@
     if-nez v1, :cond_a
 
     .line 644
-    sget-object v1, Lcom/squareup/okhttp/internal/Network;->a:Lcom/squareup/okhttp/internal/Network;
+    sget-object v1, Lcom/squareup/okhttp/internal/Network;->mNetworka:Lcom/squareup/okhttp/internal/Network;
 
     iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mNetworku:Lcom/squareup/okhttp/internal/Network;
 

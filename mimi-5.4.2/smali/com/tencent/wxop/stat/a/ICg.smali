@@ -97,7 +97,7 @@
 .method public final b()Lcom/tencent/wxop/stat/a/ICe;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/a/ICe;->h:Lcom/tencent/wxop/stat/a/ICe;
+    sget-object v0, Lcom/tencent/wxop/stat/a/ICe;->mICeh:Lcom/tencent/wxop/stat/a/ICe;
 
     return-object v0
 .end method

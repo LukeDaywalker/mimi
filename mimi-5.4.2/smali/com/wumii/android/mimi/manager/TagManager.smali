@@ -32,14 +32,14 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/manager/BaseManager;-><init>()V
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/TagManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/TagManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "label/secrets"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/TagManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/TagManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "hot/labels"
 
@@ -319,7 +319,7 @@
     .line 120
     :cond_0
     :try_start_0
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/TagManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/TagManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->a()Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -338,7 +338,7 @@
     check-cast v3, Lcom/wumii/android/mimi/network/domain/TagSecretsResp;
 
     .line 122
-    iget-object v7, p0, Lcom/wumii/android/mimi/manager/TagManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v7, p0, Lcom/wumii/android/mimi/manager/TagManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v7}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
@@ -381,7 +381,7 @@
     move-result-object v1
 
     .line 147
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/TagManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/TagManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
@@ -390,7 +390,7 @@
     invoke-virtual {v2, v7, v1, v0}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
     .line 148
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/TagManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/TagManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
@@ -399,7 +399,7 @@
     invoke-virtual {v2, v7}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 150
-    sget-object v2, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v0, v2, :cond_1
 
@@ -490,7 +490,7 @@
 
     const/16 v1, -0x3ec
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/TagManager;->f:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/TagManager;->mContextf:Landroid/content/Context;
 
     const v3, 0x7f06038d
 
@@ -560,7 +560,7 @@
     .line 200
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/TagManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/TagManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->a()Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -673,16 +673,16 @@
 
     .prologue
     .line 66
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, p2, v0}, Lcom/wumii/android/mimi/manager/TagManager;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
     .line 68
-    iget-object v6, p0, Lcom/wumii/android/mimi/manager/TagManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v6, p0, Lcom/wumii/android/mimi/manager/TagManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "label/secrets"
 
@@ -694,7 +694,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v5, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, p2, v5}, Lcom/wumii/android/mimi/manager/TagManager;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/enum/FeedEvent;)Ljava/util/Map;
 
@@ -723,11 +723,11 @@
     invoke-interface {v4, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 90
-    iget-object v6, p0, Lcom/wumii/android/mimi/manager/TagManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v6, p0, Lcom/wumii/android/mimi/manager/TagManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "hot/labels"
 
@@ -750,16 +750,16 @@
     const/4 v4, 0x0
 
     .line 54
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, p2, v0}, Lcom/wumii/android/mimi/manager/TagManager;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
     .line 56
-    iget-object v6, p0, Lcom/wumii/android/mimi/manager/TagManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v6, p0, Lcom/wumii/android/mimi/manager/TagManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "label/secrets"
 
@@ -769,7 +769,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v5, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, p2, v5}, Lcom/wumii/android/mimi/manager/TagManager;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/enum/FeedEvent;)Ljava/util/Map;
 
@@ -788,11 +788,11 @@
 
     .prologue
     .line 78
-    iget-object v6, p0, Lcom/wumii/android/mimi/manager/TagManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v6, p0, Lcom/wumii/android/mimi/manager/TagManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "label/secrets"
 
@@ -804,7 +804,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v5, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, p2, v5}, Lcom/wumii/android/mimi/manager/TagManager;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/enum/FeedEvent;)Ljava/util/Map;
 

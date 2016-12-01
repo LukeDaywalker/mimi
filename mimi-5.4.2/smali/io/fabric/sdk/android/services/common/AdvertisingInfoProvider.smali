@@ -105,7 +105,7 @@
 
     const-string/jumbo v2, "advertising_id"
 
-    iget-object v3, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v3, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
@@ -113,7 +113,7 @@
 
     const-string/jumbo v2, "limit_ad_tracking_enabled"
 
-    iget-boolean v3, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->b:Z
+    iget-boolean v3, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->isZb:Z
 
     invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
@@ -159,7 +159,7 @@
     .line 111
     if-eqz p1, :cond_0
 
-    iget-object v0, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v0, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

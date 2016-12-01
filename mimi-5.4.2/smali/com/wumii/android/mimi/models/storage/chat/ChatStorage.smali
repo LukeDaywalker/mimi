@@ -112,7 +112,7 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/chat/ChatDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 63
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;->getChatId()Ljava/lang/String;
 
@@ -144,7 +144,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/dao/chat/ChatDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 38
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
 
@@ -214,7 +214,7 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/chat/ChatDao;->a(Ljava/util/List;)V
 
     .line 52
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     const/4 v1, 0x0
 

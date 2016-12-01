@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final a:Lcom/squareup/okhttp/ConnectionSpec;
-
-.field public static final b:Lcom/squareup/okhttp/ConnectionSpec;
-
-.field public static final c:Lcom/squareup/okhttp/ConnectionSpec;
-
 .field private static final mArrayCipherSuitef:[Lcom/squareup/okhttp/CipherSuite;
+
+.field public static final mConnectionSpeca:Lcom/squareup/okhttp/ConnectionSpec;
+
+.field public static final mConnectionSpecb:Lcom/squareup/okhttp/ConnectionSpec;
+
+.field public static final mConnectionSpecc:Lcom/squareup/okhttp/ConnectionSpec;
 
 
 # instance fields
@@ -41,79 +41,79 @@
 
     new-array v0, v0, [Lcom/squareup/okhttp/CipherSuite;
 
-    sget-object v1, Lcom/squareup/okhttp/CipherSuite;->aK:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v1, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaK:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/squareup/okhttp/CipherSuite;->aO:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v1, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaO:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/squareup/okhttp/CipherSuite;->W:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v1, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteW:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/squareup/okhttp/CipherSuite;->am:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v1, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteam:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v1, v0, v6
 
     const/4 v1, 0x4
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->al:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteal:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->av:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteav:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->aw:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteaw:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->F:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteF:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->E:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteE:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->J:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteJ:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->U:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteU:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->D:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteD:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xc
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->H:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteH:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xd
 
-    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->h:Lcom/squareup/okhttp/CipherSuite;
+    sget-object v2, Lcom/squareup/okhttp/CipherSuite;->mCipherSuiteh:Lcom/squareup/okhttp/CipherSuite;
 
     aput-object v2, v0, v1
 
@@ -133,15 +133,15 @@
 
     new-array v1, v6, [Lcom/squareup/okhttp/TlsVersion;
 
-    sget-object v2, Lcom/squareup/okhttp/TlsVersion;->a:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v2, Lcom/squareup/okhttp/TlsVersion;->mTlsVersiona:Lcom/squareup/okhttp/TlsVersion;
 
     aput-object v2, v1, v4
 
-    sget-object v2, Lcom/squareup/okhttp/TlsVersion;->b:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v2, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionb:Lcom/squareup/okhttp/TlsVersion;
 
     aput-object v2, v1, v3
 
-    sget-object v2, Lcom/squareup/okhttp/TlsVersion;->c:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v2, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionc:Lcom/squareup/okhttp/TlsVersion;
 
     aput-object v2, v1, v5
 
@@ -160,18 +160,18 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->a:Lcom/squareup/okhttp/ConnectionSpec;
+    sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpeca:Lcom/squareup/okhttp/ConnectionSpec;
 
     .line 62
     new-instance v0, Lcom/squareup/okhttp/ConnectionSpec$ICv;
 
-    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->a:Lcom/squareup/okhttp/ConnectionSpec;
+    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpeca:Lcom/squareup/okhttp/ConnectionSpec;
 
     invoke-direct {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;-><init>(Lcom/squareup/okhttp/ConnectionSpec;)V
 
     new-array v1, v3, [Lcom/squareup/okhttp/TlsVersion;
 
-    sget-object v2, Lcom/squareup/okhttp/TlsVersion;->c:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v2, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionc:Lcom/squareup/okhttp/TlsVersion;
 
     aput-object v2, v1, v4
 
@@ -190,7 +190,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->b:Lcom/squareup/okhttp/ConnectionSpec;
+    sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpecb:Lcom/squareup/okhttp/ConnectionSpec;
 
     .line 68
     new-instance v0, Lcom/squareup/okhttp/ConnectionSpec$ICv;
@@ -201,7 +201,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->c:Lcom/squareup/okhttp/ConnectionSpec;
+    sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpecc:Lcom/squareup/okhttp/ConnectionSpec;
 
     return-void
 .end method

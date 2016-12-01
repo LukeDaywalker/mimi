@@ -87,7 +87,7 @@
     if-eqz v0, :cond_0
 
     .line 169
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mContextf:Landroid/content/Context;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->getErrMsg()Ljava/lang/String;
 
@@ -119,7 +119,7 @@
 
     .line 176
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mContextf:Landroid/content/Context;
 
     const v1, 0x7f0603b7
 
@@ -238,7 +238,7 @@
     invoke-virtual {v4, v1}, Lcom/wumii/android/mimi/models/service/UserService$UserSettings;->setTransientImageReadEnabled(Z)V
 
     .line 197
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->a()Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -294,7 +294,7 @@
     if-eqz v5, :cond_5
 
     .line 208
-    iget-object v6, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v6, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->isOrganizationValidated()Z
 
@@ -314,7 +314,7 @@
     invoke-virtual {v6, v1, v7}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 209
-    iget-object v6, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v6, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getCircleStatus()Lcom/wumii/android/mimi/models/entities/circle/CircleStatus;
 
@@ -364,7 +364,7 @@
     if-eqz v1, :cond_7
 
     .line 220
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -420,7 +420,7 @@
 
     .line 229
     :cond_8
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -432,7 +432,7 @@
     if-eqz p3, :cond_b
 
     .line 232
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -446,7 +446,7 @@
 
     .line 238
     :goto_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mContextf:Landroid/content/Context;
 
     invoke-static {v0, v1, p3}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Landroid/content/Context;ZZ)V
 
@@ -477,7 +477,7 @@
     invoke-interface {v1, v3, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 242
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mContextf:Landroid/content/Context;
 
     const v1, 0x7f06039e
 
@@ -500,7 +500,7 @@
     .line 234
     :cond_b
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -569,7 +569,7 @@
     .line 85
     new-instance v6, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "register/v2"
 
@@ -605,7 +605,7 @@
     .line 149
     new-instance v6, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mContextf:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -707,7 +707,7 @@
     .line 131
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v3, "register/verify_code"
 
@@ -759,7 +759,7 @@
     .line 61
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v3, "login"
 
@@ -783,7 +783,7 @@
 
     .prologue
     .line 71
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->x:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafx:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

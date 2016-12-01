@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+.field public static final mHanyuPinyinVCharTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
-.field public static final b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+.field public static final mHanyuPinyinVCharTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
-.field public static final c:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+.field public static final mHanyuPinyinVCharTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
 
 # instance fields
-.field protected d:Ljava/lang/String;
+.field protected mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->mHanyuPinyinVCharTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
     .line 66
     new-instance v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
@@ -36,7 +36,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->mHanyuPinyinVCharTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
     .line 71
     new-instance v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->c:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->mHanyuPinyinVCharTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 86
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->d:Ljava/lang/String;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->mStringd:Ljava/lang/String;
 
     .line 87
     return-void

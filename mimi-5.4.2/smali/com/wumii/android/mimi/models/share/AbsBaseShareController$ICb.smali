@@ -36,7 +36,7 @@
     .line 66
     iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICb;->mAbsBaseShareControllerb:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
-    iput-object p1, v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iput-object p1, v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     .line 68
     sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I

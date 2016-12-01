@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/support/v7/widget/RecyclerView$ICar;
+.field protected final mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
 .field private mIb:I
 
@@ -23,7 +23,7 @@
     iput v0, p0, Landroid/support/v7/widget/OrientationHelper;->mIb:I
 
     .line 45
-    iput-object p1, p0, Landroid/support/v7/widget/OrientationHelper;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iput-object p1, p0, Landroid/support/v7/widget/OrientationHelper;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     .line 46
     return-void

@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field protected mActivityEventManagera:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
 .field private mStringb:Ljava/lang/String;
 
@@ -55,7 +55,7 @@
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
     .line 22
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->a:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->mActivityEventManagera:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 23
     return-void
@@ -71,7 +71,7 @@
     invoke-super {p0}, Landroid/app/Dialog;->dismiss()V
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->a:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->mActivityEventManagera:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 
@@ -167,7 +167,7 @@
     invoke-super {p0}, Landroid/app/Dialog;->show()V
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->a:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->mActivityEventManagera:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 

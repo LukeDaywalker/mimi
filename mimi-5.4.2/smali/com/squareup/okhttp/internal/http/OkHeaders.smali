@@ -4,12 +4,6 @@
 
 
 # static fields
-.field public static final b:Ljava/lang/String;
-
-.field public static final c:Ljava/lang/String;
-
-.field public static final d:Ljava/lang/String;
-
 .field private static final mComparatore:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -22,6 +16,12 @@
 .end field
 
 .field static final mStringa:Ljava/lang/String;
+
+.field public static final mStringb:Ljava/lang/String;
+
+.field public static final mStringc:Ljava/lang/String;
+
+.field public static final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->b:Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringb:Ljava/lang/String;
 
     .line 50
     new-instance v0, Ljava/lang/StringBuilder;
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->c:Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringc:Ljava/lang/String;
 
     .line 56
     new-instance v0, Ljava/lang/StringBuilder;
@@ -114,7 +114,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->d:Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringd:Ljava/lang/String;
 
     return-void
 .end method

@@ -15,19 +15,19 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
-
-.field public static final enum b:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
-
-.field public static final enum c:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
-
-.field public static final enum d:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
-
-.field public static final enum e:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
-
-.field public static final enum f:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
-
 .field private static final synthetic mArrayICami:[Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+
+.field public static final enum mICama:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+
+.field public static final enum mICamb:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+
+.field public static final enum mICamc:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+
+.field public static final enum mICamd:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+
+.field public static final enum mICame:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+
+.field public static final enum mICamf:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
 
 # instance fields
@@ -60,7 +60,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->a:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICama:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     .line 29
     new-instance v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;
@@ -71,7 +71,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->b:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICamb:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     .line 30
     new-instance v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;
@@ -82,7 +82,7 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->c:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICamc:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     .line 31
     new-instance v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;
@@ -93,7 +93,7 @@
 
     invoke-direct {v0, v1, v7, v2}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->d:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICamd:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     .line 32
     new-instance v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;
@@ -104,7 +104,7 @@
 
     invoke-direct {v0, v1, v8, v2}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->e:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICame:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     .line 33
     new-instance v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;
@@ -117,36 +117,36 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->f:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICamf:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     .line 27
     const/4 v0, 0x6
 
     new-array v0, v0, [Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
-    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->a:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICama:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->b:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICamb:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->c:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICamc:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->d:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICamd:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->e:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICame:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     aput-object v1, v0, v8
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->f:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sget-object v2, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mICamf:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     aput-object v2, v0, v1
 

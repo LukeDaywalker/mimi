@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final enum a:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
-
-.field public static final enum b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
-
 .field private static final synthetic mArrayViewScaleTypec:[Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+
+.field public static final enum mViewScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+
+.field public static final enum mViewScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     .line 37
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
@@ -47,18 +47,18 @@
 
     invoke-direct {v0, v1, v3}, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     .line 27
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     aput-object v1, v0, v3
 
@@ -103,14 +103,14 @@
     packed-switch v0, :pswitch_data_0
 
     .line 70
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     :goto_0
     return-object v0
 
     .line 65
     :pswitch_0
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     goto :goto_0
 

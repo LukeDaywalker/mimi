@@ -17,7 +17,7 @@
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Landroid/support/v4/widget/CursorAdapter;->a:Z
+    iput-boolean v1, v0, Landroid/support/v4/widget/CursorAdapter;->isZa:Z
 
     .line 473
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;
@@ -37,7 +37,7 @@
 
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Landroid/support/v4/widget/CursorAdapter;->a:Z
+    iput-boolean v1, v0, Landroid/support/v4/widget/CursorAdapter;->isZa:Z
 
     .line 479
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;

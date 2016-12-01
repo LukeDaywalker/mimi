@@ -116,7 +116,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     invoke-virtual {v0}, Lokio/ByteString;->e()Lokio/ByteString;
 
@@ -154,7 +154,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     invoke-virtual {p0, v0}, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a(Lokio/ByteString;)V
 
@@ -182,7 +182,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     invoke-virtual {p0, v0}, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a(Lokio/ByteString;)V
 

@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
-
-.field public static final enum b:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
-
-.field public static final enum c:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
-
 .field private static final synthetic mArrayICqe:[Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+
+.field public static final enum mICqa:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+
+.field public static final enum mICqb:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+
+.field public static final enum mICqc:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
 
 # instance fields
@@ -48,7 +48,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->a:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mICqa:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
     .line 196
     new-instance v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->b:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mICqb:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
     .line 197
     new-instance v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
@@ -70,22 +70,22 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->c:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mICqc:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
     .line 194
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->a:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mICqa:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->b:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mICqb:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->c:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mICqc:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
     aput-object v1, v0, v5
 

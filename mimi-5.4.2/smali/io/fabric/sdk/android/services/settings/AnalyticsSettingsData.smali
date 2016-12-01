@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final isZf:Z
 
-.field public final b:I
+.field public final mIb:I
 
-.field public final c:I
+.field public final mIc:I
 
-.field public final d:I
+.field public final mId:I
 
-.field public final e:I
+.field public final mIe:I
 
-.field public final f:Z
+.field public final mIg:I
 
-.field public final g:I
+.field public final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -28,25 +28,25 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 38
-    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mStringa:Ljava/lang/String;
 
     .line 39
-    iput p2, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->b:I
+    iput p2, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIb:I
 
     .line 40
-    iput p3, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->c:I
+    iput p3, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIc:I
 
     .line 41
-    iput p4, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->d:I
+    iput p4, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mId:I
 
     .line 42
-    iput p5, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->e:I
+    iput p5, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIe:I
 
     .line 43
-    iput-boolean p6, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->f:Z
+    iput-boolean p6, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->isZf:Z
 
     .line 44
-    iput p7, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->g:I
+    iput p7, p0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIg:I
 
     .line 45
     return-void

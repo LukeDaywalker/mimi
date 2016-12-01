@@ -208,7 +208,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 132
-    sget-object v1, Lu/aly/Event$ICaw;->a:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawa:Lu/aly/Event$ICaw;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -223,7 +223,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 134
-    sget-object v1, Lu/aly/Event$ICaw;->b:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawb:Lu/aly/Event$ICaw;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -252,7 +252,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 138
-    sget-object v1, Lu/aly/Event$ICaw;->c:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawc:Lu/aly/Event$ICaw;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -267,7 +267,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 140
-    sget-object v1, Lu/aly/Event$ICaw;->d:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawd:Lu/aly/Event$ICaw;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -282,7 +282,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 142
-    sget-object v1, Lu/aly/Event$ICaw;->e:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawe:Lu/aly/Event$ICaw;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -331,13 +331,13 @@
 
     new-array v0, v0, [Lu/aly/Event$ICaw;
 
-    sget-object v1, Lu/aly/Event$ICaw;->c:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawc:Lu/aly/Event$ICaw;
 
     aput-object v1, v0, v2
 
     const/4 v1, 0x1
 
-    sget-object v2, Lu/aly/Event$ICaw;->d:Lu/aly/Event$ICaw;
+    sget-object v2, Lu/aly/Event$ICaw;->mICawd:Lu/aly/Event$ICaw;
 
     aput-object v2, v0, v1
 

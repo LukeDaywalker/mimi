@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    iget v1, v0, Lcom/baidu/platform/comapi/map/B;->a:F
+    iget v1, v0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
@@ -87,7 +87,7 @@
 
     move-result-object v4
 
-    iget-wide v4, v4, Lcom/baidu/platform/comapi/map/B;->m:D
+    iget-wide v4, v4, Lcom/baidu/platform/comapi/map/B;->mDm:D
 
     div-double/2addr v2, v4
 

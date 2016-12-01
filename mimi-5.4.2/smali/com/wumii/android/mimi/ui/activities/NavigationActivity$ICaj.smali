@@ -194,7 +194,7 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, v3, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 

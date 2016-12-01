@@ -192,7 +192,7 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "chat_session"
 
@@ -252,7 +252,7 @@
     move-result-object v0
 
     .line 124
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     new-array v2, v3, [Ljava/lang/String;
 
@@ -310,7 +310,7 @@
     move-result-object v0
 
     .line 130
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v2, "chat_session"
 
@@ -386,7 +386,7 @@
     move-result-object v1
 
     .line 55
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v3, 0x0
 
@@ -500,7 +500,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -550,7 +550,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -570,14 +570,14 @@
 
     .line 78
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -591,7 +591,7 @@
     .prologue
     .line 102
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "chat_session"
 
@@ -636,7 +636,7 @@
 
     .line 111
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v2, "chat_session"
 

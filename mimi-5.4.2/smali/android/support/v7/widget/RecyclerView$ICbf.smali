@@ -758,7 +758,7 @@
 
     move-object/from16 v0, v17
 
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     move-object/from16 v17, v0
 

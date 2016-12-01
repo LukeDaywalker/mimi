@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
-
-.field public static final enum b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
-
 .field private static final synthetic mArrayGroupChatMemeberManagerTabe:[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
+
+.field public static final enum mGroupChatMemeberManagerTaba:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
+
+.field public static final enum mGroupChatMemeberManagerTabb:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
 
 
 # instance fields
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, v1, v4, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->mGroupChatMemeberManagerTaba:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
 
     .line 8
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
@@ -68,18 +68,18 @@
 
     invoke-direct {v0, v1, v5, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->mGroupChatMemeberManagerTabb:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
 
     .line 6
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->mGroupChatMemeberManagerTaba:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->mGroupChatMemeberManagerTabb:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
 
     aput-object v1, v0, v5
 

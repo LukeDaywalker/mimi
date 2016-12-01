@@ -42,14 +42,14 @@
     .line 434
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICt;->mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->i:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewi:Landroid/view/View;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 435
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICt;->mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->h:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewh:Landroid/view/View;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -69,7 +69,7 @@
     .line 421
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICt;->mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->i:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewi:Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -78,7 +78,7 @@
     .line 422
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICt;->mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->h:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewh:Landroid/view/View;
 
     const/16 v1, 0x8
 
@@ -87,7 +87,7 @@
     .line 423
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICt;->mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->i:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewi:Landroid/view/View;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICu;
 

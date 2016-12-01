@@ -34,7 +34,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/baidu/location/ICt;->cX:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/location/ICt;->mStringcX:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
@@ -42,7 +42,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
-    iget v0, v0, Lcom/baidu/location/ICt;->c8:I
+    iget v0, v0, Lcom/baidu/location/ICt;->mIc8:I
 
     iget-object v1, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
@@ -68,7 +68,7 @@
 
     iget-object v7, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
-    iget-object v7, v7, Lcom/baidu/location/ICt;->cX:Ljava/lang/String;
+    iget-object v7, v7, Lcom/baidu/location/ICt;->mStringcX:Ljava/lang/String;
 
     invoke-direct {v1, v7}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
     :try_end_0
@@ -79,7 +79,7 @@
 
     iget-object v7, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
-    iget-object v7, v7, Lcom/baidu/location/ICt;->c3:[B
+    iget-object v7, v7, Lcom/baidu/location/ICt;->mArrayBc3:[B
 
     invoke-direct {v2, v7}, Lorg/apache/http/entity/ByteArrayEntity;-><init>([B)V
 
@@ -189,7 +189,7 @@
 
     move-result-object v2
 
-    iput-object v2, v7, Lcom/baidu/location/ICt;->cY:Lorg/apache/http/HttpEntity;
+    iput-object v2, v7, Lcom/baidu/location/ICt;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     iget-object v2, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
@@ -202,15 +202,15 @@
     :cond_1
     if-gtz v5, :cond_4
 
-    sget v0, Lcom/baidu/location/ICt;->c6:I
+    sget v0, Lcom/baidu/location/ICt;->mIc6:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/baidu/location/ICt;->c6:I
+    sput v0, Lcom/baidu/location/ICt;->mIc6:I
 
     iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
-    iput-object v6, v0, Lcom/baidu/location/ICt;->cY:Lorg/apache/http/HttpEntity;
+    iput-object v6, v0, Lcom/baidu/location/ICt;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
@@ -219,7 +219,7 @@
     :goto_2
     iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
-    iput-object v6, v0, Lcom/baidu/location/ICt;->c3:[B
+    iput-object v6, v0, Lcom/baidu/location/ICt;->mArrayBc3:[B
 
     iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
@@ -262,7 +262,7 @@
     goto :goto_3
 
     :cond_4
-    sput v4, Lcom/baidu/location/ICt;->c6:I
+    sput v4, Lcom/baidu/location/ICt;->mIc6:I
 
     goto :goto_2
 

@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICja:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     if-eq v0, v1, :cond_0
 

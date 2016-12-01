@@ -33,7 +33,7 @@
     :try_start_0
     iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICk;->mEventsHandlera:Lio/fabric/sdk/android/services/events/EventsHandler;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
+    iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsHandler;->mEventsStrategyc:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
     .line 97
     iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICk;->mEventsHandlera:Lio/fabric/sdk/android/services/events/EventsHandler;
@@ -44,7 +44,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
+    iput-object v2, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->mEventsStrategyc:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
     .line 98
     invoke-interface {v0}, Lio/fabric/sdk/android/services/events/EventsStrategy;->c()V
@@ -62,7 +62,7 @@
     .line 100
     iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICk;->mEventsHandlera:Lio/fabric/sdk/android/services/events/EventsHandler;
 
-    iget-object v1, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->a:Landroid/content/Context;
+    iget-object v1, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v2, "Failed to disable events."
 

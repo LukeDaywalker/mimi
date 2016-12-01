@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
-
-.field public static final enum b:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
-
-.field public static final enum c:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
-
 .field private static final synthetic mArrayICbrd:[Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+
+.field public static final enum mICbra:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+
+.field public static final enum mICbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+
+.field public static final enum mICbrc:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbra:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     new-instance v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     new-instance v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
@@ -58,22 +58,22 @@
 
     invoke-direct {v0, v1, v4}, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->c:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrc:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     .line 73
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbra:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->c:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrc:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     aput-object v1, v0, v4
 

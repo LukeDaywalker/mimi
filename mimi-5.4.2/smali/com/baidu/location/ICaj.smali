@@ -7,14 +7,10 @@
 
 
 # static fields
-.field public static er:Ljava/lang/String;
+.field public static mStringer:Ljava/lang/String;
 
 
 # instance fields
-.field public eu:Lcom/baidu/location/ICu$ICa;
-
-.field public ex:Lcom/baidu/location/ICau$ICb;
-
 .field private isZeq:Z
 
 .field private isZes:Z
@@ -25,6 +21,10 @@
 
 .field final mHandleret:Landroid/os/Handler;
 
+.field public mICaeu:Lcom/baidu/location/ICu$ICa;
+
+.field public mICbex:Lcom/baidu/location/ICau$ICb;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -32,7 +32,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICaj;->er:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICaj;->mStringer:Ljava/lang/String;
 
     return-void
 .end method
@@ -46,9 +46,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iput-object v0, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
-    iput-object v0, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
     const/4 v0, 0x1
 
@@ -86,11 +86,11 @@
 
     const/4 v7, 0x0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICu$ICa;->if()Z
 
@@ -107,16 +107,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
     if-eqz v0, :cond_6
 
     const-string/jumbo v0, "baidu_location_service"
 
-    iget-object v2, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iget-object v2, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
     invoke-virtual {v2}, Lcom/baidu/location/ICu$ICa;->try()Ljava/lang/String;
 
@@ -125,11 +125,11 @@
     invoke-static {v0, v2}, Lcom/baidu/location/ICc;->if(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
-    iget-object v0, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICau$ICb;->for()Z
 
@@ -146,16 +146,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iput-object v0, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
     if-eqz v0, :cond_7
 
     const-string/jumbo v0, "baidu_location_service"
 
-    iget-object v2, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iget-object v2, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v2}, Lcom/baidu/location/ICau$ICb;->else()Ljava/lang/String;
 
@@ -183,11 +183,11 @@
     move-result-object v0
 
     :goto_2
-    iget-object v2, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iget-object v2, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
     if-eqz v2, :cond_4
 
-    iget-object v2, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iget-object v2, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
     invoke-virtual {v2}, Lcom/baidu/location/ICu$ICa;->do()Z
 
@@ -196,11 +196,11 @@
     if-eqz v2, :cond_8
 
     :cond_4
-    iget-object v2, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iget-object v2, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
     if-eqz v2, :cond_5
 
-    iget-object v2, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iget-object v2, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v2}, Lcom/baidu/location/ICau$ICb;->try()I
 
@@ -321,9 +321,9 @@
     move-result-object v1
 
     :cond_a
-    iget-object v2, p0, Lcom/baidu/location/ICaj;->eu:Lcom/baidu/location/ICu$ICa;
+    iget-object v2, p0, Lcom/baidu/location/ICaj;->mICaeu:Lcom/baidu/location/ICu$ICa;
 
-    iget-object v3, p0, Lcom/baidu/location/ICaj;->ex:Lcom/baidu/location/ICau$ICb;
+    iget-object v3, p0, Lcom/baidu/location/ICaj;->mICbex:Lcom/baidu/location/ICau$ICb;
 
     invoke-static {v2, v3, v0, v1, v7}, Lcom/baidu/location/ICc;->if(Lcom/baidu/location/ICu$ICa;Lcom/baidu/location/ICau$ICb;Landroid/location/Location;Ljava/lang/String;I)Ljava/lang/String;
 

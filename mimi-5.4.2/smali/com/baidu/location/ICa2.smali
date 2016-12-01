@@ -7,11 +7,11 @@
 
 
 # static fields
-.field public static jd:Ljava/lang/String;
-
-.field public static jh:Ljava/lang/String;
-
 .field private static mICa2jl:Lcom/baidu/location/ICa2;
+
+.field public static mStringjd:Ljava/lang/String;
+
+.field public static mStringjh:Ljava/lang/String;
 
 
 # instance fields
@@ -36,9 +36,9 @@
 
     sput-object v0, Lcom/baidu/location/ICa2;->mICa2jl:Lcom/baidu/location/ICa2;
 
-    sput-object v0, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
-    sput-object v0, Lcom/baidu/location/ICa2;->jh:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICa2;->mStringjh:Ljava/lang/String;
 
     return-void
 .end method
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -133,7 +133,7 @@
     :catch_2
     move-exception v0
 
-    sput-object v2, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sput-object v2, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     goto :goto_2
 .end method
@@ -304,7 +304,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :try_start_1
-    sget-object v1, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
     :try_end_1
@@ -362,7 +362,7 @@
 .method public cz()Ljava/lang/String;
     .locals 2
 
-    sget-object v0, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -384,7 +384,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -426,7 +426,7 @@
 
     if-eqz p1, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICc;->aF:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICc;->mStringaF:Ljava/lang/String;
 
     const-string/jumbo v2, "all"
 
@@ -570,9 +570,9 @@
 .method public try(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    sput-object p1, Lcom/baidu/location/ICa2;->jh:Ljava/lang/String;
+    sput-object p1, Lcom/baidu/location/ICa2;->mStringjh:Ljava/lang/String;
 
-    sput-object p2, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sput-object p2, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     return-void
 .end method

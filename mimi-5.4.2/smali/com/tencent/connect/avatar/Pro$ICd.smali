@@ -154,7 +154,7 @@
 
     move-result-object v0
 
-    iget-boolean v0, v0, Lcom/tencent/connect/avatar/Pro$ICc;->b:Z
+    iget-boolean v0, v0, Lcom/tencent/connect/avatar/Pro$ICc;->isZb:Z
 
     if-eqz v0, :cond_0
 

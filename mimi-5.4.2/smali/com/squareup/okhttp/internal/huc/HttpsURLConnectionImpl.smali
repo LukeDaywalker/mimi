@@ -46,7 +46,7 @@
     .line 38
     iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     if-nez v0, :cond_0
 
@@ -63,7 +63,7 @@
     :cond_0
     iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine;->f()Z
 
@@ -73,7 +73,7 @@
 
     iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     .line 46
     invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine;->h()Lcom/squareup/okhttp/Response;

@@ -131,7 +131,7 @@
     .line 68
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->c:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v4, "survey"
 
@@ -167,7 +167,7 @@
     .line 103
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v3, "survey"
 
@@ -203,7 +203,7 @@
     .line 124
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v3, "survey/vote"
 
@@ -239,7 +239,7 @@
     .line 154
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v3, "survey/unsubscribe"
 

@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final a:Lcom/crashlytics/android/core/UserMetaData;
+.field public static final mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
 
 # instance fields
-.field public final b:Ljava/lang/String;
+.field public final mStringb:Ljava/lang/String;
 
-.field public final c:Ljava/lang/String;
+.field public final mStringc:Ljava/lang/String;
 
-.field public final d:Ljava/lang/String;
+.field public final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Lcom/crashlytics/android/core/UserMetaData;-><init>()V
 
-    sput-object v0, Lcom/crashlytics/android/core/UserMetaData;->a:Lcom/crashlytics/android/core/UserMetaData;
+    sput-object v0, Lcom/crashlytics/android/core/UserMetaData;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
     return-void
 .end method
@@ -51,13 +51,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lcom/crashlytics/android/core/UserMetaData;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/crashlytics/android/core/UserMetaData;->mStringb:Ljava/lang/String;
 
     .line 33
-    iput-object p2, p0, Lcom/crashlytics/android/core/UserMetaData;->c:Ljava/lang/String;
+    iput-object p2, p0, Lcom/crashlytics/android/core/UserMetaData;->mStringc:Ljava/lang/String;
 
     .line 34
-    iput-object p3, p0, Lcom/crashlytics/android/core/UserMetaData;->d:Ljava/lang/String;
+    iput-object p3, p0, Lcom/crashlytics/android/core/UserMetaData;->mStringd:Ljava/lang/String;
 
     .line 35
     return-void
@@ -70,15 +70,15 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/crashlytics/android/core/UserMetaData;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/core/UserMetaData;->mStringb:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/UserMetaData;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/core/UserMetaData;->mStringc:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/UserMetaData;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/core/UserMetaData;->mStringd:Ljava/lang/String;
 
     if-nez v0, :cond_0
 

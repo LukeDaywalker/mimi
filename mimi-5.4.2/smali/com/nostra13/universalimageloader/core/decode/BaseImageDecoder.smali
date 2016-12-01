@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final a:Z
+.field protected final isZa:Z
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 57
-    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a:Z
+    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->isZa:Z
 
     .line 58
     return-void
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     if-ne v0, v1, :cond_0
 
@@ -82,11 +82,11 @@
     move-result-object v0
 
     .line 193
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->e:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypee:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     if-eq v0, v2, :cond_0
 
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     if-ne v0, v2, :cond_1
 
@@ -113,7 +113,7 @@
 
     move-result-object v4
 
-    sget-object v7, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v7, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     if-ne v0, v7, :cond_5
 
@@ -135,7 +135,7 @@
     invoke-virtual {v5, v0, v0}, Landroid/graphics/Matrix;->setScale(FF)V
 
     .line 200
-    iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a:Z
+    iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->isZa:Z
 
     if-eqz v3, :cond_1
 
@@ -180,7 +180,7 @@
     invoke-virtual {v5, v0, v8}, Landroid/graphics/Matrix;->postScale(FF)Z
 
     .line 209
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->isZa:Z
 
     if-eqz v0, :cond_2
 
@@ -206,7 +206,7 @@
     invoke-virtual {v5, v0}, Landroid/graphics/Matrix;->postRotate(F)Z
 
     .line 215
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->isZa:Z
 
     if-eqz v0, :cond_3
 
@@ -311,7 +311,7 @@
     move-result-object v1
 
     .line 82
-    iget-object v0, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    iget-object v0, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {p0, v0, p1}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a(Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;)Landroid/graphics/BitmapFactory$Options;
 
@@ -357,13 +357,13 @@
 
     .line 91
     :cond_1
-    iget-object v1, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->b:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+    iget-object v1, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->mICbb:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
 
-    iget v1, v1, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->a:I
+    iget v1, v1, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->mIa:I
 
-    iget-object v2, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->b:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+    iget-object v2, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->mICbb:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
 
-    iget-boolean v2, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->b:Z
+    iget-boolean v2, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->isZb:Z
 
     invoke-virtual {p0, v0, p1, v1, v2}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a(Landroid/graphics/Bitmap;Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;IZ)Landroid/graphics/Bitmap;
 
@@ -386,7 +386,7 @@
     move-result-object v0
 
     .line 158
-    sget-object v3, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v3, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     if-ne v0, v3, :cond_1
 
@@ -396,7 +396,7 @@
     :goto_0
     if-le v0, v1, :cond_0
 
-    iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a:Z
+    iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->isZa:Z
 
     if-eqz v3, :cond_0
 
@@ -447,7 +447,7 @@
 
     .line 160
     :cond_1
-    sget-object v3, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v3, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     if-ne v0, v3, :cond_2
 
@@ -465,7 +465,7 @@
     move-result-object v3
 
     .line 164
-    sget-object v4, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->c:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v4, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypec:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     if-ne v0, v4, :cond_3
 
@@ -503,7 +503,7 @@
     :try_start_0
     new-instance v2, Landroid/media/ExifInterface;
 
-    sget-object v3, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v3, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v3, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -652,7 +652,7 @@
 
     iget v1, v1, Landroid/graphics/BitmapFactory$Options;->outHeight:I
 
-    iget v5, v0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->a:I
+    iget v5, v0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->mIa:I
 
     invoke-direct {v3, v4, v1, v5}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;-><init>(III)V
 

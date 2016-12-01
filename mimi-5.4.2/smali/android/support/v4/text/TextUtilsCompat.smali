@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/util/Locale;
+.field public static final mLocalea:Ljava/util/Locale;
 
 .field private static mStringb:Ljava/lang/String;
 
@@ -25,7 +25,7 @@
 
     invoke-direct {v0, v1, v2}, Ljava/util/Locale;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Landroid/support/v4/text/TextUtilsCompat;->a:Ljava/util/Locale;
+    sput-object v0, Landroid/support/v4/text/TextUtilsCompat;->mLocalea:Ljava/util/Locale;
 
     .line 116
     const-string/jumbo v0, "Arab"
@@ -57,7 +57,7 @@
     .line 76
     if-eqz p0, :cond_2
 
-    sget-object v0, Landroid/support/v4/text/TextUtilsCompat;->a:Ljava/util/Locale;
+    sget-object v0, Landroid/support/v4/text/TextUtilsCompat;->mLocalea:Ljava/util/Locale;
 
     invoke-virtual {p0, v0}, Ljava/util/Locale;->equals(Ljava/lang/Object;)Z
 

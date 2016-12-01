@@ -49,7 +49,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->k()Ljava/lang/String;
 
@@ -88,7 +88,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mActivitya:Landroid/app/Activity;
 
     const-string/jumbo v1, "user_sms"
 
@@ -111,7 +111,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->o()Ljava/lang/String;
 
@@ -132,7 +132,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mActivitya:Landroid/app/Activity;
 
     const v1, 0x7f060268
 
@@ -257,7 +257,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->getGuidanceSharePrefix()Ljava/lang/String;
 

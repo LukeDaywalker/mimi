@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:I
+.field protected mIa:I
 
 
 # direct methods
@@ -18,7 +18,7 @@
     .line 38
     const/4 v0, 0x0
 
-    iput v0, p0, Lu/aly/TTransportException;->a:I
+    iput v0, p0, Lu/aly/TTransportException;->mIa:I
 
     .line 42
     return-void
@@ -34,10 +34,10 @@
     .line 38
     const/4 v0, 0x0
 
-    iput v0, p0, Lu/aly/TTransportException;->a:I
+    iput v0, p0, Lu/aly/TTransportException;->mIa:I
 
     .line 46
-    iput p1, p0, Lu/aly/TTransportException;->a:I
+    iput p1, p0, Lu/aly/TTransportException;->mIa:I
 
     .line 47
     return-void
@@ -53,10 +53,10 @@
     .line 38
     const/4 v0, 0x0
 
-    iput v0, p0, Lu/aly/TTransportException;->a:I
+    iput v0, p0, Lu/aly/TTransportException;->mIa:I
 
     .line 51
-    iput p1, p0, Lu/aly/TTransportException;->a:I
+    iput p1, p0, Lu/aly/TTransportException;->mIa:I
 
     .line 52
     return-void
@@ -72,10 +72,10 @@
     .line 38
     const/4 v0, 0x0
 
-    iput v0, p0, Lu/aly/TTransportException;->a:I
+    iput v0, p0, Lu/aly/TTransportException;->mIa:I
 
     .line 60
-    iput p1, p0, Lu/aly/TTransportException;->a:I
+    iput p1, p0, Lu/aly/TTransportException;->mIa:I
 
     .line 61
     return-void
@@ -91,7 +91,7 @@
     .line 38
     const/4 v0, 0x0
 
-    iput v0, p0, Lu/aly/TTransportException;->a:I
+    iput v0, p0, Lu/aly/TTransportException;->mIa:I
 
     .line 56
     return-void

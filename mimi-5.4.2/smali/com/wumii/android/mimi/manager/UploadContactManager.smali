@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
-
 .field private static final mLoggerb:Lorg/slf4j/Logger;
+
+.field public static final mStringa:Ljava/lang/String;
 
 .field private static mUploadContactManagerc:Lcom/wumii/android/mimi/manager/UploadContactManager;
 
@@ -70,7 +70,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager;->a:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -219,7 +219,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 136
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager;->a:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -398,7 +398,7 @@
     if-eqz v0, :cond_0
 
     .line 200
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafc:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "contact people empty"
 
@@ -410,11 +410,11 @@
 
     .line 204
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     if-eq p2, v0, :cond_1
 
-    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->c:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrc:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     if-ne p2, v0, :cond_4
 
@@ -427,7 +427,7 @@
     .line 207
     const-string/jumbo v2, "nt"
 
-    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     if-ne p2, v0, :cond_3
 
@@ -508,7 +508,7 @@
 
     .line 213
     :cond_4
-    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbra:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     if-ne p2, v0, :cond_2
 
@@ -879,7 +879,7 @@
     invoke-interface {v0, v2}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;)V
 
     .line 149
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafc:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v2, "contact cursor null"
 
@@ -1017,7 +1017,7 @@
     invoke-direct {p0, v2}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Z)V
 
     .line 186
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafc:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1109,7 +1109,7 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Z)V
 
     .line 193
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafc:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

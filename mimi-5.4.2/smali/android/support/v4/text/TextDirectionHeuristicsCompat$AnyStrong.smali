@@ -7,9 +7,9 @@
 
 
 # static fields
-.field public static final a:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
+.field public static final mAnyStronga:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
 
-.field public static final b:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
+.field public static final mAnyStrongb:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
 
 
 # instance fields
@@ -28,7 +28,7 @@
 
     invoke-direct {v0, v1}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;-><init>(Z)V
 
-    sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;->a:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
+    sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;->mAnyStronga:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
 
     .line 236
     new-instance v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, v1}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;-><init>(Z)V
 
-    sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;->b:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
+    sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;->mAnyStrongb:Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
 
     return-void
 .end method

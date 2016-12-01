@@ -32,7 +32,7 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->a:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->mIa:I
 
     .line 37
     const/4 v1, 0x0

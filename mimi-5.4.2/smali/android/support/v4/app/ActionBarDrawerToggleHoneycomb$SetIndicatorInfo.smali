@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public a:Ljava/lang/reflect/Method;
+.field public mImageViewc:Landroid/widget/ImageView;
 
-.field public b:Ljava/lang/reflect/Method;
+.field public mMethoda:Ljava/lang/reflect/Method;
 
-.field public c:Landroid/widget/ImageView;
+.field public mMethodb:Ljava/lang/reflect/Method;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->a:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->mMethoda:Ljava/lang/reflect/Method;
 
     .line 108
     const-class v0, Landroid/app/ActionBar;
@@ -66,7 +66,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->b:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->mMethodb:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -130,7 +130,7 @@
     .line 136
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->mImageViewc:Landroid/widget/ImageView;
 
     goto :goto_0
 

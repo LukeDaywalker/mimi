@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mJSONArrayb:Lorg/json/JSONArray;
 
-.field public b:Lorg/json/JSONArray;
+.field public mJSONObjectc:Lorg/json/JSONObject;
 
-.field public c:Lorg/json/JSONObject;
+.field public mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     return-void
 .end method
@@ -30,15 +30,15 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/a/ICb;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/a/ICb;->mStringa:Ljava/lang/String;
 
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     return-void
 .end method
@@ -108,7 +108,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -118,11 +118,11 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->b:Lorg/json/JSONArray;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->mJSONArrayb:Lorg/json/JSONArray;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->b:Lorg/json/JSONArray;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->mJSONArrayb:Lorg/json/JSONArray;
 
     invoke-virtual {v1}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
 
@@ -131,11 +131,11 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_0
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     invoke-virtual {v1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 

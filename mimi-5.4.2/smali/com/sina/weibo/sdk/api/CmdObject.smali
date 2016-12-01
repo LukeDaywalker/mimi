@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field public g:Ljava/lang/String;
+.field public mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->g:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->mStringg:Ljava/lang/String;
 
     .line 49
     return-void
@@ -72,11 +72,11 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->mStringg:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -84,7 +84,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -133,7 +133,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/CmdObject;->mStringg:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

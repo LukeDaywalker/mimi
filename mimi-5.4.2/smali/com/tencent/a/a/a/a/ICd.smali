@@ -25,7 +25,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICd;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICd;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -79,7 +79,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICd;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICd;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mObjectb:Ljava/lang/Object;
 
-.field public final b:Ljava/lang/Object;
+.field public final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 101
-    iput-object p1, p0, Lcom/google/tagmanager/DataLayer$ICi;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/tagmanager/DataLayer$ICi;->mStringa:Ljava/lang/String;
 
     .line 102
-    iput-object p2, p0, Lcom/google/tagmanager/DataLayer$ICi;->b:Ljava/lang/Object;
+    iput-object p2, p0, Lcom/google/tagmanager/DataLayer$ICi;->mObjectb:Ljava/lang/Object;
 
     .line 103
     return-void
@@ -50,9 +50,9 @@
     check-cast p1, Lcom/google/tagmanager/DataLayer$ICi;
 
     .line 121
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayer$ICi;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayer$ICi;->mStringa:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/google/tagmanager/DataLayer$ICi;->a:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/tagmanager/DataLayer$ICi;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -60,9 +60,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayer$ICi;->b:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayer$ICi;->mObjectb:Ljava/lang/Object;
 
-    iget-object v2, p1, Lcom/google/tagmanager/DataLayer$ICi;->b:Ljava/lang/Object;
+    iget-object v2, p1, Lcom/google/tagmanager/DataLayer$ICi;->mObjectb:Ljava/lang/Object;
 
     invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -86,7 +86,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v2, p0, Lcom/google/tagmanager/DataLayer$ICi;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/tagmanager/DataLayer$ICi;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
@@ -100,7 +100,7 @@
 
     const/4 v1, 0x1
 
-    iget-object v2, p0, Lcom/google/tagmanager/DataLayer$ICi;->b:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/google/tagmanager/DataLayer$ICi;->mObjectb:Ljava/lang/Object;
 
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
@@ -134,7 +134,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayer$ICi;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayer$ICi;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayer$ICi;->b:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayer$ICi;->mObjectb:Ljava/lang/Object;
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

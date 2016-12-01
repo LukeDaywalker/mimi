@@ -958,7 +958,7 @@
     iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mFeedTypem:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mViewa:Landroid/view/View;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getBgColor()I
 

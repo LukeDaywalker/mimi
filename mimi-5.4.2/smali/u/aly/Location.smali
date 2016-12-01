@@ -160,7 +160,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 121
-    sget-object v1, Lu/aly/Location$ICcu;->a:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$ICcu;->mICcua:Lu/aly/Location$ICcu;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -175,7 +175,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 123
-    sget-object v1, Lu/aly/Location$ICcu;->b:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$ICcu;->mICcub:Lu/aly/Location$ICcu;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -190,7 +190,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v1, Lu/aly/Location$ICcu;->c:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$ICcu;->mICcuc:Lu/aly/Location$ICcu;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

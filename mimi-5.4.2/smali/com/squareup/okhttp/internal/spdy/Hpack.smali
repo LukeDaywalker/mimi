@@ -33,7 +33,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->e:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringe:Lokio/ByteString;
 
     const-string/jumbo v4, ""
 
@@ -45,7 +45,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->b:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringb:Lokio/ByteString;
 
     const-string/jumbo v4, "GET"
 
@@ -57,7 +57,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->b:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringb:Lokio/ByteString;
 
     const-string/jumbo v4, "POST"
 
@@ -69,7 +69,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->c:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringc:Lokio/ByteString;
 
     const-string/jumbo v4, "/"
 
@@ -81,7 +81,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->c:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringc:Lokio/ByteString;
 
     const-string/jumbo v4, "/index.html"
 
@@ -93,7 +93,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->d:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringd:Lokio/ByteString;
 
     const-string/jumbo v4, "http"
 
@@ -105,7 +105,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->d:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringd:Lokio/ByteString;
 
     const-string/jumbo v4, "https"
 
@@ -117,7 +117,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     const-string/jumbo v4, "200"
 
@@ -129,7 +129,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     const-string/jumbo v4, "204"
 
@@ -141,7 +141,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     const-string/jumbo v4, "206"
 
@@ -153,7 +153,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     const-string/jumbo v4, "304"
 
@@ -165,7 +165,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     const-string/jumbo v4, "400"
 
@@ -177,7 +177,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     const-string/jumbo v4, "404"
 
@@ -189,7 +189,7 @@
 
     new-instance v2, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     const-string/jumbo v4, "500"
 
@@ -911,7 +911,7 @@
 
     aget-object v2, v2, v0
 
-    iget-object v2, v2, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v2, v2, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     invoke-interface {v1, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -924,7 +924,7 @@
 
     aget-object v2, v2, v0
 
-    iget-object v2, v2, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v2, v2, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

@@ -28,7 +28,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/IcsScroller;->a:Landroid/widget/OverScroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/IcsScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     invoke-virtual {v0}, Landroid/widget/OverScroller;->computeScrollOffset()Z
 

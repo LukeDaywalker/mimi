@@ -170,7 +170,7 @@
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/BaiduMap;->mICch:Lcom/baidu/platform/comapi/map/ICc;
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/A;->b:Lcom/baidu/platform/comapi/map/A;
+    sget-object v0, Lcom/baidu/platform/comapi/map/A;->mAb:Lcom/baidu/platform/comapi/map/A;
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/BaiduMap;->mAc:Lcom/baidu/platform/comapi/map/A;
 
@@ -218,7 +218,7 @@
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/BaiduMap;->mICch:Lcom/baidu/platform/comapi/map/ICc;
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/A;->a:Lcom/baidu/platform/comapi/map/A;
+    sget-object v0, Lcom/baidu/platform/comapi/map/A;->mAa:Lcom/baidu/platform/comapi/map/A;
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/BaiduMap;->mAc:Lcom/baidu/platform/comapi/map/A;
 
@@ -1604,7 +1604,7 @@
     :cond_0
     iget-object v0, p0, Lcom/baidu/mapapi/map/BaiduMap;->mICch:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/ICc;->a:F
+    iget v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mFa:F
 
     goto :goto_0
 .end method
@@ -1624,7 +1624,7 @@
     :cond_0
     iget-object v0, p0, Lcom/baidu/mapapi/map/BaiduMap;->mICch:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/ICc;->b:F
+    iget v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mFb:F
 
     goto :goto_0
 .end method
@@ -1948,11 +1948,11 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/BaiduMap;->mICch:Lcom/baidu/platform/comapi/map/ICc;
 
-    iput p1, v0, Lcom/baidu/platform/comapi/map/ICc;->a:F
+    iput p1, v0, Lcom/baidu/platform/comapi/map/ICc;->mFa:F
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/BaiduMap;->mICch:Lcom/baidu/platform/comapi/map/ICc;
 
-    iput p2, v0, Lcom/baidu/platform/comapi/map/ICc;->b:F
+    iput p2, v0, Lcom/baidu/platform/comapi/map/ICc;->mFb:F
 
     goto :goto_0
 .end method
@@ -2245,7 +2245,7 @@
 
     iput-object v1, v0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->b:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICfb:Lcom/baidu/platform/comapi/map/ICf;
 
     iput-object v1, v0, Lcom/baidu/mapapi/map/Overlay;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 

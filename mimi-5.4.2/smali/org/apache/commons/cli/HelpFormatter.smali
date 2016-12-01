@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field public a:I
+.field protected mComparatori:Ljava/util/Comparator;
 
-.field public b:I
+.field public mIa:I
 
-.field public c:I
+.field public mIb:I
 
-.field public d:Ljava/lang/String;
+.field public mIc:I
 
-.field public e:Ljava/lang/String;
+.field public mStringd:Ljava/lang/String;
 
-.field public f:Ljava/lang/String;
+.field public mStringe:Ljava/lang/String;
 
-.field public g:Ljava/lang/String;
+.field public mStringf:Ljava/lang/String;
 
-.field public h:Ljava/lang/String;
+.field public mStringg:Ljava/lang/String;
 
-.field protected i:Ljava/util/Comparator;
+.field public mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -34,22 +34,22 @@
     .line 71
     const/16 v0, 0x4a
 
-    iput v0, p0, Lorg/apache/commons/cli/HelpFormatter;->a:I
+    iput v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mIa:I
 
     .line 79
     const/4 v0, 0x1
 
-    iput v0, p0, Lorg/apache/commons/cli/HelpFormatter;->b:I
+    iput v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mIb:I
 
     .line 88
     const/4 v0, 0x3
 
-    iput v0, p0, Lorg/apache/commons/cli/HelpFormatter;->c:I
+    iput v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mIc:I
 
     .line 96
     const-string/jumbo v0, "usage: "
 
-    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->d:Ljava/lang/String;
+    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringd:Ljava/lang/String;
 
     .line 104
     const-string/jumbo v0, "line.separator"
@@ -58,22 +58,22 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->e:Ljava/lang/String;
+    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringe:Ljava/lang/String;
 
     .line 112
     const-string/jumbo v0, "-"
 
-    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->f:Ljava/lang/String;
+    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringf:Ljava/lang/String;
 
     .line 120
     const-string/jumbo v0, "--"
 
-    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->g:Ljava/lang/String;
+    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringg:Ljava/lang/String;
 
     .line 128
     const-string/jumbo v0, "arg"
 
-    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->h:Ljava/lang/String;
+    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringh:Ljava/lang/String;
 
     .line 135
     new-instance v0, Lorg/apache/commons/cli/HelpFormatter$ICg;
@@ -82,7 +82,7 @@
 
     invoke-direct {v0, v1}, Lorg/apache/commons/cli/HelpFormatter$ICg;-><init>(Lorg/apache/commons/cli/HelpFormatter$ICf;)V
 
-    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->i:Ljava/util/Comparator;
+    iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mComparatori:Ljava/util/Comparator;
 
     .line 962
     return-void
@@ -95,7 +95,7 @@
 
     .prologue
     .line 154
-    iget v0, p0, Lorg/apache/commons/cli/HelpFormatter;->a:I
+    iget v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mIa:I
 
     return v0
 .end method
@@ -357,7 +357,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/apache/commons/cli/HelpFormatter;->e:Ljava/lang/String;
+    iget-object v2, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -440,7 +440,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lorg/apache/commons/cli/HelpFormatter;->e:Ljava/lang/String;
+    iget-object v3, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -535,7 +535,7 @@
 
     move-result-object v10
 
-    iget-object v11, p0, Lorg/apache/commons/cli/HelpFormatter;->g:Ljava/lang/String;
+    iget-object v11, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v10, v11}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -618,7 +618,7 @@
 
     move-result-object v9
 
-    iget-object v10, p0, Lorg/apache/commons/cli/HelpFormatter;->f:Ljava/lang/String;
+    iget-object v10, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -644,7 +644,7 @@
 
     move-result-object v9
 
-    iget-object v10, p0, Lorg/apache/commons/cli/HelpFormatter;->g:Ljava/lang/String;
+    iget-object v10, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -769,7 +769,7 @@
     if-eqz v1, :cond_8
 
     .line 791
-    iget-object v1, p0, Lorg/apache/commons/cli/HelpFormatter;->e:Ljava/lang/String;
+    iget-object v1, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringe:Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -822,7 +822,7 @@
 
     .prologue
     .line 174
-    iget v0, p0, Lorg/apache/commons/cli/HelpFormatter;->b:I
+    iget v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mIb:I
 
     return v0
 .end method
@@ -832,7 +832,7 @@
 
     .prologue
     .line 194
-    iget v0, p0, Lorg/apache/commons/cli/HelpFormatter;->c:I
+    iget v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mIc:I
 
     return v0
 .end method
@@ -842,7 +842,7 @@
 
     .prologue
     .line 304
-    iget-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->i:Ljava/util/Comparator;
+    iget-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mComparatori:Ljava/util/Comparator;
 
     return-object v0
 .end method

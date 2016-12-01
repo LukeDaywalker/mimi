@@ -908,13 +908,13 @@
     .line 462
     iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICk;->mICbd:Lcom/tencent/tauth/Pro$ICb;
 
-    iput-object v4, v3, Lcom/tencent/connect/b/Pro$ICr;->a:Lcom/tencent/tauth/Pro$ICb;
+    iput-object v4, v3, Lcom/tencent/connect/b/Pro$ICr;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     .line 463
-    iput-object p0, v3, Lcom/tencent/connect/b/Pro$ICr;->b:Lcom/tencent/connect/b/Pro$ICk;
+    iput-object p0, v3, Lcom/tencent/connect/b/Pro$ICr;->mICkb:Lcom/tencent/connect/b/Pro$ICk;
 
     .line 464
-    iput-object v2, v3, Lcom/tencent/connect/b/Pro$ICr;->c:Ljava/lang/String;
+    iput-object v2, v3, Lcom/tencent/connect/b/Pro$ICr;->mStringc:Ljava/lang/String;
 
     .line 465
     invoke-virtual {v1, v3}, Lcom/tencent/connect/b/Pro$ICq;->a(Lcom/tencent/connect/b/Pro$ICr;)Ljava/lang/String;

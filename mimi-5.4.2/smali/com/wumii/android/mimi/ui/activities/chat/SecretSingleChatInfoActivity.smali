@@ -126,7 +126,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;->getChatId()Ljava/lang/String;
 
@@ -151,7 +151,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;
 
@@ -191,7 +191,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->h()V
 
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;
 

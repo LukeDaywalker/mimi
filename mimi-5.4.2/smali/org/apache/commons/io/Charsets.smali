@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final a:Ljava/nio/charset/Charset;
+.field public static final mCharseta:Ljava/nio/charset/Charset;
 
-.field public static final b:Ljava/nio/charset/Charset;
+.field public static final mCharsetb:Ljava/nio/charset/Charset;
 
-.field public static final c:Ljava/nio/charset/Charset;
+.field public static final mCharsetc:Ljava/nio/charset/Charset;
 
-.field public static final d:Ljava/nio/charset/Charset;
+.field public static final mCharsetd:Ljava/nio/charset/Charset;
 
-.field public static final e:Ljava/nio/charset/Charset;
+.field public static final mCharsete:Ljava/nio/charset/Charset;
 
-.field public static final f:Ljava/nio/charset/Charset;
+.field public static final mCharsetf:Ljava/nio/charset/Charset;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/Charsets;->a:Ljava/nio/charset/Charset;
+    sput-object v0, Lorg/apache/commons/io/Charsets;->mCharseta:Ljava/nio/charset/Charset;
 
     .line 103
     const-string/jumbo v0, "US-ASCII"
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/Charsets;->b:Ljava/nio/charset/Charset;
+    sput-object v0, Lorg/apache/commons/io/Charsets;->mCharsetb:Ljava/nio/charset/Charset;
 
     .line 116
     const-string/jumbo v0, "UTF-16"
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/Charsets;->c:Ljava/nio/charset/Charset;
+    sput-object v0, Lorg/apache/commons/io/Charsets;->mCharsetc:Ljava/nio/charset/Charset;
 
     .line 128
     const-string/jumbo v0, "UTF-16BE"
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/Charsets;->d:Ljava/nio/charset/Charset;
+    sput-object v0, Lorg/apache/commons/io/Charsets;->mCharsetd:Ljava/nio/charset/Charset;
 
     .line 140
     const-string/jumbo v0, "UTF-16LE"
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/Charsets;->e:Ljava/nio/charset/Charset;
+    sput-object v0, Lorg/apache/commons/io/Charsets;->mCharsete:Ljava/nio/charset/Charset;
 
     .line 152
     const-string/jumbo v0, "UTF-8"
@@ -74,7 +74,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/Charsets;->f:Ljava/nio/charset/Charset;
+    sput-object v0, Lorg/apache/commons/io/Charsets;->mCharsetf:Ljava/nio/charset/Charset;
 
     return-void
 .end method

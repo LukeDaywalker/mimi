@@ -21,13 +21,9 @@
 
 
 # instance fields
-.field protected a:Landroid/view/LayoutInflater;
+.field protected mLayoutInflatera:Landroid/view/LayoutInflater;
 
-.field protected b:Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;
-
-.field protected c:Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;
-
-.field protected d:Ljava/util/List;
+.field protected mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -35,6 +31,10 @@
         }
     .end annotation
 .end field
+
+.field protected mOnAdapterItemClickListenerb:Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;
+
+.field protected mOnAdapterItemLongClickListenerc:Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;
 
 
 # direct methods
@@ -50,14 +50,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 39
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mListd:Ljava/util/List;
 
     .line 40
     return-void
@@ -85,7 +85,7 @@
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->b:Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mOnAdapterItemClickListenerb:Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;
 
     .line 57
     return-void
@@ -96,7 +96,7 @@
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->c:Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mOnAdapterItemLongClickListenerc:Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;
 
     .line 61
     return-void
@@ -114,7 +114,7 @@
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->d:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mListd:Ljava/util/List;
 
     .line 48
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->notifyDataSetChanged()V
@@ -135,7 +135,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mListd:Ljava/util/List;
 
     return-object v0
 .end method
@@ -145,7 +145,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -164,7 +164,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -192,7 +192,7 @@
     if-nez p2, :cond_0
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->a()I
 
@@ -213,12 +213,12 @@
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 89
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->a:Landroid/widget/RelativeLayout;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 90
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->a:Landroid/widget/RelativeLayout;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, p0}, Landroid/widget/RelativeLayout;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
@@ -249,12 +249,12 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->b:Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mOnAdapterItemClickListenerb:Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;
 
     if-eqz v0, :cond_0
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->b:Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mOnAdapterItemClickListenerb:Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;
 
     invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;->a(Landroid/view/View;)V
 
@@ -268,12 +268,12 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->c:Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mOnAdapterItemLongClickListenerc:Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;
 
     if-eqz v0, :cond_0
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->c:Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->mOnAdapterItemLongClickListenerc:Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;
 
     invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;->a(Landroid/view/View;)Z
 

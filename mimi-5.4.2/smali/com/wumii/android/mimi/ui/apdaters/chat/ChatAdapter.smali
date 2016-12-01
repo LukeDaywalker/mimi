@@ -4,13 +4,15 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/models/AppFacade;
+.field protected mAppFacadea:Lcom/wumii/android/mimi/models/AppFacade;
 
-.field protected b:Landroid/content/Context;
+.field protected mContextb:Landroid/content/Context;
 
-.field protected c:Landroid/util/DisplayMetrics;
+.field protected mDisplayMetricsc:Landroid/util/DisplayMetrics;
 
-.field protected d:Ljava/util/List;
+.field private mIi:I
+
+.field protected mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -20,8 +22,6 @@
         }
     .end annotation
 .end field
-
-.field private mIi:I
 
 .field private mMessageItemBuilderFactorye:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->a:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mAppFacadea:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 40
     const/4 v0, -0x1
@@ -55,17 +55,17 @@
     iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mIi:I
 
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mContextb:Landroid/content/Context;
 
     .line 46
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->c:Landroid/util/DisplayMetrics;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mDisplayMetricsc:Landroid/util/DisplayMetrics;
 
     .line 47
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     .line 48
     new-instance v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
@@ -101,7 +101,7 @@
     move-result v8
 
     .line 166
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -231,7 +231,7 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -256,7 +256,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     return-object v0
 .end method
@@ -288,7 +288,7 @@
 
     .prologue
     .line 140
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -297,7 +297,7 @@
     if-nez v0, :cond_0
 
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -331,12 +331,12 @@
 
     .line 68
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
@@ -351,7 +351,7 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -362,7 +362,7 @@
     .line 199
     if-ltz v0, :cond_0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -371,7 +371,7 @@
     if-ge v0, v1, :cond_0
 
     .line 200
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -406,7 +406,7 @@
 
     .prologue
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->a:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mAppFacadea:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
@@ -415,7 +415,7 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;->c(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 193
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -431,7 +431,7 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -445,7 +445,7 @@
     if-ltz v1, :cond_1
 
     .line 207
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -460,7 +460,7 @@
     if-nez v0, :cond_0
 
     .line 208
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -508,7 +508,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -578,7 +578,7 @@
     .line 106
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mMessageItemBuilderFactorye:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Lcom/wumii/android/mimi/ui/widgets/chat/IChatItemBuilder;
 

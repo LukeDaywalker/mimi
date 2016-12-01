@@ -39,7 +39,7 @@
 
     .prologue
     .line 925
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "guidance/newbie"
 
@@ -119,7 +119,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqa:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 

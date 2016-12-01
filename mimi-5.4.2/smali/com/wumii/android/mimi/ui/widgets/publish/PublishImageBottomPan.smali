@@ -31,11 +31,11 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->c:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->mLayoutInflaterc:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300f5
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->d:Landroid/view/ViewGroup;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->mViewGroupd:Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -43,10 +43,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->e:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->mViewe:Landroid/view/View;
 
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->e:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->mViewe:Landroid/view/View;
 
     return-object v0
 .end method

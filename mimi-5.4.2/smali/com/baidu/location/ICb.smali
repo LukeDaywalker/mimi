@@ -3,4 +3,4 @@
 
 
 # static fields
-.field public static final a:Z
+.field public static final isZa:Z

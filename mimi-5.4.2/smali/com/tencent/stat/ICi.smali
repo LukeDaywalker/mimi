@@ -415,7 +415,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/stat/ICh;->d:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChd:Lcom/tencent/stat/ICh;
 
     if-ne v0, v1, :cond_3
 

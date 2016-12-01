@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field protected a:Landroid/app/Activity;
+.field protected mActivitya:Landroid/app/Activity;
 
-.field protected b:Lcom/wumii/android/mimi/models/AppFacade;
+.field protected mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
-.field protected c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+.field protected mAppFacadeb:Lcom/wumii/android/mimi/models/AppFacade;
 
 
 # direct methods
@@ -40,14 +40,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 35
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     .line 36
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->b:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mAppFacadeb:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 37
     invoke-static {p1}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     .line 38
     return-void
@@ -107,7 +107,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     const-string/jumbo v1, "QQ"
 
@@ -176,7 +176,7 @@
 
     .line 62
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->m()Ljava/lang/String;
 
@@ -185,7 +185,7 @@
     invoke-static {v0, v1, p1}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
@@ -210,7 +210,7 @@
     .line 42
     new-instance v0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;-><init>(Landroid/app/Activity;)V
 
@@ -228,7 +228,7 @@
     :cond_0
     new-instance v0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;-><init>(Landroid/app/Activity;)V
 
@@ -252,7 +252,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     const-string/jumbo v1, "qzone"
 
@@ -313,7 +313,7 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     const-string/jumbo v1, "weibo"
 

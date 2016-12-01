@@ -772,7 +772,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->A:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->mInputMethodManagerA:Landroid/view/inputmethod/InputMethodManager;
 
     return-object v0
 .end method
@@ -958,7 +958,7 @@
     if-nez v0, :cond_0
 
     .line 263
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0602aa
 
@@ -1001,7 +1001,7 @@
     if-nez v0, :cond_0
 
     .line 253
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0602aa
 
@@ -1044,7 +1044,7 @@
     if-nez v0, :cond_0
 
     .line 238
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->A:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->mInputMethodManagerA:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-virtual {p1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 

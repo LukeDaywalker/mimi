@@ -408,7 +408,7 @@
         }
     .end annotation
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -460,7 +460,7 @@
 
     invoke-direct {p0, v0, p1, p2}, Lcom/baidu/lbsapi/auth/ICc;->a(Ljavax/net/ssl/HttpsURLConnection;Ljava/lang/String;Ljava/util/HashMap;)V
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -476,7 +476,7 @@
 
     const v1, 0xc350
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -489,7 +489,7 @@
 
     invoke-virtual {p1, v1}, Ljavax/net/ssl/HttpsURLConnection;->setReadTimeout(I)V
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -518,7 +518,7 @@
 
     const/4 v2, 0x0
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -527,7 +527,7 @@
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICa;->a(Ljava/lang/String;)V
 
     :cond_0
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -538,7 +538,7 @@
     long-to-double v0, v0
 
     :cond_1
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_2
 
@@ -715,7 +715,7 @@
 
     :cond_6
     :goto_3
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_7
 
@@ -748,7 +748,7 @@
 
     if-eq v0, v1, :cond_9
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_8
 
@@ -818,7 +818,7 @@
 
     invoke-direct {p0, v0}, Lcom/baidu/lbsapi/auth/ICc;->a(Ljava/lang/String;)V
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_3
 
@@ -1127,7 +1127,7 @@
 
     move-result-object v2
 
-    sget-boolean v3, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v3, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v3, :cond_0
 

@@ -53,7 +53,7 @@
 
     if-nez v0, :cond_1
 
-    sget v0, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sget v0, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     invoke-static {v0}, Lcom/baidu/mapapi/utils/ICa;->a(I)Z
 

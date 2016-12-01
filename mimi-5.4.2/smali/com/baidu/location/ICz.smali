@@ -124,7 +124,7 @@
 
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/baidu/location/ICz;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICz;->mStringI:Ljava/lang/String;
 
     sget-object v2, Lcom/baidu/location/ICz;->mStringgg:Ljava/lang/String;
 
@@ -1031,7 +1031,7 @@
 
     sget v2, Lcom/baidu/location/ICz;->mIfT:I
 
-    sget v3, Lcom/baidu/location/ICc;->aP:I
+    sget v3, Lcom/baidu/location/ICc;->mIaP:I
 
     if-lt v2, v3, :cond_1
 
@@ -1042,7 +1042,7 @@
     :cond_1
     sget v2, Lcom/baidu/location/ICz;->mIfT:I
 
-    sget v3, Lcom/baidu/location/ICc;->ax:I
+    sget v3, Lcom/baidu/location/ICc;->mIax:I
 
     if-gt v2, v3, :cond_2
 
@@ -1055,7 +1055,7 @@
 
     move-result-wide v2
 
-    sget v4, Lcom/baidu/location/ICc;->bg:F
+    sget v4, Lcom/baidu/location/ICc;->mFbg:F
 
     float-to-double v4, v4
 
@@ -1063,7 +1063,7 @@
 
     if-lez v4, :cond_0
 
-    sget v4, Lcom/baidu/location/ICc;->am:F
+    sget v4, Lcom/baidu/location/ICc;->mFam:F
 
     float-to-double v4, v4
 
@@ -1080,7 +1080,7 @@
 
     move-result-wide v2
 
-    sget v4, Lcom/baidu/location/ICc;->aJ:F
+    sget v4, Lcom/baidu/location/ICc;->mFaJ:F
 
     float-to-double v4, v4
 
@@ -1088,7 +1088,7 @@
 
     if-lez v4, :cond_0
 
-    sget v4, Lcom/baidu/location/ICc;->aY:F
+    sget v4, Lcom/baidu/location/ICc;->mFaY:F
 
     float-to-double v4, v4
 
@@ -1101,11 +1101,11 @@
     goto :goto_0
 
     :cond_4
-    sget v2, Lcom/baidu/location/ICc;->ab:I
+    sget v2, Lcom/baidu/location/ICc;->mIab:I
 
     if-ge p2, v2, :cond_0
 
-    sget v0, Lcom/baidu/location/ICc;->a1:I
+    sget v0, Lcom/baidu/location/ICc;->mIa1:I
 
     if-gt p2, v0, :cond_5
 
@@ -1450,7 +1450,7 @@
 
     aget-wide v2, v0, v1
 
-    sget v1, Lcom/baidu/location/ICc;->a7:I
+    sget v1, Lcom/baidu/location/ICc;->mIa7:I
 
     int-to-double v4, v1
 
@@ -1468,7 +1468,7 @@
 
     aget-wide v0, v0, v1
 
-    sget v2, Lcom/baidu/location/ICc;->ai:I
+    sget v2, Lcom/baidu/location/ICc;->mIai:I
 
     int-to-double v2, v2
 
@@ -1732,7 +1732,7 @@
 
     const/4 v0, 0x0
 
-    sget-boolean v1, Lcom/baidu/location/ICaa;->gj:Z
+    sget-boolean v1, Lcom/baidu/location/ICaa;->isZgj:Z
 
     if-nez v1, :cond_1
 
@@ -1773,20 +1773,20 @@
 
     :cond_2
     :goto_1
-    sget v1, Lcom/baidu/location/ICc;->aN:I
+    sget v1, Lcom/baidu/location/ICc;->mIaN:I
 
     if-eq v1, v0, :cond_0
 
-    sput v0, Lcom/baidu/location/ICc;->aN:I
+    sput v0, Lcom/baidu/location/ICc;->mIaN:I
 
     goto :goto_0
 
     :cond_3
-    sget-wide v2, Lcom/baidu/location/ICc;->Y:D
+    sget-wide v2, Lcom/baidu/location/ICc;->mDY:D
 
     sub-double v2, p1, v2
 
-    sget-wide v4, Lcom/baidu/location/ICc;->au:D
+    sget-wide v4, Lcom/baidu/location/ICc;->mDau:D
 
     sub-double/2addr v4, p3
 
@@ -1814,11 +1814,11 @@
 
     and-int/lit8 v1, v1, 0x3
 
-    sget-boolean v3, Lcom/baidu/location/ICc;->bb:Z
+    sget-boolean v3, Lcom/baidu/location/ICc;->isZbb:Z
 
     if-eqz v3, :cond_2
 
-    sget-object v0, Lcom/baidu/location/ICc;->ar:[B
+    sget-object v0, Lcom/baidu/location/ICc;->mArrayBar:[B
 
     aget-byte v0, v0, v2
 
@@ -1887,9 +1887,9 @@
 
     move-result-object v1
 
-    sput-wide p1, Lcom/baidu/location/ICc;->aO:D
+    sput-wide p1, Lcom/baidu/location/ICc;->mDaO:D
 
-    sput-wide p3, Lcom/baidu/location/ICc;->a3:D
+    sput-wide p3, Lcom/baidu/location/ICc;->mDa3:D
 
     invoke-static {}, Lcom/baidu/location/ICaa;->bf()Lcom/baidu/location/ICaa;
 
@@ -2000,7 +2000,7 @@
 
     if-eqz p2, :cond_2
 
-    sget v3, Lcom/baidu/location/ICc;->aN:I
+    sget v3, Lcom/baidu/location/ICc;->mIaN:I
 
     const/4 v4, 0x3
 
@@ -2015,13 +2015,13 @@
 
     move-result v3
 
-    sget v4, Lcom/baidu/location/ICc;->aG:F
+    sget v4, Lcom/baidu/location/ICc;->mFaG:F
 
     cmpl-float v4, v2, v4
 
     if-lez v4, :cond_3
 
-    sget v2, Lcom/baidu/location/ICc;->aW:F
+    sget v2, Lcom/baidu/location/ICc;->mFaW:F
 
     cmpl-float v2, v3, v2
 
@@ -2032,13 +2032,13 @@
     goto :goto_0
 
     :cond_3
-    sget v4, Lcom/baidu/location/ICc;->aH:F
+    sget v4, Lcom/baidu/location/ICc;->mFaH:F
 
     cmpl-float v2, v2, v4
 
     if-lez v2, :cond_4
 
-    sget v2, Lcom/baidu/location/ICc;->bd:F
+    sget v2, Lcom/baidu/location/ICc;->mFbd:F
 
     cmpl-float v2, v3, v2
 
@@ -2576,7 +2576,7 @@
     monitor-enter p0
 
     :try_start_0
-    sget-boolean v0, Lcom/baidu/location/ICad;->gP:Z
+    sget-boolean v0, Lcom/baidu/location/ICad;->isZgP:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -3341,9 +3341,9 @@
 
     :cond_2
     :goto_1
-    sput v2, Lcom/baidu/location/ICc;->aq:I
+    sput v2, Lcom/baidu/location/ICc;->mIaq:I
 
-    sput v2, Lcom/baidu/location/ICc;->aN:I
+    sput v2, Lcom/baidu/location/ICc;->mIaN:I
 
     const/4 v0, 0x0
 

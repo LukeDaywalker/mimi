@@ -53,7 +53,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->c()Ljava/lang/String;
 

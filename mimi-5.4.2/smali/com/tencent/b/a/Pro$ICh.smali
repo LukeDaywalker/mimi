@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/tencent/b/a/Pro$ICh;
+.field public static final mICha:Lcom/tencent/b/a/Pro$ICh;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lcom/tencent/b/a/Pro$ICh;-><init>()V
 
-    sput-object v0, Lcom/tencent/b/a/Pro$ICh;->a:Lcom/tencent/b/a/Pro$ICh;
+    sput-object v0, Lcom/tencent/b/a/Pro$ICh;->mICha:Lcom/tencent/b/a/Pro$ICh;
 
     return-void
 .end method

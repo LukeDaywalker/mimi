@@ -42,7 +42,7 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/AbsSectionItemView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->a:Landroid/util/DisplayMetrics;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     const/high16 v1, 0x41800000    # 16.0f
 
@@ -51,7 +51,7 @@
     move-result v0
 
     .line 25
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->a:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     const/high16 v2, 0x41200000    # 10.0f
 

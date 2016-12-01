@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+.field public static final mICra:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
 
 .field private static final serialVersionUID:J = 0xa70357c5d069444L
 
@@ -21,7 +21,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->a:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->mICra:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
 
     return-void
 .end method

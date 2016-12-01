@@ -182,7 +182,7 @@
 
     new-array v1, v6, [Lcom/squareup/okhttp/Protocol;
 
-    sget-object v2, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v2, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     aput-object v2, v1, v5
 
@@ -195,7 +195,7 @@
     .line 127
     iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
-    sget-object v1, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->a:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
+    sget-object v1, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->mMimiHostNameVerifiera:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
 
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/OkHttpClient;->a(Ljavax/net/ssl/HostnameVerifier;)Lcom/squareup/okhttp/OkHttpClient;
 
@@ -736,7 +736,7 @@
     if-nez v0, :cond_0
 
     .line 208
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->a:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->mICra:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
 
     throw v0
 
@@ -884,7 +884,7 @@
     if-nez v0, :cond_0
 
     .line 461
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->a:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->mICra:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
 
     throw v0
     :try_end_0
@@ -979,7 +979,7 @@
     if-nez v0, :cond_0
 
     .line 481
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->a:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->mICra:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
 
     throw v0
     :try_end_0
@@ -1156,7 +1156,7 @@
 
     .line 507
     :pswitch_1
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;->a:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;->mICoa:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
 
     throw v0
 
@@ -1759,7 +1759,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/net/URL;)V
 
     .line 279
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v2, "HttpHelper SocketException"
 
@@ -1797,7 +1797,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/net/URL;)V
 
     .line 284
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v2, "HttpHelper SocketTimeoutException"
 
@@ -1835,7 +1835,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/net/URL;)V
 
     .line 289
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v2, "HttpHelper SSLException"
 
@@ -1865,7 +1865,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/net/URL;)V
 
     .line 294
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v2, "HttpHelper IOException"
 

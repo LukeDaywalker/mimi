@@ -58,7 +58,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->mContexta:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -88,7 +88,7 @@
     .line 31
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->mContexta:Landroid/content/Context;
 
     move-object v1, p0
 

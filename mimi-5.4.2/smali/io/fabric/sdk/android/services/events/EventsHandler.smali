@@ -19,11 +19,9 @@
 
 
 # instance fields
-.field protected final a:Landroid/content/Context;
+.field protected final mContexta:Landroid/content/Context;
 
-.field protected final b:Ljava/util/concurrent/ScheduledExecutorService;
-
-.field protected c:Lio/fabric/sdk/android/services/events/EventsStrategy;
+.field protected mEventsStrategyc:Lio/fabric/sdk/android/services/events/EventsStrategy;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc/a/a/a/a/d/o",
@@ -31,6 +29,8 @@
         }
     .end annotation
 .end field
+
+.field protected final mScheduledExecutorServiceb:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
@@ -57,13 +57,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->a:Landroid/content/Context;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->mContexta:Landroid/content/Context;
 
     .line 39
-    iput-object p4, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->b:Ljava/util/concurrent/ScheduledExecutorService;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->mScheduledExecutorServiceb:Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 40
-    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->mEventsStrategyc:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
     .line 42
     invoke-virtual {p3, p0}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a(Lio/fabric/sdk/android/services/events/EventsStorageListener;)V
@@ -130,7 +130,7 @@
     .prologue
     .line 110
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->b:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->mScheduledExecutorServiceb:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/ScheduledExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
@@ -149,7 +149,7 @@
     move-exception v0
 
     .line 112
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->a:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v2, "Failed to run events task"
 
@@ -194,7 +194,7 @@
     .prologue
     .line 118
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->b:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->mScheduledExecutorServiceb:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/ScheduledExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
     :try_end_0
@@ -209,7 +209,7 @@
     move-exception v0
 
     .line 120
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->a:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v2, "Failed to submit events task"
 

@@ -95,7 +95,7 @@
     if-nez p2, :cond_1
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v2, 0x7f0300e9
 

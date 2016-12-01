@@ -57,7 +57,7 @@
 
     move-result v2
 
-    iput v2, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
+    iput v2, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mIa:I
 
     :cond_2
     const-string/jumbo v2, "appid"
@@ -74,7 +74,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->c:Ljava/lang/String;
+    iput-object v2, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringc:Ljava/lang/String;
 
     :cond_3
     const-string/jumbo v2, "uid"
@@ -91,7 +91,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->b:Ljava/lang/String;
+    iput-object v2, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringb:Ljava/lang/String;
 
     :cond_4
     const-string/jumbo v2, "message"
@@ -108,7 +108,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->d:Ljava/lang/String;
+    iput-object v2, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringd:Ljava/lang/String;
 
     :cond_5
     const-string/jumbo v2, "token"
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->e:Ljava/lang/String;
+    iput-object v0, v1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringe:Ljava/lang/String;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 

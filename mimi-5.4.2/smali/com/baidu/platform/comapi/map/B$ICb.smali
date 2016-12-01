@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field public a:I
-
-.field public b:I
-
-.field public c:I
-
-.field public d:I
-
 .field final synthetic mBe:Lcom/baidu/platform/comapi/map/B;
+
+.field public mIa:I
+
+.field public mIb:I
+
+.field public mIc:I
+
+.field public mId:I
 
 
 # direct methods
@@ -24,13 +24,13 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/B$ICb;->a:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/B$ICb;->mIa:I
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/B$ICb;->c:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/B$ICb;->mIc:I
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
 
     return-void
 .end method

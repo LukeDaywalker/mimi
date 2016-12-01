@@ -22,11 +22,11 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
-
 .field private mActivityEventManagere:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
 .field private mContextToastd:Lcom/wumii/android/mimi/util/ContextToast;
+
+.field protected mICla:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
 
 .field private mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
@@ -91,7 +91,7 @@
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->a:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mICla:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
 
     .line 94
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/BaseShareImageTask;->j()V
@@ -105,12 +105,12 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->a:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mICla:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
 
     if-eqz v0, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->a:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mICla:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
 
     invoke-interface {v0, p1, p0}, Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;->a(Ljava/io/File;Lcom/wumii/android/mimi/task/BaseShareImageTask;)V
 
@@ -178,7 +178,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/task/BaseShareImageTask;->c(Ljava/lang/Exception;)V
 
     .line 102
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->c:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -211,14 +211,14 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->a:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mICla:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
 
     if-eqz v0, :cond_0
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->a:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mICla:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mContextb:Landroid/content/Context;
 
     const-string/jumbo v2, "ic_share_logo.jpg"
 
@@ -314,7 +314,7 @@
     if-eqz v0, :cond_1
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

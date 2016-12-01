@@ -19,13 +19,13 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/IdSnapshot$ICbl;
-
-.field public static final enum b:Lu/aly/IdSnapshot$ICbl;
-
-.field public static final enum c:Lu/aly/IdSnapshot$ICbl;
-
 .field private static final synthetic mArrayICblg:[Lu/aly/IdSnapshot$ICbl;
+
+.field public static final enum mICbla:Lu/aly/IdSnapshot$ICbl;
+
+.field public static final enum mICblb:Lu/aly/IdSnapshot$ICbl;
+
+.field public static final enum mICblc:Lu/aly/IdSnapshot$ICbl;
 
 .field private static final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v5, v3, v2}, Lu/aly/IdSnapshot$ICbl;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdSnapshot$ICbl;->a:Lu/aly/IdSnapshot$ICbl;
+    sput-object v0, Lu/aly/IdSnapshot$ICbl;->mICbla:Lu/aly/IdSnapshot$ICbl;
 
     .line 52
     new-instance v0, Lu/aly/IdSnapshot$ICbl;
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/IdSnapshot$ICbl;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdSnapshot$ICbl;->b:Lu/aly/IdSnapshot$ICbl;
+    sput-object v0, Lu/aly/IdSnapshot$ICbl;->mICblb:Lu/aly/IdSnapshot$ICbl;
 
     .line 53
     new-instance v0, Lu/aly/IdSnapshot$ICbl;
@@ -90,20 +90,20 @@
 
     invoke-direct {v0, v1, v4, v6, v2}, Lu/aly/IdSnapshot$ICbl;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/IdSnapshot$ICbl;->c:Lu/aly/IdSnapshot$ICbl;
+    sput-object v0, Lu/aly/IdSnapshot$ICbl;->mICblc:Lu/aly/IdSnapshot$ICbl;
 
     .line 50
     new-array v0, v6, [Lu/aly/IdSnapshot$ICbl;
 
-    sget-object v1, Lu/aly/IdSnapshot$ICbl;->a:Lu/aly/IdSnapshot$ICbl;
+    sget-object v1, Lu/aly/IdSnapshot$ICbl;->mICbla:Lu/aly/IdSnapshot$ICbl;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/IdSnapshot$ICbl;->b:Lu/aly/IdSnapshot$ICbl;
+    sget-object v1, Lu/aly/IdSnapshot$ICbl;->mICblb:Lu/aly/IdSnapshot$ICbl;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/IdSnapshot$ICbl;->c:Lu/aly/IdSnapshot$ICbl;
+    sget-object v1, Lu/aly/IdSnapshot$ICbl;->mICblc:Lu/aly/IdSnapshot$ICbl;
 
     aput-object v1, v0, v4
 

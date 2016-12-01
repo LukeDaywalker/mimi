@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Lorg/slf4j/Logger;
+.field protected mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserBase;->a:Lorg/slf4j/Logger;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserBase;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
     move-exception v0
 
     .line 24
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserBase;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserBase;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "getChat InstantiationException"
 
@@ -105,7 +105,7 @@
     move-exception v0
 
     .line 26
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserBase;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserBase;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "getChat IllegalAccessException"
 

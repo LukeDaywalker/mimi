@@ -53,7 +53,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->mSecretManagera:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->c()Ljava/lang/String;
 
@@ -79,7 +79,7 @@
     .line 64
     iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->mSecretManagera:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/manager/SecretManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, v3, Lcom/wumii/android/mimi/manager/SecretManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 

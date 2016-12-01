@@ -7,15 +7,15 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
-
-.field public static final b:Ljava/lang/String;
-
-.field public static final c:Ljava/lang/String;
-
-.field public static final d:Ljava/lang/String;
-
 .field private static final mLoggere:Lorg/slf4j/Logger;
+
+.field public static final mStringa:Ljava/lang/String;
+
+.field public static final mStringb:Ljava/lang/String;
+
+.field public static final mStringc:Ljava/lang/String;
+
+.field public static final mStringd:Ljava/lang/String;
 
 
 # instance fields
@@ -101,7 +101,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->a:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->mStringa:Ljava/lang/String;
 
     .line 49
     new-instance v0, Ljava/lang/StringBuilder;
@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->b:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->mStringb:Ljava/lang/String;
 
     .line 51
     new-instance v0, Ljava/lang/StringBuilder;
@@ -159,7 +159,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->c:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->mStringc:Ljava/lang/String;
 
     .line 52
     new-instance v0, Ljava/lang/StringBuilder;
@@ -188,7 +188,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->d:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->mStringd:Ljava/lang/String;
 
     return-void
 .end method
@@ -357,7 +357,7 @@
 
     .line 167
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mStringc:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -385,7 +385,7 @@
     .line 171
     :cond_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringc:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -402,7 +402,7 @@
 
     .line 175
     :cond_2
-    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->d:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringd:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -419,7 +419,7 @@
 
     .line 179
     :cond_3
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->d:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mStringd:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2683,12 +2683,12 @@
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 459
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->a:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 460
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->b:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mStringb:Ljava/lang/String;
 
     invoke-virtual {p2}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->a()[B
 

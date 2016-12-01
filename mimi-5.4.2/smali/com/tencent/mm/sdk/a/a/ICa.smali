@@ -25,7 +25,7 @@
     return v0
 
     :cond_1
-    iget-object v1, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->p:Ljava/lang/String;
+    iget-object v1, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringp:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/tencent/mm/sdk/b/ICe;->j(Ljava/lang/String;)Z
 
@@ -44,7 +44,7 @@
     :cond_2
     const/4 v0, 0x0
 
-    iget-object v1, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->o:Ljava/lang/String;
+    iget-object v1, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringo:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/tencent/mm/sdk/b/ICe;->j(Ljava/lang/String;)Z
 
@@ -56,7 +56,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->o:Ljava/lang/String;
+    iget-object v1, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringo:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -75,15 +75,15 @@
     :cond_3
     new-instance v1, Landroid/content/Intent;
 
-    iget-object v2, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->p:Ljava/lang/String;
+    iget-object v2, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringp:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iget-object v2, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->n:Landroid/os/Bundle;
+    iget-object v2, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mBundlen:Landroid/os/Bundle;
 
     if-eqz v2, :cond_4
 
-    iget-object v2, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->n:Landroid/os/Bundle;
+    iget-object v2, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mBundlen:Landroid/os/Bundle;
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
@@ -102,13 +102,13 @@
 
     const-string/jumbo v3, "_mmessage_content"
 
-    iget-object v4, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->m:Ljava/lang/String;
+    iget-object v4, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string/jumbo v3, "_mmessage_checksum"
 
-    iget-object v4, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->m:Ljava/lang/String;
+    iget-object v4, p1, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringm:Ljava/lang/String;
 
     invoke-static {v4, v5, v2}, Lcom/tencent/mm/sdk/a/a/ICb;->a(Ljava/lang/String;ILjava/lang/String;)[B
 

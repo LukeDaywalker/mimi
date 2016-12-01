@@ -40,12 +40,12 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
+    iput-object v1, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mListp:Ljava/util/List;
 
     .line 79
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mListp:Ljava/util/List;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
@@ -60,7 +60,7 @@
     .line 80
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mListp:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -73,7 +73,7 @@
     .line 81
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->o:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mTextViewo:Landroid/widget/TextView;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -84,11 +84,11 @@
     .line 82
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->n:Landroid/widget/EditText;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mEditTextn:Landroid/widget/EditText;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
+    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mListp:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 

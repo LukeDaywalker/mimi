@@ -351,7 +351,7 @@
     :try_start_1
     aget-object v2, v1, v0
 
-    iget-object v2, v2, Lorg/eclipse/paho/client/mqttv3/MqttDeliveryToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v2, v2, Lorg/eclipse/paho/client/mqttv3/MqttDeliveryToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     const/4 v3, 0x0
 

@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/models/enum/SenderRole;
-
-.field public static final enum b:Lcom/wumii/android/mimi/models/enum/SenderRole;
-
-.field public static final enum c:Lcom/wumii/android/mimi/models/enum/SenderRole;
-
 .field private static final synthetic mArraySenderRoled:[Lcom/wumii/android/mimi/models/enum/SenderRole;
+
+.field public static final enum mSenderRolea:Lcom/wumii/android/mimi/models/enum/SenderRole;
+
+.field public static final enum mSenderRoleb:Lcom/wumii/android/mimi/models/enum/SenderRole;
+
+.field public static final enum mSenderRolec:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/enum/SenderRole;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->a:Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sput-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->mSenderRolea:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 6
     new-instance v0, Lcom/wumii/android/mimi/models/enum/SenderRole;
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/wumii/android/mimi/models/enum/SenderRole;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->b:Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sput-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->mSenderRoleb:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 7
     new-instance v0, Lcom/wumii/android/mimi/models/enum/SenderRole;
@@ -60,22 +60,22 @@
 
     invoke-direct {v0, v1, v4}, Lcom/wumii/android/mimi/models/enum/SenderRole;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sput-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->mSenderRolec:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 3
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->a:Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->mSenderRolea:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->b:Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->mSenderRoleb:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->mSenderRolec:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     aput-object v1, v0, v4
 

@@ -8,9 +8,9 @@
 
 .field private mCaptureImageHelperq:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
-.field protected n:Lcom/wumii/android/mimi/manager/CircleManager;
+.field protected mCircleManagern:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field protected o:Ljava/lang/String;
+.field protected mStringo:Ljava/lang/String;
 
 
 # direct methods
@@ -68,9 +68,9 @@
     .line 79
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -218,7 +218,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->n:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mCircleManagern:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 49
     invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
@@ -253,7 +253,7 @@
     if-nez v0, :cond_1
 
     .line 122
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a()Ljava/lang/String;
 

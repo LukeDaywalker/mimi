@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public g:Landroid/widget/ImageView;
+.field public mImageViewg:Landroid/widget/ImageView;
 
-.field public h:Landroid/view/View;
+.field public mViewh:Landroid/view/View;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->g:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->mImageViewg:Landroid/widget/ImageView;
 
     .line 114
     const v0, 0x7f0b023c
@@ -48,15 +48,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->h:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->mViewh:Landroid/view/View;
 
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->g:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->mImageViewg:Landroid/widget/ImageView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->mViewh:Landroid/view/View;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -229,7 +229,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->g:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->mImageViewg:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 

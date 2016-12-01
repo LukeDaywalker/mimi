@@ -1092,7 +1092,7 @@
 
     .line 373
     :cond_1
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->d:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaad:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/common/IdManager;->j()Ljava/lang/String;
 
@@ -1101,7 +1101,7 @@
     invoke-direct {p0, v2, v0, v1}, Lio/fabric/sdk/android/services/common/IdManager;->a(Ljava/util/Map;Lio/fabric/sdk/android/services/common/IdManager$ICaa;Ljava/lang/String;)V
 
     .line 374
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->e:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaae:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/common/IdManager;->k()Ljava/lang/String;
 
@@ -1110,7 +1110,7 @@
     invoke-direct {p0, v2, v0, v1}, Lio/fabric/sdk/android/services/common/IdManager;->a(Ljava/util/Map;Lio/fabric/sdk/android/services/common/IdManager$ICaa;Ljava/lang/String;)V
 
     .line 375
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->f:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaaf:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/common/IdManager;->n()Ljava/lang/String;
 
@@ -1119,7 +1119,7 @@
     invoke-direct {p0, v2, v0, v1}, Lio/fabric/sdk/android/services/common/IdManager;->a(Ljava/util/Map;Lio/fabric/sdk/android/services/common/IdManager$ICaa;Ljava/lang/String;)V
 
     .line 376
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->a:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaaa:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/common/IdManager;->l()Ljava/lang/String;
 
@@ -1128,7 +1128,7 @@
     invoke-direct {p0, v2, v0, v1}, Lio/fabric/sdk/android/services/common/IdManager;->a(Ljava/util/Map;Lio/fabric/sdk/android/services/common/IdManager$ICaa;Ljava/lang/String;)V
 
     .line 377
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->b:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaab:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/common/IdManager;->m()Ljava/lang/String;
 
@@ -1137,7 +1137,7 @@
     invoke-direct {p0, v2, v0, v1}, Lio/fabric/sdk/android/services/common/IdManager;->a(Ljava/util/Map;Lio/fabric/sdk/android/services/common/IdManager$ICaa;Ljava/lang/String;)V
 
     .line 378
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->g:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaag:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/common/IdManager;->i()Ljava/lang/String;
 
@@ -1196,7 +1196,7 @@
     if-eqz v1, :cond_0
 
     .line 394
-    iget-object v0, v1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v0, v1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     .line 398
     :cond_0

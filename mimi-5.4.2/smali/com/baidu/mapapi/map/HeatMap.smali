@@ -411,19 +411,19 @@
 
     move-object/from16 v0, p1
 
-    iget-wide v8, v0, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v8, v0, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
     move-object/from16 v0, p1
 
-    iget-wide v2, v0, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v2, v0, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
     move-object/from16 v0, p1
 
-    iget-wide v10, v0, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v10, v0, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
     move-object/from16 v0, p1
 
-    iget-wide v4, v0, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v4, v0, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     sub-double v6, v2, v8
 
@@ -1300,7 +1300,7 @@
 
     iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->mICek:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
     sub-double v14, v6, v20
 
@@ -1308,7 +1308,7 @@
 
     iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->mICek:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
     add-double v16, v6, v20
 
@@ -1316,7 +1316,7 @@
 
     iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->mICek:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
     sub-double v18, v6, v20
 
@@ -1324,7 +1324,7 @@
 
     iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->mICek:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     add-double v20, v20, v6
 
@@ -1994,15 +1994,15 @@
 
     iget-object v2, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
+    iget v2, v2, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
 
     iget-object v3, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v3, v3, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v3, v3, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->a:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->mIa:I
 
     sub-int/2addr v2, v3
 
@@ -2012,15 +2012,15 @@
 
     iget-object v3, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v3, v3, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v3, v3, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
 
     iget-object v0, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->c:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIc:I
 
     sub-int v0, v3, v0
 

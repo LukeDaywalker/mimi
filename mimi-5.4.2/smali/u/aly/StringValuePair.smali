@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mJb:J
 
-.field public b:J
+.field public mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 8
-    iput-object p1, p0, Lu/aly/StringValuePair;->a:Ljava/lang/String;
+    iput-object p1, p0, Lu/aly/StringValuePair;->mStringa:Ljava/lang/String;
 
     .line 9
-    iput-wide p2, p0, Lu/aly/StringValuePair;->b:J
+    iput-wide p2, p0, Lu/aly/StringValuePair;->mJb:J
 
     .line 10
     return-void

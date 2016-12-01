@@ -890,7 +890,7 @@
 
     :cond_1
     :try_start_1
-    sget-boolean v0, Lcom/baidu/location/ICad;->gP:Z
+    sget-boolean v0, Lcom/baidu/location/ICad;->isZgP:Z
 
     if-eqz v0, :cond_0
 

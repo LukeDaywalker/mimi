@@ -49,7 +49,7 @@
     .line 43
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICf;->mCircleSplitFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060161
 

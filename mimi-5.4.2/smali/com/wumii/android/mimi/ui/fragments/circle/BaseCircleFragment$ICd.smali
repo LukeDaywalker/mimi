@@ -36,7 +36,7 @@
     .line 52
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->mBaseCircleFragmentb:Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 

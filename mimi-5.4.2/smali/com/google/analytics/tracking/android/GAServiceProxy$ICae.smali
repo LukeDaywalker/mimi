@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     if-ne v0, v1, :cond_0
 

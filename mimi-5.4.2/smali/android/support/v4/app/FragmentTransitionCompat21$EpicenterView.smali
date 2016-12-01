@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Landroid/view/View;
+.field public mViewa:Landroid/view/View;
 
 
 # direct methods

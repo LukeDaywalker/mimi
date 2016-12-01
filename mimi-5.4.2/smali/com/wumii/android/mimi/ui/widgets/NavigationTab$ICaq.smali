@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
-
-.field public static final enum b:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
-
-.field public static final enum c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
-
-.field public static final enum d:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
-
 .field private static final synthetic mArrayICaqi:[Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+
+.field public static final enum mICaqa:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+
+.field public static final enum mICaqb:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+
+.field public static final enum mICaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+
+.field public static final enum mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
 
 # instance fields
@@ -71,7 +71,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;-><init>(Ljava/lang/String;IIIILjava/lang/Class;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqa:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     .line 18
     new-instance v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
@@ -90,7 +90,7 @@
 
     invoke-direct/range {v3 .. v9}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;-><init>(Ljava/lang/String;IIIILjava/lang/Class;)V
 
-    sput-object v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->b:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sput-object v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqb:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     .line 19
     new-instance v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
@@ -109,7 +109,7 @@
 
     invoke-direct/range {v3 .. v9}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;-><init>(Ljava/lang/String;IIIILjava/lang/Class;)V
 
-    sput-object v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sput-object v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     .line 20
     new-instance v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
@@ -128,26 +128,26 @@
 
     invoke-direct/range {v3 .. v9}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;-><init>(Ljava/lang/String;IIIILjava/lang/Class;)V
 
-    sput-object v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->d:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sput-object v3, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     .line 16
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqa:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->b:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqb:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     aput-object v1, v0, v10
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     aput-object v1, v0, v11
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->d:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     aput-object v1, v0, v12
 

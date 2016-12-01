@@ -106,7 +106,7 @@
 
     sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    iget-object v2, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iget-object v2, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v1}, Lcom/baidu/platform/comapi/favrite/ICa;->a(Ljava/lang/String;Lcom/baidu/platform/comapi/favrite/FavSyncPoi;)I
 
@@ -116,11 +116,11 @@
 
     if-ne v0, v2, :cond_0
 
-    iget-object v2, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->a:Ljava/lang/String;
+    iget-object v2, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringa:Ljava/lang/String;
 
     iput-object v2, p1, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringa:Ljava/lang/String;
 
-    iget-object v1, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->h:Ljava/lang/String;
+    iget-object v1, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringh:Ljava/lang/String;
 
     invoke-static {v1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 

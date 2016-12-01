@@ -122,7 +122,7 @@
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/LinearLayoutManager$ICv;->a(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 1968
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     .line 1971
     :goto_1

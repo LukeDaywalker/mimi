@@ -12,7 +12,7 @@
 
     .prologue
     .line 59
-    sget-object v5, Lio/fabric/sdk/android/services/network/HttpMethod;->a:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v5, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethoda:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     move-object v0, p0
 
@@ -48,7 +48,7 @@
     .line 150
     const-string/jumbo v0, "X-CRASHLYTICS-API-KEY"
 
-    iget-object v1, p2, Lio/fabric/sdk/android/services/settings/SettingsRequest;->a:Ljava/lang/String;
+    iget-object v1, p2, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Lio/fabric/sdk/android/services/network/HttpRequest;->a(Ljava/lang/String;Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest;
 
@@ -64,7 +64,7 @@
 
     const-string/jumbo v1, "X-CRASHLYTICS-D"
 
-    iget-object v2, p2, Lio/fabric/sdk/android/services/settings/SettingsRequest;->b:Ljava/lang/String;
+    iget-object v2, p2, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lio/fabric/sdk/android/services/network/HttpRequest;->a(Ljava/lang/String;Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest;
 
@@ -72,7 +72,7 @@
 
     const-string/jumbo v1, "X-CRASHLYTICS-API-CLIENT-VERSION"
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsSpiCall;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsSpiCall;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v2}, Lio/fabric/sdk/android/Kit;->a()Ljava/lang/String;
 
@@ -201,21 +201,21 @@
     .line 133
     const-string/jumbo v1, "build_version"
 
-    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->e:Ljava/lang/String;
+    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringe:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 134
     const-string/jumbo v1, "display_version"
 
-    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->d:Ljava/lang/String;
+    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 135
     const-string/jumbo v1, "source"
 
-    iget v2, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->f:I
+    iget v2, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mIf:I
 
     invoke-static {v2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -224,20 +224,20 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 137
-    iget-object v1, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->g:Ljava/lang/String;
+    iget-object v1, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringg:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
     .line 138
     const-string/jumbo v1, "icon_hash"
 
-    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->g:Ljava/lang/String;
+    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringg:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 141
     :cond_0
-    iget-object v1, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->c:Ljava/lang/String;
+    iget-object v1, p1, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringc:Ljava/lang/String;
 
     .line 142
     invoke-static {v1}, Lio/fabric/sdk/android/services/common/CommonUtils;->c(Ljava/lang/String;)Z

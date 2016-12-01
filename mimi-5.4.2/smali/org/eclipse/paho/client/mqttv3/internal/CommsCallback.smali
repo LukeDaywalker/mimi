@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:Z
+.field public isZa:Z
 
 .field private isZi:Z
 
@@ -107,7 +107,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     .line 46
     iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZi:Z
@@ -331,7 +331,7 @@
 
     const/4 v6, 0x0
 
-    iget-object v7, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v7, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v7}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->m()Ljava/lang/String;
 
@@ -342,12 +342,12 @@
     invoke-interface {v1, v2, v3, v4, v5}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 199
-    iget-object v1, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v1, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->e()V
 
     .line 201
-    iget-object v1, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v1, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->n()Z
 
@@ -410,7 +410,7 @@
 
     .line 216
     :cond_2
-    iget-object v1, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v1, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     const/4 v2, 0x1
 
@@ -460,7 +460,7 @@
 
     .line 90
     :try_start_0
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -478,7 +478,7 @@
     .line 93
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     .line 94
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -605,7 +605,7 @@
 
     .line 69
     :try_start_0
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -622,7 +622,7 @@
     .line 75
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     .line 76
     const/4 v0, 0x0
@@ -777,7 +777,7 @@
     .line 272
     new-array v5, v5, [Ljava/lang/Object;
 
-    iget-object v6, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v6, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v6}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->m()Ljava/lang/String;
 
@@ -809,7 +809,7 @@
     .line 277
     new-array v5, v5, [Ljava/lang/Object;
 
-    iget-object v6, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v6, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v6}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->m()Ljava/lang/String;
 
@@ -858,7 +858,7 @@
     .line 300
     :goto_0
     :try_start_0
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -1031,7 +1031,7 @@
     const/4 v4, 0x0
 
     .line 369
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -1061,7 +1061,7 @@
 
     const/4 v6, 0x0
 
-    iget-object v7, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
+    iget-object v7, p1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->mTokena:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v7}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->m()Ljava/lang/String;
 
@@ -1185,7 +1185,7 @@
 
     .line 120
     :goto_0
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -1205,7 +1205,7 @@
 
     .line 125
     :try_start_1
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -1251,7 +1251,7 @@
     .line 135
     :goto_1
     :try_start_2
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     if-eqz v0, :cond_3
 
@@ -1463,7 +1463,7 @@
     .line 175
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->a:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->isZa:Z
 
     .line 176
     iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsCallback;->mClientCommsf:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;

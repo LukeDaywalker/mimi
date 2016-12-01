@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:Lcom/hp/hpl/sparta/ParseLog;
+.field public static final mIb:I
 
-.field public static final b:I
+.field public static final mParseLoga:Lcom/hp/hpl/sparta/ParseLog;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     invoke-direct {v0}, Lcom/hp/hpl/sparta/ParseSource;-><init>()V
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseSource$ICp;->a:Lcom/hp/hpl/sparta/ParseLog;
+    sput-object v0, Lcom/hp/hpl/sparta/ParseSource$ICp;->mParseLoga:Lcom/hp/hpl/sparta/ParseLog;
 
     .line 34
     const-string/jumbo v0, "<?xml version=\"1.0\" encoding=\"\""
@@ -30,7 +30,7 @@
 
     add-int/lit8 v0, v0, 0x28
 
-    sput v0, Lcom/hp/hpl/sparta/ParseSource$ICp;->b:I
+    sput v0, Lcom/hp/hpl/sparta/ParseSource$ICp;->mIb:I
 
     return-void
 .end method

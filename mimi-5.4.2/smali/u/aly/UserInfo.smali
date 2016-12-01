@@ -177,7 +177,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 133
-    sget-object v1, Lu/aly/UserInfo$ICfd;->a:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfda:Lu/aly/UserInfo$ICfd;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -196,7 +196,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 135
-    sget-object v1, Lu/aly/UserInfo$ICfd;->b:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdb:Lu/aly/UserInfo$ICfd;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -211,7 +211,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 137
-    sget-object v1, Lu/aly/UserInfo$ICfd;->c:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdc:Lu/aly/UserInfo$ICfd;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -226,7 +226,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 139
-    sget-object v1, Lu/aly/UserInfo$ICfd;->d:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdd:Lu/aly/UserInfo$ICfd;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -275,25 +275,25 @@
 
     new-array v0, v0, [Lu/aly/UserInfo$ICfd;
 
-    sget-object v1, Lu/aly/UserInfo$ICfd;->a:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfda:Lu/aly/UserInfo$ICfd;
 
     aput-object v1, v0, v2
 
     const/4 v1, 0x1
 
-    sget-object v2, Lu/aly/UserInfo$ICfd;->b:Lu/aly/UserInfo$ICfd;
+    sget-object v2, Lu/aly/UserInfo$ICfd;->mICfdb:Lu/aly/UserInfo$ICfd;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Lu/aly/UserInfo$ICfd;->c:Lu/aly/UserInfo$ICfd;
+    sget-object v2, Lu/aly/UserInfo$ICfd;->mICfdc:Lu/aly/UserInfo$ICfd;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Lu/aly/UserInfo$ICfd;->d:Lu/aly/UserInfo$ICfd;
+    sget-object v2, Lu/aly/UserInfo$ICfd;->mICfdd:Lu/aly/UserInfo$ICfd;
 
     aput-object v2, v0, v1
 

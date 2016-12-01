@@ -226,7 +226,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
@@ -271,13 +271,13 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
@@ -346,9 +346,9 @@
     .line 176
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -619,7 +619,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mOnSharedPreferenceChangeListenerG:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mOnSharedPreferenceChangeListenerG:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
@@ -653,7 +653,7 @@
     if-eqz v0, :cond_0
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mOnSharedPreferenceChangeListenerG:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 

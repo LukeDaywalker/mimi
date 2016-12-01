@@ -19,13 +19,13 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/Response$ICea;
-
-.field public static final enum b:Lu/aly/Response$ICea;
-
-.field public static final enum c:Lu/aly/Response$ICea;
-
 .field private static final synthetic mArrayICeag:[Lu/aly/Response$ICea;
+
+.field public static final enum mICeaa:Lu/aly/Response$ICea;
+
+.field public static final enum mICeab:Lu/aly/Response$ICea;
+
+.field public static final enum mICeac:Lu/aly/Response$ICea;
 
 .field private static final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v5, v3, v2}, Lu/aly/Response$ICea;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Response$ICea;->a:Lu/aly/Response$ICea;
+    sput-object v0, Lu/aly/Response$ICea;->mICeaa:Lu/aly/Response$ICea;
 
     .line 52
     new-instance v0, Lu/aly/Response$ICea;
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/Response$ICea;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Response$ICea;->b:Lu/aly/Response$ICea;
+    sput-object v0, Lu/aly/Response$ICea;->mICeab:Lu/aly/Response$ICea;
 
     .line 53
     new-instance v0, Lu/aly/Response$ICea;
@@ -90,20 +90,20 @@
 
     invoke-direct {v0, v1, v4, v6, v2}, Lu/aly/Response$ICea;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Response$ICea;->c:Lu/aly/Response$ICea;
+    sput-object v0, Lu/aly/Response$ICea;->mICeac:Lu/aly/Response$ICea;
 
     .line 50
     new-array v0, v6, [Lu/aly/Response$ICea;
 
-    sget-object v1, Lu/aly/Response$ICea;->a:Lu/aly/Response$ICea;
+    sget-object v1, Lu/aly/Response$ICea;->mICeaa:Lu/aly/Response$ICea;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/Response$ICea;->b:Lu/aly/Response$ICea;
+    sget-object v1, Lu/aly/Response$ICea;->mICeab:Lu/aly/Response$ICea;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/Response$ICea;->c:Lu/aly/Response$ICea;
+    sget-object v1, Lu/aly/Response$ICea;->mICeac:Lu/aly/Response$ICea;
 
     aput-object v1, v0, v4
 

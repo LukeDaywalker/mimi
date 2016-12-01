@@ -433,7 +433,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->a:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mIa:I
 
     const-string/jumbo v7, "name"
 
@@ -441,7 +441,7 @@
 
     move-result-object v7
 
-    iput-object v7, v6, Lcom/baidu/platform/comapi/map/ICq;->b:Ljava/lang/String;
+    iput-object v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v7, "mapsize"
 
@@ -449,7 +449,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->c:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mIc:I
 
     const-string/jumbo v7, "cty"
 
@@ -457,7 +457,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->d:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mId:I
 
     const-string/jumbo v7, "child"
 
@@ -500,7 +500,7 @@
 
     move-result v11
 
-    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->a:I
+    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mIa:I
 
     const-string/jumbo v11, "name"
 
@@ -508,7 +508,7 @@
 
     move-result-object v11
 
-    iput-object v11, v9, Lcom/baidu/platform/comapi/map/ICq;->b:Ljava/lang/String;
+    iput-object v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v11, "mapsize"
 
@@ -516,7 +516,7 @@
 
     move-result v11
 
-    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->c:I
+    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mIc:I
 
     const-string/jumbo v11, "cty"
 
@@ -524,7 +524,7 @@
 
     move-result v10
 
-    iput v10, v9, Lcom/baidu/platform/comapi/map/ICq;->d:I
+    iput v10, v9, Lcom/baidu/platform/comapi/map/ICq;->mId:I
 
     invoke-virtual {v8, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -751,7 +751,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->a:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mIa:I
 
     const-string/jumbo v7, "name"
 
@@ -759,7 +759,7 @@
 
     move-result-object v7
 
-    iput-object v7, v6, Lcom/baidu/platform/comapi/map/ICq;->b:Ljava/lang/String;
+    iput-object v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v7, "mapsize"
 
@@ -767,7 +767,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->c:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mIc:I
 
     const-string/jumbo v7, "cty"
 
@@ -775,7 +775,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->d:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mId:I
 
     const-string/jumbo v7, "child"
 
@@ -818,7 +818,7 @@
 
     move-result v11
 
-    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->a:I
+    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mIa:I
 
     const-string/jumbo v11, "name"
 
@@ -826,7 +826,7 @@
 
     move-result-object v11
 
-    iput-object v11, v9, Lcom/baidu/platform/comapi/map/ICq;->b:Ljava/lang/String;
+    iput-object v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v11, "mapsize"
 
@@ -834,7 +834,7 @@
 
     move-result v11
 
-    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->c:I
+    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mIc:I
 
     const-string/jumbo v11, "cty"
 
@@ -842,7 +842,7 @@
 
     move-result v10
 
-    iput v10, v9, Lcom/baidu/platform/comapi/map/ICq;->d:I
+    iput v10, v9, Lcom/baidu/platform/comapi/map/ICq;->mId:I
 
     invoke-virtual {v8, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -974,7 +974,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->a:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mIa:I
 
     const-string/jumbo v7, "name"
 
@@ -982,7 +982,7 @@
 
     move-result-object v7
 
-    iput-object v7, v6, Lcom/baidu/platform/comapi/map/ICq;->b:Ljava/lang/String;
+    iput-object v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v7, "mapsize"
 
@@ -990,7 +990,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->c:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mIc:I
 
     const-string/jumbo v7, "cty"
 
@@ -998,7 +998,7 @@
 
     move-result v7
 
-    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->d:I
+    iput v7, v6, Lcom/baidu/platform/comapi/map/ICq;->mId:I
 
     const-string/jumbo v7, "child"
 
@@ -1041,7 +1041,7 @@
 
     move-result v11
 
-    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->a:I
+    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mIa:I
 
     const-string/jumbo v11, "name"
 
@@ -1049,7 +1049,7 @@
 
     move-result-object v11
 
-    iput-object v11, v9, Lcom/baidu/platform/comapi/map/ICq;->b:Ljava/lang/String;
+    iput-object v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v11, "mapsize"
 
@@ -1057,7 +1057,7 @@
 
     move-result v11
 
-    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->c:I
+    iput v11, v9, Lcom/baidu/platform/comapi/map/ICq;->mIc:I
 
     const-string/jumbo v11, "cty"
 
@@ -1065,7 +1065,7 @@
 
     move-result v10
 
-    iput v10, v9, Lcom/baidu/platform/comapi/map/ICq;->d:I
+    iput v10, v9, Lcom/baidu/platform/comapi/map/ICq;->mId:I
 
     invoke-virtual {v8, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1219,7 +1219,7 @@
 
     move-result v7
 
-    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->a:I
+    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->mIa:I
 
     const-string/jumbo v7, "name"
 
@@ -1227,7 +1227,7 @@
 
     move-result-object v7
 
-    iput-object v7, v5, Lcom/baidu/platform/comapi/map/ICt;->b:Ljava/lang/String;
+    iput-object v7, v5, Lcom/baidu/platform/comapi/map/ICt;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v7, "pinyin"
 
@@ -1235,7 +1235,7 @@
 
     move-result-object v7
 
-    iput-object v7, v5, Lcom/baidu/platform/comapi/map/ICt;->c:Ljava/lang/String;
+    iput-object v7, v5, Lcom/baidu/platform/comapi/map/ICt;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v7, "mapoldsize"
 
@@ -1243,7 +1243,7 @@
 
     move-result v7
 
-    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->h:I
+    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->mIh:I
 
     const-string/jumbo v7, "ratio"
 
@@ -1251,7 +1251,7 @@
 
     move-result v7
 
-    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->i:I
+    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->mIi:I
 
     const-string/jumbo v7, "status"
 
@@ -1259,7 +1259,7 @@
 
     move-result v7
 
-    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->l:I
+    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->mIl:I
 
     new-instance v7, Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -1281,7 +1281,7 @@
 
     invoke-direct {v7, v8, v9, v10, v11}, Lcom/baidu/mapapi/model/inner/GeoPoint;-><init>(DD)V
 
-    iput-object v7, v5, Lcom/baidu/platform/comapi/map/ICt;->g:Lcom/baidu/mapapi/model/inner/GeoPoint;
+    iput-object v7, v5, Lcom/baidu/platform/comapi/map/ICt;->mGeoPointg:Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     const-string/jumbo v7, "up"
 
@@ -1293,7 +1293,7 @@
 
     const/4 v7, 0x1
 
-    iput-boolean v7, v5, Lcom/baidu/platform/comapi/map/ICt;->j:Z
+    iput-boolean v7, v5, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
 
     :goto_2
     const-string/jumbo v7, "lev"
@@ -1302,9 +1302,9 @@
 
     move-result v7
 
-    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->e:I
+    iput v7, v5, Lcom/baidu/platform/comapi/map/ICt;->mIe:I
 
-    iget-boolean v7, v5, Lcom/baidu/platform/comapi/map/ICt;->j:Z
+    iget-boolean v7, v5, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
 
     if-eqz v7, :cond_3
 
@@ -1314,7 +1314,7 @@
 
     move-result v6
 
-    iput v6, v5, Lcom/baidu/platform/comapi/map/ICt;->k:I
+    iput v6, v5, Lcom/baidu/platform/comapi/map/ICt;->mIk:I
 
     :goto_3
     invoke-virtual {v4, v5}, Lcom/baidu/platform/comapi/map/ICu;->a(Lcom/baidu/platform/comapi/map/ICt;)V
@@ -1328,7 +1328,7 @@
     :cond_2
     const/4 v7, 0x0
 
-    iput-boolean v7, v5, Lcom/baidu/platform/comapi/map/ICt;->j:Z
+    iput-boolean v7, v5, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1345,7 +1345,7 @@
     const/4 v6, 0x0
 
     :try_start_1
-    iput v6, v5, Lcom/baidu/platform/comapi/map/ICt;->k:I
+    iput v6, v5, Lcom/baidu/platform/comapi/map/ICt;->mIk:I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -1468,7 +1468,7 @@
 
     move-result v2
 
-    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->a:I
+    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mIa:I
 
     const-string/jumbo v2, "name"
 
@@ -1476,7 +1476,7 @@
 
     move-result-object v2
 
-    iput-object v2, v3, Lcom/baidu/platform/comapi/map/ICt;->b:Ljava/lang/String;
+    iput-object v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v2, "pinyin"
 
@@ -1484,7 +1484,7 @@
 
     move-result-object v2
 
-    iput-object v2, v3, Lcom/baidu/platform/comapi/map/ICt;->c:Ljava/lang/String;
+    iput-object v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "headchar"
 
@@ -1492,7 +1492,7 @@
 
     move-result-object v2
 
-    iput-object v2, v3, Lcom/baidu/platform/comapi/map/ICt;->d:Ljava/lang/String;
+    iput-object v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v2, "mapoldsize"
 
@@ -1500,7 +1500,7 @@
 
     move-result v2
 
-    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->h:I
+    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mIh:I
 
     const-string/jumbo v2, "ratio"
 
@@ -1508,7 +1508,7 @@
 
     move-result v2
 
-    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->i:I
+    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mIi:I
 
     const-string/jumbo v2, "status"
 
@@ -1516,7 +1516,7 @@
 
     move-result v2
 
-    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->l:I
+    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mIl:I
 
     new-instance v2, Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -1538,7 +1538,7 @@
 
     invoke-direct {v2, v6, v7, v8, v9}, Lcom/baidu/mapapi/model/inner/GeoPoint;-><init>(DD)V
 
-    iput-object v2, v3, Lcom/baidu/platform/comapi/map/ICt;->g:Lcom/baidu/mapapi/model/inner/GeoPoint;
+    iput-object v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mGeoPointg:Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     const-string/jumbo v2, "up"
 
@@ -1550,7 +1550,7 @@
 
     const/4 v2, 0x1
 
-    iput-boolean v2, v3, Lcom/baidu/platform/comapi/map/ICt;->j:Z
+    iput-boolean v2, v3, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
 
     :goto_1
     const-string/jumbo v2, "lev"
@@ -1559,9 +1559,9 @@
 
     move-result v2
 
-    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->e:I
+    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mIe:I
 
-    iget-boolean v2, v3, Lcom/baidu/platform/comapi/map/ICt;->j:Z
+    iget-boolean v2, v3, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
 
     if-eqz v2, :cond_3
 
@@ -1571,7 +1571,7 @@
 
     move-result v2
 
-    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->k:I
+    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mIk:I
 
     :goto_2
     const-string/jumbo v2, "ver"
@@ -1580,7 +1580,7 @@
 
     move-result v2
 
-    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->f:I
+    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mIf:I
 
     invoke-virtual {v1, v3}, Lcom/baidu/platform/comapi/map/ICu;->a(Lcom/baidu/platform/comapi/map/ICt;)V
 
@@ -1591,7 +1591,7 @@
     :cond_2
     const/4 v2, 0x0
 
-    iput-boolean v2, v3, Lcom/baidu/platform/comapi/map/ICt;->j:Z
+    iput-boolean v2, v3, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1608,7 +1608,7 @@
     const/4 v2, 0x0
 
     :try_start_1
-    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->k:I
+    iput v2, v3, Lcom/baidu/platform/comapi/map/ICt;->mIk:I
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
 

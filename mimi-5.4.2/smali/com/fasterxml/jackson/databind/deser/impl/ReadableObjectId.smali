@@ -19,12 +19,12 @@
 
 .field protected _resolver:Lcom/fasterxml/jackson/annotation/ObjectIdResolver;
 
-.field public final id:Ljava/lang/Object;
+.field public item:Ljava/lang/Object;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public item:Ljava/lang/Object;
+.field public final mObjectid:Ljava/lang/Object;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
@@ -44,7 +44,7 @@
     .line 44
     iget-object v0, p1, Lcom/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey;->key:Ljava/lang/Object;
 
-    iput-object v0, p0, Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId;->id:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId;->mObjectid:Ljava/lang/Object;
 
     .line 45
     return-void
@@ -60,7 +60,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 38
-    iput-object p1, p0, Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId;->id:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId;->mObjectid:Ljava/lang/Object;
 
     .line 39
     const/4 v0, 0x0
@@ -145,7 +145,7 @@
 
     check-cast v0, Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId$Referring;
 
-    iget-object v2, p0, Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId;->id:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId;->mObjectid:Ljava/lang/Object;
 
     invoke-virtual {v0, v2, p1}, Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId$Referring;->handleResolvedForwardReference(Ljava/lang/Object;Ljava/lang/Object;)V
 

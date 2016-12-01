@@ -28,22 +28,22 @@
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;-><init>(I[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;)V
 
     .line 427
-    iget-wide v0, p1, Lcom/crashlytics/android/core/internal/models/BinaryImageData;->a:J
+    iget-wide v0, p1, Lcom/crashlytics/android/core/internal/models/BinaryImageData;->mJa:J
 
     iput-wide v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;->mJa:J
 
     .line 428
-    iget-wide v0, p1, Lcom/crashlytics/android/core/internal/models/BinaryImageData;->b:J
+    iget-wide v0, p1, Lcom/crashlytics/android/core/internal/models/BinaryImageData;->mJb:J
 
     iput-wide v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;->mJb:J
 
     .line 429
-    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/BinaryImageData;->c:Ljava/lang/String;
+    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/BinaryImageData;->mStringc:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;->mStringc:Ljava/lang/String;
 
     .line 430
-    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/BinaryImageData;->d:Ljava/lang/String;
+    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/BinaryImageData;->mStringd:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;->mStringd:Ljava/lang/String;
 

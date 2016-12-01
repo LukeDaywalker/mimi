@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Landroid/widget/TextView;
+.field protected mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;->mTextViewa:Landroid/widget/TextView;
 
     .line 52
     return-void

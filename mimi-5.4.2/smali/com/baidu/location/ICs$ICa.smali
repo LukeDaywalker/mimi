@@ -28,7 +28,7 @@
 .method d(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICs$ICa;->c2:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/ICs$ICa;->mStringc2:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/baidu/location/ICs$ICa;->Y()V
 
@@ -40,12 +40,12 @@
 
     if-eqz p1, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICs$ICa;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lcom/baidu/location/ICs$ICa;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     if-eqz v0, :cond_2
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICs$ICa;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lcom/baidu/location/ICs$ICa;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     const-string/jumbo v1, "utf-8"
 
@@ -123,31 +123,31 @@
 
     invoke-direct {v2, v0}, Lcom/baidu/location/BDLocation$ICa;-><init>(Lcom/baidu/location/BDLocation;)V
 
-    iget-object v3, v1, Lcom/baidu/location/ICai;->hA:Ljava/lang/String;
+    iget-object v3, v1, Lcom/baidu/location/ICai;->mStringhA:Ljava/lang/String;
 
     iput-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
-    iget-object v3, v1, Lcom/baidu/location/ICai;->hF:Ljava/lang/String;
+    iget-object v3, v1, Lcom/baidu/location/ICai;->mStringhF:Ljava/lang/String;
 
     iput-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
-    iget-object v3, v1, Lcom/baidu/location/ICai;->hz:Ljava/lang/String;
+    iget-object v3, v1, Lcom/baidu/location/ICai;->mStringhz:Ljava/lang/String;
 
-    iput-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iput-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
-    iget-object v3, v1, Lcom/baidu/location/ICai;->hC:Ljava/lang/String;
+    iget-object v3, v1, Lcom/baidu/location/ICai;->mStringhC:Ljava/lang/String;
 
     iput-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
-    iget-object v1, v1, Lcom/baidu/location/ICai;->hv:Ljava/lang/String;
+    iget-object v1, v1, Lcom/baidu/location/ICai;->mStringhv:Ljava/lang/String;
 
-    iput-object v1, v2, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iput-object v1, v2, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -171,7 +171,7 @@
 
     move-result-object v1
 
-    iget-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iget-object v3, v2, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -183,7 +183,7 @@
 
     iput-object v1, v2, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/location/ICc;->aF:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICc;->mStringaF:Ljava/lang/String;
 
     const-string/jumbo v3, "all"
 

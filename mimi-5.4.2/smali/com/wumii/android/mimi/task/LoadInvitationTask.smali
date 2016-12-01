@@ -75,7 +75,7 @@
 
     .line 66
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-class v1, Ljava/lang/String;
 
@@ -88,7 +88,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 67
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -105,14 +105,14 @@
     move-result v1
 
     .line 69
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v3, "phoneNumber"
 
     invoke-virtual {v2, v0, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 70
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -127,7 +127,7 @@
     invoke-virtual {v2, v3, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 71
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -180,7 +180,7 @@
     if-nez v0, :cond_0
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06038f
 
@@ -212,7 +212,7 @@
     const/4 v1, 0x0
 
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -228,7 +228,7 @@
     if-eqz v0, :cond_0
 
     .line 42
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->m:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mHandlerm:Landroid/os/Handler;
 
     new-instance v3, Lcom/wumii/android/mimi/task/LoadInvitationTask$ICar;
 
@@ -241,7 +241,7 @@
 
     move-result-wide v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v4, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -278,7 +278,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "friend/invitation"
 

@@ -21,25 +21,25 @@
 
     .prologue
     .line 553
-    iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$Builder;->B:Landroid/app/Notification;
+    iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mNotificationB:Landroid/app/Notification;
 
     .line 554
-    iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->a:Landroid/content/Context;
+    iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mContexta:Landroid/content/Context;
 
-    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$Builder;->b:Ljava/lang/CharSequence;
+    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequenceb:Ljava/lang/CharSequence;
 
-    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$Builder;->c:Ljava/lang/CharSequence;
+    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequencec:Ljava/lang/CharSequence;
 
     iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntentd:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
 
     .line 556
-    iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->a:Landroid/content/Context;
+    iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mContexta:Landroid/content/Context;
 
-    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$Builder;->b:Ljava/lang/CharSequence;
+    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequenceb:Ljava/lang/CharSequence;
 
-    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$Builder;->c:Ljava/lang/CharSequence;
+    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequencec:Ljava/lang/CharSequence;
 
     iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntentd:Landroid/app/PendingIntent;
 

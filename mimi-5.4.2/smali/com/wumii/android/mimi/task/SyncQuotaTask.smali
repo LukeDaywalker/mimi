@@ -66,7 +66,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "chat/group/creation/quota"
 
@@ -79,7 +79,7 @@
     move-result-object v0
 
     .line 61
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/task/SyncQuotaTask;->b(Lcom/fasterxml/jackson/databind/JsonNode;)Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -150,7 +150,7 @@
     move-exception v0
 
     .line 71
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->c:Lorg/slf4j/Logger;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -247,7 +247,7 @@
     if-eqz v1, :cond_1
 
     .line 49
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->m:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mHandlerm:Landroid/os/Handler;
 
     new-instance v2, Lcom/wumii/android/mimi/task/SyncQuotaTask$ICcg;
 
@@ -271,7 +271,7 @@
     move-result v0
 
     .line 41
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->c:Lorg/slf4j/Logger;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 

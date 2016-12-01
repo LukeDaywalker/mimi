@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Lcom/baidu/mapapi/map/Overlay;-><init>()V
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->g:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfg:Lcom/baidu/platform/comapi/map/ICf;
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/Dot;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 

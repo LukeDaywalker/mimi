@@ -55,7 +55,7 @@
     move-result-object v0
 
     .line 367
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     if-nez v2, :cond_0
 
@@ -70,12 +70,12 @@
 
     .line 370
     :cond_0
-    iget-short v2, v0, Lu/aly/TField;->c:S
+    iget-short v2, v0, Lu/aly/TField;->mSc:S
 
     packed-switch v2, :pswitch_data_0
 
     .line 420
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -87,7 +87,7 @@
 
     .line 372
     :pswitch_0
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     const/16 v3, 0xd
 
@@ -101,7 +101,7 @@
     .line 375
     new-instance v0, Ljava/util/HashMap;
 
-    iget v3, v2, Lu/aly/TMap;->c:I
+    iget v3, v2, Lu/aly/TMap;->mIc:I
 
     mul-int/lit8 v3, v3, 0x2
 
@@ -113,7 +113,7 @@
 
     .line 376
     :goto_2
-    iget v3, v2, Lu/aly/TMap;->c:I
+    iget v3, v2, Lu/aly/TMap;->mIc:I
 
     if-ge v0, v3, :cond_1
 
@@ -151,7 +151,7 @@
 
     .line 389
     :cond_2
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -159,7 +159,7 @@
 
     .line 393
     :pswitch_1
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     const/16 v3, 0xf
 
@@ -173,7 +173,7 @@
     .line 396
     new-instance v0, Ljava/util/ArrayList;
 
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(I)V
 
@@ -183,7 +183,7 @@
 
     .line 397
     :goto_3
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     if-ge v0, v3, :cond_3
 
@@ -216,7 +216,7 @@
 
     .line 408
     :cond_4
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -224,7 +224,7 @@
 
     .line 412
     :pswitch_2
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     const/16 v3, 0xb
 
@@ -244,7 +244,7 @@
 
     .line 416
     :cond_5
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 

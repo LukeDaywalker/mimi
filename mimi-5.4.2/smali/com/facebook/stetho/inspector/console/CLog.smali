@@ -19,13 +19,13 @@
     invoke-direct {v0}, Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;-><init>()V
 
     .line 22
-    iput-object p2, v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;->a:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    iput-object p2, v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;->mICga:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
     .line 23
-    iput-object p1, v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;->b:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    iput-object p1, v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;->mICfb:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     .line 24
-    iput-object p3, v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;->c:Ljava/lang/String;
+    iput-object p3, v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;->mStringc:Ljava/lang/String;
 
     .line 25
     new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICe;
@@ -33,7 +33,7 @@
     invoke-direct {v1}, Lcom/facebook/stetho/inspector/protocol/module/Console$ICe;-><init>()V
 
     .line 26
-    iput-object v0, v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICe;->a:Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;
+    iput-object v0, v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICe;->mICda:Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;
 
     .line 27
     const-string/jumbo v0, "Console.messageAdded"

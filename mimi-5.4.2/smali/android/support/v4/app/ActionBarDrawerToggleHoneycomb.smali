@@ -58,7 +58,7 @@
     check-cast v0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;
 
     .line 76
-    iget-object v2, v0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->a:Ljava/lang/reflect/Method;
+    iget-object v2, v0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->mMethoda:Ljava/lang/reflect/Method;
 
     if-eqz v2, :cond_0
 
@@ -69,7 +69,7 @@
     move-result-object v2
 
     .line 79
-    iget-object v0, v0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->b:Ljava/lang/reflect/Method;
+    iget-object v0, v0, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->mMethodb:Ljava/lang/reflect/Method;
 
     const/4 v3, 0x1
 

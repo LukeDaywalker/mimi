@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected a:Landroid/widget/ImageView;
-
-.field protected b:Landroid/widget/TextView;
-
 .field final synthetic mBaseImageChatItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;
 
+.field protected mImageViewa:Landroid/widget/ImageView;
+
 .field private mImageViewe:Landroid/widget/ImageView;
+
+.field protected mTextViewb:Landroid/widget/TextView;
 
 .field private mViewd:Landroid/view/View;
 
@@ -43,7 +43,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mImageViewa:Landroid/widget/ImageView;
 
     .line 115
     const v0, 0x7f0b019a
@@ -65,7 +65,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mTextViewb:Landroid/widget/TextView;
 
     .line 117
     return-void

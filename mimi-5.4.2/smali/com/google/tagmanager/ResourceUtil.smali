@@ -14,12 +14,12 @@
     invoke-direct {v1}, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;-><init>()V
 
     .line 466
-    iget v0, p0, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->b:I
+    iget v0, p0, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->mIb:I
 
-    iput v0, v1, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->b:I
+    iput v0, v1, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->mIb:I
 
     .line 467
-    iget-object v0, p0, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->m:[I
+    iget-object v0, p0, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->mArrayIm:[I
 
     invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
 
@@ -27,17 +27,17 @@
 
     check-cast v0, [I
 
-    iput-object v0, v1, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->m:[I
+    iput-object v0, v1, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->mArrayIm:[I
 
     .line 468
-    iget-boolean v0, p0, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->n:Z
+    iget-boolean v0, p0, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->isZn:Z
 
     if-eqz v0, :cond_0
 
     .line 469
-    iget-boolean v0, p0, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->n:Z
+    iget-boolean v0, p0, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->isZn:Z
 
-    iput-boolean v0, v1, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->n:Z
+    iput-boolean v0, v1, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->isZn:Z
 
     .line 471
     :cond_0

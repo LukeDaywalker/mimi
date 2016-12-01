@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public a:I
+.field public mICbb:Lcom/tencent/tauth/Pro$ICb;
 
-.field public b:Lcom/tencent/tauth/Pro$ICb;
+.field public mIa:I
 
 .field final synthetic mProc:Lcom/tencent/connect/common/Pro;
 
@@ -22,10 +22,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 307
-    iput p2, p0, Lcom/tencent/connect/common/Pro$ICb;->a:I
+    iput p2, p0, Lcom/tencent/connect/common/Pro$ICb;->mIa:I
 
     .line 308
-    iput-object p3, p0, Lcom/tencent/connect/common/Pro$ICb;->b:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p3, p0, Lcom/tencent/connect/common/Pro$ICb;->mICbb:Lcom/tencent/tauth/Pro$ICb;
 
     .line 309
     return-void

@@ -4,12 +4,12 @@
 
 
 # instance fields
-.field public final a:J
+.field public final mIe:I
 
-.field public final b:Ljava/lang/String;
+.field public final mJa:J
 
-.field public final c:Ljava/lang/String;
+.field public final mJd:J
 
-.field public final d:J
+.field public final mStringb:Ljava/lang/String;
 
-.field public final e:I
+.field public final mStringc:Ljava/lang/String;

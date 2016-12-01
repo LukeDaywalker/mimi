@@ -26,15 +26,15 @@
 
     invoke-direct {v2}, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;-><init>()V
 
-    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->a:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->mIa:I
 
     iput v0, v2, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;->cityID:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICq;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICq;->mStringb:Ljava/lang/String;
 
     iput-object v0, v2, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;->cityName:Ljava/lang/String;
 
-    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->d:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->mId:I
 
     iput v0, v2, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;->cityType:I
 
@@ -79,7 +79,7 @@
 
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/ICq;->c:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/ICq;->mIc:I
 
     add-int/2addr v0, v1
 
@@ -107,7 +107,7 @@
     goto :goto_0
 
     :cond_3
-    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->c:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->mIc:I
 
     iput v0, v2, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;->size:I
 
@@ -129,19 +129,19 @@
 
     invoke-direct {v0}, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;-><init>()V
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->a:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mIa:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->cityID:I
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mStringb:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->cityName:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->g:Lcom/baidu/mapapi/model/inner/GeoPoint;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mGeoPointg:Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->g:Lcom/baidu/mapapi/model/inner/GeoPoint;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mGeoPointg:Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     invoke-static {v1}, Lcom/baidu/mapapi/model/CoordUtil;->mc2ll(Lcom/baidu/mapapi/model/inner/GeoPoint;)Lcom/baidu/mapapi/model/LatLng;
 
@@ -150,45 +150,45 @@
     iput-object v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->geoPt:Lcom/baidu/mapapi/model/LatLng;
 
     :cond_1
-    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->e:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mIe:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->level:I
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->i:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mIi:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->ratio:I
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->h:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mIh:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->serversize:I
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->i:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mIi:I
 
     const/16 v2, 0x64
 
     if-ne v1, v2, :cond_2
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->h:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mIh:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->size:I
 
     :goto_1
-    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->l:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mIl:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->status:I
 
-    iget-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICt;->j:Z
+    iget-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
 
     iput-boolean v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->update:Z
 
     goto :goto_0
 
     :cond_2
-    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->h:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->mIh:I
 
     div-int/lit8 v1, v1, 0x64
 
-    iget v2, p0, Lcom/baidu/platform/comapi/map/ICt;->i:I
+    iget v2, p0, Lcom/baidu/platform/comapi/map/ICt;->mIi:I
 
     mul-int/2addr v1, v2
 

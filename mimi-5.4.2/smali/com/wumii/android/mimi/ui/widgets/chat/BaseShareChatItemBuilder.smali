@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field protected mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 .field private mLayoutInflaterf:Landroid/view/LayoutInflater;
 
@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 31
     return-void

@@ -50,7 +50,7 @@
 
     .prologue
     .line 39
-    sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->m:Z
+    sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->isZm:Z
 
     if-eqz v0, :cond_0
 

@@ -62,18 +62,18 @@
     .line 36
     iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->mByteArrayOutputStreamc:Ljava/io/ByteArrayOutputStream;
 
-    iget-object v2, v0, Lcom/facebook/stetho/websocket/Frame;->i:[B
+    iget-object v2, v0, Lcom/facebook/stetho/websocket/Frame;->mArrayBi:[B
 
     const/4 v3, 0x0
 
-    iget-wide v4, v0, Lcom/facebook/stetho/websocket/Frame;->g:J
+    iget-wide v4, v0, Lcom/facebook/stetho/websocket/Frame;->mJg:J
 
     long-to-int v4, v4
 
     invoke-virtual {v1, v2, v3, v4}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
     .line 37
-    iget-boolean v1, v0, Lcom/facebook/stetho/websocket/Frame;->a:Z
+    iget-boolean v1, v0, Lcom/facebook/stetho/websocket/Frame;->isZa:Z
 
     if-eqz v1, :cond_1
 
@@ -85,7 +85,7 @@
     move-result-object v1
 
     .line 39
-    iget-byte v2, v0, Lcom/facebook/stetho/websocket/Frame;->e:B
+    iget-byte v2, v0, Lcom/facebook/stetho/websocket/Frame;->mBe:B
 
     array-length v3, v1
 
@@ -98,7 +98,7 @@
 
     .line 42
     :cond_1
-    iget-byte v1, v0, Lcom/facebook/stetho/websocket/Frame;->e:B
+    iget-byte v1, v0, Lcom/facebook/stetho/websocket/Frame;->mBe:B
 
     const/16 v2, 0x8
 

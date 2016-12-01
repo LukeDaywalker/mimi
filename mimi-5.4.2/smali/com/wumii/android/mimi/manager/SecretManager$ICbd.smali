@@ -74,7 +74,7 @@
     .line 100
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->y()Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
@@ -161,7 +161,7 @@
     .line 110
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->f:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->mContextf:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mStringa:Ljava/lang/String;
 
@@ -214,15 +214,15 @@
     :cond_2
     iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/manager/SecretManager;->e:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+    iget-object v2, v2, Lcom/wumii/android/mimi/manager/SecretManager;->mNotificationHelpere:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/manager/SecretManager;->f:Landroid/content/Context;
+    iget-object v3, v3, Lcom/wumii/android/mimi/manager/SecretManager;->mContextf:Landroid/content/Context;
 
     iget-object v4, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iget-object v4, v4, Lcom/wumii/android/mimi/manager/SecretManager;->f:Landroid/content/Context;
+    iget-object v4, v4, Lcom/wumii/android/mimi/manager/SecretManager;->mContextf:Landroid/content/Context;
 
     const v5, 0x7f0600a1
 

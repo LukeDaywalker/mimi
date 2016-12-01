@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/baidu/location/ICag;->hm:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/baidu/location/ICag;->mHandlerhm:Landroid/os/Handler;
 
     invoke-virtual {v0, v6}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 

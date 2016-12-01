@@ -45,7 +45,7 @@
     if-nez v0, :cond_0
 
     .line 112
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->l:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafl:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

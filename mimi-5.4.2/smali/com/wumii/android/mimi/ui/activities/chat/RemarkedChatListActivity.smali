@@ -138,7 +138,7 @@
     .line 127
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -205,7 +205,7 @@
     if-nez v1, :cond_0
 
     .line 102
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -265,7 +265,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
     .line 110
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -387,7 +387,7 @@
 
     invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)V
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 

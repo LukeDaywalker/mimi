@@ -36,7 +36,7 @@
     .line 410
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICaj;->mGroupApplicationChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->E:Landroid/widget/FrameLayout;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->mFrameLayoutE:Landroid/widget/FrameLayout;
 
     const/16 v1, 0x8
 

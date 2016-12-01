@@ -203,7 +203,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->h()V
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 

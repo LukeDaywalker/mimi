@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final enum a:Lcom/umeng/analytics/Gender;
-
-.field public static final enum b:Lcom/umeng/analytics/Gender;
-
-.field public static final enum c:Lcom/umeng/analytics/Gender;
-
 .field private static final synthetic mArrayGendere:[Lcom/umeng/analytics/Gender;
+
+.field public static final enum mGendera:Lcom/umeng/analytics/Gender;
+
+.field public static final enum mGenderb:Lcom/umeng/analytics/Gender;
+
+.field public static final enum mGenderc:Lcom/umeng/analytics/Gender;
 
 
 # instance fields
-.field public d:I
+.field public mId:I
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/umeng/analytics/Gender$ICc;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/umeng/analytics/Gender;->a:Lcom/umeng/analytics/Gender;
+    sput-object v0, Lcom/umeng/analytics/Gender;->mGendera:Lcom/umeng/analytics/Gender;
 
     .line 15
     new-instance v0, Lcom/umeng/analytics/Gender$ICd;
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, v1, v3, v4}, Lcom/umeng/analytics/Gender$ICd;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/umeng/analytics/Gender;->b:Lcom/umeng/analytics/Gender;
+    sput-object v0, Lcom/umeng/analytics/Gender;->mGenderb:Lcom/umeng/analytics/Gender;
 
     .line 20
     new-instance v0, Lcom/umeng/analytics/Gender$ICe;
@@ -64,22 +64,22 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/umeng/analytics/Gender$ICe;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/umeng/analytics/Gender;->c:Lcom/umeng/analytics/Gender;
+    sput-object v0, Lcom/umeng/analytics/Gender;->mGenderc:Lcom/umeng/analytics/Gender;
 
     .line 9
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/umeng/analytics/Gender;
 
-    sget-object v1, Lcom/umeng/analytics/Gender;->a:Lcom/umeng/analytics/Gender;
+    sget-object v1, Lcom/umeng/analytics/Gender;->mGendera:Lcom/umeng/analytics/Gender;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/umeng/analytics/Gender;->b:Lcom/umeng/analytics/Gender;
+    sget-object v1, Lcom/umeng/analytics/Gender;->mGenderb:Lcom/umeng/analytics/Gender;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/umeng/analytics/Gender;->c:Lcom/umeng/analytics/Gender;
+    sget-object v1, Lcom/umeng/analytics/Gender;->mGenderc:Lcom/umeng/analytics/Gender;
 
     aput-object v1, v0, v4
 
@@ -101,7 +101,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 29
-    iput p3, p0, Lcom/umeng/analytics/Gender;->d:I
+    iput p3, p0, Lcom/umeng/analytics/Gender;->mId:I
 
     .line 30
     return-void
@@ -133,20 +133,20 @@
     packed-switch v0, :pswitch_data_0
 
     .line 61
-    sget-object v0, Lu/aly/Gender;->c:Lu/aly/Gender;
+    sget-object v0, Lu/aly/Gender;->mGenderc:Lu/aly/Gender;
 
     :goto_0
     return-object v0
 
     .line 56
     :pswitch_0
-    sget-object v0, Lu/aly/Gender;->a:Lu/aly/Gender;
+    sget-object v0, Lu/aly/Gender;->mGendera:Lu/aly/Gender;
 
     goto :goto_0
 
     .line 58
     :pswitch_1
-    sget-object v0, Lu/aly/Gender;->b:Lu/aly/Gender;
+    sget-object v0, Lu/aly/Gender;->mGenderb:Lu/aly/Gender;
 
     goto :goto_0
 

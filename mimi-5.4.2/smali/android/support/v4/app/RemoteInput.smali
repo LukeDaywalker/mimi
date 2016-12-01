@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput$Factory;
+.field public static final mFactorya:Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput$Factory;
 
 .field private static final mImplg:Landroid/support/v4/app/RemoteInput$Impl;
 
@@ -46,7 +46,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/RemoteInput$1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/RemoteInput;->a:Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput$Factory;
+    sput-object v0, Landroid/support/v4/app/RemoteInput;->mFactorya:Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput$Factory;
 
     return-void
 

@@ -107,7 +107,7 @@
     .line 636
     iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
-    iget-object v1, p1, Lcom/tencent/tauth/Pro$ICc;->b:Ljava/lang/String;
+    iget-object v1, p1, Lcom/tencent/tauth/Pro$ICc;->mStringb:Ljava/lang/String;
 
     invoke-static {v0, v1, v2}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->b(Lcom/tencent/connect/avatar/Pro$ImageActivity;Ljava/lang/String;I)V
 

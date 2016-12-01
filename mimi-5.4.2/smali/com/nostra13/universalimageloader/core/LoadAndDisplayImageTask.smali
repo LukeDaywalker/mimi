@@ -52,7 +52,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 96
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->a:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFroma:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     iput-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->mLoadedFromq:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
@@ -449,7 +449,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->d:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTyped:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
@@ -464,7 +464,7 @@
 
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->mStringn:Ljava/lang/String;
 
-    sget-object v3, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v3, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -476,7 +476,7 @@
 
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->mStringa:Ljava/lang/String;
 
-    sget-object v5, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v5, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->h()Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
@@ -756,7 +756,7 @@
     invoke-static {v2, v3}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 220
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->b:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromb:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     iput-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->mLoadedFromq:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
@@ -764,7 +764,7 @@
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->i()V
 
     .line 223
-    sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -818,7 +818,7 @@
     invoke-static {v2, v3}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 227
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->a:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFroma:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     iput-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->mLoadedFromq:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
@@ -855,7 +855,7 @@
     if-eqz v3, :cond_1
 
     .line 233
-    sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -891,7 +891,7 @@
 
     .line 241
     :cond_2
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->b:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcb:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     const/4 v3, 0x0
 
@@ -916,7 +916,7 @@
 
     .line 245
     :goto_2
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->c:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcc:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     invoke-direct {p0, v2, v1}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->a(Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;Ljava/lang/Throwable;)V
 
@@ -944,7 +944,7 @@
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/Throwable;)V
 
     .line 250
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->a:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICca:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     invoke-direct {p0, v2, v1}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->a(Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;Ljava/lang/Throwable;)V
 
@@ -965,7 +965,7 @@
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/Throwable;)V
 
     .line 253
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->d:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcd:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     invoke-direct {p0, v2, v1}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->a(Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;Ljava/lang/Throwable;)V
 
@@ -986,7 +986,7 @@
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/Throwable;)V
 
     .line 256
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->e:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICce:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     invoke-direct {p0, v2, v1}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->a(Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;Ljava/lang/Throwable;)V
 
@@ -1839,7 +1839,7 @@
     .line 155
     :cond_8
     :try_start_2
-    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->c:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromc:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     iput-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->mLoadedFromq:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 

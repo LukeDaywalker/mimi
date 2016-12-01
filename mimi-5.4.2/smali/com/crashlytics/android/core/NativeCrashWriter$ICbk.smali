@@ -30,27 +30,27 @@
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;-><init>(I[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;)V
 
     .line 352
-    iget-wide v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->a:J
+    iget-wide v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->mJa:J
 
     iput-wide v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;->mJa:J
 
     .line 353
-    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->b:Ljava/lang/String;
+    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->mStringb:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;->mStringb:Ljava/lang/String;
 
     .line 354
-    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->c:Ljava/lang/String;
+    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->mStringc:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;->mStringc:Ljava/lang/String;
 
     .line 355
-    iget-wide v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->d:J
+    iget-wide v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->mJd:J
 
     iput-wide v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;->mJd:J
 
     .line 356
-    iget v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->e:I
+    iget v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;->mIe:I
 
     iput v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;->mIe:I
 

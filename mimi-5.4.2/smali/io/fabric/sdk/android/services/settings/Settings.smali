@@ -414,7 +414,7 @@
     :try_start_0
     iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mSettingsControllerc:Lio/fabric/sdk/android/services/settings/SettingsController;
 
-    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->b:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviorb:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     invoke-interface {v0, v1}, Lio/fabric/sdk/android/services/settings/SettingsController;->a(Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;)Lio/fabric/sdk/android/services/settings/SettingsData;
 

@@ -30,7 +30,7 @@
     check-cast v0, Landroid/support/v7/widget/RecyclerView$ICas;
 
     .line 318
-    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v1, p1}, Landroid/support/v7/widget/RecyclerView$ICar;->h(Landroid/view/View;)I
 
@@ -48,7 +48,7 @@
 
     .prologue
     .line 283
-    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v0, p1}, Landroid/support/v7/widget/RecyclerView$ICar;->f(I)V
 
@@ -68,7 +68,7 @@
     check-cast v0, Landroid/support/v7/widget/RecyclerView$ICas;
 
     .line 311
-    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v1, p1}, Landroid/support/v7/widget/RecyclerView$ICar;->j(Landroid/view/View;)I
 
@@ -86,7 +86,7 @@
 
     .prologue
     .line 288
-    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICar;->u()I
 
@@ -107,7 +107,7 @@
     check-cast v0, Landroid/support/v7/widget/RecyclerView$ICas;
 
     .line 295
-    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v1, p1}, Landroid/support/v7/widget/RecyclerView$ICar;->f(Landroid/view/View;)I
 
@@ -129,13 +129,13 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICar;->s()I
 
     move-result v0
 
-    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$ICar;->w()I
 
@@ -158,7 +158,7 @@
     check-cast v0, Landroid/support/v7/widget/RecyclerView$ICas;
 
     .line 303
-    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v1, p1}, Landroid/support/v7/widget/RecyclerView$ICar;->e(Landroid/view/View;)I
 
@@ -180,7 +180,7 @@
 
     .prologue
     .line 278
-    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICar;->s()I
 
@@ -194,13 +194,13 @@
 
     .prologue
     .line 323
-    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICar;->s()I
 
     move-result v0
 
-    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$ICar;->u()I
 
@@ -208,7 +208,7 @@
 
     sub-int/2addr v0, v1
 
-    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v1, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$ICar;->w()I
 
@@ -224,7 +224,7 @@
 
     .prologue
     .line 334
-    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->a:Landroid/support/v7/widget/RecyclerView$ICar;
+    iget-object v0, p0, Landroid/support/v7/widget/OrientationHelper$ICab;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICar;->w()I
 

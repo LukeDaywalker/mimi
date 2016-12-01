@@ -104,7 +104,7 @@
     move-result-object v3
 
     .line 200
-    sget-object v4, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->d:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v4, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaad:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-interface {v2, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -113,7 +113,7 @@
     check-cast v4, Ljava/lang/String;
 
     .line 202
-    sget-object v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->g:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaag:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -122,7 +122,7 @@
     check-cast v5, Ljava/lang/String;
 
     .line 204
-    sget-object v6, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->c:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v6, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaac:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-interface {v2, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -598,16 +598,16 @@
 
     .line 155
     :cond_0
-    iget-object v2, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->d:Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;
+    iget-object v2, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->mFeaturesSettingsDatad:Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;
 
-    iget-boolean v2, v2, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->d:Z
+    iget-boolean v2, v2, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->isZd:Z
 
     if-eqz v2, :cond_1
 
     .line 156
     iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
-    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->e:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+    iget-object v1, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->mAnalyticsSettingsDatae:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
     invoke-virtual {p0}, Lcom/crashlytics/android/answers/Answers;->g()Ljava/lang/String;
 

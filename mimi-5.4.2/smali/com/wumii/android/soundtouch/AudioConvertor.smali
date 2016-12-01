@@ -34,7 +34,7 @@
     sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mLoggera:Lorg/slf4j/Logger;
 
     .line 29
-    sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->h:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICah:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 

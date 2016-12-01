@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public a:Lcom/sina/weibo/sdk/api/TextObject;
+.field public mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
-.field public b:Lcom/sina/weibo/sdk/api/ImageObject;
+.field public mImageObjectb:Lcom/sina/weibo/sdk/api/ImageObject;
 
-.field public c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+.field public mTextObjecta:Lcom/sina/weibo/sdk/api/TextObject;
 
 
 # direct methods
@@ -30,21 +30,21 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a:Lcom/sina/weibo/sdk/api/TextObject;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mTextObjecta:Lcom/sina/weibo/sdk/api/TextObject;
 
     if-eqz v0, :cond_0
 
     .line 53
     const-string/jumbo v0, "_weibo_message_text"
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a:Lcom/sina/weibo/sdk/api/TextObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mTextObjecta:Lcom/sina/weibo/sdk/api/TextObject;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 54
     const-string/jumbo v0, "_weibo_message_text_extra"
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a:Lcom/sina/weibo/sdk/api/TextObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mTextObjecta:Lcom/sina/weibo/sdk/api/TextObject;
 
     invoke-virtual {v1}, Lcom/sina/weibo/sdk/api/TextObject;->b()Ljava/lang/String;
 
@@ -54,21 +54,21 @@
 
     .line 56
     :cond_0
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->b:Lcom/sina/weibo/sdk/api/ImageObject;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mImageObjectb:Lcom/sina/weibo/sdk/api/ImageObject;
 
     if-eqz v0, :cond_1
 
     .line 57
     const-string/jumbo v0, "_weibo_message_image"
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->b:Lcom/sina/weibo/sdk/api/ImageObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mImageObjectb:Lcom/sina/weibo/sdk/api/ImageObject;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 58
     const-string/jumbo v0, "_weibo_message_image_extra"
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->b:Lcom/sina/weibo/sdk/api/ImageObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mImageObjectb:Lcom/sina/weibo/sdk/api/ImageObject;
 
     invoke-virtual {v1}, Lcom/sina/weibo/sdk/api/ImageObject;->b()Ljava/lang/String;
 
@@ -78,21 +78,21 @@
 
     .line 60
     :cond_1
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     if-eqz v0, :cond_2
 
     .line 61
     const-string/jumbo v0, "_weibo_message_media"
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 62
     const-string/jumbo v0, "_weibo_message_media_extra"
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     invoke-virtual {v1}, Lcom/sina/weibo/sdk/api/BaseMediaObject;->b()Ljava/lang/String;
 
@@ -112,11 +112,11 @@
     const/4 v0, 0x0
 
     .line 84
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a:Lcom/sina/weibo/sdk/api/TextObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mTextObjecta:Lcom/sina/weibo/sdk/api/TextObject;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a:Lcom/sina/weibo/sdk/api/TextObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mTextObjecta:Lcom/sina/weibo/sdk/api/TextObject;
 
     invoke-virtual {v1}, Lcom/sina/weibo/sdk/api/TextObject;->a()Z
 
@@ -137,11 +137,11 @@
 
     .line 88
     :cond_0
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->b:Lcom/sina/weibo/sdk/api/ImageObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mImageObjectb:Lcom/sina/weibo/sdk/api/ImageObject;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->b:Lcom/sina/weibo/sdk/api/ImageObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mImageObjectb:Lcom/sina/weibo/sdk/api/ImageObject;
 
     invoke-virtual {v1}, Lcom/sina/weibo/sdk/api/ImageObject;->a()Z
 
@@ -160,11 +160,11 @@
 
     .line 92
     :cond_1
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     invoke-virtual {v1}, Lcom/sina/weibo/sdk/api/BaseMediaObject;->a()Z
 
@@ -183,15 +183,15 @@
 
     .line 96
     :cond_2
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a:Lcom/sina/weibo/sdk/api/TextObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mTextObjecta:Lcom/sina/weibo/sdk/api/TextObject;
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->b:Lcom/sina/weibo/sdk/api/ImageObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mImageObjectb:Lcom/sina/weibo/sdk/api/ImageObject;
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     if-nez v1, :cond_3
 

@@ -30,7 +30,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mContextb:Landroid/content/Context;
 
     const v1, 0x7f0603af
 
@@ -67,7 +67,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603ae
 
@@ -122,7 +122,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "reset_pwd"
 

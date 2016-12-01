@@ -56,7 +56,7 @@
 
     iget-object v3, p0, Lcom/tencent/wxop/stat/ICq;->mThrowableb:Ljava/lang/Throwable;
 
-    sget-object v4, Lcom/tencent/wxop/stat/a/ICf;->a:Lcom/tencent/wxop/stat/ICy;
+    sget-object v4, Lcom/tencent/wxop/stat/a/ICf;->mICya:Lcom/tencent/wxop/stat/ICy;
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/tencent/wxop/stat/a/ICc;-><init>(Landroid/content/Context;ILjava/lang/Throwable;Lcom/tencent/wxop/stat/ICy;)V
 

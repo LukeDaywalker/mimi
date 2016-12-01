@@ -39,7 +39,7 @@
     move-result-object v1
 
     .line 30
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->k:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafk:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -155,7 +155,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/PromotionShareController;->k()Ljava/lang/String;
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mActivitya:Landroid/app/Activity;
 
     const-string/jumbo v1, "user_sms"
 
@@ -198,7 +198,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/PromotionShareController;->o()Ljava/lang/String;
 
@@ -344,7 +344,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->getPromotionSharePrefix()Ljava/lang/String;
 

@@ -192,7 +192,7 @@
 
     .prologue
     .line 131
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u53d6\u6d88\u65b0\u624b\u63d0\u95ee\u6d6e\u5c42\u7684\u6b21\u6570"
 

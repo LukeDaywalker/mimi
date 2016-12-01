@@ -77,7 +77,7 @@
 
     .line 79
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-class v1, Lcom/wumii/mimi/model/domain/mobile/MobileChat;
 
@@ -192,7 +192,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
@@ -273,7 +273,7 @@
     .line 59
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
-    sget-object v2, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->c:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v2, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtc:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     if-ne v0, v2, :cond_0
 
@@ -310,7 +310,7 @@
 
     .line 67
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 

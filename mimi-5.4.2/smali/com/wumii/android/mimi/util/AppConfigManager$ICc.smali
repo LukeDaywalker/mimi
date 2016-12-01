@@ -80,7 +80,7 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->mLoggerc:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -127,7 +127,7 @@
 
     .prologue
     .line 291
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "config"
 
@@ -315,7 +315,7 @@
     .line 214
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v3, v0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v2}, Lcom/fasterxml/jackson/databind/JsonNode;->textValue()Ljava/lang/String;
 
@@ -537,7 +537,7 @@
     move-exception v0
 
     .line 155
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->mLoggerc:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "config cache file is broken!"
 
@@ -547,7 +547,7 @@
 
     .line 161
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->m:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->mHandlerm:Landroid/os/Handler;
 
     new-instance v1, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;
 

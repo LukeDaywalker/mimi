@@ -29,7 +29,7 @@
     .line 130
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->mFeedAdaptero:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->a(Ljava/lang/String;)V
 
@@ -52,7 +52,7 @@
     .line 137
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->mFeedAdaptero:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
@@ -103,7 +103,7 @@
     .line 146
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->mFeedAdaptero:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 

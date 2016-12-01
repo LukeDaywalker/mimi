@@ -8,15 +8,15 @@
 
 
 # static fields
-.field public static gP:Z
+.field public static isZgP:Z
 
-.field public static gQ:J
-
-.field public static gY:Z
+.field public static isZgY:Z
 
 .field private static mContextgS:Landroid/content/Context;
 
 .field static mICagX:Lcom/baidu/location/ICad$ICa;
+
+.field public static mJgQ:J
 
 .field private static mJgW:J
 
@@ -43,7 +43,7 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/baidu/location/ICad;->gP:Z
+    sput-boolean v0, Lcom/baidu/location/ICad;->isZgP:Z
 
     const-wide/16 v0, 0x0
 
@@ -138,7 +138,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/location/ICad;->gP:Z
+    sput-boolean v0, Lcom/baidu/location/ICad;->isZgP:Z
 
     invoke-static {}, Lcom/baidu/location/ICu;->au()Lcom/baidu/location/ICu;
 
@@ -355,7 +355,7 @@
 
     move-result v2
 
-    sput-boolean v2, Lcom/baidu/location/ICad;->gY:Z
+    sput-boolean v2, Lcom/baidu/location/ICad;->isZgY:Z
 
     const-string/jumbo v2, "interval"
 
@@ -363,7 +363,7 @@
 
     move-result-wide v2
 
-    sput-wide v2, Lcom/baidu/location/ICad;->gQ:J
+    sput-wide v2, Lcom/baidu/location/ICad;->mJgQ:J
 
     :cond_0
     if-nez v0, :cond_1
@@ -465,7 +465,7 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/baidu/location/ICad;->gP:Z
+    sput-boolean v0, Lcom/baidu/location/ICad;->isZgP:Z
 
     invoke-static {}, Lcom/baidu/location/ICau;->cc()Lcom/baidu/location/ICau;
 

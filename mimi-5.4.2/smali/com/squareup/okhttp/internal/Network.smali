@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/squareup/okhttp/internal/Network;
+.field public static final mNetworka:Lcom/squareup/okhttp/internal/Network;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/Network$ICf;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/Network;->a:Lcom/squareup/okhttp/internal/Network;
+    sput-object v0, Lcom/squareup/okhttp/internal/Network;->mNetworka:Lcom/squareup/okhttp/internal/Network;
 
     return-void
 .end method

@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
+.field public static final mHanyuPinyinCaseTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
-.field public static final b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
+.field public static final mHanyuPinyinCaseTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
 
 # instance fields
-.field protected c:Ljava/lang/String;
+.field protected mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
+    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->mHanyuPinyinCaseTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
     .line 56
     new-instance v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
@@ -34,7 +34,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
+    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->mHanyuPinyinCaseTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
 
     .prologue
     .line 70
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->c:Ljava/lang/String;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->mStringc:Ljava/lang/String;
 
     .line 71
     return-void

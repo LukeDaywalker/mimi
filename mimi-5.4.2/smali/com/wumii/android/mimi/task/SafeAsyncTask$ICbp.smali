@@ -22,7 +22,9 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
+.field protected mHandlerb:Landroid/os/Handler;
+
+.field protected mSafeAsyncTaska:Lcom/wumii/android/mimi/task/SafeAsyncTask;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/wumii/android/mimi/b/bo",
@@ -30,8 +32,6 @@
         }
     .end annotation
 .end field
-
-.field protected b:Landroid/os/Handler;
 
 
 # direct methods
@@ -50,17 +50,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 175
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mSafeAsyncTaska:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
     .line 176
-    iget-object v0, p1, Lcom/wumii/android/mimi/task/SafeAsyncTask;->m:Landroid/os/Handler;
+    iget-object v0, p1, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mHandlerm:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Lcom/wumii/android/mimi/task/SafeAsyncTask;->m:Landroid/os/Handler;
+    iget-object v0, p1, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mHandlerm:Landroid/os/Handler;
 
     :goto_0
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->b:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mHandlerb:Landroid/os/Handler;
 
     .line 177
     return-void
@@ -90,7 +90,7 @@
 
     .prologue
     .line 218
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mSafeAsyncTaska:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/task/SafeAsyncTask;->call()Ljava/lang/Object;
 
@@ -104,9 +104,9 @@
 
     .prologue
     .line 232
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mSafeAsyncTaska:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->o:[Ljava/lang/StackTraceElement;
+    iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mArrayStackTraceElemento:[Ljava/lang/StackTraceElement;
 
     if-eqz v0, :cond_0
 
@@ -124,9 +124,9 @@
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 234
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mSafeAsyncTaska:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/task/SafeAsyncTask;->o:[Ljava/lang/StackTraceElement;
+    iget-object v1, v1, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mArrayStackTraceElemento:[Ljava/lang/StackTraceElement;
 
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -186,9 +186,9 @@
 
     .prologue
     .line 250
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mSafeAsyncTaska:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->o:[Ljava/lang/StackTraceElement;
+    iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mArrayStackTraceElemento:[Ljava/lang/StackTraceElement;
 
     if-eqz v0, :cond_0
 
@@ -206,9 +206,9 @@
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 252
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mSafeAsyncTaska:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/task/SafeAsyncTask;->o:[Ljava/lang/StackTraceElement;
+    iget-object v1, v1, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mArrayStackTraceElemento:[Ljava/lang/StackTraceElement;
 
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -260,7 +260,7 @@
     new-array v1, v1, [Ljava/lang/Exception;
 
     .line 291
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->b:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mHandlerb:Landroid/os/Handler;
 
     new-instance v3, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;
 

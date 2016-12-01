@@ -508,7 +508,7 @@
 
     .prologue
     .line 120
-    sget-object v0, Lnet/sourceforge/pinyin4j/multipinyin/MultiPinyinConfig;->a:Ljava/lang/String;
+    sget-object v0, Lnet/sourceforge/pinyin4j/multipinyin/MultiPinyinConfig;->mStringa:Ljava/lang/String;
 
     .line 121
     if-eqz v0, :cond_0

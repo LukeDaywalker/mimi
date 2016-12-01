@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected e:I
+.field protected mIe:I
 
-.field protected f:I
+.field protected mIf:I
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->e:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->mIe:I
 
     .line 26
     const v1, 0x7f09000f
@@ -38,7 +38,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->f:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->mIf:I
 
     .line 27
     return-void
@@ -65,7 +65,7 @@
 
     .line 32
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030088
 
@@ -108,7 +108,7 @@
 
     if-eqz v2, :cond_2
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->mIe:I
 
     :goto_0
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setTextColor(I)V
@@ -147,7 +147,7 @@
 
     .line 38
     :cond_2
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->f:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;->mIf:I
 
     goto :goto_0
 .end method

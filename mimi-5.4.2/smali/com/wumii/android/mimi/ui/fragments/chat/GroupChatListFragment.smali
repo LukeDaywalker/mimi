@@ -33,7 +33,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     return-object v0
 .end method
@@ -114,7 +114,7 @@
 
     if-eqz p2, :cond_3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;->getNoticeResId()I
 
@@ -128,7 +128,7 @@
 
     if-eqz p2, :cond_4
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;->getBtnTitleResId()I
 
@@ -196,7 +196,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     return-object v0
 .end method
@@ -236,7 +236,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     return-object v0
 .end method
@@ -283,7 +283,7 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     if-nez v0, :cond_0
 
@@ -328,7 +328,7 @@
     .line 57
     const-string/jumbo v0, "groupChatType"
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
@@ -370,7 +370,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->f:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 

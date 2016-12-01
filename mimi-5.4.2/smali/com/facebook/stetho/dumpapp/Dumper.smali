@@ -338,7 +338,7 @@
 
     iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
-    iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->d:Lorg/apache/commons/cli/Options;
+    iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionsd:Lorg/apache/commons/cli/Options;
 
     invoke-interface {v2, v3, p4, v1}, Lorg/apache/commons/cli/CommandLineParser;->a(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)Lorg/apache/commons/cli/CommandLine;
 
@@ -347,7 +347,7 @@
     .line 90
     iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
-    iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->a:Lorg/apache/commons/cli/Option;
+    iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptiona:Lorg/apache/commons/cli/Option;
 
     invoke-virtual {v3}, Lorg/apache/commons/cli/Option;->b()Ljava/lang/String;
 
@@ -370,7 +370,7 @@
     :cond_0
     iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
-    iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->b:Lorg/apache/commons/cli/Option;
+    iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionb:Lorg/apache/commons/cli/Option;
 
     invoke-virtual {v3}, Lorg/apache/commons/cli/Option;->b()Ljava/lang/String;
 
@@ -444,7 +444,7 @@
 
     iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
-    iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->d:Lorg/apache/commons/cli/Options;
+    iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionsd:Lorg/apache/commons/cli/Options;
 
     invoke-virtual {v0}, Lorg/apache/commons/cli/HelpFormatter;->b()I
 

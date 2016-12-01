@@ -4,23 +4,23 @@
 
 
 # static fields
-.field public static final a:Ljava/math/BigInteger;
+.field public static final mArrayFilei:[Ljava/io/File;
 
-.field public static final b:Ljava/math/BigInteger;
+.field public static final mBigIntegera:Ljava/math/BigInteger;
 
-.field public static final c:Ljava/math/BigInteger;
+.field public static final mBigIntegerb:Ljava/math/BigInteger;
 
-.field public static final d:Ljava/math/BigInteger;
+.field public static final mBigIntegerc:Ljava/math/BigInteger;
 
-.field public static final e:Ljava/math/BigInteger;
+.field public static final mBigIntegerd:Ljava/math/BigInteger;
 
-.field public static final f:Ljava/math/BigInteger;
+.field public static final mBigIntegere:Ljava/math/BigInteger;
 
-.field public static final g:Ljava/math/BigInteger;
+.field public static final mBigIntegerf:Ljava/math/BigInteger;
 
-.field public static final h:Ljava/math/BigInteger;
+.field public static final mBigIntegerg:Ljava/math/BigInteger;
 
-.field public static final i:[Ljava/io/File;
+.field public static final mBigIntegerh:Ljava/math/BigInteger;
 
 .field private static final mCharsetj:Ljava/nio/charset/Charset;
 
@@ -37,62 +37,62 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->a:Ljava/math/BigInteger;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegera:Ljava/math/BigInteger;
 
     .line 107
-    sget-object v0, Lorg/apache/commons/io/FileUtils;->a:Ljava/math/BigInteger;
+    sget-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegera:Ljava/math/BigInteger;
 
-    sget-object v1, Lorg/apache/commons/io/FileUtils;->a:Ljava/math/BigInteger;
+    sget-object v1, Lorg/apache/commons/io/FileUtils;->mBigIntegera:Ljava/math/BigInteger;
 
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->b:Ljava/math/BigInteger;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegerb:Ljava/math/BigInteger;
 
     .line 124
-    sget-object v0, Lorg/apache/commons/io/FileUtils;->a:Ljava/math/BigInteger;
+    sget-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegera:Ljava/math/BigInteger;
 
-    sget-object v1, Lorg/apache/commons/io/FileUtils;->b:Ljava/math/BigInteger;
+    sget-object v1, Lorg/apache/commons/io/FileUtils;->mBigIntegerb:Ljava/math/BigInteger;
 
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->c:Ljava/math/BigInteger;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegerc:Ljava/math/BigInteger;
 
     .line 136
-    sget-object v0, Lorg/apache/commons/io/FileUtils;->a:Ljava/math/BigInteger;
+    sget-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegera:Ljava/math/BigInteger;
 
-    sget-object v1, Lorg/apache/commons/io/FileUtils;->c:Ljava/math/BigInteger;
+    sget-object v1, Lorg/apache/commons/io/FileUtils;->mBigIntegerc:Ljava/math/BigInteger;
 
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->d:Ljava/math/BigInteger;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegerd:Ljava/math/BigInteger;
 
     .line 148
-    sget-object v0, Lorg/apache/commons/io/FileUtils;->a:Ljava/math/BigInteger;
+    sget-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegera:Ljava/math/BigInteger;
 
-    sget-object v1, Lorg/apache/commons/io/FileUtils;->d:Ljava/math/BigInteger;
+    sget-object v1, Lorg/apache/commons/io/FileUtils;->mBigIntegerd:Ljava/math/BigInteger;
 
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->e:Ljava/math/BigInteger;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegere:Ljava/math/BigInteger;
 
     .line 160
-    sget-object v0, Lorg/apache/commons/io/FileUtils;->a:Ljava/math/BigInteger;
+    sget-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegera:Ljava/math/BigInteger;
 
-    sget-object v1, Lorg/apache/commons/io/FileUtils;->e:Ljava/math/BigInteger;
+    sget-object v1, Lorg/apache/commons/io/FileUtils;->mBigIntegere:Ljava/math/BigInteger;
 
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->f:Ljava/math/BigInteger;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegerf:Ljava/math/BigInteger;
 
     .line 165
     invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
@@ -109,25 +109,25 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->g:Ljava/math/BigInteger;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegerg:Ljava/math/BigInteger;
 
     .line 170
-    sget-object v0, Lorg/apache/commons/io/FileUtils;->a:Ljava/math/BigInteger;
+    sget-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegera:Ljava/math/BigInteger;
 
-    sget-object v1, Lorg/apache/commons/io/FileUtils;->g:Ljava/math/BigInteger;
+    sget-object v1, Lorg/apache/commons/io/FileUtils;->mBigIntegerg:Ljava/math/BigInteger;
 
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->h:Ljava/math/BigInteger;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mBigIntegerh:Ljava/math/BigInteger;
 
     .line 175
     const/4 v0, 0x0
 
     new-array v0, v0, [Ljava/io/File;
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->i:[Ljava/io/File;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mArrayFilei:[Ljava/io/File;
 
     .line 180
     const-string/jumbo v0, "UTF-8"

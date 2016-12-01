@@ -602,7 +602,7 @@
     invoke-static {v3}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 405
-    sget-object v0, Lio/fabric/sdk/android/InitializationCallback;->d:Lio/fabric/sdk/android/InitializationCallback;
+    sget-object v0, Lio/fabric/sdk/android/InitializationCallback;->mInitializationCallbackd:Lio/fabric/sdk/android/InitializationCallback;
 
     iget-object v1, p0, Lio/fabric/sdk/android/Fabric;->mIdManagerk:Lio/fabric/sdk/android/services/common/IdManager;
 

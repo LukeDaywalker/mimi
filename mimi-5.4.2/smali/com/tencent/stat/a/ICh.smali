@@ -566,7 +566,7 @@
 
     invoke-direct {p0}, Lcom/tencent/stat/a/ICg;-><init>()V
 
-    iput-object p2, p0, Lcom/tencent/stat/a/ICh;->a:[B
+    iput-object p2, p0, Lcom/tencent/stat/a/ICh;->mArrayBa:[B
 
     and-int/lit8 v0, p1, 0x8
 
@@ -614,7 +614,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v5, p0, Lcom/tencent/stat/a/ICh;->a:[B
+    iget-object v5, p0, Lcom/tencent/stat/a/ICh;->mArrayBa:[B
 
     iget-object v6, p0, Lcom/tencent/stat/a/ICh;->mArrayIg:[I
 
@@ -712,7 +712,7 @@
 
     iput v2, p0, Lcom/tencent/stat/a/ICh;->mIf:I
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->b:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIb:I
 
     const/4 v0, 0x1
 
@@ -949,7 +949,7 @@
     :pswitch_6
     iput v3, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->b:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIb:I
 
     const/4 v0, 0x1
 

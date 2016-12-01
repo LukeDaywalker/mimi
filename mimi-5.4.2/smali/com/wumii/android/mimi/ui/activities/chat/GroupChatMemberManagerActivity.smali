@@ -239,7 +239,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->setContentView(I)V
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -306,7 +306,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->t()Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
 

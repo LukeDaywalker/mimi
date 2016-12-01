@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Ljava/util/Map;
+.field protected mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -33,7 +33,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->mMapa:Ljava/util/Map;
 
     return-void
 .end method
@@ -56,7 +56,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -77,7 +77,7 @@
     move-result-object v0
 
     .line 31
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->mMapa:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -94,7 +94,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->mMapa:Ljava/util/Map;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -176,7 +176,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActivityEventManager;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

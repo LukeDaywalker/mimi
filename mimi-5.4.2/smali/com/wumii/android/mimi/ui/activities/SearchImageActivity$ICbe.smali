@@ -44,7 +44,7 @@
 
     .prologue
     .line 321
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
 
     .prologue
     .line 335
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mStringq:Ljava/lang/String;
 
@@ -96,7 +96,7 @@
     move-result-object v0
 
     .line 337
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mContextb:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mStringq:Ljava/lang/String;
 

@@ -7,9 +7,9 @@
 
 
 # static fields
-.field public static final a:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
-
 .field private static final mLoggerb:Lorg/slf4j/Logger;
+
+.field public static final mMimiHostNameVerifiera:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->a:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
+    sput-object v0, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->mMimiHostNameVerifiera:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
 
     return-void
 .end method
@@ -81,7 +81,7 @@
     check-cast v0, Lcom/wumii/android/mimi/network/server/Server;
 
     .line 40
-    sget-object v2, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->a:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
+    sget-object v2, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->mOkHostnameVerifiera:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/server/Server;->getDomain()Ljava/lang/String;
 

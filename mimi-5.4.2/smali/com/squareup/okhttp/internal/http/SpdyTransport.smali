@@ -250,7 +250,7 @@
     invoke-direct {v6}, Lcom/squareup/okhttp/Headers$ICab;-><init>()V
 
     .line 177
-    sget-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->d:Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringd:Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/squareup/okhttp/Protocol;->toString()Ljava/lang/String;
 
@@ -275,7 +275,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v8, v0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v8, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     .line 180
     invoke-interface {p0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -284,7 +284,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     invoke-virtual {v0}, Lokio/ByteString;->a()Ljava/lang/String;
 
@@ -324,7 +324,7 @@
     move-result-object v1
 
     .line 187
-    sget-object v10, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sget-object v10, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     invoke-virtual {v8, v10}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
 
@@ -347,7 +347,7 @@
 
     .line 189
     :cond_1
-    sget-object v10, Lcom/squareup/okhttp/internal/spdy/Header;->g:Lokio/ByteString;
+    sget-object v10, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringg:Lokio/ByteString;
 
     invoke-virtual {v8, v10}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
 
@@ -442,14 +442,14 @@
 
     move-result-object v1
 
-    iget v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->b:I
+    iget v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mIb:I
 
     .line 202
     invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(I)Lcom/squareup/okhttp/Response$ICau;
 
     move-result-object v1
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->c:Ljava/lang/String;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mStringc:Ljava/lang/String;
 
     .line 203
     invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$ICau;->a(Ljava/lang/String;)Lcom/squareup/okhttp/Response$ICau;
@@ -532,7 +532,7 @@
     .line 116
     new-instance v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Header;->b:Lokio/ByteString;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringb:Lokio/ByteString;
 
     invoke-virtual {p0}, Lcom/squareup/okhttp/Request;->d()Ljava/lang/String;
 
@@ -545,7 +545,7 @@
     .line 117
     new-instance v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Header;->c:Lokio/ByteString;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringc:Lokio/ByteString;
 
     invoke-virtual {p0}, Lcom/squareup/okhttp/Request;->a()Ljava/net/URL;
 
@@ -569,14 +569,14 @@
     move-result-object v0
 
     .line 119
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     if-ne v1, p1, :cond_1
 
     .line 120
     new-instance v1, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->g:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringg:Lokio/ByteString;
 
     invoke-direct {v1, v3, p2}, Lcom/squareup/okhttp/internal/spdy/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
@@ -585,7 +585,7 @@
     .line 121
     new-instance v1, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->f:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringf:Lokio/ByteString;
 
     invoke-direct {v1, v3, v0}, Lcom/squareup/okhttp/internal/spdy/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
@@ -595,7 +595,7 @@
     :goto_0
     new-instance v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Header;->d:Lokio/ByteString;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringd:Lokio/ByteString;
 
     invoke-virtual {p0}, Lcom/squareup/okhttp/Request;->a()Ljava/net/URL;
 
@@ -662,14 +662,14 @@
 
     .line 122
     :cond_1
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     if-ne v1, p1, :cond_2
 
     .line 123
     new-instance v1, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->e:Lokio/ByteString;
+    sget-object v3, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringe:Lokio/ByteString;
 
     invoke-direct {v1, v3, v0}, Lcom/squareup/okhttp/internal/spdy/Header;-><init>(Lokio/ByteString;Ljava/lang/String;)V
 
@@ -687,7 +687,7 @@
 
     .line 139
     :cond_3
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->b:Lokio/ByteString;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringb:Lokio/ByteString;
 
     invoke-virtual {v8, v0}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
 
@@ -695,7 +695,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->c:Lokio/ByteString;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringc:Lokio/ByteString;
 
     .line 140
     invoke-virtual {v8, v0}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
@@ -704,7 +704,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->d:Lokio/ByteString;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringd:Lokio/ByteString;
 
     .line 141
     invoke-virtual {v8, v0}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
@@ -713,7 +713,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->e:Lokio/ByteString;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringe:Lokio/ByteString;
 
     .line 142
     invoke-virtual {v8, v0}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
@@ -722,7 +722,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->f:Lokio/ByteString;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringf:Lokio/ByteString;
 
     .line 143
     invoke-virtual {v8, v0}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
@@ -731,7 +731,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->g:Lokio/ByteString;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringg:Lokio/ByteString;
 
     .line 144
     invoke-virtual {v8, v0}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
@@ -774,7 +774,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     invoke-virtual {v0, v8}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
 
@@ -789,7 +789,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     invoke-virtual {v0}, Lokio/ByteString;->a()Ljava/lang/String;
 
@@ -826,7 +826,7 @@
 
     .prologue
     .line 224
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     if-ne p0, v0, :cond_0
 
@@ -843,7 +843,7 @@
 
     .line 226
     :cond_0
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     if-ne p0, v0, :cond_1
 
@@ -1024,7 +1024,7 @@
 
     iget-object v0, p0, Lcom/squareup/okhttp/internal/http/SpdyTransport;->mSpdyStreame:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->a(Lcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 

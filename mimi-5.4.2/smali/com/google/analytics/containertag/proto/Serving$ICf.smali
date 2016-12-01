@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final a:[Lcom/google/analytics/containertag/proto/Serving$ICf;
+.field public static final mArrayICfa:[Lcom/google/analytics/containertag/proto/Serving$ICf;
 
 
 # instance fields
-.field public b:I
+.field public mIb:I
 
-.field public c:I
+.field public mIc:I
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     new-array v0, v0, [Lcom/google/analytics/containertag/proto/Serving$ICf;
 
-    sput-object v0, Lcom/google/analytics/containertag/proto/Serving$ICf;->a:[Lcom/google/analytics/containertag/proto/Serving$ICf;
+    sput-object v0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mArrayICfa:[Lcom/google/analytics/containertag/proto/Serving$ICf;
 
     return-void
 .end method
@@ -38,10 +38,10 @@
     invoke-direct {p0}, Lcom/google/tagmanager/protobuf/nano/ExtendableMessageNano;-><init>()V
 
     .line 460
-    iput v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->b:I
+    iput v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mIb:I
 
     .line 463
-    iput v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->c:I
+    iput v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mIc:I
 
     .line 457
     return-void
@@ -80,23 +80,23 @@
     check-cast p1, Lcom/google/analytics/containertag/proto/Serving$ICf;
 
     .line 478
-    iget v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->b:I
+    iget v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mIb:I
 
-    iget v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICf;->b:I
-
-    if-ne v2, v3, :cond_3
-
-    iget v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->c:I
-
-    iget v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICf;->c:I
+    iget v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICf;->mIb:I
 
     if-ne v2, v3, :cond_3
 
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->s:Ljava/util/List;
+    iget v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mIc:I
+
+    iget v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICf;->mIc:I
+
+    if-ne v2, v3, :cond_3
+
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mLists:Ljava/util/List;
 
     if-nez v2, :cond_4
 
-    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICf;->s:Ljava/util/List;
+    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICf;->mLists:Ljava/util/List;
 
     if-eqz v2, :cond_0
 
@@ -106,9 +106,9 @@
     goto :goto_0
 
     :cond_4
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->s:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mLists:Ljava/util/List;
 
-    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICf;->s:Ljava/util/List;
+    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICf;->mLists:Ljava/util/List;
 
     invoke-interface {v2, v3}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -125,21 +125,21 @@
     .prologue
     .line 484
     .line 485
-    iget v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->b:I
+    iget v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mIb:I
 
     add-int/lit16 v0, v0, 0x20f
 
     .line 486
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->c:I
+    iget v1, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mIc:I
 
     add-int/2addr v0, v1
 
     .line 487
     mul-int/lit8 v1, v0, 0x1f
 
-    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->s:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mLists:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -153,7 +153,7 @@
 
     .line 487
     :cond_0
-    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->s:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICf;->mLists:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->hashCode()I
 

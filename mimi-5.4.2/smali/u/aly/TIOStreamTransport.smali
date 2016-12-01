@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Ljava/io/InputStream;
+.field protected mInputStreama:Ljava/io/InputStream;
 
-.field protected b:Ljava/io/OutputStream;
+.field protected mOutputStreamb:Ljava/io/OutputStream;
 
 
 # direct methods
@@ -20,10 +20,10 @@
     invoke-direct {p0}, Lu/aly/TTransport;-><init>()V
 
     .line 36
-    iput-object v0, p0, Lu/aly/TIOStreamTransport;->a:Ljava/io/InputStream;
+    iput-object v0, p0, Lu/aly/TIOStreamTransport;->mInputStreama:Ljava/io/InputStream;
 
     .line 39
-    iput-object v0, p0, Lu/aly/TIOStreamTransport;->b:Ljava/io/OutputStream;
+    iput-object v0, p0, Lu/aly/TIOStreamTransport;->mOutputStreamb:Ljava/io/OutputStream;
 
     .line 45
     return-void
@@ -39,13 +39,13 @@
     invoke-direct {p0}, Lu/aly/TTransport;-><init>()V
 
     .line 36
-    iput-object v0, p0, Lu/aly/TIOStreamTransport;->a:Ljava/io/InputStream;
+    iput-object v0, p0, Lu/aly/TIOStreamTransport;->mInputStreama:Ljava/io/InputStream;
 
     .line 39
-    iput-object v0, p0, Lu/aly/TIOStreamTransport;->b:Ljava/io/OutputStream;
+    iput-object v0, p0, Lu/aly/TIOStreamTransport;->mOutputStreamb:Ljava/io/OutputStream;
 
     .line 62
-    iput-object p1, p0, Lu/aly/TIOStreamTransport;->b:Ljava/io/OutputStream;
+    iput-object p1, p0, Lu/aly/TIOStreamTransport;->mOutputStreamb:Ljava/io/OutputStream;
 
     .line 63
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lu/aly/TIOStreamTransport;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lu/aly/TIOStreamTransport;->mInputStreama:Ljava/io/InputStream;
 
     if-nez v0, :cond_0
 
@@ -76,7 +76,7 @@
     .line 122
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lu/aly/TIOStreamTransport;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lu/aly/TIOStreamTransport;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
     :try_end_0
@@ -119,7 +119,7 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lu/aly/TIOStreamTransport;->b:Ljava/io/OutputStream;
+    iget-object v0, p0, Lu/aly/TIOStreamTransport;->mOutputStreamb:Ljava/io/OutputStream;
 
     if-nez v0, :cond_0
 
@@ -137,7 +137,7 @@
     .line 140
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lu/aly/TIOStreamTransport;->b:Ljava/io/OutputStream;
+    iget-object v0, p0, Lu/aly/TIOStreamTransport;->mOutputStreamb:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
     :try_end_0

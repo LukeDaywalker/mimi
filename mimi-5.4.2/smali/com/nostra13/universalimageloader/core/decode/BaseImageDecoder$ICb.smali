@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:I
+.field public final isZb:Z
 
-.field public final b:Z
+.field public final mIa:I
 
 
 # direct methods
@@ -20,10 +20,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 232
-    iput v0, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->a:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->mIa:I
 
     .line 233
-    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->b:Z
+    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->isZb:Z
 
     .line 234
     return-void
@@ -37,10 +37,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 237
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->a:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->mIa:I
 
     .line 238
-    iput-boolean p2, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->b:Z
+    iput-boolean p2, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->isZb:Z
 
     .line 239
     return-void

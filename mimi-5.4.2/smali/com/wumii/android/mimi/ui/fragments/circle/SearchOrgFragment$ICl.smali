@@ -70,7 +70,7 @@
     if-eqz v0, :cond_0
 
     .line 393
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->au:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafau:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -103,7 +103,7 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, v3, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -166,7 +166,7 @@
 
     .line 395
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

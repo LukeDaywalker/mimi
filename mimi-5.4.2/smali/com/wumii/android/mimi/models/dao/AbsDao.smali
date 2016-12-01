@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field protected db:Landroid/database/sqlite/SQLiteDatabase;
+.field protected mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 20
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/dao/AbsDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/dao/AbsDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     .line 21
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;

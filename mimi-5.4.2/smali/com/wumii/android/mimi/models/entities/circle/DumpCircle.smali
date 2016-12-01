@@ -6,9 +6,9 @@
 # instance fields
 .field private circleStatus:Lcom/wumii/android/mimi/models/entities/circle/CircleStatus;
 
-.field protected id:Ljava/lang/String;
-
 .field private joined:Z
+
+.field protected mStringid:Ljava/lang/String;
 
 .field private mobileOrganizationType:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -37,7 +37,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 25
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/circle/DumpCircle;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/circle/DumpCircle;->mStringid:Ljava/lang/String;
 
     .line 26
     iput-object p2, p0, Lcom/wumii/android/mimi/models/entities/circle/DumpCircle;->name:Ljava/lang/String;
@@ -383,7 +383,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/circle/DumpCircle;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/circle/DumpCircle;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method

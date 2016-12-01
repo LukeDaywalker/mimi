@@ -82,7 +82,7 @@
     if-eqz v1, :cond_0
 
     .line 229
-    iget-short v0, v0, Lu/aly/TField;->c:S
+    iget-short v0, v0, Lu/aly/TField;->mSc:S
 
     invoke-virtual {p2, v0}, Lu/aly/TUnion;->b(S)Lu/aly/TFieldIdEnum;
 

@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public final a:I
+.field public final isZh:Z
 
-.field public final b:J
+.field public final mIa:I
 
-.field public final c:J
+.field public final mIf:I
 
-.field public final d:J
+.field public final mIg:I
 
-.field public final e:J
+.field public final mJb:J
 
-.field public final f:I
+.field public final mJc:J
 
-.field public final g:I
+.field public final mJd:J
 
-.field public final h:Z
+.field public final mJe:J

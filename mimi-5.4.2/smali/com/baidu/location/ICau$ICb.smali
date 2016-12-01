@@ -361,7 +361,7 @@
 .method public a(Lcom/baidu/location/ICau$ICb;)Z
     .locals 1
 
-    sget v0, Lcom/baidu/location/ICc;->X:F
+    sget v0, Lcom/baidu/location/ICc;->mFX:F
 
     invoke-static {p1, p0, v0}, Lcom/baidu/location/ICau;->if(Lcom/baidu/location/ICau$ICb;Lcom/baidu/location/ICau$ICb;F)Z
 
@@ -405,7 +405,7 @@
     .locals 1
 
     :try_start_0
-    sget v0, Lcom/baidu/location/ICc;->a2:I
+    sget v0, Lcom/baidu/location/ICc;->mIa2:I
 
     invoke-virtual {p0, v0}, Lcom/baidu/location/ICau$ICb;->if(I)Ljava/lang/String;
     :try_end_0
@@ -499,11 +499,11 @@
 
     move-result v2
 
-    sget v3, Lcom/baidu/location/ICc;->a2:I
+    sget v3, Lcom/baidu/location/ICc;->mIa2:I
 
     if-le v2, v3, :cond_2
 
-    sget v2, Lcom/baidu/location/ICc;->a2:I
+    sget v2, Lcom/baidu/location/ICc;->mIa2:I
 
     :cond_2
     move v2, v0
@@ -513,7 +513,7 @@
     move v1, v0
 
     :goto_1
-    sget v0, Lcom/baidu/location/ICc;->a2:I
+    sget v0, Lcom/baidu/location/ICc;->mIa2:I
 
     if-ge v1, v0, :cond_5
 

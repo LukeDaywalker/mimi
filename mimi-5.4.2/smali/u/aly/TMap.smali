@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:B
+.field public final mBa:B
 
-.field public final b:B
+.field public final mBb:B
 
-.field public final c:I
+.field public final mIc:I
 
 
 # direct methods
@@ -33,13 +33,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-byte p1, p0, Lu/aly/TMap;->a:B
+    iput-byte p1, p0, Lu/aly/TMap;->mBa:B
 
     .line 33
-    iput-byte p2, p0, Lu/aly/TMap;->b:B
+    iput-byte p2, p0, Lu/aly/TMap;->mBb:B
 
     .line 34
-    iput p3, p0, Lu/aly/TMap;->c:I
+    iput p3, p0, Lu/aly/TMap;->mIc:I
 
     .line 35
     return-void

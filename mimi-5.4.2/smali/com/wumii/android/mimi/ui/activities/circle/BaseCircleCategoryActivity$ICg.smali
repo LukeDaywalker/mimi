@@ -41,7 +41,7 @@
     .line 71
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICg;->mBaseCircleCategoryActivitya:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->mXListViewn:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/XListView;->getHeaderViewsCount()I
 
@@ -59,7 +59,7 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICg;->mBaseCircleCategoryActivitya:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
+    iget-object v3, v3, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->mCircleCategoryAdaptero:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
     invoke-virtual {v3, v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a(I)Lcom/wumii/android/mimi/models/entities/circle/Circle;
 

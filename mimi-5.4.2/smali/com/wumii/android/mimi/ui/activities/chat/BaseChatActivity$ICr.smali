@@ -32,7 +32,7 @@
     .line 522
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICr;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    iput-boolean p1, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->O:Z
+    iput-boolean p1, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->isZO:Z
 
     .line 523
     return-void

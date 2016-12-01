@@ -32,7 +32,7 @@
     .line 34
     iget-object v0, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector$1;->mFroyoGestureDetectora:Luk/co/senab/photoview/gestures/FroyoGestureDetector;
 
-    iget-object v0, v0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->a:Luk/co/senab/photoview/gestures/OnGestureListener;
+    iget-object v0, v0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->mOnGestureListenera:Luk/co/senab/photoview/gestures/OnGestureListener;
 
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getScaleFactor()F
 

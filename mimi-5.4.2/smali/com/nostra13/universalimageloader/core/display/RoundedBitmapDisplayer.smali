@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected final a:I
+.field protected final mIa:I
 
-.field protected final b:I
+.field protected final mIb:I
 
 
 # direct methods
@@ -34,10 +34,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 51
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;->a:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;->mIa:I
 
     .line 52
-    iput p2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;->b:I
+    iput p2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;->mIb:I
 
     .line 53
     return-void
@@ -67,9 +67,9 @@
     :cond_0
     new-instance v0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;->a:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;->mIa:I
 
-    iget v2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;->b:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;->mIb:I
 
     invoke-direct {v0, p1, v1, v2}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;-><init>(Landroid/graphics/Bitmap;II)V
 

@@ -56,7 +56,7 @@
     .line 284
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICw;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     const/4 v2, 0x0
 

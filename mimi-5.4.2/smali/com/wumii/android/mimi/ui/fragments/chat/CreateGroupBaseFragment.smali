@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field protected mActivityEventManagera:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field protected b:Lcom/wumii/android/mimi/util/ContextToast;
+.field protected mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
 
 # direct methods
@@ -271,7 +271,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->a:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->mActivityEventManagera:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 32
     new-instance v0, Lcom/wumii/android/mimi/util/ContextToast;
@@ -282,7 +282,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->b:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 33
     return-void

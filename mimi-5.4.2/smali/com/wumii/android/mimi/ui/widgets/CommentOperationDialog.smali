@@ -8,7 +8,7 @@
 
 
 # static fields
-.field public static a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;
+.field public static mCommentOperationDialoga:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;
 
 .field private static final mLoggerb:Lorg/slf4j/Logger;
 
@@ -50,7 +50,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mCommentOperationDialoga:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;
 
     return-void
 .end method

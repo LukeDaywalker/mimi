@@ -41,7 +41,7 @@
     iput-boolean v0, p0, Lcom/squareup/okhttp/Connection;->isZd:Z
 
     .line 68
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     iput-object v0, p0, Lcom/squareup/okhttp/Connection;->mProtocolg:Lcom/squareup/okhttp/Protocol;
 
@@ -206,21 +206,21 @@
 
     .line 155
     :goto_0
-    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->b:Ljava/net/Socket;
+    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mSocketb:Ljava/net/Socket;
 
     iput-object v1, p0, Lcom/squareup/okhttp/Connection;->mSocketc:Ljava/net/Socket;
 
     .line 156
-    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->d:Lcom/squareup/okhttp/Handshake;
+    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mHandshaked:Lcom/squareup/okhttp/Handshake;
 
     iput-object v1, p0, Lcom/squareup/okhttp/Connection;->mHandshakei:Lcom/squareup/okhttp/Handshake;
 
     .line 157
-    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->c:Lcom/squareup/okhttp/Protocol;
+    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     if-nez v1, :cond_4
 
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     :goto_1
     iput-object v0, p0, Lcom/squareup/okhttp/Connection;->mProtocolg:Lcom/squareup/okhttp/Protocol;
@@ -229,13 +229,13 @@
     :try_start_0
     iget-object v0, p0, Lcom/squareup/okhttp/Connection;->mProtocolg:Lcom/squareup/okhttp/Protocol;
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     if-eq v0, v1, :cond_1
 
     iget-object v0, p0, Lcom/squareup/okhttp/Connection;->mProtocolg:Lcom/squareup/okhttp/Protocol;
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     if-ne v0, v1, :cond_5
 
@@ -291,7 +291,7 @@
 
     .line 147
     :cond_2
-    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->c:Lcom/squareup/okhttp/ConnectionSpec;
+    sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpecc:Lcom/squareup/okhttp/ConnectionSpec;
 
     invoke-interface {p5, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -340,7 +340,7 @@
 
     .line 157
     :cond_4
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->c:Lcom/squareup/okhttp/Protocol;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     goto :goto_1
 

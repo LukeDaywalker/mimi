@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
+.field protected isZd:Z
 
-.field protected d:Z
+.field protected mBlockTypea:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
 .field private mStringq:Ljava/lang/String;
 
@@ -33,10 +33,10 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/task/BlockTask;->mStringq:Ljava/lang/String;
 
     .line 25
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/BlockTask;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/BlockTask;->mBlockTypea:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
     .line 26
-    iput-boolean p3, p0, Lcom/wumii/android/mimi/task/BlockTask;->d:Z
+    iput-boolean p3, p0, Lcom/wumii/android/mimi/task/BlockTask;->isZd:Z
 
     .line 27
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/BlockTask;->j()V
@@ -50,7 +50,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BlockTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BlockTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060368
 
@@ -91,13 +91,13 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 34
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BlockTask;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BlockTask;->mBlockTypea:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/BlockType;->fieldName()Ljava/lang/String;
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/task/BlockTask;->d:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/task/BlockTask;->isZd:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -106,7 +106,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BlockTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BlockTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "chat"
 

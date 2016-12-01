@@ -24,7 +24,7 @@
 
     .prologue
     .line 25
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->k:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodek:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {p1, v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->a(Lcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 

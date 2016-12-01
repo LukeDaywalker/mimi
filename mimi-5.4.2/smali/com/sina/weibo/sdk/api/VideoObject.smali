@@ -17,15 +17,15 @@
 
 
 # instance fields
-.field public g:Ljava/lang/String;
+.field public mIk:I
 
-.field public h:Ljava/lang/String;
+.field public mStringg:Ljava/lang/String;
 
-.field public i:Ljava/lang/String;
+.field public mStringh:Ljava/lang/String;
 
-.field public j:Ljava/lang/String;
+.field public mStringi:Ljava/lang/String;
 
-.field public k:I
+.field public mStringj:Ljava/lang/String;
 
 
 # direct methods
@@ -67,28 +67,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringh:Ljava/lang/String;
 
     .line 70
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->i:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringi:Ljava/lang/String;
 
     .line 71
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->j:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringj:Ljava/lang/String;
 
     .line 72
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->k:I
+    iput v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mIk:I
 
     .line 73
     return-void
@@ -117,11 +117,11 @@
 
     .line 89
     :cond_0
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringi:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -140,11 +140,11 @@
 
     .line 93
     :cond_1
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringj:Ljava/lang/String;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -163,7 +163,7 @@
 
     .line 97
     :cond_2
-    iget v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->k:I
+    iget v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mIk:I
 
     if-gtz v1, :cond_3
 
@@ -194,7 +194,7 @@
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 125
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringg:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -205,7 +205,7 @@
     .line 126
     const-string/jumbo v1, "extra_key_defaulttext"
 
-    iget-object v2, p0, Lcom/sina/weibo/sdk/api/VideoObject;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -239,22 +239,22 @@
     invoke-super {p0, p1, p2}, Lcom/sina/weibo/sdk/api/BaseMediaObject;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 78
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringh:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 79
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringi:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 80
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mStringj:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 81
-    iget v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->k:I
+    iget v0, p0, Lcom/sina/weibo/sdk/api/VideoObject;->mIk:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

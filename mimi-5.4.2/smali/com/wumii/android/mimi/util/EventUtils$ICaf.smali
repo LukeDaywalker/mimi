@@ -15,201 +15,201 @@
 
 
 # static fields
-.field public static final enum A:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum B:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum C:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum D:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum E:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum F:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum G:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum H:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum I:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum J:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum K:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum L:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum M:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum N:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum O:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum P:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum Q:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum R:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum S:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum T:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum U:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum V:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum W:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum X:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum Y:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum Z:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum a:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ab:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ac:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ad:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ae:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum af:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ag:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ai:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ak:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum al:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum am:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum an:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ao:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ap:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum as:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum at:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum au:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum av:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum aw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ax:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum ay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum az:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum b:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum c:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum d:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum e:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum f:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum g:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum h:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum i:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum k:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum l:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
-.field public static final enum m:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
 .field private static final synthetic mArrayICafaU:[Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum n:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum o:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum p:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum q:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum r:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum s:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum t:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum u:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum v:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum w:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum x:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum y:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field public static final enum z:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field public static final enum mICafM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafT:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafU:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafV:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafW:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafX:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafY:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafZ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafab:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafac:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafad:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafae:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaf:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafag:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafai:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafak:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafal:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafam:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafan:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafao:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafap:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafas:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafat:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafau:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafav:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafax:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafaz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafb:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafc:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafd:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafe:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICaff:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafg:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafh:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafi:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafk:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafl:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafm:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafn:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafo:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafp:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafr:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafs:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICaft:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafu:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafv:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafx:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafy:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+.field public static final enum mICafz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
 
 # instance fields
@@ -240,7 +240,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 12
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -251,7 +251,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->b:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafb:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 13
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -262,7 +262,7 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafc:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 14
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -273,7 +273,7 @@
 
     invoke-direct {v0, v1, v7, v2}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->d:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafd:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 15
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -284,7 +284,7 @@
 
     invoke-direct {v0, v1, v8, v2}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->e:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafe:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 16
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -297,7 +297,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->f:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICaff:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 17
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -310,7 +310,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->g:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafg:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 18
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -323,7 +323,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->h:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafh:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 19
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -336,7 +336,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->i:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafi:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 20
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -349,7 +349,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 21
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -362,7 +362,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->k:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafk:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 23
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -375,7 +375,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->l:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafl:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 24
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -388,7 +388,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->m:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafm:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 25
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -401,7 +401,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->n:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafn:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 26
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -414,7 +414,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->o:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafo:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 27
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -427,7 +427,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->p:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafp:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 28
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -440,7 +440,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->q:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 29
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -453,7 +453,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->r:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafr:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 30
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -466,7 +466,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->s:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafs:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 31
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -479,7 +479,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->t:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICaft:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 32
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -492,7 +492,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->u:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafu:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 33
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -505,7 +505,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->v:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafv:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 34
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -518,7 +518,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->w:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 35
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -531,7 +531,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->x:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafx:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 36
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -544,7 +544,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->y:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafy:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 37
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -557,7 +557,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->z:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 38
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -570,7 +570,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->A:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 39
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -583,7 +583,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->B:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 41
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -596,7 +596,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->C:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 42
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -609,7 +609,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->D:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 43
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -622,7 +622,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->E:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 44
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -635,7 +635,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->F:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 45
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -648,7 +648,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->G:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 46
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -661,7 +661,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->H:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 47
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -674,7 +674,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->I:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 48
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -687,7 +687,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->J:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 49
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -700,7 +700,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->K:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 50
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -713,7 +713,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->L:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 51
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -726,7 +726,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->M:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 52
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -739,7 +739,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->N:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 53
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -752,7 +752,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->O:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 54
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -765,7 +765,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->P:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 55
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -778,7 +778,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->Q:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 56
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -791,7 +791,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->R:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 57
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -804,7 +804,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->S:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 58
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -817,7 +817,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->T:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafT:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 59
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -830,7 +830,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->U:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafU:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 60
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -843,7 +843,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->V:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafV:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 61
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -856,7 +856,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->W:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafW:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 62
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -869,7 +869,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->X:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafX:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 63
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -882,7 +882,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->Y:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafY:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 64
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -895,7 +895,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->Z:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafZ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 65
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -908,7 +908,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 66
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -921,7 +921,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ab:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafab:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 67
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -934,7 +934,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ac:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafac:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 68
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -947,7 +947,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ad:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafad:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 69
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -960,7 +960,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ae:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafae:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 70
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -973,7 +973,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->af:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaf:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 71
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -986,7 +986,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ag:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafag:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 72
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -999,7 +999,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 73
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1012,7 +1012,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ai:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafai:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 75
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1025,7 +1025,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 76
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1038,7 +1038,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ak:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafak:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 77
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1051,7 +1051,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->al:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafal:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 79
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1064,7 +1064,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->am:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafam:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 80
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1077,7 +1077,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->an:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafan:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 83
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1090,7 +1090,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ao:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafao:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 84
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1103,7 +1103,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ap:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafap:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 85
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1116,7 +1116,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 87
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1129,7 +1129,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 88
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1142,7 +1142,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->as:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafas:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 89
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1155,7 +1155,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->at:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafat:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 90
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1168,7 +1168,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->au:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafau:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 91
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1181,7 +1181,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->av:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafav:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 92
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1194,7 +1194,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 93
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1207,7 +1207,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ax:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafax:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 95
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1220,7 +1220,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 96
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1233,7 +1233,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->az:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 98
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1246,7 +1246,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 99
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1259,7 +1259,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 100
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1272,7 +1272,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 102
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1285,7 +1285,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 103
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1298,7 +1298,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 104
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1311,7 +1311,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 106
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1324,7 +1324,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 107
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1337,7 +1337,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 108
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1350,7 +1350,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 110
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1363,7 +1363,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 111
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1376,7 +1376,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 112
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1389,7 +1389,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 114
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1402,7 +1402,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 115
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1415,7 +1415,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 116
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1428,7 +1428,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 117
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1441,7 +1441,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 118
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1454,7 +1454,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 119
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1467,7 +1467,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 120
     new-instance v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -1480,582 +1480,582 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 9
     const/16 v0, 0x61
 
     new-array v0, v0, [Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->b:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafb:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafc:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->d:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafd:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->e:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafe:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v1, v0, v8
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->f:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICaff:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->g:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafg:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->h:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafh:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->i:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafi:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->k:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafk:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->l:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafl:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xc
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->m:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafm:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xd
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->n:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafn:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xe
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->o:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafo:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xf
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->p:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafp:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x10
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->q:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x11
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->r:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafr:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x12
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->s:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafs:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x13
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->t:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICaft:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x14
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->u:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafu:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x15
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->v:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafv:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x16
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->w:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x17
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->x:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafx:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x18
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->y:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafy:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x19
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->z:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1a
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->A:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1b
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->B:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1c
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->C:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1d
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->D:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1e
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->E:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1f
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->F:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x20
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->G:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x21
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->H:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x22
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->I:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x23
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->J:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x24
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->K:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x25
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->L:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x26
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->M:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x27
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->N:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x28
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->O:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x29
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->P:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2a
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->Q:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2b
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->R:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2c
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->S:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2d
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->T:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafT:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2e
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->U:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafU:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2f
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->V:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafV:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x30
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->W:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafW:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x31
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->X:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafX:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x32
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->Y:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafY:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x33
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->Z:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafZ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x34
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x35
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ab:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafab:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x36
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ac:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafac:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x37
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ad:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafad:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x38
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ae:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafae:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x39
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->af:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaf:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3a
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ag:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafag:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3b
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3c
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ai:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafai:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3d
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3e
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ak:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafak:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x3f
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->al:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafal:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x40
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->am:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafam:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x41
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->an:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafan:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x42
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ao:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafao:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x43
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ap:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafap:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x44
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaq:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x45
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x46
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->as:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafas:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x47
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->at:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafat:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x48
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->au:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafau:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x49
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->av:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafav:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4a
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaw:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4b
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ax:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafax:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4c
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4d
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->az:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4e
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x4f
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x50
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x51
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x52
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x53
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaF:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x54
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x55
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x56
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x57
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x58
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x59
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5a
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5b
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaN:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5c
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaO:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5d
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaP:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5e
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaQ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x5f
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaR:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x60
 
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     aput-object v2, v0, v1
 

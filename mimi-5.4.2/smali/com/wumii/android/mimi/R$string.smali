@@ -94,8 +94,6 @@
 
 .field public static final associate_weixin_unavailable:I = 0x7f06002d
 
-.field public static final at:I = 0x7f06002e
-
 .field public static final avatar:I = 0x7f06002f
 
 .field public static final banned_by_reports:I = 0x7f060030
@@ -1167,6 +1165,8 @@
 .field public static final login_secret:I = 0x7f060244
 
 .field public static final logout_message:I = 0x7f060245
+
+.field public static final mIat:I = 0x7f06002e
 
 .field public static final main_navi_chat:I = 0x7f060246
 

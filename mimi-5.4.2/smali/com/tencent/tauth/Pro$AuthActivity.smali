@@ -327,12 +327,12 @@
     if-eq v3, v4, :cond_1
 
     .line 77
-    iget-object v3, v2, Lcom/tencent/connect/b/Pro$ICr;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v3, v2, Lcom/tencent/connect/b/Pro$ICr;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v3}, Lcom/tencent/tauth/Pro$ICb;->a()V
 
     .line 78
-    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->b:Lcom/tencent/connect/b/Pro$ICk;
+    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->mICkb:Lcom/tencent/connect/b/Pro$ICk;
 
     invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$ICk;->dismiss()V
 
@@ -361,7 +361,7 @@
     .line 82
     const-string/jumbo v4, "access_token"
 
-    iget-object v5, v2, Lcom/tencent/connect/b/Pro$ICr;->c:Ljava/lang/String;
+    iget-object v5, v2, Lcom/tencent/connect/b/Pro$ICr;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v3, v5}, Lcom/tencent/connect/b/Pro$ICq;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -402,7 +402,7 @@
     if-nez v5, :cond_3
 
     .line 89
-    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->b:Lcom/tencent/connect/b/Pro$ICk;
+    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->mICkb:Lcom/tencent/connect/b/Pro$ICk;
 
     invoke-virtual {v3}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -414,12 +414,12 @@
 
     .line 92
     :cond_3
-    iget-object v4, v2, Lcom/tencent/connect/b/Pro$ICr;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v4, v2, Lcom/tencent/connect/b/Pro$ICr;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v4, v3}, Lcom/tencent/tauth/Pro$ICb;->a(Ljava/lang/Object;)V
 
     .line 93
-    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->b:Lcom/tencent/connect/b/Pro$ICk;
+    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->mICkb:Lcom/tencent/connect/b/Pro$ICk;
 
     invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$ICk;->dismiss()V
 

@@ -542,9 +542,9 @@
     :cond_0
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v1, p0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 

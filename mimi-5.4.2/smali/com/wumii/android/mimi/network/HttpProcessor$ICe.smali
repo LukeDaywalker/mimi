@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->c:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->ordinal()I
 

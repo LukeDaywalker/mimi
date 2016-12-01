@@ -81,7 +81,7 @@
 
     .prologue
     .line 42
-    sput-boolean p0, Lcom/umeng/analytics/AnalyticsConfig;->m:Z
+    sput-boolean p0, Lcom/umeng/analytics/AnalyticsConfig;->isZm:Z
 
     .line 43
     return-void

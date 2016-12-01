@@ -29,7 +29,7 @@
     .line 88
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->r:Landroid/widget/ListView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mListViewr:Landroid/widget/ListView;
 
     const/4 v1, 0x4
 
@@ -54,7 +54,7 @@
     .line 70
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactSectionedAdapters:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 
     if-nez v0, :cond_0
 
@@ -76,7 +76,7 @@
     .line 76
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactSectionedAdapters:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->a()Ljava/util/List;
 
@@ -147,7 +147,7 @@
     :cond_3
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mBaseContactListAdaptert:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->a(Ljava/util/List;)V
 

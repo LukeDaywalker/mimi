@@ -29,7 +29,7 @@
     .line 61
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity$ICbj;->mSurveyDetailActivitya:Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 

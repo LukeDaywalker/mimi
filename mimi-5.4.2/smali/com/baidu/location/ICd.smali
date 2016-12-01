@@ -727,7 +727,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    sget-object v0, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICa2;->mStringjd:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -765,7 +765,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->cX:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mStringcX:Ljava/lang/String;
 
     return-void
 
@@ -830,7 +830,7 @@
     if-eqz p1, :cond_2
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICd;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lcom/baidu/location/ICd;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     const-string/jumbo v1, "utf-8"
 

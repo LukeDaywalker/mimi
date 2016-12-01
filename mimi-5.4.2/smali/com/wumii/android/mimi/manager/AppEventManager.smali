@@ -52,7 +52,7 @@
     iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->isZj:Z
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -107,7 +107,7 @@
 
     .line 48
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -181,7 +181,7 @@
     .line 64
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v4, "statistics/events"
 
@@ -252,7 +252,7 @@
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 

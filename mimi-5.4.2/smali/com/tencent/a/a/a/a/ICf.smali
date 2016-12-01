@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field protected a:Landroid/content/Context;
+.field protected mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -14,9 +14,9 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICf;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICf;->mContexta:Landroid/content/Context;
 
-    iput-object p1, p0, Lcom/tencent/a/a/a/a/ICf;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/a/a/a/a/ICf;->mContexta:Landroid/content/Context;
 
     return-void
 .end method

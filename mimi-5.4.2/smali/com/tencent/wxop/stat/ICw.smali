@@ -14,21 +14,21 @@
 
 
 # static fields
-.field public static final enum a:Lcom/tencent/wxop/stat/ICw;
-
-.field public static final enum b:Lcom/tencent/wxop/stat/ICw;
-
-.field public static final enum c:Lcom/tencent/wxop/stat/ICw;
-
-.field public static final enum d:Lcom/tencent/wxop/stat/ICw;
-
-.field public static final enum e:Lcom/tencent/wxop/stat/ICw;
-
-.field public static final enum f:Lcom/tencent/wxop/stat/ICw;
-
-.field public static final enum g:Lcom/tencent/wxop/stat/ICw;
-
 .field private static final synthetic mArrayICwi:[Lcom/tencent/wxop/stat/ICw;
+
+.field public static final enum mICwa:Lcom/tencent/wxop/stat/ICw;
+
+.field public static final enum mICwb:Lcom/tencent/wxop/stat/ICw;
+
+.field public static final enum mICwc:Lcom/tencent/wxop/stat/ICw;
+
+.field public static final enum mICwd:Lcom/tencent/wxop/stat/ICw;
+
+.field public static final enum mICwe:Lcom/tencent/wxop/stat/ICw;
+
+.field public static final enum mICwf:Lcom/tencent/wxop/stat/ICw;
+
+.field public static final enum mICwg:Lcom/tencent/wxop/stat/ICw;
 
 
 # instance fields
@@ -57,7 +57,7 @@
 
     invoke-direct {v0, v1, v2, v4}, Lcom/tencent/wxop/stat/ICw;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICw;->a:Lcom/tencent/wxop/stat/ICw;
+    sput-object v0, Lcom/tencent/wxop/stat/ICw;->mICwa:Lcom/tencent/wxop/stat/ICw;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICw;
 
@@ -65,7 +65,7 @@
 
     invoke-direct {v0, v1, v4, v5}, Lcom/tencent/wxop/stat/ICw;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICw;->b:Lcom/tencent/wxop/stat/ICw;
+    sput-object v0, Lcom/tencent/wxop/stat/ICw;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICw;
 
@@ -73,7 +73,7 @@
 
     invoke-direct {v0, v1, v5, v6}, Lcom/tencent/wxop/stat/ICw;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICw;->c:Lcom/tencent/wxop/stat/ICw;
+    sput-object v0, Lcom/tencent/wxop/stat/ICw;->mICwc:Lcom/tencent/wxop/stat/ICw;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICw;
 
@@ -81,7 +81,7 @@
 
     invoke-direct {v0, v1, v6, v7}, Lcom/tencent/wxop/stat/ICw;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICw;->d:Lcom/tencent/wxop/stat/ICw;
+    sput-object v0, Lcom/tencent/wxop/stat/ICw;->mICwd:Lcom/tencent/wxop/stat/ICw;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICw;
 
@@ -89,7 +89,7 @@
 
     invoke-direct {v0, v1, v7, v8}, Lcom/tencent/wxop/stat/ICw;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICw;->e:Lcom/tencent/wxop/stat/ICw;
+    sput-object v0, Lcom/tencent/wxop/stat/ICw;->mICwe:Lcom/tencent/wxop/stat/ICw;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICw;
 
@@ -99,7 +99,7 @@
 
     invoke-direct {v0, v1, v8, v2}, Lcom/tencent/wxop/stat/ICw;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICw;->f:Lcom/tencent/wxop/stat/ICw;
+    sput-object v0, Lcom/tencent/wxop/stat/ICw;->mICwf:Lcom/tencent/wxop/stat/ICw;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICw;
 
@@ -111,7 +111,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/tencent/wxop/stat/ICw;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICw;->g:Lcom/tencent/wxop/stat/ICw;
+    sput-object v0, Lcom/tencent/wxop/stat/ICw;->mICwg:Lcom/tencent/wxop/stat/ICw;
 
     const/4 v0, 0x7
 
@@ -119,33 +119,33 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lcom/tencent/wxop/stat/ICw;->a:Lcom/tencent/wxop/stat/ICw;
+    sget-object v2, Lcom/tencent/wxop/stat/ICw;->mICwa:Lcom/tencent/wxop/stat/ICw;
 
     aput-object v2, v0, v1
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->b:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->c:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwc:Lcom/tencent/wxop/stat/ICw;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->d:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwd:Lcom/tencent/wxop/stat/ICw;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->e:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwe:Lcom/tencent/wxop/stat/ICw;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->f:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwf:Lcom/tencent/wxop/stat/ICw;
 
     aput-object v1, v0, v8
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/tencent/wxop/stat/ICw;->g:Lcom/tencent/wxop/stat/ICw;
+    sget-object v2, Lcom/tencent/wxop/stat/ICw;->mICwg:Lcom/tencent/wxop/stat/ICw;
 
     aput-object v2, v0, v1
 

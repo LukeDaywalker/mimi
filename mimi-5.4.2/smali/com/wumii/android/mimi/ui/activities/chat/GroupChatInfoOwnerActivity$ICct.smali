@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICct;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaaa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICct;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaab:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICct;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaac:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->ordinal()I
 
@@ -74,7 +74,7 @@
     :try_start_3
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICct;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaad:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->ordinal()I
 

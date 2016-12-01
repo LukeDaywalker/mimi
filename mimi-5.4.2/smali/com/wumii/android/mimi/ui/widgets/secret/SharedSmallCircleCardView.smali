@@ -79,7 +79,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mIb:I
 
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 

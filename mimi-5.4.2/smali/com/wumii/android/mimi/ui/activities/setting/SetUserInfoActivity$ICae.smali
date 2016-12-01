@@ -50,7 +50,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->o:Ljava/lang/String;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mStringo:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 

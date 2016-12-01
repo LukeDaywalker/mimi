@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Landroid/os/Bundle;
+.field protected mBundlea:Landroid/os/Bundle;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 10
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/OnCreateEvent;->a:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/OnCreateEvent;->mBundlea:Landroid/os/Bundle;
 
     .line 11
     return-void

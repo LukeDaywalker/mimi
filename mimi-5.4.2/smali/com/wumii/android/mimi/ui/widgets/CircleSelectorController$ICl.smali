@@ -36,7 +36,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->d:Landroid/view/ViewGroup;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->mViewGroupd:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->d:Landroid/view/ViewGroup;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->mViewGroupd:Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICl;->mCircleSelectorControllera:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 

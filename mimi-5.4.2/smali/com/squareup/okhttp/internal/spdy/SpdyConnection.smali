@@ -255,7 +255,7 @@
 
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
-    sget-object v4, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v4, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     if-ne v0, v4, :cond_0
 
@@ -304,7 +304,7 @@
     .line 154
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     if-ne v0, v1, :cond_4
 
@@ -436,7 +436,7 @@
     :cond_4
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     if-ne v0, v1, :cond_5
 
@@ -709,7 +709,7 @@
     if-eqz v0, :cond_0
 
     .line 805
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->b:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeb:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {p0, p1, v0}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->a(ILcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 
@@ -1589,7 +1589,7 @@
     .line 796
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     if-ne v0, v1, :cond_0
 
@@ -2064,7 +2064,7 @@
     :try_start_4
     iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->mFrameWriteri:Lcom/squareup/okhttp/internal/spdy/FrameWriter;
 
-    sget-object v3, Lcom/squareup/okhttp/internal/Util;->a:[B
+    sget-object v3, Lcom/squareup/okhttp/internal/Util;->mArrayBa:[B
 
     invoke-interface {v2, v0, p1, v3}, Lcom/squareup/okhttp/internal/spdy/FrameWriter;->a(ILcom/squareup/okhttp/internal/spdy/ErrorCode;[B)V
 
@@ -2233,9 +2233,9 @@
 
     .prologue
     .line 446
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->a:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodea:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-direct {p0, v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->a(Lcom/squareup/okhttp/internal/spdy/ErrorCode;Lcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 

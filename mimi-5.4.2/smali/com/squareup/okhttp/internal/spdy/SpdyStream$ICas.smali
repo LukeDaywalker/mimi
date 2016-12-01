@@ -29,7 +29,7 @@
     .line 600
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;->mSpdyStreama:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->b(Lcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 

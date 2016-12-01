@@ -90,7 +90,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->a:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFroma:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     if-eq p3, v0, :cond_2
 
@@ -99,7 +99,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->b:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromb:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     if-eq p3, v0, :cond_2
 
@@ -108,7 +108,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->c:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromc:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     if-ne p3, v0, :cond_3
 

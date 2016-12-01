@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Landroid/content/Context;
+.field protected mContexta:Landroid/content/Context;
 
 .field private mLayoutParamsb:Landroid/widget/LinearLayout$LayoutParams;
 
@@ -39,7 +39,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 77
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;->mContexta:Landroid/content/Context;
 
     .line 78
     iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;->mLayoutParamsb:Landroid/widget/LinearLayout$LayoutParams;

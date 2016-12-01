@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
+.field public static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/b/b/Pro$ICb;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/b/b/Pro$ICb;->mStringa:Ljava/lang/String;
 
     return-void
 .end method

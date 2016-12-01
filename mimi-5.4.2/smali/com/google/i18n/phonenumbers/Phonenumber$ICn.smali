@@ -86,7 +86,7 @@
     iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonenumber$ICn;->p:Ljava/lang/String;
 
     .line 39
-    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->a:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICoa:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonenumber$ICn;->n:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
@@ -653,7 +653,7 @@
     iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonenumber$ICn;->m:Z
 
     .line 159
-    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->a:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICoa:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonenumber$ICn;->n:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 

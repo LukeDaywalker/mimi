@@ -34,7 +34,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;->mBaseCircleCategoryActivitya:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 

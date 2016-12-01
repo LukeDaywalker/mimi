@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 

@@ -128,7 +128,7 @@
     .line 105
     .line 108
     :try_start_0
-    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->b:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviorb:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     invoke-virtual {v1, p1}, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->equals(Ljava/lang/Object;)Z
 
@@ -171,7 +171,7 @@
     move-result-wide v2
 
     .line 120
-    sget-object v4, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->c:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v4, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviorc:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     invoke-virtual {v4, p1}, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->equals(Ljava/lang/Object;)Z
 
@@ -297,7 +297,7 @@
 
     .prologue
     .line 64
-    sget-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->a:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviora:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     invoke-virtual {p0, v0}, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->a(Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;)Lio/fabric/sdk/android/services/settings/SettingsData;
 
@@ -363,7 +363,7 @@
     .line 85
     iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mCachedSettingsIod:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
 
-    iget-wide v4, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->g:J
+    iget-wide v4, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->mJg:J
 
     invoke-interface {v2, v4, v5, v0}, Lio/fabric/sdk/android/services/settings/CachedSettingsIo;->a(JLorg/json/JSONObject;)V
 
@@ -389,7 +389,7 @@
 
     .line 95
     :try_start_2
-    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->c:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviorc:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     invoke-direct {p0, v1}, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->b(Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;)Lio/fabric/sdk/android/services/settings/SettingsData;
     :try_end_2

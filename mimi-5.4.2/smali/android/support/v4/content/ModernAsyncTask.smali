@@ -19,8 +19,6 @@
 
 
 # static fields
-.field public static final d:Ljava/util/concurrent/Executor;
-
 .field private static final mBlockingQueueb:Ljava/util/concurrent/BlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -31,6 +29,8 @@
         }
     .end annotation
 .end field
+
+.field public static final mExecutord:Ljava/util/concurrent/Executor;
 
 .field private static volatile mExecutore:Ljava/util/concurrent/Executor;
 
@@ -101,7 +101,7 @@
 
     invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    sput-object v1, Landroid/support/v4/content/ModernAsyncTask;->d:Ljava/util/concurrent/Executor;
+    sput-object v1, Landroid/support/v4/content/ModernAsyncTask;->mExecutord:Ljava/util/concurrent/Executor;
 
     .line 75
     new-instance v0, Landroid/support/v4/content/ModernAsyncTask$InternalHandler;
@@ -113,7 +113,7 @@
     sput-object v0, Landroid/support/v4/content/ModernAsyncTask;->mInternalHandlerc:Landroid/support/v4/content/ModernAsyncTask$InternalHandler;
 
     .line 77
-    sget-object v0, Landroid/support/v4/content/ModernAsyncTask;->d:Ljava/util/concurrent/Executor;
+    sget-object v0, Landroid/support/v4/content/ModernAsyncTask;->mExecutord:Ljava/util/concurrent/Executor;
 
     sput-object v0, Landroid/support/v4/content/ModernAsyncTask;->mExecutore:Ljava/util/concurrent/Executor;
 
@@ -128,7 +128,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 81
-    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->a:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusa:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     iput-object v0, p0, Landroid/support/v4/content/ModernAsyncTask;->mStatush:Landroid/support/v4/content/ModernAsyncTask$Status;
 
@@ -284,7 +284,7 @@
 
     .line 463
     :goto_0
-    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->c:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusc:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     iput-object v0, p0, Landroid/support/v4/content/ModernAsyncTask;->mStatush:Landroid/support/v4/content/ModernAsyncTask$Status;
 
@@ -316,7 +316,7 @@
     .line 406
     iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask;->mStatush:Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->a:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusa:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     if-eq v0, v1, :cond_0
 
@@ -335,7 +335,7 @@
 
     .line 418
     :cond_0
-    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->b:Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->mStatusb:Landroid/support/v4/content/ModernAsyncTask$Status;
 
     iput-object v0, p0, Landroid/support/v4/content/ModernAsyncTask;->mStatush:Landroid/support/v4/content/ModernAsyncTask$Status;
 

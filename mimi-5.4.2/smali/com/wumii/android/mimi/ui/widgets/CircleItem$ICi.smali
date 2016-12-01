@@ -15,21 +15,21 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
-
-.field public static final enum b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
-
-.field public static final enum c:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
-
-.field public static final enum d:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
-
-.field public static final enum e:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
-
-.field public static final enum f:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
-
-.field public static final enum g:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
-
 .field private static final synthetic mArrayICii:[Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+
+.field public static final enum mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+
+.field public static final enum mICib:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+
+.field public static final enum mICic:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+
+.field public static final enum mICid:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+
+.field public static final enum mICie:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+
+.field public static final enum mICif:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+
+.field public static final enum mICig:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
 
 # instance fields
@@ -58,7 +58,7 @@
 
     invoke-direct {v0, v1, v4, v4}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->a:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 10
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
@@ -69,7 +69,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICib:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 11
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
@@ -80,7 +80,7 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->c:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICic:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 12
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
@@ -91,7 +91,7 @@
 
     invoke-direct {v0, v1, v7, v2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->d:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICid:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 13
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
@@ -100,7 +100,7 @@
 
     invoke-direct {v0, v1, v8, v4}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->e:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICie:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 14
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
@@ -113,7 +113,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->f:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICif:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 15
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
@@ -124,42 +124,42 @@
 
     invoke-direct {v0, v1, v2, v4}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->g:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICig:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 8
     const/4 v0, 0x7
 
     new-array v0, v0, [Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->a:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICib:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->c:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICic:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->d:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICid:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->e:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICie:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     aput-object v1, v0, v8
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->f:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICif:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->g:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICig:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     aput-object v2, v0, v1
 

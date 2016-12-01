@@ -52,7 +52,7 @@
     if-eqz v0, :cond_0
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-class v1, Lcom/wumii/mimi/model/domain/mobile/MobileGroupChat;
 
@@ -91,7 +91,7 @@
 
     .line 50
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603b1
 
@@ -184,7 +184,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "chat/group"
 

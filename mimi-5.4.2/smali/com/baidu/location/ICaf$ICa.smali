@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public if:Z
+.field public isZif:Z
 
 .field final synthetic mICafa:Lcom/baidu/location/ICaf;
 
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf$ICa;->if:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf$ICa;->isZif:Z
 
     const/4 v0, 0x0
 

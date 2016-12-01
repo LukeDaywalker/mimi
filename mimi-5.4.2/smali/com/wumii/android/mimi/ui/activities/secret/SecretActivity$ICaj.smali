@@ -411,7 +411,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     const/4 v3, 0x0
 
@@ -774,7 +774,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->c:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjc:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
 
@@ -1174,7 +1174,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->d:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v5, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjd:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     invoke-virtual {v4, v2, v5, v6}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a(Ljava/util/List;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;Z)V
 
@@ -1316,7 +1316,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->e:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICje:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     const/4 v3, 0x0
 
@@ -1481,7 +1481,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->d:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v3, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjd:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     const/4 v4, 0x1
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected t:I
+.field protected mIt:I
 
 
 # direct methods
@@ -18,7 +18,7 @@
     .line 42
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/google/tagmanager/protobuf/nano/MessageNano;->t:I
+    iput v0, p0, Lcom/google/tagmanager/protobuf/nano/MessageNano;->mIt:I
 
     return-void
 .end method

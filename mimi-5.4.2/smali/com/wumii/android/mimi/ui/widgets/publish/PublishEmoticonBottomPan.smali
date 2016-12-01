@@ -24,9 +24,9 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;->mContexta:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;->b:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;->mResourcesb:Landroid/content/res/Resources;
 
     const v2, 0x7f0a0009
 
@@ -34,9 +34,9 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;->c:Landroid/view/LayoutInflater;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;->mLayoutInflaterc:Landroid/view/LayoutInflater;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;->d:Landroid/view/ViewGroup;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;->mViewGroupd:Landroid/view/ViewGroup;
 
     invoke-static {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Landroid/content/Context;ILandroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
 

@@ -20,7 +20,7 @@
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;->mContexta:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -106,7 +106,7 @@
     invoke-virtual {p0, v6, v0}, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;->mContexta:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 

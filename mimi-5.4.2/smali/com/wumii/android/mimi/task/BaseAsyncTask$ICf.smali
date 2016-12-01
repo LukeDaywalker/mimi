@@ -48,7 +48,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->mBaseAsyncTaskb:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/task/BaseAsyncTask;->b:Landroid/content/Context;
+    iget-object v1, v1, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mContextb:Landroid/content/Context;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -107,7 +107,7 @@
     .line 213
     iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->mBaseAsyncTaskb:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/task/BaseAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v1, v1, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

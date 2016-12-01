@@ -69,7 +69,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICan;->mGroupMemberBannedMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f06037d
 
@@ -85,7 +85,7 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICan;->mGroupMemberBannedMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->mContexta:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICan;->mStringb:Ljava/lang/String;
 

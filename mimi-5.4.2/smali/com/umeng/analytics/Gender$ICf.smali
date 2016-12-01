@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/umeng/analytics/Gender$ICf;->mArrayIa:[I
 
-    sget-object v1, Lcom/umeng/analytics/Gender;->a:Lcom/umeng/analytics/Gender;
+    sget-object v1, Lcom/umeng/analytics/Gender;->mGendera:Lcom/umeng/analytics/Gender;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/Gender;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/umeng/analytics/Gender$ICf;->mArrayIa:[I
 
-    sget-object v1, Lcom/umeng/analytics/Gender;->b:Lcom/umeng/analytics/Gender;
+    sget-object v1, Lcom/umeng/analytics/Gender;->mGenderb:Lcom/umeng/analytics/Gender;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/Gender;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lcom/umeng/analytics/Gender$ICf;->mArrayIa:[I
 
-    sget-object v1, Lcom/umeng/analytics/Gender;->c:Lcom/umeng/analytics/Gender;
+    sget-object v1, Lcom/umeng/analytics/Gender;->mGenderc:Lcom/umeng/analytics/Gender;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/Gender;->ordinal()I
 

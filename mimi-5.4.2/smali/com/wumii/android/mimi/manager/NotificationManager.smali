@@ -32,7 +32,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/manager/BaseManager;-><init>()V
 
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "notifications/v2"
 
@@ -56,14 +56,14 @@
     .line 95
     const-string/jumbo v0, "notificationEvent"
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->a:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICaya:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-interface {v5, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 97
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "notifications/v2"
 
@@ -76,7 +76,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 98
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -85,7 +85,7 @@
 
     const/4 v1, -0x1
 
-    sget-object v2, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->a:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v2, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICaya:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-direct {v0, v1, v6, v6, v2}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;-><init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
 
@@ -111,14 +111,14 @@
     .line 86
     const-string/jumbo v0, "notificationEvent"
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->b:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayb:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-interface {v5, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 88
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "notifications/v2"
 
@@ -131,7 +131,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 89
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -140,7 +140,7 @@
 
     const/4 v1, -0x1
 
-    sget-object v2, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->b:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v2, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayb:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-direct {v0, v1, v6, v6, v2}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;-><init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
 
@@ -155,7 +155,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -175,7 +175,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -185,7 +185,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->d:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayd:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;-><init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
 
@@ -201,7 +201,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -223,7 +223,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -233,7 +233,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->d:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayd:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;-><init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
 
@@ -338,7 +338,7 @@
     invoke-direct {v1, v3, v4, v2, v0}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;-><init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
 
     .line 58
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -374,7 +374,7 @@
 
     const/16 v2, -0x3ec
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->f:Landroid/content/Context;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mContextf:Landroid/content/Context;
 
     const v4, 0x7f06039e
 
@@ -394,7 +394,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -456,7 +456,7 @@
 
     const/4 v3, 0x0
 
-    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->a:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICaya:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-direct {v0, v2, v3, v1, v4}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;-><init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
 
@@ -476,7 +476,7 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -496,7 +496,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -506,7 +506,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->c:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayc:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;-><init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
 
@@ -522,7 +522,7 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -542,7 +542,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/NotificationManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
@@ -552,7 +552,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->d:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v4, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICayd:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;-><init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
 

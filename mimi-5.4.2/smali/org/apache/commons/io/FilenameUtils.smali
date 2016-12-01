@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
-
 .field private static final mCb:C
 
 .field private static final mCc:C
+
+.field public static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FilenameUtils;->a:Ljava/lang/String;
+    sput-object v0, Lorg/apache/commons/io/FilenameUtils;->mStringa:Ljava/lang/String;
 
     .line 110
     sget-char v0, Ljava/io/File;->separatorChar:C

@@ -17,9 +17,9 @@
 
 
 # instance fields
-.field public g:[B
+.field public mArrayBg:[B
 
-.field public h:Ljava/lang/String;
+.field public mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -61,14 +61,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/ImageObject;->g:[B
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mArrayBg:[B
 
     .line 60
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/ImageObject;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mStringh:Ljava/lang/String;
 
     .line 61
     return-void
@@ -83,11 +83,11 @@
     const/4 v0, 0x0
 
     .line 95
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->g:[B
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mArrayBg:[B
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mStringh:Ljava/lang/String;
 
     if-nez v1, :cond_0
 
@@ -104,11 +104,11 @@
 
     .line 99
     :cond_0
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->g:[B
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mArrayBg:[B
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->g:[B
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mArrayBg:[B
 
     array-length v1, v1
 
@@ -127,11 +127,11 @@
 
     .line 103
     :cond_1
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mStringh:Ljava/lang/String;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -152,14 +152,14 @@
 
     .line 107
     :cond_2
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mStringh:Ljava/lang/String;
 
     if-eqz v1, :cond_4
 
     .line 108
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/sina/weibo/sdk/api/ImageObject;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mStringh:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -252,12 +252,12 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/ImageObject;->g:[B
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mArrayBg:[B
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeByteArray([B)V
 
     .line 91
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/ImageObject;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/ImageObject;->mStringh:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

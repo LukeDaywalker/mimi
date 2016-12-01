@@ -135,7 +135,7 @@
     check-cast v0, Landroid/widget/GridView;
 
     .line 55
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     const/high16 v2, 0x41400000    # 12.0f
 
@@ -144,7 +144,7 @@
     move-result v2
 
     .line 57
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
 
@@ -168,7 +168,7 @@
     div-int/lit8 v1, v1, 0x3
 
     .line 59
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     const/high16 v4, 0x42000000    # 32.0f
 

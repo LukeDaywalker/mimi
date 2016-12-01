@@ -239,7 +239,7 @@
     .line 29
     new-instance v1, Landroid/content/Intent;
 
-    sget-object v2, Lcom/wumii/android/mimi/push/PushServiceKeeper;->a:Ljava/lang/String;
+    sget-object v2, Lcom/wumii/android/mimi/push/PushServiceKeeper;->mStringa:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 

@@ -24,12 +24,12 @@
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;-><init>(I[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;)V
 
     .line 466
-    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->a:Ljava/lang/String;
+    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->mStringa:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;->mStringa:Ljava/lang/String;
 
     .line 467
-    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->b:Ljava/lang/String;
+    iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->mStringb:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;->mStringb:Ljava/lang/String;
 

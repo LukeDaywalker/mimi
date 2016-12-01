@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field public a:Z
+.field public isZa:Z
 
-.field public b:Z
+.field public isZb:Z
 
-.field public c:Z
+.field public isZc:Z
 
-.field public d:Z
+.field public isZd:Z
 
-.field public e:B
+.field public isZf:Z
 
-.field public f:Z
+.field public mArrayBh:[B
 
-.field public g:J
+.field public mArrayBi:[B
 
-.field public h:[B
+.field public mBe:B
 
-.field public i:[B
+.field public mJg:J
 
 
 # direct methods
@@ -42,7 +42,7 @@
     const/4 v0, 0x0
 
     .line 66
-    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->a:Z
+    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->isZa:Z
 
     if-eqz v1, :cond_0
 
@@ -53,7 +53,7 @@
 
     .line 69
     :cond_0
-    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->b:Z
+    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->isZb:Z
 
     if-eqz v1, :cond_1
 
@@ -64,7 +64,7 @@
 
     .line 72
     :cond_1
-    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->c:Z
+    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->isZc:Z
 
     if-eqz v1, :cond_2
 
@@ -75,7 +75,7 @@
 
     .line 75
     :cond_2
-    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->d:Z
+    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->isZd:Z
 
     if-eqz v1, :cond_3
 
@@ -86,7 +86,7 @@
 
     .line 78
     :cond_3
-    iget-byte v1, p0, Lcom/facebook/stetho/websocket/Frame;->e:B
+    iget-byte v1, p0, Lcom/facebook/stetho/websocket/Frame;->mBe:B
 
     and-int/lit8 v1, v1, 0xf
 
@@ -231,7 +231,7 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->a:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->isZa:Z
 
     .line 58
     and-int/lit8 v0, p1, 0x40
@@ -241,7 +241,7 @@
     move v0, v1
 
     :goto_1
-    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->b:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->isZb:Z
 
     .line 59
     and-int/lit8 v0, p1, 0x20
@@ -251,7 +251,7 @@
     move v0, v1
 
     :goto_2
-    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->c:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->isZc:Z
 
     .line 60
     and-int/lit8 v0, p1, 0x10
@@ -259,14 +259,14 @@
     if-eqz v0, :cond_3
 
     :goto_3
-    iput-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->d:Z
+    iput-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->isZd:Z
 
     .line 61
     and-int/lit8 v0, p1, 0xf
 
     int-to-byte v0, v0
 
-    iput-byte v0, p0, Lcom/facebook/stetho/websocket/Frame;->e:B
+    iput-byte v0, p0, Lcom/facebook/stetho/websocket/Frame;->mBe:B
 
     .line 62
     return-void
@@ -596,7 +596,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->f:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->isZf:Z
 
     .line 35
     and-int/lit16 v0, v2, -0x81
@@ -607,10 +607,10 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/facebook/stetho/websocket/Frame;->g:J
+    iput-wide v2, p0, Lcom/facebook/stetho/websocket/Frame;->mJg:J
 
     .line 36
-    iget-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->f:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->isZf:Z
 
     if-eqz v0, :cond_1
 
@@ -619,32 +619,32 @@
     move-result-object v0
 
     :goto_1
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->h:[B
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->mArrayBh:[B
 
     .line 37
-    iget-wide v2, p0, Lcom/facebook/stetho/websocket/Frame;->g:J
+    iget-wide v2, p0, Lcom/facebook/stetho/websocket/Frame;->mJg:J
 
     long-to-int v0, v2
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->i:[B
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->mArrayBi:[B
 
     .line 38
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->i:[B
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->mArrayBi:[B
 
-    iget-wide v2, p0, Lcom/facebook/stetho/websocket/Frame;->g:J
+    iget-wide v2, p0, Lcom/facebook/stetho/websocket/Frame;->mJg:J
 
     long-to-int v2, v2
 
     invoke-static {p1, v0, v1, v2}, Lcom/facebook/stetho/websocket/Frame;->a(Ljava/io/InputStream;[BII)V
 
     .line 39
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->h:[B
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->mArrayBh:[B
 
-    iget-object v2, p0, Lcom/facebook/stetho/websocket/Frame;->i:[B
+    iget-object v2, p0, Lcom/facebook/stetho/websocket/Frame;->mArrayBi:[B
 
-    iget-wide v4, p0, Lcom/facebook/stetho/websocket/Frame;->g:J
+    iget-wide v4, p0, Lcom/facebook/stetho/websocket/Frame;->mJg:J
 
     long-to-int v3, v4
 
@@ -680,14 +680,14 @@
     invoke-virtual {p1, v0}, Ljava/io/BufferedOutputStream;->write(I)V
 
     .line 44
-    iget-wide v0, p0, Lcom/facebook/stetho/websocket/Frame;->g:J
+    iget-wide v0, p0, Lcom/facebook/stetho/websocket/Frame;->mJg:J
 
     invoke-static {v0, v1}, Lcom/facebook/stetho/websocket/Frame;->a(J)[B
 
     move-result-object v0
 
     .line 45
-    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->f:Z
+    iget-boolean v1, p0, Lcom/facebook/stetho/websocket/Frame;->isZf:Z
 
     if-eqz v1, :cond_0
 
@@ -707,7 +707,7 @@
     invoke-virtual {p1, v0, v4, v1}, Ljava/io/BufferedOutputStream;->write([BII)V
 
     .line 50
-    iget-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->f:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/websocket/Frame;->isZf:Z
 
     if-eqz v0, :cond_1
 
@@ -722,9 +722,9 @@
 
     .line 53
     :cond_1
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->i:[B
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/Frame;->mArrayBi:[B
 
-    iget-wide v2, p0, Lcom/facebook/stetho/websocket/Frame;->g:J
+    iget-wide v2, p0, Lcom/facebook/stetho/websocket/Frame;->mJg:J
 
     long-to-int v1, v2
 

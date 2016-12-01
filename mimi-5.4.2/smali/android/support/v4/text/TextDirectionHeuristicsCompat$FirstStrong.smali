@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final a:Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;
+.field public static final mFirstStronga:Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;-><init>()V
 
-    sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;->a:Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;
+    sput-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;->mFirstStronga:Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;
 
     return-void
 .end method

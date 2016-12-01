@@ -227,7 +227,7 @@
 
     .prologue
     .line 122
-    sget-object v0, Lcom/wumii/android/mimi/util/Patterns;->a:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/wumii/android/mimi/util/Patterns;->mPatterna:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 

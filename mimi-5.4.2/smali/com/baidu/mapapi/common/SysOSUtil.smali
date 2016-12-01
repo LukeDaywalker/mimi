@@ -34,7 +34,7 @@
 .method public static getDensity()F
     .locals 1
 
-    sget v0, Lcom/baidu/platform/comapi/util/ICf;->C:F
+    sget v0, Lcom/baidu/platform/comapi/util/ICf;->mFC:F
 
     return v0
 .end method

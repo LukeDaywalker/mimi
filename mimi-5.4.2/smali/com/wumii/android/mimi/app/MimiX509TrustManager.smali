@@ -86,7 +86,7 @@
     aget-object v3, p1, v1
 
     .line 97
-    sget-object v4, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->a:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
+    sget-object v4, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->mMimiHostNameVerifiera:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
 
     invoke-virtual {v4, v3}, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->a(Ljava/security/cert/X509Certificate;)Z
 

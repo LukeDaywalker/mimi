@@ -66,7 +66,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/baidu/location/ICc;->aV:I
+    sget v1, Lcom/baidu/location/ICc;->mIaV:I
 
     int-to-long v2, v1
 

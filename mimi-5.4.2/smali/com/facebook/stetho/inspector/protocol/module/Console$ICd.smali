@@ -13,19 +13,19 @@
 
 
 # instance fields
-.field public a:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+.field public mICfb:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public b:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+.field public mICga:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public c:Ljava/lang/String;
+.field public mStringc:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation

@@ -64,7 +64,7 @@
     .line 35
     iget-object v1, p0, Lu/aly/EventTracker;->mCaretakerc:Lu/aly/Caretaker;
 
-    sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->l:Z
+    sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->isZl:Z
 
     if-nez v0, :cond_1
 

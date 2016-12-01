@@ -22,7 +22,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
-    iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->b:Ljava/lang/String;
+    iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->mStringb:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v1}, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -31,7 +31,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
-    iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->c:Ljava/lang/String;
+    iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->mStringc:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v1}, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -40,7 +40,7 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
-    iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->d:Ljava/lang/String;
+    iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->mStringd:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v1}, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 

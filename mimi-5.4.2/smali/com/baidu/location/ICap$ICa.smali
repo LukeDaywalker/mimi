@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field public do:I
-
 .field public for:Z
-
-.field public if:D
 
 .field public int:D
 
+.field public mDif:D
+
 .field final synthetic mICapa:Lcom/baidu/location/ICap;
+
+.field public mIdo:I
 
 .field public new:J
 

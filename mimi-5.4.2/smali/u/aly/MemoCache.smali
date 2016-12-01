@@ -89,25 +89,25 @@
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->e(Ljava/lang/String;)Lu/aly/AppInfo;
 
     .line 164
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->a:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->b:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 165
     iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
-    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->a:Ljava/lang/String;
+    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->f(Ljava/lang/String;)Lu/aly/AppInfo;
 
     .line 166
     iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
-    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->b:Ljava/lang/String;
+    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->g(Ljava/lang/String;)Lu/aly/AppInfo;
 
@@ -124,7 +124,7 @@
     .line 170
     iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
-    sget-object v1, Lu/aly/SDKType;->a:Lu/aly/SDKType;
+    sget-object v1, Lu/aly/SDKType;->mSDKTypea:Lu/aly/SDKType;
 
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->a(Lu/aly/SDKType;)Lu/aly/AppInfo;
 
@@ -158,7 +158,7 @@
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->a(I)Lu/aly/AppInfo;
 
     .line 175
-    sget v0, Lcom/umeng/analytics/AnalyticsConfig;->c:I
+    sget v0, Lcom/umeng/analytics/AnalyticsConfig;->mIc:I
 
     const/4 v1, 0x1
 
@@ -167,7 +167,7 @@
     .line 176
     iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
-    sget v1, Lcom/umeng/analytics/AnalyticsConfig;->c:I
+    sget v1, Lcom/umeng/analytics/AnalyticsConfig;->mIc:I
 
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->b(I)Lu/aly/AppInfo;
 
@@ -284,11 +284,11 @@
 
     .line 200
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->e:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringe:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->d:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringd:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -377,7 +377,7 @@
     .line 220
     iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
-    sget-object v2, Lu/aly/AccessType;->c:Lu/aly/AccessType;
+    sget-object v2, Lu/aly/AccessType;->mAccessTypec:Lu/aly/AccessType;
 
     invoke-virtual {v1, v2}, Lu/aly/MiscInfo;->a(Lu/aly/AccessType;)Lu/aly/MiscInfo;
 
@@ -447,19 +447,19 @@
     invoke-virtual {v0, v1}, Lu/aly/MiscInfo;->a(I)Lu/aly/MiscInfo;
 
     .line 239
-    sget v0, Lcom/umeng/analytics/AnalyticsConfig;->g:I
+    sget v0, Lcom/umeng/analytics/AnalyticsConfig;->mIg:I
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->f:Lcom/umeng/analytics/Gender;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mGenderf:Lcom/umeng/analytics/Gender;
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->h:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringh:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->i:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringi:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
@@ -470,12 +470,12 @@
     invoke-direct {v0}, Lu/aly/UserInfo;-><init>()V
 
     .line 244
-    sget v1, Lcom/umeng/analytics/AnalyticsConfig;->g:I
+    sget v1, Lcom/umeng/analytics/AnalyticsConfig;->mIg:I
 
     invoke-virtual {v0, v1}, Lu/aly/UserInfo;->a(I)Lu/aly/UserInfo;
 
     .line 245
-    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->f:Lcom/umeng/analytics/Gender;
+    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mGenderf:Lcom/umeng/analytics/Gender;
 
     invoke-static {v1}, Lcom/umeng/analytics/Gender;->a(Lcom/umeng/analytics/Gender;)Lu/aly/Gender;
 
@@ -484,12 +484,12 @@
     invoke-virtual {v0, v1}, Lu/aly/UserInfo;->a(Lu/aly/Gender;)Lu/aly/UserInfo;
 
     .line 246
-    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->h:Ljava/lang/String;
+    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/UserInfo;->a(Ljava/lang/String;)Lu/aly/UserInfo;
 
     .line 247
-    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->i:Ljava/lang/String;
+    sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/UserInfo;->b(Ljava/lang/String;)Lu/aly/UserInfo;
 
@@ -520,7 +520,7 @@
     .line 222
     iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
-    sget-object v2, Lu/aly/AccessType;->b:Lu/aly/AccessType;
+    sget-object v2, Lu/aly/AccessType;->mAccessTypeb:Lu/aly/AccessType;
 
     invoke-virtual {v1, v2}, Lu/aly/MiscInfo;->a(Lu/aly/AccessType;)Lu/aly/MiscInfo;
     :try_end_0
@@ -542,7 +542,7 @@
     :try_start_1
     iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
-    sget-object v2, Lu/aly/AccessType;->a:Lu/aly/AccessType;
+    sget-object v2, Lu/aly/AccessType;->mAccessTypea:Lu/aly/AccessType;
 
     invoke-virtual {v1, v2}, Lu/aly/MiscInfo;->a(Lu/aly/AccessType;)Lu/aly/MiscInfo;
     :try_end_1

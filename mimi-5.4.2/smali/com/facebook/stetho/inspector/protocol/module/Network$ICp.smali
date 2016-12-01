@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public a:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+.field public mICqa:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public b:Ljava/util/List;
+.field public mListb:Ljava/util/List;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
     .end annotation
 

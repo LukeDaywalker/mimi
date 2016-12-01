@@ -4,27 +4,27 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mStringa:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public final mStringb:Ljava/lang/String;
 
-.field public final c:Ljava/lang/String;
+.field public final mStringc:Ljava/lang/String;
 
-.field public final d:Ljava/lang/String;
+.field public final mStringd:Ljava/lang/String;
 
-.field public final e:Ljava/lang/String;
+.field public final mStringe:Ljava/lang/String;
 
-.field public final f:Ljava/lang/String;
+.field public final mStringf:Ljava/lang/String;
 
-.field public final g:Ljava/lang/String;
+.field public final mStringg:Ljava/lang/String;
 
-.field public final h:Ljava/lang/String;
+.field public final mStringh:Ljava/lang/String;
 
-.field public final i:Ljava/lang/String;
+.field public final mStringi:Ljava/lang/String;
 
-.field public final j:Ljava/lang/String;
+.field public final mStringj:Ljava/lang/String;
 
-.field public final k:Ljava/lang/String;
+.field public final mStringk:Ljava/lang/String;
 
 .field private mStringl:Ljava/lang/String;
 
@@ -38,37 +38,37 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 26
-    iput-object p1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringa:Ljava/lang/String;
 
     .line 27
-    iput-object p2, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringb:Ljava/lang/String;
 
     .line 28
-    iput-object p3, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringc:Ljava/lang/String;
 
     .line 29
-    iput-object p4, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->d:Ljava/lang/String;
+    iput-object p4, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringd:Ljava/lang/String;
 
     .line 30
-    iput-object p5, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->e:Ljava/lang/String;
+    iput-object p5, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringe:Ljava/lang/String;
 
     .line 31
-    iput-object p6, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->f:Ljava/lang/String;
+    iput-object p6, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringf:Ljava/lang/String;
 
     .line 32
-    iput-object p7, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->g:Ljava/lang/String;
+    iput-object p7, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringg:Ljava/lang/String;
 
     .line 33
-    iput-object p8, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->h:Ljava/lang/String;
+    iput-object p8, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringh:Ljava/lang/String;
 
     .line 34
-    iput-object p9, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->i:Ljava/lang/String;
+    iput-object p9, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringi:Ljava/lang/String;
 
     .line 35
-    iput-object p10, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->j:Ljava/lang/String;
+    iput-object p10, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringj:Ljava/lang/String;
 
     .line 36
-    iput-object p11, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->k:Ljava/lang/String;
+    iput-object p11, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringk:Ljava/lang/String;
 
     .line 37
     return-void
@@ -96,7 +96,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -108,7 +108,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -132,7 +132,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -156,7 +156,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -168,7 +168,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -192,7 +192,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -204,7 +204,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -216,7 +216,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->k:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringk:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

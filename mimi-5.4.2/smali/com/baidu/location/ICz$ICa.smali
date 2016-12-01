@@ -145,9 +145,9 @@
 
     move-result v1
 
-    sput v1, Lcom/baidu/location/ICc;->aq:I
+    sput v1, Lcom/baidu/location/ICc;->mIaq:I
 
-    sget v1, Lcom/baidu/location/ICc;->aq:I
+    sget v1, Lcom/baidu/location/ICc;->mIaq:I
 
     if-lez v1, :cond_0
 
@@ -185,7 +185,7 @@
 
     const/4 v0, 0x2
 
-    sget v4, Lcom/baidu/location/ICc;->aq:I
+    sget v4, Lcom/baidu/location/ICc;->mIaq:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -248,7 +248,7 @@
     const/4 v0, 0x0
 
     :try_start_1
-    sput v0, Lcom/baidu/location/ICc;->aq:I
+    sput v0, Lcom/baidu/location/ICc;->mIaq:I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -257,7 +257,7 @@
     :catch_0
     move-exception v0
 
-    sput v8, Lcom/baidu/location/ICc;->aq:I
+    sput v8, Lcom/baidu/location/ICc;->mIaq:I
 
     goto :goto_0
 
@@ -468,7 +468,7 @@
 
     move-result v6
 
-    sget v7, Lcom/baidu/location/ICc;->Z:I
+    sget v7, Lcom/baidu/location/ICc;->mIZ:I
 
     int-to-float v7, v7
 
@@ -592,7 +592,7 @@
 
     move-result-object v1
 
-    iget-wide v6, v1, Lcom/baidu/location/ICg;->br:J
+    iget-wide v6, v1, Lcom/baidu/location/ICg;->mJbr:J
 
     add-long/2addr v4, v6
 
@@ -666,13 +666,13 @@
     return-void
 
     :cond_1
-    sget-boolean v0, Lcom/baidu/location/ICaa;->gn:Z
+    sget-boolean v0, Lcom/baidu/location/ICaa;->isZgn:Z
 
     if-nez v0, :cond_2
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/location/ICc;->aq:I
+    sput v0, Lcom/baidu/location/ICc;->mIaq:I
 
     goto :goto_0
 

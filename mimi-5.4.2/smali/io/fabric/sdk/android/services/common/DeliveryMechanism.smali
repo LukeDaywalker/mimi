@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
-
-.field public static final enum b:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
-
-.field public static final enum c:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
-
-.field public static final enum d:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
-
 .field private static final synthetic mArrayDeliveryMechanismf:[Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+
+.field public static final enum mDeliveryMechanisma:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+
+.field public static final enum mDeliveryMechanismb:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+
+.field public static final enum mDeliveryMechanismc:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+
+.field public static final enum mDeliveryMechanismd:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
 
 # instance fields
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lio/fabric/sdk/android/services/common/DeliveryMechanism;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->a:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanisma:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     new-instance v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lio/fabric/sdk/android/services/common/DeliveryMechanism;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->b:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanismb:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     new-instance v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v3, v4}, Lio/fabric/sdk/android/services/common/DeliveryMechanism;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->c:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanismc:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     new-instance v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
@@ -76,24 +76,24 @@
 
     invoke-direct {v0, v1, v4, v6}, Lio/fabric/sdk/android/services/common/DeliveryMechanism;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->d:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanismd:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     .line 25
     new-array v0, v6, [Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
-    sget-object v1, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->a:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sget-object v1, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanisma:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->b:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sget-object v1, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanismb:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->c:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sget-object v1, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanismc:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->d:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sget-object v1, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanismd:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     aput-object v1, v0, v4
 
@@ -135,7 +135,7 @@
     if-eqz v0, :cond_0
 
     .line 52
-    sget-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->c:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sget-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanismc:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     .line 56
     :goto_0
@@ -146,13 +146,13 @@
     if-eqz p0, :cond_1
 
     .line 54
-    sget-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->d:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sget-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanismd:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     goto :goto_0
 
     .line 56
     :cond_1
-    sget-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->a:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sget-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mDeliveryMechanisma:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     goto :goto_0
 .end method

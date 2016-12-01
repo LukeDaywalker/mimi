@@ -19,17 +19,17 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/Event$ICaw;
-
-.field public static final enum b:Lu/aly/Event$ICaw;
-
-.field public static final enum c:Lu/aly/Event$ICaw;
-
-.field public static final enum d:Lu/aly/Event$ICaw;
-
-.field public static final enum e:Lu/aly/Event$ICaw;
-
 .field private static final synthetic mArrayICawi:[Lu/aly/Event$ICaw;
+
+.field public static final enum mICawa:Lu/aly/Event$ICaw;
+
+.field public static final enum mICawb:Lu/aly/Event$ICaw;
+
+.field public static final enum mICawc:Lu/aly/Event$ICaw;
+
+.field public static final enum mICawd:Lu/aly/Event$ICaw;
+
+.field public static final enum mICawe:Lu/aly/Event$ICaw;
 
 .field private static final mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -74,7 +74,7 @@
 
     invoke-direct {v0, v1, v8, v4, v2}, Lu/aly/Event$ICaw;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Event$ICaw;->a:Lu/aly/Event$ICaw;
+    sput-object v0, Lu/aly/Event$ICaw;->mICawa:Lu/aly/Event$ICaw;
 
     .line 56
     new-instance v0, Lu/aly/Event$ICaw;
@@ -85,7 +85,7 @@
 
     invoke-direct {v0, v1, v4, v5, v2}, Lu/aly/Event$ICaw;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Event$ICaw;->b:Lu/aly/Event$ICaw;
+    sput-object v0, Lu/aly/Event$ICaw;->mICawb:Lu/aly/Event$ICaw;
 
     .line 57
     new-instance v0, Lu/aly/Event$ICaw;
@@ -96,7 +96,7 @@
 
     invoke-direct {v0, v1, v5, v6, v2}, Lu/aly/Event$ICaw;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Event$ICaw;->c:Lu/aly/Event$ICaw;
+    sput-object v0, Lu/aly/Event$ICaw;->mICawc:Lu/aly/Event$ICaw;
 
     .line 58
     new-instance v0, Lu/aly/Event$ICaw;
@@ -107,7 +107,7 @@
 
     invoke-direct {v0, v1, v6, v7, v2}, Lu/aly/Event$ICaw;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Event$ICaw;->d:Lu/aly/Event$ICaw;
+    sput-object v0, Lu/aly/Event$ICaw;->mICawd:Lu/aly/Event$ICaw;
 
     .line 59
     new-instance v0, Lu/aly/Event$ICaw;
@@ -120,30 +120,30 @@
 
     invoke-direct {v0, v1, v7, v2, v3}, Lu/aly/Event$ICaw;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Event$ICaw;->e:Lu/aly/Event$ICaw;
+    sput-object v0, Lu/aly/Event$ICaw;->mICawe:Lu/aly/Event$ICaw;
 
     .line 54
     const/4 v0, 0x5
 
     new-array v0, v0, [Lu/aly/Event$ICaw;
 
-    sget-object v1, Lu/aly/Event$ICaw;->a:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawa:Lu/aly/Event$ICaw;
 
     aput-object v1, v0, v8
 
-    sget-object v1, Lu/aly/Event$ICaw;->b:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawb:Lu/aly/Event$ICaw;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/Event$ICaw;->c:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawc:Lu/aly/Event$ICaw;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/Event$ICaw;->d:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawd:Lu/aly/Event$ICaw;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lu/aly/Event$ICaw;->e:Lu/aly/Event$ICaw;
+    sget-object v1, Lu/aly/Event$ICaw;->mICawe:Lu/aly/Event$ICaw;
 
     aput-object v1, v0, v7
 

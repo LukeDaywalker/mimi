@@ -183,7 +183,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->A:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->mInputMethodManagerA:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->mMimiSearchViewn:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 

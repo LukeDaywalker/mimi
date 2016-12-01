@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mIb:I
 
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
@@ -197,7 +197,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 

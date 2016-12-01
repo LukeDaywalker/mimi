@@ -127,7 +127,7 @@
 
     move-result-object v1
 
-    iget-object v3, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->a:Ljava/lang/String;
+    iget-object v3, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mStringa:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mHttpRequestFactoryh:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
@@ -135,7 +135,7 @@
 
     invoke-direct {v2}, Lio/fabric/sdk/android/services/common/ApiKey;-><init>()V
 
-    iget-object v5, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->c:Landroid/content/Context;
+    iget-object v5, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mContextc:Landroid/content/Context;
 
     invoke-virtual {v2, v5}, Lio/fabric/sdk/android/services/common/ApiKey;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -152,19 +152,19 @@
     iput-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mFilesSendera:Lio/fabric/sdk/android/services/events/FilesSender;
 
     .line 45
-    iget-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     check-cast v0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;
 
     invoke-virtual {v0, p1}, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->a(Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;)V
 
     .line 47
-    iget v0, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->b:I
+    iget v0, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIb:I
 
     invoke-virtual {p0, v0}, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->a(I)V
 
     .line 49
-    iget v0, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->g:I
+    iget v0, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIg:I
 
     const/4 v1, 0x1
 
@@ -173,7 +173,7 @@
     .line 50
     new-instance v0, Lcom/crashlytics/android/answers/SamplingEventFilter;
 
-    iget v1, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->g:I
+    iget v1, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIg:I
 
     invoke-direct {v0, v1}, Lcom/crashlytics/android/answers/SamplingEventFilter;-><init>(I)V
 

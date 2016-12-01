@@ -177,7 +177,7 @@
     if-eqz v5, :cond_0
 
     .line 63
-    iget-object v6, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v6, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->isOrganizationValidated()Z
 
@@ -197,7 +197,7 @@
     invoke-virtual {v6, v0, v7}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getCircleStatus()Lcom/wumii/android/mimi/models/entities/circle/CircleStatus;
 
@@ -218,7 +218,7 @@
 
     .line 67
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -280,7 +280,7 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->c(Ljava/lang/Exception;)V
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603b7
 
@@ -374,7 +374,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 46
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "user/profile"
 

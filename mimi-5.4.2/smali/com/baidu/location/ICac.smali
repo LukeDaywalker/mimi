@@ -346,7 +346,7 @@
     :try_start_0
     new-instance v2, Lorg/apache/http/client/methods/HttpPost;
 
-    sget-object v3, Lcom/baidu/location/ICc;->aU:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICc;->mStringaU:Ljava/lang/String;
 
     invoke-direct {v2, v3}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
 
@@ -529,7 +529,7 @@
 
     :cond_0
     :goto_0
-    sget-boolean v0, Lcom/baidu/location/ICaa;->gi:Z
+    sget-boolean v0, Lcom/baidu/location/ICaa;->isZgi:Z
 
     if-nez v0, :cond_2
 

@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static isZa:Z
 
 
 # direct methods
@@ -19,12 +19,12 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/location/CommonEncrypt;->a:Z
+    sput-boolean v0, Lcom/baidu/location/CommonEncrypt;->isZa:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    sput-boolean v1, Lcom/baidu/location/CommonEncrypt;->a:Z
+    sput-boolean v1, Lcom/baidu/location/CommonEncrypt;->isZa:Z
 
     return-void
 
@@ -33,7 +33,7 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/baidu/location/CommonEncrypt;->a:Z
+    sput-boolean v0, Lcom/baidu/location/CommonEncrypt;->isZa:Z
 
     goto :goto_0
 .end method
@@ -49,7 +49,7 @@
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    sget-boolean v0, Lcom/baidu/location/CommonEncrypt;->a:Z
+    sget-boolean v0, Lcom/baidu/location/CommonEncrypt;->isZa:Z
 
     if-nez v0, :cond_0
 

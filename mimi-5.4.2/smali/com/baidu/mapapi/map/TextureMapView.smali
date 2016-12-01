@@ -642,7 +642,7 @@
 
     move-result-object v0
 
-    iget v3, v0, Lcom/baidu/platform/comapi/map/B;->a:F
+    iget v3, v0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     iget-object v4, p0, Lcom/baidu/mapapi/map/TextureMapView;->mZoomControlsf:Landroid/widget/ZoomControls;
 
@@ -652,7 +652,7 @@
 
     move-result-object v0
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/ICc;->b:F
+    iget v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mFb:F
 
     cmpg-float v0, v3, v0
 
@@ -671,7 +671,7 @@
 
     move-result-object v4
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/ICc;->a:F
+    iget v4, v4, Lcom/baidu/platform/comapi/map/ICc;->mFa:F
 
     cmpl-float v3, v3, v4
 

@@ -21,7 +21,7 @@
 
     .prologue
     .line 14
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->mDiscoverManagerp:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->mDiscoverManagerp:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -55,7 +55,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->mDiscoverManagerp:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 

@@ -31,11 +31,11 @@
 
     .prologue
     .line 24
-    sget-object v3, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v3, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    sget-object v4, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v4, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    sget-object v5, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v5, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     move-object v0, p0
 
@@ -243,11 +243,11 @@
 
     .prologue
     .line 82
-    sget-object v3, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v3, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    sget-object v4, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v4, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    sget-object v5, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v5, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v6, "pre_permission_contact"
 

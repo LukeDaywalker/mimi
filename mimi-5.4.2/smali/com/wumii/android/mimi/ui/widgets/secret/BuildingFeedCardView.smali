@@ -38,13 +38,13 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/BuildingFeedCardView;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/BuildingFeedCardView;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/BuildingFeedCardView;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/BuildingFeedCardView;->mIb:I
 
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 

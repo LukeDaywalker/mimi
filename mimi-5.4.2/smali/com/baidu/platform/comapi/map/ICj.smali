@@ -485,9 +485,9 @@
 
     iget-wide v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mJg:J
 
-    sget v2, Lcom/baidu/platform/comapi/map/C;->a:I
+    sget v2, Lcom/baidu/platform/comapi/map/C;->mIa:I
 
-    sget v3, Lcom/baidu/platform/comapi/map/C;->b:I
+    sget v3, Lcom/baidu/platform/comapi/map/C;->mIb:I
 
     invoke-static {v0, v1, v2, v3}, Lcom/baidu/platform/comapi/map/MapRenderer;->nativeResize(JII)V
 
@@ -705,7 +705,7 @@
 
     iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
-    iget v4, v2, Lcom/baidu/platform/comapi/map/B;->c:I
+    iget v4, v2, Lcom/baidu/platform/comapi/map/B;->mIc:I
 
     int-to-float v4, v4
 
@@ -713,7 +713,7 @@
 
     iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
-    iget v4, v2, Lcom/baidu/platform/comapi/map/B;->b:I
+    iget v4, v2, Lcom/baidu/platform/comapi/map/B;->mIb:I
 
     int-to-float v4, v4
 

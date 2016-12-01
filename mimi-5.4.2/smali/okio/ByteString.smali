@@ -192,7 +192,7 @@
     :cond_0
     new-instance v0, Lokio/ByteString;
 
-    sget-object v1, Lokio/Util;->a:Ljava/nio/charset/Charset;
+    sget-object v1, Lokio/Util;->mCharseta:Ljava/nio/charset/Charset;
 
     invoke-virtual {p0, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
@@ -388,7 +388,7 @@
 
     iget-object v1, p0, Lokio/ByteString;->c:[B
 
-    sget-object v2, Lokio/Util;->a:Ljava/nio/charset/Charset;
+    sget-object v2, Lokio/Util;->mCharseta:Ljava/nio/charset/Charset;
 
     invoke-direct {v0, v1, v2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 

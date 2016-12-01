@@ -47,7 +47,7 @@
 
     const/4 v3, 0x0
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -131,7 +131,7 @@
     if-eqz v0, :cond_6
 
     :cond_1
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_2
 
@@ -148,7 +148,7 @@
 
     move-result-object v4
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_3
 
@@ -183,7 +183,7 @@
 
     if-le v0, v1, :cond_5
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_4
 
@@ -229,7 +229,7 @@
 
     if-ne v0, v1, :cond_8
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_7
 
@@ -253,7 +253,7 @@
     goto :goto_0
 
     :cond_8
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_9
 

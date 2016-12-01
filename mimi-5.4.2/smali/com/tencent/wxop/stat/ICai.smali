@@ -504,7 +504,7 @@
 
     if-eqz v0, :cond_8
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICw;->a:Lcom/tencent/wxop/stat/ICw;
+    sget-object v0, Lcom/tencent/wxop/stat/ICw;->mICwa:Lcom/tencent/wxop/stat/ICw;
 
     iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
@@ -527,7 +527,7 @@
 
     if-eqz v0, :cond_9
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICw;->a:Lcom/tencent/wxop/stat/ICw;
+    sget-object v0, Lcom/tencent/wxop/stat/ICw;->mICwa:Lcom/tencent/wxop/stat/ICw;
 
     iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICwb:Lcom/tencent/wxop/stat/ICw;
 

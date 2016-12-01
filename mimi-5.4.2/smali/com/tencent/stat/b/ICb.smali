@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field protected a:Lcom/tencent/stat/b/ICc;
+.field protected mICca:Lcom/tencent/stat/b/ICc;
 
 .field private mJg:J
 
@@ -18,13 +18,13 @@
 
     invoke-direct {v0}, Lcom/tencent/stat/b/ICc;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/stat/b/ICb;->a:Lcom/tencent/stat/b/ICc;
+    iput-object v0, p0, Lcom/tencent/stat/b/ICb;->mICca:Lcom/tencent/stat/b/ICc;
 
     const-wide/16 v0, -0x1
 
     iput-wide v0, p0, Lcom/tencent/stat/b/ICb;->mJg:J
 
-    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->a:Lcom/tencent/stat/b/ICc;
+    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->mICca:Lcom/tencent/stat/b/ICc;
 
     iput-object p3, v0, Lcom/tencent/stat/b/ICc;->mStringa:Ljava/lang/String;
 
@@ -36,7 +36,7 @@
 .method public a()Lcom/tencent/stat/b/ICf;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/b/ICf;->d:Lcom/tencent/stat/b/ICf;
+    sget-object v0, Lcom/tencent/stat/b/ICf;->mICfd:Lcom/tencent/stat/b/ICf;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 .method public a([Ljava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->a:Lcom/tencent/stat/b/ICc;
+    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->mICca:Lcom/tencent/stat/b/ICc;
 
     iput-object p1, v0, Lcom/tencent/stat/b/ICc;->mArrayStringb:[Ljava/lang/String;
 
@@ -56,7 +56,7 @@
 
     const-string/jumbo v0, "ei"
 
-    iget-object v1, p0, Lcom/tencent/stat/b/ICb;->a:Lcom/tencent/stat/b/ICc;
+    iget-object v1, p0, Lcom/tencent/stat/b/ICb;->mICca:Lcom/tencent/stat/b/ICc;
 
     iget-object v1, v1, Lcom/tencent/stat/b/ICc;->mStringa:Ljava/lang/String;
 
@@ -77,7 +77,7 @@
     invoke-virtual {p1, v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->a:Lcom/tencent/stat/b/ICc;
+    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->mICca:Lcom/tencent/stat/b/ICc;
 
     iget-object v0, v0, Lcom/tencent/stat/b/ICc;->mArrayStringb:[Ljava/lang/String;
 
@@ -87,7 +87,7 @@
 
     invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
 
-    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->a:Lcom/tencent/stat/b/ICc;
+    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->mICca:Lcom/tencent/stat/b/ICc;
 
     iget-object v2, v0, Lcom/tencent/stat/b/ICc;->mArrayStringb:[Ljava/lang/String;
 
@@ -112,7 +112,7 @@
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     :cond_2
-    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->a:Lcom/tencent/stat/b/ICc;
+    iget-object v0, p0, Lcom/tencent/stat/b/ICb;->mICca:Lcom/tencent/stat/b/ICc;
 
     iget-object v0, v0, Lcom/tencent/stat/b/ICc;->mPropertiesc:Ljava/util/Properties;
 
@@ -120,7 +120,7 @@
 
     new-instance v0, Lorg/json/JSONObject;
 
-    iget-object v1, p0, Lcom/tencent/stat/b/ICb;->a:Lcom/tencent/stat/b/ICc;
+    iget-object v1, p0, Lcom/tencent/stat/b/ICb;->mICca:Lcom/tencent/stat/b/ICc;
 
     iget-object v1, v1, Lcom/tencent/stat/b/ICc;->mPropertiesc:Ljava/util/Properties;
 

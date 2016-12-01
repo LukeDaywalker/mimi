@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field public br:J
-
-.field public bu:Z
+.field public isZbu:Z
 
 .field private mJbq:J
+
+.field public mJbr:J
 
 .field private mJbs:J
 
@@ -40,9 +40,9 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICg;->bu:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICg;->isZbu:Z
 
-    iput-wide v2, p0, Lcom/baidu/location/ICg;->br:J
+    iput-wide v2, p0, Lcom/baidu/location/ICg;->mJbr:J
 
     iput-wide v2, p0, Lcom/baidu/location/ICg;->mJbq:J
 
@@ -75,7 +75,7 @@
 .method public i()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICg;->bu:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICg;->isZbu:Z
 
     if-eqz v0, :cond_0
 
@@ -128,7 +128,7 @@
 
     const-wide/16 v4, 0x0
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICg;->bu:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICg;->isZbu:Z
 
     if-eqz v0, :cond_1
 
@@ -179,11 +179,11 @@
 
     sub-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/baidu/location/ICg;->br:J
+    iput-wide v0, p0, Lcom/baidu/location/ICg;->mJbr:J
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICg;->bu:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICg;->isZbu:Z
 
     goto :goto_0
 .end method

@@ -35,14 +35,14 @@
 
     iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->mEpicenterViewa:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
-    iget-object v0, v0, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;->a:Landroid/view/View;
+    iget-object v0, v0, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;->mViewa:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     .line 217
     iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->mEpicenterViewa:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
-    iget-object v0, v0, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;->a:Landroid/view/View;
+    iget-object v0, v0, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;->mViewa:Landroid/view/View;
 
     invoke-static {v0}, Landroid/support/v4/app/FragmentTransitionCompat21;->b(Landroid/view/View;)Landroid/graphics/Rect;
 

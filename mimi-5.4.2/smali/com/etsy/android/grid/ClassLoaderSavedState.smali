@@ -18,7 +18,7 @@
     .end annotation
 .end field
 
-.field public static final a:Lcom/etsy/android/grid/ClassLoaderSavedState;
+.field public static final mClassLoaderSavedStatea:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
 
 # instance fields
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Lcom/etsy/android/grid/ClassLoaderSavedState$1;-><init>()V
 
-    sput-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
+    sput-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderSavedStatea:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
     .line 82
     new-instance v0, Lcom/etsy/android/grid/ClassLoaderSavedState$ICa;
@@ -59,7 +59,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
+    sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderSavedStatea:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
     iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
@@ -84,7 +84,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
+    sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderSavedStatea:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
     iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
@@ -111,7 +111,7 @@
 
     .line 65
     :cond_0
-    sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
+    sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderSavedStatea:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
     goto :goto_0
 .end method
@@ -126,7 +126,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    sget-object v1, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
+    sget-object v1, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderSavedStatea:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
     iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
@@ -150,7 +150,7 @@
 
     .line 53
     :cond_0
-    sget-object v1, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
+    sget-object v1, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderSavedStatea:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
     if-eq p1, v1, :cond_1
 

@@ -459,7 +459,7 @@
     .line 243
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->mAuditionRecordClientD:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
@@ -855,7 +855,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->j()V
 
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -880,7 +880,7 @@
     if-nez v0, :cond_0
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 

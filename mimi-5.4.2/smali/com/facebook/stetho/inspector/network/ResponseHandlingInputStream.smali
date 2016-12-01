@@ -243,9 +243,9 @@
     :try_start_3
     iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
-    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -364,9 +364,9 @@
     .line 262
     iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -482,9 +482,9 @@
     .line 174
     iget-object v2, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
-    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
-    sget-object v4, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v4, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
     new-instance v5, Ljava/lang/StringBuilder;
 

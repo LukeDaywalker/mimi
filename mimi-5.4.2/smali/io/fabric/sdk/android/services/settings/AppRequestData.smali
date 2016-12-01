@@ -4,27 +4,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/lang/String;
-
-.field public final c:Ljava/lang/String;
-
-.field public final d:Ljava/lang/String;
-
-.field public final e:Ljava/lang/String;
-
-.field public final f:Ljava/lang/String;
-
-.field public final g:I
-
-.field public final h:Ljava/lang/String;
-
-.field public final i:Ljava/lang/String;
-
-.field public final j:Lio/fabric/sdk/android/services/settings/IconRequest;
-
-.field public final k:Ljava/util/Collection;
+.field public final mCollectionk:Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Collection",
@@ -34,6 +14,26 @@
         }
     .end annotation
 .end field
+
+.field public final mIconRequestj:Lio/fabric/sdk/android/services/settings/IconRequest;
+
+.field public final mIg:I
+
+.field public final mStringa:Ljava/lang/String;
+
+.field public final mStringb:Ljava/lang/String;
+
+.field public final mStringc:Ljava/lang/String;
+
+.field public final mStringd:Ljava/lang/String;
+
+.field public final mStringe:Ljava/lang/String;
+
+.field public final mStringf:Ljava/lang/String;
+
+.field public final mStringh:Ljava/lang/String;
+
+.field public final mStringi:Ljava/lang/String;
 
 
 # direct methods
@@ -64,37 +64,37 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 48
-    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mStringa:Ljava/lang/String;
 
     .line 49
-    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->b:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mStringb:Ljava/lang/String;
 
     .line 50
-    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->c:Ljava/lang/String;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mStringc:Ljava/lang/String;
 
     .line 51
-    iput-object p4, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->d:Ljava/lang/String;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mStringd:Ljava/lang/String;
 
     .line 53
-    iput-object p5, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->e:Ljava/lang/String;
+    iput-object p5, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mStringe:Ljava/lang/String;
 
     .line 54
-    iput-object p6, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->f:Ljava/lang/String;
+    iput-object p6, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mStringf:Ljava/lang/String;
 
     .line 55
-    iput p7, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->g:I
+    iput p7, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mIg:I
 
     .line 56
-    iput-object p8, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->h:Ljava/lang/String;
+    iput-object p8, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mStringh:Ljava/lang/String;
 
     .line 57
-    iput-object p9, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->i:Ljava/lang/String;
+    iput-object p9, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mStringi:Ljava/lang/String;
 
     .line 58
-    iput-object p10, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->j:Lio/fabric/sdk/android/services/settings/IconRequest;
+    iput-object p10, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mIconRequestj:Lio/fabric/sdk/android/services/settings/IconRequest;
 
     .line 59
-    iput-object p11, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->k:Ljava/util/Collection;
+    iput-object p11, p0, Lio/fabric/sdk/android/services/settings/AppRequestData;->mCollectionk:Ljava/util/Collection;
 
     .line 60
     return-void

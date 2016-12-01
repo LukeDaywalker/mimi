@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -82,7 +82,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 69
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mContextb:Landroid/content/Context;
 
     const v2, 0x7f060026
 
@@ -223,7 +223,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mContextb:Landroid/content/Context;
 
     const v1, 0x7f06037b
 
@@ -232,7 +232,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mContextb:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 
@@ -264,7 +264,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603b6
 
@@ -314,7 +314,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "feedback"
 

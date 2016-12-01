@@ -105,19 +105,19 @@
 
     iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
     iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->e:D
+    iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->mDe:D
 
     iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
     iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->f:D
+    iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->mDf:D
 
     iget v10, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
@@ -133,19 +133,19 @@
 
     iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->e:D
+    iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->mDe:D
 
     iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
     iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->b:D
+    iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->mDb:D
 
     iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->f:D
+    iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->mDf:D
 
     iget v10, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
@@ -161,19 +161,19 @@
 
     iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->a:D
+    iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->mDa:D
 
     iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->e:D
+    iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->mDe:D
 
     iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->f:D
+    iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->mDf:D
 
     iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     iget v10, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
@@ -189,19 +189,19 @@
 
     iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->e:D
+    iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->mDe:D
 
     iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->c:D
+    iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->mDc:D
 
     iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->f:D
+    iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->mDf:D
 
     iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->d:D
+    iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->mDd:D
 
     iget v10, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
@@ -276,7 +276,7 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->f:D
+    iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->mDf:D
 
     cmpg-double v0, p3, v0
 
@@ -284,7 +284,7 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->e:D
+    iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->mDe:D
 
     cmpg-double v0, p1, v0
 
@@ -336,7 +336,7 @@
     :cond_2
     iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->e:D
+    iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->mDe:D
 
     cmpg-double v0, p1, v0
 

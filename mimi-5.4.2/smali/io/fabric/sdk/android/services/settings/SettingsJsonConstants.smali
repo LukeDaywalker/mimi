@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
+.field public static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .line 58
     const/4 v0, 0x0
 
-    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsJsonConstants;->a:Ljava/lang/String;
+    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsJsonConstants;->mStringa:Ljava/lang/String;
 
     return-void
 .end method

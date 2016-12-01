@@ -122,7 +122,7 @@
 
     move-result-object v0
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/SenderRole;->mSenderRolec:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-eq v0, v4, :cond_1
 

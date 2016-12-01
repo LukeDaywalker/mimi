@@ -180,7 +180,7 @@
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->n()V
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->f:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwf:Lcom/tencent/wxop/stat/ICw;
 
     invoke-static {v1}, Lcom/tencent/wxop/stat/ICv;->a(Lcom/tencent/wxop/stat/ICw;)V
 
@@ -518,15 +518,15 @@
 
     invoke-direct {v0}, Lcom/tencent/mm/sdk/a/ICa$ICa;-><init>()V
 
-    iput-object p2, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->n:Landroid/os/Bundle;
+    iput-object p2, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->mBundlen:Landroid/os/Bundle;
 
     const-string/jumbo v1, "com.tencent.mm"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringk:Ljava/lang/String;
 
     sget-object v1, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->wxappPayEntryClassname:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringl:Ljava/lang/String;
 
     invoke-static {p1, v0}, Lcom/tencent/mm/sdk/a/ICa;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/ICa$ICa;)Z
 
@@ -1227,11 +1227,11 @@
 
     const-string/jumbo v1, "com.tencent.mm"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->o:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringo:Ljava/lang/String;
 
     const-string/jumbo v1, "com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_REGISTER"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->p:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringp:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1249,7 +1249,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->m:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringm:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 
@@ -1457,7 +1457,7 @@
 
     invoke-direct {v1}, Lcom/tencent/mm/sdk/a/ICa$ICa;-><init>()V
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->n:Landroid/os/Bundle;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mBundlen:Landroid/os/Bundle;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1475,15 +1475,15 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->m:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringm:Ljava/lang/String;
 
     const-string/jumbo v0, "com.tencent.mm"
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringk:Ljava/lang/String;
 
     const-string/jumbo v0, "com.tencent.mm.plugin.base.stub.WXEntryActivity"
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringl:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 
@@ -1559,7 +1559,7 @@
 
     invoke-direct {v1}, Lcom/tencent/mm/sdk/a/ICa$ICa;-><init>()V
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->n:Landroid/os/Bundle;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mBundlen:Landroid/os/Bundle;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1577,15 +1577,15 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->m:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringm:Ljava/lang/String;
 
     const-string/jumbo v0, "com.tencent.mm"
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringk:Ljava/lang/String;
 
     const-string/jumbo v0, "com.tencent.mm.plugin.base.stub.WXEntryActivity"
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringl:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 
@@ -1706,11 +1706,11 @@
 
     const-string/jumbo v1, "com.tencent.mm"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->o:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringo:Ljava/lang/String;
 
     const-string/jumbo v1, "com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_UNREGISTER"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->p:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringp:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1728,7 +1728,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->m:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->mStringm:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 

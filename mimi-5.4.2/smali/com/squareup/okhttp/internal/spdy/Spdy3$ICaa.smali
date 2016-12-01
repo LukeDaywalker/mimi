@@ -116,7 +116,7 @@
 
     .line 202
     :goto_1
-    sget-object v6, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->a:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v6, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModea:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     move-object v0, p1
 
@@ -176,7 +176,7 @@
     :goto_0
     const/4 v4, -0x1
 
-    sget-object v6, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->b:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v6, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModeb:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     move-object v0, p1
 
@@ -303,7 +303,7 @@
     .line 229
     const/4 v4, -0x1
 
-    sget-object v6, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->c:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v6, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModec:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     move-object v0, p1
 

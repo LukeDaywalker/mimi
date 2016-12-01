@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final b:Ljava/lang/String;
+.field protected final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/NamedRunnable;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/NamedRunnable;->mStringb:Ljava/lang/String;
 
     .line 27
     return-void
@@ -52,7 +52,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/NamedRunnable;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/NamedRunnable;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 

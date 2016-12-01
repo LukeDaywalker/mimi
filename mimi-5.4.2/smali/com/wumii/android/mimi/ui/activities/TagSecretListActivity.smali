@@ -371,7 +371,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->c(Ljava/lang/String;)V
 
     .line 151
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
@@ -402,7 +402,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->mFeedModules:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     .line 153
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
@@ -462,7 +462,7 @@
     if-eqz v1, :cond_2
 
     .line 166
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -523,7 +523,7 @@
     if-eqz v1, :cond_0
 
     .line 168
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -560,7 +560,7 @@
 
     .line 200
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 

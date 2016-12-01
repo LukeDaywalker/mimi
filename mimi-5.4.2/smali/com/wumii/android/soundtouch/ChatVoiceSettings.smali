@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static a:Ljava/lang/String;
+.field public static mStringa:Ljava/lang/String;
 
-.field public static b:Ljava/lang/String;
+.field public static mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -17,12 +17,12 @@
     .line 7
     const-string/jumbo v0, ".amr"
 
-    sput-object v0, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->a:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->mStringa:Ljava/lang/String;
 
     .line 8
     const-string/jumbo v0, ".nomedia"
 
-    sput-object v0, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->b:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->mStringb:Ljava/lang/String;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->b:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

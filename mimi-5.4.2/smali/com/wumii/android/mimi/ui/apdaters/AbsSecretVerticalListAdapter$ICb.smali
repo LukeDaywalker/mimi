@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field public a:Landroid/widget/RelativeLayout;
+.field public mContexte:Landroid/content/Context;
 
-.field public b:Landroid/widget/ImageView;
+.field public mImageViewb:Landroid/widget/ImageView;
 
-.field public c:Landroid/widget/TextView;
+.field public mRelativeLayouta:Landroid/widget/RelativeLayout;
 
-.field public d:Landroid/widget/TextView;
+.field public mResourcesf:Landroid/content/res/Resources;
 
-.field public e:Landroid/content/Context;
+.field public mTextViewc:Landroid/widget/TextView;
 
-.field public f:Landroid/content/res/Resources;
+.field public mTextViewd:Landroid/widget/TextView;
 
 .field private mViewg:Landroid/view/View;
 
@@ -45,7 +45,7 @@
     .line 127
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->a:Landroid/widget/RelativeLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     .line 128
     const v0, 0x7f0b0039
@@ -74,7 +74,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mImageViewb:Landroid/widget/ImageView;
 
     .line 131
     const v0, 0x7f0b0036
@@ -85,7 +85,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mTextViewd:Landroid/widget/TextView;
 
     .line 132
     const v0, 0x7f0b003b
@@ -96,25 +96,25 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mTextViewc:Landroid/widget/TextView;
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->a:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0}, Landroid/widget/RelativeLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->e:Landroid/content/Context;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mContexte:Landroid/content/Context;
 
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->e:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mContexte:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->f:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mResourcesf:Landroid/content/res/Resources;
 
     .line 136
     return-void
@@ -132,13 +132,13 @@
     if-nez v0, :cond_0
 
     .line 161
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 163
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mTextViewc:Landroid/widget/TextView;
 
     invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
@@ -171,7 +171,7 @@
 
     .prologue
     .line 155
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->a(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -180,9 +180,9 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
     .line 156
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mTextViewd:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->f:Landroid/content/res/Resources;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mResourcesf:Landroid/content/res/Resources;
 
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->d(Ljava/lang/Object;)Z
 
@@ -256,7 +256,7 @@
 
     .prologue
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->a:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     const v1, 0x7f0b0024
 
@@ -309,7 +309,7 @@
 
     move-result-object v0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->b:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 

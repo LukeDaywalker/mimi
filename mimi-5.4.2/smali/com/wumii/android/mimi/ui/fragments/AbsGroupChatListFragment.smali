@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
-
-.field protected b:Lcom/wumii/android/mimi/manager/GroupListManager;
-
 .field private isZd:Z
+
+.field protected mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+
+.field protected mGroupListManagerb:Lcom/wumii/android/mimi/manager/GroupListManager;
 
 .field private mObserverc:Ljava/util/Observer;
 
@@ -99,9 +99,9 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->b:Lcom/wumii/android/mimi/manager/GroupListManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mGroupListManagerb:Lcom/wumii/android/mimi/manager/GroupListManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/GroupListManager;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;)V
 
@@ -124,7 +124,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mObserverc:Ljava/util/Observer;
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->b:Lcom/wumii/android/mimi/manager/GroupListManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mGroupListManagerb:Lcom/wumii/android/mimi/manager/GroupListManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mObserverc:Ljava/util/Observer;
 
@@ -154,7 +154,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mGroupChatTypea:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     .line 47
     invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->b:Lcom/wumii/android/mimi/manager/GroupListManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mGroupListManagerb:Lcom/wumii/android/mimi/manager/GroupListManager;
 
     .line 48
     return-void
@@ -179,7 +179,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->onDestroy()V
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->b:Lcom/wumii/android/mimi/manager/GroupListManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mGroupListManagerb:Lcom/wumii/android/mimi/manager/GroupListManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mObserverc:Ljava/util/Observer;
 

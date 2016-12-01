@@ -105,7 +105,7 @@
     iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mTextViewe:Landroid/widget/TextView;
 
     .line 42
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mICbnc:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 

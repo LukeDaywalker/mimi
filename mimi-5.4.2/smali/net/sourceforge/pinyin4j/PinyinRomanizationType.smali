@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field protected g:Ljava/lang/String;
+.field protected mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -104,7 +104,7 @@
 
     .prologue
     .line 77
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/PinyinRomanizationType;->g:Ljava/lang/String;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/PinyinRomanizationType;->mStringg:Ljava/lang/String;
 
     .line 78
     return-void

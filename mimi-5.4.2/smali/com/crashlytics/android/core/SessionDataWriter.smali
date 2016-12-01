@@ -568,7 +568,7 @@
     .line 417
     const/4 v0, 0x1
 
-    iget v1, p1, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->h:I
+    iget v1, p1, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mIh:I
 
     invoke-static {v0, v1}, Lcom/crashlytics/android/core/CodedOutputStream;->e(II)I
 
@@ -2812,7 +2812,7 @@
 
     check-cast v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
-    iget v5, v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->h:I
+    iget v5, v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mIh:I
 
     move-object/from16 v0, p1
 

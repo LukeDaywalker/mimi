@@ -232,7 +232,7 @@
     .line 520
     new-instance v0, Ljava/util/HashMap;
 
-    iget v3, v2, Lu/aly/TMap;->c:I
+    iget v3, v2, Lu/aly/TMap;->mIc:I
 
     mul-int/lit8 v3, v3, 0x2
 
@@ -244,7 +244,7 @@
 
     .line 521
     :goto_0
-    iget v3, v2, Lu/aly/TMap;->c:I
+    iget v3, v2, Lu/aly/TMap;->mIc:I
 
     if-ge v0, v3, :cond_0
 
@@ -301,7 +301,7 @@
     .line 536
     new-instance v3, Ljava/util/ArrayList;
 
-    iget v4, v2, Lu/aly/TList;->b:I
+    iget v4, v2, Lu/aly/TList;->mIb:I
 
     invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(I)V
 
@@ -309,7 +309,7 @@
 
     .line 537
     :goto_1
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     if-ge v1, v3, :cond_1
 

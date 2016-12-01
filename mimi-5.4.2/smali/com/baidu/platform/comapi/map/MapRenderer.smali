@@ -10,15 +10,15 @@
 
 
 # instance fields
-.field public a:I
-
-.field public b:I
-
-.field public c:I
-
 .field private mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
 
 .field private final mICgg:Lcom/baidu/platform/comapi/map/ICg;
+
+.field public mIa:I
+
+.field public mIb:I
+
+.field public mIc:I
 
 .field private mJe:J
 
@@ -131,23 +131,23 @@
     return-void
 
     :cond_1
-    iget v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->c:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mIc:I
 
     if-gt v0, v6, :cond_2
 
     iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
-    iget v2, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->a:I
+    iget v2, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mIa:I
 
-    iget v3, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->b:I
+    iget v3, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mIb:I
 
     invoke-static {v0, v1, v2, v3}, Lcom/baidu/platform/comapi/map/MapRenderer;->nativeResize(JII)V
 
-    iget v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->c:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mIc:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->c:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mIc:I
 
     :cond_2
     iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
@@ -197,13 +197,13 @@
 
     invoke-interface {p1}, Ljavax/microedition/khronos/opengles/GL10;->glPushMatrix()V
 
-    iget v4, v3, Lcom/baidu/platform/comapi/map/B;->c:I
+    iget v4, v3, Lcom/baidu/platform/comapi/map/B;->mIc:I
 
     int-to-float v4, v4
 
     invoke-interface {p1, v4, v7, v5, v5}, Ljavax/microedition/khronos/opengles/GL10;->glRotatef(FFFF)V
 
-    iget v4, v3, Lcom/baidu/platform/comapi/map/B;->b:I
+    iget v4, v3, Lcom/baidu/platform/comapi/map/B;->mIb:I
 
     int-to-float v4, v4
 

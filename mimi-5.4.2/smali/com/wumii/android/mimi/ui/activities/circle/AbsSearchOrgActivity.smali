@@ -12,11 +12,11 @@
 
 .field private isZr:Z
 
+.field protected mFragmentManagern:Landroid/support/v4/app/FragmentManager;
+
 .field private mOrgInfoBaseFragmento:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
 
 .field private mStringp:Ljava/lang/String;
-
-.field protected n:Landroid/support/v4/app/FragmentManager;
 
 
 # direct methods
@@ -40,7 +40,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mOrgInfoBaseFragmento:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->n:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mFragmentManagern:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->a()Landroid/support/v4/app/FragmentTransaction;
 
@@ -55,7 +55,7 @@
     if-eqz p2, :cond_0
 
     .line 59
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->n:Landroid/support/v4/app/FragmentManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mFragmentManagern:Landroid/support/v4/app/FragmentManager;
 
     const/4 v2, 0x1
 
@@ -141,7 +141,7 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->n:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mFragmentManagern:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->d()I
 
@@ -163,14 +163,14 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onBackPressed()V
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->n:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mFragmentManagern:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->e()Ljava/util/List;
 
     move-result-object v0
 
     .line 111
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->n:Landroid/support/v4/app/FragmentManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mFragmentManagern:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v1}, Landroid/support/v4/app/FragmentManager;->d()I
 
@@ -217,7 +217,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->n:Landroid/support/v4/app/FragmentManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mFragmentManagern:Landroid/support/v4/app/FragmentManager;
 
     .line 42
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->getIntent()Landroid/content/Intent;
@@ -243,7 +243,7 @@
     invoke-direct {p0, v0, v2}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->a(Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;Z)V
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -256,7 +256,7 @@
     if-eqz v0, :cond_0
 
     .line 48
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -266,7 +266,7 @@
 
     .line 50
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

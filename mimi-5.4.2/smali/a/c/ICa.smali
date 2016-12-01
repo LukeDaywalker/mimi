@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field protected final a:Ljava/io/DataInput;
+.field protected final mDataInputa:Ljava/io/DataInput;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iput-object p1, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     return-void
 .end method
@@ -25,7 +25,7 @@
 .method public readBoolean()Z
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readBoolean()Z
 
@@ -37,7 +37,7 @@
 .method public readByte()B
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readByte()B
 
@@ -49,7 +49,7 @@
 .method public readChar()C
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readChar()C
 
@@ -61,7 +61,7 @@
 .method public readDouble()D
     .locals 2
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readDouble()D
 
@@ -73,7 +73,7 @@
 .method public readFloat()F
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readFloat()F
 
@@ -85,7 +85,7 @@
 .method public readFully([B)V
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0, p1}, Ljava/io/DataInput;->readFully([B)V
 
@@ -95,7 +95,7 @@
 .method public readFully([BII)V
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0, p1, p2, p3}, Ljava/io/DataInput;->readFully([BII)V
 
@@ -105,7 +105,7 @@
 .method public readInt()I
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readInt()I
 
@@ -117,7 +117,7 @@
 .method public readLine()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readLine()Ljava/lang/String;
 
@@ -129,7 +129,7 @@
 .method public readLong()J
     .locals 2
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readLong()J
 
@@ -141,7 +141,7 @@
 .method public readShort()S
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readShort()S
 
@@ -153,7 +153,7 @@
 .method public readUTF()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readUTF()Ljava/lang/String;
 
@@ -165,7 +165,7 @@
 .method public readUnsignedByte()I
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readUnsignedByte()I
 
@@ -177,7 +177,7 @@
 .method public readUnsignedShort()I
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0}, Ljava/io/DataInput;->readUnsignedShort()I
 
@@ -189,7 +189,7 @@
 .method public skipBytes(I)I
     .locals 1
 
-    iget-object v0, p0, La/c/ICa;->a:Ljava/io/DataInput;
+    iget-object v0, p0, La/c/ICa;->mDataInputa:Ljava/io/DataInput;
 
     invoke-interface {v0, p1}, Ljava/io/DataInput;->skipBytes(I)I
 

@@ -127,19 +127,19 @@
 
     move-object/from16 v0, p0
 
-    iget v6, v0, Lcom/baidu/platform/comapi/map/B;->b:I
+    iget v6, v0, Lcom/baidu/platform/comapi/map/B;->mIb:I
 
     int-to-float v8, v6
 
     move-object/from16 v0, p0
 
-    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/B;->e:D
+    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/B;->mDe:D
 
     move-wide/from16 v16, v0
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/baidu/platform/comapi/map/B;->d:D
+    iget-wide v14, v0, Lcom/baidu/platform/comapi/map/B;->mDd:D
 
     new-instance v6, Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -153,23 +153,23 @@
 
     move-object/from16 v0, p0
 
-    iget v6, v0, Lcom/baidu/platform/comapi/map/B;->c:I
+    iget v6, v0, Lcom/baidu/platform/comapi/map/B;->mIc:I
 
     int-to-float v10, v6
 
     move-object/from16 v0, p0
 
-    iget v11, v0, Lcom/baidu/platform/comapi/map/B;->a:F
+    iget v11, v0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     new-instance v12, Landroid/graphics/Point;
 
     move-object/from16 v0, p0
 
-    iget v6, v0, Lcom/baidu/platform/comapi/map/B;->f:I
+    iget v6, v0, Lcom/baidu/platform/comapi/map/B;->mIf:I
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/baidu/platform/comapi/map/B;->g:I
+    iget v7, v0, Lcom/baidu/platform/comapi/map/B;->mIg:I
 
     invoke-direct {v12, v6, v7}, Landroid/graphics/Point;-><init>(II)V
 
@@ -177,9 +177,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v7, v0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
 
-    iget-object v7, v7, Lcom/baidu/platform/comapi/map/B$ICa;->e:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v7, v7, Lcom/baidu/platform/comapi/map/B$ICa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v7, v7, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -189,9 +189,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v7, v0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
 
-    iget-object v7, v7, Lcom/baidu/platform/comapi/map/B$ICa;->e:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v7, v7, Lcom/baidu/platform/comapi/map/B$ICa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v7, v7, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -213,9 +213,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v13, v0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
 
-    iget-object v13, v13, Lcom/baidu/platform/comapi/map/B$ICa;->f:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v13, v13, Lcom/baidu/platform/comapi/map/B$ICa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v13, v13, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -225,9 +225,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v13, v0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
 
-    iget-object v13, v13, Lcom/baidu/platform/comapi/map/B$ICa;->f:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v13, v13, Lcom/baidu/platform/comapi/map/B$ICa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v13, v13, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -249,13 +249,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
 
     move-object/from16 v18, v0
 
     move-object/from16 v0, v18
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->h:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
 
     move-object/from16 v18, v0
 
@@ -273,13 +273,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
 
     move-object/from16 v20, v0
 
     move-object/from16 v0, v20
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->h:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
 
     move-object/from16 v20, v0
 
@@ -309,13 +309,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
 
     move-object/from16 v19, v0
 
     move-object/from16 v0, v19
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->g:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
 
     move-object/from16 v19, v0
 
@@ -333,13 +333,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
 
     move-object/from16 v19, v0
 
     move-object/from16 v0, v19
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->g:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
 
     move-object/from16 v19, v0
 
@@ -435,7 +435,7 @@
 
     float-to-int v0, v0
 
-    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->b:I
+    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->mIb:I
 
     :cond_0
     iget v0, p0, Lcom/baidu/mapapi/map/MapStatus;->zoom:F
@@ -446,7 +446,7 @@
 
     iget v0, p0, Lcom/baidu/mapapi/map/MapStatus;->zoom:F
 
-    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->a:F
+    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     :cond_1
     iget v0, p0, Lcom/baidu/mapapi/map/MapStatus;->overlook:F
@@ -459,7 +459,7 @@
 
     float-to-int v0, v0
 
-    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->c:I
+    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->mIc:I
 
     :cond_2
     iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatus;->target:Lcom/baidu/mapapi/model/LatLng;
@@ -472,11 +472,11 @@
 
     iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->mDb:D
 
-    iput-wide v0, p1, Lcom/baidu/platform/comapi/map/B;->d:D
+    iput-wide v0, p1, Lcom/baidu/platform/comapi/map/B;->mDd:D
 
     iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->mDc:D
 
-    iput-wide v0, p1, Lcom/baidu/platform/comapi/map/B;->e:D
+    iput-wide v0, p1, Lcom/baidu/platform/comapi/map/B;->mDe:D
 
     :cond_3
     iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatus;->targetScreen:Landroid/graphics/Point;
@@ -487,13 +487,13 @@
 
     iget v0, v0, Landroid/graphics/Point;->x:I
 
-    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->f:I
+    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->mIf:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatus;->targetScreen:Landroid/graphics/Point;
 
     iget v0, v0, Landroid/graphics/Point;->y:I
 
-    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->g:I
+    iput v0, p1, Lcom/baidu/platform/comapi/map/B;->mIg:I
 
     :cond_4
     return-object p1

@@ -2329,7 +2329,7 @@
     check-cast v0, Landroid/support/v4/view/ViewPager$LayoutParams;
 
     .line 461
-    iget-boolean v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -3588,7 +3588,7 @@
     iput v4, v2, Landroid/support/v4/view/ViewPager$LayoutParams;->mIf:I
 
     .line 1114
-    iget-boolean v7, v2, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v7, v2, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-nez v7, :cond_8
 
@@ -4180,7 +4180,7 @@
     check-cast v0, Landroid/support/v4/view/ViewPager$LayoutParams;
 
     .line 1718
-    iget-boolean v9, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v9, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-nez v9, :cond_1
 
@@ -4207,7 +4207,7 @@
 
     .line 1720
     :cond_1
-    iget v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->b:I
+    iget v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->mIb:I
 
     and-int/lit8 v0, v0, 0x7
 
@@ -4347,7 +4347,7 @@
     check-cast v0, Landroid/support/v4/view/ViewPager$LayoutParams;
 
     .line 1757
-    iget-boolean v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-eqz v0, :cond_3
 
@@ -5220,13 +5220,13 @@
     check-cast v0, Landroid/support/v4/view/ViewPager$LayoutParams;
 
     .line 1333
-    iget-boolean v2, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v2, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     instance-of v3, p1, Landroid/support/v4/view/ViewPager$Decor;
 
     or-int/2addr v2, v3
 
-    iput-boolean v2, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iput-boolean v2, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     .line 1334
     iget-boolean v2, p0, Landroid/support/v4/view/ViewPager;->isZw:Z
@@ -5236,7 +5236,7 @@
     .line 1335
     if-eqz v0, :cond_0
 
-    iget-boolean v2, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v2, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-eqz v2, :cond_0
 
@@ -5624,7 +5624,7 @@
     check-cast v0, Landroid/support/v4/view/ViewPager$LayoutParams;
 
     .line 940
-    iget-boolean v6, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v6, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-nez v6, :cond_7
 
@@ -7484,17 +7484,17 @@
     check-cast v1, Landroid/support/v4/view/ViewPager$LayoutParams;
 
     .line 1554
-    iget-boolean v7, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v7, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-eqz v7, :cond_5
 
     .line 1555
-    iget v7, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->b:I
+    iget v7, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->mIb:I
 
     and-int/lit8 v7, v7, 0x7
 
     .line 1556
-    iget v1, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->b:I
+    iget v1, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->mIb:I
 
     and-int/lit8 v14, v1, 0x70
 
@@ -7722,7 +7722,7 @@
     check-cast v1, Landroid/support/v4/view/ViewPager$LayoutParams;
 
     .line 1607
-    iget-boolean v10, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v10, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-nez v10, :cond_2
 
@@ -7995,17 +7995,17 @@
     .line 1427
     if-eqz v0, :cond_3
 
-    iget-boolean v1, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v1, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-eqz v1, :cond_3
 
     .line 1428
-    iget v1, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->b:I
+    iget v1, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->mIb:I
 
     and-int/lit8 v6, v1, 0x7
 
     .line 1429
-    iget v1, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->b:I
+    iget v1, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->mIb:I
 
     and-int/lit8 v4, v1, 0x70
 
@@ -8234,7 +8234,7 @@
     .line 1485
     if-eqz v0, :cond_9
 
-    iget-boolean v5, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->a:Z
+    iget-boolean v5, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isZa:Z
 
     if-nez v5, :cond_a
 

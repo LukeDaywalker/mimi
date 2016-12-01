@@ -32,7 +32,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager;->a:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager;->mStringa:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -62,7 +62,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 

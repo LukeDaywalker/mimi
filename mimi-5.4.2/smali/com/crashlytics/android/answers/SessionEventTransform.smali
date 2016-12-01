@@ -81,96 +81,96 @@
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 41
-    iget-object v1, p1, Lcom/crashlytics/android/answers/SessionEvent;->a:Lcom/crashlytics/android/answers/SessionEventMetadata;
+    iget-object v1, p1, Lcom/crashlytics/android/answers/SessionEvent;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
     .line 42
     const-string/jumbo v2, "appBundleId"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->a:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 43
     const-string/jumbo v2, "executionId"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->b:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 44
     const-string/jumbo v2, "installationId"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->c:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 45
     const-string/jumbo v2, "androidId"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->d:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 46
     const-string/jumbo v2, "advertisingId"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->e:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 47
     const-string/jumbo v2, "betaDeviceToken"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->f:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 48
     const-string/jumbo v2, "buildId"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->g:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 49
     const-string/jumbo v2, "osVersion"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->h:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 50
     const-string/jumbo v2, "deviceModel"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->i:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 51
     const-string/jumbo v2, "appVersionCode"
 
-    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->j:Ljava/lang/String;
+    iget-object v3, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 52
     const-string/jumbo v2, "appVersionName"
 
-    iget-object v1, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->k:Ljava/lang/String;
+    iget-object v1, v1, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringk:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 53
     const-string/jumbo v1, "timestamp"
 
-    iget-wide v2, p1, Lcom/crashlytics/android/answers/SessionEvent;->b:J
+    iget-wide v2, p1, Lcom/crashlytics/android/answers/SessionEvent;->mJb:J
 
     invoke-virtual {v0, v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     .line 54
     const-string/jumbo v1, "type"
 
-    iget-object v2, p1, Lcom/crashlytics/android/answers/SessionEvent;->c:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    iget-object v2, p1, Lcom/crashlytics/android/answers/SessionEvent;->mICrc:Lcom/crashlytics/android/answers/SessionEvent$ICr;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/answers/SessionEvent$ICr;->toString()Ljava/lang/String;
 
@@ -183,7 +183,7 @@
 
     new-instance v2, Lorg/json/JSONObject;
 
-    iget-object v3, p1, Lcom/crashlytics/android/answers/SessionEvent;->d:Ljava/util/Map;
+    iget-object v3, p1, Lcom/crashlytics/android/answers/SessionEvent;->mMapd:Ljava/util/Map;
 
     invoke-direct {v2, v3}, Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V
 
@@ -192,7 +192,7 @@
     .line 56
     const-string/jumbo v1, "customType"
 
-    iget-object v2, p1, Lcom/crashlytics/android/answers/SessionEvent;->e:Ljava/lang/String;
+    iget-object v2, p1, Lcom/crashlytics/android/answers/SessionEvent;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -201,7 +201,7 @@
 
     new-instance v2, Lorg/json/JSONObject;
 
-    iget-object v3, p1, Lcom/crashlytics/android/answers/SessionEvent;->f:Ljava/util/Map;
+    iget-object v3, p1, Lcom/crashlytics/android/answers/SessionEvent;->mMapf:Ljava/util/Map;
 
     invoke-direct {v2, v3}, Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V
 

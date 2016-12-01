@@ -82,7 +82,7 @@
     if-eqz v1, :cond_0
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0602a2
 
@@ -245,7 +245,7 @@
     if-eqz v0, :cond_0
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 
@@ -257,7 +257,7 @@
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventCreateOrg;->a()Ljava/lang/String;
 

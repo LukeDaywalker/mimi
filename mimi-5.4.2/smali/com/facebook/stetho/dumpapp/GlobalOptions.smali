@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Lorg/apache/commons/cli/Option;
+.field public final mOptiona:Lorg/apache/commons/cli/Option;
 
-.field public final b:Lorg/apache/commons/cli/Option;
+.field public final mOptionb:Lorg/apache/commons/cli/Option;
 
-.field public final c:Lorg/apache/commons/cli/Option;
+.field public final mOptionc:Lorg/apache/commons/cli/Option;
 
-.field public final d:Lorg/apache/commons/cli/Options;
+.field public final mOptionsd:Lorg/apache/commons/cli/Options;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0, v1, v2, v4, v3}, Lorg/apache/commons/cli/Option;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->a:Lorg/apache/commons/cli/Option;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptiona:Lorg/apache/commons/cli/Option;
 
     .line 10
     new-instance v0, Lorg/apache/commons/cli/Option;
@@ -47,7 +47,7 @@
 
     invoke-direct {v0, v1, v2, v4, v3}, Lorg/apache/commons/cli/Option;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->b:Lorg/apache/commons/cli/Option;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionb:Lorg/apache/commons/cli/Option;
 
     .line 17
     new-instance v0, Lorg/apache/commons/cli/Option;
@@ -62,33 +62,33 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lorg/apache/commons/cli/Option;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->c:Lorg/apache/commons/cli/Option;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionc:Lorg/apache/commons/cli/Option;
 
     .line 22
     new-instance v0, Lorg/apache/commons/cli/Options;
 
     invoke-direct {v0}, Lorg/apache/commons/cli/Options;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->d:Lorg/apache/commons/cli/Options;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionsd:Lorg/apache/commons/cli/Options;
 
     .line 23
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->d:Lorg/apache/commons/cli/Options;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionsd:Lorg/apache/commons/cli/Options;
 
-    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->a:Lorg/apache/commons/cli/Option;
+    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptiona:Lorg/apache/commons/cli/Option;
 
     invoke-virtual {v0, v1}, Lorg/apache/commons/cli/Options;->a(Lorg/apache/commons/cli/Option;)Lorg/apache/commons/cli/Options;
 
     .line 24
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->d:Lorg/apache/commons/cli/Options;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionsd:Lorg/apache/commons/cli/Options;
 
-    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->b:Lorg/apache/commons/cli/Option;
+    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionb:Lorg/apache/commons/cli/Option;
 
     invoke-virtual {v0, v1}, Lorg/apache/commons/cli/Options;->a(Lorg/apache/commons/cli/Option;)Lorg/apache/commons/cli/Options;
 
     .line 25
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->d:Lorg/apache/commons/cli/Options;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionsd:Lorg/apache/commons/cli/Options;
 
-    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->c:Lorg/apache/commons/cli/Option;
+    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/GlobalOptions;->mOptionc:Lorg/apache/commons/cli/Option;
 
     invoke-virtual {v0, v1}, Lorg/apache/commons/cli/Options;->a(Lorg/apache/commons/cli/Option;)Lorg/apache/commons/cli/Options;
 

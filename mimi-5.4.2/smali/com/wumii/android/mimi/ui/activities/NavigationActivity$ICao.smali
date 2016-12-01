@@ -71,7 +71,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -201,7 +201,7 @@
     .line 432
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -211,7 +211,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v3, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -256,7 +256,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 

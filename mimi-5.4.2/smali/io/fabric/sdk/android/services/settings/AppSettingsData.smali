@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final isZe:Z
 
-.field public final b:Ljava/lang/String;
+.field public final mAppIconSettingsDataf:Lio/fabric/sdk/android/services/settings/AppIconSettingsData;
 
-.field public final c:Ljava/lang/String;
+.field public final mStringa:Ljava/lang/String;
 
-.field public final d:Ljava/lang/String;
+.field public final mStringb:Ljava/lang/String;
 
-.field public final e:Z
+.field public final mStringc:Ljava/lang/String;
 
-.field public final f:Lio/fabric/sdk/android/services/settings/AppIconSettingsData;
+.field public final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -26,22 +26,22 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 39
-    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringa:Ljava/lang/String;
 
     .line 40
-    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->b:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringb:Ljava/lang/String;
 
     .line 41
-    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->c:Ljava/lang/String;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringc:Ljava/lang/String;
 
     .line 42
-    iput-object p4, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->d:Ljava/lang/String;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringd:Ljava/lang/String;
 
     .line 43
-    iput-boolean p5, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->e:Z
+    iput-boolean p5, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->isZe:Z
 
     .line 44
-    iput-object p6, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->f:Lio/fabric/sdk/android/services/settings/AppIconSettingsData;
+    iput-object p6, p0, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mAppIconSettingsDataf:Lio/fabric/sdk/android/services/settings/AppIconSettingsData;
 
     .line 45
     return-void

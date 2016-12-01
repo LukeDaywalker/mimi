@@ -13,9 +13,9 @@
 
 
 # instance fields
-.field public eY:Lcom/baidu/location/ICaj$ICa;
-
 .field private mBDLocationeX:Lcom/baidu/location/BDLocation;
+
+.field public mICaeY:Lcom/baidu/location/ICaj$ICa;
 
 .field private mJeW:J
 
@@ -44,13 +44,13 @@
 
     iput-wide v0, p0, Lcom/baidu/location/ICv;->mJeW:J
 
-    iput-object v2, p0, Lcom/baidu/location/ICv;->eY:Lcom/baidu/location/ICaj$ICa;
+    iput-object v2, p0, Lcom/baidu/location/ICv;->mICaeY:Lcom/baidu/location/ICaj$ICa;
 
     new-instance v0, Lcom/baidu/location/ICaj$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICaj$ICa;-><init>(Lcom/baidu/location/ICaj;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICv;->eY:Lcom/baidu/location/ICaj$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICv;->mICaeY:Lcom/baidu/location/ICaj$ICa;
 
     return-void
 .end method
@@ -133,7 +133,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICv;->eY:Lcom/baidu/location/ICaj$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICv;->mICaeY:Lcom/baidu/location/ICaj$ICa;
 
     invoke-virtual {v1, v0}, Lcom/baidu/location/ICaj$ICa;->e(Ljava/lang/String;)V
 

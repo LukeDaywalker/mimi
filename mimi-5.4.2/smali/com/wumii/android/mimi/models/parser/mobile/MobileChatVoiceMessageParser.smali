@@ -26,7 +26,7 @@
     if-nez v0, :cond_1
 
     .line 13
-    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatVoiceMessageParser;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatVoiceMessageParser;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "mobileChatMessage is not an instance of MobileChatVoiceMessage"
 

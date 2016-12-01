@@ -187,7 +187,7 @@
 
     .prologue
     .line 68
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->b:Lio/fabric/sdk/android/services/concurrency/Priority;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->mPriorityb:Lio/fabric/sdk/android/services/concurrency/Priority;
 
     return-object v0
 .end method

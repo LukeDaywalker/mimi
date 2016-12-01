@@ -83,7 +83,7 @@
 .method public a()Lcom/tencent/stat/b/ICf;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/b/ICf;->c:Lcom/tencent/stat/b/ICf;
+    sget-object v0, Lcom/tencent/stat/b/ICf;->mICfc:Lcom/tencent/stat/b/ICf;
 
     return-object v0
 .end method

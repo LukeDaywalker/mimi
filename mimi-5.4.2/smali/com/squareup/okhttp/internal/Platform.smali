@@ -81,7 +81,7 @@
     check-cast v0, Lcom/squareup/okhttp/Protocol;
 
     .line 365
-    sget-object v4, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sget-object v4, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     if-ne v0, v4, :cond_0
 

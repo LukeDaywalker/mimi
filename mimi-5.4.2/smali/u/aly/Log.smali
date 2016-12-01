@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static isZa:Z
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .line 14
     const/4 v0, 0x0
 
-    sput-boolean v0, Lu/aly/Log;->a:Z
+    sput-boolean v0, Lu/aly/Log;->isZa:Z
 
     return-void
 .end method
@@ -25,7 +25,7 @@
 
     .prologue
     .line 17
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -42,7 +42,7 @@
 
     .prologue
     .line 23
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -91,7 +91,7 @@
 
     .prologue
     .line 29
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -108,7 +108,7 @@
 
     .prologue
     .line 35
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -200,7 +200,7 @@
 
     .prologue
     .line 44
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -217,7 +217,7 @@
 
     .prologue
     .line 74
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -309,7 +309,7 @@
 
     .prologue
     .line 68
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_0
 

@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/google/analytics/tracking/android/Logger$ICat;
-
-.field public static final enum b:Lcom/google/analytics/tracking/android/Logger$ICat;
-
-.field public static final enum c:Lcom/google/analytics/tracking/android/Logger$ICat;
-
-.field public static final enum d:Lcom/google/analytics/tracking/android/Logger$ICat;
-
 .field private static final synthetic mArrayICate:[Lcom/google/analytics/tracking/android/Logger$ICat;
+
+.field public static final enum mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
+
+.field public static final enum mICatb:Lcom/google/analytics/tracking/android/Logger$ICat;
+
+.field public static final enum mICatc:Lcom/google/analytics/tracking/android/Logger$ICat;
+
+.field public static final enum mICatd:Lcom/google/analytics/tracking/android/Logger$ICat;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/analytics/tracking/android/Logger$ICat;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     new-instance v0, Lcom/google/analytics/tracking/android/Logger$ICat;
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/google/analytics/tracking/android/Logger$ICat;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->b:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatb:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     new-instance v0, Lcom/google/analytics/tracking/android/Logger$ICat;
 
@@ -62,7 +62,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/google/analytics/tracking/android/Logger$ICat;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->c:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatc:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     new-instance v0, Lcom/google/analytics/tracking/android/Logger$ICat;
 
@@ -70,26 +70,26 @@
 
     invoke-direct {v0, v1, v5}, Lcom/google/analytics/tracking/android/Logger$ICat;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->d:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatd:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     .line 20
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/google/analytics/tracking/android/Logger$ICat;
 
-    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->b:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatb:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->c:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatc:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->d:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v1, Lcom/google/analytics/tracking/android/Logger$ICat;->mICatd:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     aput-object v1, v0, v5
 

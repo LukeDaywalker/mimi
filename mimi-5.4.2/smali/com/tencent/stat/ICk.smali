@@ -23,7 +23,7 @@
     :try_start_0
     sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/stat/ICh;->a:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mICha:Lcom/tencent/stat/ICh;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICh;->ordinal()I
 
@@ -39,7 +39,7 @@
     :try_start_1
     sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/stat/ICh;->b:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChb:Lcom/tencent/stat/ICh;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICh;->ordinal()I
 
@@ -55,7 +55,7 @@
     :try_start_2
     sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/stat/ICh;->d:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChd:Lcom/tencent/stat/ICh;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICh;->ordinal()I
 
@@ -71,7 +71,7 @@
     :try_start_3
     sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/stat/ICh;->e:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChe:Lcom/tencent/stat/ICh;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICh;->ordinal()I
 
@@ -87,7 +87,7 @@
     :try_start_4
     sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/stat/ICh;->c:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChc:Lcom/tencent/stat/ICh;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICh;->ordinal()I
 
@@ -103,7 +103,7 @@
     :try_start_5
     sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/stat/ICh;->f:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChf:Lcom/tencent/stat/ICh;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICh;->ordinal()I
 
@@ -119,7 +119,7 @@
     :try_start_6
     sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/stat/ICh;->g:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChg:Lcom/tencent/stat/ICh;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICh;->ordinal()I
 

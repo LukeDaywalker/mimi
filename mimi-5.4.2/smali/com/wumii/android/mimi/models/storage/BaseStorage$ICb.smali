@@ -36,7 +36,7 @@
     .line 21
     iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mBaseStorageb:Lcom/wumii/android/mimi/models/storage/BaseStorage;
 
-    iget-object v2, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     monitor-enter v2
 
@@ -44,7 +44,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mBaseStorageb:Lcom/wumii/android/mimi/models/storage/BaseStorage;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -60,7 +60,7 @@
     .line 23
     iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mBaseStorageb:Lcom/wumii/android/mimi/models/storage/BaseStorage;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 

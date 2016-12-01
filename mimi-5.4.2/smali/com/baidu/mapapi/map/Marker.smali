@@ -59,7 +59,7 @@
 
     iput v0, p0, Lcom/baidu/mapapi/map/Marker;->mIo:I
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->c:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfc:Lcom/baidu/platform/comapi/map/ICf;
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 

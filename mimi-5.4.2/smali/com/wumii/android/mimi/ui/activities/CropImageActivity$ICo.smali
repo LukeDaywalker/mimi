@@ -84,7 +84,7 @@
     .line 179
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a1
 
@@ -103,7 +103,7 @@
     .line 174
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a1
 

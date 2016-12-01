@@ -118,7 +118,7 @@
     .line 106
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 

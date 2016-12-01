@@ -223,7 +223,7 @@
     .line 200
     const/4 v4, -0x1
 
-    sget-object v6, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->d:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v6, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModed:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     move-object v0, p1
 

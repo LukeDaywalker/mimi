@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field public g:Ljava/lang/String;
+.field public mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -95,7 +95,7 @@
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 90
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WebpageObject;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/WebpageObject;->mStringg:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -106,7 +106,7 @@
     .line 91
     const-string/jumbo v1, "extra_key_defaulttext"
 
-    iget-object v2, p0, Lcom/sina/weibo/sdk/api/WebpageObject;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/sina/weibo/sdk/api/WebpageObject;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 

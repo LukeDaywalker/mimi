@@ -19,25 +19,25 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/UMEnvelope$ICfk;
-
-.field public static final enum b:Lu/aly/UMEnvelope$ICfk;
-
-.field public static final enum c:Lu/aly/UMEnvelope$ICfk;
-
-.field public static final enum d:Lu/aly/UMEnvelope$ICfk;
-
-.field public static final enum e:Lu/aly/UMEnvelope$ICfk;
-
-.field public static final enum f:Lu/aly/UMEnvelope$ICfk;
-
-.field public static final enum g:Lu/aly/UMEnvelope$ICfk;
-
-.field public static final enum h:Lu/aly/UMEnvelope$ICfk;
-
-.field public static final enum i:Lu/aly/UMEnvelope$ICfk;
-
 .field private static final synthetic mArrayICfkm:[Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfka:Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfkb:Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfkc:Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfkd:Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfke:Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfkf:Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfkg:Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfkh:Lu/aly/UMEnvelope$ICfk;
+
+.field public static final enum mICfki:Lu/aly/UMEnvelope$ICfk;
 
 .field private static final mMapj:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -84,7 +84,7 @@
 
     invoke-direct {v0, v1, v2, v5, v3}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->a:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfka:Lu/aly/UMEnvelope$ICfk;
 
     .line 66
     new-instance v0, Lu/aly/UMEnvelope$ICfk;
@@ -95,7 +95,7 @@
 
     invoke-direct {v0, v1, v5, v6, v2}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->b:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfkb:Lu/aly/UMEnvelope$ICfk;
 
     .line 67
     new-instance v0, Lu/aly/UMEnvelope$ICfk;
@@ -106,7 +106,7 @@
 
     invoke-direct {v0, v1, v6, v7, v2}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->c:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfkc:Lu/aly/UMEnvelope$ICfk;
 
     .line 68
     new-instance v0, Lu/aly/UMEnvelope$ICfk;
@@ -117,7 +117,7 @@
 
     invoke-direct {v0, v1, v7, v8, v2}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->d:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfkd:Lu/aly/UMEnvelope$ICfk;
 
     .line 69
     new-instance v0, Lu/aly/UMEnvelope$ICfk;
@@ -128,7 +128,7 @@
 
     invoke-direct {v0, v1, v8, v9, v2}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->e:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfke:Lu/aly/UMEnvelope$ICfk;
 
     .line 70
     new-instance v0, Lu/aly/UMEnvelope$ICfk;
@@ -141,7 +141,7 @@
 
     invoke-direct {v0, v1, v9, v2, v3}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->f:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfkf:Lu/aly/UMEnvelope$ICfk;
 
     .line 71
     new-instance v0, Lu/aly/UMEnvelope$ICfk;
@@ -156,7 +156,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->g:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfkg:Lu/aly/UMEnvelope$ICfk;
 
     .line 72
     new-instance v0, Lu/aly/UMEnvelope$ICfk;
@@ -171,7 +171,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->h:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfkh:Lu/aly/UMEnvelope$ICfk;
 
     .line 73
     new-instance v0, Lu/aly/UMEnvelope$ICfk;
@@ -186,7 +186,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/UMEnvelope$ICfk;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->i:Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mICfki:Lu/aly/UMEnvelope$ICfk;
 
     .line 64
     const/16 v0, 0x9
@@ -195,45 +195,45 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lu/aly/UMEnvelope$ICfk;->a:Lu/aly/UMEnvelope$ICfk;
+    sget-object v2, Lu/aly/UMEnvelope$ICfk;->mICfka:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v2, v0, v1
 
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->b:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkb:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->c:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkc:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->d:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkd:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->e:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfke:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v1, v0, v8
 
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->f:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkf:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v1, v0, v9
 
     const/4 v1, 0x6
 
-    sget-object v2, Lu/aly/UMEnvelope$ICfk;->g:Lu/aly/UMEnvelope$ICfk;
+    sget-object v2, Lu/aly/UMEnvelope$ICfk;->mICfkg:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lu/aly/UMEnvelope$ICfk;->h:Lu/aly/UMEnvelope$ICfk;
+    sget-object v2, Lu/aly/UMEnvelope$ICfk;->mICfkh:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lu/aly/UMEnvelope$ICfk;->i:Lu/aly/UMEnvelope$ICfk;
+    sget-object v2, Lu/aly/UMEnvelope$ICfk;->mICfki:Lu/aly/UMEnvelope$ICfk;
 
     aput-object v2, v0, v1
 

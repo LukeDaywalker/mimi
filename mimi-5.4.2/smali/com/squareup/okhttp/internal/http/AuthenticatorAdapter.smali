@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final a:Lcom/squareup/okhttp/Authenticator;
+.field public static final mAuthenticatora:Lcom/squareup/okhttp/Authenticator;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/AuthenticatorAdapter;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/AuthenticatorAdapter;->a:Lcom/squareup/okhttp/Authenticator;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/AuthenticatorAdapter;->mAuthenticatora:Lcom/squareup/okhttp/Authenticator;
 
     return-void
 .end method

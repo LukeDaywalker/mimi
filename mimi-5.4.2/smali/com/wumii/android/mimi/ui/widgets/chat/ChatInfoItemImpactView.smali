@@ -81,40 +81,40 @@
     move-result-object v0
 
     .line 61
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->b:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1}, Landroid/widget/RelativeLayout;->getPaddingLeft()I
 
     move-result v1
 
     .line 62
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->b:Landroid/widget/RelativeLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2}, Landroid/widget/RelativeLayout;->getPaddingTop()I
 
     move-result v2
 
     .line 63
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->b:Landroid/widget/RelativeLayout;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v3}, Landroid/widget/RelativeLayout;->getPaddingRight()I
 
     move-result v3
 
     .line 64
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->b:Landroid/widget/RelativeLayout;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v4}, Landroid/widget/RelativeLayout;->getPaddingBottom()I
 
     move-result v4
 
     .line 65
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->b:Landroid/widget/RelativeLayout;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v5, v0}, Landroid/widget/RelativeLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->b:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/widget/RelativeLayout;->setPadding(IIII)V
 
@@ -140,7 +140,7 @@
 
     const v1, 0x7f03007b
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->b:Landroid/widget/RelativeLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v1, v2, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -169,7 +169,7 @@
     check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
 
     .line 47
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->c:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mLinearLayoutc:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->getId()I
 
@@ -178,7 +178,7 @@
     invoke-virtual {v0, v7, v1}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 49
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->b:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mLinearLayoutg:Landroid/widget/LinearLayout;
 

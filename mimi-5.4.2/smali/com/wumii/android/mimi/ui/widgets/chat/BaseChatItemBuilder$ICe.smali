@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Landroid/widget/TextView;
+.field protected mImageViewb:Landroid/widget/ImageView;
 
-.field protected b:Landroid/widget/ImageView;
+.field protected mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->mTextViewa:Landroid/widget/TextView;
 
     .line 273
     const v0, 0x7f0b0190
@@ -37,7 +37,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->mImageViewb:Landroid/widget/ImageView;
 
     .line 274
     return-void

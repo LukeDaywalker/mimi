@@ -3,25 +3,25 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public isZi:Z
 
-.field public b:Ljava/lang/String;
+.field public mIg:I
 
-.field public c:Lcom/baidu/mapapi/model/inner/Point;
+.field public mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
-.field public d:Ljava/lang/String;
+.field public mStringa:Ljava/lang/String;
 
-.field public e:Ljava/lang/String;
+.field public mStringb:Ljava/lang/String;
 
-.field public f:Ljava/lang/String;
+.field public mStringd:Ljava/lang/String;
 
-.field public g:I
+.field public mStringe:Ljava/lang/String;
 
-.field public h:Ljava/lang/String;
+.field public mStringf:Ljava/lang/String;
 
-.field public i:Z
+.field public mStringh:Ljava/lang/String;
 
-.field public j:Ljava/lang/String;
+.field public mStringj:Ljava/lang/String;
 
 
 # direct methods

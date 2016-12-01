@@ -4,25 +4,25 @@
 
 
 # static fields
-.field public static final a:Lokio/ByteString;
+.field public static final mByteStringa:Lokio/ByteString;
 
-.field public static final b:Lokio/ByteString;
+.field public static final mByteStringb:Lokio/ByteString;
 
-.field public static final c:Lokio/ByteString;
+.field public static final mByteStringc:Lokio/ByteString;
 
-.field public static final d:Lokio/ByteString;
+.field public static final mByteStringd:Lokio/ByteString;
 
-.field public static final e:Lokio/ByteString;
+.field public static final mByteStringe:Lokio/ByteString;
 
-.field public static final f:Lokio/ByteString;
+.field public static final mByteStringf:Lokio/ByteString;
 
-.field public static final g:Lokio/ByteString;
+.field public static final mByteStringg:Lokio/ByteString;
 
 
 # instance fields
-.field public final h:Lokio/ByteString;
+.field public final mByteStringh:Lokio/ByteString;
 
-.field public final i:Lokio/ByteString;
+.field public final mByteStringi:Lokio/ByteString;
 
 .field final mIj:I
 
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->a:Lokio/ByteString;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringa:Lokio/ByteString;
 
     .line 9
     const-string/jumbo v0, ":method"
@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->b:Lokio/ByteString;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringb:Lokio/ByteString;
 
     .line 10
     const-string/jumbo v0, ":path"
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->c:Lokio/ByteString;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringc:Lokio/ByteString;
 
     .line 11
     const-string/jumbo v0, ":scheme"
@@ -66,7 +66,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->d:Lokio/ByteString;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringd:Lokio/ByteString;
 
     .line 12
     const-string/jumbo v0, ":authority"
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->e:Lokio/ByteString;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringe:Lokio/ByteString;
 
     .line 13
     const-string/jumbo v0, ":host"
@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->f:Lokio/ByteString;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringf:Lokio/ByteString;
 
     .line 14
     const-string/jumbo v0, ":version"
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->g:Lokio/ByteString;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringg:Lokio/ByteString;
 
     return-void
 .end method
@@ -140,10 +140,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     .line 33
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     .line 34
     invoke-virtual {p1}, Lokio/ByteString;->f()I
@@ -181,9 +181,9 @@
     check-cast p1, Lcom/squareup/okhttp/internal/spdy/Header;
 
     .line 40
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
-    iget-object v2, p1, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v2, p1, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     invoke-virtual {v1, v2}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
 
@@ -191,9 +191,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
-    iget-object v2, p1, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v2, p1, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     .line 41
     invoke-virtual {v1, v2}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
@@ -215,7 +215,7 @@
     .prologue
     .line 47
     .line 48
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     invoke-virtual {v0}, Lokio/ByteString;->hashCode()I
 
@@ -226,7 +226,7 @@
     .line 49
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     invoke-virtual {v1}, Lokio/ByteString;->hashCode()I
 
@@ -251,7 +251,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     invoke-virtual {v3}, Lokio/ByteString;->a()Ljava/lang/String;
 
@@ -261,7 +261,7 @@
 
     const/4 v2, 0x1
 
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     invoke-virtual {v3}, Lokio/ByteString;->a()Ljava/lang/String;
 

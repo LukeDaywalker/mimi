@@ -25,23 +25,23 @@
 
     move-object/from16 v0, p1
 
-    iget-object v3, v0, Landroid/support/v4/app/NotificationCompat$Builder;->a:Landroid/content/Context;
+    iget-object v3, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mContexta:Landroid/content/Context;
 
     move-object/from16 v0, p1
 
-    iget-object v4, v0, Landroid/support/v4/app/NotificationCompat$Builder;->B:Landroid/app/Notification;
+    iget-object v4, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotificationB:Landroid/app/Notification;
 
     move-object/from16 v0, p1
 
-    iget-object v5, v0, Landroid/support/v4/app/NotificationCompat$Builder;->b:Ljava/lang/CharSequence;
+    iget-object v5, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequenceb:Ljava/lang/CharSequence;
 
     move-object/from16 v0, p1
 
-    iget-object v6, v0, Landroid/support/v4/app/NotificationCompat$Builder;->c:Ljava/lang/CharSequence;
+    iget-object v6, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequencec:Ljava/lang/CharSequence;
 
     move-object/from16 v0, p1
 
-    iget-object v7, v0, Landroid/support/v4/app/NotificationCompat$Builder;->h:Ljava/lang/CharSequence;
+    iget-object v7, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequenceh:Ljava/lang/CharSequence;
 
     move-object/from16 v0, p1
 
@@ -49,7 +49,7 @@
 
     move-object/from16 v0, p1
 
-    iget v9, v0, Landroid/support/v4/app/NotificationCompat$Builder;->i:I
+    iget v9, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mIi:I
 
     move-object/from16 v0, p1
 
@@ -61,7 +61,7 @@
 
     move-object/from16 v0, p1
 
-    iget-object v12, v0, Landroid/support/v4/app/NotificationCompat$Builder;->g:Landroid/graphics/Bitmap;
+    iget-object v12, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mBitmapg:Landroid/graphics/Bitmap;
 
     move-object/from16 v0, p1
 
@@ -77,7 +77,7 @@
 
     move-object/from16 v0, p1
 
-    iget-boolean v0, v0, Landroid/support/v4/app/NotificationCompat$Builder;->l:Z
+    iget-boolean v0, v0, Landroid/support/v4/app/NotificationCompat$Builder;->isZl:Z
 
     move/from16 v16, v0
 
@@ -89,7 +89,7 @@
 
     move-object/from16 v0, p1
 
-    iget-object v0, v0, Landroid/support/v4/app/NotificationCompat$Builder;->n:Ljava/lang/CharSequence;
+    iget-object v0, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequencen:Ljava/lang/CharSequence;
 
     move-object/from16 v18, v0
 
@@ -128,14 +128,14 @@
     .line 596
     move-object/from16 v0, p1
 
-    iget-object v3, v0, Landroid/support/v4/app/NotificationCompat$Builder;->u:Ljava/util/ArrayList;
+    iget-object v3, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mArrayListu:Ljava/util/ArrayList;
 
     invoke-static {v2, v3}, Landroid/support/v4/app/NotificationCompat;->a(Landroid/support/v4/app/NotificationBuilderWithActions;Ljava/util/ArrayList;)V
 
     .line 597
     move-object/from16 v0, p1
 
-    iget-object v3, v0, Landroid/support/v4/app/NotificationCompat$Builder;->m:Landroid/support/v4/app/NotificationCompat$Style;
+    iget-object v3, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mStylem:Landroid/support/v4/app/NotificationCompat$Style;
 
     invoke-static {v2, v3}, Landroid/support/v4/app/NotificationCompat;->a(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Landroid/support/v4/app/NotificationCompat$Style;)V
 

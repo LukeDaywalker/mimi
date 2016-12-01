@@ -3889,7 +3889,7 @@
 
     iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mSavedStateu:Landroid/support/v4/widget/NestedScrollView$SavedState;
 
-    iget v2, v2, Landroid/support/v4/widget/NestedScrollView$SavedState;->a:I
+    iget v2, v2, Landroid/support/v4/widget/NestedScrollView$SavedState;->mIa:I
 
     invoke-virtual {p0, v0, v2}, Landroid/support/v4/widget/NestedScrollView;->scrollTo(II)V
 
@@ -4325,7 +4325,7 @@
 
     move-result v0
 
-    iput v0, v1, Landroid/support/v4/widget/NestedScrollView$SavedState;->a:I
+    iput v0, v1, Landroid/support/v4/widget/NestedScrollView$SavedState;->mIa:I
 
     .line 1753
     return-object v1

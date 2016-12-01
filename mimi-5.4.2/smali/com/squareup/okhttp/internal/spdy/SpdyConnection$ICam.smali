@@ -55,7 +55,7 @@
     move-exception v0
 
     .line 649
-    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->a:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->mLoggera:Ljava/util/logging/Logger;
 
     sget-object v2, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 
@@ -91,7 +91,7 @@
     :try_start_1
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICam;->mSpdyStreama:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->b:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeb:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->a(Lcom/squareup/okhttp/internal/spdy/ErrorCode;)V
     :try_end_1

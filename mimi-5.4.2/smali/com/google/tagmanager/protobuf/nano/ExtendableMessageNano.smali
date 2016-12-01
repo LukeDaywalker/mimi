@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected s:Ljava/util/List;
+.field protected mLists:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",

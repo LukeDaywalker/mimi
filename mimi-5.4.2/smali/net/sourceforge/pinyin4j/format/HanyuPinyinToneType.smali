@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+.field public static final mHanyuPinyinToneTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
-.field public static final b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+.field public static final mHanyuPinyinToneTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
-.field public static final c:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+.field public static final mHanyuPinyinToneTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
 
 # instance fields
-.field protected d:Ljava/lang/String;
+.field protected mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->mHanyuPinyinToneTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     .line 67
     new-instance v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
@@ -36,7 +36,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->mHanyuPinyinToneTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     .line 72
     new-instance v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->c:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+    sput-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->mHanyuPinyinToneTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 87
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->d:Ljava/lang/String;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->mStringd:Ljava/lang/String;
 
     .line 88
     return-void

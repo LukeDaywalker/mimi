@@ -20,17 +20,6 @@
 
 
 # instance fields
-.field protected final c:Landroid/content/Context;
-
-.field protected final d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lc/a/a/a/a/d/d",
-            "<TT;>;"
-        }
-    .end annotation
-.end field
-
 .field final mAtomicReferencef:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -38,6 +27,17 @@
             "<",
             "Ljava/util/concurrent/ScheduledFuture",
             "<*>;>;"
+        }
+    .end annotation
+.end field
+
+.field protected final mContextc:Landroid/content/Context;
+
+.field protected final mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lc/a/a/a/a/d/d",
+            "<TT;>;"
         }
     .end annotation
 .end field
@@ -70,13 +70,13 @@
     iput v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mIg:I
 
     .line 50
-    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     .line 51
     iput-object p2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mScheduledExecutorServicee:Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 52
-    iput-object p3, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     .line 53
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
@@ -133,12 +133,12 @@
     .line 115
     new-instance v1, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;
 
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     invoke-direct {v1, v0, p0}, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;-><init>(Landroid/content/Context;Lio/fabric/sdk/android/services/events/FileRollOverManager;)V
 
     .line 116
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -202,7 +202,7 @@
     move-exception v0
 
     .line 122
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "Failed to schedule time based file roll over"
 
@@ -221,7 +221,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -231,7 +231,7 @@
 
     .line 90
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     invoke-virtual {v0, p1}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a(Ljava/lang/Object;)V
     :try_end_0
@@ -249,7 +249,7 @@
     move-exception v0
 
     .line 92
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "Failed to write event."
 
@@ -274,7 +274,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->f()V
 
@@ -296,7 +296,7 @@
     if-eqz v0, :cond_0
 
     .line 73
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v1, "Cancelling time-based rollover because no events are currently being generated."
 
@@ -333,7 +333,7 @@
     .prologue
     .line 100
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d()Z
     :try_end_0
@@ -350,7 +350,7 @@
     move-exception v0
 
     .line 102
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "Failed to roll file over."
 
@@ -416,7 +416,7 @@
     if-nez v3, :cond_1
 
     .line 141
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v1, "skipping files send because we don\'t yet know the target endpoint"
 
@@ -429,14 +429,14 @@
 
     .line 145
     :cond_1
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "Sending all files"
 
     invoke-static {v0, v2}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 148
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->e()Ljava/util/List;
 
@@ -456,7 +456,7 @@
     if-lez v1, :cond_3
 
     .line 152
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -503,7 +503,7 @@
 
     .line 158
     :try_start_1
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     invoke-virtual {v0, v2}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a(Ljava/util/List;)V
     :try_end_1
@@ -521,7 +521,7 @@
     if-nez v0, :cond_0
 
     .line 173
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->g()V
 
@@ -530,7 +530,7 @@
     .line 165
     :cond_4
     :try_start_2
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mEventsFilesManagerd:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->e()Ljava/util/List;
     :try_end_2
@@ -555,7 +555,7 @@
 
     .line 168
     :goto_3
-    iget-object v2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mContextc:Landroid/content/Context;
 
     new-instance v3, Ljava/lang/StringBuilder;
 

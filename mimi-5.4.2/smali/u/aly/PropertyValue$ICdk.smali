@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lu/aly/PropertyValue$ICdk;->mArrayIa:[I
 
-    sget-object v1, Lu/aly/PropertyValue$ICdl;->a:Lu/aly/PropertyValue$ICdl;
+    sget-object v1, Lu/aly/PropertyValue$ICdl;->mICdla:Lu/aly/PropertyValue$ICdl;
 
     invoke-virtual {v1}, Lu/aly/PropertyValue$ICdl;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lu/aly/PropertyValue$ICdk;->mArrayIa:[I
 
-    sget-object v1, Lu/aly/PropertyValue$ICdl;->b:Lu/aly/PropertyValue$ICdl;
+    sget-object v1, Lu/aly/PropertyValue$ICdl;->mICdlb:Lu/aly/PropertyValue$ICdl;
 
     invoke-virtual {v1}, Lu/aly/PropertyValue$ICdl;->ordinal()I
 

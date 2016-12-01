@@ -30,7 +30,7 @@
 
     .prologue
     .line 107
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u4e0b\u4e00\u6b65\u7684\u70b9\u51fb\u6b21\u6570"
 

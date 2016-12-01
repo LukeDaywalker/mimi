@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final enum a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
-
-.field public static final enum b:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
-
-.field public static final enum c:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
-
-.field public static final enum d:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
-
-.field public static final enum e:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
-
 .field private static final synthetic mArrayQuickReturnViewTypef:[Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+
+.field public static final enum mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+
+.field public static final enum mQuickReturnViewTypeb:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+
+.field public static final enum mQuickReturnViewTypec:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+
+.field public static final enum mQuickReturnViewTyped:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+
+.field public static final enum mQuickReturnViewTypee:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     .line 8
     new-instance v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->b:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypeb:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     .line 9
     new-instance v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->c:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypec:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     .line 10
     new-instance v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
@@ -77,7 +77,7 @@
 
     invoke-direct {v0, v1, v5}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->d:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTyped:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     .line 11
     new-instance v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
@@ -86,30 +86,30 @@
 
     invoke-direct {v0, v1, v6}, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->e:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypee:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     .line 6
     const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->b:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypeb:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->c:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypec:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->d:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTyped:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->e:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mQuickReturnViewTypee:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     aput-object v1, v0, v6
 

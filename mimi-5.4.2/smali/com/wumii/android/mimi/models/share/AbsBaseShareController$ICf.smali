@@ -64,7 +64,7 @@
 
     iget-object v5, v5, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
-    iget-object v5, v5, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v5, v5, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual/range {v0 .. v5}, Lcom/wumii/android/mimi/models/share/QQShareHelper;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;)V
 

@@ -663,7 +663,7 @@
     .line 470
     :cond_0
     :try_start_1
-    iget v0, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->t:I
+    iget v0, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIt:I
 
     const/4 v1, -0x1
 
@@ -691,7 +691,7 @@
     .line 476
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->s:I
+    iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIs:I
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
@@ -740,7 +740,7 @@
     .line 534
     :cond_0
     :try_start_1
-    iget v0, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->s:I
+    iget v0, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIs:I
 
     const/4 v1, -0x1
 
@@ -784,7 +784,7 @@
     .line 541
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->s:I
+    iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIs:I
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 

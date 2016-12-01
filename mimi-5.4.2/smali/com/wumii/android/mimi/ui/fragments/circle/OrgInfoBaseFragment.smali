@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/manager/CircleManager;
-
-.field protected b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
-
-.field protected c:Lcom/wumii/android/mimi/util/ContextToast;
-
 .field private mActionBarUpdateCallbacke:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
+
+.field protected mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+
+.field protected mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
+
+.field protected mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
 .field private mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 36
     new-instance v0, Lcom/wumii/android/mimi/util/ContextToast;
@@ -111,7 +111,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 37
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
@@ -133,7 +133,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 39
     return-void

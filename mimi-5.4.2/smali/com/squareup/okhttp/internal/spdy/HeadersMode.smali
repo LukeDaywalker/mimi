@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
-
-.field public static final enum b:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
-
-.field public static final enum c:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
-
-.field public static final enum d:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
-
 .field private static final synthetic mArrayHeadersModee:[Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+
+.field public static final enum mHeadersModea:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+
+.field public static final enum mHeadersModeb:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+
+.field public static final enum mHeadersModec:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+
+.field public static final enum mHeadersModed:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/squareup/okhttp/internal/spdy/HeadersMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->a:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModea:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     .line 20
     new-instance v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/squareup/okhttp/internal/spdy/HeadersMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->b:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModeb:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     .line 21
     new-instance v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/squareup/okhttp/internal/spdy/HeadersMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->c:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModec:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     .line 22
     new-instance v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;
@@ -73,26 +73,26 @@
 
     invoke-direct {v0, v1, v5}, Lcom/squareup/okhttp/internal/spdy/HeadersMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->d:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModed:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     .line 18
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->a:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModea:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->b:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModeb:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->c:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModec:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->d:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModed:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     aput-object v1, v0, v5
 
@@ -155,11 +155,11 @@
 
     .prologue
     .line 26
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->b:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModeb:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     if-eq p0, v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->c:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModec:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     if-ne p0, v0, :cond_1
 
@@ -180,7 +180,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->a:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModea:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     if-ne p0, v0, :cond_0
 
@@ -200,7 +200,7 @@
 
     .prologue
     .line 39
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->c:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModec:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     if-ne p0, v0, :cond_0
 
@@ -220,7 +220,7 @@
 
     .prologue
     .line 47
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->b:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mHeadersModeb:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     if-ne p0, v0, :cond_0
 

@@ -375,13 +375,13 @@
 
     const/4 v7, 0x0
 
-    iget-object v8, v0, Lu/aly/StringValuePair;->a:Ljava/lang/String;
+    iget-object v8, v0, Lu/aly/StringValuePair;->mStringa:Ljava/lang/String;
 
     aput-object v8, v6, v7
 
     const/4 v7, 0x1
 
-    iget-wide v8, v0, Lu/aly/StringValuePair;->b:J
+    iget-wide v8, v0, Lu/aly/StringValuePair;->mJb:J
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 

@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
-
-.field public static final enum b:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
-
-.field public static final enum c:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
-
-.field public static final enum d:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
-
 .field private static final synthetic mArrayICrf:[Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+
+.field public static final enum mICra:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+
+.field public static final enum mICrb:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+
+.field public static final enum mICrc:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+
+.field public static final enum mICrd:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
 
 # instance fields
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICra:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     .line 59
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->b:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICrb:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     .line 60
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
@@ -74,7 +74,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->c:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICrc:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     .line 61
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
@@ -83,26 +83,26 @@
 
     invoke-direct {v0, v1, v6, v3}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->d:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICrd:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     .line 57
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sget-object v1, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICra:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->b:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sget-object v1, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICrb:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->c:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sget-object v1, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICrc:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->d:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sget-object v1, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICrd:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     aput-object v1, v0, v6
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:I
+.field public mIa:I
 
 
 # direct methods
@@ -18,7 +18,7 @@
     .line 42
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;->a:I
+    iput v0, p0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;->mIa:I
 
     return-void
 .end method

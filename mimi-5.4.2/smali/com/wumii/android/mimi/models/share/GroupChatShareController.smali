@@ -70,7 +70,7 @@
     .line 38
     new-instance v6, Lcom/wumii/android/mimi/models/share/ShareInsideController;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v6, v0}, Lcom/wumii/android/mimi/models/share/ShareInsideController;-><init>(Landroid/app/Activity;)V
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mActivitya:Landroid/app/Activity;
 
     const v1, 0x7f060266
 
@@ -132,7 +132,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mActivitya:Landroid/app/Activity;
 
     const v1, 0x7f060263
 
@@ -245,7 +245,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->getGroupChatSharePrefix()Ljava/lang/String;
 

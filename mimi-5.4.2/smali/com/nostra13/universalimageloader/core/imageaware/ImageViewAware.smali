@@ -87,7 +87,7 @@
     if-gtz v1, :cond_0
 
     .line 77
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ImageViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ImageViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -165,7 +165,7 @@
     if-gtz v1, :cond_0
 
     .line 94
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ImageViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ImageViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -198,7 +198,7 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ImageViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ImageViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 

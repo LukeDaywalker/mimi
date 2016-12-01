@@ -111,7 +111,7 @@
     if-nez v0, :cond_0
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getChatId()Ljava/lang/String;
 
@@ -191,7 +191,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "chat/group/summons"
 

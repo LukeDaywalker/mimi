@@ -3,9 +3,9 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
+.field public static final mStringa:Ljava/lang/String;
 
-.field public static b:Ljava/lang/String;
+.field public static mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -34,11 +34,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICa;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICa;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v0, "wxop_tencent_analysis.db"
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICa;->b:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICa;->mStringb:Ljava/lang/String;
 
     return-void
 .end method

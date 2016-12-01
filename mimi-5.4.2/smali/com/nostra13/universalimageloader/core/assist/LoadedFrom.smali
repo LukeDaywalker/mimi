@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
-
-.field public static final enum b:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
-
-.field public static final enum c:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
-
 .field private static final synthetic mArrayLoadedFromd:[Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+
+.field public static final enum mLoadedFroma:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+
+.field public static final enum mLoadedFromb:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+
+.field public static final enum mLoadedFromc:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->a:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFroma:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->b:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromb:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
@@ -58,22 +58,22 @@
 
     invoke-direct {v0, v1, v4}, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->c:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromc:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     .line 8
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->a:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFroma:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->b:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromb:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->c:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromc:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     aput-object v1, v0, v4
 

@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICta:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->b:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtb:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->c:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtc:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->ordinal()I
 
@@ -74,7 +74,7 @@
     :try_start_3
     sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->d:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtd:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->ordinal()I
 
@@ -90,7 +90,7 @@
     :try_start_4
     sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICte:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->ordinal()I
 
@@ -106,7 +106,7 @@
     :try_start_5
     sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->f:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtf:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->ordinal()I
 
@@ -122,7 +122,7 @@
     :try_start_6
     sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->mArrayIa:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->g:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mICtg:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->ordinal()I
 

@@ -53,7 +53,7 @@
     if-eqz v0, :cond_0
 
     .line 36
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->mContextb:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -140,9 +140,9 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventa:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a()Ljava/lang/String;
 

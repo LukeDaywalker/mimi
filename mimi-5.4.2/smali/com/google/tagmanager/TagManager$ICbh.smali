@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/google/tagmanager/TagManager$ICbh;->mArrayIa:[I
 
-    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->a:Lcom/google/tagmanager/PreviewManager$ICan;
+    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->mICana:Lcom/google/tagmanager/PreviewManager$ICan;
 
     invoke-virtual {v1}, Lcom/google/tagmanager/PreviewManager$ICan;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/google/tagmanager/TagManager$ICbh;->mArrayIa:[I
 
-    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     invoke-virtual {v1}, Lcom/google/tagmanager/PreviewManager$ICan;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lcom/google/tagmanager/TagManager$ICbh;->mArrayIa:[I
 
-    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->c:Lcom/google/tagmanager/PreviewManager$ICan;
+    sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->mICanc:Lcom/google/tagmanager/PreviewManager$ICan;
 
     invoke-virtual {v1}, Lcom/google/tagmanager/PreviewManager$ICan;->ordinal()I
 

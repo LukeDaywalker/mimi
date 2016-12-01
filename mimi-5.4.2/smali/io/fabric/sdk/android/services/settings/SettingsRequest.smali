@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mIf:I
 
-.field public final b:Ljava/lang/String;
+.field public final mStringa:Ljava/lang/String;
 
-.field public final c:Ljava/lang/String;
+.field public final mStringb:Ljava/lang/String;
 
-.field public final d:Ljava/lang/String;
+.field public final mStringc:Ljava/lang/String;
 
-.field public final e:Ljava/lang/String;
+.field public final mStringd:Ljava/lang/String;
 
-.field public final f:I
+.field public final mStringe:Ljava/lang/String;
 
-.field public final g:Ljava/lang/String;
+.field public final mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -28,25 +28,25 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 36
-    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringa:Ljava/lang/String;
 
     .line 37
-    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->b:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringb:Ljava/lang/String;
 
     .line 38
-    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->c:Ljava/lang/String;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringc:Ljava/lang/String;
 
     .line 39
-    iput-object p4, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->d:Ljava/lang/String;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringd:Ljava/lang/String;
 
     .line 40
-    iput-object p5, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->e:Ljava/lang/String;
+    iput-object p5, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringe:Ljava/lang/String;
 
     .line 41
-    iput p6, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->f:I
+    iput p6, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mIf:I
 
     .line 42
-    iput-object p7, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->g:Ljava/lang/String;
+    iput-object p7, p0, Lio/fabric/sdk/android/services/settings/SettingsRequest;->mStringg:Ljava/lang/String;
 
     .line 43
     return-void

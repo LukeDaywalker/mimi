@@ -265,7 +265,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 164
-    sget-object v1, Lu/aly/AppInfo$ICt;->a:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICta:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -280,7 +280,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 166
-    sget-object v1, Lu/aly/AppInfo$ICt;->b:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICtb:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -295,7 +295,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 168
-    sget-object v1, Lu/aly/AppInfo$ICt;->c:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICtc:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -310,7 +310,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 170
-    sget-object v1, Lu/aly/AppInfo$ICt;->d:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICtd:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -325,7 +325,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 172
-    sget-object v1, Lu/aly/AppInfo$ICt;->e:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICte:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -344,7 +344,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 174
-    sget-object v1, Lu/aly/AppInfo$ICt;->f:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICtf:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -359,7 +359,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 176
-    sget-object v1, Lu/aly/AppInfo$ICt;->g:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICtg:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -374,7 +374,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 178
-    sget-object v1, Lu/aly/AppInfo$ICt;->h:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICth:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -389,7 +389,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 180
-    sget-object v1, Lu/aly/AppInfo$ICt;->i:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICti:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -404,7 +404,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 182
-    sget-object v1, Lu/aly/AppInfo$ICt;->j:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICtj:Lu/aly/AppInfo$ICt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -453,37 +453,37 @@
 
     new-array v0, v0, [Lu/aly/AppInfo$ICt;
 
-    sget-object v1, Lu/aly/AppInfo$ICt;->b:Lu/aly/AppInfo$ICt;
+    sget-object v1, Lu/aly/AppInfo$ICt;->mICtb:Lu/aly/AppInfo$ICt;
 
     aput-object v1, v0, v2
 
     const/4 v1, 0x1
 
-    sget-object v2, Lu/aly/AppInfo$ICt;->c:Lu/aly/AppInfo$ICt;
+    sget-object v2, Lu/aly/AppInfo$ICt;->mICtc:Lu/aly/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Lu/aly/AppInfo$ICt;->d:Lu/aly/AppInfo$ICt;
+    sget-object v2, Lu/aly/AppInfo$ICt;->mICtd:Lu/aly/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Lu/aly/AppInfo$ICt;->h:Lu/aly/AppInfo$ICt;
+    sget-object v2, Lu/aly/AppInfo$ICt;->mICth:Lu/aly/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    sget-object v2, Lu/aly/AppInfo$ICt;->i:Lu/aly/AppInfo$ICt;
+    sget-object v2, Lu/aly/AppInfo$ICt;->mICti:Lu/aly/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    sget-object v2, Lu/aly/AppInfo$ICt;->j:Lu/aly/AppInfo$ICt;
+    sget-object v2, Lu/aly/AppInfo$ICt;->mICtj:Lu/aly/AppInfo$ICt;
 
     aput-object v2, v0, v1
 

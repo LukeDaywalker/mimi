@@ -44,7 +44,7 @@
 
     .prologue
     .line 70
-    sget-object v0, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->a:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -60,7 +60,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->a:Ljava/lang/String;
+    sget-object v2, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -84,7 +84,7 @@
 
     .prologue
     .line 40
-    iput-object p3, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iput-object p3, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     .line 42
     invoke-virtual {p2}, Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;->name()Ljava/lang/String;
@@ -141,7 +141,7 @@
     move-result-object v0
 
     .line 55
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {v1}, Lcom/wumii/android/soundtouch/SoundTouchThread;->b()Ljava/util/LinkedList;
 
@@ -151,7 +151,7 @@
     invoke-virtual {v1}, Ljava/util/LinkedList;->clear()V
 
     .line 58
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;->pitch()F
 
@@ -160,7 +160,7 @@
     invoke-virtual {v2, v3}, Lcom/wumii/android/soundtouch/SoundTouchThread;->a(F)V
 
     .line 59
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;->tempo()F
 
@@ -169,12 +169,12 @@
     invoke-virtual {v2, v3}, Lcom/wumii/android/soundtouch/SoundTouchThread;->b(F)V
 
     .line 60
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {v2, v1, v0}, Lcom/wumii/android/soundtouch/SoundTouchThread;->a(Ljava/util/LinkedList;[S)V
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
@@ -228,7 +228,7 @@
     .line 34
     iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/AuditionRecordClient;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/MediaPlayCallback;)V
 

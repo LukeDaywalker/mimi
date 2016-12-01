@@ -36,49 +36,49 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/manager/BaseManager;-><init>()V
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "secret/topics"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "topic/secrets"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "hot/secrets"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "nearby/secrets"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "circle/secrets"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "subject/secrets"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "premium/secrets"
 
@@ -394,7 +394,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)Ljava/util/Map;
 
@@ -425,11 +425,11 @@
 
     .prologue
     .line 278
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq p1, v0, :cond_0
 
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne p1, v0, :cond_1
 
@@ -446,11 +446,11 @@
 
     .line 282
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq p1, v0, :cond_2
 
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne p1, v0, :cond_3
 
@@ -481,7 +481,7 @@
     if-nez v0, :cond_4
 
     .line 288
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
@@ -491,7 +491,7 @@
 
     .line 291
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
@@ -542,7 +542,7 @@
     .line 399
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     move-object v2, p1
 
@@ -557,7 +557,7 @@
     invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 400
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -595,7 +595,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 351
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
@@ -613,7 +613,7 @@
 
     .prologue
     .line 418
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     new-instance v1, Lcom/wumii/android/mimi/manager/DiscoverManager$ICag;
 
@@ -642,7 +642,7 @@
 
     .line 420
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     new-instance v1, Lcom/wumii/android/mimi/manager/DiscoverManager$ICah;
 
@@ -688,7 +688,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)Ljava/util/Map;
 
@@ -730,7 +730,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {v0, v2, v3, v1, v4}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
@@ -768,7 +768,7 @@
     check-cast v0, Lcom/wumii/android/mimi/network/domain/TopicsResp;
 
     .line 137
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->x()Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
 
@@ -795,7 +795,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {v0, v2, v3, v1, v4}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
     :try_end_0
@@ -823,7 +823,7 @@
 
     const/16 v2, -0x3ec
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->f:Landroid/content/Context;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mContextf:Landroid/content/Context;
 
     const v4, 0x7f06039e
 
@@ -831,7 +831,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {v0, v2, v3, v1, v4}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
@@ -849,7 +849,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)Ljava/util/Map;
 
@@ -956,7 +956,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v3, v4, :cond_2
 
@@ -1019,7 +1019,7 @@
 
     const/16 v3, -0x3ec
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->f:Landroid/content/Context;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mContextf:Landroid/content/Context;
 
     const v5, 0x7f06039e
 
@@ -1239,7 +1239,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v3, v4, :cond_2
 
@@ -1302,7 +1302,7 @@
 
     const/16 v3, -0x3ec
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->f:Landroid/content/Context;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mContextf:Landroid/content/Context;
 
     const v5, 0x7f06039e
 
@@ -1410,7 +1410,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v3, v4, :cond_2
 
@@ -1473,7 +1473,7 @@
 
     const/16 v3, -0x3ec
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->f:Landroid/content/Context;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mContextf:Landroid/content/Context;
 
     const v5, 0x7f06039e
 
@@ -1581,7 +1581,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v3, v4, :cond_2
 
@@ -1640,7 +1640,7 @@
 
     const/16 v3, -0x3ec
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->f:Landroid/content/Context;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mContextf:Landroid/content/Context;
 
     const v5, 0x7f06039e
 
@@ -1749,7 +1749,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v3, v4, :cond_2
 
@@ -1812,7 +1812,7 @@
 
     const/16 v3, -0x3ec
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->f:Landroid/content/Context;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mContextf:Landroid/content/Context;
 
     const v5, 0x7f06039e
 
@@ -1886,7 +1886,7 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 434
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mICaji:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
 
@@ -1912,7 +1912,7 @@
 
     const-string/jumbo v2, ""
 
-    sget-object v3, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {v0, v1, v2, p1, v3}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
@@ -1940,7 +1940,7 @@
 
     const-string/jumbo v2, ""
 
-    sget-object v3, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {v0, v1, v2, p1, v3}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
@@ -1965,7 +1965,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventa:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, v2}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)Ljava/util/Map;
 
@@ -2141,7 +2141,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-direct {p0, p1, v2}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/enum/FeedEvent;)Ljava/util/Map;
 

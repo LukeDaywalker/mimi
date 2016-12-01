@@ -1159,7 +1159,7 @@
     move-result-object v0
 
     .line 2127
-    sget-object v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$FragmentTag;->a:[I
+    sget-object v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$FragmentTag;->mArrayIa:[I
 
     invoke-virtual {p3, p4, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 

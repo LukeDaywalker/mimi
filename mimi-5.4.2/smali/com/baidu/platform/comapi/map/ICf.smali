@@ -14,27 +14,27 @@
 
 
 # static fields
-.field public static final enum a:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum b:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum c:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum d:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum e:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum f:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum g:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum h:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum i:Lcom/baidu/platform/comapi/map/ICf;
-
-.field public static final enum j:Lcom/baidu/platform/comapi/map/ICf;
-
 .field private static final synthetic mArrayICfk:[Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfa:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfb:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfc:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfd:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfe:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICff:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfg:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfh:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfi:Lcom/baidu/platform/comapi/map/ICf;
+
+.field public static final enum mICfj:Lcom/baidu/platform/comapi/map/ICf;
 
 
 # direct methods
@@ -57,7 +57,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->a:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfa:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -65,7 +65,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->b:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfb:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -73,7 +73,7 @@
 
     invoke-direct {v0, v1, v5}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->c:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfc:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -81,7 +81,7 @@
 
     invoke-direct {v0, v1, v6}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->d:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfd:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -89,7 +89,7 @@
 
     invoke-direct {v0, v1, v7}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->e:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfe:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -99,7 +99,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->f:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICff:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -109,7 +109,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->g:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfg:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -119,7 +119,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->h:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfh:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -129,7 +129,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->i:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfi:Lcom/baidu/platform/comapi/map/ICf;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICf;
 
@@ -139,59 +139,59 @@
 
     invoke-direct {v0, v1, v2}, Lcom/baidu/platform/comapi/map/ICf;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->j:Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfj:Lcom/baidu/platform/comapi/map/ICf;
 
     const/16 v0, 0xa
 
     new-array v0, v0, [Lcom/baidu/platform/comapi/map/ICf;
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->a:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICfa:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->b:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICfb:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->c:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICfc:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->d:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICfd:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->e:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICf;->mICfe:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v1, v0, v7
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->f:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->mICff:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->g:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->mICfg:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->h:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->mICfh:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->i:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->mICfi:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->j:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v2, Lcom/baidu/platform/comapi/map/ICf;->mICfj:Lcom/baidu/platform/comapi/map/ICf;
 
     aput-object v2, v0, v1
 

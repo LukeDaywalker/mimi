@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected final a:Lokio/ForwardingTimeout;
+.field protected isZb:Z
 
-.field protected b:Z
+.field protected final mForwardingTimeouta:Lokio/ForwardingTimeout;
 
 .field final synthetic mHttpConnectionc:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
@@ -39,7 +39,7 @@
 
     invoke-direct {v0, v1}, Lokio/ForwardingTimeout;-><init>(Lokio/Timeout;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICi;->a:Lokio/ForwardingTimeout;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICi;->mForwardingTimeouta:Lokio/ForwardingTimeout;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
 
     .prologue
     .line 362
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICi;->a:Lokio/ForwardingTimeout;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICi;->mForwardingTimeouta:Lokio/ForwardingTimeout;
 
     return-object v0
 .end method
@@ -117,7 +117,7 @@
     :cond_0
     iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICi;->mHttpConnectionc:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICi;->a:Lokio/ForwardingTimeout;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICi;->mForwardingTimeouta:Lokio/ForwardingTimeout;
 
     invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;Lokio/ForwardingTimeout;)V
 
@@ -145,7 +145,7 @@
     invoke-static {v0, v2}, Lcom/squareup/okhttp/internal/http/HttpConnection;->b(Lcom/squareup/okhttp/internal/http/HttpConnection;I)I
 
     .line 377
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICi;->mHttpConnectionc:Lcom/squareup/okhttp/internal/http/HttpConnection;
 

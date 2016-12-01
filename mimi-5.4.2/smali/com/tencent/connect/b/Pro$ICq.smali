@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static a:Lcom/tencent/connect/b/Pro$ICq;
-
 .field static final synthetic isZd:Z
+
+.field public static mICqa:Lcom/tencent/connect/b/Pro$ICq;
 
 .field private static mIe:I
 
 
 # instance fields
-.field public b:Ljava/util/HashMap;
+.field public mHashMapb:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -24,7 +24,7 @@
     .end annotation
 .end field
 
-.field public final c:Ljava/lang/String;
+.field public final mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -72,12 +72,12 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->b:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->mHashMapb:Ljava/util/HashMap;
 
     .line 53
     const-string/jumbo v0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->mStringc:Ljava/lang/String;
 
     return-void
 .end method
@@ -87,7 +87,7 @@
 
     .prologue
     .line 22
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICq;->a:Lcom/tencent/connect/b/Pro$ICq;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICq;->mICqa:Lcom/tencent/connect/b/Pro$ICq;
 
     if-nez v0, :cond_0
 
@@ -96,11 +96,11 @@
 
     invoke-direct {v0}, Lcom/tencent/connect/b/Pro$ICq;-><init>()V
 
-    sput-object v0, Lcom/tencent/connect/b/Pro$ICq;->a:Lcom/tencent/connect/b/Pro$ICq;
+    sput-object v0, Lcom/tencent/connect/b/Pro$ICq;->mICqa:Lcom/tencent/connect/b/Pro$ICq;
 
     .line 25
     :cond_0
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICq;->a:Lcom/tencent/connect/b/Pro$ICq;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICq;->mICqa:Lcom/tencent/connect/b/Pro$ICq;
 
     return-object v0
 .end method
@@ -225,7 +225,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -247,7 +247,7 @@
 
     .line 42
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->mHashMapb:Ljava/util/HashMap;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -320,7 +320,7 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICq;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

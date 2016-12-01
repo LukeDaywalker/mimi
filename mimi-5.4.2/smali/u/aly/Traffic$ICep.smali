@@ -19,11 +19,11 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/Traffic$ICep;
-
-.field public static final enum b:Lu/aly/Traffic$ICep;
-
 .field private static final synthetic mArrayICepf:[Lu/aly/Traffic$ICep;
+
+.field public static final enum mICepa:Lu/aly/Traffic$ICep;
+
+.field public static final enum mICepb:Lu/aly/Traffic$ICep;
 
 .field private static final mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4, v3, v2}, Lu/aly/Traffic$ICep;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Traffic$ICep;->a:Lu/aly/Traffic$ICep;
+    sput-object v0, Lu/aly/Traffic$ICep;->mICepa:Lu/aly/Traffic$ICep;
 
     .line 50
     new-instance v0, Lu/aly/Traffic$ICep;
@@ -75,16 +75,16 @@
 
     invoke-direct {v0, v1, v3, v5, v2}, Lu/aly/Traffic$ICep;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Traffic$ICep;->b:Lu/aly/Traffic$ICep;
+    sput-object v0, Lu/aly/Traffic$ICep;->mICepb:Lu/aly/Traffic$ICep;
 
     .line 48
     new-array v0, v5, [Lu/aly/Traffic$ICep;
 
-    sget-object v1, Lu/aly/Traffic$ICep;->a:Lu/aly/Traffic$ICep;
+    sget-object v1, Lu/aly/Traffic$ICep;->mICepa:Lu/aly/Traffic$ICep;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/Traffic$ICep;->b:Lu/aly/Traffic$ICep;
+    sget-object v1, Lu/aly/Traffic$ICep;->mICepb:Lu/aly/Traffic$ICep;
 
     aput-object v1, v0, v3
 

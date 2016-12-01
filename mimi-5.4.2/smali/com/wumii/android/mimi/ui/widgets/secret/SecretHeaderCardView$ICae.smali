@@ -32,7 +32,7 @@
     .line 111
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICae;->mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->h:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mViewh:Landroid/view/View;
 
     const/4 v1, 0x0
 

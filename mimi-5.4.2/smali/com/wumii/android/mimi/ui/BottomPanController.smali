@@ -365,12 +365,12 @@
     .line 103
     check-cast v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     if-ne v0, v1, :cond_0
 
     .line 104
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

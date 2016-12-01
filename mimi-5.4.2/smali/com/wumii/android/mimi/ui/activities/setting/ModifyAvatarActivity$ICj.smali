@@ -32,7 +32,7 @@
     .line 80
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->n:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mCircleManagern:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
@@ -42,7 +42,7 @@
 
     iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
-    iget-object v4, v4, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->o:Ljava/lang/String;
+    iget-object v4, v4, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mStringo:Ljava/lang/String;
 
     invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 

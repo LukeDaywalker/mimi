@@ -19,7 +19,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
 
     invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;Landroid/app/Activity;)V
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->g()Ljava/util/Set;
 
@@ -92,7 +92,7 @@
 
     .line 84
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 
@@ -165,7 +165,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->f()I
 
@@ -174,7 +174,7 @@
     if-nez v0, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060399
 
@@ -188,11 +188,11 @@
 
     .line 63
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->g()Ljava/util/Set;
 
@@ -229,7 +229,7 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->p:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mButtonp:Landroid/widget/Button;
 
     const v1, 0x7f0600a8
 

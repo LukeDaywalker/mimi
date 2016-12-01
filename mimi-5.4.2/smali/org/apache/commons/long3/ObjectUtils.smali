@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lorg/apache/commons/long3/ObjectUtils$ICc;
+.field public static final mICca:Lorg/apache/commons/long3/ObjectUtils$ICc;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lorg/apache/commons/long3/ObjectUtils$ICc;-><init>()V
 
-    sput-object v0, Lorg/apache/commons/long3/ObjectUtils;->a:Lorg/apache/commons/long3/ObjectUtils$ICc;
+    sput-object v0, Lorg/apache/commons/long3/ObjectUtils;->mICca:Lorg/apache/commons/long3/ObjectUtils$ICc;
 
     return-void
 .end method

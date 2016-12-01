@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final mObjecta:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TF;"
@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public final b:Ljava/lang/Object;
+.field public final mObjectb:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TS;"
@@ -85,9 +85,9 @@
     check-cast p1, Landroid/support/v4/util/Pair;
 
     .line 53
-    iget-object v1, p1, Landroid/support/v4/util/Pair;->a:Ljava/lang/Object;
+    iget-object v1, p1, Landroid/support/v4/util/Pair;->mObjecta:Ljava/lang/Object;
 
-    iget-object v2, p0, Landroid/support/v4/util/Pair;->a:Ljava/lang/Object;
+    iget-object v2, p0, Landroid/support/v4/util/Pair;->mObjecta:Ljava/lang/Object;
 
     invoke-static {v1, v2}, Landroid/support/v4/util/Pair;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -95,9 +95,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p1, Landroid/support/v4/util/Pair;->b:Ljava/lang/Object;
+    iget-object v1, p1, Landroid/support/v4/util/Pair;->mObjectb:Ljava/lang/Object;
 
-    iget-object v2, p0, Landroid/support/v4/util/Pair;->b:Ljava/lang/Object;
+    iget-object v2, p0, Landroid/support/v4/util/Pair;->mObjectb:Ljava/lang/Object;
 
     invoke-static {v1, v2}, Landroid/support/v4/util/Pair;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -117,14 +117,14 @@
     const/4 v1, 0x0
 
     .line 67
-    iget-object v0, p0, Landroid/support/v4/util/Pair;->a:Ljava/lang/Object;
+    iget-object v0, p0, Landroid/support/v4/util/Pair;->mObjecta:Ljava/lang/Object;
 
     if-nez v0, :cond_0
 
     move v0, v1
 
     :goto_0
-    iget-object v2, p0, Landroid/support/v4/util/Pair;->b:Ljava/lang/Object;
+    iget-object v2, p0, Landroid/support/v4/util/Pair;->mObjectb:Ljava/lang/Object;
 
     if-nez v2, :cond_1
 
@@ -134,7 +134,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/util/Pair;->a:Ljava/lang/Object;
+    iget-object v0, p0, Landroid/support/v4/util/Pair;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -143,7 +143,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object v1, p0, Landroid/support/v4/util/Pair;->b:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/util/Pair;->mObjectb:Ljava/lang/Object;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 

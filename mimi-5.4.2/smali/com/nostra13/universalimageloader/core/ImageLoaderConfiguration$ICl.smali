@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+.field public static final mQueueProcessingTypea:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
 
 # instance fields
@@ -63,9 +63,9 @@
 
     .prologue
     .line 162
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->a:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->mQueueProcessingTypea:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICl;->a:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICl;->mQueueProcessingTypea:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     return-void
 .end method
@@ -120,7 +120,7 @@
     iput-boolean v2, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICl;->isZn:Z
 
     .line 180
-    sget-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICl;->a:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICl;->mQueueProcessingTypea:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICl;->mQueueProcessingTypeo:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 

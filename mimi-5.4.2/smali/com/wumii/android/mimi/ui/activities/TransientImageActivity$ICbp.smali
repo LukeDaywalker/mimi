@@ -41,7 +41,7 @@
     .line 89
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->s()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
 
@@ -74,7 +74,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 

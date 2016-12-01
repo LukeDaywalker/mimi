@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final a:[B
+.field public static final mArrayBa:[B
 
-.field public static final b:[Ljava/lang/String;
+.field public static final mArrayStringb:[Ljava/lang/String;
 
-.field public static final c:Ljava/nio/charset/Charset;
+.field public static final mCharsetc:Ljava/nio/charset/Charset;
 
 
 # direct methods
@@ -21,12 +21,12 @@
     .line 45
     new-array v0, v1, [B
 
-    sput-object v0, Lcom/squareup/okhttp/internal/Util;->a:[B
+    sput-object v0, Lcom/squareup/okhttp/internal/Util;->mArrayBa:[B
 
     .line 46
     new-array v0, v1, [Ljava/lang/String;
 
-    sput-object v0, Lcom/squareup/okhttp/internal/Util;->b:[Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/Util;->mArrayStringb:[Ljava/lang/String;
 
     .line 49
     const-string/jumbo v0, "UTF-8"
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/Util;->c:Ljava/nio/charset/Charset;
+    sput-object v0, Lcom/squareup/okhttp/internal/Util;->mCharsetc:Ljava/nio/charset/Charset;
 
     return-void
 .end method

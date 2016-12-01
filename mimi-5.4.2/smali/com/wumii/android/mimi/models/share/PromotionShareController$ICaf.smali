@@ -38,7 +38,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mActivitya:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICaf;->mICaeb:Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;
 
@@ -56,7 +56,7 @@
 
     iget-object v3, v3, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
+    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mActivitya:Landroid/app/Activity;
 
     const v4, 0x7f060349
 

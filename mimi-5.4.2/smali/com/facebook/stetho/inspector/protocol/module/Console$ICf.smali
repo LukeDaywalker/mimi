@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
-
-.field public static final enum b:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
-
-.field public static final enum c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
-
-.field public static final enum d:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
-
 .field private static final synthetic mArrayICff:[Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+
+.field public static final enum mICfa:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+
+.field public static final enum mICfb:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+
+.field public static final enum mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+
+.field public static final enum mICfd:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
 
 # instance fields
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->a:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfa:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     .line 71
     new-instance v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->b:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfb:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     .line 72
     new-instance v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
@@ -74,7 +74,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     .line 73
     new-instance v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
@@ -85,26 +85,26 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->d:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfd:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     .line 69
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->a:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfa:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->b:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfb:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->d:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfd:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
     aput-object v1, v0, v6
 

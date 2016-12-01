@@ -300,7 +300,7 @@
     if-eqz v2, :cond_3
 
     .line 6035
-    iget-object v1, v1, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v1, v1, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->invalidate()V
 

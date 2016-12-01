@@ -218,7 +218,7 @@
     if-nez p1, :cond_0
 
     .line 301
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->b:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {v0, v9, v6}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
@@ -238,7 +238,7 @@
     if-nez v1, :cond_1
 
     .line 307
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->b:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {v0, v9, v6}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
@@ -369,7 +369,7 @@
 
     .line 333
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->b:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {v0, v9, v6}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
@@ -439,9 +439,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->f:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->a:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mActivityEventManagera:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -506,7 +506,7 @@
     if-nez v3, :cond_0
 
     .line 212
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->b:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v3, 0x7f060397
 
@@ -575,7 +575,7 @@
     if-nez v2, :cond_0
 
     .line 224
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->b:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v2, 0x7f060398
 
@@ -621,7 +621,7 @@
     if-nez v3, :cond_2
 
     .line 246
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->b:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v3, 0x7f060397
 
@@ -740,7 +740,7 @@
 
     .line 283
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->b:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mContextToastb:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06036a
 

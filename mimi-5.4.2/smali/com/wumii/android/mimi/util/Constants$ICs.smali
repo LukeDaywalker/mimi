@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/Long;
+.field public static final mLonga:Ljava/lang/Long;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICs;->a:Ljava/lang/Long;
+    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICs;->mLonga:Ljava/lang/Long;
 
     return-void
 .end method

@@ -248,7 +248,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 153
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->a:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfka:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -263,7 +263,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 155
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->b:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkb:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -278,7 +278,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 157
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->c:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkc:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -293,7 +293,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 159
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->d:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkd:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -308,7 +308,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 161
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->e:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfke:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -323,7 +323,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 163
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->f:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkf:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -338,7 +338,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 165
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->g:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkg:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -353,7 +353,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 167
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->h:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfkh:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -368,7 +368,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 169
-    sget-object v1, Lu/aly/UMEnvelope$ICfk;->i:Lu/aly/UMEnvelope$ICfk;
+    sget-object v1, Lu/aly/UMEnvelope$ICfk;->mICfki:Lu/aly/UMEnvelope$ICfk;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

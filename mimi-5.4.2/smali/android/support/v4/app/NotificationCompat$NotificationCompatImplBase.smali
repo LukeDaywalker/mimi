@@ -24,14 +24,14 @@
 
     .prologue
     .line 476
-    iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$Builder;->B:Landroid/app/Notification;
+    iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mNotificationB:Landroid/app/Notification;
 
     .line 477
-    iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->a:Landroid/content/Context;
+    iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mContexta:Landroid/content/Context;
 
-    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$Builder;->b:Ljava/lang/CharSequence;
+    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequenceb:Ljava/lang/CharSequence;
 
-    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$Builder;->c:Ljava/lang/CharSequence;
+    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mCharSequencec:Ljava/lang/CharSequence;
 
     iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntentd:Landroid/app/PendingIntent;
 

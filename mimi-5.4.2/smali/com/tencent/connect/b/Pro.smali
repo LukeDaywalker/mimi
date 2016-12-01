@@ -53,7 +53,7 @@
     invoke-static {v0, v1}, Lcom/tencent/b/a/Pro$ICj;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 236
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/webkit/CookieSyncManager;->createInstance(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;
 
@@ -83,7 +83,7 @@
     .line 243
     const-string/jumbo v1, "client_id"
 
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
 
@@ -92,7 +92,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 244
-    sget-boolean v1, Lcom/tencent/connect/b/Pro;->l:Z
+    sget-boolean v1, Lcom/tencent/connect/b/Pro;->isZl:Z
 
     if-eqz v1, :cond_1
 
@@ -109,7 +109,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/tencent/connect/b/Pro;->j:Ljava/lang/String;
+    sget-object v3, Lcom/tencent/connect/b/Pro;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -133,7 +133,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/tencent/connect/b/Pro;->i:Ljava/lang/String;
+    sget-object v3, Lcom/tencent/connect/b/Pro;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -145,7 +145,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/tencent/connect/b/Pro;->k:Ljava/lang/String;
+    sget-object v3, Lcom/tencent/connect/b/Pro;->mStringk:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -186,7 +186,7 @@
     move-result-object v1
 
     .line 252
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->d:Landroid/content/Context;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->mContextd:Landroid/content/Context;
 
     invoke-static {v2, v1}, Lcom/tencent/c/Pro$ICo;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -256,7 +256,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->d:Landroid/content/Context;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mContextd:Landroid/content/Context;
 
     const-string/jumbo v4, "https://openmobile.qq.com/oauth2.0/m_authorize?"
 
@@ -281,7 +281,7 @@
     .line 271
     new-instance v0, Lcom/tencent/connect/b/Pro$ICj;
 
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->d:Landroid/content/Context;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->mContextd:Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -307,7 +307,7 @@
 
     const-string/jumbo v3, "action_login"
 
-    iget-object v6, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v6, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     move-object v4, v7
 
@@ -339,7 +339,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     return-object v0
 .end method
@@ -394,7 +394,7 @@
     .line 289
     const-string/jumbo v2, "client_id"
 
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v3}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
 
@@ -403,7 +403,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 291
-    sget-boolean v2, Lcom/tencent/connect/b/Pro;->l:Z
+    sget-boolean v2, Lcom/tencent/connect/b/Pro;->isZl:Z
 
     if-eqz v2, :cond_1
 
@@ -420,7 +420,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/tencent/connect/b/Pro;->j:Ljava/lang/String;
+    sget-object v4, Lcom/tencent/connect/b/Pro;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -444,7 +444,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/tencent/connect/b/Pro;->i:Ljava/lang/String;
+    sget-object v4, Lcom/tencent/connect/b/Pro;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -456,7 +456,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/tencent/connect/b/Pro;->k:Ljava/lang/String;
+    sget-object v4, Lcom/tencent/connect/b/Pro;->mStringk:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -479,7 +479,7 @@
     .line 297
     const-string/jumbo v2, "oauth_app_name"
 
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->d:Landroid/content/Context;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mContextd:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/tencent/c/Pro$ICo;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -515,7 +515,7 @@
     move-result-object v2
 
     .line 299
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->d:Landroid/content/Context;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mContextd:Landroid/content/Context;
 
     invoke-static {v3, v2}, Lcom/tencent/c/Pro$ICo;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -544,7 +544,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 305
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->f:Landroid/content/Intent;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->mIntentf:Landroid/content/Intent;
 
     .line 306
     invoke-virtual {p0}, Lcom/tencent/connect/b/Pro;->d()Z
@@ -597,7 +597,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     return-object v0
 .end method
@@ -627,9 +627,9 @@
     invoke-virtual {v3, v0, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 496
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->d:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->mContextd:Landroid/content/Context;
 
     const-string/jumbo v4, "POST"
 
@@ -648,7 +648,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     return-object v0
 .end method
@@ -658,7 +658,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     return-object v0
 .end method
@@ -668,7 +668,7 @@
 
     .prologue
     .line 319
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     const-string/jumbo v1, ""
 
@@ -677,7 +677,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/tencent/connect/b/Pro$ICt;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 320
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     const-string/jumbo v1, ""
 
@@ -713,7 +713,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mContextd:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -765,7 +765,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     return-object v0
 .end method
@@ -813,21 +813,21 @@
     if-nez p4, :cond_2
 
     .line 177
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v0}, Lcom/tencent/connect/b/Pro$ICt;->c()Ljava/lang/String;
 
     move-result-object v0
 
     .line 178
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v1}, Lcom/tencent/connect/b/Pro$ICt;->d()Ljava/lang/String;
 
     move-result-object v1
 
     .line 179
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
 
@@ -928,7 +928,7 @@
     invoke-virtual {v4, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 199
-    iput-object v4, p0, Lcom/tencent/connect/b/Pro;->f:Landroid/content/Intent;
+    iput-object v4, p0, Lcom/tencent/connect/b/Pro;->mIntentf:Landroid/content/Intent;
 
     .line 200
     invoke-virtual {p0}, Lcom/tencent/connect/b/Pro;->d()Z
@@ -1037,7 +1037,7 @@
 
     const-wide/16 v2, 0x0
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v1}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
 
@@ -1087,7 +1087,7 @@
     const/4 v1, 0x0
 
     .line 545
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->e:Ljava/util/List;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mListe:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1107,15 +1107,15 @@
     check-cast v0, Lcom/tencent/connect/common/Pro$ICb;
 
     .line 546
-    iget v3, v0, Lcom/tencent/connect/common/Pro$ICb;->a:I
+    iget v3, v0, Lcom/tencent/connect/common/Pro$ICb;->mIa:I
 
     if-ne v3, p1, :cond_0
 
     .line 547
-    iget-object v1, v0, Lcom/tencent/connect/common/Pro$ICb;->b:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v1, v0, Lcom/tencent/connect/common/Pro$ICb;->mICbb:Lcom/tencent/tauth/Pro$ICb;
 
     .line 548
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->e:Ljava/util/List;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->mListe:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -1207,12 +1207,12 @@
     if-nez v6, :cond_3
 
     .line 570
-    iget-object v6, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v6, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v6, v3, v4}, Lcom/tencent/connect/b/Pro$ICt;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 571
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v3, v5}, Lcom/tencent/connect/b/Pro$ICt;->a(Ljava/lang/String;)V
 
@@ -1355,21 +1355,21 @@
     const-string/jumbo v1, "tencent&sdk&qazxc***14969%%"
 
     .line 503
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v0}, Lcom/tencent/connect/b/Pro$ICt;->c()Ljava/lang/String;
 
     move-result-object v2
 
     .line 504
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v0}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
 
     move-result-object v3
 
     .line 505
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v0}, Lcom/tencent/connect/b/Pro$ICt;->d()Ljava/lang/String;
 
@@ -1472,7 +1472,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v3}, Lcom/tencent/connect/b/Pro$ICt;->d()Ljava/lang/String;
 
@@ -1488,7 +1488,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->c:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mICtc:Lcom/tencent/connect/b/Pro$ICt;
 
     invoke-virtual {v3}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
 

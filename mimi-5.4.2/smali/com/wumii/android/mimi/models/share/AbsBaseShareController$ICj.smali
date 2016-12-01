@@ -42,7 +42,7 @@
 
     iget-object v1, v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 

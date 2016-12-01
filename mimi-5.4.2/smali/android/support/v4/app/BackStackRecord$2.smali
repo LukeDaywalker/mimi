@@ -101,7 +101,7 @@
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord$2;->mTransitionStated:Landroid/support/v4/app/BackStackRecord$TransitionState;
 
-    iget-object v1, v1, Landroid/support/v4/app/BackStackRecord$TransitionState;->d:Landroid/view/View;
+    iget-object v1, v1, Landroid/support/v4/app/BackStackRecord$TransitionState;->mViewd:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

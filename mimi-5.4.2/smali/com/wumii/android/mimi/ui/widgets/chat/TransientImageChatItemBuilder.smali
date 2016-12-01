@@ -45,7 +45,7 @@
     check-cast v1, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgTransientImg;
 
     .line 24
-    iget-object v5, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->b:Landroid/widget/TextView;
+    iget-object v5, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgTransientImg;->isRead()Z
 
@@ -59,7 +59,7 @@
     invoke-static {v5, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 25
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->a:Landroid/widget/ImageView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mImageViewa:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgTransientImg;->isRead()Z
 

@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field protected b:Ljava/net/Socket;
-
 .field private mIg:I
 
 .field private mIh:I
 
 .field private mSocketFactorye:Ljavax/net/SocketFactory;
+
+.field protected mSocketb:Ljava/net/Socket;
 
 .field private mStringf:Ljava/lang/String;
 
@@ -175,10 +175,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->b:Ljava/net/Socket;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mSocketb:Ljava/net/Socket;
 
     .line 70
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->b:Ljava/net/Socket;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mSocketb:Ljava/net/Socket;
 
     iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mIh:I
 
@@ -223,7 +223,7 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mSocketb:Ljava/net/Socket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getInputStream()Ljava/io/InputStream;
 
@@ -248,7 +248,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mSocketb:Ljava/net/Socket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getOutputStream()Ljava/io/OutputStream;
 
@@ -262,12 +262,12 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mSocketb:Ljava/net/Socket;
 
     if-eqz v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mSocketb:Ljava/net/Socket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->close()V
 

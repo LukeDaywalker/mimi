@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Landroid/view/View;
+.field protected mIb:I
 
-.field protected b:I
+.field protected mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -59,17 +59,17 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;->b:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;->mIb:I
 
     .line 28
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;->a(Landroid/content/Context;)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;->a:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;->mViewa:Landroid/view/View;
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;->mViewa:Landroid/view/View;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedCard;->addView(Landroid/view/View;)V
 

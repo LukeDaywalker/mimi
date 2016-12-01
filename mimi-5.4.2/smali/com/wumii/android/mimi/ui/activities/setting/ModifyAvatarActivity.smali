@@ -49,7 +49,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     return-object v0
 .end method
@@ -81,7 +81,7 @@
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->o:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mStringo:Ljava/lang/String;
 
     .line 89
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
@@ -94,7 +94,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mImageViewq:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     const/high16 v4, 0x42c80000    # 100.0f
 
@@ -124,7 +124,7 @@
     .line 75
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/ActivityEventManager;
 

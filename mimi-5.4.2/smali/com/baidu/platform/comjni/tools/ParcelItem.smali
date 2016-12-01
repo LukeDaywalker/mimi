@@ -6,7 +6,7 @@
 
 
 # static fields
-.field public static final a:Landroid/os/Parcelable$Creator;
+.field public static final mCreatora:Landroid/os/Parcelable$Creator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/os/Parcelable$Creator",
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lcom/baidu/platform/comjni/tools/ICb;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comjni/tools/ParcelItem;->a:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/baidu/platform/comjni/tools/ParcelItem;->mCreatora:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method

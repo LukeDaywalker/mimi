@@ -14,13 +14,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/baidu/platform/comapi/map/ICy;
-
-.field public static final enum b:Lcom/baidu/platform/comapi/map/ICy;
-
-.field public static final enum c:Lcom/baidu/platform/comapi/map/ICy;
-
 .field private static final synthetic mArrayICye:[Lcom/baidu/platform/comapi/map/ICy;
+
+.field public static final enum mICya:Lcom/baidu/platform/comapi/map/ICy;
+
+.field public static final enum mICyb:Lcom/baidu/platform/comapi/map/ICy;
+
+.field public static final enum mICyc:Lcom/baidu/platform/comapi/map/ICy;
 
 
 # instance fields
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/baidu/platform/comapi/map/ICy;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICy;->a:Lcom/baidu/platform/comapi/map/ICy;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICy;->mICya:Lcom/baidu/platform/comapi/map/ICy;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICy;
 
@@ -53,7 +53,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/baidu/platform/comapi/map/ICy;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICy;->b:Lcom/baidu/platform/comapi/map/ICy;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICy;->mICyb:Lcom/baidu/platform/comapi/map/ICy;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/ICy;
 
@@ -61,19 +61,19 @@
 
     invoke-direct {v0, v1, v3, v5}, Lcom/baidu/platform/comapi/map/ICy;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICy;->c:Lcom/baidu/platform/comapi/map/ICy;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICy;->mICyc:Lcom/baidu/platform/comapi/map/ICy;
 
     new-array v0, v5, [Lcom/baidu/platform/comapi/map/ICy;
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICy;->a:Lcom/baidu/platform/comapi/map/ICy;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICy;->mICya:Lcom/baidu/platform/comapi/map/ICy;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICy;->b:Lcom/baidu/platform/comapi/map/ICy;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICy;->mICyb:Lcom/baidu/platform/comapi/map/ICy;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/ICy;->c:Lcom/baidu/platform/comapi/map/ICy;
+    sget-object v1, Lcom/baidu/platform/comapi/map/ICy;->mICyc:Lcom/baidu/platform/comapi/map/ICy;
 
     aput-object v1, v0, v3
 

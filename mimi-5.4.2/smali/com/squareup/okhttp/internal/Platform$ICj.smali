@@ -159,7 +159,7 @@
     check-cast v0, Lcom/squareup/okhttp/Protocol;
 
     .line 272
-    sget-object v4, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sget-object v4, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     if-ne v0, v4, :cond_0
 
@@ -303,7 +303,7 @@
     if-nez v2, :cond_0
 
     .line 297
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->a:Ljava/util/logging/Logger;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mLoggera:Ljava/util/logging/Logger;
 
     sget-object v2, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 

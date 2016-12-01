@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:Ljava/lang/String;
+.field public static mStringa:Ljava/lang/String;
 
 
 # instance fields
@@ -19,7 +19,7 @@
     .line 16
     const-string/jumbo v0, "com.wumii.android.SERVICE_KEEPER"
 
-    sput-object v0, Lcom/wumii/android/mimi/push/PushServiceKeeper;->a:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/push/PushServiceKeeper;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 21
-    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringc:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->a(Ljava/lang/String;)V
 

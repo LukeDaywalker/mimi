@@ -10,10 +10,6 @@
 
 
 # instance fields
-.field protected a:I
-
-.field protected b:I
-
 .field private isZD:Z
 
 .field private isZG:Z
@@ -61,6 +57,10 @@
 .field private mIE:I
 
 .field private mIF:I
+
+.field protected mIa:I
+
+.field protected mIb:I
 
 .field private mIg:I
 
@@ -365,11 +365,11 @@
     .prologue
     .line 892
     .line 893
-    iget v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->a:I
+    iget v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIa:I
 
-    iget v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iget v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
-    iget v2, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->a:I
+    iget v2, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIa:I
 
     sub-int/2addr v1, v2
 
@@ -404,7 +404,7 @@
 
     .prologue
     .line 846
-    iput p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->a:I
+    iput p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIa:I
 
     .line 847
     iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mAnimationI:Landroid/view/animation/Animation;
@@ -820,7 +820,7 @@
 
     .line 862
     :cond_0
-    iput p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->a:I
+    iput p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIa:I
 
     .line 863
     iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mAnimationJ:Landroid/view/animation/Animation;
@@ -919,7 +919,7 @@
 
     .prologue
     .line 907
-    iput p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->a:I
+    iput p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIa:I
 
     .line 908
     invoke-direct {p0}, Landroid/support/v4/widget/SwipeRefreshLayout;->c()Z
@@ -1486,7 +1486,7 @@
 
     .line 645
     :pswitch_1
-    iget v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iget v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
     iget-object v2, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mCircleImageViewt:Landroid/support/v4/widget/CircleImageView;
 
@@ -1865,7 +1865,7 @@
 
     neg-int v0, v0
 
-    iput v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iput v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
     iput v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIj:I
 
@@ -2100,7 +2100,7 @@
 
     iget v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mFC:F
 
-    iget v5, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iget v5, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
     int-to-float v5, v5
 
@@ -2159,7 +2159,7 @@
     mul-float/2addr v5, v6
 
     .line 749
-    iget v6, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iget v6, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
     mul-float/2addr v0, v2
 
@@ -2696,7 +2696,7 @@
     .line 209
     iput p2, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIj:I
 
-    iput p2, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iput p2, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
     .line 210
     int-to-float v0, p3
@@ -2741,7 +2741,7 @@
     .line 346
     iget v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mFC:F
 
-    iget v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->b:I
+    iget v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout;->mIb:I
 
     int-to-float v1, v1
 

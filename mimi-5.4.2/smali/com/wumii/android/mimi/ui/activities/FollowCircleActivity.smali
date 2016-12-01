@@ -279,7 +279,7 @@
     if-eqz v0, :cond_3
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -292,13 +292,13 @@
     if-eqz v0, :cond_0
 
     .line 151
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->az:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 154
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -316,7 +316,7 @@
     move-result-object v1
 
     .line 159
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -369,7 +369,7 @@
 
     .line 171
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -382,7 +382,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->setSubscribedCircles(Ljava/util/List;)V
 
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->c()V
 
@@ -428,7 +428,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->setContentView(I)V
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -441,13 +441,13 @@
     if-eqz v0, :cond_0
 
     .line 72
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 75
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -724,7 +724,7 @@
     if-nez v0, :cond_1
 
     .line 216
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadFollowCircles;->a()Ljava/lang/String;
 
@@ -801,7 +801,7 @@
     if-nez v0, :cond_1
 
     .line 229
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventSubscribeCircle;->a()Ljava/lang/String;
 
@@ -860,7 +860,7 @@
     if-nez v0, :cond_1
 
     .line 240
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUnSubscribeCircle;->a()Ljava/lang/String;
 

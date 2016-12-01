@@ -125,7 +125,7 @@
 
     invoke-direct {v2, v4, v1}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
 
-    iput-object v2, v5, Lcom/baidu/mapapi/model/inner/ICa;->b:Lcom/baidu/mapapi/model/inner/Point;
+    iput-object v2, v5, Lcom/baidu/mapapi/model/inner/ICa;->mPointb:Lcom/baidu/mapapi/model/inner/Point;
 
     :cond_2
     const-string/jumbo v1, "ru"
@@ -156,7 +156,7 @@
 
     invoke-direct {v1, v2, v0}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
 
-    iput-object v1, v5, Lcom/baidu/mapapi/model/inner/ICa;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iput-object v1, v5, Lcom/baidu/mapapi/model/inner/ICa;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     :cond_3
     const-string/jumbo v0, "poly_line"
@@ -176,7 +176,7 @@
 
     if-ge v2, v1, :cond_8
 
-    iget-object v1, v5, Lcom/baidu/mapapi/model/inner/ICa;->d:Ljava/util/ArrayList;
+    iget-object v1, v5, Lcom/baidu/mapapi/model/inner/ICa;->mArrayListd:Ljava/util/ArrayList;
 
     if-nez v1, :cond_4
 
@@ -184,7 +184,7 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, v5, Lcom/baidu/mapapi/model/inner/ICa;->d:Ljava/util/ArrayList;
+    iput-object v1, v5, Lcom/baidu/mapapi/model/inner/ICa;->mArrayListd:Ljava/util/ArrayList;
 
     :cond_4
     aget-object v1, v0, v2
@@ -254,7 +254,7 @@
     :cond_6
     invoke-virtual {v7}, Ljava/util/ArrayList;->trimToSize()V
 
-    iget-object v1, v5, Lcom/baidu/mapapi/model/inner/ICa;->d:Ljava/util/ArrayList;
+    iget-object v1, v5, Lcom/baidu/mapapi/model/inner/ICa;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -266,7 +266,7 @@
     goto :goto_1
 
     :cond_8
-    iget-object v0, v5, Lcom/baidu/mapapi/model/inner/ICa;->d:Ljava/util/ArrayList;
+    iget-object v0, v5, Lcom/baidu/mapapi/model/inner/ICa;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->trimToSize()V
 
@@ -278,7 +278,7 @@
 
     double-to-int v0, v0
 
-    iput v0, v5, Lcom/baidu/mapapi/model/inner/ICa;->a:I
+    iput v0, v5, Lcom/baidu/mapapi/model/inner/ICa;->mIa:I
 
     move-object v0, v5
 

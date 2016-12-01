@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field protected a:Landroid/content/Context;
+.field protected mAppFacadec:Lcom/wumii/android/mimi/models/AppFacade;
 
-.field protected b:Landroid/view/LayoutInflater;
+.field protected mContexta:Landroid/content/Context;
 
-.field protected c:Lcom/wumii/android/mimi/models/AppFacade;
+.field protected mLayoutInflaterb:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -27,17 +27,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->c:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->mAppFacadec:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->mContexta:Landroid/content/Context;
 
     .line 25
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->b:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     .line 26
     return-void
@@ -53,7 +53,7 @@
     if-nez p2, :cond_0
 
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030087
 

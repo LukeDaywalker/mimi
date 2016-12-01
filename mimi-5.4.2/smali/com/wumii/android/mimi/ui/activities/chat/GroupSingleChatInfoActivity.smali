@@ -113,7 +113,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;->getChatId()Ljava/lang/String;
 
@@ -138,7 +138,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupSingleChat;
 
@@ -173,7 +173,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->h()V
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupSingleChat;
 
@@ -191,7 +191,7 @@
     div-int/lit8 v2, v1, 0x2
 
     .line 40
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 

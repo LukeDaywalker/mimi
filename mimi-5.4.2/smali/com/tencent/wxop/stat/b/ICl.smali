@@ -2275,7 +2275,7 @@
 .method public static p(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICa;->b:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICa;->mStringb:Ljava/lang/String;
 
     invoke-static {p0, v0}, Lcom/tencent/wxop/stat/b/ICl;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 

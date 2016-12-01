@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
-
 .field private mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
+
+.field protected mNetworkHelpera:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager;->a:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager;->mNetworkHelpera:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 25
     new-instance v0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;

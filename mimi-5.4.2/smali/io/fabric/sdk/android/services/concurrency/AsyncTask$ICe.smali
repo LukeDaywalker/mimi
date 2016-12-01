@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICe;->mArrayIa:[I
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICjb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICe;->mArrayIa:[I
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->c:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICjc:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->ordinal()I
 

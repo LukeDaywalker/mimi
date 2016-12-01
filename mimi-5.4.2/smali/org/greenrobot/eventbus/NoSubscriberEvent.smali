@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Lorg/greenrobot/eventbus/EventBus;
+.field public final mEventBusa:Lorg/greenrobot/eventbus/EventBus;
 
-.field public final b:Ljava/lang/Object;
+.field public final mObjectb:Ljava/lang/Object;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    iput-object p1, p0, Lorg/greenrobot/eventbus/NoSubscriberEvent;->a:Lorg/greenrobot/eventbus/EventBus;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/NoSubscriberEvent;->mEventBusa:Lorg/greenrobot/eventbus/EventBus;
 
     .line 32
-    iput-object p2, p0, Lorg/greenrobot/eventbus/NoSubscriberEvent;->b:Ljava/lang/Object;
+    iput-object p2, p0, Lorg/greenrobot/eventbus/NoSubscriberEvent;->mObjectb:Ljava/lang/Object;
 
     .line 33
     return-void

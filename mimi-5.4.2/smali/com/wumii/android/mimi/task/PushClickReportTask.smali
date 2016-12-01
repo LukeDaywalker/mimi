@@ -145,7 +145,7 @@
     move-exception v0
 
     .line 41
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->c:Lorg/slf4j/Logger;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -192,7 +192,7 @@
 
     .line 58
     :try_start_1
-    iget-object v4, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v4, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v5, "push/click"
 
@@ -210,7 +210,7 @@
     move-exception v1
 
     .line 61
-    iget-object v4, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->c:Lorg/slf4j/Logger;
+    iget-object v4, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -235,7 +235,7 @@
 
     .line 71
     :try_start_2
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v4, "push/click"
 
@@ -275,7 +275,7 @@
     move-exception v1
 
     .line 73
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->c:Lorg/slf4j/Logger;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 

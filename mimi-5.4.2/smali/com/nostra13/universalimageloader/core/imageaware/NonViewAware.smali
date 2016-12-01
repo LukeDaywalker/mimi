@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field protected final a:Ljava/lang/String;
+.field protected final mImageSizeb:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-.field protected final b:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+.field protected final mStringa:Ljava/lang/String;
 
-.field protected final c:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+.field protected final mViewScaleTypec:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
 
 # direct methods
@@ -47,13 +47,13 @@
 
     .line 48
     :cond_1
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->mStringa:Ljava/lang/String;
 
     .line 49
-    iput-object p2, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->b:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    iput-object p2, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->mImageSizeb:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     .line 50
-    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->c:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->mViewScaleTypec:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     .line 51
     return-void
@@ -66,7 +66,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->b:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->mImageSizeb:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a()I
 
@@ -100,7 +100,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->b:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->mImageSizeb:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b()I
 
@@ -114,7 +114,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->c:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->mViewScaleTypec:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     return-object v0
 .end method
@@ -144,7 +144,7 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -160,7 +160,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 

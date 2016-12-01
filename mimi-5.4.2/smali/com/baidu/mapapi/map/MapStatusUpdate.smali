@@ -144,29 +144,29 @@
 
     iget-object v0, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
 
     iget-object v5, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v5, v5, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v5, v5, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v5, v5, Lcom/baidu/platform/comapi/map/B$ICb;->a:I
+    iget v5, v5, Lcom/baidu/platform/comapi/map/B$ICb;->mIa:I
 
     sub-int v5, v0, v5
 
     iget-object v0, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
 
     iget-object v6, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v6, v6, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v6, v6, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v6, v6, Lcom/baidu/platform/comapi/map/B$ICb;->c:I
+    iget v6, v6, Lcom/baidu/platform/comapi/map/B$ICb;->mIc:I
 
     sub-int v6, v0, v6
 

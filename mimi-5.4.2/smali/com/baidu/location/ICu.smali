@@ -343,7 +343,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/baidu/location/ICu$ICa;-><init>(Lcom/baidu/location/ICu;IIIIC)V
 
-    iput-wide v10, v0, Lcom/baidu/location/ICu$ICa;->if:J
+    iput-wide v10, v0, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     invoke-virtual {v0}, Lcom/baidu/location/ICu$ICa;->a()Z
 
@@ -504,7 +504,7 @@
 
     check-cast v0, Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v6, v0, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v6, v0, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     invoke-virtual {v4, v6, v7}, Ljava/io/RandomAccessFile;->writeLong(J)V
 
@@ -557,7 +557,7 @@
 
     check-cast v0, Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v6, v0, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v6, v0, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     invoke-virtual {v4, v6, v7}, Ljava/io/RandomAccessFile;->writeLong(J)V
 
@@ -593,7 +593,7 @@
 
     check-cast v0, Lcom/baidu/location/ICu$ICa;
 
-    iget v0, v0, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v0, v0, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     invoke-virtual {v4, v0}, Ljava/io/RandomAccessFile;->writeInt(I)V
 
@@ -695,7 +695,7 @@
 
     check-cast v0, Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v8, v0, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v8, v0, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     cmp-long v0, v6, v8
 
@@ -720,7 +720,7 @@
 
     check-cast v0, Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v6, v0, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v6, v0, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     invoke-virtual {v4, v6, v7}, Ljava/io/RandomAccessFile;->writeLong(J)V
 
@@ -773,7 +773,7 @@
 
     check-cast v0, Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v6, v0, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v6, v0, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     invoke-virtual {v4, v6, v7}, Ljava/io/RandomAccessFile;->writeLong(J)V
 
@@ -809,7 +809,7 @@
 
     check-cast v0, Lcom/baidu/location/ICu$ICa;
 
-    iget v0, v0, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v0, v0, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     invoke-virtual {v4, v0}, Ljava/io/RandomAccessFile;->writeInt(I)V
 
@@ -959,7 +959,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, v6, Lcom/baidu/location/ICu$ICa;->if:J
+    iput-wide v2, v6, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     :try_start_0
     iget-object v2, p0, Lcom/baidu/location/ICu;->mTelephonyManagerd6:Landroid/telephony/TelephonyManager;
@@ -1084,7 +1084,7 @@
 
     move-result v2
 
-    iput v2, v6, Lcom/baidu/location/ICu$ICa;->a:I
+    iput v2, v6, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     check-cast p1, Landroid/telephony/gsm/GsmCellLocation;
 
@@ -1159,11 +1159,11 @@
 
     if-ne v3, v4, :cond_b
 
-    iget v3, v2, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v3, v2, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     iget-object v4, p0, Lcom/baidu/location/ICu;->mICaec:Lcom/baidu/location/ICu$ICa;
 
-    iget v4, v4, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v4, v4, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     if-eq v3, v4, :cond_0
 
@@ -1172,13 +1172,13 @@
 
     iget-object v3, p0, Lcom/baidu/location/ICu;->mICaec:Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v6, v3, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v6, v3, Lcom/baidu/location/ICu$ICa;->mJif:J
 
-    iget-wide v8, v2, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v8, v2, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     sub-long/2addr v6, v8
 
-    iput-wide v6, v2, Lcom/baidu/location/ICu$ICa;->if:J
+    iput-wide v6, v2, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     :cond_c
     iget-object v2, p0, Lcom/baidu/location/ICu;->mListek:Ljava/util/List;
@@ -1398,7 +1398,7 @@
 
     move-result v2
 
-    iput v2, v6, Lcom/baidu/location/ICu$ICa;->a:I
+    iput v2, v6, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     sget-object v2, Lcom/baidu/location/ICu;->mMethodd7:Ljava/lang/reflect/Method;
 
@@ -1459,7 +1459,7 @@
 
     move-result v2
 
-    iput v2, v6, Lcom/baidu/location/ICu$ICa;->do:I
+    iput v2, v6, Lcom/baidu/location/ICu$ICa;->mIdo:I
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
@@ -1706,7 +1706,7 @@
 
     iget-object v1, p0, Lcom/baidu/location/ICu;->mICaec:Lcom/baidu/location/ICu$ICa;
 
-    iget v2, v1, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v2, v1, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     iget-object v1, p0, Lcom/baidu/location/ICu;->mICaec:Lcom/baidu/location/ICu$ICa;
 
@@ -1749,7 +1749,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/ICu;->mICad9:Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v2, v2, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v2, v2, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     sub-long/2addr v0, v2
 
@@ -1822,17 +1822,17 @@
 
     iget-object v1, p0, Lcom/baidu/location/ICu;->mICad9:Lcom/baidu/location/ICu$ICa;
 
-    iget v1, v1, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v1, v1, Lcom/baidu/location/ICu$ICa;->mIa:I
 
-    iput v1, v0, Lcom/baidu/location/ICu$ICa;->a:I
+    iput v1, v0, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     iget-object v0, p0, Lcom/baidu/location/ICu;->mICaec:Lcom/baidu/location/ICu$ICa;
 
     iget-object v1, p0, Lcom/baidu/location/ICu;->mICad9:Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v2, v1, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v2, v1, Lcom/baidu/location/ICu$ICa;->mJif:J
 
-    iput-wide v2, v0, Lcom/baidu/location/ICu$ICa;->if:J
+    iput-wide v2, v0, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     iget-object v0, p0, Lcom/baidu/location/ICu;->mICaec:Lcom/baidu/location/ICu$ICa;
 
@@ -1861,7 +1861,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/ICu;->mICad9:Lcom/baidu/location/ICu$ICa;
 
-    iget-wide v2, v2, Lcom/baidu/location/ICu$ICa;->if:J
+    iget-wide v2, v2, Lcom/baidu/location/ICu$ICa;->mJif:J
 
     sub-long/2addr v0, v2
 
@@ -1926,7 +1926,7 @@
 
     :cond_1
     :try_start_1
-    sget-boolean v0, Lcom/baidu/location/ICad;->gP:Z
+    sget-boolean v0, Lcom/baidu/location/ICad;->isZgP:Z
 
     if-eqz v0, :cond_0
 

@@ -80,7 +80,7 @@
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     .line 56
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->b:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -262,7 +262,7 @@
 
     .line 83
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -322,7 +322,7 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mContextb:Landroid/content/Context;
 
     const-string/jumbo v1, "ic_share_logo.jpg"
 

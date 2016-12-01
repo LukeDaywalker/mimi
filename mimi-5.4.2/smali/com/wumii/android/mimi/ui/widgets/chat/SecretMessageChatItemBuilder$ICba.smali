@@ -32,7 +32,7 @@
     .line 45
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder$ICba;->mSecretMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->d:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->mContextd:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 

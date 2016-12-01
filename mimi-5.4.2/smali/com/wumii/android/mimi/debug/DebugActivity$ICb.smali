@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
-
-.field public static final enum b:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
-
 .field private static final synthetic mArrayICbd:[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+
+.field public static final enum mICba:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+
+.field public static final enum mICbb:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
 
 # instance fields
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->a:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    sput-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mICba:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     .line 16
     new-instance v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
@@ -55,18 +55,18 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->b:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    sput-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mICbb:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     .line 14
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
-    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->a:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mICba:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->b:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mICbb:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     aput-object v1, v0, v4
 

@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field protected j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field protected mActivityEventManagerj:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field protected k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+.field protected mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
 
 # direct methods
@@ -41,14 +41,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mActivityEventManagerj:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 26
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 27
     const/4 v0, 0x0
@@ -88,14 +88,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mActivityEventManagerj:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 41
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-direct {v0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 42
     invoke-direct {p0, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->b(Z)V
@@ -109,7 +109,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;
 
@@ -118,7 +118,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -146,7 +146,7 @@
     if-eqz v0, :cond_0
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -160,7 +160,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -173,7 +173,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -182,7 +182,7 @@
     if-eqz v0, :cond_0
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->k:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -195,7 +195,7 @@
     if-eqz v0, :cond_1
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

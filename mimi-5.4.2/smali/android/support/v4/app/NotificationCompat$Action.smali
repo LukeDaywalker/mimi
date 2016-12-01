@@ -4,19 +4,19 @@
 
 
 # static fields
-.field public static final d:Landroid/support/v4/app/NotificationCompatBase$Action$Factory;
+.field public static final mFactoryd:Landroid/support/v4/app/NotificationCompatBase$Action$Factory;
 
 
 # instance fields
-.field public a:I
-
-.field public b:Ljava/lang/CharSequence;
-
-.field public c:Landroid/app/PendingIntent;
-
 .field private final mArrayRemoteInputf:[Landroid/support/v4/app/RemoteInput;
 
 .field private final mBundlee:Landroid/os/Bundle;
+
+.field public mCharSequenceb:Ljava/lang/CharSequence;
+
+.field public mIa:I
+
+.field public mPendingIntentc:Landroid/app/PendingIntent;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$Action$1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat$Action;->d:Landroid/support/v4/app/NotificationCompatBase$Action$Factory;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat$Action;->mFactoryd:Landroid/support/v4/app/NotificationCompatBase$Action$Factory;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     .prologue
     .line 1839
-    iget v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->a:I
+    iget v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->mIa:I
 
     return v0
 .end method
@@ -51,7 +51,7 @@
 
     .prologue
     .line 1844
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->b:Ljava/lang/CharSequence;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->mCharSequenceb:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -61,7 +61,7 @@
 
     .prologue
     .line 1849
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->c:Landroid/app/PendingIntent;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->mPendingIntentc:Landroid/app/PendingIntent;
 
     return-object v0
 .end method

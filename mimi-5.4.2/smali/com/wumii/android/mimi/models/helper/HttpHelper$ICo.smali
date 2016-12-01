@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
+.field public static final mICoa:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
 
 .field private static final serialVersionUID:J = 0x4f379859f6f4dca5L
 
@@ -19,7 +19,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;->a:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;->mICoa:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
 
     return-void
 .end method

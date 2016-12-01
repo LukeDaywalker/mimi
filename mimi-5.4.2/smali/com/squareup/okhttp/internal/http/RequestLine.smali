@@ -9,7 +9,7 @@
 
     .prologue
     .line 55
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     if-ne p0, v0, :cond_0
 

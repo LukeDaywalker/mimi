@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->d:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwd:Lcom/tencent/wxop/stat/ICw;
 
     if-ne v0, v1, :cond_0
 

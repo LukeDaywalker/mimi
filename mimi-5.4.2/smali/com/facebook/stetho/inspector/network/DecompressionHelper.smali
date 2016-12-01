@@ -81,9 +81,9 @@
 
     .line 39
     :cond_2
-    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->b:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfb:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

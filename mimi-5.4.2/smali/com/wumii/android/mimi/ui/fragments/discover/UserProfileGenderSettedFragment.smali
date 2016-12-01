@@ -32,7 +32,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->getCheckedPostion()I
 
@@ -170,7 +170,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->getCheckedRadio()Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 

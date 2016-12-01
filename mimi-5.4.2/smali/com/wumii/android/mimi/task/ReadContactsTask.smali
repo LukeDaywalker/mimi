@@ -364,7 +364,7 @@
     move-exception v0
 
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mLoggerc:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "sorted_contacts file is broken."
 
@@ -378,7 +378,7 @@
 
     .line 121
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -517,7 +517,7 @@
     if-eqz v3, :cond_5
 
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -550,7 +550,7 @@
     .line 158
     :cond_2
     :goto_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -762,7 +762,7 @@
 
     .line 181
     :cond_b
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -792,7 +792,7 @@
     invoke-static {v2}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 184
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->m:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mHandlerm:Landroid/os/Handler;
 
     new-instance v1, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;
 
@@ -847,7 +847,7 @@
     if-eqz v0, :cond_1
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

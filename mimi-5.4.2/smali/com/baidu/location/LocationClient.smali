@@ -390,7 +390,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/LocationClient;->mLocationClientOptionki:Lcom/baidu/location/LocationClientOption;
 
-    iget v2, v2, Lcom/baidu/location/LocationClientOption;->c:F
+    iget v2, v2, Lcom/baidu/location/LocationClientOption;->mFc:F
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
@@ -398,7 +398,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/LocationClient;->mLocationClientOptionki:Lcom/baidu/location/LocationClientOption;
 
-    iget-boolean v2, v2, Lcom/baidu/location/LocationClientOption;->e:Z
+    iget-boolean v2, v2, Lcom/baidu/location/LocationClientOption;->isZe:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
@@ -432,7 +432,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/LocationClient;->mLocationClientOptionki:Lcom/baidu/location/LocationClientOption;
 
-    iget-object v2, v2, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iget-object v2, v2, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -440,7 +440,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/LocationClient;->mLocationClientOptionki:Lcom/baidu/location/LocationClientOption;
 
-    iget-object v2, v2, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iget-object v2, v2, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -480,7 +480,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/LocationClient;->mLocationClientOptionki:Lcom/baidu/location/LocationClientOption;
 
-    iget v2, v2, Lcom/baidu/location/LocationClientOption;->d:I
+    iget v2, v2, Lcom/baidu/location/LocationClientOption;->mId:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -488,7 +488,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/LocationClient;->mLocationClientOptionki:Lcom/baidu/location/LocationClientOption;
 
-    iget v2, v2, Lcom/baidu/location/LocationClientOption;->h:I
+    iget v2, v2, Lcom/baidu/location/LocationClientOption;->mIh:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -516,7 +516,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/LocationClient;->mLocationClientOptionki:Lcom/baidu/location/LocationClientOption;
 
-    iget-boolean v2, v2, Lcom/baidu/location/LocationClientOption;->g:Z
+    iget-boolean v2, v2, Lcom/baidu/location/LocationClientOption;->isZg:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
@@ -601,7 +601,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/LocationClient;->mLocationClientOptionki:Lcom/baidu/location/LocationClientOption;
 
-    iget-boolean v2, v2, Lcom/baidu/location/LocationClientOption;->b:Z
+    iget-boolean v2, v2, Lcom/baidu/location/LocationClientOption;->isZb:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
@@ -2288,7 +2288,7 @@
     return-void
 
     :cond_1
-    iget v0, p1, Lcom/baidu/location/LocationClientOption;->h:I
+    iget v0, p1, Lcom/baidu/location/LocationClientOption;->mIh:I
 
     packed-switch v0, :pswitch_data_0
 

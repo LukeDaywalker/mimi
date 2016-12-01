@@ -124,7 +124,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICa1;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICa1;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -598,7 +598,7 @@
     :try_start_0
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/baidu/location/ICa1;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICa1;->mStringI:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 

@@ -19,33 +19,41 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum b:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum c:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum d:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum e:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum f:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum g:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum h:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum i:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum j:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum k:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum l:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum m:Lu/aly/DeviceInfo$ICah;
-
 .field private static final synthetic mArrayICahu:[Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICaha:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahb:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahc:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahd:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahe:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahf:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahg:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahh:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahi:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahj:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahk:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahl:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahm:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahn:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICaho:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahp:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum mICahq:Lu/aly/DeviceInfo$ICah;
 
 .field private static final mMapr:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -58,14 +66,6 @@
         }
     .end annotation
 .end field
-
-.field public static final enum n:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum o:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum p:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum q:Lu/aly/DeviceInfo$ICah;
 
 
 # instance fields
@@ -100,7 +100,7 @@
 
     invoke-direct {v0, v1, v2, v5, v3}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->a:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICaha:Lu/aly/DeviceInfo$ICah;
 
     .line 80
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -111,7 +111,7 @@
 
     invoke-direct {v0, v1, v5, v6, v2}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->b:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahb:Lu/aly/DeviceInfo$ICah;
 
     .line 81
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -122,7 +122,7 @@
 
     invoke-direct {v0, v1, v6, v7, v2}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->c:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahc:Lu/aly/DeviceInfo$ICah;
 
     .line 82
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -133,7 +133,7 @@
 
     invoke-direct {v0, v1, v7, v8, v2}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->d:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahd:Lu/aly/DeviceInfo$ICah;
 
     .line 83
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -144,7 +144,7 @@
 
     invoke-direct {v0, v1, v8, v9, v2}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->e:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahe:Lu/aly/DeviceInfo$ICah;
 
     .line 84
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -157,7 +157,7 @@
 
     invoke-direct {v0, v1, v9, v2, v3}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->f:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahf:Lu/aly/DeviceInfo$ICah;
 
     .line 85
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -172,7 +172,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->g:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahg:Lu/aly/DeviceInfo$ICah;
 
     .line 86
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -187,7 +187,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->h:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahh:Lu/aly/DeviceInfo$ICah;
 
     .line 87
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -202,7 +202,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->i:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahi:Lu/aly/DeviceInfo$ICah;
 
     .line 88
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -217,7 +217,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->j:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahj:Lu/aly/DeviceInfo$ICah;
 
     .line 89
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -232,7 +232,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->k:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahk:Lu/aly/DeviceInfo$ICah;
 
     .line 90
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -247,7 +247,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->l:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahl:Lu/aly/DeviceInfo$ICah;
 
     .line 91
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -262,7 +262,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->m:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahm:Lu/aly/DeviceInfo$ICah;
 
     .line 92
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -277,7 +277,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->n:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahn:Lu/aly/DeviceInfo$ICah;
 
     .line 93
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -292,7 +292,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->o:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICaho:Lu/aly/DeviceInfo$ICah;
 
     .line 94
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -307,7 +307,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->p:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahp:Lu/aly/DeviceInfo$ICah;
 
     .line 95
     new-instance v0, Lu/aly/DeviceInfo$ICah;
@@ -322,7 +322,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lu/aly/DeviceInfo$ICah;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->q:Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mICahq:Lu/aly/DeviceInfo$ICah;
 
     .line 78
     const/16 v0, 0x11
@@ -331,93 +331,93 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->a:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICaha:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->b:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahb:Lu/aly/DeviceInfo$ICah;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->c:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahc:Lu/aly/DeviceInfo$ICah;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->d:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahd:Lu/aly/DeviceInfo$ICah;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->e:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahe:Lu/aly/DeviceInfo$ICah;
 
     aput-object v1, v0, v8
 
-    sget-object v1, Lu/aly/DeviceInfo$ICah;->f:Lu/aly/DeviceInfo$ICah;
+    sget-object v1, Lu/aly/DeviceInfo$ICah;->mICahf:Lu/aly/DeviceInfo$ICah;
 
     aput-object v1, v0, v9
 
     const/4 v1, 0x6
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->g:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahg:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->h:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahh:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->i:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahi:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->j:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahj:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->k:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahk:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->l:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahl:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xc
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->m:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahm:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xd
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->n:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahn:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xe
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->o:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICaho:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xf
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->p:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahp:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x10
 
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->q:Lu/aly/DeviceInfo$ICah;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mICahq:Lu/aly/DeviceInfo$ICah;
 
     aput-object v2, v0, v1
 

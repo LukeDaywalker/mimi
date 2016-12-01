@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field public a:Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;
+.field public mICda:Lcom/facebook/stetho/inspector/protocol/module/Console$ICd;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation

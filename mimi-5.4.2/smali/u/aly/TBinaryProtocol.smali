@@ -8,13 +8,11 @@
 
 
 # instance fields
-.field protected a:Z
+.field protected isZa:Z
 
-.field protected b:Z
+.field protected isZb:Z
 
-.field protected c:I
-
-.field protected d:Z
+.field protected isZd:Z
 
 .field private mArrayBg:[B
 
@@ -31,6 +29,8 @@
 .field private mArrayBm:[B
 
 .field private mArrayBn:[B
+
+.field protected mIc:I
 
 
 # direct methods
@@ -66,13 +66,13 @@
     invoke-direct {p0, p1}, Lu/aly/TProtocol;-><init>(Lu/aly/TTransport;)V
 
     .line 40
-    iput-boolean v0, p0, Lu/aly/TBinaryProtocol;->a:Z
+    iput-boolean v0, p0, Lu/aly/TBinaryProtocol;->isZa:Z
 
     .line 41
-    iput-boolean v1, p0, Lu/aly/TBinaryProtocol;->b:Z
+    iput-boolean v1, p0, Lu/aly/TBinaryProtocol;->isZb:Z
 
     .line 44
-    iput-boolean v0, p0, Lu/aly/TBinaryProtocol;->d:Z
+    iput-boolean v0, p0, Lu/aly/TBinaryProtocol;->isZd:Z
 
     .line 150
     new-array v0, v1, [B
@@ -115,10 +115,10 @@
     iput-object v0, p0, Lu/aly/TBinaryProtocol;->mArrayBn:[B
 
     .line 90
-    iput-boolean p2, p0, Lu/aly/TBinaryProtocol;->a:Z
+    iput-boolean p2, p0, Lu/aly/TBinaryProtocol;->isZa:Z
 
     .line 91
-    iput-boolean p3, p0, Lu/aly/TBinaryProtocol;->b:Z
+    iput-boolean p3, p0, Lu/aly/TBinaryProtocol;->isZb:Z
 
     .line 92
     return-void
@@ -132,7 +132,7 @@
     invoke-virtual {p0, p3}, Lu/aly/TBinaryProtocol;->d(I)V
 
     .line 384
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0, p1, p2, p3}, Lu/aly/TTransport;->d([BII)I
 
@@ -163,7 +163,7 @@
     aput-byte p1, v0, v3
 
     .line 153
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     iget-object v1, p0, Lu/aly/TBinaryProtocol;->mArrayBg:[B
 
@@ -245,7 +245,7 @@
     aput-byte v2, v0, v1
 
     .line 169
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     iget-object v1, p0, Lu/aly/TBinaryProtocol;->mArrayBi:[B
 
@@ -396,7 +396,7 @@
     aput-byte v2, v0, v1
 
     .line 182
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     iget-object v1, p0, Lu/aly/TBinaryProtocol;->mArrayBj:[B
 
@@ -424,7 +424,7 @@
     invoke-virtual {p0, v1}, Lu/aly/TBinaryProtocol;->a(I)V
 
     .line 193
-    iget-object v1, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     const/4 v2, 0x0
 
@@ -470,7 +470,7 @@
     invoke-virtual {p0, v0}, Lu/aly/TBinaryProtocol;->a(I)V
 
     .line 202
-    iget-object v1, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
 
@@ -497,12 +497,12 @@
 
     .prologue
     .line 114
-    iget-byte v0, p1, Lu/aly/TField;->b:B
+    iget-byte v0, p1, Lu/aly/TField;->mBb:B
 
     invoke-virtual {p0, v0}, Lu/aly/TBinaryProtocol;->a(B)V
 
     .line 115
-    iget-short v0, p1, Lu/aly/TField;->c:S
+    iget-short v0, p1, Lu/aly/TField;->mSc:S
 
     invoke-virtual {p0, v0}, Lu/aly/TBinaryProtocol;->a(S)V
 
@@ -515,12 +515,12 @@
 
     .prologue
     .line 133
-    iget-byte v0, p1, Lu/aly/TList;->a:B
+    iget-byte v0, p1, Lu/aly/TList;->mBa:B
 
     invoke-virtual {p0, v0}, Lu/aly/TBinaryProtocol;->a(B)V
 
     .line 134
-    iget v0, p1, Lu/aly/TList;->b:I
+    iget v0, p1, Lu/aly/TList;->mIb:I
 
     invoke-virtual {p0, v0}, Lu/aly/TBinaryProtocol;->a(I)V
 
@@ -533,17 +533,17 @@
 
     .prologue
     .line 125
-    iget-byte v0, p1, Lu/aly/TMap;->a:B
+    iget-byte v0, p1, Lu/aly/TMap;->mBa:B
 
     invoke-virtual {p0, v0}, Lu/aly/TBinaryProtocol;->a(B)V
 
     .line 126
-    iget-byte v0, p1, Lu/aly/TMap;->b:B
+    iget-byte v0, p1, Lu/aly/TMap;->mBb:B
 
     invoke-virtual {p0, v0}, Lu/aly/TBinaryProtocol;->a(B)V
 
     .line 127
-    iget v0, p1, Lu/aly/TMap;->c:I
+    iget v0, p1, Lu/aly/TMap;->mIc:I
 
     invoke-virtual {p0, v0}, Lu/aly/TBinaryProtocol;->a(I)V
 
@@ -588,7 +588,7 @@
     aput-byte v2, v0, v1
 
     .line 160
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     iget-object v1, p0, Lu/aly/TBinaryProtocol;->mArrayBh:[B
 
@@ -634,7 +634,7 @@
     new-array v0, p1, [B
 
     .line 360
-    iget-object v1, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     const/4 v2, 0x0
 
@@ -691,12 +691,12 @@
 
     .prologue
     .line 388
-    iput p1, p0, Lu/aly/TBinaryProtocol;->c:I
+    iput p1, p0, Lu/aly/TBinaryProtocol;->mIc:I
 
     .line 389
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lu/aly/TBinaryProtocol;->d:Z
+    iput-boolean v0, p0, Lu/aly/TBinaryProtocol;->isZd:Z
 
     .line 390
     return-void
@@ -744,19 +744,19 @@
 
     .line 396
     :cond_0
-    iget-boolean v0, p0, Lu/aly/TBinaryProtocol;->d:Z
+    iget-boolean v0, p0, Lu/aly/TBinaryProtocol;->isZd:Z
 
     if-eqz v0, :cond_1
 
     .line 397
-    iget v0, p0, Lu/aly/TBinaryProtocol;->c:I
+    iget v0, p0, Lu/aly/TBinaryProtocol;->mIc:I
 
     sub-int/2addr v0, p1
 
-    iput v0, p0, Lu/aly/TBinaryProtocol;->c:I
+    iput v0, p0, Lu/aly/TBinaryProtocol;->mIc:I
 
     .line 398
-    iget v0, p0, Lu/aly/TBinaryProtocol;->c:I
+    iget v0, p0, Lu/aly/TBinaryProtocol;->mIc:I
 
     if-gez v0, :cond_1
 
@@ -976,7 +976,7 @@
     const/4 v2, 0x1
 
     .line 265
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->d()I
 
@@ -985,13 +985,13 @@
     if-lt v0, v2, :cond_0
 
     .line 266
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->b()[B
 
     move-result-object v0
 
-    iget-object v1, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1}, Lu/aly/TTransport;->c()I
 
@@ -1000,7 +1000,7 @@
     aget-byte v0, v0, v1
 
     .line 267
-    iget-object v1, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1, v2}, Lu/aly/TTransport;->a(I)V
 
@@ -1034,7 +1034,7 @@
     iget-object v1, p0, Lu/aly/TBinaryProtocol;->mArrayBl:[B
 
     .line 279
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2}, Lu/aly/TTransport;->d()I
 
@@ -1043,21 +1043,21 @@
     if-lt v2, v3, :cond_0
 
     .line 280
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->b()[B
 
     move-result-object v1
 
     .line 281
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->c()I
 
     move-result v0
 
     .line 282
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2, v3}, Lu/aly/TTransport;->a(I)V
 
@@ -1102,7 +1102,7 @@
     iget-object v1, p0, Lu/aly/TBinaryProtocol;->mArrayBm:[B
 
     .line 298
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2}, Lu/aly/TTransport;->d()I
 
@@ -1111,21 +1111,21 @@
     if-lt v2, v3, :cond_0
 
     .line 299
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->b()[B
 
     move-result-object v1
 
     .line 300
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->c()I
 
     move-result v0
 
     .line 301
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2, v3}, Lu/aly/TTransport;->a(I)V
 
@@ -1188,7 +1188,7 @@
     iget-object v1, p0, Lu/aly/TBinaryProtocol;->mArrayBn:[B
 
     .line 317
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2}, Lu/aly/TTransport;->d()I
 
@@ -1197,21 +1197,21 @@
     if-lt v2, v7, :cond_0
 
     .line 318
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->b()[B
 
     move-result-object v1
 
     .line 319
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->c()I
 
     move-result v0
 
     .line 320
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2, v7}, Lu/aly/TTransport;->a(I)V
 
@@ -1356,7 +1356,7 @@
     move-result v1
 
     .line 343
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->d()I
 
@@ -1368,13 +1368,13 @@
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2}, Lu/aly/TTransport;->b()[B
 
     move-result-object v2
 
-    iget-object v3, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v3, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v3}, Lu/aly/TTransport;->c()I
 
@@ -1385,7 +1385,7 @@
     invoke-direct {v0, v2, v3, v1, v4}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
     .line 346
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2, v1}, Lu/aly/TTransport;->a(I)V
     :try_end_0
@@ -1430,7 +1430,7 @@
     invoke-virtual {p0, v1}, Lu/aly/TBinaryProtocol;->d(I)V
 
     .line 371
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->d()I
 
@@ -1439,13 +1439,13 @@
     if-lt v0, v1, :cond_0
 
     .line 372
-    iget-object v0, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->b()[B
 
     move-result-object v0
 
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2}, Lu/aly/TTransport;->c()I
 
@@ -1456,7 +1456,7 @@
     move-result-object v0
 
     .line 373
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2, v1}, Lu/aly/TTransport;->a(I)V
 
@@ -1469,7 +1469,7 @@
     new-array v0, v1, [B
 
     .line 378
-    iget-object v2, p0, Lu/aly/TBinaryProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TBinaryProtocol;->mTTransporte:Lu/aly/TTransport;
 
     const/4 v3, 0x0
 

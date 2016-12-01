@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/squareup/okhttp/Protocol;
-
-.field public static final enum b:Lcom/squareup/okhttp/Protocol;
-
-.field public static final enum c:Lcom/squareup/okhttp/Protocol;
-
-.field public static final enum d:Lcom/squareup/okhttp/Protocol;
-
 .field private static final synthetic mArrayProtocolf:[Lcom/squareup/okhttp/Protocol;
+
+.field public static final enum mProtocola:Lcom/squareup/okhttp/Protocol;
+
+.field public static final enum mProtocolb:Lcom/squareup/okhttp/Protocol;
+
+.field public static final enum mProtocolc:Lcom/squareup/okhttp/Protocol;
+
+.field public static final enum mProtocold:Lcom/squareup/okhttp/Protocol;
 
 
 # instance fields
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/squareup/okhttp/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sput-object v0, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     .line 45
     new-instance v0, Lcom/squareup/okhttp/Protocol;
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/squareup/okhttp/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sput-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     .line 57
     new-instance v0, Lcom/squareup/okhttp/Protocol;
@@ -74,7 +74,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/squareup/okhttp/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sput-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     .line 69
     new-instance v0, Lcom/squareup/okhttp/Protocol;
@@ -85,26 +85,26 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/squareup/okhttp/Protocol;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sput-object v0, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     .line 31
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/squareup/okhttp/Protocol;
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     aput-object v1, v0, v6
 
@@ -139,7 +139,7 @@
 
     .prologue
     .line 83
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
@@ -149,7 +149,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     .line 86
     :goto_0
@@ -157,7 +157,7 @@
 
     .line 84
     :cond_0
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
@@ -167,13 +167,13 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     goto :goto_0
 
     .line 85
     :cond_1
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
@@ -183,13 +183,13 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     goto :goto_0
 
     .line 86
     :cond_2
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
@@ -199,7 +199,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     goto :goto_0
 

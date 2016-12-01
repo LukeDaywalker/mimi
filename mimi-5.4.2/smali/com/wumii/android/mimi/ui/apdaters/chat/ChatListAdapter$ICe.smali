@@ -84,7 +84,7 @@
     .line 617
     :cond_0
     :goto_1
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
@@ -210,7 +210,7 @@
     if-nez v0, :cond_2
 
     .line 630
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewd:Landroid/widget/TextView;
 
     const-string/jumbo v2, ""
 
@@ -276,12 +276,12 @@
     invoke-interface {v2, v0, v8, v3, v4}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
     .line 645
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewd:Landroid/widget/TextView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
     .line 646
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
@@ -331,7 +331,7 @@
 
     .line 632
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewd:Landroid/widget/TextView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
@@ -339,7 +339,7 @@
 
     .line 635
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewd:Landroid/widget/TextView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
@@ -347,7 +347,7 @@
 
     .line 638
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewd:Landroid/widget/TextView;
 
     const-string/jumbo v2, ""
 
@@ -393,7 +393,7 @@
 
     .prologue
     .line 583
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewf:Landroid/widget/TextView;
 
     const v1, 0x7f0b0009
 
@@ -430,7 +430,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->a:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mImageViewa:Landroid/widget/ImageView;
 
     invoke-static {}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->c()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
@@ -439,7 +439,7 @@
     invoke-virtual {v1, v2, v3, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 589
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)Ljava/lang/String;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private mMenuItemo:Landroid/view/MenuItem;
+.field protected mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-.field protected n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+.field private mMenuItemo:Landroid/view/MenuItem;
 
 
 # direct methods
@@ -129,7 +129,7 @@
     .line 62
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     goto :goto_0
 .end method
@@ -146,7 +146,7 @@
     .line 71
     const-string/jumbo v1, "groupChatInfo"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
@@ -190,11 +190,11 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     .line 29
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     if-nez v0, :cond_1
 
@@ -203,7 +203,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     .line 32
     :cond_1

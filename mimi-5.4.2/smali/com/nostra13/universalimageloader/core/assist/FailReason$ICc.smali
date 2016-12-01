@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final enum a:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
-
-.field public static final enum b:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
-
-.field public static final enum c:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
-
-.field public static final enum d:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
-
-.field public static final enum e:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
-
 .field private static final synthetic mArrayICcf:[Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+
+.field public static final enum mICca:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+
+.field public static final enum mICcb:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+
+.field public static final enum mICcc:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+
+.field public static final enum mICcd:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+
+.field public static final enum mICce:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->a:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICca:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     .line 54
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->b:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcb:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     .line 59
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->c:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcc:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     .line 61
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
@@ -77,7 +77,7 @@
 
     invoke-direct {v0, v1, v5}, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->d:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcd:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     .line 63
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
@@ -86,30 +86,30 @@
 
     invoke-direct {v0, v1, v6}, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->e:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICce:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     .line 46
     const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->a:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICca:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->b:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcb:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->c:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcc:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->d:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICcd:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->e:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mICce:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     aput-object v1, v0, v6
 

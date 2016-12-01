@@ -19,11 +19,11 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/Page$ICdi;
-
-.field public static final enum b:Lu/aly/Page$ICdi;
-
 .field private static final synthetic mArrayICdif:[Lu/aly/Page$ICdi;
+
+.field public static final enum mICdia:Lu/aly/Page$ICdi;
+
+.field public static final enum mICdib:Lu/aly/Page$ICdi;
 
 .field private static final mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4, v3, v2}, Lu/aly/Page$ICdi;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Page$ICdi;->a:Lu/aly/Page$ICdi;
+    sput-object v0, Lu/aly/Page$ICdi;->mICdia:Lu/aly/Page$ICdi;
 
     .line 50
     new-instance v0, Lu/aly/Page$ICdi;
@@ -75,16 +75,16 @@
 
     invoke-direct {v0, v1, v3, v5, v2}, Lu/aly/Page$ICdi;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/Page$ICdi;->b:Lu/aly/Page$ICdi;
+    sput-object v0, Lu/aly/Page$ICdi;->mICdib:Lu/aly/Page$ICdi;
 
     .line 48
     new-array v0, v5, [Lu/aly/Page$ICdi;
 
-    sget-object v1, Lu/aly/Page$ICdi;->a:Lu/aly/Page$ICdi;
+    sget-object v1, Lu/aly/Page$ICdi;->mICdia:Lu/aly/Page$ICdi;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/Page$ICdi;->b:Lu/aly/Page$ICdi;
+    sget-object v1, Lu/aly/Page$ICdi;->mICdib:Lu/aly/Page$ICdi;
 
     aput-object v1, v0, v3
 

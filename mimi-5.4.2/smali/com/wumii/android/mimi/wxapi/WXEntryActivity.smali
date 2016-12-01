@@ -271,7 +271,7 @@
     if-nez v2, :cond_0
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -284,9 +284,9 @@
     .line 70
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -320,7 +320,7 @@
     if-nez v2, :cond_1
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -347,7 +347,7 @@
     if-nez v2, :cond_2
 
     .line 85
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->k:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafk:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->WEIXIN_FRIEND:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -375,7 +375,7 @@
     if-nez v2, :cond_3
 
     .line 88
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->k:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafk:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->WEIXIN_TIMELINE:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -403,7 +403,7 @@
     if-nez v0, :cond_4
 
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

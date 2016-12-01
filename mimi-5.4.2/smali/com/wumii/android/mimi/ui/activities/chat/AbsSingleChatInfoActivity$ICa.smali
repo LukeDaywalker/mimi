@@ -29,7 +29,7 @@
     .line 121
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mBlockTypea:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->a(Lcom/wumii/android/mimi/models/entities/chat/BlockType;)V
 
@@ -45,7 +45,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mBlockTypea:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/BlockType;->TYPE_OTHER:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
@@ -54,9 +54,9 @@
     .line 102
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->d:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->isZd:Z
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;->setBlockedByLoginUser(Z)V
 
@@ -72,7 +72,7 @@
 
     .line 103
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mBlockTypea:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/BlockType;->TYPE_ALL:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
@@ -81,7 +81,7 @@
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     instance-of v0, v0, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;
 
@@ -90,11 +90,11 @@
     .line 105
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;
 
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->d:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->isZd:Z
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;->setAllBlocked(Z)V
 
@@ -104,7 +104,7 @@
     :cond_2
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     instance-of v0, v0, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;
 
@@ -113,11 +113,11 @@
     .line 107
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mSingleChatBasen:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupSingleChat;
 
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->d:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->isZd:Z
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupSingleChat;->setAllBlocked(Z)V
 
@@ -134,7 +134,7 @@
     .line 116
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mBlockTypea:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->a(Lcom/wumii/android/mimi/models/entities/chat/BlockType;)V
 

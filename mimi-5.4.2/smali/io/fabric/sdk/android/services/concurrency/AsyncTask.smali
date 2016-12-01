@@ -19,10 +19,6 @@
 
 
 # static fields
-.field public static final b:Ljava/util/concurrent/Executor;
-
-.field public static final c:Ljava/util/concurrent/Executor;
-
 .field private static final mBlockingQueueg:Ljava/util/concurrent/BlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -33,6 +29,10 @@
         }
     .end annotation
 .end field
+
+.field public static final mExecutorb:Ljava/util/concurrent/Executor;
+
+.field public static final mExecutorc:Ljava/util/concurrent/Executor;
 
 .field private static volatile mExecutori:Ljava/util/concurrent/Executor;
 
@@ -138,7 +138,7 @@
 
     invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    sput-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->b:Ljava/util/concurrent/Executor;
+    sput-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mExecutorb:Ljava/util/concurrent/Executor;
 
     .line 230
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
@@ -147,7 +147,7 @@
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;-><init>(Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICb;)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->c:Ljava/util/concurrent/Executor;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mExecutorc:Ljava/util/concurrent/Executor;
 
     .line 235
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;
@@ -157,7 +157,7 @@
     sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICgh:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;
 
     .line 237
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->c:Ljava/util/concurrent/Executor;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mExecutorc:Ljava/util/concurrent/Executor;
 
     sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mExecutori:Ljava/util/concurrent/Executor;
 
@@ -172,7 +172,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 241
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICja:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
@@ -335,7 +335,7 @@
 
     .line 658
     :goto_0
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->c:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICjc:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
@@ -367,7 +367,7 @@
     .line 596
     iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICja:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     if-eq v0, v1, :cond_0
 
@@ -386,7 +386,7 @@
 
     .line 609
     :cond_0
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICjb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 

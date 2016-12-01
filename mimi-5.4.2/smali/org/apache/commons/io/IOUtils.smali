@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:C
+.field public static final mCa:C
 
-.field public static final b:Ljava/lang/String;
+.field public static final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     .line 101
     sget-char v0, Ljava/io/File;->separatorChar:C
 
-    sput-char v0, Lorg/apache/commons/io/IOUtils;->a:C
+    sput-char v0, Lorg/apache/commons/io/IOUtils;->mCa:C
 
     .line 117
     new-instance v0, Lorg/apache/commons/io/output/StringBuilderWriter;
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/IOUtils;->b:Ljava/lang/String;
+    sput-object v0, Lorg/apache/commons/io/IOUtils;->mStringb:Ljava/lang/String;
 
     .line 121
     invoke-virtual {v1}, Ljava/io/PrintWriter;->close()V

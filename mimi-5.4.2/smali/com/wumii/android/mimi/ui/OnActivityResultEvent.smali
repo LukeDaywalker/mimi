@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected a:I
+.field protected mIa:I
 
-.field protected b:I
+.field protected mIb:I
 
-.field protected c:Landroid/content/Intent;
+.field protected mIntentc:Landroid/content/Intent;
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 11
-    iput p1, p0, Lcom/wumii/android/mimi/ui/OnActivityResultEvent;->a:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/OnActivityResultEvent;->mIa:I
 
     .line 12
-    iput p2, p0, Lcom/wumii/android/mimi/ui/OnActivityResultEvent;->b:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/OnActivityResultEvent;->mIb:I
 
     .line 13
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/OnActivityResultEvent;->c:Landroid/content/Intent;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/OnActivityResultEvent;->mIntentc:Landroid/content/Intent;
 
     .line 14
     return-void

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/io/FilenameFilter;
+.field public static final mFilenameFiltera:Ljava/io/FilenameFilter;
 
 
 # instance fields
@@ -27,7 +27,7 @@
 
     invoke-direct {v0}, Lcom/crashlytics/android/core/ClsFileOutputStream$ICe;-><init>()V
 
-    sput-object v0, Lcom/crashlytics/android/core/ClsFileOutputStream;->a:Ljava/io/FilenameFilter;
+    sput-object v0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFilenameFiltera:Ljava/io/FilenameFilter;
 
     return-void
 .end method

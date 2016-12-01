@@ -7,11 +7,11 @@
 
 
 # static fields
-.field public static final h6:F = 4.0f
-
-.field public static final hP:F = 0.01f
-
 .field private static final mFh5:F = 0.8f
+
+.field public static final mFh6:F = 4.0f
+
+.field public static final mFhP:F = 0.01f
 
 .field private static final mIh0:I = 0x14
 
@@ -19,8 +19,6 @@
 
 
 # instance fields
-.field public hT:Landroid/hardware/SensorEventListener;
-
 .field private isZh9:Z
 
 .field private mArrayDh4:[D
@@ -54,6 +52,8 @@
 .field private final mJhN:J
 
 .field private mJhV:J
+
+.field public mSensorEventListenerhT:Landroid/hardware/SensorEventListener;
 
 .field private mSensorManagerh8:Landroid/hardware/SensorManager;
 
@@ -132,7 +132,7 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICam$1;-><init>(Lcom/baidu/location/ICam;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->hT:Landroid/hardware/SensorEventListener;
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mSensorEventListenerhT:Landroid/hardware/SensorEventListener;
 
     const-wide v0, 0x3ff999999999999aL    # 1.6
 
@@ -751,7 +751,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/baidu/location/ICam;->mSensorManagerh8:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICam;->hT:Landroid/hardware/SensorEventListener;
+    iget-object v1, p0, Lcom/baidu/location/ICam;->mSensorEventListenerhT:Landroid/hardware/SensorEventListener;
 
     iget-object v2, p0, Lcom/baidu/location/ICam;->mSensorhZ:Landroid/hardware/Sensor;
 
@@ -809,7 +809,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/baidu/location/ICam;->mSensorManagerh8:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICam;->hT:Landroid/hardware/SensorEventListener;
+    iget-object v1, p0, Lcom/baidu/location/ICam;->mSensorEventListenerhT:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v0, v1}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
     :try_end_0

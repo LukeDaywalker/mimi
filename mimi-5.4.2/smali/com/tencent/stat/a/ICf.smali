@@ -85,27 +85,27 @@
     throw v0
 
     :cond_0
-    iget v0, v1, Lcom/tencent/stat/a/ICh;->b:I
+    iget v0, v1, Lcom/tencent/stat/a/ICh;->mIb:I
 
-    iget-object v2, v1, Lcom/tencent/stat/a/ICh;->a:[B
+    iget-object v2, v1, Lcom/tencent/stat/a/ICh;->mArrayBa:[B
 
     array-length v2, v2
 
     if-ne v0, v2, :cond_1
 
-    iget-object v0, v1, Lcom/tencent/stat/a/ICh;->a:[B
+    iget-object v0, v1, Lcom/tencent/stat/a/ICh;->mArrayBa:[B
 
     :goto_0
     return-object v0
 
     :cond_1
-    iget v0, v1, Lcom/tencent/stat/a/ICh;->b:I
+    iget v0, v1, Lcom/tencent/stat/a/ICh;->mIb:I
 
     new-array v0, v0, [B
 
-    iget-object v2, v1, Lcom/tencent/stat/a/ICh;->a:[B
+    iget-object v2, v1, Lcom/tencent/stat/a/ICh;->mArrayBa:[B
 
-    iget v1, v1, Lcom/tencent/stat/a/ICh;->b:I
+    iget v1, v1, Lcom/tencent/stat/a/ICh;->mIb:I
 
     invoke-static {v2, v3, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -141,7 +141,7 @@
 
     mul-int/lit8 v0, v0, 0x4
 
-    iget-boolean v1, v3, Lcom/tencent/stat/a/ICi;->d:Z
+    iget-boolean v1, v3, Lcom/tencent/stat/a/ICi;->isZd:Z
 
     if-eqz v1, :cond_2
 
@@ -154,7 +154,7 @@
     :cond_0
     :goto_0
     :pswitch_0
-    iget-boolean v1, v3, Lcom/tencent/stat/a/ICi;->e:Z
+    iget-boolean v1, v3, Lcom/tencent/stat/a/ICi;->isZe:Z
 
     if-eqz v1, :cond_1
 
@@ -166,7 +166,7 @@
 
     add-int/lit8 v4, v1, 0x1
 
-    iget-boolean v1, v3, Lcom/tencent/stat/a/ICi;->f:Z
+    iget-boolean v1, v3, Lcom/tencent/stat/a/ICi;->isZf:Z
 
     if-eqz v1, :cond_3
 
@@ -180,7 +180,7 @@
     :cond_1
     new-array v1, v0, [B
 
-    iput-object v1, v3, Lcom/tencent/stat/a/ICi;->a:[B
+    iput-object v1, v3, Lcom/tencent/stat/a/ICi;->mArrayBa:[B
 
     invoke-virtual {v3, p0, p1, p2, v2}, Lcom/tencent/stat/a/ICi;->a([BIIZ)Z
 
@@ -188,7 +188,7 @@
 
     if-nez v1, :cond_4
 
-    iget v1, v3, Lcom/tencent/stat/a/ICi;->b:I
+    iget v1, v3, Lcom/tencent/stat/a/ICi;->mIb:I
 
     if-eq v1, v0, :cond_4
 
@@ -221,7 +221,7 @@
     goto :goto_1
 
     :cond_4
-    iget-object v0, v3, Lcom/tencent/stat/a/ICi;->a:[B
+    iget-object v0, v3, Lcom/tencent/stat/a/ICi;->mArrayBa:[B
 
     return-object v0
 

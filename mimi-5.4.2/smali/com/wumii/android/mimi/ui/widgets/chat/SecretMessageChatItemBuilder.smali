@@ -40,9 +40,9 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgSecret;
 
     .line 27
-    iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->a:Landroid/widget/TextView;
+    iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->mTextViewa:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->d:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->mContextd:Landroid/content/Context;
 
     const v3, 0x7f060269
 
@@ -53,7 +53,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 28
-    iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->b:Landroid/widget/TextView;
+    iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgSecret;->getSecretContent()Ljava/lang/String;
 
@@ -73,7 +73,7 @@
     if-eqz v1, :cond_0
 
     .line 31
-    iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->c:Landroid/widget/ImageView;
+    iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->mImageViewc:Landroid/widget/ImageView;
 
     const/16 v2, 0x8
 
@@ -105,14 +105,14 @@
 
     move-result-object v2
 
-    iget-object v3, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->c:Landroid/widget/ImageView;
+    iget-object v3, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->mImageViewc:Landroid/widget/ImageView;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 34
-    iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->c:Landroid/widget/ImageView;
+    iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->mImageViewc:Landroid/widget/ImageView;
 
     const/4 v2, 0x0
 

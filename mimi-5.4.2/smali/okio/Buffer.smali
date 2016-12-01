@@ -1339,7 +1339,7 @@
 
     .prologue
     .line 1294
-    sget-object v0, Lokio/Timeout;->b:Lokio/Timeout;
+    sget-object v0, Lokio/Timeout;->mTimeoutb:Lokio/Timeout;
 
     return-object v0
 .end method
@@ -2018,7 +2018,7 @@
 
     .prologue
     .line 557
-    sget-object v0, Lokio/Util;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lokio/Util;->mCharseta:Ljava/nio/charset/Charset;
 
     invoke-virtual {p0, p1, p2, v0}, Lokio/Buffer;->a(JLjava/nio/charset/Charset;)Ljava/lang/String;
 
@@ -3573,7 +3573,7 @@
     :try_start_0
     iget-wide v0, p0, Lokio/Buffer;->mJb:J
 
-    sget-object v2, Lokio/Util;->a:Ljava/nio/charset/Charset;
+    sget-object v2, Lokio/Util;->mCharseta:Ljava/nio/charset/Charset;
 
     invoke-virtual {p0, v0, v1, v2}, Lokio/Buffer;->a(JLjava/nio/charset/Charset;)Ljava/lang/String;
     :try_end_0

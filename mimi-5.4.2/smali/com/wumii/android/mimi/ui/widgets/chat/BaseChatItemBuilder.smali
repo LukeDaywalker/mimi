@@ -7,15 +7,13 @@
 
 
 # instance fields
-.field protected a:Landroid/view/LayoutInflater;
-
-.field protected b:Landroid/util/DisplayMetrics;
-
-.field protected c:I
-
-.field protected d:Landroid/content/Context;
+.field protected mContextd:Landroid/content/Context;
 
 .field private mDisplayImageOptionsi:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+
+.field protected mDisplayMetricsb:Landroid/util/DisplayMetrics;
+
+.field protected mIc:I
 
 .field private mIe:I
 
@@ -24,6 +22,8 @@
 .field private mIg:I
 
 .field private mIh:I
+
+.field protected mLayoutInflatera:Landroid/view/LayoutInflater;
 
 .field private mOnClickListenerj:Landroid/view/View$OnClickListener;
 
@@ -43,17 +43,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 49
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->d:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mContextd:Landroid/content/Context;
 
     .line 50
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->b:Landroid/util/DisplayMetrics;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     .line 52
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 54
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -136,7 +136,7 @@
 
     sub-int v0, v3, v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->c:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIc:I
 
     .line 68
     invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
@@ -491,7 +491,7 @@
 
     .line 75
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f03007c
 
@@ -644,7 +644,7 @@
 
     move-result-object v6
 
-    iget-object v6, v6, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->b:Landroid/widget/ImageView;
+    iget-object v6, v6, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->mImageViewb:Landroid/widget/ImageView;
 
     if-eqz v1, :cond_6
 
@@ -658,7 +658,7 @@
 
     move-result-object v1
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->a:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->mTextViewa:Landroid/widget/TextView;
 
     invoke-static {v4, v5}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -671,7 +671,7 @@
 
     move-result-object v1
 
-    iget-object v6, v1, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->a:Landroid/widget/TextView;
+    iget-object v6, v1, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->mTextViewa:Landroid/widget/TextView;
 
     cmp-long v1, v4, v8
 
@@ -687,7 +687,7 @@
 
     move-result-object v1
 
-    iget-object v6, v1, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->b:Landroid/widget/ImageView;
+    iget-object v6, v1, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;->mImageViewb:Landroid/widget/ImageView;
 
     cmp-long v1, v4, v8
 
@@ -871,7 +871,7 @@
     const/4 v1, 0x0
 
     .line 125
-    iget-object v3, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->a:Landroid/widget/ImageView;
+    iget-object v3, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mImageViewa:Landroid/widget/ImageView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->isFromLoginUser()Z
 
@@ -893,7 +893,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 126
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->b:Landroid/widget/ProgressBar;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mProgressBarb:Landroid/widget/ProgressBar;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->isFromLoginUser()Z
 
@@ -920,7 +920,7 @@
     if-eqz v0, :cond_0
 
     .line 129
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->a:Landroid/widget/ImageView;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->mImageViewa:Landroid/widget/ImageView;
 
     const v1, 0x7f0b0008
 

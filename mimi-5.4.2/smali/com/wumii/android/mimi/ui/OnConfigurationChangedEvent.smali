@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Landroid/content/res/Configuration;
+.field protected mConfigurationa:Landroid/content/res/Configuration;
 
-.field protected b:Landroid/content/res/Configuration;
+.field protected mConfigurationb:Landroid/content/res/Configuration;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 10
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/OnConfigurationChangedEvent;->a:Landroid/content/res/Configuration;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/OnConfigurationChangedEvent;->mConfigurationa:Landroid/content/res/Configuration;
 
     .line 11
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/OnConfigurationChangedEvent;->b:Landroid/content/res/Configuration;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/OnConfigurationChangedEvent;->mConfigurationb:Landroid/content/res/Configuration;
 
     .line 12
     return-void

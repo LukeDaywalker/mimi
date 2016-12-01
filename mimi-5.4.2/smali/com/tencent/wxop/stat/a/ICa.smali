@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field protected a:Lcom/tencent/wxop/stat/a/ICb;
+.field protected mICba:Lcom/tencent/wxop/stat/a/ICb;
 
 .field private mJm:J
 
@@ -18,15 +18,15 @@
 
     invoke-direct {v0}, Lcom/tencent/wxop/stat/a/ICb;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
     const-wide/16 v0, -0x1
 
     iput-wide v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mJm:J
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iput-object p3, v0, Lcom/tencent/wxop/stat/a/ICb;->a:Ljava/lang/String;
+    iput-object p3, v0, Lcom/tencent/wxop/stat/a/ICb;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 .method public final a()Lcom/tencent/wxop/stat/a/ICb;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
     return-object v0
 .end method
@@ -46,9 +46,9 @@
 
     const-string/jumbo v0, "ei"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->a:Ljava/lang/String;
+    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -67,21 +67,21 @@
     invoke-virtual {p1, v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v0, v0, Lcom/tencent/wxop/stat/a/ICb;->b:Lorg/json/JSONArray;
+    iget-object v0, v0, Lcom/tencent/wxop/stat/a/ICb;->mJSONArrayb:Lorg/json/JSONArray;
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v0, v0, Lcom/tencent/wxop/stat/a/ICb;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/tencent/wxop/stat/a/ICb;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v0, v0, Lcom/tencent/wxop/stat/a/ICb;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/tencent/wxop/stat/a/ICb;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICx;->a(Ljava/lang/String;)Ljava/util/Properties;
 
@@ -95,15 +95,15 @@
 
     if-lez v1, :cond_2
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     invoke-virtual {v1}, Lorg/json/JSONObject;->length()I
 
@@ -112,20 +112,20 @@
     if-nez v1, :cond_3
 
     :cond_1
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2, v0}, Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V
 
-    iput-object v2, v1, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iput-object v2, v1, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     :cond_2
     const-string/jumbo v0, "kv"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -157,9 +157,9 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     :try_start_0
-    iget-object v2, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v2, v2, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iget-object v2, v2, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -189,9 +189,9 @@
     :cond_4
     const-string/jumbo v0, "ar"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICa;->mICba:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->b:Lorg/json/JSONArray;
+    iget-object v1, v1, Lcom/tencent/wxop/stat/a/ICb;->mJSONArrayb:Lorg/json/JSONArray;
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -201,7 +201,7 @@
 .method public final b()Lcom/tencent/wxop/stat/a/ICe;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/a/ICe;->d:Lcom/tencent/wxop/stat/a/ICe;
+    sget-object v0, Lcom/tencent/wxop/stat/a/ICe;->mICed:Lcom/tencent/wxop/stat/a/ICe;
 
     return-object v0
 .end method

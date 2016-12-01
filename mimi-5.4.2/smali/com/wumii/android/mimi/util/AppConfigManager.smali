@@ -258,7 +258,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     return-object v0
 .end method

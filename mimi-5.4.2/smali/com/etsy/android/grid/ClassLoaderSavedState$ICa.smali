@@ -56,7 +56,7 @@
 
     .line 91
     :cond_0
-    sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
+    sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderSavedStatea:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
     return-object v0
 .end method

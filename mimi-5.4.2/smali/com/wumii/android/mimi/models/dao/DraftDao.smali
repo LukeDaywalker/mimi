@@ -51,7 +51,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v1, 0x7
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "draft"
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "draft"
 
@@ -197,7 +197,7 @@
 
     .line 61
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v2, "draft"
 
@@ -278,7 +278,7 @@
     move-result-object v1
 
     .line 44
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/DraftDao;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v3, 0x0
 

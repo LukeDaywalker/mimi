@@ -168,7 +168,7 @@
     if-nez v0, :cond_4
 
     .line 241
-    sget-object v0, Lio/fabric/sdk/android/InitializationCallback;->d:Lio/fabric/sdk/android/InitializationCallback;
+    sget-object v0, Lio/fabric/sdk/android/InitializationCallback;->mInitializationCallbackd:Lio/fabric/sdk/android/InitializationCallback;
 
     iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mInitializationCallbacki:Lio/fabric/sdk/android/InitializationCallback;
 

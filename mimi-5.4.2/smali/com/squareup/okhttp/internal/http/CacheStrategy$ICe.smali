@@ -182,7 +182,7 @@
 
     .line 148
     :cond_5
-    sget-object v5, Lcom/squareup/okhttp/internal/http/OkHeaders;->b:Ljava/lang/String;
+    sget-object v5, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v5, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -201,7 +201,7 @@
 
     .line 150
     :cond_6
-    sget-object v5, Lcom/squareup/okhttp/internal/http/OkHeaders;->c:Ljava/lang/String;
+    sget-object v5, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v5, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -883,7 +883,7 @@
     move-result-object v0
 
     .line 164
-    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/CacheStrategy;->a:Lcom/squareup/okhttp/Request;
+    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/CacheStrategy;->mRequesta:Lcom/squareup/okhttp/Request;
 
     if-eqz v1, :cond_0
 

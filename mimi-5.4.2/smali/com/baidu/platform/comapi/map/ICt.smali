@@ -3,29 +3,29 @@
 
 
 # instance fields
-.field public a:I
+.field public isZj:Z
 
-.field public b:Ljava/lang/String;
+.field public mGeoPointg:Lcom/baidu/mapapi/model/inner/GeoPoint;
 
-.field public c:Ljava/lang/String;
+.field public mIa:I
 
-.field public d:Ljava/lang/String;
+.field public mIe:I
 
-.field public e:I
+.field public mIf:I
 
-.field public f:I
+.field public mIh:I
 
-.field public g:Lcom/baidu/mapapi/model/inner/GeoPoint;
+.field public mIi:I
 
-.field public h:I
+.field public mIk:I
 
-.field public i:I
+.field public mIl:I
 
-.field public j:Z
+.field public mStringb:Ljava/lang/String;
 
-.field public k:I
+.field public mStringc:Ljava/lang/String;
 
-.field public l:I
+.field public mStringd:Ljava/lang/String;
 
 
 # direct methods

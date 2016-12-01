@@ -3,11 +3,11 @@
 
 
 # static fields
-.field public static a:Z
+.field public static isZa:Z
 
-.field public static b:Ljava/lang/String;
+.field public static mIc:I
 
-.field public static c:I
+.field public static mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -16,13 +16,13 @@
 
     const/4 v1, 0x0
 
-    sput-boolean v1, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sput-boolean v1, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->mStringb:Ljava/lang/String;
 
-    sput v1, Lcom/baidu/platform/comapi/util/ICc;->c:I
+    sput v1, Lcom/baidu/platform/comapi/util/ICc;->mIc:I
 
     return-void
 .end method
@@ -74,7 +74,7 @@
 
     invoke-static {v7, v4}, Lcom/baidu/platform/comjni/engine/AppEngine;->SetProxyInfo(Ljava/lang/String;I)V
 
-    sput-boolean v4, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sput-boolean v4, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     :cond_0
     :goto_0
@@ -108,7 +108,7 @@
 
     move-result-object v0
 
-    sput-boolean v4, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sput-boolean v4, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     if-eqz v0, :cond_8
 
@@ -143,21 +143,21 @@
     :cond_3
     const-string/jumbo v0, "10.0.0.172"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->mStringb:Ljava/lang/String;
 
-    sput v6, Lcom/baidu/platform/comapi/util/ICc;->c:I
+    sput v6, Lcom/baidu/platform/comapi/util/ICc;->mIc:I
 
-    sput-boolean v5, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sput-boolean v5, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     :cond_4
     :goto_1
-    sget-boolean v0, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sget-boolean v0, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     if-ne v0, v5, :cond_a
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICc;->b:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICc;->mStringb:Ljava/lang/String;
 
-    sget v1, Lcom/baidu/platform/comapi/util/ICc;->c:I
+    sget v1, Lcom/baidu/platform/comapi/util/ICc;->mIc:I
 
     invoke-static {v0, v1}, Lcom/baidu/platform/comjni/engine/AppEngine;->SetProxyInfo(Ljava/lang/String;I)V
 
@@ -174,11 +174,11 @@
 
     const-string/jumbo v0, "10.0.0.200"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->mStringb:Ljava/lang/String;
 
-    sput v6, Lcom/baidu/platform/comapi/util/ICc;->c:I
+    sput v6, Lcom/baidu/platform/comapi/util/ICc;->mIc:I
 
-    sput-boolean v5, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sput-boolean v5, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     goto :goto_1
 
@@ -216,7 +216,7 @@
     if-eqz v0, :cond_4
 
     :cond_7
-    sput-boolean v4, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sput-boolean v4, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     goto :goto_1
 
@@ -251,11 +251,11 @@
 
     const-string/jumbo v0, "10.0.0.172"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->mStringb:Ljava/lang/String;
 
-    sput v1, Lcom/baidu/platform/comapi/util/ICc;->c:I
+    sput v1, Lcom/baidu/platform/comapi/util/ICc;->mIc:I
 
-    sput-boolean v5, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sput-boolean v5, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     goto :goto_1
 
@@ -274,11 +274,11 @@
 
     const-string/jumbo v0, "10.0.0.200"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICc;->mStringb:Ljava/lang/String;
 
-    sput v6, Lcom/baidu/platform/comapi/util/ICc;->c:I
+    sput v6, Lcom/baidu/platform/comapi/util/ICc;->mIc:I
 
-    sput-boolean v5, Lcom/baidu/platform/comapi/util/ICc;->a:Z
+    sput-boolean v5, Lcom/baidu/platform/comapi/util/ICc;->isZa:Z
 
     goto/16 :goto_1
 

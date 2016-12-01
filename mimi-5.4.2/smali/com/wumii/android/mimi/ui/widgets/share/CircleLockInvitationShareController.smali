@@ -49,7 +49,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;->mActivitya:Landroid/app/Activity;
 
     const v1, 0x7f06032a
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;->mActivitya:Landroid/app/Activity;
 
     const v1, 0x7f0601df
 

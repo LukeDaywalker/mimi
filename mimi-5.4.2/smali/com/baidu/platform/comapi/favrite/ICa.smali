@@ -387,7 +387,7 @@
 
     if-eqz v0, :cond_4
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -409,7 +409,7 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    iput-object p1, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iput-object p1, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -445,19 +445,19 @@
 
     move-result-object v3
 
-    iput-object v2, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->h:Ljava/lang/String;
+    iput-object v2, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringh:Ljava/lang/String;
 
-    iput-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->a:Ljava/lang/String;
+    iput-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, "bdetail"
 
-    iget-boolean v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->i:Z
+    iget-boolean v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->isZi:Z
 
     invoke-virtual {v0, v2, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
     const-string/jumbo v2, "uspoiname"
 
-    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -467,7 +467,7 @@
 
     const-string/jumbo v4, "x"
 
-    iget-object v5, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v5, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     invoke-virtual {v5}, Lcom/baidu/mapapi/model/inner/Point;->getmPtx()I
 
@@ -477,7 +477,7 @@
 
     const-string/jumbo v4, "y"
 
-    iget-object v5, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v5, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     invoke-virtual {v5}, Lcom/baidu/mapapi/model/inner/Point;->getmPty()I
 
@@ -491,31 +491,31 @@
 
     const-string/jumbo v2, "ncityid"
 
-    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->e:Ljava/lang/String;
+    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string/jumbo v2, "npoitype"
 
-    iget v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->g:I
+    iget v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mIg:I
 
     invoke-virtual {v0, v2, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string/jumbo v2, "uspoiuid"
 
-    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->f:Ljava/lang/String;
+    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string/jumbo v2, "addr"
 
-    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->d:Ljava/lang/String;
+    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string/jumbo v2, "addtimesec"
 
-    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->h:Ljava/lang/String;
+    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -529,7 +529,7 @@
 
     const-string/jumbo v0, "Fav_Content"
 
-    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->j:Ljava/lang/String;
+    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -729,7 +729,7 @@
 
     move-result-object v4
 
-    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v4, "pt"
 
@@ -753,7 +753,7 @@
 
     invoke-direct {v5, v6, v4}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
 
-    iput-object v5, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iput-object v5, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v4, "ncityid"
 
@@ -761,7 +761,7 @@
 
     move-result-object v4
 
-    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->e:Ljava/lang/String;
+    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringe:Ljava/lang/String;
 
     const-string/jumbo v4, "uspoiuid"
 
@@ -769,7 +769,7 @@
 
     move-result-object v4
 
-    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->f:Ljava/lang/String;
+    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringf:Ljava/lang/String;
 
     const-string/jumbo v4, "npoitype"
 
@@ -777,7 +777,7 @@
 
     move-result v4
 
-    iput v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->g:I
+    iput v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mIg:I
 
     const-string/jumbo v4, "addr"
 
@@ -785,7 +785,7 @@
 
     move-result-object v4
 
-    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->d:Ljava/lang/String;
+    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v4, "addtimesec"
 
@@ -793,7 +793,7 @@
 
     move-result-object v4
 
-    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->h:Ljava/lang/String;
+    iput-object v4, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringh:Ljava/lang/String;
 
     const-string/jumbo v4, "bdetail"
 
@@ -801,11 +801,11 @@
 
     move-result v2
 
-    iput-boolean v2, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->i:Z
+    iput-boolean v2, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->isZi:Z
 
-    iput-object v3, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->j:Ljava/lang/String;
+    iput-object v3, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringj:Ljava/lang/String;
 
-    iput-object p1, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->a:Ljava/lang/String;
+    iput-object p1, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringa:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
@@ -910,7 +910,7 @@
 
     const-string/jumbo v2, "uspoiname"
 
-    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
+    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -920,7 +920,7 @@
 
     const-string/jumbo v3, "x"
 
-    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     invoke-virtual {v4}, Lcom/baidu/mapapi/model/inner/Point;->getmPtx()I
 
@@ -930,7 +930,7 @@
 
     const-string/jumbo v3, "y"
 
-    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mPointc:Lcom/baidu/mapapi/model/inner/Point;
 
     invoke-virtual {v4}, Lcom/baidu/mapapi/model/inner/Point;->getmPty()I
 
@@ -944,25 +944,25 @@
 
     const-string/jumbo v2, "ncityid"
 
-    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->e:Ljava/lang/String;
+    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string/jumbo v2, "npoitype"
 
-    iget v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->g:I
+    iget v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mIg:I
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string/jumbo v2, "uspoiuid"
 
-    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->f:Ljava/lang/String;
+    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string/jumbo v2, "addr"
 
-    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->d:Ljava/lang/String;
+    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -974,11 +974,11 @@
 
     move-result-object v2
 
-    iput-object v2, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->h:Ljava/lang/String;
+    iput-object v2, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringh:Ljava/lang/String;
 
     const-string/jumbo v2, "addtimesec"
 
-    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->h:Ljava/lang/String;
+    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -998,7 +998,7 @@
 
     const-string/jumbo v1, "Fav_Content"
 
-    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->j:Ljava/lang/String;
+    iget-object v3, p2, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v2, v1, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 

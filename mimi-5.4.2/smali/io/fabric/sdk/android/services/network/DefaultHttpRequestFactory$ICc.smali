@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
-    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->a:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethoda:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/network/HttpMethod;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
-    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->b:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodb:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/network/HttpMethod;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
-    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->c:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodc:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/network/HttpMethod;->ordinal()I
 
@@ -74,7 +74,7 @@
     :try_start_3
     sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
-    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->d:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodd:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/network/HttpMethod;->ordinal()I
 

@@ -293,7 +293,7 @@
 
     move-result-object v2
 
-    iget-object v2, v2, Lu/aly/TField;->a:Ljava/lang/String;
+    iget-object v2, v2, Lu/aly/TField;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

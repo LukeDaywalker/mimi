@@ -101,7 +101,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060373
 
@@ -142,7 +142,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "conversation/remove"
 
@@ -225,7 +225,7 @@
     move-exception v0
 
     .line 62
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->c:Lorg/slf4j/Logger;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 

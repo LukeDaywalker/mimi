@@ -128,7 +128,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -171,7 +171,7 @@
     if-eqz v0, :cond_0
 
     .line 74
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-class v3, Lcom/wumii/mimi/model/domain/mobile/MobileSysNotification;
 
@@ -206,7 +206,7 @@
     invoke-virtual {v3, v4}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     .line 83
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 

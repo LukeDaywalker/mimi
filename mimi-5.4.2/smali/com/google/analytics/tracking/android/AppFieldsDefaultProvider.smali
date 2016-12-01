@@ -13,13 +13,13 @@
 
 
 # instance fields
-.field protected a:Ljava/lang/String;
+.field protected mStringa:Ljava/lang/String;
 
-.field protected b:Ljava/lang/String;
+.field protected mStringb:Ljava/lang/String;
 
-.field protected c:Ljava/lang/String;
+.field protected mStringc:Ljava/lang/String;
 
-.field protected d:Ljava/lang/String;
+.field protected mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -65,19 +65,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringc:Ljava/lang/String;
 
     .line 48
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v2, v0}, Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringd:Ljava/lang/String;
 
     .line 50
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringc:Ljava/lang/String;
 
     .line 51
     const/4 v0, 0x0
@@ -116,10 +116,10 @@
     .line 62
     :cond_0
     :goto_0
-    iput-object v1, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->a:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringa:Ljava/lang/String;
 
     .line 63
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringb:Ljava/lang/String;
 
     .line 64
     return-void
@@ -229,7 +229,7 @@
     if-eqz v1, :cond_2
 
     .line 85
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringa:Ljava/lang/String;
 
     goto :goto_0
 
@@ -244,7 +244,7 @@
     if-eqz v1, :cond_3
 
     .line 87
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringb:Ljava/lang/String;
 
     goto :goto_0
 
@@ -259,7 +259,7 @@
     if-eqz v1, :cond_4
 
     .line 89
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringc:Ljava/lang/String;
 
     goto :goto_0
 
@@ -274,7 +274,7 @@
     if-eqz v1, :cond_0
 
     .line 91
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mStringd:Ljava/lang/String;
 
     goto :goto_0
 .end method

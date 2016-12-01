@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/fasterxml/jackson/core/type/TypeReference;
+.field public static final mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/core/type/TypeReference",
@@ -28,7 +28,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/util/Constants$ICu;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICt;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICt;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     return-void
 .end method

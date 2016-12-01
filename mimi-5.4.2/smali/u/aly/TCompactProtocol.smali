@@ -238,7 +238,7 @@
     const-wide/16 v2, 0x0
 
     .line 748
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1}, Lu/aly/TTransport;->d()I
 
@@ -249,14 +249,14 @@
     if-lt v1, v4, :cond_2
 
     .line 749
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1}, Lu/aly/TTransport;->b()[B
 
     move-result-object v4
 
     .line 750
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1}, Lu/aly/TTransport;->c()I
 
@@ -285,7 +285,7 @@
     if-eq v6, v10, :cond_0
 
     .line 759
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     add-int/lit8 v0, v0, 0x1
 
@@ -583,7 +583,7 @@
 
     if-ne p2, v0, :cond_0
 
-    iget-byte v0, p1, Lu/aly/TField;->b:B
+    iget-byte v0, p1, Lu/aly/TField;->mBb:B
 
     invoke-direct {p0, v0}, Lu/aly/TCompactProtocol;->e(B)B
 
@@ -591,13 +591,13 @@
 
     .line 222
     :cond_0
-    iget-short v0, p1, Lu/aly/TField;->c:S
+    iget-short v0, p1, Lu/aly/TField;->mSc:S
 
     iget-short v1, p0, Lu/aly/TCompactProtocol;->mSi:S
 
     if-le v0, v1, :cond_1
 
-    iget-short v0, p1, Lu/aly/TField;->c:S
+    iget-short v0, p1, Lu/aly/TField;->mSc:S
 
     iget-short v1, p0, Lu/aly/TCompactProtocol;->mSi:S
 
@@ -608,7 +608,7 @@
     if-gt v0, v1, :cond_1
 
     .line 224
-    iget-short v0, p1, Lu/aly/TField;->c:S
+    iget-short v0, p1, Lu/aly/TField;->mSc:S
 
     iget-short v1, p0, Lu/aly/TCompactProtocol;->mSi:S
 
@@ -622,7 +622,7 @@
 
     .line 231
     :goto_0
-    iget-short v0, p1, Lu/aly/TField;->c:S
+    iget-short v0, p1, Lu/aly/TField;->mSc:S
 
     iput-short v0, p0, Lu/aly/TCompactProtocol;->mSi:S
 
@@ -634,7 +634,7 @@
     invoke-direct {p0, p2}, Lu/aly/TCompactProtocol;->b(B)V
 
     .line 228
-    iget-short v0, p1, Lu/aly/TField;->c:S
+    iget-short v0, p1, Lu/aly/TField;->mSc:S
 
     invoke-virtual {p0, v0}, Lu/aly/TCompactProtocol;->a(S)V
 
@@ -649,7 +649,7 @@
     invoke-direct {p0, p3}, Lu/aly/TCompactProtocol;->b(I)V
 
     .line 345
-    iget-object v0, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0, p1, p2, p3}, Lu/aly/TTransport;->b([BII)V
 
@@ -669,7 +669,7 @@
     aput-byte p1, v0, v1
 
     .line 454
-    iget-object v0, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     iget-object v1, p0, Lu/aly/TCompactProtocol;->mArrayBm:[B
 
@@ -704,7 +704,7 @@
     aput-byte v4, v2, v0
 
     .line 395
-    iget-object v0, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     iget-object v2, p0, Lu/aly/TCompactProtocol;->mArrayBa:[B
 
@@ -768,7 +768,7 @@
     aput-byte v4, v2, v0
 
     .line 413
-    iget-object v0, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     iget-object v2, p0, Lu/aly/TCompactProtocol;->mArrayBb:[B
 
@@ -1063,7 +1063,7 @@
     new-array v0, p1, [B
 
     .line 684
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1, v0, v2, p1}, Lu/aly/TTransport;->d([BII)I
 
@@ -1176,7 +1176,7 @@
 
     .line 716
     .line 718
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1}, Lu/aly/TTransport;->d()I
 
@@ -1187,14 +1187,14 @@
     if-lt v1, v2, :cond_2
 
     .line 719
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1}, Lu/aly/TTransport;->b()[B
 
     move-result-object v3
 
     .line 720
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1}, Lu/aly/TTransport;->c()I
 
@@ -1223,7 +1223,7 @@
     if-eq v5, v7, :cond_0
 
     .line 729
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     add-int/lit8 v0, v0, 0x1
 
@@ -1366,7 +1366,7 @@
     invoke-direct {p0, v2, v3, v0, v1}, Lu/aly/TCompactProtocol;->a(J[BI)V
 
     .line 320
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1, v0}, Lu/aly/TTransport;->b([B)V
 
@@ -1498,7 +1498,7 @@
 
     .prologue
     .line 202
-    iget-byte v0, p1, Lu/aly/TField;->b:B
+    iget-byte v0, p1, Lu/aly/TField;->mBb:B
 
     const/4 v1, 0x2
 
@@ -1525,9 +1525,9 @@
 
     .prologue
     .line 259
-    iget-byte v0, p1, Lu/aly/TList;->a:B
+    iget-byte v0, p1, Lu/aly/TList;->mBa:B
 
-    iget v1, p1, Lu/aly/TList;->b:I
+    iget v1, p1, Lu/aly/TList;->mIb:I
 
     invoke-virtual {p0, v0, v1}, Lu/aly/TCompactProtocol;->a(BI)V
 
@@ -1540,7 +1540,7 @@
 
     .prologue
     .line 247
-    iget v0, p1, Lu/aly/TMap;->c:I
+    iget v0, p1, Lu/aly/TMap;->mIc:I
 
     if-nez v0, :cond_0
 
@@ -1555,12 +1555,12 @@
 
     .line 250
     :cond_0
-    iget v0, p1, Lu/aly/TMap;->c:I
+    iget v0, p1, Lu/aly/TMap;->mIc:I
 
     invoke-direct {p0, v0}, Lu/aly/TCompactProtocol;->b(I)V
 
     .line 251
-    iget-byte v0, p1, Lu/aly/TMap;->a:B
+    iget-byte v0, p1, Lu/aly/TMap;->mBa:B
 
     invoke-direct {p0, v0}, Lu/aly/TCompactProtocol;->e(B)B
 
@@ -1568,7 +1568,7 @@
 
     shl-int/lit8 v0, v0, 0x4
 
-    iget-byte v1, p1, Lu/aly/TMap;->b:B
+    iget-byte v1, p1, Lu/aly/TMap;->mBb:B
 
     invoke-direct {p0, v1}, Lu/aly/TCompactProtocol;->e(B)B
 
@@ -1817,7 +1817,7 @@
 
     .line 539
     :cond_1
-    iget-short v0, v1, Lu/aly/TField;->c:S
+    iget-short v0, v1, Lu/aly/TField;->mSc:S
 
     iput-short v0, p0, Lu/aly/TCompactProtocol;->mSi:S
 
@@ -2025,7 +2025,7 @@
     const/4 v2, 0x0
 
     .line 600
-    iget-object v0, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->d()I
 
@@ -2034,13 +2034,13 @@
     if-lez v0, :cond_0
 
     .line 601
-    iget-object v0, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->b()[B
 
     move-result-object v0
 
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1}, Lu/aly/TTransport;->c()I
 
@@ -2049,7 +2049,7 @@
     aget-byte v0, v0, v1
 
     .line 602
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v1, v3}, Lu/aly/TTransport;->a(I)V
 
@@ -2059,7 +2059,7 @@
 
     .line 604
     :cond_0
-    iget-object v0, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     iget-object v1, p0, Lu/aly/TCompactProtocol;->mArrayBc:[B
 
@@ -2133,7 +2133,7 @@
     new-array v0, v3, [B
 
     .line 636
-    iget-object v1, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v1, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     const/4 v2, 0x0
 
@@ -2176,7 +2176,7 @@
     .line 652
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v0, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v0}, Lu/aly/TTransport;->d()I
 
@@ -2187,13 +2187,13 @@
     .line 653
     new-instance v0, Ljava/lang/String;
 
-    iget-object v2, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2}, Lu/aly/TTransport;->b()[B
 
     move-result-object v2
 
-    iget-object v3, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v3, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v3}, Lu/aly/TTransport;->c()I
 
@@ -2204,7 +2204,7 @@
     invoke-direct {v0, v2, v3, v1, v4}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
     .line 654
-    iget-object v2, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2, v1}, Lu/aly/TTransport;->a(I)V
     :try_end_0
@@ -2275,7 +2275,7 @@
     new-array v1, v0, [B
 
     .line 673
-    iget-object v2, p0, Lu/aly/TCompactProtocol;->e:Lu/aly/TTransport;
+    iget-object v2, p0, Lu/aly/TCompactProtocol;->mTTransporte:Lu/aly/TTransport;
 
     invoke-virtual {v2, v1, v3, v0}, Lu/aly/TTransport;->d([BII)I
 

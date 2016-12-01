@@ -13,13 +13,13 @@
 
 .field static isZj:Z
 
+.field public static isZk:Z
+
 .field static isZm:Z
 
 .field private static isZs:Z
 
 .field private static isZt:Z
-
-.field public static k:Z
 
 .field private static mIA:I
 
@@ -130,7 +130,7 @@
 
     sput-object v0, Lcom/tencent/wxop/stat/ICv;->mICib:Lcom/tencent/wxop/stat/ICi;
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICw;->d:Lcom/tencent/wxop/stat/ICw;
+    sget-object v0, Lcom/tencent/wxop/stat/ICw;->mICwd:Lcom/tencent/wxop/stat/ICw;
 
     sput-object v0, Lcom/tencent/wxop/stat/ICv;->mICwr:Lcom/tencent/wxop/stat/ICw;
 
@@ -206,7 +206,7 @@
 
     sput-wide v0, Lcom/tencent/wxop/stat/ICv;->mJI:J
 
-    sput-boolean v3, Lcom/tencent/wxop/stat/ICv;->k:Z
+    sput-boolean v3, Lcom/tencent/wxop/stat/ICv;->isZk:Z
 
     const-string/jumbo v0, "pingma.qq.com:80"
 
@@ -1448,7 +1448,7 @@
 
     sput-object p0, Lcom/tencent/wxop/stat/ICv;->mICwr:Lcom/tencent/wxop/stat/ICw;
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICw;->f:Lcom/tencent/wxop/stat/ICw;
+    sget-object v0, Lcom/tencent/wxop/stat/ICw;->mICwf:Lcom/tencent/wxop/stat/ICw;
 
     if-eq p0, v0, :cond_0
 
@@ -2072,7 +2072,7 @@
 .method public static o()Z
     .locals 1
 
-    sget-boolean v0, Lcom/tencent/wxop/stat/ICv;->k:Z
+    sget-boolean v0, Lcom/tencent/wxop/stat/ICv;->isZk:Z
 
     return v0
 .end method

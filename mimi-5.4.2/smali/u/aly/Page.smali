@@ -145,7 +145,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 114
-    sget-object v1, Lu/aly/Page$ICdi;->a:Lu/aly/Page$ICdi;
+    sget-object v1, Lu/aly/Page$ICdi;->mICdia:Lu/aly/Page$ICdi;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -160,7 +160,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 116
-    sget-object v1, Lu/aly/Page$ICdi;->b:Lu/aly/Page$ICdi;
+    sget-object v1, Lu/aly/Page$ICdi;->mICdib:Lu/aly/Page$ICdi;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

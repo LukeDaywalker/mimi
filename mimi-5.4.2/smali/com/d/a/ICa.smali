@@ -6,11 +6,11 @@
 
 
 # instance fields
-.field protected final a:Ljava/io/DataInputStream;
+.field protected final mArrayBc:[B
 
-.field protected final b:Ljava/io/InputStream;
+.field protected final mDataInputStreama:Ljava/io/DataInputStream;
 
-.field protected final c:[B
+.field protected final mInputStreamb:Ljava/io/InputStream;
 
 
 # direct methods
@@ -19,19 +19,19 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/d/a/ICa;->b:Ljava/io/InputStream;
+    iput-object p1, p0, Lcom/d/a/ICa;->mInputStreamb:Ljava/io/InputStream;
 
     new-instance v0, Ljava/io/DataInputStream;
 
     invoke-direct {v0, p1}, Ljava/io/DataInputStream;-><init>(Ljava/io/InputStream;)V
 
-    iput-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iput-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     const/16 v0, 0x8
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lcom/d/a/ICa;->c:[B
+    iput-object v0, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 .method public final readBoolean()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     invoke-virtual {v0}, Ljava/io/DataInputStream;->readBoolean()Z
 
@@ -53,7 +53,7 @@
 .method public final readByte()B
     .locals 1
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     invoke-virtual {v0}, Ljava/io/DataInputStream;->readByte()B
 
@@ -67,15 +67,15 @@
 
     const/4 v3, 0x0
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v2, 0x2
 
     invoke-virtual {v0, v1, v3, v2}, Ljava/io/DataInputStream;->readFully([BII)V
 
-    iget-object v0, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v0, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v1, 0x1
 
@@ -85,7 +85,7 @@
 
     shl-int/lit8 v0, v0, 0x8
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     aget-byte v1, v1, v3
 
@@ -129,7 +129,7 @@
 .method public final readFully([B)V
     .locals 3
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     const/4 v1, 0x0
 
@@ -143,7 +143,7 @@
 .method public final readFully([BII)V
     .locals 1
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/DataInputStream;->readFully([BII)V
 
@@ -155,15 +155,15 @@
 
     const/4 v3, 0x0
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v1, v3, v2}, Ljava/io/DataInputStream;->readFully([BII)V
 
-    iget-object v0, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v0, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v1, 0x3
 
@@ -171,7 +171,7 @@
 
     shl-int/lit8 v0, v0, 0x18
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v2, 0x2
 
@@ -183,7 +183,7 @@
 
     or-int/2addr v0, v1
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v2, 0x1
 
@@ -195,7 +195,7 @@
 
     or-int/2addr v0, v1
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     aget-byte v1, v1, v3
 
@@ -209,7 +209,7 @@
 .method public final readLine()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     invoke-virtual {v0}, Ljava/io/DataInputStream;->readLine()Ljava/lang/String;
 
@@ -225,13 +225,13 @@
 
     const/4 v5, 0x0
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     invoke-virtual {v0, v1, v5, v6}, Ljava/io/DataInputStream;->readFully([BII)V
 
-    iget-object v0, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v0, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v1, 0x7
 
@@ -243,7 +243,7 @@
 
     shl-long/2addr v0, v2
 
-    iget-object v2, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v2, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v3, 0x6
 
@@ -259,7 +259,7 @@
 
     or-long/2addr v0, v2
 
-    iget-object v2, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v2, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v3, 0x5
 
@@ -275,7 +275,7 @@
 
     or-long/2addr v0, v2
 
-    iget-object v2, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v2, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v3, 0x4
 
@@ -291,7 +291,7 @@
 
     or-long/2addr v0, v2
 
-    iget-object v2, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v2, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v3, 0x3
 
@@ -307,7 +307,7 @@
 
     or-long/2addr v0, v2
 
-    iget-object v2, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v2, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v3, 0x2
 
@@ -323,7 +323,7 @@
 
     or-long/2addr v0, v2
 
-    iget-object v2, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v2, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v3, 0x1
 
@@ -337,7 +337,7 @@
 
     or-long/2addr v0, v2
 
-    iget-object v2, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v2, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     aget-byte v2, v2, v5
 
@@ -355,15 +355,15 @@
 
     const/4 v3, 0x0
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v2, 0x2
 
     invoke-virtual {v0, v1, v3, v2}, Ljava/io/DataInputStream;->readFully([BII)V
 
-    iget-object v0, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v0, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v1, 0x1
 
@@ -373,7 +373,7 @@
 
     shl-int/lit8 v0, v0, 0x8
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     aget-byte v1, v1, v3
 
@@ -389,7 +389,7 @@
 .method public final readUTF()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     invoke-virtual {v0}, Ljava/io/DataInputStream;->readUTF()Ljava/lang/String;
 
@@ -401,7 +401,7 @@
 .method public final readUnsignedByte()I
     .locals 1
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     invoke-virtual {v0}, Ljava/io/DataInputStream;->readUnsignedByte()I
 
@@ -415,15 +415,15 @@
 
     const/4 v3, 0x0
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v2, 0x2
 
     invoke-virtual {v0, v1, v3, v2}, Ljava/io/DataInputStream;->readFully([BII)V
 
-    iget-object v0, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v0, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     const/4 v1, 0x1
 
@@ -433,7 +433,7 @@
 
     shl-int/lit8 v0, v0, 0x8
 
-    iget-object v1, p0, Lcom/d/a/ICa;->c:[B
+    iget-object v1, p0, Lcom/d/a/ICa;->mArrayBc:[B
 
     aget-byte v1, v1, v3
 
@@ -447,7 +447,7 @@
 .method public final skipBytes(I)I
     .locals 1
 
-    iget-object v0, p0, Lcom/d/a/ICa;->a:Ljava/io/DataInputStream;
+    iget-object v0, p0, Lcom/d/a/ICa;->mDataInputStreama:Ljava/io/DataInputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/DataInputStream;->skipBytes(I)I
 

@@ -7,8 +7,6 @@
 
 
 # static fields
-.field public static final bO:Ljava/lang/String; = "com.baidu.locTest.LocationServer5.0"
-
 .field private static mFileb9:Ljava/io/File; = null
 
 .field private static mFilebF:Ljava/io/File; = null
@@ -19,7 +17,9 @@
 
 .field private static final mIbY:I = 0x18
 
-.field private static mStringb1:Ljava/lang/String;
+.field private static mStringb1:Ljava/lang/String; = null
+
+.field public static final mStringbO:Ljava/lang/String; = "com.baidu.locTest.LocationServer5.0"
 
 
 # instance fields
@@ -96,7 +96,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICl;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICl;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -138,7 +138,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICl;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICl;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -200,7 +200,7 @@
 
     iput-boolean v3, p0, Lcom/baidu/location/ICl;->isZbG:Z
 
-    sget-wide v0, Lcom/baidu/location/ICc;->aT:J
+    sget-wide v0, Lcom/baidu/location/ICc;->mJaT:J
 
     iput-wide v0, p0, Lcom/baidu/location/ICl;->mJbU:J
 
@@ -317,7 +317,7 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
-    sget-wide v0, Lcom/baidu/location/ICc;->aT:J
+    sget-wide v0, Lcom/baidu/location/ICc;->mJaT:J
 
     iput-wide v0, p0, Lcom/baidu/location/ICl;->mJbU:J
 
@@ -503,7 +503,7 @@
 
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/baidu/location/ICl;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICl;->mStringI:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -964,7 +964,7 @@
 
     move-result-wide v4
 
-    sget-wide v6, Lcom/baidu/location/ICc;->aR:J
+    sget-wide v6, Lcom/baidu/location/ICc;->mJaR:J
 
     add-long/2addr v4, v6
 
@@ -997,7 +997,7 @@
 
     move-result-wide v4
 
-    sget-wide v6, Lcom/baidu/location/ICc;->aR:J
+    sget-wide v6, Lcom/baidu/location/ICc;->mJaR:J
 
     add-long/2addr v4, v6
 
@@ -1195,7 +1195,7 @@
 
     iget v7, v0, Lcom/baidu/location/ICl;->mIb4:I
 
-    sget v8, Lcom/baidu/location/ICc;->ak:I
+    sget v8, Lcom/baidu/location/ICc;->mIak:I
 
     if-le v7, v8, :cond_7
 
@@ -1310,7 +1310,7 @@
 
     iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
-    sget-wide v14, Lcom/baidu/location/ICc;->aS:J
+    sget-wide v14, Lcom/baidu/location/ICc;->mJaS:J
 
     add-long/2addr v8, v14
 
@@ -1337,13 +1337,13 @@
 
     iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
-    sget-wide v14, Lcom/baidu/location/ICc;->a8:J
+    sget-wide v14, Lcom/baidu/location/ICc;->mJa8:J
 
     cmp-long v3, v8, v14
 
     if-lez v3, :cond_c
 
-    sget-wide v8, Lcom/baidu/location/ICc;->a8:J
+    sget-wide v8, Lcom/baidu/location/ICc;->mJa8:J
 
     move-object/from16 v0, p0
 
@@ -1386,13 +1386,13 @@
 
     iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
-    sget-wide v14, Lcom/baidu/location/ICc;->aR:J
+    sget-wide v14, Lcom/baidu/location/ICc;->mJaR:J
 
     cmp-long v3, v8, v14
 
     if-lez v3, :cond_c
 
-    sget-wide v8, Lcom/baidu/location/ICc;->aR:J
+    sget-wide v8, Lcom/baidu/location/ICc;->mJaR:J
 
     move-object/from16 v0, p0
 
@@ -1401,7 +1401,7 @@
     goto :goto_4
 
     :cond_e
-    sget-wide v8, Lcom/baidu/location/ICc;->aT:J
+    sget-wide v8, Lcom/baidu/location/ICc;->mJaT:J
 
     move-object/from16 v0, p0
 
@@ -1522,7 +1522,7 @@
 
     invoke-virtual {v13, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget v2, v11, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v2, v11, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     invoke-virtual {v13, v2}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 

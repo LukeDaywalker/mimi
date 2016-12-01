@@ -3,8 +3,8 @@
 
 
 # static fields
-.field public static final R:Z
+.field public static final isZR:Z
 
-.field public static final S:Z
+.field public static final isZS:Z
 
-.field public static final T:Z
+.field public static final isZT:Z

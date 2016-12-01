@@ -7,137 +7,135 @@
 
 
 # static fields
-.field public static X:F = 0.0f
+.field public static isZa5:Z = false
 
-.field public static Y:D = 0.0
-
-.field public static Z:I = 0x0
-
-.field public static a0:F = 0.0f
-
-.field public static a1:I = 0x0
-
-.field public static a2:I = 0x0
-
-.field public static a3:D = 0.0
-
-.field public static a4:I = 0x0
-
-.field public static a5:Z = false
-
-.field public static a6:J = 0x0L
-
-.field public static a7:I = 0x0
-
-.field public static a8:J = 0x0L
-
-.field public static a9:I = 0x0
-
-.field public static aA:F = 0.0f
-
-.field public static aB:F = 0.0f
-
-.field public static aC:I = 0x0
-
-.field public static aD:F = 0.0f
-
-.field public static final aE:Z = true
-
-.field public static aF:Ljava/lang/String;
-
-.field public static aG:F
-
-.field public static aH:F
-
-.field public static aJ:F
-
-.field public static aK:Z
-
-.field public static aL:Z
-
-.field public static aM:F
-
-.field public static aN:I
-
-.field public static aO:D
-
-.field public static aP:I
-
-.field public static aQ:I
-
-.field public static aR:J
-
-.field public static aS:J
-
-.field public static aT:J
-
-.field public static aU:Ljava/lang/String;
-
-.field public static aV:I
-
-.field public static aW:F
-
-.field public static aX:I
-
-.field public static aY:F
-
-.field public static aZ:I
-
-.field public static aa:I
-
-.field public static ab:I
-
-.field public static ac:Z
-
-.field public static ad:F
-
-.field public static ae:I
-
-.field public static ah:I
-
-.field public static ai:I
-
-.field public static aj:Z
-
-.field public static ak:I
-
-.field public static am:F
-
-.field public static an:Z
-
-.field public static ap:I
-
-.field public static aq:I
-
-.field public static ar:[B
-
-.field public static at:I
-
-.field public static au:D
-
-.field public static ax:I
-
-.field public static ay:I
-
-.field public static az:I
-
-.field public static ba:I
-
-.field public static bb:Z
-
-.field public static bc:Ljava/lang/String;
-
-.field public static bd:F
-
-.field public static bf:J
-
-.field public static bg:F
+.field public static final isZaE:Z = true
 
 .field private static isZaI:Z
 
+.field public static isZaK:Z
+
+.field public static isZaL:Z
+
+.field public static isZac:Z
+
+.field public static isZaj:Z
+
+.field public static isZan:Z
+
 .field private static isZas:Z
 
+.field public static isZbb:Z
+
+.field public static mArrayBar:[B
+
+.field public static mDY:D
+
+.field public static mDa3:D
+
+.field public static mDaO:D
+
+.field public static mDau:D
+
+.field public static mFX:F
+
+.field public static mFa0:F
+
+.field public static mFaA:F
+
+.field public static mFaB:F
+
+.field public static mFaD:F
+
+.field public static mFaG:F
+
+.field public static mFaH:F
+
+.field public static mFaJ:F
+
+.field public static mFaM:F
+
+.field public static mFaW:F
+
+.field public static mFaY:F
+
+.field public static mFad:F
+
+.field public static mFam:F
+
+.field public static mFbd:F
+
+.field public static mFbg:F
+
+.field public static mIZ:I
+
+.field public static mIa1:I
+
+.field public static mIa2:I
+
+.field public static mIa4:I
+
+.field public static mIa7:I
+
+.field public static mIa9:I
+
+.field public static mIaC:I
+
+.field public static mIaN:I
+
+.field public static mIaP:I
+
+.field public static mIaQ:I
+
+.field public static mIaV:I
+
+.field public static mIaX:I
+
+.field public static mIaZ:I
+
+.field public static mIaa:I
+
+.field public static mIab:I
+
+.field public static mIae:I
+
+.field public static mIah:I
+
+.field public static mIai:I
+
+.field public static mIak:I
+
+.field public static mIap:I
+
+.field public static mIaq:I
+
+.field public static mIat:I
+
+.field public static mIax:I
+
+.field public static mIay:I
+
+.field public static mIaz:I
+
+.field public static mIba:I
+
+.field public static mJa6:J
+
+.field public static mJa8:J
+
+.field public static mJaR:J
+
+.field public static mJaS:J
+
+.field public static mJaT:J
+
+.field public static mJbf:J
+
 .field private static mProcessbe:Ljava/lang/Process;
+
+.field public static mStringaF:Ljava/lang/String;
+
+.field public static mStringaU:Ljava/lang/String;
 
 .field private static mStringaf:Ljava/lang/String;
 
@@ -150,6 +148,8 @@
 .field private static mStringav:Ljava/lang/String;
 
 .field private static mStringaw:Ljava/lang/String;
+
+.field public static mStringbc:Ljava/lang/String;
 
 
 # direct methods
@@ -166,13 +166,13 @@
 
     const/4 v2, 0x0
 
-    sput-boolean v2, Lcom/baidu/location/ICc;->aL:Z
+    sput-boolean v2, Lcom/baidu/location/ICc;->isZaL:Z
 
-    sput-boolean v2, Lcom/baidu/location/ICc;->a5:Z
+    sput-boolean v2, Lcom/baidu/location/ICc;->isZa5:Z
 
-    sput-boolean v2, Lcom/baidu/location/ICc;->an:Z
+    sput-boolean v2, Lcom/baidu/location/ICc;->isZan:Z
 
-    sput v2, Lcom/baidu/location/ICc;->aq:I
+    sput v2, Lcom/baidu/location/ICc;->mIaq:I
 
     const-string/jumbo v0, "http://loc.map.baidu.com/sdk.php"
 
@@ -180,7 +180,7 @@
 
     const-string/jumbo v0, "http://loc.map.baidu.com/sdk_ep.php"
 
-    sput-object v0, Lcom/baidu/location/ICc;->aU:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringaU:Ljava/lang/String;
 
     const-string/jumbo v0, "http://loc.map.baidu.com/user_err.php"
 
@@ -212,199 +212,199 @@
 
     const-string/jumbo v0, "no"
 
-    sput-object v0, Lcom/baidu/location/ICc;->aF:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringaF:Ljava/lang/String;
 
     const-string/jumbo v0, "gcj02"
 
-    sput-object v0, Lcom/baidu/location/ICc;->bc:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringbc:Ljava/lang/String;
 
-    sput-boolean v1, Lcom/baidu/location/ICc;->aK:Z
+    sput-boolean v1, Lcom/baidu/location/ICc;->isZaK:Z
 
-    sput v6, Lcom/baidu/location/ICc;->at:I
+    sput v6, Lcom/baidu/location/ICc;->mIat:I
 
-    sput-wide v4, Lcom/baidu/location/ICc;->aO:D
+    sput-wide v4, Lcom/baidu/location/ICc;->mDaO:D
 
-    sput-wide v4, Lcom/baidu/location/ICc;->a3:D
+    sput-wide v4, Lcom/baidu/location/ICc;->mDa3:D
 
-    sput-wide v4, Lcom/baidu/location/ICc;->Y:D
+    sput-wide v4, Lcom/baidu/location/ICc;->mDY:D
 
-    sput-wide v4, Lcom/baidu/location/ICc;->au:D
+    sput-wide v4, Lcom/baidu/location/ICc;->mDau:D
 
-    sput v2, Lcom/baidu/location/ICc;->aN:I
+    sput v2, Lcom/baidu/location/ICc;->mIaN:I
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICc;->ar:[B
+    sput-object v0, Lcom/baidu/location/ICc;->mArrayBar:[B
 
-    sput-boolean v2, Lcom/baidu/location/ICc;->bb:Z
+    sput-boolean v2, Lcom/baidu/location/ICc;->isZbb:Z
 
-    sput v2, Lcom/baidu/location/ICc;->ap:I
+    sput v2, Lcom/baidu/location/ICc;->mIap:I
 
     const v0, 0x3f8ccccd    # 1.1f
 
-    sput v0, Lcom/baidu/location/ICc;->bg:F
+    sput v0, Lcom/baidu/location/ICc;->mFbg:F
 
     const v0, 0x400ccccd    # 2.2f
 
-    sput v0, Lcom/baidu/location/ICc;->am:F
+    sput v0, Lcom/baidu/location/ICc;->mFam:F
 
     const v0, 0x40133333    # 2.3f
 
-    sput v0, Lcom/baidu/location/ICc;->aJ:F
+    sput v0, Lcom/baidu/location/ICc;->mFaJ:F
 
     const v0, 0x40733333    # 3.8f
 
-    sput v0, Lcom/baidu/location/ICc;->aY:F
+    sput v0, Lcom/baidu/location/ICc;->mFaY:F
 
-    sput v6, Lcom/baidu/location/ICc;->ax:I
+    sput v6, Lcom/baidu/location/ICc;->mIax:I
 
     const/16 v0, 0xa
 
-    sput v0, Lcom/baidu/location/ICc;->aP:I
+    sput v0, Lcom/baidu/location/ICc;->mIaP:I
 
     const/4 v0, 0x2
 
-    sput v0, Lcom/baidu/location/ICc;->a1:I
+    sput v0, Lcom/baidu/location/ICc;->mIa1:I
 
     const/4 v0, 0x7
 
-    sput v0, Lcom/baidu/location/ICc;->ab:I
+    sput v0, Lcom/baidu/location/ICc;->mIab:I
 
     const/16 v0, 0x14
 
-    sput v0, Lcom/baidu/location/ICc;->Z:I
+    sput v0, Lcom/baidu/location/ICc;->mIZ:I
 
     const/16 v0, 0x46
 
-    sput v0, Lcom/baidu/location/ICc;->a7:I
+    sput v0, Lcom/baidu/location/ICc;->mIa7:I
 
     const/16 v0, 0x78
 
-    sput v0, Lcom/baidu/location/ICc;->ai:I
+    sput v0, Lcom/baidu/location/ICc;->mIai:I
 
     const/high16 v0, 0x40000000    # 2.0f
 
-    sput v0, Lcom/baidu/location/ICc;->aH:F
+    sput v0, Lcom/baidu/location/ICc;->mFaH:F
 
-    sput v3, Lcom/baidu/location/ICc;->aG:F
+    sput v3, Lcom/baidu/location/ICc;->mFaG:F
 
     const/high16 v0, 0x42480000    # 50.0f
 
-    sput v0, Lcom/baidu/location/ICc;->bd:F
+    sput v0, Lcom/baidu/location/ICc;->mFbd:F
 
     const/high16 v0, 0x43480000    # 200.0f
 
-    sput v0, Lcom/baidu/location/ICc;->aW:F
+    sput v0, Lcom/baidu/location/ICc;->mFaW:F
 
     const/16 v0, 0x10
 
-    sput v0, Lcom/baidu/location/ICc;->a2:I
+    sput v0, Lcom/baidu/location/ICc;->mIa2:I
 
     const v0, 0x3f666666    # 0.9f
 
-    sput v0, Lcom/baidu/location/ICc;->ad:F
+    sput v0, Lcom/baidu/location/ICc;->mFad:F
 
     const/16 v0, 0x2710
 
-    sput v0, Lcom/baidu/location/ICc;->aX:I
+    sput v0, Lcom/baidu/location/ICc;->mIaX:I
 
     const/high16 v0, 0x3f000000    # 0.5f
 
-    sput v0, Lcom/baidu/location/ICc;->X:F
+    sput v0, Lcom/baidu/location/ICc;->mFX:F
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/location/ICc;->aB:F
+    sput v0, Lcom/baidu/location/ICc;->mFaB:F
 
     const v0, 0x3dcccccd    # 0.1f
 
-    sput v0, Lcom/baidu/location/ICc;->aA:F
+    sput v0, Lcom/baidu/location/ICc;->mFaA:F
 
     const/16 v0, 0x1e
 
-    sput v0, Lcom/baidu/location/ICc;->az:I
+    sput v0, Lcom/baidu/location/ICc;->mIaz:I
 
     const/16 v0, 0x64
 
-    sput v0, Lcom/baidu/location/ICc;->ay:I
+    sput v0, Lcom/baidu/location/ICc;->mIay:I
 
     const v0, 0x668a0
 
-    sput v0, Lcom/baidu/location/ICc;->aV:I
+    sput v0, Lcom/baidu/location/ICc;->mIaV:I
 
-    sput-boolean v1, Lcom/baidu/location/ICc;->aj:Z
+    sput-boolean v1, Lcom/baidu/location/ICc;->isZaj:Z
 
-    sput-boolean v1, Lcom/baidu/location/ICc;->ac:Z
+    sput-boolean v1, Lcom/baidu/location/ICc;->isZac:Z
 
     const/16 v0, 0x14
 
-    sput v0, Lcom/baidu/location/ICc;->aZ:I
+    sput v0, Lcom/baidu/location/ICc;->mIaZ:I
 
     const/16 v0, 0x12c
 
-    sput v0, Lcom/baidu/location/ICc;->a4:I
+    sput v0, Lcom/baidu/location/ICc;->mIa4:I
 
     const/16 v0, 0x3e8
 
-    sput v0, Lcom/baidu/location/ICc;->aQ:I
+    sput v0, Lcom/baidu/location/ICc;->mIaQ:I
 
     const-wide/32 v0, 0xdbba0
 
-    sput-wide v0, Lcom/baidu/location/ICc;->aR:J
+    sput-wide v0, Lcom/baidu/location/ICc;->mJaR:J
 
     const-wide/32 v0, 0x668a0
 
-    sput-wide v0, Lcom/baidu/location/ICc;->a8:J
+    sput-wide v0, Lcom/baidu/location/ICc;->mJa8:J
 
     const-wide/32 v0, 0x2bf20
 
-    sput-wide v0, Lcom/baidu/location/ICc;->aT:J
+    sput-wide v0, Lcom/baidu/location/ICc;->mJaT:J
 
     const-wide/32 v0, 0x2bf20
 
-    sput-wide v0, Lcom/baidu/location/ICc;->aS:J
+    sput-wide v0, Lcom/baidu/location/ICc;->mJaS:J
 
     const-wide/16 v0, 0xf
 
-    sput-wide v0, Lcom/baidu/location/ICc;->a6:J
+    sput-wide v0, Lcom/baidu/location/ICc;->mJa6:J
 
     const-wide/32 v0, 0x493e0
 
-    sput-wide v0, Lcom/baidu/location/ICc;->bf:J
+    sput-wide v0, Lcom/baidu/location/ICc;->mJbf:J
 
     const/16 v0, 0x64
 
-    sput v0, Lcom/baidu/location/ICc;->ak:I
+    sput v0, Lcom/baidu/location/ICc;->mIak:I
 
-    sput v2, Lcom/baidu/location/ICc;->ba:I
-
-    const/16 v0, 0x7530
-
-    sput v0, Lcom/baidu/location/ICc;->aa:I
+    sput v2, Lcom/baidu/location/ICc;->mIba:I
 
     const/16 v0, 0x7530
 
-    sput v0, Lcom/baidu/location/ICc;->ae:I
+    sput v0, Lcom/baidu/location/ICc;->mIaa:I
 
-    sput v3, Lcom/baidu/location/ICc;->aM:F
+    const/16 v0, 0x7530
+
+    sput v0, Lcom/baidu/location/ICc;->mIae:I
+
+    sput v3, Lcom/baidu/location/ICc;->mFaM:F
 
     const/high16 v0, 0x40c00000    # 6.0f
 
-    sput v0, Lcom/baidu/location/ICc;->aD:F
+    sput v0, Lcom/baidu/location/ICc;->mFaD:F
 
-    sput v3, Lcom/baidu/location/ICc;->a0:F
+    sput v3, Lcom/baidu/location/ICc;->mFa0:F
 
     const/16 v0, 0x3c
 
-    sput v0, Lcom/baidu/location/ICc;->aC:I
+    sput v0, Lcom/baidu/location/ICc;->mIaC:I
 
     const/16 v0, 0x46
 
-    sput v0, Lcom/baidu/location/ICc;->a9:I
+    sput v0, Lcom/baidu/location/ICc;->mIa9:I
 
     const/4 v0, 0x6
 
-    sput v0, Lcom/baidu/location/ICc;->ah:I
+    sput v0, Lcom/baidu/location/ICc;->mIah:I
 
     return-void
 .end method
@@ -949,7 +949,7 @@
     :cond_1
     if-eqz p2, :cond_2
 
-    sget v0, Lcom/baidu/location/ICc;->aq:I
+    sget v0, Lcom/baidu/location/ICc;->mIaq:I
 
     if-eqz v0, :cond_6
 
@@ -1067,7 +1067,7 @@
     :cond_1
     if-eqz p2, :cond_2
 
-    sget v0, Lcom/baidu/location/ICc;->aq:I
+    sget v0, Lcom/baidu/location/ICc;->mIaq:I
 
     if-eqz v0, :cond_b
 
@@ -1169,7 +1169,7 @@
 
     move-result v2
 
-    sget v3, Lcom/baidu/location/ICc;->aq:I
+    sget v3, Lcom/baidu/location/ICc;->mIaq:I
 
     invoke-virtual {p1}, Lcom/baidu/location/ICau$ICb;->do()I
 
@@ -1183,7 +1183,7 @@
 
     move-result v6
 
-    sget v7, Lcom/baidu/location/ICc;->aD:F
+    sget v7, Lcom/baidu/location/ICc;->mFaD:F
 
     cmpg-float v7, v2, v7
 
@@ -1194,7 +1194,7 @@
     if-nez v3, :cond_c
 
     :cond_8
-    sget v7, Lcom/baidu/location/ICc;->aC:I
+    sget v7, Lcom/baidu/location/ICc;->mIaC:I
 
     if-lt v4, v7, :cond_9
 
@@ -1203,7 +1203,7 @@
     :cond_9
     const/4 v1, 0x1
 
-    sput v1, Lcom/baidu/location/ICc;->at:I
+    sput v1, Lcom/baidu/location/ICc;->mIat:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1226,7 +1226,7 @@
 
     :cond_c
     :try_start_1
-    sget v6, Lcom/baidu/location/ICc;->a0:F
+    sget v6, Lcom/baidu/location/ICc;->mFa0:F
 
     cmpg-float v2, v2, v6
 
@@ -1239,18 +1239,18 @@
     if-ne v3, v8, :cond_f
 
     :cond_d
-    sget v1, Lcom/baidu/location/ICc;->a9:I
+    sget v1, Lcom/baidu/location/ICc;->mIa9:I
 
     if-lt v4, v1, :cond_e
 
-    sget v1, Lcom/baidu/location/ICc;->ah:I
+    sget v1, Lcom/baidu/location/ICc;->mIah:I
 
     if-le v5, v1, :cond_f
 
     :cond_e
     const/4 v1, 0x2
 
-    sput v1, Lcom/baidu/location/ICc;->at:I
+    sput v1, Lcom/baidu/location/ICc;->mIat:I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -1259,7 +1259,7 @@
     :catch_0
     move-exception v1
 
-    sput v8, Lcom/baidu/location/ICc;->at:I
+    sput v8, Lcom/baidu/location/ICc;->mIat:I
 
     goto :goto_2
 
@@ -1267,14 +1267,14 @@
     const/4 v1, 0x3
 
     :try_start_2
-    sput v1, Lcom/baidu/location/ICc;->at:I
+    sput v1, Lcom/baidu/location/ICc;->mIat:I
 
     goto :goto_2
 
     :cond_10
     const/4 v1, 0x3
 
-    sput v1, Lcom/baidu/location/ICc;->at:I
+    sput v1, Lcom/baidu/location/ICc;->mIat:I
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 

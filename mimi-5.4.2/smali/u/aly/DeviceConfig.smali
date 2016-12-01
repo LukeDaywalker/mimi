@@ -4,7 +4,7 @@
 
 
 # static fields
-.field protected static final a:Ljava/lang/String;
+.field protected static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sput-object v0, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     .line 46
     return-void
@@ -152,7 +152,7 @@
 
     .line 204
     :try_start_2
-    sget-object v2, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v2, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     .line 205
     const-string/jumbo v3, "Could not read from file /proc/cpuinfo"
@@ -169,7 +169,7 @@
     move-exception v0
 
     .line 209
-    sget-object v2, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v2, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v3, "Could not open file /proc/cpuinfo"
 
@@ -323,7 +323,7 @@
     if-nez v0, :cond_0
 
     .line 233
-    sget-object v1, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v1, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, "No IMEI."
 
@@ -359,7 +359,7 @@
     if-eqz v1, :cond_1
 
     .line 246
-    sget-object v0, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v0, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v1, "No IMEI."
 
@@ -378,7 +378,7 @@
     if-eqz v1, :cond_1
 
     .line 249
-    sget-object v0, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v0, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     .line 250
     const-string/jumbo v1, "Failed to take mac as IMEI. Try to use Secure.ANDROID_ID instead."
@@ -400,7 +400,7 @@
     move-result-object v0
 
     .line 253
-    sget-object v1, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v1, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -427,7 +427,7 @@
     move-exception v0
 
     .line 242
-    sget-object v2, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v2, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v3, "No IMEI."
 
@@ -734,7 +734,7 @@
     move-exception v0
 
     .line 417
-    sget-object v1, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v1, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, "error in getTimeZone"
 
@@ -833,7 +833,7 @@
     move-exception v1
 
     .line 448
-    sget-object v2, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v2, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v3, "error in getLocaleInfo"
 
@@ -891,7 +891,7 @@
 
     .line 501
     :cond_0
-    sget-object v0, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v0, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     .line 502
     const-string/jumbo v1, "Could not read UMENG_APPKEY meta-data from AndroidManifest.xml."
@@ -913,7 +913,7 @@
     move-exception v0
 
     .line 507
-    sget-object v1, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v1, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     .line 508
     const-string/jumbo v2, "Could not read UMENG_APPKEY meta-data from AndroidManifest.xml."
@@ -965,7 +965,7 @@
 
     .line 528
     :cond_0
-    sget-object v0, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v0, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     .line 529
     const-string/jumbo v1, "Could not get mac address.[no permission android.permission.ACCESS_WIFI_STATE"
@@ -986,7 +986,7 @@
     move-exception v0
 
     .line 532
-    sget-object v1, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v1, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1125,7 +1125,7 @@
     move-exception v0
 
     .line 594
-    sget-object v1, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v1, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, "read resolution fail"
 
@@ -1183,7 +1183,7 @@
     move-exception v0
 
     .line 624
-    sget-object v1, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v1, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, "read carrier fail"
 
@@ -1253,7 +1253,7 @@
 
     .line 711
     :cond_0
-    sget-object v0, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v0, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     .line 712
     const-string/jumbo v2, "Could not read UMENG_CHANNEL meta-data from AndroidManifest.xml."
@@ -1272,7 +1272,7 @@
     move-exception v0
 
     .line 717
-    sget-object v2, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v2, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     .line 718
     const-string/jumbo v3, "Could not read UMENG_CHANNEL meta-data from AndroidManifest.xml."
@@ -1411,7 +1411,7 @@
     move-exception v1
 
     .line 472
-    sget-object v1, Lu/aly/DeviceConfig;->a:Ljava/lang/String;
+    sget-object v1, Lu/aly/DeviceConfig;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, "fail to read user config locale"
 

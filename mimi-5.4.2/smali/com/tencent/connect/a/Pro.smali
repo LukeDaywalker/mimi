@@ -117,7 +117,7 @@
     invoke-static {v1}, Lcom/tencent/stat/ICb;->a(I)V
 
     .line 46
-    sget-object v1, Lcom/tencent/stat/ICh;->f:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mIChf:Lcom/tencent/stat/ICh;
 
     invoke-static {v1}, Lcom/tencent/stat/ICb;->a(Lcom/tencent/stat/ICh;)V
 

@@ -7,9 +7,9 @@
 
 
 # static fields
-.field protected static c6:I
-
 .field private static mIc0:I
+
+.field protected static mIc6:I
 
 .field private static mIc7:I
 
@@ -17,21 +17,21 @@
 
 
 # instance fields
-.field public c2:Ljava/lang/String;
-
-.field public c3:[B
-
-.field public c4:Ljava/lang/String;
-
-.field public c8:I
-
-.field public cX:Ljava/lang/String;
-
-.field public cY:Lorg/apache/http/HttpEntity;
-
-.field public cZ:Ljava/util/List;
-
 .field private isZc1:Z
+
+.field public mArrayBc3:[B
+
+.field public mHttpEntitycY:Lorg/apache/http/HttpEntity;
+
+.field public mIc8:I
+
+.field public mListcZ:Ljava/util/List;
+
+.field public mStringc2:Ljava/lang/String;
+
+.field public mStringc4:Ljava/lang/String;
+
+.field public mStringcX:Ljava/lang/String;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/location/ICt;->c6:I
+    sput v0, Lcom/baidu/location/ICt;->mIc6:I
 
     return-void
 .end method
@@ -68,21 +68,21 @@
 
     iput-boolean v0, p0, Lcom/baidu/location/ICt;->isZc1:Z
 
-    iput-object v1, p0, Lcom/baidu/location/ICt;->cX:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICt;->mStringcX:Ljava/lang/String;
 
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/baidu/location/ICt;->c8:I
+    iput v0, p0, Lcom/baidu/location/ICt;->mIc8:I
 
-    iput-object v1, p0, Lcom/baidu/location/ICt;->cY:Lorg/apache/http/HttpEntity;
+    iput-object v1, p0, Lcom/baidu/location/ICt;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
-    iput-object v1, p0, Lcom/baidu/location/ICt;->cZ:Ljava/util/List;
+    iput-object v1, p0, Lcom/baidu/location/ICt;->mListcZ:Ljava/util/List;
 
-    iput-object v1, p0, Lcom/baidu/location/ICt;->c4:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICt;->mStringc4:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/location/ICt;->c3:[B
+    iput-object v1, p0, Lcom/baidu/location/ICt;->mArrayBc3:[B
 
-    iput-object v1, p0, Lcom/baidu/location/ICt;->c2:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICt;->mStringc2:Ljava/lang/String;
 
     return-void
 .end method

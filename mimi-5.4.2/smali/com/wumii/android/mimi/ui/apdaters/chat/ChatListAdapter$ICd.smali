@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field protected a:Landroid/widget/ImageView;
+.field protected mImageViewa:Landroid/widget/ImageView;
 
-.field protected b:Landroid/widget/TextView;
+.field protected mImageViewe:Landroid/widget/ImageView;
 
-.field protected c:Landroid/widget/TextView;
+.field protected mTextViewb:Landroid/widget/TextView;
 
-.field protected d:Landroid/widget/TextView;
+.field protected mTextViewc:Landroid/widget/TextView;
 
-.field protected e:Landroid/widget/ImageView;
+.field protected mTextViewd:Landroid/widget/TextView;
 
-.field protected f:Landroid/widget/TextView;
+.field protected mTextViewf:Landroid/widget/TextView;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->mImageViewa:Landroid/widget/ImageView;
 
     .line 661
     const v0, 0x7f0b01a2
@@ -45,7 +45,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->mTextViewb:Landroid/widget/TextView;
 
     .line 662
     const v0, 0x7f0b0089
@@ -56,7 +56,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->mTextViewc:Landroid/widget/TextView;
 
     .line 663
     const v0, 0x7f0b01a6
@@ -67,7 +67,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->mTextViewd:Landroid/widget/TextView;
 
     .line 664
     const v0, 0x7f0b0095
@@ -78,7 +78,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->e:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->mImageViewe:Landroid/widget/ImageView;
 
     .line 665
     const v0, 0x7f0b01a4
@@ -89,7 +89,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->f:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;->mTextViewf:Landroid/widget/TextView;
 
     .line 666
     return-void

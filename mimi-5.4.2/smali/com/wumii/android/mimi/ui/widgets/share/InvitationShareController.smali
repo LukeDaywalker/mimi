@@ -61,7 +61,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -74,7 +74,7 @@
     move-result-object v0
 
     .line 30
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->b:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->mAppFacadeb:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
@@ -235,7 +235,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->getInvitationShareUrl()Ljava/lang/String;
 

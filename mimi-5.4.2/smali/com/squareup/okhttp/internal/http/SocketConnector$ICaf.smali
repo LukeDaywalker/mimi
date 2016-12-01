@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Lcom/squareup/okhttp/Route;
+.field public final mHandshaked:Lcom/squareup/okhttp/Handshake;
 
-.field public final b:Ljava/net/Socket;
+.field public final mProtocolc:Lcom/squareup/okhttp/Protocol;
 
-.field public final c:Lcom/squareup/okhttp/Protocol;
+.field public final mRoutea:Lcom/squareup/okhttp/Route;
 
-.field public final d:Lcom/squareup/okhttp/Handshake;
+.field public final mSocketb:Ljava/net/Socket;
 
 
 # direct methods
@@ -24,16 +24,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 265
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->a:Lcom/squareup/okhttp/Route;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mRoutea:Lcom/squareup/okhttp/Route;
 
     .line 266
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->b:Ljava/net/Socket;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mSocketb:Ljava/net/Socket;
 
     .line 267
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->c:Lcom/squareup/okhttp/Protocol;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     .line 268
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->d:Lcom/squareup/okhttp/Handshake;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mHandshaked:Lcom/squareup/okhttp/Handshake;
 
     .line 269
     return-void
@@ -47,16 +47,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 274
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->a:Lcom/squareup/okhttp/Route;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mRoutea:Lcom/squareup/okhttp/Route;
 
     .line 275
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->b:Ljava/net/Socket;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mSocketb:Ljava/net/Socket;
 
     .line 276
-    iput-object p3, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->c:Lcom/squareup/okhttp/Protocol;
+    iput-object p3, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     .line 277
-    iput-object p4, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->d:Lcom/squareup/okhttp/Handshake;
+    iput-object p4, p0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mHandshaked:Lcom/squareup/okhttp/Handshake;
 
     .line 278
     return-void

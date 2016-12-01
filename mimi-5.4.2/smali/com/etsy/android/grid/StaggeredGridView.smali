@@ -1249,7 +1249,7 @@
     const/4 v1, 0x0
 
     .line 746
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->b:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIb:I
 
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getHeaderViewsCount()I
 
@@ -1386,7 +1386,7 @@
     const/4 v1, 0x0
 
     .line 910
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->e:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIe:I
 
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getCount()I
 
@@ -1615,7 +1615,7 @@
     .line 976
     neg-int v2, v0
 
-    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->f:I
+    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIf:I
 
     add-int/2addr v2, v3
 
@@ -2624,7 +2624,7 @@
     const/4 v1, 0x0
 
     .line 851
-    iget-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->d:Z
+    iget-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->isZd:Z
 
     if-eqz v0, :cond_1
 
@@ -2750,7 +2750,7 @@
 
     .prologue
     .line 664
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->b:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIb:I
 
     invoke-direct {p0, v0}, Lcom/etsy/android/grid/StaggeredGridView;->o(I)Z
 
@@ -2780,7 +2780,7 @@
 
     .prologue
     .line 672
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->b:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIb:I
 
     invoke-direct {p0, v0}, Lcom/etsy/android/grid/StaggeredGridView;->o(I)Z
 
@@ -2810,7 +2810,7 @@
 
     .prologue
     .line 655
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->b:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIb:I
 
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getChildCount()I
 
@@ -2849,7 +2849,7 @@
 
     .prologue
     .line 680
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->b:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIb:I
 
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getChildCount()I
 
@@ -3162,29 +3162,29 @@
     invoke-direct {v2, v3}, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 1268
-    iget-wide v4, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->b:J
+    iget-wide v4, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mJb:J
 
-    iput-wide v4, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->b:J
+    iput-wide v4, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mJb:J
 
     .line 1269
-    iget-wide v4, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->c:J
+    iget-wide v4, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mJc:J
 
-    iput-wide v4, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->c:J
+    iput-wide v4, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mJc:J
 
     .line 1270
-    iget v3, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->d:I
+    iget v3, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mId:I
 
-    iput v3, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->d:I
+    iput v3, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mId:I
 
     .line 1271
-    iget v3, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->e:I
+    iget v3, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mIe:I
 
-    iput v3, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->e:I
+    iput v3, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIe:I
 
     .line 1272
-    iget v0, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->f:I
+    iget v0, v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mIf:I
 
-    iput v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->f:I
+    iput v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIf:I
 
     .line 1276
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getChildCount()I
@@ -3205,7 +3205,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->b:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIb:I
 
     if-lez v0, :cond_1
 

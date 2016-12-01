@@ -69,7 +69,7 @@
     move-result-object v0
 
     .line 614
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-nez v1, :cond_0
 
@@ -114,12 +114,12 @@
 
     .line 617
     :cond_0
-    iget-short v1, v0, Lu/aly/TField;->c:S
+    iget-short v1, v0, Lu/aly/TField;->mSc:S
 
     packed-switch v1, :pswitch_data_0
 
     .line 691
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -131,7 +131,7 @@
 
     .line 619
     :pswitch_0
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v3, :cond_1
 
@@ -149,7 +149,7 @@
 
     .line 623
     :cond_1
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -157,7 +157,7 @@
 
     .line 627
     :pswitch_1
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v3, :cond_2
 
@@ -175,7 +175,7 @@
 
     .line 631
     :cond_2
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -183,7 +183,7 @@
 
     .line 635
     :pswitch_2
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v3, :cond_3
 
@@ -201,7 +201,7 @@
 
     .line 639
     :cond_3
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -209,7 +209,7 @@
 
     .line 643
     :pswitch_3
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v4, :cond_4
 
@@ -227,7 +227,7 @@
 
     .line 647
     :cond_4
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -235,7 +235,7 @@
 
     .line 651
     :pswitch_4
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v4, :cond_5
 
@@ -253,7 +253,7 @@
 
     .line 655
     :cond_5
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -261,7 +261,7 @@
 
     .line 659
     :pswitch_5
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v4, :cond_6
 
@@ -279,7 +279,7 @@
 
     .line 663
     :cond_6
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -287,7 +287,7 @@
 
     .line 667
     :pswitch_6
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v3, :cond_7
 
@@ -305,7 +305,7 @@
 
     .line 671
     :cond_7
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -313,7 +313,7 @@
 
     .line 675
     :pswitch_7
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v3, :cond_8
 
@@ -331,7 +331,7 @@
 
     .line 679
     :cond_8
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -339,7 +339,7 @@
 
     .line 683
     :pswitch_8
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-ne v1, v3, :cond_9
 
@@ -357,7 +357,7 @@
 
     .line 687
     :cond_9
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 

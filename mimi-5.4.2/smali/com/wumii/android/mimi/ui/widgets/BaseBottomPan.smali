@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field protected a:Landroid/content/Context;
+.field protected mContexta:Landroid/content/Context;
 
-.field protected b:Landroid/content/res/Resources;
+.field protected mIf:I
 
-.field protected c:Landroid/view/LayoutInflater;
+.field protected mLayoutInflaterc:Landroid/view/LayoutInflater;
 
-.field protected d:Landroid/view/ViewGroup;
+.field protected mResourcesb:Landroid/content/res/Resources;
 
-.field protected e:Landroid/view/View;
+.field protected mViewGroupd:Landroid/view/ViewGroup;
 
-.field protected f:I
+.field protected mViewe:Landroid/view/View;
 
 
 # direct methods
@@ -26,27 +26,27 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mContexta:Landroid/content/Context;
 
     .line 25
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->d:Landroid/view/ViewGroup;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mViewGroupd:Landroid/view/ViewGroup;
 
     .line 26
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->b:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mResourcesb:Landroid/content/res/Resources;
 
     .line 27
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->c:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mLayoutInflaterc:Landroid/view/LayoutInflater;
 
     .line 29
-    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->f:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mIf:I
 
     .line 30
     return-void
@@ -62,7 +62,7 @@
 
     .prologue
     .line 33
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->f:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mIf:I
 
     return v0
 .end method
@@ -72,7 +72,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->e:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mViewe:Landroid/view/View;
 
     if-nez v0, :cond_0
 
@@ -81,11 +81,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->e:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mViewe:Landroid/view/View;
 
     .line 40
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->e:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->mViewe:Landroid/view/View;
 
     return-object v0
 .end method

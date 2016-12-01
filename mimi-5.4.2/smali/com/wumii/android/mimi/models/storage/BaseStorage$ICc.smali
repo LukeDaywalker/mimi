@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
-
-.field public static final enum b:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
-
-.field public static final enum c:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
-
 .field private static final synthetic mArrayICcd:[Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+
+.field public static final enum mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+
+.field public static final enum mICcb:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+
+.field public static final enum mICcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sput-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     new-instance v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->b:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sput-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcb:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     new-instance v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
@@ -58,22 +58,22 @@
 
     invoke-direct {v0, v1, v4}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sput-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     .line 9
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->b:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcb:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     aput-object v1, v0, v4
 

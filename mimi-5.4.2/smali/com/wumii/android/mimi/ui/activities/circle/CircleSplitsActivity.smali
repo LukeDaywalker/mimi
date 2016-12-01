@@ -152,7 +152,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mOnSharedPreferenceChangeListenero:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mOnSharedPreferenceChangeListenero:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 

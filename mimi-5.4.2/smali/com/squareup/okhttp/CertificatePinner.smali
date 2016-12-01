@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/squareup/okhttp/CertificatePinner;
+.field public static final mCertificatePinnera:Lcom/squareup/okhttp/CertificatePinner;
 
 
 # instance fields
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/CertificatePinner;->a:Lcom/squareup/okhttp/CertificatePinner;
+    sput-object v0, Lcom/squareup/okhttp/CertificatePinner;->mCertificatePinnera:Lcom/squareup/okhttp/CertificatePinner;
 
     return-void
 .end method

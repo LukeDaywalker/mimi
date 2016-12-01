@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field public final a:I
+.field public final isZf:Z
 
-.field public final b:I
+.field public final mIa:I
 
-.field public final c:I
+.field public final mIb:I
 
-.field public final d:I
+.field public final mIc:I
 
-.field public final e:I
+.field public final mId:I
 
-.field public final f:Z
+.field public final mIe:I
 
 
 # direct methods
@@ -26,22 +26,22 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 36
-    iput p1, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->a:I
+    iput p1, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->mIa:I
 
     .line 37
-    iput p2, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->b:I
+    iput p2, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->mIb:I
 
     .line 38
-    iput p3, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->c:I
+    iput p3, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->mIc:I
 
     .line 39
-    iput p4, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->d:I
+    iput p4, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->mId:I
 
     .line 40
-    iput p5, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->e:I
+    iput p5, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->mIe:I
 
     .line 41
-    iput-boolean p6, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->f:Z
+    iput-boolean p6, p0, Lio/fabric/sdk/android/services/settings/SessionSettingsData;->isZf:Z
 
     .line 42
     return-void

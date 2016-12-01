@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final isZd:Z
 
-.field public final b:Ljava/lang/String;
+.field public final isZf:Z
 
-.field public final c:Ljava/lang/String;
+.field public final mStringa:Ljava/lang/String;
 
-.field public final d:Z
+.field public final mStringb:Ljava/lang/String;
 
-.field public final e:Ljava/lang/String;
+.field public final mStringc:Ljava/lang/String;
 
-.field public final f:Z
+.field public final mStringe:Ljava/lang/String;
 
-.field public final g:Ljava/lang/String;
+.field public final mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -28,25 +28,25 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 37
-    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringa:Ljava/lang/String;
 
     .line 38
-    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->b:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringb:Ljava/lang/String;
 
     .line 39
-    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->c:Ljava/lang/String;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringc:Ljava/lang/String;
 
     .line 40
-    iput-boolean p4, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->d:Z
+    iput-boolean p4, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->isZd:Z
 
     .line 41
-    iput-object p5, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->e:Ljava/lang/String;
+    iput-object p5, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringe:Ljava/lang/String;
 
     .line 42
-    iput-boolean p6, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->f:Z
+    iput-boolean p6, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->isZf:Z
 
     .line 43
-    iput-object p7, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->g:Ljava/lang/String;
+    iput-object p7, p0, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->mStringg:Ljava/lang/String;
 
     .line 44
     return-void

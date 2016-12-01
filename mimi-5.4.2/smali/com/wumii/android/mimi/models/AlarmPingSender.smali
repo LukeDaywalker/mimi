@@ -352,7 +352,7 @@
 
     .prologue
     .line 79
-    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->b:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringb:Ljava/lang/String;
 
     .line 80
     sget-object v1, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;

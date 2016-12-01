@@ -57,7 +57,7 @@
 
     .line 111
     :goto_2
-    sget-object v1, Lcom/nostra13/universalimageloader/core/ImageLoader;->a:Ljava/lang/String;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/ImageLoader;->mStringa:Ljava/lang/String;
 
     invoke-static {p0, v1, v0}, Landroid/util/Log;->println(ILjava/lang/String;Ljava/lang/String;)I
 

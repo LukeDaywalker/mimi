@@ -380,7 +380,7 @@
     div-float/2addr v5, v6
 
     .line 200
-    sget-object v6, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->a:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v6, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypea:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     if-ne p2, v6, :cond_0
 
@@ -389,7 +389,7 @@
     if-gez v6, :cond_1
 
     :cond_0
-    sget-object v6, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v6, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     if-ne p2, v6, :cond_5
 

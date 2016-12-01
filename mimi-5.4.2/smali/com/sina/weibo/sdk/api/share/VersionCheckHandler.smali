@@ -100,7 +100,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget v4, v1, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->b:I
+    iget v4, v1, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mIb:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -113,25 +113,25 @@
     invoke-static {v2, v3}, Lcom/sina/weibo/sdk/utils/LogUtil;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 98
-    iget v2, v1, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->b:I
+    iget v2, v1, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mIb:I
 
     const/16 v3, 0x286f
 
     if-lt v2, v3, :cond_0
 
     .line 103
-    iget v0, v1, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->b:I
+    iget v0, v1, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mIb:I
 
     const/16 v1, 0x2870
 
     if-ge v0, v1, :cond_2
 
     .line 105
-    iget-object v0, p2, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iget-object v0, p2, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p2, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iget-object v0, p2, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     instance-of v0, v0, Lcom/sina/weibo/sdk/api/CmdObject;
 
@@ -140,7 +140,7 @@
     .line 106
     const/4 v0, 0x0
 
-    iput-object v0, p2, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
+    iput-object v0, p2, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mBaseMediaObjectc:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     .line 110
     :cond_2

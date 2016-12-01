@@ -4,11 +4,13 @@
 
 
 # instance fields
-.field protected a:Landroid/content/Context;
+.field protected mContexta:Landroid/content/Context;
 
-.field protected b:Landroid/view/LayoutInflater;
+.field private mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field protected c:Ljava/util/List;
+.field protected mLayoutInflaterb:Landroid/view/LayoutInflater;
+
+.field protected mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -18,8 +20,6 @@
         }
     .end annotation
 .end field
-
-.field private mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 .field private mMessageItemBuilderFactoryd:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
@@ -42,14 +42,14 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     .line 40
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mContexta:Landroid/content/Context;
 
     .line 41
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mListc:Ljava/util/List;
 
     .line 42
     new-instance v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->b:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     .line 46
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -94,7 +94,7 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -127,7 +127,7 @@
 
     .line 55
     :cond_0
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->c:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mListc:Ljava/util/List;
 
     .line 56
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->notifyDataSetChanged()V
@@ -140,7 +140,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -218,7 +218,7 @@
     .line 89
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mMessageItemBuilderFactoryd:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessageReport;->getMessage()Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
@@ -248,7 +248,7 @@
     if-nez p2, :cond_1
 
     .line 97
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->b:Landroid/view/LayoutInflater;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v3, 0x7f0300cc
 

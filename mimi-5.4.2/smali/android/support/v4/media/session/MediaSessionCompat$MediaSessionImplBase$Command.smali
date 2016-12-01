@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mBundleb:Landroid/os/Bundle;
 
-.field public final b:Landroid/os/Bundle;
+.field public final mResultReceiverc:Landroid/os/ResultReceiver;
 
-.field public final c:Landroid/os/ResultReceiver;
+.field public final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1688
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$Command;->a:Ljava/lang/String;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$Command;->mStringa:Ljava/lang/String;
 
     .line 1689
-    iput-object p2, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$Command;->b:Landroid/os/Bundle;
+    iput-object p2, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$Command;->mBundleb:Landroid/os/Bundle;
 
     .line 1690
-    iput-object p3, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$Command;->c:Landroid/os/ResultReceiver;
+    iput-object p3, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$Command;->mResultReceiverc:Landroid/os/ResultReceiver;
 
     .line 1691
     return-void

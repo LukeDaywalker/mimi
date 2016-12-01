@@ -61,7 +61,7 @@
     iput-object p2, p0, Lcom/google/tagmanager/TagManager;->mICbia:Lcom/google/tagmanager/TagManager$ICbi;
 
     .line 144
-    sget-object v0, Lcom/google/tagmanager/TagManager$ICbj;->a:Lcom/google/tagmanager/TagManager$ICbj;
+    sget-object v0, Lcom/google/tagmanager/TagManager$ICbj;->mICbja:Lcom/google/tagmanager/TagManager$ICbj;
 
     iput-object v0, p0, Lcom/google/tagmanager/TagManager;->mICbjd:Lcom/google/tagmanager/TagManager$ICbj;
 

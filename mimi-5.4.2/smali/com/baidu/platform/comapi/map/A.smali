@@ -14,9 +14,9 @@
 
 
 # static fields
-.field public static final enum a:Lcom/baidu/platform/comapi/map/A;
+.field public static final enum mAa:Lcom/baidu/platform/comapi/map/A;
 
-.field public static final enum b:Lcom/baidu/platform/comapi/map/A;
+.field public static final enum mAb:Lcom/baidu/platform/comapi/map/A;
 
 .field private static final synthetic mArrayAd:[Lcom/baidu/platform/comapi/map/A;
 
@@ -41,7 +41,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/baidu/platform/comapi/map/A;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/A;->a:Lcom/baidu/platform/comapi/map/A;
+    sput-object v0, Lcom/baidu/platform/comapi/map/A;->mAa:Lcom/baidu/platform/comapi/map/A;
 
     new-instance v0, Lcom/baidu/platform/comapi/map/A;
 
@@ -49,15 +49,15 @@
 
     invoke-direct {v0, v1, v2, v4}, Lcom/baidu/platform/comapi/map/A;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/A;->b:Lcom/baidu/platform/comapi/map/A;
+    sput-object v0, Lcom/baidu/platform/comapi/map/A;->mAb:Lcom/baidu/platform/comapi/map/A;
 
     new-array v0, v4, [Lcom/baidu/platform/comapi/map/A;
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/A;->a:Lcom/baidu/platform/comapi/map/A;
+    sget-object v1, Lcom/baidu/platform/comapi/map/A;->mAa:Lcom/baidu/platform/comapi/map/A;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/baidu/platform/comapi/map/A;->b:Lcom/baidu/platform/comapi/map/A;
+    sget-object v1, Lcom/baidu/platform/comapi/map/A;->mAb:Lcom/baidu/platform/comapi/map/A;
 
     aput-object v1, v0, v2
 

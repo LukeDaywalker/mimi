@@ -4,8 +4,8 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mArrayICgc:[Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;
 
-.field public final b:I
+.field public final mIb:I
 
-.field public final c:[Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;
+.field public final mStringa:Ljava/lang/String;

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
+.field public static final mIncomingStreamHandlera:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler$ICr;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;->a:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;->mIncomingStreamHandlera:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 
     return-void
 .end method

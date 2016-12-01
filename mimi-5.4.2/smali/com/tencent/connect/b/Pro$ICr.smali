@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public a:Lcom/tencent/tauth/Pro$ICb;
+.field public mICba:Lcom/tencent/tauth/Pro$ICb;
 
-.field public b:Lcom/tencent/connect/b/Pro$ICk;
+.field public mICkb:Lcom/tencent/connect/b/Pro$ICk;
 
-.field public c:Ljava/lang/String;
+.field public mStringc:Ljava/lang/String;
 
 
 # direct methods

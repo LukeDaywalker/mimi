@@ -318,7 +318,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
@@ -350,7 +350,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
@@ -586,9 +586,9 @@
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
@@ -618,9 +618,9 @@
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
@@ -967,7 +967,7 @@
 
     aget-object v4, v0, v4
 
-    iput-object v4, v3, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iput-object v4, v3, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     :cond_3
     if-le v2, v6, :cond_4
@@ -1015,7 +1015,7 @@
 
     aget-object v4, v0, v4
 
-    iput-object v4, v3, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iput-object v4, v3, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     :cond_7
     const/4 v3, 0x5
@@ -1033,7 +1033,7 @@
     :cond_8
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     const-string/jumbo v2, "\u5317\u4eac"
 
@@ -1058,7 +1058,7 @@
     :cond_9
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     const-string/jumbo v2, "\u4e0a\u6d77"
 
@@ -1083,7 +1083,7 @@
     :cond_a
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     const-string/jumbo v2, "\u5929\u6d25"
 
@@ -1108,7 +1108,7 @@
     :cond_b
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     const-string/jumbo v2, "\u91cd\u5e86"
 
@@ -1133,12 +1133,12 @@
     :cond_c
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     :goto_1
     iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     if-eqz v2, :cond_10
 
@@ -1168,7 +1168,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1286,7 +1286,7 @@
 
     iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1793,7 +1793,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1841,7 +1841,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1925,9 +1925,9 @@
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
@@ -1937,9 +1937,9 @@
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -2153,7 +2153,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
@@ -2177,7 +2177,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

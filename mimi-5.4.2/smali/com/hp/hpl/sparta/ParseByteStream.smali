@@ -21,7 +21,7 @@
     .line 36
     if-nez p3, :cond_2
 
-    sget-object v3, Lcom/hp/hpl/sparta/ParseByteStream;->a:Lcom/hp/hpl/sparta/ParseLog;
+    sget-object v3, Lcom/hp/hpl/sparta/ParseByteStream;->mParseLoga:Lcom/hp/hpl/sparta/ParseLog;
 
     .line 41
     :goto_0
@@ -42,7 +42,7 @@
 
     .line 44
     :cond_0
-    sget v0, Lcom/hp/hpl/sparta/ParseByteStream;->b:I
+    sget v0, Lcom/hp/hpl/sparta/ParseByteStream;->mIb:I
 
     invoke-virtual {p2, v0}, Ljava/io/InputStream;->mark(I)V
 

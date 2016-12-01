@@ -162,7 +162,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 120
-    sget-object v1, Lu/aly/IdSnapshot$ICbl;->a:Lu/aly/IdSnapshot$ICbl;
+    sget-object v1, Lu/aly/IdSnapshot$ICbl;->mICbla:Lu/aly/IdSnapshot$ICbl;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -177,7 +177,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 122
-    sget-object v1, Lu/aly/IdSnapshot$ICbl;->b:Lu/aly/IdSnapshot$ICbl;
+    sget-object v1, Lu/aly/IdSnapshot$ICbl;->mICblb:Lu/aly/IdSnapshot$ICbl;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -192,7 +192,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 124
-    sget-object v1, Lu/aly/IdSnapshot$ICbl;->c:Lu/aly/IdSnapshot$ICbl;
+    sget-object v1, Lu/aly/IdSnapshot$ICbl;->mICblc:Lu/aly/IdSnapshot$ICbl;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

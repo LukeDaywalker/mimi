@@ -42,7 +42,7 @@
 
     iget-object v1, v1, Lcom/wumii/android/mimi/models/share/SecretShareController$ICak;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
 

@@ -7,7 +7,9 @@
 
 
 # instance fields
-.field protected a:Ljava/lang/ref/Reference;
+.field protected isZb:Z
+
+.field protected mReferencea:Ljava/lang/ref/Reference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/Reference",
@@ -17,8 +19,6 @@
         }
     .end annotation
 .end field
-
-.field protected b:Z
 
 
 # direct methods
@@ -59,10 +59,10 @@
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->a:Ljava/lang/ref/Reference;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     .line 73
-    iput-boolean p2, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->b:Z
+    iput-boolean p2, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->isZb:Z
 
     .line 74
     return-void
@@ -77,7 +77,7 @@
     const/4 v1, 0x0
 
     .line 87
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -94,7 +94,7 @@
     move-result-object v2
 
     .line 91
-    iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->b:Z
+    iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->isZb:Z
 
     if-eqz v3, :cond_2
 
@@ -161,7 +161,7 @@
     if-ne v0, v2, :cond_0
 
     .line 162
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -215,7 +215,7 @@
     if-ne v0, v2, :cond_0
 
     .line 148
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -258,7 +258,7 @@
     const/4 v1, 0x0
 
     .line 111
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -275,7 +275,7 @@
     move-result-object v2
 
     .line 115
-    iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->b:Z
+    iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->isZb:Z
 
     if-eqz v3, :cond_2
 
@@ -323,7 +323,7 @@
 
     .prologue
     .line 126
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     return-object v0
 .end method
@@ -333,7 +333,7 @@
 
     .prologue
     .line 131
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -349,7 +349,7 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -373,7 +373,7 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->a:Ljava/lang/ref/Reference;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->mReferencea:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 

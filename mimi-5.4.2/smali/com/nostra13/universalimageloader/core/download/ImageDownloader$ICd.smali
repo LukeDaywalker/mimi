@@ -15,21 +15,21 @@
 
 
 # static fields
-.field public static final enum a:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
-
-.field public static final enum b:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
-
-.field public static final enum c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
-
-.field public static final enum d:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
-
-.field public static final enum e:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
-
-.field public static final enum f:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
-
-.field public static final enum g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
-
 .field private static final synthetic mArrayICdj:[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+
+.field public static final enum mICda:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+
+.field public static final enum mICdb:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+
+.field public static final enum mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+
+.field public static final enum mICdd:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+
+.field public static final enum mICde:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+
+.field public static final enum mICdf:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+
+.field public static final enum mICdg:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
 
 # instance fields
@@ -62,7 +62,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICda:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -72,7 +72,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->b:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdb:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -82,7 +82,7 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -92,7 +92,7 @@
 
     invoke-direct {v0, v1, v7, v2}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->d:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdd:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -102,7 +102,7 @@
 
     invoke-direct {v0, v1, v8, v2}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->e:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICde:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -114,7 +114,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->f:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdf:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -126,42 +126,42 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdg:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     .line 45
     const/4 v0, 0x7
 
     new-array v0, v0, [Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICda:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->b:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdb:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->d:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdd:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->e:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICde:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     aput-object v1, v0, v8
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->f:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdf:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdg:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     aput-object v2, v0, v1
 
@@ -256,7 +256,7 @@
 
     .line 70
     :cond_1
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdg:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     goto :goto_1
 .end method

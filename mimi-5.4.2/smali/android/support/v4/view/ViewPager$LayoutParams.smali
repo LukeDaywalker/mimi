@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public a:Z
-
-.field public b:I
+.field public isZa:Z
 
 .field isZd:Z
 
 .field mFc:F
+
+.field public mIb:I
 
 .field mIe:I
 
@@ -66,7 +66,7 @@
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v4/view/ViewPager$LayoutParams;->b:I
+    iput v1, p0, Landroid/support/v4/view/ViewPager$LayoutParams;->mIb:I
 
     .line 2961
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V

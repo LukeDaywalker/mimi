@@ -422,7 +422,7 @@
     .line 57
     if-nez p4, :cond_0
 
-    sget-object p4, Lcom/hp/hpl/sparta/ParseCharStream;->a:Lcom/hp/hpl/sparta/ParseLog;
+    sget-object p4, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLoga:Lcom/hp/hpl/sparta/ParseLog;
 
     :cond_0
     iput-object p4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;

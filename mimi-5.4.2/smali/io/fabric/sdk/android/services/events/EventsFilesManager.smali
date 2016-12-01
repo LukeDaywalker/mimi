@@ -15,9 +15,11 @@
 
 
 # instance fields
-.field protected final a:Landroid/content/Context;
+.field protected final mContexta:Landroid/content/Context;
 
-.field protected final b:Lio/fabric/sdk/android/services/events/EventTransform;
+.field protected final mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+
+.field protected final mEventTransformb:Lio/fabric/sdk/android/services/events/EventTransform;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc/a/a/a/a/d/c",
@@ -26,13 +28,13 @@
     .end annotation
 .end field
 
-.field protected final c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+.field protected final mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
-.field protected final d:Lio/fabric/sdk/android/services/events/EventsStorage;
+.field private final mIg:I
 
-.field protected volatile e:J
+.field protected volatile mJe:J
 
-.field protected final f:Ljava/util/List;
+.field protected final mListf:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -42,8 +44,6 @@
         }
     .end annotation
 .end field
-
-.field private final mIg:I
 
 
 # direct methods
@@ -70,32 +70,32 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->f:Ljava/util/List;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mListf:Ljava/util/List;
 
     .line 73
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a:Landroid/content/Context;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mContexta:Landroid/content/Context;
 
     .line 74
-    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->b:Lio/fabric/sdk/android/services/events/EventTransform;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventTransformb:Lio/fabric/sdk/android/services/events/EventTransform;
 
     .line 75
-    iput-object p4, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     .line 76
-    iput-object p3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     .line 78
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/common/CurrentTimeProvider;->a()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->e:J
+    iput-wide v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mJe:J
 
     .line 80
     iput p5, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mIg:I
@@ -109,7 +109,7 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->c()I
 
@@ -132,7 +132,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v4, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v4}, Lio/fabric/sdk/android/services/events/EventsStorage;->a()I
 
@@ -169,7 +169,7 @@
     move-result-object v0
 
     .line 140
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mContexta:Landroid/content/Context;
 
     const/4 v2, 0x4
 
@@ -190,7 +190,7 @@
 
     .prologue
     .line 164
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->f:Ljava/util/List;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mListf:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -222,7 +222,7 @@
     move-exception v0
 
     .line 168
-    iget-object v2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a:Landroid/content/Context;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v3, "One of the roll over listeners threw an exception"
 
@@ -297,7 +297,7 @@
     .line 95
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->f:Ljava/util/List;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mListf:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -316,7 +316,7 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->b:Lio/fabric/sdk/android/services/events/EventTransform;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventTransformb:Lio/fabric/sdk/android/services/events/EventTransform;
 
     invoke-interface {v0, p1}, Lio/fabric/sdk/android/services/events/EventTransform;->a(Ljava/lang/Object;)[B
 
@@ -328,7 +328,7 @@
     invoke-direct {p0, v1}, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a(I)V
 
     .line 87
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v1, v0}, Lio/fabric/sdk/android/services/events/EventsStorage;->a([B)V
 
@@ -350,7 +350,7 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v0, p1}, Lio/fabric/sdk/android/services/events/EventsStorage;->a(Ljava/util/List;)V
 
@@ -391,7 +391,7 @@
     const/4 v0, 0x0
 
     .line 108
-    iget-object v3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v3}, Lio/fabric/sdk/android/services/events/EventsStorage;->b()Z
 
@@ -405,12 +405,12 @@
     move-result-object v0
 
     .line 110
-    iget-object v3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v3, v0}, Lio/fabric/sdk/android/services/events/EventsStorage;->a(Ljava/lang/String;)V
 
     .line 112
-    iget-object v3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a:Landroid/content/Context;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mContexta:Landroid/content/Context;
 
     const/4 v4, 0x4
 
@@ -431,13 +431,13 @@
     invoke-static {v3, v4, v5, v2}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;ILjava/lang/String;Ljava/lang/String;)V
 
     .line 118
-    iget-object v2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     invoke-interface {v2}, Lio/fabric/sdk/android/services/common/CurrentTimeProvider;->a()J
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->e:J
+    iput-wide v2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mJe:J
 
     .line 122
     :goto_0
@@ -466,7 +466,7 @@
 
     .prologue
     .line 175
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     const/4 v1, 0x1
 
@@ -482,9 +482,9 @@
 
     .prologue
     .line 183
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v1}, Lio/fabric/sdk/android/services/events/EventsStorage;->c()Ljava/util/List;
 
@@ -493,7 +493,7 @@
     invoke-interface {v0, v1}, Lio/fabric/sdk/android/services/events/EventsStorage;->a(Ljava/util/List;)V
 
     .line 185
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/events/EventsStorage;->d()V
 
@@ -506,7 +506,7 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/events/EventsStorage;->c()Ljava/util/List;
 
@@ -537,7 +537,7 @@
     sub-int/2addr v2, v1
 
     .line 196
-    iget-object v3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->a:Landroid/content/Context;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mContexta:Landroid/content/Context;
 
     sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -664,7 +664,7 @@
 
     .line 221
     :cond_3
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->d:Lio/fabric/sdk/android/services/events/EventsStorage;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mEventsStoraged:Lio/fabric/sdk/android/services/events/EventsStorage;
 
     invoke-interface {v0, v3}, Lio/fabric/sdk/android/services/events/EventsStorage;->a(Ljava/util/List;)V
 

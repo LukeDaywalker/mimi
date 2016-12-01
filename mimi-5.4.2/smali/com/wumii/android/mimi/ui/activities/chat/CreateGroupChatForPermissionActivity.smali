@@ -100,7 +100,7 @@
     .line 40
     const-string/jumbo v2, "org"
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 

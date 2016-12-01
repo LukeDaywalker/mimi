@@ -46,7 +46,7 @@
 .method public a()Lcom/tencent/stat/b/ICf;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/b/ICf;->e:Lcom/tencent/stat/b/ICf;
+    sget-object v0, Lcom/tencent/stat/b/ICf;->mICfe:Lcom/tencent/stat/b/ICf;
 
     return-object v0
 .end method

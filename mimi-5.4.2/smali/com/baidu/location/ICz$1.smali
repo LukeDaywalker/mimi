@@ -22,7 +22,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
 
-    sget-boolean v0, Lcom/baidu/location/ICad;->gP:Z
+    sget-boolean v0, Lcom/baidu/location/ICad;->isZgP:Z
 
     if-nez v0, :cond_1
 

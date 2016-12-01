@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
+.field protected final mCallbacka:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Landroid/media/session/MediaController$Callback;-><init>()V
 
     .line 258
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->a:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
 
     .line 259
     return-void
@@ -51,7 +51,7 @@
 
     .prologue
     .line 278
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->a:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
 
     invoke-interface {v0, p1}, Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;->b(Ljava/lang/Object;)V
 
@@ -64,7 +64,7 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->a:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
 
     invoke-interface {v0, p1}, Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;->a(Ljava/lang/Object;)V
 
@@ -77,7 +77,7 @@
 
     .prologue
     .line 263
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->a:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
 
     invoke-interface {v0}, Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;->a()V
 
@@ -90,7 +90,7 @@
 
     .prologue
     .line 268
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->a:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompatApi21$CallbackProxy;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/media/session/MediaControllerCompatApi21$Callback;->a(Ljava/lang/String;Landroid/os/Bundle;)V
 

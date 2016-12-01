@@ -668,7 +668,7 @@
     .line 397
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->mSpdyStreamb:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->h:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeh:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->b(Lcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 

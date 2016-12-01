@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final isZa:Z
 
-.field public final b:Z
+.field public final isZb:Z
 
-.field public final c:Z
+.field public final isZc:Z
 
-.field public final d:Z
+.field public final isZd:Z
 
 
 # direct methods
@@ -22,16 +22,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    iput-boolean p1, p0, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->a:Z
+    iput-boolean p1, p0, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->isZa:Z
 
     .line 32
-    iput-boolean p2, p0, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->b:Z
+    iput-boolean p2, p0, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->isZb:Z
 
     .line 33
-    iput-boolean p3, p0, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->c:Z
+    iput-boolean p3, p0, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->isZc:Z
 
     .line 34
-    iput-boolean p4, p0, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->d:Z
+    iput-boolean p4, p0, Lio/fabric/sdk/android/services/settings/FeaturesSettingsData;->isZd:Z
 
     .line 35
     return-void

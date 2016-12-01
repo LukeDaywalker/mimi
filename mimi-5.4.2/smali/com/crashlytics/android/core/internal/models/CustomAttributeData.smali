@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mStringa:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 19
-    iput-object p1, p0, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->mStringa:Ljava/lang/String;
 
     .line 20
-    iput-object p2, p0, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/crashlytics/android/core/internal/models/CustomAttributeData;->mStringb:Ljava/lang/String;
 
     .line 21
     return-void

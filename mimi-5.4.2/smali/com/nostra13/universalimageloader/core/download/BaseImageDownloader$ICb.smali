@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICda:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->b:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdb:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 
@@ -74,7 +74,7 @@
     :try_start_3
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->d:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdd:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 
@@ -90,7 +90,7 @@
     :try_start_4
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->e:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICde:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 
@@ -106,7 +106,7 @@
     :try_start_5
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->f:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdf:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 
@@ -122,7 +122,7 @@
     :try_start_6
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdg:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
 

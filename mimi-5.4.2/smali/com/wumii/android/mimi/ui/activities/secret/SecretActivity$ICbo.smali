@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
 
     if-ne v0, v1, :cond_1
 
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
 
     if-ne v0, v1, :cond_4
 

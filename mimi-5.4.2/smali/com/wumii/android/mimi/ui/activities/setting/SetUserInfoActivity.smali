@@ -37,7 +37,7 @@
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->o:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mStringo:Ljava/lang/String;
 
     .line 59
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
@@ -50,7 +50,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mImageViewp:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     const/high16 v4, 0x42c80000    # 100.0f
 
@@ -99,7 +99,7 @@
     .line 68
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/ActivityEventManager;
 

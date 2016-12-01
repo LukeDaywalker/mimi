@@ -10,9 +10,9 @@
 
 
 # instance fields
-.field protected final a:Landroid/widget/OverScroller;
-
 .field private isZb:Z
+
+.field protected final mOverScrollera:Landroid/widget/OverScroller;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     invoke-direct {v0, p1}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->a:Landroid/widget/OverScroller;
+    iput-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     .line 30
     return-void
@@ -46,7 +46,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->a:Landroid/widget/OverScroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     move v1, p1
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->a:Landroid/widget/OverScroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     invoke-virtual {v0, p1}, Landroid/widget/OverScroller;->forceFinished(Z)V
 
@@ -97,7 +97,7 @@
     if-eqz v0, :cond_0
 
     .line 37
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->a:Landroid/widget/OverScroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     invoke-virtual {v0}, Landroid/widget/OverScroller;->computeScrollOffset()Z
 
@@ -108,7 +108,7 @@
 
     .line 40
     :cond_0
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->a:Landroid/widget/OverScroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     invoke-virtual {v0}, Landroid/widget/OverScroller;->computeScrollOffset()Z
 
@@ -122,7 +122,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->a:Landroid/widget/OverScroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     invoke-virtual {v0}, Landroid/widget/OverScroller;->isFinished()Z
 
@@ -136,7 +136,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->a:Landroid/widget/OverScroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     invoke-virtual {v0}, Landroid/widget/OverScroller;->getCurrX()I
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->a:Landroid/widget/OverScroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->mOverScrollera:Landroid/widget/OverScroller;
 
     invoke-virtual {v0}, Landroid/widget/OverScroller;->getCurrY()I
 

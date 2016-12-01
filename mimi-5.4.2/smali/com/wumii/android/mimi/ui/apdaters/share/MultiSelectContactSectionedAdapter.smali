@@ -98,7 +98,7 @@
     if-nez p3, :cond_1
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v2, 0x7f0300e9
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Z
+.field protected isZa:Z
 
 .field private mStringd:Ljava/lang/String;
 
@@ -31,7 +31,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->mStringd:Ljava/lang/String;
 
     .line 23
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->isZa:Z
 
     .line 24
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->j()V
@@ -45,7 +45,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 
@@ -88,7 +88,7 @@
     .line 31
     const-string/jumbo v1, "blocked"
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->a:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->isZa:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -97,7 +97,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 32
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "chat"
 

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected a:Landroid/view/View;
+.field protected mViewGroupd:Landroid/view/ViewGroup;
 
-.field protected b:Landroid/view/View;
+.field protected mViewa:Landroid/view/View;
 
-.field protected c:Landroid/view/View;
+.field protected mViewb:Landroid/view/View;
 
-.field protected d:Landroid/view/ViewGroup;
+.field protected mViewc:Landroid/view/View;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 79
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->a:Landroid/view/View;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->mViewa:Landroid/view/View;
 
     .line 80
     const v0, 0x7f0b000a
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->b:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->mViewb:Landroid/view/View;
 
     .line 81
     const v0, 0x7f0b000b
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->mViewc:Landroid/view/View;
 
     .line 82
     const v0, 0x7f0b01b7
@@ -51,7 +51,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->d:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->mViewGroupd:Landroid/view/ViewGroup;
 
     .line 83
     return-void

@@ -1692,7 +1692,7 @@
     if-eqz v1, :cond_0
 
     .line 2318
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->a:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->mICga:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
     .line 2323
     :goto_0
@@ -1707,13 +1707,13 @@
     if-eqz v0, :cond_1
 
     .line 2321
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->d:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->mICgd:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
     goto :goto_0
 
     .line 2323
     :cond_1
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->c:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->mICgc:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
     goto :goto_0
 .end method
@@ -2323,7 +2323,7 @@
     .line 2881
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->b:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICdb:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "The phone number supplied was null."
 
@@ -2344,7 +2344,7 @@
     .line 2884
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->e:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICde:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied was too long to parse."
 
@@ -2375,7 +2375,7 @@
     .line 2892
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->b:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICdb:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied did not seem to be a phone number."
 
@@ -2400,7 +2400,7 @@
     .line 2899
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->a:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICda:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "Missing or invalid default region."
 
@@ -2493,7 +2493,7 @@
     .line 2959
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->d:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICdd:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied is too short to be a phone number."
 
@@ -2521,7 +2521,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->a:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v5, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICda:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     if-ne v4, v5, :cond_8
 
@@ -2556,7 +2556,7 @@
     .line 2933
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->a:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICda:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "Could not interpret numbers after plus-sign."
 
@@ -2662,7 +2662,7 @@
     .line 2978
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->d:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICdd:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied is too short to be a phone number."
 
@@ -2679,7 +2679,7 @@
     .line 2982
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->e:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICde:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied is too long to be a phone number."
 
@@ -2875,7 +2875,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->c:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->mICgc:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
     if-ne v0, v1, :cond_0
 
@@ -3251,7 +3251,7 @@
 
     .line 2526
     :cond_2
-    sget-object v3, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->d:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v3, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICod:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     if-eq v0, v3, :cond_5
 
@@ -3267,7 +3267,7 @@
     .line 2528
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->c:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICdc:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "Phone number had an IDD, but after this was not long enough to be a viable phone number."
 
@@ -3293,7 +3293,7 @@
     :cond_4
     new-instance v0, Lcom/google/i18n/phonenumbers/NumberParseException;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->a:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v1, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mICda:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     const-string/jumbo v2, "Country calling code supplied was not recognised."
 
@@ -3402,7 +3402,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->d:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
+    sget-object v3, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->mICgd:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
     if-ne v2, v3, :cond_9
 
@@ -3414,7 +3414,7 @@
     if-eqz p4, :cond_8
 
     .line 2568
-    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->c:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICoc:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     invoke-virtual {p5, v1}, Lcom/google/i18n/phonenumbers/Phonenumber$ICn;->a(Lcom/google/i18n/phonenumbers/Phonenumber$ICo;)Lcom/google/i18n/phonenumbers/Phonenumber$ICn;
 
@@ -3642,7 +3642,7 @@
     if-nez v0, :cond_0
 
     .line 2620
-    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->d:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICod:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     .line 2633
     :goto_0
@@ -3676,7 +3676,7 @@
     invoke-static {p1}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;)V
 
     .line 2628
-    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->a:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICoa:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     goto :goto_0
 
@@ -3698,12 +3698,12 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->b:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICob:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     goto :goto_0
 
     :cond_2
-    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->d:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICod:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     goto :goto_0
 .end method

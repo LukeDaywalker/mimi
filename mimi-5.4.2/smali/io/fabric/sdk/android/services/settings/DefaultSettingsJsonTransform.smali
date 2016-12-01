@@ -437,7 +437,7 @@
     .line 210
     const-string/jumbo v0, "update_endpoint"
 
-    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsJsonConstants;->a:Ljava/lang/String;
+    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsJsonConstants;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

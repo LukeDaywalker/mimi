@@ -95,7 +95,7 @@
     iput-object p3, p0, Lcom/squareup/okhttp/internal/http/RouteSelector;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     .line 70
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     invoke-virtual {v0, p3}, Lcom/squareup/okhttp/internal/Internal;->b(Lcom/squareup/okhttp/OkHttpClient;)Lcom/squareup/okhttp/internal/RouteDatabase;
 
@@ -104,7 +104,7 @@
     iput-object v0, p0, Lcom/squareup/okhttp/internal/http/RouteSelector;->mRouteDatabasee:Lcom/squareup/okhttp/internal/RouteDatabase;
 
     .line 71
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     invoke-virtual {v0, p3}, Lcom/squareup/okhttp/internal/Internal;->c(Lcom/squareup/okhttp/OkHttpClient;)Lcom/squareup/okhttp/internal/Network;
 

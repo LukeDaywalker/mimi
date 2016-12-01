@@ -49,7 +49,7 @@
     move-result-object v0
 
     .line 192
-    iget-object v0, v0, Lcom/tencent/c/Pro$ICs;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/tencent/c/Pro$ICs;->mStringa:Ljava/lang/String;
 
     .line 200
     invoke-static {v0}, Lcom/tencent/c/Pro$ICq;->d(Ljava/lang/String;)Lorg/json/JSONObject;

@@ -27,7 +27,7 @@
     if-nez p2, :cond_0
 
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/ExtandSearchContactListAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/ExtandSearchContactListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030068
 
@@ -52,12 +52,12 @@
     move-result-object v1
 
     .line 30
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/widgets/share/ExtendContactListItemViewHolder;->a:Landroid/view/View;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/widgets/share/ExtendContactListItemViewHolder;->mViewa:Landroid/view/View;
 
     invoke-virtual {v2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 31
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/widgets/share/ExtendContactListItemViewHolder;->b:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/widgets/share/ExtendContactListItemViewHolder;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/Contact;->getDisplayName()Ljava/lang/String;
 
@@ -66,7 +66,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 32
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/share/ExtendContactListItemViewHolder;->c:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/share/ExtendContactListItemViewHolder;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/Contact;->getPhoneNumber()Ljava/lang/String;
 

@@ -38,7 +38,7 @@
     if-nez v0, :cond_0
 
     .line 14
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "mobileChat is not an instance of MobileNearbyChat"
 

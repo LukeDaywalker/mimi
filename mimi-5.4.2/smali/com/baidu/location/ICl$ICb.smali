@@ -3,9 +3,9 @@
 
 
 # static fields
-.field public static final do:D = 0.8
+.field public static final mDdo:D = 0.8
 
-.field public static final if:D = 0.7
+.field public static final mDif:D = 0.7
 
 
 # instance fields

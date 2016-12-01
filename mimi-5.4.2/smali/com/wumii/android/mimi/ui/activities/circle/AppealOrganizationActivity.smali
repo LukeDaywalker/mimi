@@ -360,7 +360,7 @@
     iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mFileD:Ljava/io/File;
 
     .line 223
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v3, 0x7f0603a1
 

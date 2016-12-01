@@ -46,7 +46,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICax$ICb;->cZ:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/location/ICax$ICb;->mListcZ:Ljava/util/List;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 
     const-string/jumbo v0, "http://loc.map.baidu.com/fence"
 
-    iput-object v0, p0, Lcom/baidu/location/ICax$ICb;->cX:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICax$ICb;->mStringcX:Ljava/lang/String;
 
     new-instance v0, Ljava/text/DecimalFormat;
 
@@ -178,7 +178,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->cZ:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mListcZ:Ljava/util/List;
 
     new-instance v2, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -188,7 +188,7 @@
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->mListcZ:Ljava/util/List;
 
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -254,14 +254,14 @@
 
     if-eqz p1, :cond_7
 
-    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     if-eqz v0, :cond_7
 
     const/4 v0, 0x0
 
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     const-string/jumbo v2, "UTF-8"
 

@@ -22,7 +22,7 @@
     invoke-virtual {p0, v0, v1}, Lu/aly/UError;->a(J)Lu/aly/Error;
 
     .line 22
-    sget-object v0, Lu/aly/ErrorSource;->a:Lu/aly/ErrorSource;
+    sget-object v0, Lu/aly/ErrorSource;->mErrorSourcea:Lu/aly/ErrorSource;
 
     invoke-virtual {p0, v0}, Lu/aly/UError;->a(Lu/aly/ErrorSource;)Lu/aly/Error;
 

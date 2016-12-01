@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/util/regex/Pattern;
+.field public static final mPatterna:Ljava/util/regex/Pattern;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Patterns;->a:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/wumii/android/mimi/util/Patterns;->mPatterna:Ljava/util/regex/Pattern;
 
     return-void
 .end method

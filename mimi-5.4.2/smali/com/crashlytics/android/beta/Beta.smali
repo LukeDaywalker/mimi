@@ -106,7 +106,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v5, v1, Lcom/crashlytics/android/beta/BuildProperties;->d:Ljava/lang/String;
+    iget-object v5, v1, Lcom/crashlytics/android/beta/BuildProperties;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -118,7 +118,7 @@
 
     move-result-object v4
 
-    iget-object v5, v1, Lcom/crashlytics/android/beta/BuildProperties;->b:Ljava/lang/String;
+    iget-object v5, v1, Lcom/crashlytics/android/beta/BuildProperties;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -130,7 +130,7 @@
 
     move-result-object v4
 
-    iget-object v5, v1, Lcom/crashlytics/android/beta/BuildProperties;->a:Ljava/lang/String;
+    iget-object v5, v1, Lcom/crashlytics/android/beta/BuildProperties;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -148,7 +148,7 @@
 
     move-result-object v4
 
-    iget-object v5, v1, Lcom/crashlytics/android/beta/BuildProperties;->c:Ljava/lang/String;
+    iget-object v5, v1, Lcom/crashlytics/android/beta/BuildProperties;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -432,7 +432,7 @@
     if-eqz v0, :cond_0
 
     .line 178
-    iget-object v0, v0, Lio/fabric/sdk/android/services/settings/SettingsData;->f:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
+    iget-object v0, v0, Lio/fabric/sdk/android/services/settings/SettingsData;->mBetaSettingsDataf:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
 
     .line 181
     :goto_0
@@ -510,7 +510,7 @@
     .line 151
     if-eqz p1, :cond_0
 
-    iget-object v0, p1, Lio/fabric/sdk/android/services/settings/BetaSettingsData;->a:Ljava/lang/String;
+    iget-object v0, p1, Lio/fabric/sdk/android/services/settings/BetaSettingsData;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -784,7 +784,7 @@
     if-nez v2, :cond_0
 
     .line 121
-    sget-object v2, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->c:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v2, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaac:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

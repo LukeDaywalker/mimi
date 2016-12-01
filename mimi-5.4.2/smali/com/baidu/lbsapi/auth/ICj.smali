@@ -22,7 +22,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
 
-    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -51,7 +51,7 @@
 
     check-cast v0, Lcom/baidu/lbsapi/auth/ICn;
 
-    sget-boolean v1, Lcom/baidu/lbsapi/auth/ICa;->a:Z
+    sget-boolean v1, Lcom/baidu/lbsapi/auth/ICa;->isZa:Z
 
     if-eqz v1, :cond_1
 

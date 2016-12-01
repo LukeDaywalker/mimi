@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/nio/charset/Charset;
+.field public static final mCharseta:Ljava/nio/charset/Charset;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lokio/Util;->a:Ljava/nio/charset/Charset;
+    sput-object v0, Lokio/Util;->mCharseta:Ljava/nio/charset/Charset;
 
     return-void
 .end method

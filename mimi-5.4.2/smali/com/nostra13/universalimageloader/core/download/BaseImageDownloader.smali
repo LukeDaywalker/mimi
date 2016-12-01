@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field protected final a:Landroid/content/Context;
+.field protected final mContexta:Landroid/content/Context;
 
-.field protected final b:I
+.field protected final mIb:I
 
-.field protected final c:I
+.field protected final mIc:I
 
 
 # direct methods
@@ -42,13 +42,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mContexta:Landroid/content/Context;
 
     .line 79
-    iput p2, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->b:I
+    iput p2, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mIb:I
 
     .line 80
-    iput p3, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->c:I
+    iput p3, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mIc:I
 
     .line 81
     return-void
@@ -114,7 +114,7 @@
 
     .prologue
     .line 284
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -196,7 +196,7 @@
 
     .prologue
     .line 230
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -481,12 +481,12 @@
     check-cast v0, Ljava/net/HttpURLConnection;
 
     .line 161
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->b:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mIb:I
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
     .line 162
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->c:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mIc:I
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
@@ -499,7 +499,7 @@
 
     .prologue
     .line 176
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -556,7 +556,7 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -655,14 +655,14 @@
 
     .prologue
     .line 248
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->e:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICde:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 249
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -680,7 +680,7 @@
 
     .prologue
     .line 261
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->f:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdf:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -692,7 +692,7 @@
     move-result v0
 
     .line 263
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

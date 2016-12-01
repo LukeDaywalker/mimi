@@ -27,7 +27,7 @@
     return v0
 
     :cond_1
-    iget-object v2, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
+    iget-object v2, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringk:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/tencent/mm/sdk/b/ICe;->j(Ljava/lang/String;)Z
 
@@ -43,7 +43,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
+    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringk:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -58,7 +58,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object v2, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
+    iget-object v2, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringl:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/tencent/mm/sdk/b/ICe;->j(Ljava/lang/String;)Z
 
@@ -70,7 +70,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
+    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringk:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -86,7 +86,7 @@
 
     move-result-object v2
 
-    iput-object v2, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
+    iput-object v2, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringl:Ljava/lang/String;
 
     :cond_3
     const-string/jumbo v2, "MicroMsg.SDK.MMessageAct"
@@ -97,7 +97,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v4, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
+    iget-object v4, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringk:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -109,7 +109,7 @@
 
     move-result-object v3
 
-    iget-object v4, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
+    iget-object v4, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringl:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -125,17 +125,17 @@
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
+    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringk:Ljava/lang/String;
 
-    iget-object v4, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
+    iget-object v4, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringl:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->n:Landroid/os/Bundle;
+    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mBundlen:Landroid/os/Bundle;
 
     if-eqz v3, :cond_4
 
-    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->n:Landroid/os/Bundle;
+    iget-object v3, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mBundlen:Landroid/os/Bundle;
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
@@ -154,13 +154,13 @@
 
     const-string/jumbo v4, "_mmessage_content"
 
-    iget-object v5, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->m:Ljava/lang/String;
+    iget-object v5, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v2, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string/jumbo v4, "_mmessage_checksum"
 
-    iget-object v5, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->m:Ljava/lang/String;
+    iget-object v5, p1, Lcom/tencent/mm/sdk/a/ICa$ICa;->mStringm:Ljava/lang/String;
 
     invoke-static {v5, v6, v3}, Lcom/tencent/mm/sdk/a/a/ICb;->a(Ljava/lang/String;ILjava/lang/String;)[B
 

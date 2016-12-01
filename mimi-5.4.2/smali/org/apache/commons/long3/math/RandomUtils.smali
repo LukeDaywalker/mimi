@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/util/Random;
+.field public static final mRandoma:Ljava/util/Random;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lorg/apache/commons/long3/math/JVMRandom;-><init>()V
 
-    sput-object v0, Lorg/apache/commons/long3/math/RandomUtils;->a:Ljava/util/Random;
+    sput-object v0, Lorg/apache/commons/long3/math/RandomUtils;->mRandoma:Ljava/util/Random;
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lorg/apache/commons/long3/math/RandomUtils;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/RandomUtils;->mRandoma:Ljava/util/Random;
 
     invoke-static {v0}, Lorg/apache/commons/long3/math/RandomUtils;->a(Ljava/util/Random;)I
 
@@ -41,7 +41,7 @@
 
     .prologue
     .line 74
-    sget-object v0, Lorg/apache/commons/long3/math/RandomUtils;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/RandomUtils;->mRandoma:Ljava/util/Random;
 
     invoke-static {v0, p0}, Lorg/apache/commons/long3/math/RandomUtils;->a(Ljava/util/Random;I)I
 

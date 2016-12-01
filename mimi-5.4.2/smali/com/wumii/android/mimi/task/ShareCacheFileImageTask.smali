@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected d:Ljava/lang/String;
+.field protected mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->f()Z
 
     .line 28
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->mStringd:Ljava/lang/String;
 
     .line 29
     invoke-virtual {p0, p2}, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
@@ -43,9 +43,9 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->mContextb:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->mStringd:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -56,7 +56,7 @@
     .line 20
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->mStringd:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -65,7 +65,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->mStringd:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;->c(Ljava/lang/String;)Ljava/io/File;
 

@@ -282,7 +282,7 @@
 
     .line 147
     :pswitch_0
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->g:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafg:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u70b9\u51fb\u53d1\u8d77\u7fa4\u804a[\u4e0b\u4e00\u6b65]\u6309\u94ae"
 
@@ -322,7 +322,7 @@
 
     .line 161
     :pswitch_1
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->g:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafg:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u70b9\u51fb\u53d1\u8d77\u7fa4\u804a[\u53d1\u8d77]\u6309\u94ae"
 

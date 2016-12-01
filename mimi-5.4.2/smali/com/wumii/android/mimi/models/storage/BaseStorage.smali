@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Ljava/util/ArrayList;
+.field protected final mArrayLista:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     .line 59
     return-void
@@ -75,13 +75,13 @@
 
     .line 35
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     monitor-enter v1
 
     .line 36
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -90,7 +90,7 @@
     if-nez v0, :cond_1
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -125,13 +125,13 @@
 
     .line 47
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     monitor-enter v1
 
     .line 48
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
 
@@ -143,7 +143,7 @@
     if-eq v0, v2, :cond_1
 
     .line 50
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 

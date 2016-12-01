@@ -285,17 +285,17 @@
     return-void
 
     :cond_1
-    iget v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
+    iget v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mIa:I
 
     if-nez v0, :cond_2
 
-    iget-object v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->e:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringe:Ljava/lang/String;
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->D:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringD:Ljava/lang/String;
 
-    iget-object v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->b:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringb:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->c:Ljava/lang/String;
+    iget-object v1, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mStringc:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/baidu/platform/comapi/util/ICf;->a(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -304,13 +304,13 @@
 
     if-eqz v0, :cond_0
 
-    iget v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
+    iget v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mIa:I
 
     sget v1, Lcom/baidu/platform/comapi/ICa;->mIg:I
 
     if-eq v0, v1, :cond_0
 
-    iget v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
+    iget v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mIa:I
 
     sput v0, Lcom/baidu/platform/comapi/ICa;->mIg:I
 
@@ -318,9 +318,9 @@
 
     const/16 v1, 0x7dc
 
-    iget v2, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
+    iget v2, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mIa:I
 
-    iget v3, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
+    iget v3, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->mIa:I
 
     const/4 v4, 0x0
 

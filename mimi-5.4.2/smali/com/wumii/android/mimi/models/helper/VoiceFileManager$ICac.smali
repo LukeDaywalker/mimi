@@ -100,7 +100,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->b:Ljava/lang/String;
+    sget-object v5, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->mStringb:Ljava/lang/String;
 
     invoke-static {v4, v5}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 

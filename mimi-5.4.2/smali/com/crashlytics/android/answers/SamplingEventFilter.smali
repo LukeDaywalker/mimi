@@ -86,7 +86,7 @@
     .line 43
     sget-object v0, Lcom/crashlytics/android/answers/SamplingEventFilter;->mSetb:Ljava/util/Set;
 
-    iget-object v1, p1, Lcom/crashlytics/android/answers/SessionEvent;->c:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    iget-object v1, p1, Lcom/crashlytics/android/answers/SessionEvent;->mICrc:Lcom/crashlytics/android/answers/SessionEvent$ICr;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -94,9 +94,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Lcom/crashlytics/android/answers/SessionEvent;->a:Lcom/crashlytics/android/answers/SessionEventMetadata;
+    iget-object v0, p1, Lcom/crashlytics/android/answers/SessionEvent;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    iget-object v0, v0, Lcom/crashlytics/android/answers/SessionEventMetadata;->f:Ljava/lang/String;
+    iget-object v0, v0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringf:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -117,9 +117,9 @@
 
     .prologue
     .line 48
-    iget-object v0, p1, Lcom/crashlytics/android/answers/SessionEvent;->a:Lcom/crashlytics/android/answers/SessionEventMetadata;
+    iget-object v0, p1, Lcom/crashlytics/android/answers/SessionEvent;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    iget-object v0, v0, Lcom/crashlytics/android/answers/SessionEventMetadata;->c:Ljava/lang/String;
+    iget-object v0, v0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringc:Ljava/lang/String;
 
     .line 50
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I

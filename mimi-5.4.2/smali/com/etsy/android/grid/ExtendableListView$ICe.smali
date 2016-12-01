@@ -215,7 +215,7 @@
 
     iget-object v4, p0, Lcom/etsy/android/grid/ExtendableListView$ICe;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
-    iget v4, v4, Lcom/etsy/android/grid/ExtendableListView;->b:I
+    iget v4, v4, Lcom/etsy/android/grid/ExtendableListView;->mIb:I
 
     invoke-static {v3, v4}, Lcom/etsy/android/grid/ExtendableListView;->b(Lcom/etsy/android/grid/ExtendableListView;I)I
 
@@ -291,7 +291,7 @@
 
     iget-object v5, p0, Lcom/etsy/android/grid/ExtendableListView$ICe;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
-    iget v5, v5, Lcom/etsy/android/grid/ExtendableListView;->b:I
+    iget v5, v5, Lcom/etsy/android/grid/ExtendableListView;->mIb:I
 
     add-int/2addr v3, v5
 

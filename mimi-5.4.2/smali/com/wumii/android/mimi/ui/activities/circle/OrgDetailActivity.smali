@@ -179,7 +179,7 @@
     invoke-virtual {v0, v2, v1, v2, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -204,7 +204,7 @@
     const/4 v1, 0x0
 
     .line 102
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -241,7 +241,7 @@
 
     .line 114
     :goto_0
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -250,7 +250,7 @@
     if-eqz v3, :cond_2
 
     .line 115
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -261,7 +261,7 @@
     move-result-object v3
 
     .line 116
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -281,7 +281,7 @@
 
     new-array v7, v2, [Ljava/lang/Object;
 
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v8}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -318,7 +318,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 128
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -561,7 +561,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -632,7 +632,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 

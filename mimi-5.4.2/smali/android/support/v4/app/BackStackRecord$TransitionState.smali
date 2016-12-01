@@ -4,7 +4,18 @@
 
 
 # instance fields
-.field public a:Landroid/support/v4/util/ArrayMap;
+.field public mArrayListb:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public mArrayMapa:Landroid/support/v4/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/util/ArrayMap",
@@ -16,22 +27,11 @@
     .end annotation
 .end field
 
-.field public b:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList",
-            "<",
-            "Landroid/view/View;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public c:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
-
-.field public d:Landroid/view/View;
-
 .field final synthetic mBackStackRecorde:Landroid/support/v4/app/BackStackRecord;
+
+.field public mEpicenterViewc:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
+
+.field public mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -49,21 +49,21 @@
 
     invoke-direct {v0}, Landroid/support/v4/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->a:Landroid/support/v4/util/ArrayMap;
+    iput-object v0, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     .line 1451
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->b:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mArrayListb:Ljava/util/ArrayList;
 
     .line 1453
     new-instance v0, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
     invoke-direct {v0}, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->c:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
+    iput-object v0, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mEpicenterViewc:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
     return-void
 .end method

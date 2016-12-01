@@ -26,17 +26,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 521
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;->a:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;->mIncomingStreamHandlera:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 
     iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mIncomingStreamHandlerc:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 
     .line 522
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     .line 523
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/PushObserver;->a:Lcom/squareup/okhttp/internal/spdy/PushObserver;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/PushObserver;->mPushObservera:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 
     iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mPushObservere:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 

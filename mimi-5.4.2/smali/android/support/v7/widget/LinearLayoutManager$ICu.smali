@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public a:I
+.field public isZb:Z
 
-.field public b:Z
+.field public isZc:Z
 
-.field public c:Z
+.field public isZd:Z
 
-.field public d:Z
+.field public mIa:I
 
 
 # direct methods
@@ -33,16 +33,16 @@
     const/4 v0, 0x0
 
     .line 2180
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICu;->a:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICu;->mIa:I
 
     .line 2181
-    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICu;->b:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICu;->isZb:Z
 
     .line 2182
-    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICu;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICu;->isZc:Z
 
     .line 2183
-    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICu;->d:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICu;->isZd:Z
 
     .line 2184
     return-void

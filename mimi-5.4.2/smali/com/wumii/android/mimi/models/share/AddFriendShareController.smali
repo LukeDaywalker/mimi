@@ -54,7 +54,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
@@ -180,7 +180,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->getFriendAddSharePrefix()Ljava/lang/String;
 

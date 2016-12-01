@@ -41,7 +41,7 @@
     if-eqz v0, :cond_0
 
     .line 86
-    sget-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-static {}, Lcom/google/analytics/tracking/android/Log;->b()Lcom/google/analytics/tracking/android/Logger;
 

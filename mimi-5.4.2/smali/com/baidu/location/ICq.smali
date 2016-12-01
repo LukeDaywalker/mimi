@@ -142,7 +142,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICq;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -164,7 +164,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICq;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -186,7 +186,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICq;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -208,7 +208,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICq;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -230,7 +230,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICq;->I:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringI:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -504,7 +504,7 @@
 
     new-instance v1, Ljava/io/File;
 
-    sget-object v2, Lcom/baidu/location/ICq;->I:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICq;->mStringI:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -579,7 +579,7 @@
 
     const/4 v4, 0x0
 
-    sget v1, Lcom/baidu/location/ICc;->at:I
+    sget v1, Lcom/baidu/location/ICc;->mIat:I
 
     const/4 v0, 0x1
 
@@ -661,7 +661,7 @@
 
     const/4 v8, 0x1
 
-    sget-boolean v0, Lcom/baidu/location/ICaa;->go:Z
+    sget-boolean v0, Lcom/baidu/location/ICaa;->isZgo:Z
 
     if-nez v0, :cond_1
 
@@ -670,7 +670,7 @@
     return-void
 
     :cond_1
-    sget-boolean v0, Lcom/baidu/location/ICaa;->gw:Z
+    sget-boolean v0, Lcom/baidu/location/ICaa;->isZgw:Z
 
     if-nez v0, :cond_3
 
@@ -690,7 +690,7 @@
     if-eq v0, v8, :cond_0
 
     :cond_3
-    sget v0, Lcom/baidu/location/ICc;->aN:I
+    sget v0, Lcom/baidu/location/ICc;->mIaN:I
 
     if-ne v0, v9, :cond_4
 
@@ -1325,7 +1325,7 @@
 
     const/4 v0, 0x0
 
-    sget-boolean v1, Lcom/baidu/location/ICaa;->go:Z
+    sget-boolean v1, Lcom/baidu/location/ICaa;->isZgo:Z
 
     if-nez v1, :cond_1
 
@@ -1334,7 +1334,7 @@
     return-object v0
 
     :cond_1
-    sget-boolean v1, Lcom/baidu/location/ICaa;->gw:Z
+    sget-boolean v1, Lcom/baidu/location/ICaa;->isZgw:Z
 
     if-nez v1, :cond_3
 
@@ -1886,7 +1886,7 @@
 
     float-to-double v2, v2
 
-    sget v4, Lcom/baidu/location/ICc;->aB:F
+    sget v4, Lcom/baidu/location/ICc;->mFaB:F
 
     float-to-double v4, v4
 
@@ -1894,7 +1894,7 @@
 
     mul-double/2addr v4, v2
 
-    sget v6, Lcom/baidu/location/ICc;->aA:F
+    sget v6, Lcom/baidu/location/ICc;->mFaA:F
 
     float-to-double v6, v6
 
@@ -1902,7 +1902,7 @@
 
     add-double/2addr v2, v4
 
-    sget v4, Lcom/baidu/location/ICc;->az:I
+    sget v4, Lcom/baidu/location/ICc;->mIaz:I
 
     int-to-double v4, v4
 

@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
-
-.field public static final enum b:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
-
 .field private static final synthetic mArrayICcc:[Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+
+.field public static final enum mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+
+.field public static final enum mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->a:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sput-object v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     .line 27
     new-instance v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
@@ -47,18 +47,18 @@
 
     invoke-direct {v0, v1, v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->b:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sput-object v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     .line 23
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->a:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v1, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->b:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v1, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     aput-object v1, v0, v3
 

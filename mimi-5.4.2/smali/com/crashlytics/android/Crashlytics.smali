@@ -19,13 +19,11 @@
 
 
 # instance fields
-.field public final a:Lcom/crashlytics/android/answers/Answers;
+.field public final mAnswersa:Lcom/crashlytics/android/answers/Answers;
 
-.field public final b:Lcom/crashlytics/android/beta/Beta;
+.field public final mBetab:Lcom/crashlytics/android/beta/Beta;
 
-.field public final c:Lcom/crashlytics/android/core/CrashlyticsCore;
-
-.field public final d:Ljava/util/Collection;
+.field public final mCollectiond:Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Collection",
@@ -35,6 +33,8 @@
         }
     .end annotation
 .end field
+
+.field public final mCrashlyticsCorec:Lcom/crashlytics/android/core/CrashlyticsCore;
 
 
 # direct methods
@@ -69,13 +69,13 @@
     invoke-direct {p0}, Lio/fabric/sdk/android/Kit;-><init>()V
 
     .line 33
-    iput-object p1, p0, Lcom/crashlytics/android/Crashlytics;->a:Lcom/crashlytics/android/answers/Answers;
+    iput-object p1, p0, Lcom/crashlytics/android/Crashlytics;->mAnswersa:Lcom/crashlytics/android/answers/Answers;
 
     .line 34
-    iput-object p2, p0, Lcom/crashlytics/android/Crashlytics;->b:Lcom/crashlytics/android/beta/Beta;
+    iput-object p2, p0, Lcom/crashlytics/android/Crashlytics;->mBetab:Lcom/crashlytics/android/beta/Beta;
 
     .line 35
-    iput-object p3, p0, Lcom/crashlytics/android/Crashlytics;->c:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iput-object p3, p0, Lcom/crashlytics/android/Crashlytics;->mCrashlyticsCorec:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     .line 37
     const/4 v0, 0x3
@@ -102,7 +102,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/Crashlytics;->d:Ljava/util/Collection;
+    iput-object v0, p0, Lcom/crashlytics/android/Crashlytics;->mCollectiond:Ljava/util/Collection;
 
     .line 38
     return-void
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/crashlytics/android/Crashlytics;->c:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, v0, Lcom/crashlytics/android/Crashlytics;->mCrashlyticsCorec:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0, p0}, Lcom/crashlytics/android/core/CrashlyticsCore;->a(Ljava/lang/String;)V
 
@@ -140,7 +140,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/crashlytics/android/Crashlytics;->c:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, v0, Lcom/crashlytics/android/Crashlytics;->mCrashlyticsCorec:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0, p0, p1}, Lcom/crashlytics/android/core/CrashlyticsCore;->a(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -160,7 +160,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/crashlytics/android/Crashlytics;->c:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, v0, Lcom/crashlytics/android/Crashlytics;->mCrashlyticsCorec:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0, p0}, Lcom/crashlytics/android/core/CrashlyticsCore;->a(Ljava/lang/Throwable;)V
 
@@ -245,7 +245,7 @@
 
     .prologue
     .line 176
-    iget-object v0, p0, Lcom/crashlytics/android/Crashlytics;->d:Ljava/util/Collection;
+    iget-object v0, p0, Lcom/crashlytics/android/Crashlytics;->mCollectiond:Ljava/util/Collection;
 
     return-object v0
 .end method

@@ -151,7 +151,7 @@
 .method protected final a()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICb;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICb;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v1, "android.permission.WRITE_EXTERNAL_STORAGE"
 

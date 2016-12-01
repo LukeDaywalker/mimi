@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected n:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
+.field protected mCaptureImageHelpern:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
 
 # direct methods
@@ -71,7 +71,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->mCaptureImageHelpern:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     if-nez v0, :cond_0
 
@@ -84,11 +84,11 @@
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->mCaptureImageHelpern:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     .line 33
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->mCaptureImageHelpern:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     return-object v0
 .end method

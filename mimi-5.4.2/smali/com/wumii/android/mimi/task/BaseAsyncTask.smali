@@ -20,9 +20,9 @@
 
 
 # instance fields
-.field protected b:Landroid/content/Context;
+.field protected mContextb:Landroid/content/Context;
 
-.field protected final c:Lorg/slf4j/Logger;
+.field protected final mLoggerc:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -67,7 +67,7 @@
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/SafeAsyncTask;-><init>(Landroid/os/Handler;)V
 
     .line 51
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mContextb:Landroid/content/Context;
 
     .line 52
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->c:Lorg/slf4j/Logger;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     .line 53
     return-void
@@ -214,7 +214,7 @@
     if-nez v0, :cond_0
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -256,7 +256,7 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {p1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
@@ -279,7 +279,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -356,7 +356,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mContextb:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -424,15 +424,15 @@
 
     invoke-direct {v1, v0}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iput-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     .line 132
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->a(Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;Ljava/util/concurrent/Future;)Ljava/util/concurrent/Future;
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     return-object v0
 .end method
@@ -464,7 +464,7 @@
     if-eqz v1, :cond_0
 
     .line 246
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mContextb:Landroid/content/Context;
 
     const v2, 0x7f0603c0
 
@@ -540,11 +540,11 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->p:Ljava/util/concurrent/FutureTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
     invoke-virtual {v0}, Ljava/util/concurrent/FutureTask;->isDone()Z
 

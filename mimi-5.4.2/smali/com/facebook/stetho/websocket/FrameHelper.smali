@@ -30,23 +30,23 @@
     .line 46
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lcom/facebook/stetho/websocket/Frame;->a:Z
+    iput-boolean v1, v0, Lcom/facebook/stetho/websocket/Frame;->isZa:Z
 
     .line 47
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Lcom/facebook/stetho/websocket/Frame;->f:Z
+    iput-boolean v1, v0, Lcom/facebook/stetho/websocket/Frame;->isZf:Z
 
     .line 48
-    iput-byte p0, v0, Lcom/facebook/stetho/websocket/Frame;->e:B
+    iput-byte p0, v0, Lcom/facebook/stetho/websocket/Frame;->mBe:B
 
     .line 49
     int-to-long v2, p2
 
-    iput-wide v2, v0, Lcom/facebook/stetho/websocket/Frame;->g:J
+    iput-wide v2, v0, Lcom/facebook/stetho/websocket/Frame;->mJg:J
 
     .line 50
-    iput-object p1, v0, Lcom/facebook/stetho/websocket/Frame;->i:[B
+    iput-object p1, v0, Lcom/facebook/stetho/websocket/Frame;->mArrayBi:[B
 
     .line 51
     return-object v0

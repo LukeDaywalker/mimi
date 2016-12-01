@@ -347,7 +347,7 @@
     :cond_0
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbd;->mListd:Ljava/util/List;
 
-    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->a:Landroid/view/View;
+    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->mViewa:Landroid/view/View;
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 

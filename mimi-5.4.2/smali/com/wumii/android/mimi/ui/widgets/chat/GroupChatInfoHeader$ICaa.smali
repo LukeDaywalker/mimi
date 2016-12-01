@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
-
-.field public static final enum b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
-
-.field public static final enum c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
-
-.field public static final enum d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
-
 .field private static final synthetic mArrayICaae:[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+
+.field public static final enum mICaaa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+
+.field public static final enum mICaab:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+
+.field public static final enum mICaac:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+
+.field public static final enum mICaad:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaaa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaab:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
@@ -62,7 +62,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaac:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
@@ -70,25 +70,25 @@
 
     invoke-direct {v0, v1, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaad:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaaa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaab:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaac:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaad:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     aput-object v1, v0, v5
 

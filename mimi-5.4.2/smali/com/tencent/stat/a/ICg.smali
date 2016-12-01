@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field public a:[B
+.field public mArrayBa:[B
 
-.field public b:I
+.field public mIb:I
 
 
 # direct methods

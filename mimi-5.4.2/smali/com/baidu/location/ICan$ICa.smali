@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->cZ:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->mListcZ:Ljava/util/List;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->cX:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->mStringcX:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
@@ -71,7 +71,7 @@
     invoke-static {v0, v1}, Lcom/baidu/location/ICan;->if(Lcom/baidu/location/ICan;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mListcZ:Ljava/util/List;
 
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -102,7 +102,7 @@
     invoke-static {v0, v1}, Lcom/baidu/location/ICan;->a(Lcom/baidu/location/ICan;Ljava/lang/String;)Ljava/lang/String;
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mListcZ:Ljava/util/List;
 
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -131,7 +131,7 @@
     iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->mStringdJ:Ljava/lang/String;
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mListcZ:Ljava/util/List;
 
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -190,7 +190,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_3
-    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->cZ:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->mListcZ:Ljava/util/List;
 
     new-instance v2, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -230,11 +230,11 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mListcZ:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mListcZ:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 

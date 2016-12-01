@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/AccessType;
+.field public static final enum mAccessTypea:Lu/aly/AccessType;
 
-.field public static final enum b:Lu/aly/AccessType;
+.field public static final enum mAccessTypeb:Lu/aly/AccessType;
 
-.field public static final enum c:Lu/aly/AccessType;
+.field public static final enum mAccessTypec:Lu/aly/AccessType;
 
-.field public static final enum d:Lu/aly/AccessType;
+.field public static final enum mAccessTyped:Lu/aly/AccessType;
 
 .field private static final synthetic mArrayAccessTypef:[Lu/aly/AccessType;
 
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lu/aly/AccessType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/AccessType;->a:Lu/aly/AccessType;
+    sput-object v0, Lu/aly/AccessType;->mAccessTypea:Lu/aly/AccessType;
 
     .line 17
     new-instance v0, Lu/aly/AccessType;
@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1, v3, v3}, Lu/aly/AccessType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/AccessType;->b:Lu/aly/AccessType;
+    sput-object v0, Lu/aly/AccessType;->mAccessTypeb:Lu/aly/AccessType;
 
     .line 18
     new-instance v0, Lu/aly/AccessType;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v4, v4}, Lu/aly/AccessType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/AccessType;->c:Lu/aly/AccessType;
+    sput-object v0, Lu/aly/AccessType;->mAccessTypec:Lu/aly/AccessType;
 
     .line 19
     new-instance v0, Lu/aly/AccessType;
@@ -77,26 +77,26 @@
 
     invoke-direct {v0, v1, v5, v5}, Lu/aly/AccessType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/AccessType;->d:Lu/aly/AccessType;
+    sput-object v0, Lu/aly/AccessType;->mAccessTyped:Lu/aly/AccessType;
 
     .line 15
     const/4 v0, 0x4
 
     new-array v0, v0, [Lu/aly/AccessType;
 
-    sget-object v1, Lu/aly/AccessType;->a:Lu/aly/AccessType;
+    sget-object v1, Lu/aly/AccessType;->mAccessTypea:Lu/aly/AccessType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lu/aly/AccessType;->b:Lu/aly/AccessType;
+    sget-object v1, Lu/aly/AccessType;->mAccessTypeb:Lu/aly/AccessType;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/AccessType;->c:Lu/aly/AccessType;
+    sget-object v1, Lu/aly/AccessType;->mAccessTypec:Lu/aly/AccessType;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/AccessType;->d:Lu/aly/AccessType;
+    sget-object v1, Lu/aly/AccessType;->mAccessTyped:Lu/aly/AccessType;
 
     aput-object v1, v0, v5
 
@@ -139,25 +139,25 @@
 
     .line 41
     :pswitch_0
-    sget-object v0, Lu/aly/AccessType;->a:Lu/aly/AccessType;
+    sget-object v0, Lu/aly/AccessType;->mAccessTypea:Lu/aly/AccessType;
 
     goto :goto_0
 
     .line 43
     :pswitch_1
-    sget-object v0, Lu/aly/AccessType;->b:Lu/aly/AccessType;
+    sget-object v0, Lu/aly/AccessType;->mAccessTypeb:Lu/aly/AccessType;
 
     goto :goto_0
 
     .line 45
     :pswitch_2
-    sget-object v0, Lu/aly/AccessType;->c:Lu/aly/AccessType;
+    sget-object v0, Lu/aly/AccessType;->mAccessTypec:Lu/aly/AccessType;
 
     goto :goto_0
 
     .line 47
     :pswitch_3
-    sget-object v0, Lu/aly/AccessType;->d:Lu/aly/AccessType;
+    sget-object v0, Lu/aly/AccessType;->mAccessTyped:Lu/aly/AccessType;
 
     goto :goto_0
 

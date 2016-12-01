@@ -327,7 +327,7 @@
     if-eqz v4, :cond_1
 
     .line 756
-    sget-object v4, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->k:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v4, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodek:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v3, v4}, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->c(Lcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 
@@ -437,7 +437,7 @@
     .line 603
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICal;->mSpdyConnectionc:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->c:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodec:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v0, p2, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->a(ILcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 
@@ -512,7 +512,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
+    sget-object v3, Lcom/squareup/okhttp/Protocol;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     if-ne v2, v3, :cond_1
 
@@ -774,7 +774,7 @@
     .line 629
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICal;->mSpdyConnectionc:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->c:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodec:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v0, p3, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->a(ILcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 
@@ -903,7 +903,7 @@
     if-eqz v1, :cond_7
 
     .line 663
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->b:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeb:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->b(Lcom/squareup/okhttp/internal/spdy/ErrorCode;)V
 
@@ -931,10 +931,10 @@
 
     .prologue
     .line 572
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->g:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeg:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 573
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->g:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeg:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 575
     :try_start_0
@@ -987,10 +987,10 @@
     if-nez v1, :cond_0
 
     .line 581
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->a:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodea:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 582
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1019,13 +1019,13 @@
 
     .line 584
     :try_start_2
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->b:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeb:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 585
     :try_start_3
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->b:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeb:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 

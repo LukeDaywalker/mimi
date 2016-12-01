@@ -60,7 +60,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mActivityEventManagerj:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -94,7 +94,7 @@
 
     .line 156
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const/4 v1, 0x0
 
@@ -145,7 +145,7 @@
 
     .line 123
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603b7
 
@@ -197,7 +197,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mContextb:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 
@@ -205,7 +205,7 @@
 
     .line 139
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mContextb:Landroid/content/Context;
 
     const v1, 0x7f06036c
 
@@ -221,14 +221,14 @@
 
     .line 134
     :try_start_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->c:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mLoggerc:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "update cookie err"
 
     invoke-interface {v1, v2, v0}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mContextb:Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -237,7 +237,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mContextb:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 
@@ -250,7 +250,7 @@
 
     move-object v1, v0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mContextb:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 
@@ -284,7 +284,7 @@
 
     .prologue
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06036b
 
@@ -332,7 +332,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 113
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "change_pwd"
 

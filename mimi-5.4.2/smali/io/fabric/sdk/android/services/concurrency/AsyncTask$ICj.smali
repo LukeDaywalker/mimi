@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
-
-.field public static final enum b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
-
-.field public static final enum c:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
-
 .field private static final synthetic mArrayICjd:[Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+
+.field public static final enum mICja:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+
+.field public static final enum mICjb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+
+.field public static final enum mICjc:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICja:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     .line 284
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1, v3}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICjb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     .line 288
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
@@ -60,22 +60,22 @@
 
     invoke-direct {v0, v1, v4}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->c:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICjc:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     .line 276
     const/4 v0, 0x3
 
     new-array v0, v0, [Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICja:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICjb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->c:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICjc:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     aput-object v1, v0, v4
 

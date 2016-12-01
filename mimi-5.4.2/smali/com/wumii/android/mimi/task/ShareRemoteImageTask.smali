@@ -114,7 +114,7 @@
     .line 66
     :goto_1
     :try_start_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->c:Lorg/slf4j/Logger;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -255,7 +255,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;)Landroid/graphics/Bitmap;
 

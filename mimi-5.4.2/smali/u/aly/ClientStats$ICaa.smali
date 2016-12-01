@@ -19,13 +19,13 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/ClientStats$ICaa;
-
-.field public static final enum b:Lu/aly/ClientStats$ICaa;
-
-.field public static final enum c:Lu/aly/ClientStats$ICaa;
-
 .field private static final synthetic mArrayICaag:[Lu/aly/ClientStats$ICaa;
+
+.field public static final enum mICaaa:Lu/aly/ClientStats$ICaa;
+
+.field public static final enum mICaab:Lu/aly/ClientStats$ICaa;
+
+.field public static final enum mICaac:Lu/aly/ClientStats$ICaa;
 
 .field private static final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v1, v5, v3, v2}, Lu/aly/ClientStats$ICaa;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/ClientStats$ICaa;->a:Lu/aly/ClientStats$ICaa;
+    sput-object v0, Lu/aly/ClientStats$ICaa;->mICaaa:Lu/aly/ClientStats$ICaa;
 
     .line 52
     new-instance v0, Lu/aly/ClientStats$ICaa;
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/ClientStats$ICaa;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/ClientStats$ICaa;->b:Lu/aly/ClientStats$ICaa;
+    sput-object v0, Lu/aly/ClientStats$ICaa;->mICaab:Lu/aly/ClientStats$ICaa;
 
     .line 53
     new-instance v0, Lu/aly/ClientStats$ICaa;
@@ -90,20 +90,20 @@
 
     invoke-direct {v0, v1, v4, v6, v2}, Lu/aly/ClientStats$ICaa;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/ClientStats$ICaa;->c:Lu/aly/ClientStats$ICaa;
+    sput-object v0, Lu/aly/ClientStats$ICaa;->mICaac:Lu/aly/ClientStats$ICaa;
 
     .line 50
     new-array v0, v6, [Lu/aly/ClientStats$ICaa;
 
-    sget-object v1, Lu/aly/ClientStats$ICaa;->a:Lu/aly/ClientStats$ICaa;
+    sget-object v1, Lu/aly/ClientStats$ICaa;->mICaaa:Lu/aly/ClientStats$ICaa;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lu/aly/ClientStats$ICaa;->b:Lu/aly/ClientStats$ICaa;
+    sget-object v1, Lu/aly/ClientStats$ICaa;->mICaab:Lu/aly/ClientStats$ICaa;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/ClientStats$ICaa;->c:Lu/aly/ClientStats$ICaa;
+    sget-object v1, Lu/aly/ClientStats$ICaa;->mICaac:Lu/aly/ClientStats$ICaa;
 
     aput-object v1, v0, v4
 

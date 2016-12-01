@@ -65,7 +65,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->mAppealTypea:Lcom/wumii/android/mimi/models/entities/circle/AppealType;
 
@@ -98,7 +98,7 @@
     if-ne p2, v0, :cond_0
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -119,7 +119,7 @@
     :cond_0
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->mContextb:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->mDisplayMetricsr:Landroid/util/DisplayMetrics;
 
@@ -157,7 +157,7 @@
     .line 48
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->mContextb:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask;->mDisplayMetricsr:Landroid/util/DisplayMetrics;
 

@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final gC:Ljava/lang/String; = "android.com.baidu.location.TIMER.NOTIFY"
+.field public static final mStringgC:Ljava/lang/String; = "android.com.baidu.location.TIMER.NOTIFY"
 
 
 # instance fields

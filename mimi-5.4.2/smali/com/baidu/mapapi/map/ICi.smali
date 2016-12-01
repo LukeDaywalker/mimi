@@ -39,13 +39,13 @@
 
     move-result-object v0
 
-    iget v1, v0, Lcom/baidu/platform/comapi/map/B;->a:F
+    iget v1, v0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     const/high16 v2, 0x3f800000    # 1.0f
 
     add-float/2addr v1, v2
 
-    iput v1, v0, Lcom/baidu/platform/comapi/map/B;->a:F
+    iput v1, v0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     iget-object v1, p0, Lcom/baidu/mapapi/map/ICi;->mMapViewa:Lcom/baidu/mapapi/map/MapView;
 

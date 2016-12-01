@@ -26,7 +26,7 @@
     :try_start_0
     sget-object v0, Lcom/facebook/stetho/inspector/ChromeDevtoolsServer$ICb;->mArrayIa:[I
 
-    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->c:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICcc:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     invoke-virtual {v1}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->ordinal()I
 

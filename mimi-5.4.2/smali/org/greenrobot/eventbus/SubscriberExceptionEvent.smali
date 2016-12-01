@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Lorg/greenrobot/eventbus/EventBus;
+.field public final mEventBusa:Lorg/greenrobot/eventbus/EventBus;
 
-.field public final b:Ljava/lang/Throwable;
+.field public final mObjectc:Ljava/lang/Object;
 
-.field public final c:Ljava/lang/Object;
+.field public final mObjectd:Ljava/lang/Object;
 
-.field public final d:Ljava/lang/Object;
+.field public final mThrowableb:Ljava/lang/Throwable;
 
 
 # direct methods
@@ -22,16 +22,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 38
-    iput-object p1, p0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->a:Lorg/greenrobot/eventbus/EventBus;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->mEventBusa:Lorg/greenrobot/eventbus/EventBus;
 
     .line 39
-    iput-object p2, p0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->b:Ljava/lang/Throwable;
+    iput-object p2, p0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->mThrowableb:Ljava/lang/Throwable;
 
     .line 40
-    iput-object p3, p0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->c:Ljava/lang/Object;
+    iput-object p3, p0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->mObjectc:Ljava/lang/Object;
 
     .line 41
-    iput-object p4, p0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->d:Ljava/lang/Object;
+    iput-object p4, p0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;->mObjectd:Ljava/lang/Object;
 
     .line 42
     return-void

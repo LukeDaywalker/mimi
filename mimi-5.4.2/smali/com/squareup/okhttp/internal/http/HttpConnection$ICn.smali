@@ -75,7 +75,7 @@
 
     .line 513
     :cond_0
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->b:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->isZb:Z
 
     if-eqz v2, :cond_1
 
@@ -138,7 +138,7 @@
 
     .prologue
     .line 526
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->b:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -159,7 +159,7 @@
     :cond_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->b:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->isZb:Z
 
     goto :goto_0
 .end method

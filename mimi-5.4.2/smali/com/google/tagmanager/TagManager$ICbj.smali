@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final enum a:Lcom/google/tagmanager/TagManager$ICbj;
-
-.field public static final enum b:Lcom/google/tagmanager/TagManager$ICbj;
-
 .field private static final synthetic mArrayICbjc:[Lcom/google/tagmanager/TagManager$ICbj;
+
+.field public static final enum mICbja:Lcom/google/tagmanager/TagManager$ICbj;
+
+.field public static final enum mICbjb:Lcom/google/tagmanager/TagManager$ICbj;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/tagmanager/TagManager$ICbj;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/tagmanager/TagManager$ICbj;->a:Lcom/google/tagmanager/TagManager$ICbj;
+    sput-object v0, Lcom/google/tagmanager/TagManager$ICbj;->mICbja:Lcom/google/tagmanager/TagManager$ICbj;
 
     .line 89
     new-instance v0, Lcom/google/tagmanager/TagManager$ICbj;
@@ -47,18 +47,18 @@
 
     invoke-direct {v0, v1, v3}, Lcom/google/tagmanager/TagManager$ICbj;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/tagmanager/TagManager$ICbj;->b:Lcom/google/tagmanager/TagManager$ICbj;
+    sput-object v0, Lcom/google/tagmanager/TagManager$ICbj;->mICbjb:Lcom/google/tagmanager/TagManager$ICbj;
 
     .line 71
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/google/tagmanager/TagManager$ICbj;
 
-    sget-object v1, Lcom/google/tagmanager/TagManager$ICbj;->a:Lcom/google/tagmanager/TagManager$ICbj;
+    sget-object v1, Lcom/google/tagmanager/TagManager$ICbj;->mICbja:Lcom/google/tagmanager/TagManager$ICbj;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/google/tagmanager/TagManager$ICbj;->b:Lcom/google/tagmanager/TagManager$ICbj;
+    sget-object v1, Lcom/google/tagmanager/TagManager$ICbj;->mICbjb:Lcom/google/tagmanager/TagManager$ICbj;
 
     aput-object v1, v0, v3
 

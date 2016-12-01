@@ -59,7 +59,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/event/response/RespEventRequestVerificationCode;->a(Ljava/lang/String;)V
 
     .line 138
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->z:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -74,7 +74,7 @@
 
     .line 140
     :cond_0
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->A:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

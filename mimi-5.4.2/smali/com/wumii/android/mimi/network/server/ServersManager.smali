@@ -7,9 +7,9 @@
 
 
 # static fields
-.field public static a:Lcom/wumii/android/mimi/network/server/ServersManager;
-
 .field private static final mLoggerb:Lorg/slf4j/Logger;
+
+.field public static mServersManagera:Lcom/wumii/android/mimi/network/server/ServersManager;
 
 
 # instance fields
@@ -63,7 +63,7 @@
 
     .prologue
     .line 35
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->a:Lcom/wumii/android/mimi/network/server/ServersManager;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->mServersManagera:Lcom/wumii/android/mimi/network/server/ServersManager;
 
     if-nez v0, :cond_0
 
@@ -72,11 +72,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/network/server/ServersManager;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->a:Lcom/wumii/android/mimi/network/server/ServersManager;
+    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->mServersManagera:Lcom/wumii/android/mimi/network/server/ServersManager;
 
     .line 38
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->a:Lcom/wumii/android/mimi/network/server/ServersManager;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->mServersManagera:Lcom/wumii/android/mimi/network/server/ServersManager;
 
     return-object v0
 .end method
@@ -164,7 +164,7 @@
     .line 100
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "servers"
 

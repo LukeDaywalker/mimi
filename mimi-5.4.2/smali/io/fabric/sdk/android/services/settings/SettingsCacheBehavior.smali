@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
-
-.field public static final enum b:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
-
-.field public static final enum c:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
-
 .field private static final synthetic mArraySettingsCacheBehaviord:[Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+
+.field public static final enum mSettingsCacheBehaviora:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+
+.field public static final enum mSettingsCacheBehaviorb:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+
+.field public static final enum mSettingsCacheBehaviorc:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v1, v2}, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->a:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviora:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     .line 35
     new-instance v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1, v3}, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->b:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviorb:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     .line 40
     new-instance v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
@@ -60,22 +60,22 @@
 
     invoke-direct {v0, v1, v4}, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->c:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviorc:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     .line 25
     const/4 v0, 0x3
 
     new-array v0, v0, [Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
-    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->a:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviora:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->b:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviorb:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->c:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mSettingsCacheBehaviorc:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     aput-object v1, v0, v4
 

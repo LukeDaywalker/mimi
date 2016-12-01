@@ -127,7 +127,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringh:Lokio/ByteString;
 
     .line 413
     iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
@@ -150,7 +150,7 @@
 
     check-cast v0, Lcom/squareup/okhttp/internal/spdy/Header;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->mByteStringi:Lokio/ByteString;
 
     .line 416
     iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
@@ -448,7 +448,7 @@
     .line 374
     :cond_0
     :try_start_1
-    iget v0, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->t:I
+    iget v0, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIt:I
 
     const/4 v1, -0x1
 
@@ -487,7 +487,7 @@
     .line 381
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->t:I
+    iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIt:I
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
@@ -536,7 +536,7 @@
     .line 457
     :cond_0
     :try_start_1
-    iget v0, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->u:I
+    iget v0, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIu:I
 
     const/4 v1, -0x1
 
@@ -574,7 +574,7 @@
     .line 466
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->u:I
+    iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIu:I
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 

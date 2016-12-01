@@ -117,7 +117,7 @@
     if-nez v1, :cond_2
 
     .line 30
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/SystemShareJumpActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/SystemShareJumpActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v2, 0x7f0603b4
 
@@ -161,7 +161,7 @@
     .line 36
     :goto_2
     :try_start_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/SystemShareJumpActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/SystemShareJumpActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v2, 0x7f0603b4
 

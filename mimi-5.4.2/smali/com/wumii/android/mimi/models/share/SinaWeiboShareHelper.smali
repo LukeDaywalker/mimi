@@ -191,10 +191,10 @@
     invoke-direct {v1}, Lcom/sina/weibo/sdk/api/TextObject;-><init>()V
 
     .line 71
-    iput-object p3, v1, Lcom/sina/weibo/sdk/api/TextObject;->g:Ljava/lang/String;
+    iput-object p3, v1, Lcom/sina/weibo/sdk/api/TextObject;->mStringg:Ljava/lang/String;
 
     .line 72
-    iput-object v1, v0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->a:Lcom/sina/weibo/sdk/api/TextObject;
+    iput-object v1, v0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mTextObjecta:Lcom/sina/weibo/sdk/api/TextObject;
 
     .line 73
     if-eqz p2, :cond_1
@@ -205,10 +205,10 @@
     invoke-direct {v1}, Lcom/sina/weibo/sdk/api/ImageObject;-><init>()V
 
     .line 75
-    iput-object p2, v1, Lcom/sina/weibo/sdk/api/ImageObject;->h:Ljava/lang/String;
+    iput-object p2, v1, Lcom/sina/weibo/sdk/api/ImageObject;->mStringh:Ljava/lang/String;
 
     .line 76
-    iput-object v1, v0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->b:Lcom/sina/weibo/sdk/api/ImageObject;
+    iput-object v1, v0, Lcom/sina/weibo/sdk/api/WeiboMultiMessage;->mImageObjectb:Lcom/sina/weibo/sdk/api/ImageObject;
 
     .line 78
     :cond_1
@@ -225,10 +225,10 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->a:Ljava/lang/String;
+    iput-object v2, v1, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->mStringa:Ljava/lang/String;
 
     .line 80
-    iput-object v0, v1, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->b:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
+    iput-object v0, v1, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->mWeiboMultiMessageb:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
 
     .line 81
     iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->mIWeiboShareAPIa:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
@@ -320,7 +320,7 @@
 
     .line 48
     :cond_1
-    iget-object v2, v2, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->a:Ljava/lang/String;
+    iget-object v2, v2, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
 
     invoke-static {p1, v2}, Lcom/sina/weibo/sdk/api/share/ApiUtils;->b(Landroid/content/Context;Ljava/lang/String;)Z
 

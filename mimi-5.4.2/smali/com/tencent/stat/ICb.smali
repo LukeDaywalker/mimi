@@ -3,9 +3,9 @@
 
 
 # static fields
-.field public static e:Z
-
 .field private static isZA:Z
+
+.field public static isZe:Z
 
 .field private static isZh:Z
 
@@ -92,7 +92,7 @@
 
     sput-object v0, Lcom/tencent/stat/ICb;->mICcb:Lcom/tencent/stat/ICc;
 
-    sget-object v0, Lcom/tencent/stat/ICh;->d:Lcom/tencent/stat/ICh;
+    sget-object v0, Lcom/tencent/stat/ICh;->mIChd:Lcom/tencent/stat/ICh;
 
     sput-object v0, Lcom/tencent/stat/ICb;->mIChg:Lcom/tencent/stat/ICh;
 
@@ -140,7 +140,7 @@
 
     sput-wide v0, Lcom/tencent/stat/ICb;->mJu:J
 
-    sput-boolean v3, Lcom/tencent/stat/ICb;->e:Z
+    sput-boolean v3, Lcom/tencent/stat/ICb;->isZe:Z
 
     const-string/jumbo v0, "http://pingma.qq.com:80/mstat/report"
 
@@ -1091,7 +1091,7 @@
 .method public static c(Z)V
     .locals 0
 
-    sput-boolean p0, Lcom/tencent/stat/ICb;->e:Z
+    sput-boolean p0, Lcom/tencent/stat/ICb;->isZe:Z
 
     return-void
 .end method
@@ -1302,7 +1302,7 @@
 .method public static n()Z
     .locals 1
 
-    sget-boolean v0, Lcom/tencent/stat/ICb;->e:Z
+    sget-boolean v0, Lcom/tencent/stat/ICb;->isZe:Z
 
     return v0
 .end method

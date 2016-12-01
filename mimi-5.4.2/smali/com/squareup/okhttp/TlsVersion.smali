@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/squareup/okhttp/TlsVersion;
-
-.field public static final enum b:Lcom/squareup/okhttp/TlsVersion;
-
-.field public static final enum c:Lcom/squareup/okhttp/TlsVersion;
-
-.field public static final enum d:Lcom/squareup/okhttp/TlsVersion;
-
 .field private static final synthetic mArrayTlsVersionf:[Lcom/squareup/okhttp/TlsVersion;
+
+.field public static final enum mTlsVersiona:Lcom/squareup/okhttp/TlsVersion;
+
+.field public static final enum mTlsVersionb:Lcom/squareup/okhttp/TlsVersion;
+
+.field public static final enum mTlsVersionc:Lcom/squareup/okhttp/TlsVersion;
+
+.field public static final enum mTlsVersiond:Lcom/squareup/okhttp/TlsVersion;
 
 
 # instance fields
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/squareup/okhttp/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->a:Lcom/squareup/okhttp/TlsVersion;
+    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->mTlsVersiona:Lcom/squareup/okhttp/TlsVersion;
 
     .line 26
     new-instance v0, Lcom/squareup/okhttp/TlsVersion;
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/squareup/okhttp/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->b:Lcom/squareup/okhttp/TlsVersion;
+    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionb:Lcom/squareup/okhttp/TlsVersion;
 
     .line 27
     new-instance v0, Lcom/squareup/okhttp/TlsVersion;
@@ -74,7 +74,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/squareup/okhttp/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->c:Lcom/squareup/okhttp/TlsVersion;
+    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionc:Lcom/squareup/okhttp/TlsVersion;
 
     .line 28
     new-instance v0, Lcom/squareup/okhttp/TlsVersion;
@@ -85,26 +85,26 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/squareup/okhttp/TlsVersion;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->d:Lcom/squareup/okhttp/TlsVersion;
+    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->mTlsVersiond:Lcom/squareup/okhttp/TlsVersion;
 
     .line 24
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/squareup/okhttp/TlsVersion;
 
-    sget-object v1, Lcom/squareup/okhttp/TlsVersion;->a:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v1, Lcom/squareup/okhttp/TlsVersion;->mTlsVersiona:Lcom/squareup/okhttp/TlsVersion;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/squareup/okhttp/TlsVersion;->b:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v1, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionb:Lcom/squareup/okhttp/TlsVersion;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/squareup/okhttp/TlsVersion;->c:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v1, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionc:Lcom/squareup/okhttp/TlsVersion;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/squareup/okhttp/TlsVersion;->d:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v1, Lcom/squareup/okhttp/TlsVersion;->mTlsVersiond:Lcom/squareup/okhttp/TlsVersion;
 
     aput-object v1, v0, v6
 
@@ -231,7 +231,7 @@
 
     .line 39
     :pswitch_0
-    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->a:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->mTlsVersiona:Lcom/squareup/okhttp/TlsVersion;
 
     .line 42
     :goto_1
@@ -239,19 +239,19 @@
 
     .line 40
     :pswitch_1
-    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->b:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionb:Lcom/squareup/okhttp/TlsVersion;
 
     goto :goto_1
 
     .line 41
     :pswitch_2
-    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->c:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->mTlsVersionc:Lcom/squareup/okhttp/TlsVersion;
 
     goto :goto_1
 
     .line 42
     :pswitch_3
-    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->d:Lcom/squareup/okhttp/TlsVersion;
+    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->mTlsVersiond:Lcom/squareup/okhttp/TlsVersion;
 
     goto :goto_1
 

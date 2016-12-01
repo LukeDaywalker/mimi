@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/Gender;
-
-.field public static final enum b:Lu/aly/Gender;
-
-.field public static final enum c:Lu/aly/Gender;
-
 .field private static final synthetic mArrayGendere:[Lu/aly/Gender;
+
+.field public static final enum mGendera:Lu/aly/Gender;
+
+.field public static final enum mGenderb:Lu/aly/Gender;
+
+.field public static final enum mGenderc:Lu/aly/Gender;
 
 
 # instance fields
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lu/aly/Gender;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/Gender;->a:Lu/aly/Gender;
+    sput-object v0, Lu/aly/Gender;->mGendera:Lu/aly/Gender;
 
     .line 17
     new-instance v0, Lu/aly/Gender;
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, v1, v3, v3}, Lu/aly/Gender;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/Gender;->b:Lu/aly/Gender;
+    sput-object v0, Lu/aly/Gender;->mGenderb:Lu/aly/Gender;
 
     .line 18
     new-instance v0, Lu/aly/Gender;
@@ -64,22 +64,22 @@
 
     invoke-direct {v0, v1, v4, v4}, Lu/aly/Gender;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu/aly/Gender;->c:Lu/aly/Gender;
+    sput-object v0, Lu/aly/Gender;->mGenderc:Lu/aly/Gender;
 
     .line 15
     const/4 v0, 0x3
 
     new-array v0, v0, [Lu/aly/Gender;
 
-    sget-object v1, Lu/aly/Gender;->a:Lu/aly/Gender;
+    sget-object v1, Lu/aly/Gender;->mGendera:Lu/aly/Gender;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lu/aly/Gender;->b:Lu/aly/Gender;
+    sget-object v1, Lu/aly/Gender;->mGenderb:Lu/aly/Gender;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/Gender;->c:Lu/aly/Gender;
+    sget-object v1, Lu/aly/Gender;->mGenderc:Lu/aly/Gender;
 
     aput-object v1, v0, v4
 
@@ -122,19 +122,19 @@
 
     .line 40
     :pswitch_0
-    sget-object v0, Lu/aly/Gender;->a:Lu/aly/Gender;
+    sget-object v0, Lu/aly/Gender;->mGendera:Lu/aly/Gender;
 
     goto :goto_0
 
     .line 42
     :pswitch_1
-    sget-object v0, Lu/aly/Gender;->b:Lu/aly/Gender;
+    sget-object v0, Lu/aly/Gender;->mGenderb:Lu/aly/Gender;
 
     goto :goto_0
 
     .line 44
     :pswitch_2
-    sget-object v0, Lu/aly/Gender;->c:Lu/aly/Gender;
+    sget-object v0, Lu/aly/Gender;->mGenderc:Lu/aly/Gender;
 
     goto :goto_0
 

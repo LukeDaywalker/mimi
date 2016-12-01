@@ -56,7 +56,7 @@
 
     iput-boolean v0, p0, Lcom/baidu/mapapi/map/Polyline;->isZh:Z
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->i:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICfi:Lcom/baidu/platform/comapi/map/ICf;
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 

@@ -162,7 +162,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 120
-    sget-object v1, Lu/aly/ImprintValue$ICcg;->a:Lu/aly/ImprintValue$ICcg;
+    sget-object v1, Lu/aly/ImprintValue$ICcg;->mICcga:Lu/aly/ImprintValue$ICcg;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -177,7 +177,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 122
-    sget-object v1, Lu/aly/ImprintValue$ICcg;->b:Lu/aly/ImprintValue$ICcg;
+    sget-object v1, Lu/aly/ImprintValue$ICcg;->mICcgb:Lu/aly/ImprintValue$ICcg;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -192,7 +192,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 124
-    sget-object v1, Lu/aly/ImprintValue$ICcg;->c:Lu/aly/ImprintValue$ICcg;
+    sget-object v1, Lu/aly/ImprintValue$ICcg;->mICcgc:Lu/aly/ImprintValue$ICcg;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -241,7 +241,7 @@
 
     new-array v0, v0, [Lu/aly/ImprintValue$ICcg;
 
-    sget-object v1, Lu/aly/ImprintValue$ICcg;->a:Lu/aly/ImprintValue$ICcg;
+    sget-object v1, Lu/aly/ImprintValue$ICcg;->mICcga:Lu/aly/ImprintValue$ICcg;
 
     aput-object v1, v0, v2
 

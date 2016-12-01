@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected f:Landroid/util/DisplayMetrics;
+.field protected mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
-.field protected g:Lcom/wumii/android/mimi/models/service/UserService;
+.field protected mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
-.field protected h:Landroid/view/inputmethod/InputMethodManager;
+.field protected mInputMethodManagerh:Landroid/view/inputmethod/InputMethodManager;
 
-.field protected i:Lcom/wumii/android/mimi/models/AppFacade;
+.field protected mUserServiceg:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # direct methods
@@ -80,7 +80,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 26
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->g:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->mUserServiceg:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 27
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->getResources()Landroid/content/res/Resources;
@@ -102,7 +102,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->f:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     .line 28
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -117,7 +117,7 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->h:Landroid/view/inputmethod/InputMethodManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->mInputMethodManagerh:Landroid/view/inputmethod/InputMethodManager;
 
     .line 29
     return-void

@@ -4,7 +4,13 @@
 
 
 # static fields
-.field public static final a:Ljava/util/Comparator;
+.field private static final mArrayCc:[C
+
+.field private static mBooleanb:Ljava/lang/Boolean;
+
+.field private static mBooleane:Ljava/lang/Boolean;
+
+.field public static final mComparatora:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator",
@@ -14,12 +20,6 @@
         }
     .end annotation
 .end field
-
-.field private static final mArrayCc:[C
-
-.field private static mBooleanb:Ljava/lang/Boolean;
-
-.field private static mBooleane:Ljava/lang/Boolean;
 
 .field private static mJd:J
 
@@ -56,7 +56,7 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/common/CommonUtils$ICn;-><init>()V
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->a:Ljava/util/Comparator;
+    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mComparatora:Ljava/util/Comparator;
 
     return-void
 

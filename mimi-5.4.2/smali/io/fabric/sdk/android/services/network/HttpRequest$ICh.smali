@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
+.field public static final mICha:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/network/HttpRequest$ICi;-><init>()V
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/HttpRequest$ICh;->a:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
+    sput-object v0, Lio/fabric/sdk/android/services/network/HttpRequest$ICh;->mICha:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
     return-void
 .end method

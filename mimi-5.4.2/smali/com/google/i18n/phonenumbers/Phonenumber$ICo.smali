@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final enum a:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
-
-.field public static final enum b:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
-
-.field public static final enum c:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
-
-.field public static final enum d:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
-
 .field private static final synthetic mArrayICoe:[Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+
+.field public static final enum mICoa:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+
+.field public static final enum mICob:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+
+.field public static final enum mICoc:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+
+.field public static final enum mICod:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->a:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sput-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICoa:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     .line 33
     new-instance v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, v1, v3}, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->b:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sput-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICob:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     .line 34
     new-instance v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v4}, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->c:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sput-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICoc:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     .line 35
     new-instance v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
@@ -73,26 +73,26 @@
 
     invoke-direct {v0, v1, v5}, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->d:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sput-object v0, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICod:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     .line 31
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->a:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICoa:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->b:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICob:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->c:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICoc:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->d:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
+    sget-object v1, Lcom/google/i18n/phonenumbers/Phonenumber$ICo;->mICod:Lcom/google/i18n/phonenumbers/Phonenumber$ICo;
 
     aput-object v1, v0, v5
 

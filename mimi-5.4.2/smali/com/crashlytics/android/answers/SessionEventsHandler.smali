@@ -44,7 +44,7 @@
 
     .prologue
     .line 11
-    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionEventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionEventsHandler;->mEventsStrategyc:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
     return-object v0
 .end method

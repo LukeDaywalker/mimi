@@ -31,7 +31,7 @@
     const/4 v3, 0x2
 
     .line 83
-    sget-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->c:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+    sget-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->mTextDirectionHeuristicCompatc:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     sput-object v0, Landroid/support/v4/text/BidiFormatter;->mTextDirectionHeuristicCompata:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 

@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final enum a:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
-
-.field public static final enum b:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
-
-.field public static final enum c:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
-
-.field public static final enum d:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
-
-.field public static final enum e:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
-
 .field private static final synthetic mArrayICcg:[Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+
+.field public static final enum mICca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+
+.field public static final enum mICcb:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+
+.field public static final enum mICcc:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+
+.field public static final enum mICcd:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+
+.field public static final enum mICce:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
 
 # instance fields
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, v1, v3, v2}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->a:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     .line 35
     new-instance v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
@@ -67,7 +67,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->b:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICcb:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     .line 36
     new-instance v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
@@ -78,7 +78,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->c:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICcc:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     .line 37
     new-instance v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
@@ -89,7 +89,7 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->d:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICcd:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     .line 38
     new-instance v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
@@ -100,30 +100,30 @@
 
     invoke-direct {v0, v1, v7, v2}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->e:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICce:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     .line 33
     const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
-    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->a:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->b:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICcb:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->c:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICcc:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->d:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICcd:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->e:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICce:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     aput-object v1, v0, v7
 

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final mStringa:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public final mStringb:Ljava/lang/String;
 
-.field public final c:Ljava/lang/String;
+.field public final mStringc:Ljava/lang/String;
 
-.field public final d:Ljava/lang/String;
+.field public final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -22,16 +22,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 19
-    iput-object p1, p0, Lcom/crashlytics/android/beta/BuildProperties;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/crashlytics/android/beta/BuildProperties;->mStringa:Ljava/lang/String;
 
     .line 20
-    iput-object p2, p0, Lcom/crashlytics/android/beta/BuildProperties;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/crashlytics/android/beta/BuildProperties;->mStringb:Ljava/lang/String;
 
     .line 21
-    iput-object p3, p0, Lcom/crashlytics/android/beta/BuildProperties;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/crashlytics/android/beta/BuildProperties;->mStringc:Ljava/lang/String;
 
     .line 22
-    iput-object p4, p0, Lcom/crashlytics/android/beta/BuildProperties;->d:Ljava/lang/String;
+    iput-object p4, p0, Lcom/crashlytics/android/beta/BuildProperties;->mStringd:Ljava/lang/String;
 
     .line 23
     return-void

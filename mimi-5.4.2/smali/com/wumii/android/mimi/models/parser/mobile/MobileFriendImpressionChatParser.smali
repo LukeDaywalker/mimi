@@ -38,7 +38,7 @@
     if-nez v0, :cond_0
 
     .line 13
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "mobileChat is not an instance of MobileFriendImpressionChat"
 

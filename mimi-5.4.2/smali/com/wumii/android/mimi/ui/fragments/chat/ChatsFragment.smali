@@ -10,8 +10,6 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/util/ContextToast;
-
 .field private mActivityEventManagere:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
 .field private mChatListAdapterk:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
@@ -19,6 +17,8 @@
 .field private mChatManagerl:Lcom/wumii/android/mimi/manager/ChatManager;
 
 .field private mChatObservern:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+
+.field protected mContextToasta:Lcom/wumii/android/mimi/util/ContextToast;
 
 .field private mICdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
@@ -275,7 +275,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->f:Landroid/util/DisplayMetrics;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     return-object v0
 .end method
@@ -292,7 +292,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/ChatManager;->addObserver(Ljava/util/Observer;)V
 
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -303,7 +303,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 204
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -339,7 +339,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/ChatManager;->deleteObserver(Ljava/util/Observer;)V
 
     .line 209
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -350,7 +350,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 210
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -373,7 +373,7 @@
     .line 226
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mChatListAdapterk:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -396,7 +396,7 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->j()V
 
     .line 229
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -554,7 +554,7 @@
     invoke-static {v1, v2, v0}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 370
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -651,7 +651,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mActivityEventManagere:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
@@ -847,7 +847,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->g:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mUserServiceg:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 92
     invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
@@ -869,7 +869,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->a:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mContextToasta:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 94
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -1027,7 +1027,7 @@
 
     .line 286
     :cond_2
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -1044,7 +1044,7 @@
     .line 288
     new-instance v5, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->f:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     iget-object v7, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mActivityEventManagere:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 

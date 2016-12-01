@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Landroid/util/DisplayMetrics;
+.field protected mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
-.field protected b:Landroid/content/res/Resources;
+.field protected mResourcesb:Landroid/content/res/Resources;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AbsSectionItemView;->b:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AbsSectionItemView;->mResourcesb:Landroid/content/res/Resources;
 
     .line 26
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AbsSectionItemView;->a:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AbsSectionItemView;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     .line 27
     return-void

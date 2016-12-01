@@ -323,7 +323,7 @@
     if-nez v1, :cond_2
 
     .line 188
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -353,7 +353,7 @@
     if-nez v1, :cond_1
 
     .line 196
-    sget-boolean v1, Lu/aly/Log;->a:Z
+    sget-boolean v1, Lu/aly/Log;->isZa:Z
 
     if-eqz v1, :cond_3
 
@@ -864,7 +864,7 @@
     invoke-virtual {v0, v3}, Lu/aly/MemoCache;->a(Lu/aly/UALogEntry;)V
 
     .line 127
-    sget-boolean v0, Lu/aly/Log;->a:Z
+    sget-boolean v0, Lu/aly/Log;->isZa:Z
 
     if-eqz v0, :cond_5
 
@@ -939,7 +939,7 @@
 
     .line 143
     :try_start_2
-    sget-boolean v1, Lu/aly/Log;->a:Z
+    sget-boolean v1, Lu/aly/Log;->isZa:Z
 
     if-eqz v1, :cond_0
 

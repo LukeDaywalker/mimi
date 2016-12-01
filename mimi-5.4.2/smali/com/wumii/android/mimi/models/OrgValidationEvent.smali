@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/models/OrgValidationEvent;
-
-.field public static final enum b:Lcom/wumii/android/mimi/models/OrgValidationEvent;
-
-.field public static final enum c:Lcom/wumii/android/mimi/models/OrgValidationEvent;
-
-.field public static final enum d:Lcom/wumii/android/mimi/models/OrgValidationEvent;
-
-.field public static final enum e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
-
 .field private static final synthetic mArrayOrgValidationEventh:[Lcom/wumii/android/mimi/models/OrgValidationEvent;
+
+.field public static final enum mOrgValidationEventa:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+
+.field public static final enum mOrgValidationEventb:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+
+.field public static final enum mOrgValidationEventc:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+
+.field public static final enum mOrgValidationEventd:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+
+.field public static final enum mOrgValidationEvente:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
 
 # instance fields
@@ -60,7 +60,7 @@
 
     invoke-direct {v0, v1, v4, v2, v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventa:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     .line 5
     new-instance v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;
@@ -73,7 +73,7 @@
 
     invoke-direct {v0, v1, v5, v2, v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventb:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     .line 6
     new-instance v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;
@@ -86,7 +86,7 @@
 
     invoke-direct {v0, v1, v6, v2, v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->c:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventc:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     .line 7
     new-instance v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;
@@ -99,7 +99,7 @@
 
     invoke-direct {v0, v1, v7, v2, v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->d:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventd:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     .line 8
     new-instance v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;
@@ -112,30 +112,30 @@
 
     invoke-direct {v0, v1, v8, v2, v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEvente:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     .line 3
     const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventa:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventb:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->c:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventc:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->d:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventd:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEvente:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     aput-object v1, v0, v8
 

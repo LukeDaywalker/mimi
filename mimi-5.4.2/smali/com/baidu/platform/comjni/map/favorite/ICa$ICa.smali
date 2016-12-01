@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static isZa:Z
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/baidu/platform/comjni/map/favorite/ICa$ICa;->a:Z
+    sput-boolean v0, Lcom/baidu/platform/comjni/map/favorite/ICa$ICa;->isZa:Z
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/platform/comjni/map/favorite/ICa$ICa;->a:Z
+    sput-boolean v0, Lcom/baidu/platform/comjni/map/favorite/ICa$ICa;->isZa:Z
 
     return-void
 .end method

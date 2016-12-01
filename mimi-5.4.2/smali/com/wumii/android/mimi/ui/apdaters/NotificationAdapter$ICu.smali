@@ -67,7 +67,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mListi:Ljava/util/List;
 
     .line 211
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->e:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mContexte:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -76,7 +76,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mLayoutInflaterk:Landroid/view/LayoutInflater;
 
     .line 212
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->f:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mResourcesf:Landroid/content/res/Resources;
 
     const v1, 0x7f0a0024
 
@@ -103,7 +103,7 @@
     .line 304
     new-instance v0, Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->e:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mContexte:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
@@ -115,7 +115,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 307
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->f:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mResourcesf:Landroid/content/res/Resources;
 
     const v2, 0x7f0a003e
 
@@ -124,7 +124,7 @@
     move-result v1
 
     .line 308
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->f:Landroid/content/res/Resources;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mResourcesf:Landroid/content/res/Resources;
 
     const v3, 0x7f0a0024
 
@@ -133,7 +133,7 @@
     move-result v2
 
     .line 309
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->f:Landroid/content/res/Resources;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mResourcesf:Landroid/content/res/Resources;
 
     const v4, 0x7f0a003f
 
@@ -149,7 +149,7 @@
     invoke-virtual {v0, v1, v3, v2, v3}, Landroid/widget/TextView;->setPadding(IIII)V
 
     .line 312
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->f:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->mResourcesf:Landroid/content/res/Resources;
 
     const v2, 0x7f09004f
 

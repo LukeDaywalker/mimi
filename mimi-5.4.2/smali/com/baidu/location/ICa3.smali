@@ -6,11 +6,7 @@
 
 
 # static fields
-.field public static jK:Lcom/baidu/location/ICa3; = null
-
-.field public static final jN:Ljava/lang/String; = "http://loc.map.baidu.com/fence"
-
-.field public static final jx:J = 0x1b7740L
+.field public static mICa3jK:Lcom/baidu/location/ICa3; = null
 
 .field private static final mIjG:I = 0x2bf20
 
@@ -22,9 +18,13 @@
 
 .field private static final mIjr:I = 0x6
 
+.field public static final mJjx:J = 0x1b7740L
+
 .field private static final mStringjF:Ljava/lang/String; = "com.baidu.locsdk.geofence.geofencestrategyservice"
 
 .field private static final mStringjM:Ljava/lang/String; = "0"
+
+.field public static final mStringjN:Ljava/lang/String; = "http://loc.map.baidu.com/fence"
 
 .field private static final mStringjP:Ljava/lang/String; = "&gf=1"
 
@@ -150,7 +150,7 @@
 .method public static cE()Lcom/baidu/location/ICa3;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICa3;->jK:Lcom/baidu/location/ICa3;
+    sget-object v0, Lcom/baidu/location/ICa3;->mICa3jK:Lcom/baidu/location/ICa3;
 
     if-nez v0, :cond_0
 
@@ -158,14 +158,14 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICa3;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICa3;->jK:Lcom/baidu/location/ICa3;
+    sput-object v0, Lcom/baidu/location/ICa3;->mICa3jK:Lcom/baidu/location/ICa3;
 
-    sget-object v0, Lcom/baidu/location/ICa3;->jK:Lcom/baidu/location/ICa3;
+    sget-object v0, Lcom/baidu/location/ICa3;->mICa3jK:Lcom/baidu/location/ICa3;
 
     invoke-direct {v0}, Lcom/baidu/location/ICa3;->cJ()V
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICa3;->jK:Lcom/baidu/location/ICa3;
+    sget-object v0, Lcom/baidu/location/ICa3;->mICa3jK:Lcom/baidu/location/ICa3;
 
     return-object v0
 .end method
@@ -754,7 +754,7 @@
 
     const/4 v4, 0x2
 
-    iget v5, v0, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v5, v0, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

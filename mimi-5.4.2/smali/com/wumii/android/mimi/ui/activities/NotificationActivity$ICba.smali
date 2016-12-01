@@ -37,7 +37,7 @@
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mNotificationActivityd:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICba;->mICbxa:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:J
+.field public final mJa:J
 
-.field public final b:Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;
+.field public final mPendingRequestCallbackb:Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 18
-    iput-wide p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;->a:J
+    iput-wide p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;->mJa:J
 
     .line 19
-    iput-object p3, p0, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;->b:Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;
+    iput-object p3, p0, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;->mPendingRequestCallbackb:Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;
 
     .line 20
     return-void

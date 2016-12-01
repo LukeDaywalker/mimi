@@ -13,25 +13,25 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mIc:I
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public b:Ljava/lang/String;
+.field public mId:I
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public c:I
+.field public mStringa:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public d:I
+.field public mStringb:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
@@ -58,16 +58,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 105
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;->mStringa:Ljava/lang/String;
 
     .line 106
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;->mStringb:Ljava/lang/String;
 
     .line 107
-    iput p3, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;->c:I
+    iput p3, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;->mIc:I
 
     .line 108
-    iput p4, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;->d:I
+    iput p4, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;->mId:I
 
     .line 109
     return-void

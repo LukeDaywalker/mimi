@@ -7,7 +7,13 @@
 
 
 # instance fields
+.field protected mButtonp:Landroid/widget/Button;
+
+.field protected mCheckBoxn:Landroid/widget/CheckBox;
+
 .field private mFrameLayoutC:Landroid/widget/FrameLayout;
+
+.field protected mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
 .field private mSetE:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -22,13 +28,7 @@
 
 .field private mTextViewD:Landroid/widget/TextView;
 
-.field protected n:Landroid/widget/CheckBox;
-
-.field protected o:Landroid/widget/TextView;
-
-.field protected p:Landroid/widget/Button;
-
-.field protected q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+.field protected mTextViewo:Landroid/widget/TextView;
 
 
 # direct methods
@@ -52,9 +52,9 @@
     if-nez v0, :cond_0
 
     .line 122
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -69,12 +69,12 @@
 
     .line 125
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     if-nez v0, :cond_2
 
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->toggle()V
 
@@ -90,16 +90,16 @@
 
     .line 130
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->e()V
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->r:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mListViewr:Landroid/widget/ListView;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->r:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mListViewr:Landroid/widget/ListView;
 
     invoke-virtual {v0}, Landroid/widget/ListView;->getVisibility()I
 
@@ -108,7 +108,7 @@
     if-nez v0, :cond_3
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mBaseContactListAdaptert:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->notifyDataSetChanged()V
 
@@ -117,7 +117,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t()V
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->notifyDataSetChanged()V
 
@@ -129,11 +129,11 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->r:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mListViewr:Landroid/widget/ListView;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->r:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mListViewr:Landroid/widget/ListView;
 
     invoke-virtual {v0}, Landroid/widget/ListView;->getVisibility()I
 
@@ -142,7 +142,7 @@
     if-nez v0, :cond_0
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mBaseContactListAdaptert:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->notifyDataSetChanged()V
 
@@ -151,15 +151,15 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t()V
 
     .line 146
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->f()I
 
     move-result v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->a()Ljava/util/List;
 
@@ -177,7 +177,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->notifyDataSetChanged()V
 
@@ -219,7 +219,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
     .line 102
     const v0, 0x7f0b00a9
@@ -230,7 +230,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mTextViewo:Landroid/widget/TextView;
 
     .line 103
     const v0, 0x7f0b00aa
@@ -252,20 +252,20 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->p:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mButtonp:Landroid/widget/Button;
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->o:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mTextViewo:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->p:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mButtonp:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -275,7 +275,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->a(Landroid/view/ViewGroup;)V
 
     .line 112
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->g()Z
 
@@ -289,7 +289,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->o:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mTextViewo:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->g()Z
 
@@ -331,7 +331,7 @@
 
     new-array v4, v0, [Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     if-nez v0, :cond_0
 
@@ -355,7 +355,7 @@
 
     .line 117
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->f()I
 
@@ -377,15 +377,15 @@
 
     invoke-direct {v0, p0, p1, v1}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/ContactSectionMap;Ljava/util/Set;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->a(Landroid/view/View$OnClickListener;)V
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     return-object v0
 .end method
@@ -403,7 +403,7 @@
 
     .prologue
     .line 92
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->p:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mButtonp:Landroid/widget/Button;
 
     if-eqz p1, :cond_1
 
@@ -413,7 +413,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -422,7 +422,7 @@
     if-eqz v0, :cond_0
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->e()V
 
@@ -510,11 +510,11 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
     if-eq p1, v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->o:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mTextViewo:Landroid/widget/TextView;
 
     if-ne p1, v0, :cond_2
 
@@ -529,12 +529,12 @@
 
     .line 60
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->p:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mButtonp:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_3
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     if-eqz v0, :cond_1
 
@@ -561,7 +561,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->s()V
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mCheckBoxn:Landroid/widget/CheckBox;
 
     invoke-static {p0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 

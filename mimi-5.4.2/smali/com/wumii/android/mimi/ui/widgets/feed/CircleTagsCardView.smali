@@ -216,7 +216,7 @@
     move-result-object v0
 
     .line 90
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->mIb:I
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->getResources()Landroid/content/res/Resources;
 

@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public final c:Z
+.field public final isZc:Z
 
 .field private isZk:Z
 
@@ -83,7 +83,7 @@
     iput-object p2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestl:Lcom/squareup/okhttp/Request;
 
     .line 193
-    iput-boolean p3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->c:Z
+    iput-boolean p3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->isZc:Z
 
     .line 194
     iput-boolean p4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->isZr:Z
@@ -107,7 +107,7 @@
     if-eqz p6, :cond_0
 
     .line 202
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     invoke-virtual {v0, p6, p0}, Lcom/squareup/okhttp/internal/Internal;->b(Lcom/squareup/okhttp/Connection;Lcom/squareup/okhttp/internal/http/HttpEngine;)V
 
@@ -433,7 +433,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
+    sget-object v2, Lcom/squareup/okhttp/Protocol;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     if-eq v1, v2, :cond_2
 
@@ -689,7 +689,7 @@
 
     .prologue
     .line 506
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mConnectione:Lcom/squareup/okhttp/Connection;
 
@@ -1232,7 +1232,7 @@
     move-result-object v0
 
     .line 341
-    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
@@ -1280,7 +1280,7 @@
 
     if-nez v2, :cond_0
 
-    sget-object v2, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v2, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     invoke-virtual {v2, v0}, Lcom/squareup/okhttp/internal/Internal;->c(Lcom/squareup/okhttp/Connection;)Z
 
@@ -1338,7 +1338,7 @@
 
     .prologue
     .line 543
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
@@ -1446,7 +1446,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->b:Ljava/lang/String;
+    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringb:Ljava/lang/String;
 
     iget-wide v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mJb:J
 
@@ -1459,7 +1459,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->c:Ljava/lang/String;
+    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringc:Ljava/lang/String;
 
     .line 921
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -1507,7 +1507,7 @@
 
     .line 930
     :cond_0
-    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mConnectione:Lcom/squareup/okhttp/Connection;
 
@@ -1598,7 +1598,7 @@
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestl:Lcom/squareup/okhttp/Request;
 
-    iget-boolean v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->c:Z
+    iget-boolean v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->isZc:Z
 
     iget-boolean v4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->isZr:Z
 
@@ -1721,7 +1721,7 @@
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestl:Lcom/squareup/okhttp/Request;
 
-    iget-boolean v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->c:Z
+    iget-boolean v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->isZc:Z
 
     iget-boolean v4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->isZr:Z
 
@@ -1777,7 +1777,7 @@
     move-result-object v2
 
     .line 227
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
@@ -1813,14 +1813,14 @@
     .line 234
     iget-object v4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mCacheStrategyu:Lcom/squareup/okhttp/internal/http/CacheStrategy;
 
-    iget-object v4, v4, Lcom/squareup/okhttp/internal/http/CacheStrategy;->a:Lcom/squareup/okhttp/Request;
+    iget-object v4, v4, Lcom/squareup/okhttp/internal/http/CacheStrategy;->mRequesta:Lcom/squareup/okhttp/Request;
 
     iput-object v4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestm:Lcom/squareup/okhttp/Request;
 
     .line 235
     iget-object v4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mCacheStrategyu:Lcom/squareup/okhttp/internal/http/CacheStrategy;
 
-    iget-object v4, v4, Lcom/squareup/okhttp/internal/http/CacheStrategy;->b:Lcom/squareup/okhttp/Response;
+    iget-object v4, v4, Lcom/squareup/okhttp/internal/http/CacheStrategy;->mResponseb:Lcom/squareup/okhttp/Response;
 
     iput-object v4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mResponsen:Lcom/squareup/okhttp/Response;
 
@@ -1863,7 +1863,7 @@
 
     .line 251
     :cond_5
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mConnectione:Lcom/squareup/okhttp/Connection;
 
@@ -1894,7 +1894,7 @@
     move-result-wide v0
 
     .line 259
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->c:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->isZc:Z
 
     if-eqz v2, :cond_9
 
@@ -1984,7 +1984,7 @@
     if-eqz v0, :cond_b
 
     .line 284
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
@@ -2084,7 +2084,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
+    sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     .line 300
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$ICau;
@@ -2561,7 +2561,7 @@
 
     if-eqz v1, :cond_5
 
-    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mConnectione:Lcom/squareup/okhttp/Connection;
 
@@ -2749,7 +2749,7 @@
     invoke-virtual {p0}, Lcom/squareup/okhttp/internal/http/HttpEngine;->k()V
 
     .line 813
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 

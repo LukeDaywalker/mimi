@@ -83,7 +83,7 @@
     iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZi:Z
 
     .line 212
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->c:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mImageScaleTypec:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mImageScaleTypej:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 

@@ -7,19 +7,19 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/network/HttpProcessor;
+.field protected mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
-.field protected b:Lcom/wumii/jackson/databind/JacksonMapper;
+.field protected mContextf:Landroid/content/Context;
 
-.field protected c:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+.field protected mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
-.field protected d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field protected mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
-.field protected e:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+.field protected mNetworkHelperc:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
-.field protected f:Landroid/content/Context;
+.field protected mNotificationHelpere:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
-.field protected g:Lcom/wumii/android/mimi/models/AppFacade;
+.field protected mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 
 # direct methods
@@ -35,21 +35,21 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 34
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->f:Landroid/content/Context;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mContextf:Landroid/content/Context;
 
     .line 35
     invoke-static {}, Lcom/wumii/android/mimi/network/HttpProcessor;->a()Lcom/wumii/android/mimi/network/HttpProcessor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     .line 36
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     .line 37
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->c:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mNetworkHelperc:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 38
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -82,7 +82,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 39
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->e:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mNotificationHelpere:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     .line 40
     return-void
@@ -106,7 +106,7 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
@@ -141,7 +141,7 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->show()V
 
     .line 67
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/BaseManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     new-instance v2, Lcom/wumii/android/mimi/manager/BaseManager$ICm;
 
@@ -197,7 +197,7 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;)V
 

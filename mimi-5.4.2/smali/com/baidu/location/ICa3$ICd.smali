@@ -134,7 +134,7 @@
 
     const/4 v4, 0x2
 
-    iget v5, v1, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v5, v1, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -180,7 +180,7 @@
 
     const/4 v6, 0x2
 
-    iget v1, v1, Lcom/baidu/location/ICu$ICa;->a:I
+    iget v1, v1, Lcom/baidu/location/ICu$ICa;->mIa:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

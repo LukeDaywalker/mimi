@@ -23,7 +23,7 @@
     :try_start_0
     sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->a:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwa:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/ICw;->ordinal()I
 
@@ -39,7 +39,7 @@
     :try_start_1
     sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->f:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwf:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/ICw;->ordinal()I
 
@@ -55,7 +55,7 @@
     :try_start_2
     sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->d:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwd:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/ICw;->ordinal()I
 
@@ -71,7 +71,7 @@
     :try_start_3
     sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->e:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwe:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/ICw;->ordinal()I
 
@@ -87,7 +87,7 @@
     :try_start_4
     sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->c:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwc:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/ICw;->ordinal()I
 
@@ -103,7 +103,7 @@
     :try_start_5
     sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->b:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/ICw;->ordinal()I
 
@@ -119,7 +119,7 @@
     :try_start_6
     sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICw;->g:Lcom/tencent/wxop/stat/ICw;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->mICwg:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/ICw;->ordinal()I
 

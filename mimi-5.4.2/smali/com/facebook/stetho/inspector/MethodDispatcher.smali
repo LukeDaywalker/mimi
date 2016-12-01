@@ -444,7 +444,7 @@
 
     new-instance v1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
 
-    sget-object v2, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->c:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v2, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICcc:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -524,7 +524,7 @@
 
     new-instance v2, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
 
-    sget-object v3, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->e:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v3, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mICce:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     invoke-virtual {v0}, Lorg/json/JSONException;->toString()Ljava/lang/String;
 

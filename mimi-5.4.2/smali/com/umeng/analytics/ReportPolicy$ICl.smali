@@ -42,7 +42,7 @@
 
     iget-object v2, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->mStatTracerb:Lu/aly/StatTracer;
 
-    iget-wide v2, v2, Lu/aly/StatTracer;->c:J
+    iget-wide v2, v2, Lu/aly/StatTracer;->mJc:J
 
     sub-long/2addr v0, v2
 

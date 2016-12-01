@@ -206,7 +206,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 123
-    sget-object v1, Lu/aly/InstantMsg$ICcn;->a:Lu/aly/InstantMsg$ICcn;
+    sget-object v1, Lu/aly/InstantMsg$ICcn;->mICcna:Lu/aly/InstantMsg$ICcn;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -221,7 +221,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v1, Lu/aly/InstantMsg$ICcn;->b:Lu/aly/InstantMsg$ICcn;
+    sget-object v1, Lu/aly/InstantMsg$ICcn;->mICcnb:Lu/aly/InstantMsg$ICcn;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -242,7 +242,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 128
-    sget-object v1, Lu/aly/InstantMsg$ICcn;->c:Lu/aly/InstantMsg$ICcn;
+    sget-object v1, Lu/aly/InstantMsg$ICcn;->mICcnc:Lu/aly/InstantMsg$ICcn;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -263,7 +263,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 131
-    sget-object v1, Lu/aly/InstantMsg$ICcn;->d:Lu/aly/InstantMsg$ICcn;
+    sget-object v1, Lu/aly/InstantMsg$ICcn;->mICcnd:Lu/aly/InstantMsg$ICcn;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -315,19 +315,19 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lu/aly/InstantMsg$ICcn;->b:Lu/aly/InstantMsg$ICcn;
+    sget-object v2, Lu/aly/InstantMsg$ICcn;->mICcnb:Lu/aly/InstantMsg$ICcn;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x1
 
-    sget-object v2, Lu/aly/InstantMsg$ICcn;->c:Lu/aly/InstantMsg$ICcn;
+    sget-object v2, Lu/aly/InstantMsg$ICcn;->mICcnc:Lu/aly/InstantMsg$ICcn;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Lu/aly/InstantMsg$ICcn;->d:Lu/aly/InstantMsg$ICcn;
+    sget-object v2, Lu/aly/InstantMsg$ICcn;->mICcnd:Lu/aly/InstantMsg$ICcn;
 
     aput-object v2, v0, v1
 

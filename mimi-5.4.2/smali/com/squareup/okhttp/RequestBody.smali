@@ -19,7 +19,7 @@
 
     .prologue
     .line 47
-    sget-object v0, Lcom/squareup/okhttp/internal/Util;->c:Ljava/nio/charset/Charset;
+    sget-object v0, Lcom/squareup/okhttp/internal/Util;->mCharsetc:Ljava/nio/charset/Charset;
 
     .line 48
     if-eqz p0, :cond_0
@@ -33,7 +33,7 @@
     if-nez v0, :cond_0
 
     .line 51
-    sget-object v0, Lcom/squareup/okhttp/internal/Util;->c:Ljava/nio/charset/Charset;
+    sget-object v0, Lcom/squareup/okhttp/internal/Util;->mCharsetc:Ljava/nio/charset/Charset;
 
     .line 52
     new-instance v1, Ljava/lang/StringBuilder;

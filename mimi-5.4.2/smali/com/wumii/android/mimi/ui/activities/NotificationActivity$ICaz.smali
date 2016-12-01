@@ -63,7 +63,7 @@
 
     .line 225
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->e:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sget-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxe:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     .line 226
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mNotificationActivityd:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;

@@ -172,7 +172,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 119
-    sget-object v1, Lu/aly/Imprint$ICbz;->a:Lu/aly/Imprint$ICbz;
+    sget-object v1, Lu/aly/Imprint$ICbz;->mICbza:Lu/aly/Imprint$ICbz;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -199,7 +199,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 123
-    sget-object v1, Lu/aly/Imprint$ICbz;->b:Lu/aly/Imprint$ICbz;
+    sget-object v1, Lu/aly/Imprint$ICbz;->mICbzb:Lu/aly/Imprint$ICbz;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -214,7 +214,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v1, Lu/aly/Imprint$ICbz;->c:Lu/aly/Imprint$ICbz;
+    sget-object v1, Lu/aly/Imprint$ICbz;->mICbzc:Lu/aly/Imprint$ICbz;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

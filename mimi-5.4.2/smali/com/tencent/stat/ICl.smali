@@ -129,7 +129,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/stat/b/ICf;->c:Lcom/tencent/stat/b/ICf;
+    sget-object v1, Lcom/tencent/stat/b/ICf;->mICfc:Lcom/tencent/stat/b/ICf;
 
     if-eq v0, v1, :cond_2
 
@@ -273,7 +273,7 @@
 
     iget-object v1, p0, Lcom/tencent/stat/ICl;->mIChb:Lcom/tencent/stat/ICh;
 
-    sget-object v2, Lcom/tencent/stat/ICh;->g:Lcom/tencent/stat/ICh;
+    sget-object v2, Lcom/tencent/stat/ICh;->mIChg:Lcom/tencent/stat/ICh;
 
     if-eq v1, v2, :cond_6
 
@@ -283,7 +283,7 @@
 
     if-eqz v1, :cond_6
 
-    sget-object v1, Lcom/tencent/stat/ICh;->a:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/ICh;->mICha:Lcom/tencent/stat/ICh;
 
     iput-object v1, p0, Lcom/tencent/stat/ICl;->mIChb:Lcom/tencent/stat/ICh;
 

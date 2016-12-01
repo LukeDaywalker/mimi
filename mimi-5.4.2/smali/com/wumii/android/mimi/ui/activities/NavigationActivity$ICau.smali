@@ -34,7 +34,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqa:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
@@ -68,7 +68,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
@@ -103,7 +103,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->b:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqb:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
@@ -149,7 +149,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->b:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqb:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
@@ -158,7 +158,7 @@
     if-ne v0, v1, :cond_1
 
     .line 553
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->C:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -173,7 +173,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
@@ -182,7 +182,7 @@
     if-ne v0, v1, :cond_2
 
     .line 555
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->D:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafD:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
@@ -194,7 +194,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->d:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
@@ -203,7 +203,7 @@
     if-ne v0, v1, :cond_0
 
     .line 557
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->E:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafE:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 

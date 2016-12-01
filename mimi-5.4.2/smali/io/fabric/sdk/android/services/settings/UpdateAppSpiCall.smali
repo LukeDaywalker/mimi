@@ -9,7 +9,7 @@
 
     .prologue
     .line 32
-    sget-object v5, Lio/fabric/sdk/android/services/network/HttpMethod;->c:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v5, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodc:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     move-object v0, p0
 

@@ -98,8 +98,6 @@
 
 .field public static final associated_with_weixin:I = 0x7f0b0062
 
-.field public static final at:I = 0x7f0b013a
-
 .field public static final author:I = 0x7f0b01c3
 
 .field public static final author_org_info:I = 0x7f0b0174
@@ -693,6 +691,8 @@
 .field public static final logo:I = 0x7f0b00f7
 
 .field public static final logout_setting:I = 0x7f0b0139
+
+.field public static final mIat:I = 0x7f0b013a
 
 .field public static final main:I = 0x7f0b0140
 

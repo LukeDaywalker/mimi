@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
+.field public static final mStringa:Ljava/lang/String;
 
-.field public static final b:Ljava/lang/String;
+.field public static final mStringb:Ljava/lang/String;
 
-.field public static final c:Ljava/lang/String;
+.field public static final mStringc:Ljava/lang/String;
 
-.field public static final d:Ljava/lang/String;
+.field public static final mStringd:Ljava/lang/String;
 
-.field public static final e:Ljava/lang/String;
+.field public static final mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->a:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringa:Ljava/lang/String;
 
     .line 171
     new-instance v0, Ljava/lang/StringBuilder;
@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->b:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringb:Ljava/lang/String;
 
     .line 172
     new-instance v0, Ljava/lang/StringBuilder;
@@ -105,7 +105,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->c:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringc:Ljava/lang/String;
 
     .line 173
     new-instance v0, Ljava/lang/StringBuilder;
@@ -134,7 +134,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->d:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringd:Ljava/lang/String;
 
     .line 174
     new-instance v0, Ljava/lang/StringBuilder;
@@ -163,7 +163,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->e:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringe:Ljava/lang/String;
 
     return-void
 .end method

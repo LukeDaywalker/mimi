@@ -27,7 +27,7 @@
 
     .prologue
     .line 470
-    sget-object v0, Lorg/apache/commons/long3/ObjectUtils;->a:Lorg/apache/commons/long3/ObjectUtils$ICc;
+    sget-object v0, Lorg/apache/commons/long3/ObjectUtils;->mICca:Lorg/apache/commons/long3/ObjectUtils$ICc;
 
     return-object v0
 .end method

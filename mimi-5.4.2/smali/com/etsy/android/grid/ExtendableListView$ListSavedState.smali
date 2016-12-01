@@ -17,15 +17,15 @@
 
 
 # instance fields
-.field protected b:J
+.field protected mId:I
 
-.field protected c:J
+.field protected mIe:I
 
-.field protected d:I
+.field protected mIf:I
 
-.field protected e:I
+.field protected mJb:J
 
-.field protected f:I
+.field protected mJc:J
 
 
 # direct methods
@@ -55,35 +55,35 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->b:J
+    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mJb:J
 
     .line 2631
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->c:J
+    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mJc:J
 
     .line 2632
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->d:I
+    iput v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mId:I
 
     .line 2633
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->e:I
+    iput v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mIe:I
 
     .line 2634
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->f:I
+    iput v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mIf:I
 
     .line 2635
     return-void
@@ -141,7 +141,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->b:J
+    iget-wide v2, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -153,7 +153,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->c:J
+    iget-wide v2, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mJc:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->d:I
+    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mId:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -177,7 +177,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->e:I
+    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -189,7 +189,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->f:I
+    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mIf:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -216,27 +216,27 @@
     invoke-super {p0, p1, p2}, Lcom/etsy/android/grid/ClassLoaderSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2640
-    iget-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->b:J
+    iget-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mJb:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 2641
-    iget-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->c:J
+    iget-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mJc:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 2642
-    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->d:I
+    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mId:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2643
-    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->e:I
+    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mIe:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2644
-    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->f:I
+    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->mIf:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

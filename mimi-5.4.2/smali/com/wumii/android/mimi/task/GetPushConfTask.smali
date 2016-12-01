@@ -52,7 +52,7 @@
 
     .prologue
     .line 57
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mStringc:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->a(Ljava/lang/String;)V
 
@@ -146,7 +146,7 @@
     .line 42
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "android/push/sync"
 
@@ -162,7 +162,7 @@
     .line 46
     new-instance v0, Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -174,7 +174,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-class v3, Ljava/lang/String;
 
@@ -186,9 +186,9 @@
 
     check-cast v2, Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    sget-object v4, Lcom/wumii/android/mimi/util/Constants$ICt;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sget-object v4, Lcom/wumii/android/mimi/util/Constants$ICt;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     const-string/jumbo v7, "topics"
 
@@ -198,7 +198,7 @@
 
     check-cast v3, Ljava/util/List;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v4, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-class v7, Ljava/lang/String;
 
@@ -210,7 +210,7 @@
 
     check-cast v4, Ljava/lang/String;
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v7, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-class v9, Ljava/lang/String;
 
@@ -234,7 +234,7 @@
     invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
 
     .line 51
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->c:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mLoggerc:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -270,7 +270,7 @@
     move-exception v0
 
     .line 39
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->c:Lorg/slf4j/Logger;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mLoggerc:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "mqtt cache file is broken!"
 

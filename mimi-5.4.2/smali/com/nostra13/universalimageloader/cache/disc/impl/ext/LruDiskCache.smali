@@ -7,21 +7,21 @@
 
 
 # static fields
-.field public static final a:Landroid/graphics/Bitmap$CompressFormat;
+.field public static final mCompressFormata:Landroid/graphics/Bitmap$CompressFormat;
 
 
 # instance fields
-.field protected b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+.field protected mCompressFormate:Landroid/graphics/Bitmap$CompressFormat;
 
-.field protected final c:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
+.field protected mDiskLruCacheb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
-.field protected d:I
-
-.field protected e:Landroid/graphics/Bitmap$CompressFormat;
-
-.field protected f:I
+.field protected final mFileNameGeneratorc:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
 
 .field private mFileg:Ljava/io/File;
+
+.field protected mId:I
+
+.field protected mIf:I
 
 
 # direct methods
@@ -32,7 +32,7 @@
     .line 43
     sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
-    sput-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->a:Landroid/graphics/Bitmap$CompressFormat;
+    sput-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mCompressFormata:Landroid/graphics/Bitmap$CompressFormat;
 
     return-void
 .end method
@@ -49,17 +49,17 @@
     .line 55
     const v0, 0x8000
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->d:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mId:I
 
     .line 57
-    sget-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->a:Landroid/graphics/Bitmap$CompressFormat;
+    sget-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mCompressFormata:Landroid/graphics/Bitmap$CompressFormat;
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->e:Landroid/graphics/Bitmap$CompressFormat;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mCompressFormate:Landroid/graphics/Bitmap$CompressFormat;
 
     .line 58
     const/16 v0, 0x64
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->f:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mIf:I
 
     .line 84
     if-nez p1, :cond_0
@@ -135,7 +135,7 @@
     iput-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mFileg:Ljava/io/File;
 
     .line 105
-    iput-object p3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->c:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
+    iput-object p3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mFileNameGeneratorc:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
 
     move-object v1, p0
 
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mDiskLruCacheb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -213,7 +213,7 @@
 
     .line 118
     :cond_1
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mDiskLruCacheb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     if-nez v1, :cond_0
 
@@ -226,7 +226,7 @@
 
     .prologue
     .line 224
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->c:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mFileNameGeneratorc:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
 
     invoke-interface {v0, p1}, Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -246,7 +246,7 @@
     .line 131
     .line 133
     :try_start_0
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mDiskLruCacheb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -345,7 +345,7 @@
     const/4 v0, 0x0
 
     .line 169
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mDiskLruCacheb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -370,15 +370,15 @@
 
     move-result-object v0
 
-    iget v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->d:I
+    iget v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mId:I
 
     invoke-direct {v2, v0, v3}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
     .line 177
     :try_start_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->e:Landroid/graphics/Bitmap$CompressFormat;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mCompressFormate:Landroid/graphics/Bitmap$CompressFormat;
 
-    iget v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->f:I
+    iget v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mIf:I
 
     invoke-virtual {p2, v0, v3, v2}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
     :try_end_0
@@ -419,7 +419,7 @@
     const/4 v0, 0x0
 
     .line 147
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mDiskLruCacheb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -444,13 +444,13 @@
 
     move-result-object v0
 
-    iget v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->d:I
+    iget v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mId:I
 
     invoke-direct {v2, v0, v3}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
     .line 155
     :try_start_0
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->d:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mId:I
 
     invoke-static {p2, v2, p3, v0}, Lcom/nostra13/universalimageloader/utils/IoUtils;->a(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/nostra13/universalimageloader/utils/IoUtils$ICe;I)Z
     :try_end_0

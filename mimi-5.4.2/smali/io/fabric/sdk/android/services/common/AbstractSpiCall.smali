@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field protected final a:Lio/fabric/sdk/android/Kit;
-
 .field private final mHttpMethode:Lio/fabric/sdk/android/services/network/HttpMethod;
 
 .field private final mHttpRequestFactoryd:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+
+.field protected final mKita:Lio/fabric/sdk/android/Kit;
 
 .field private final mStringc:Ljava/lang/String;
 
@@ -72,7 +72,7 @@
 
     .line 94
     :cond_1
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->a:Lio/fabric/sdk/android/Kit;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mKita:Lio/fabric/sdk/android/Kit;
 
     .line 95
     iput-object p2, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mStringf:Ljava/lang/String;
@@ -181,7 +181,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v3}, Lio/fabric/sdk/android/Kit;->a()Ljava/lang/String;
 

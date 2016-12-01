@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Ljava/lang/String;
+.field protected mStringa:Ljava/lang/String;
 
-.field protected d:Ljava/lang/String;
+.field protected mStringd:Ljava/lang/String;
 
 .field private mStringq:Ljava/lang/String;
 
@@ -32,7 +32,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReportTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReportTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603ad
 
@@ -52,13 +52,13 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ReportTask;->f()Z
 
     .line 43
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReportTask;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringa:Ljava/lang/String;
 
     .line 44
     iput-object p2, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringq:Ljava/lang/String;
 
     .line 45
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/ReportTask;->d:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringd:Ljava/lang/String;
 
     .line 46
     iput-object p4, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringr:Ljava/lang/String;
@@ -75,7 +75,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReportTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReportTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603ac
 
@@ -111,7 +111,7 @@
     .line 26
     iget-object v1, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringq:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReportTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -123,9 +123,9 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ReportTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ReportTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReportTask;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 

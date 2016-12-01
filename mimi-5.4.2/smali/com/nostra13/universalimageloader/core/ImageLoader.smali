@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String;
-
 .field private static volatile mImageLoadere:Lcom/nostra13/universalimageloader/core/ImageLoader;
+
+.field public static final mStringa:Ljava/lang/String;
 
 
 # instance fields
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/ImageLoader;->a:Ljava/lang/String;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/ImageLoader;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -493,7 +493,7 @@
     :goto_0
     new-instance v2, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;
 
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mViewScaleTypeb:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     invoke-direct {v2, p1, p2, v0}, Lcom/nostra13/universalimageloader/core/imageaware/NonViewAware;-><init>(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;)V
 
@@ -737,7 +737,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->c:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mLoadedFromc:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     invoke-interface {v0, v9, p2, v1}, Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;->a(Landroid/graphics/Bitmap;Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;)V
 

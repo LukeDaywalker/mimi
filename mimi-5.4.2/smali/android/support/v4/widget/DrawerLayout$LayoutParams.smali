@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public a:I
-
 .field isZc:Z
 
 .field isZd:Z
 
 .field mFb:F
+
+.field public mIa:I
 
 
 # direct methods
@@ -24,7 +24,7 @@
     .line 1792
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 1807
     return-void
@@ -40,7 +40,7 @@
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 1792
-    iput v1, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iput v1, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 1800
     invoke-static {}, Landroid/support/v4/widget/DrawerLayout;->d()[I
@@ -56,7 +56,7 @@
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iput v1, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 1802
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -75,12 +75,12 @@
     .line 1792
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 1816
-    iget v0, p1, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iget v0, p1, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 1817
     return-void
@@ -96,7 +96,7 @@
     .line 1792
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 1821
     return-void
@@ -112,7 +112,7 @@
     .line 1792
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->a:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->mIa:I
 
     .line 1825
     return-void

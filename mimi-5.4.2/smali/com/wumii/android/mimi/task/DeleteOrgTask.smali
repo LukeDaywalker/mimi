@@ -39,7 +39,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 22
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/DeleteOrgTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/DeleteOrgTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "organization/quit"
 

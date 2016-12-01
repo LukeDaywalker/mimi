@@ -84,7 +84,7 @@
     .line 142
     sget-object v1, Lcom/facebook/stetho/inspector/ChromeDevtoolsServer$ICb;->mArrayIa:[I
 
-    iget-object v2, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->a:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    iget-object v2, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mICca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     invoke-virtual {v2}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->ordinal()I
 
@@ -119,7 +119,7 @@
 
     move-result-object v2
 
-    iget-object v0, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->b:Ljava/lang/String;
+    iget-object v0, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -228,9 +228,9 @@
     :try_start_0
     iget-object v1, p0, Lcom/facebook/stetho/inspector/ChromeDevtoolsServer;->mMethodDispatcherb:Lcom/facebook/stetho/inspector/MethodDispatcher;
 
-    iget-object v3, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->b:Ljava/lang/String;
+    iget-object v3, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->mStringb:Ljava/lang/String;
 
-    iget-object v4, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->c:Lorg/json/JSONObject;
+    iget-object v4, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->mJSONObjectc:Lorg/json/JSONObject;
 
     invoke-virtual {v1, p1, v3, v4}, Lcom/facebook/stetho/inspector/MethodDispatcher;->a(Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;Ljava/lang/String;Lorg/json/JSONObject;)Lorg/json/JSONObject;
     :try_end_0
@@ -246,7 +246,7 @@
 
     .line 129
     :goto_0
-    iget-object v3, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->a:Ljava/lang/Long;
+    iget-object v3, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->mLonga:Ljava/lang/Long;
 
     if-eqz v3, :cond_0
 
@@ -256,19 +256,19 @@
     invoke-direct {v3}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;-><init>()V
 
     .line 131
-    iget-object v0, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->a:Ljava/lang/Long;
+    iget-object v0, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;->mLonga:Ljava/lang/Long;
 
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v4
 
-    iput-wide v4, v3, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->a:J
+    iput-wide v4, v3, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->mJa:J
 
     .line 132
-    iput-object v2, v3, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->b:Lorg/json/JSONObject;
+    iput-object v2, v3, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->mJSONObjectb:Lorg/json/JSONObject;
 
     .line 133
-    iput-object v1, v3, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->c:Lorg/json/JSONObject;
+    iput-object v1, v3, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->mJSONObjectc:Lorg/json/JSONObject;
 
     .line 134
     iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDevtoolsServer;->mObjectMappera:Lcom/facebook/stetho/json/ObjectMapper;
@@ -338,7 +338,7 @@
     check-cast v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;
 
     .line 156
-    iget-wide v2, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->a:J
+    iget-wide v2, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->mJa:J
 
     invoke-virtual {p1, v2, v3}, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->a(J)Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;
 
@@ -350,7 +350,7 @@
     .line 158
     new-instance v1, Lcom/facebook/stetho/inspector/MismatchedResponseException;
 
-    iget-wide v2, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->a:J
+    iget-wide v2, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;->mJa:J
 
     invoke-direct {v1, v2, v3}, Lcom/facebook/stetho/inspector/MismatchedResponseException;-><init>(J)V
 
@@ -358,12 +358,12 @@
 
     .line 160
     :cond_0
-    iget-object v2, v1, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;->b:Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;
+    iget-object v2, v1, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;->mPendingRequestCallbackb:Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;
 
     if-eqz v2, :cond_1
 
     .line 161
-    iget-object v1, v1, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;->b:Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;
+    iget-object v1, v1, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequest;->mPendingRequestCallbackb:Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;
 
     invoke-interface {v1, p1, v0}, Lcom/facebook/stetho/inspector/jsonrpc/PendingRequestCallback;->a(Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcResponse;)V
 

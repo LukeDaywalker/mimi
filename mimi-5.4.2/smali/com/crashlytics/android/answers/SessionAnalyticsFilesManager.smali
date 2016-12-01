@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     invoke-interface {v1}, Lio/fabric/sdk/android/services/common/CurrentTimeProvider;->a()J
 
@@ -137,7 +137,7 @@
     :cond_0
     iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->mAnalyticsSettingsDatag:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
-    iget v0, v0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->e:I
+    iget v0, v0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIe:I
 
     goto :goto_0
 .end method
@@ -161,7 +161,7 @@
     :cond_0
     iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->mAnalyticsSettingsDatag:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
-    iget v0, v0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->c:I
+    iget v0, v0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->mIc:I
 
     goto :goto_0
 .end method

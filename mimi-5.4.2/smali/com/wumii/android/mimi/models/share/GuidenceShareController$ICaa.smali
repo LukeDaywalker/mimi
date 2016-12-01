@@ -38,7 +38,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mActivitya:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->mICzb:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
 
@@ -56,7 +56,7 @@
 
     iget-object v3, v3, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
+    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mActivitya:Landroid/app/Activity;
 
     const v4, 0x7f060348
 

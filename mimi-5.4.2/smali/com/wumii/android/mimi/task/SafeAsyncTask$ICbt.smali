@@ -48,7 +48,7 @@
     .line 258
     iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbt;->mICbpb:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
+    iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->mSafeAsyncTaska:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbt;->mThrowablea:Ljava/lang/Throwable;
 

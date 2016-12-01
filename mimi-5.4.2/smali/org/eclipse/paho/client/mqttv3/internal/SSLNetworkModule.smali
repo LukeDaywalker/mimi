@@ -104,7 +104,7 @@
     invoke-virtual {p0, v0}, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->a([Ljava/lang/String;)V
 
     .line 84
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->mSocketb:Ljava/net/Socket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getSoTimeout()I
 
@@ -114,7 +114,7 @@
     if-nez v1, :cond_0
 
     .line 87
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->mSocketb:Ljava/net/Socket;
 
     iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->mIg:I
 
@@ -124,14 +124,14 @@
 
     .line 89
     :cond_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->mSocketb:Ljava/net/Socket;
 
     check-cast v0, Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->startHandshake()V
 
     .line 91
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->mSocketb:Ljava/net/Socket;
 
     invoke-virtual {v0, v1}, Ljava/net/Socket;->setSoTimeout(I)V
 
@@ -163,7 +163,7 @@
     iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->mArrayStringf:[Ljava/lang/String;
 
     .line 60
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->mSocketb:Ljava/net/Socket;
 
     if-eqz v0, :cond_1
 
@@ -210,7 +210,7 @@
 
     .line 72
     :cond_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/SSLNetworkModule;->mSocketb:Ljava/net/Socket;
 
     check-cast v0, Ljavax/net/ssl/SSLSocket;
 

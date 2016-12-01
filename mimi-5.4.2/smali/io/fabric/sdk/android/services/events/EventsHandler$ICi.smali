@@ -37,7 +37,7 @@
     :try_start_0
     iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->mEventsHandlerb:Lio/fabric/sdk/android/services/events/EventsHandler;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
+    iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsHandler;->mEventsStrategyc:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
     iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->mObjecta:Ljava/lang/Object;
 
@@ -56,7 +56,7 @@
     .line 70
     iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->mEventsHandlerb:Lio/fabric/sdk/android/services/events/EventsHandler;
 
-    iget-object v1, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->a:Landroid/content/Context;
+    iget-object v1, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v2, "Crashlytics failed to record event"
 

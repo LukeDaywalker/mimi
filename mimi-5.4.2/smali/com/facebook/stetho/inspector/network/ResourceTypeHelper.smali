@@ -36,7 +36,7 @@
 
     const-string/jumbo v1, "text/css"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->b:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyb:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -45,7 +45,7 @@
 
     const-string/jumbo v1, "image/*"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->c:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyc:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -54,7 +54,7 @@
 
     const-string/jumbo v1, "application/x-javascript"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->e:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICye:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -63,7 +63,7 @@
 
     const-string/jumbo v1, "text/javascript"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->f:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyf:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -72,7 +72,7 @@
 
     const-string/jumbo v1, "application/json"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->f:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyf:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -81,7 +81,7 @@
 
     const-string/jumbo v1, "text/*"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->a:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICya:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -90,7 +90,7 @@
 
     const-string/jumbo v1, "*"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->h:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyh:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 

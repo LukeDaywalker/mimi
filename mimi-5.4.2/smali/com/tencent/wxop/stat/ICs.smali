@@ -52,7 +52,7 @@
 
     iget-object v3, p0, Lcom/tencent/wxop/stat/ICs;->mICbc:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v3, v3, Lcom/tencent/wxop/stat/a/ICb;->a:Ljava/lang/String;
+    iget-object v3, v3, Lcom/tencent/wxop/stat/a/ICb;->mStringa:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/tencent/wxop/stat/ICs;->mICyb:Lcom/tencent/wxop/stat/ICy;
 
@@ -64,9 +64,9 @@
 
     iget-object v2, p0, Lcom/tencent/wxop/stat/ICs;->mICbc:Lcom/tencent/wxop/stat/a/ICb;
 
-    iget-object v2, v2, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iget-object v2, v2, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
-    iput-object v2, v1, Lcom/tencent/wxop/stat/a/ICb;->c:Lorg/json/JSONObject;
+    iput-object v2, v1, Lcom/tencent/wxop/stat/a/ICb;->mJSONObjectc:Lorg/json/JSONObject;
 
     new-instance v1, Lcom/tencent/wxop/stat/ICai;
 

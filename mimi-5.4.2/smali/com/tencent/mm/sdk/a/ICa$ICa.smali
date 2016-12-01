@@ -5,13 +5,13 @@
 # instance fields
 .field public flags:I
 
-.field public k:Ljava/lang/String;
+.field public mBundlen:Landroid/os/Bundle;
 
-.field public l:Ljava/lang/String;
+.field public mStringk:Ljava/lang/String;
 
-.field public m:Ljava/lang/String;
+.field public mStringl:Ljava/lang/String;
 
-.field public n:Landroid/os/Bundle;
+.field public mStringm:Ljava/lang/String;
 
 
 # direct methods

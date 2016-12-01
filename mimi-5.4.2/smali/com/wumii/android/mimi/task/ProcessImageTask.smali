@@ -178,7 +178,7 @@
     .line 44
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 

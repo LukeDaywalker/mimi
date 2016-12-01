@@ -15,39 +15,39 @@
 
 
 # instance fields
-.field protected a:Z
-
-.field protected b:Z
-
-.field protected c:F
-
 .field protected case:Ljava/lang/String;
 
 .field protected char:Z
 
-.field protected d:I
-
-.field protected do:Ljava/lang/String;
-
-.field protected e:Z
-
 .field protected else:Ljava/lang/String;
-
-.field protected f:Lcom/baidu/location/LocationClientOption$LocationMode;
 
 .field protected for:Z
 
-.field protected g:Z
-
 .field protected goto:Z
-
-.field protected h:I
-
-.field protected if:Ljava/lang/String;
 
 .field protected int:I
 
+.field protected isZa:Z
+
+.field protected isZb:Z
+
+.field protected isZe:Z
+
+.field protected isZg:Z
+
 .field protected long:I
+
+.field protected mFc:F
+
+.field protected mId:I
+
+.field protected mIh:I
+
+.field protected mLocationModef:Lcom/baidu/location/LocationClientOption$LocationMode;
+
+.field protected mStringdo:Ljava/lang/String;
+
+.field protected mStringif:Ljava/lang/String;
 
 .field protected new:Z
 
@@ -64,7 +64,7 @@
 
     const-string/jumbo v0, "gcj02"
 
-    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
     const-string/jumbo v0, "detail"
 
@@ -76,25 +76,25 @@
 
     const/16 v0, 0x2ee0
 
-    iput v0, p0, Lcom/baidu/location/LocationClientOption;->d:I
+    iput v0, p0, Lcom/baidu/location/LocationClientOption;->mId:I
 
     const-string/jumbo v0, "SDK2.0"
 
-    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
-    iput v2, p0, Lcom/baidu/location/LocationClientOption;->h:I
+    iput v2, p0, Lcom/baidu/location/LocationClientOption;->mIh:I
 
     iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->goto:Z
 
-    iput-boolean v2, p0, Lcom/baidu/location/LocationClientOption;->a:Z
+    iput-boolean v2, p0, Lcom/baidu/location/LocationClientOption;->isZa:Z
 
     iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->new:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->e:Z
+    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->isZe:Z
 
     const/high16 v0, 0x43fa0000    # 500.0f
 
-    iput v0, p0, Lcom/baidu/location/LocationClientOption;->c:F
+    iput v0, p0, Lcom/baidu/location/LocationClientOption;->mFc:F
 
     const/4 v0, 0x3
 
@@ -104,11 +104,11 @@
 
     iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->case:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->b:Z
+    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->isZb:Z
 
     iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->char:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->g:Z
+    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->isZg:Z
 
     return-void
 .end method
@@ -124,7 +124,7 @@
 
     const-string/jumbo v0, "gcj02"
 
-    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
     const-string/jumbo v0, "detail"
 
@@ -136,25 +136,25 @@
 
     const/16 v0, 0x2ee0
 
-    iput v0, p0, Lcom/baidu/location/LocationClientOption;->d:I
+    iput v0, p0, Lcom/baidu/location/LocationClientOption;->mId:I
 
     const-string/jumbo v0, "SDK2.0"
 
-    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
-    iput v2, p0, Lcom/baidu/location/LocationClientOption;->h:I
+    iput v2, p0, Lcom/baidu/location/LocationClientOption;->mIh:I
 
     iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->goto:Z
 
-    iput-boolean v2, p0, Lcom/baidu/location/LocationClientOption;->a:Z
+    iput-boolean v2, p0, Lcom/baidu/location/LocationClientOption;->isZa:Z
 
     iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->new:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->e:Z
+    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->isZe:Z
 
     const/high16 v0, 0x43fa0000    # 500.0f
 
-    iput v0, p0, Lcom/baidu/location/LocationClientOption;->c:F
+    iput v0, p0, Lcom/baidu/location/LocationClientOption;->mFc:F
 
     const/4 v0, 0x3
 
@@ -164,15 +164,15 @@
 
     iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->case:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->b:Z
+    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->isZb:Z
 
     iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->char:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->g:Z
+    iput-boolean v1, p0, Lcom/baidu/location/LocationClientOption;->isZg:Z
 
-    iget-object v0, p1, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
     iget-object v0, p1, Lcom/baidu/location/LocationClientOption;->else:Ljava/lang/String;
 
@@ -186,29 +186,29 @@
 
     iput v0, p0, Lcom/baidu/location/LocationClientOption;->int:I
 
-    iget v0, p1, Lcom/baidu/location/LocationClientOption;->d:I
+    iget v0, p1, Lcom/baidu/location/LocationClientOption;->mId:I
 
-    iput v0, p0, Lcom/baidu/location/LocationClientOption;->d:I
+    iput v0, p0, Lcom/baidu/location/LocationClientOption;->mId:I
 
-    iget-object v0, p1, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
-    iget v0, p1, Lcom/baidu/location/LocationClientOption;->h:I
+    iget v0, p1, Lcom/baidu/location/LocationClientOption;->mIh:I
 
-    iput v0, p0, Lcom/baidu/location/LocationClientOption;->h:I
+    iput v0, p0, Lcom/baidu/location/LocationClientOption;->mIh:I
 
     iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->goto:Z
 
     iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->goto:Z
 
-    iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->e:Z
+    iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->isZe:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->e:Z
+    iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZe:Z
 
-    iget v0, p1, Lcom/baidu/location/LocationClientOption;->c:F
+    iget v0, p1, Lcom/baidu/location/LocationClientOption;->mFc:F
 
-    iput v0, p0, Lcom/baidu/location/LocationClientOption;->c:F
+    iput v0, p0, Lcom/baidu/location/LocationClientOption;->mFc:F
 
     iget v0, p1, Lcom/baidu/location/LocationClientOption;->long:I
 
@@ -218,25 +218,25 @@
 
     iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->case:Ljava/lang/String;
 
-    iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->a:Z
+    iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->isZa:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->a:Z
+    iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZa:Z
 
-    iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->b:Z
+    iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->isZb:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->b:Z
+    iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZb:Z
 
     iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->char:Z
 
     iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->char:Z
 
-    iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->g:Z
+    iget-boolean v0, p1, Lcom/baidu/location/LocationClientOption;->isZg:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->g:Z
+    iput-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZg:Z
 
-    iget-object v0, p1, Lcom/baidu/location/LocationClientOption;->f:Lcom/baidu/location/LocationClientOption$LocationMode;
+    iget-object v0, p1, Lcom/baidu/location/LocationClientOption;->mLocationModef:Lcom/baidu/location/LocationClientOption$LocationMode;
 
-    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->f:Lcom/baidu/location/LocationClientOption$LocationMode;
+    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->mLocationModef:Lcom/baidu/location/LocationClientOption$LocationMode;
 
     return-void
 .end method
@@ -246,7 +246,7 @@
 .method public SetIgnoreCacheException(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/LocationClientOption;->b:Z
+    iput-boolean p1, p0, Lcom/baidu/location/LocationClientOption;->isZb:Z
 
     return-void
 .end method
@@ -254,7 +254,7 @@
 .method protected a()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->a:Z
+    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZa:Z
 
     return v0
 .end method
@@ -262,9 +262,9 @@
 .method public equals(Lcom/baidu/location/LocationClientOption;)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iget-object v1, p1, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -294,15 +294,15 @@
 
     if-ne v0, v1, :cond_0
 
-    iget v0, p0, Lcom/baidu/location/LocationClientOption;->d:I
+    iget v0, p0, Lcom/baidu/location/LocationClientOption;->mId:I
 
-    iget v1, p1, Lcom/baidu/location/LocationClientOption;->d:I
+    iget v1, p1, Lcom/baidu/location/LocationClientOption;->mId:I
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iget-object v1, p1, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -316,9 +316,9 @@
 
     if-ne v0, v1, :cond_0
 
-    iget v0, p0, Lcom/baidu/location/LocationClientOption;->h:I
+    iget v0, p0, Lcom/baidu/location/LocationClientOption;->mIh:I
 
-    iget v1, p1, Lcom/baidu/location/LocationClientOption;->h:I
+    iget v1, p1, Lcom/baidu/location/LocationClientOption;->mIh:I
 
     if-ne v0, v1, :cond_0
 
@@ -328,29 +328,29 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->e:Z
+    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZe:Z
 
-    iget-boolean v1, p1, Lcom/baidu/location/LocationClientOption;->e:Z
+    iget-boolean v1, p1, Lcom/baidu/location/LocationClientOption;->isZe:Z
 
     if-ne v0, v1, :cond_0
 
-    iget v0, p0, Lcom/baidu/location/LocationClientOption;->c:F
+    iget v0, p0, Lcom/baidu/location/LocationClientOption;->mFc:F
 
-    iget v1, p1, Lcom/baidu/location/LocationClientOption;->c:F
+    iget v1, p1, Lcom/baidu/location/LocationClientOption;->mFc:F
 
     cmpl-float v0, v0, v1
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->a:Z
+    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZa:Z
 
-    iget-boolean v1, p1, Lcom/baidu/location/LocationClientOption;->a:Z
+    iget-boolean v1, p1, Lcom/baidu/location/LocationClientOption;->isZa:Z
 
     if-ne v0, v1, :cond_0
 
-    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->b:Z
+    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZb:Z
 
-    iget-boolean v1, p1, Lcom/baidu/location/LocationClientOption;->b:Z
+    iget-boolean v1, p1, Lcom/baidu/location/LocationClientOption;->isZb:Z
 
     if-ne v0, v1, :cond_0
 
@@ -360,15 +360,15 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->g:Z
+    iget-boolean v0, p0, Lcom/baidu/location/LocationClientOption;->isZg:Z
 
-    iget-boolean v1, p1, Lcom/baidu/location/LocationClientOption;->g:Z
+    iget-boolean v1, p1, Lcom/baidu/location/LocationClientOption;->isZg:Z
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->f:Lcom/baidu/location/LocationClientOption$LocationMode;
+    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->mLocationModef:Lcom/baidu/location/LocationClientOption$LocationMode;
 
-    iget-object v1, p1, Lcom/baidu/location/LocationClientOption;->f:Lcom/baidu/location/LocationClientOption$LocationMode;
+    iget-object v1, p1, Lcom/baidu/location/LocationClientOption;->mLocationModef:Lcom/baidu/location/LocationClientOption$LocationMode;
 
     if-ne v0, v1, :cond_0
 
@@ -394,7 +394,7 @@
 .method public getCoorType()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -402,7 +402,7 @@
 .method public getLocationMode()Lcom/baidu/location/LocationClientOption$LocationMode;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->f:Lcom/baidu/location/LocationClientOption$LocationMode;
+    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->mLocationModef:Lcom/baidu/location/LocationClientOption$LocationMode;
 
     return-object v0
 .end method
@@ -410,7 +410,7 @@
 .method public getProdName()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -426,7 +426,7 @@
 .method public getTimeOut()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/LocationClientOption;->d:I
+    iget v0, p0, Lcom/baidu/location/LocationClientOption;->mId:I
 
     return v0
 .end method
@@ -509,7 +509,7 @@
     if-eqz v1, :cond_1
 
     :cond_0
-    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/LocationClientOption;->mStringdo:Ljava/lang/String;
 
     :cond_1
     return-void
@@ -586,7 +586,7 @@
     iput-boolean v2, p0, Lcom/baidu/location/LocationClientOption;->for:Z
 
     :goto_0
-    iput-object p1, p0, Lcom/baidu/location/LocationClientOption;->f:Lcom/baidu/location/LocationClientOption$LocationMode;
+    iput-object p1, p0, Lcom/baidu/location/LocationClientOption;->mLocationModef:Lcom/baidu/location/LocationClientOption$LocationMode;
 
     return-void
 
@@ -600,7 +600,7 @@
     :pswitch_2
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/baidu/location/LocationClientOption;->h:I
+    iput v0, p0, Lcom/baidu/location/LocationClientOption;->mIh:I
 
     iput-boolean v2, p0, Lcom/baidu/location/LocationClientOption;->for:Z
 
@@ -627,7 +627,7 @@
 .method public setNeedDeviceDirect(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/LocationClientOption;->g:Z
+    iput-boolean p1, p0, Lcom/baidu/location/LocationClientOption;->isZg:Z
 
     return-void
 .end method
@@ -658,7 +658,7 @@
     move-result-object p1
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/location/LocationClientOption;->if:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/LocationClientOption;->mStringif:Ljava/lang/String;
 
     return-void
 .end method
@@ -674,7 +674,7 @@
 .method public setTimeOut(I)V
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/LocationClientOption;->d:I
+    iput p1, p0, Lcom/baidu/location/LocationClientOption;->mId:I
 
     return-void
 .end method

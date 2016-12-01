@@ -228,11 +228,11 @@
     .line 217
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mContextb:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->y:Landroid/util/DisplayMetrics;
+    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->mDisplayMetricsy:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
@@ -296,7 +296,7 @@
 
     .line 286
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -566,9 +566,9 @@
     const-string/jumbo v2, "image/search"
 
     .line 258
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     invoke-virtual {v3, v2, v1}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -589,7 +589,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 259
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v4, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
 
@@ -598,7 +598,7 @@
     move-result-object v0
 
     .line 260
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     invoke-virtual {v3, v2, v1, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -633,7 +633,7 @@
 
     .line 277
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0602ff
 

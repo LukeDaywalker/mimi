@@ -163,7 +163,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 32
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mStringa:Ljava/lang/String;
 
@@ -179,7 +179,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 

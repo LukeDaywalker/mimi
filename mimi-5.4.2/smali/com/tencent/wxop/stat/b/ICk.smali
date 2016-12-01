@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field public final d:Z
+.field public final isZd:Z
 
-.field public final e:Z
+.field public final isZe:Z
 
-.field public final f:Z
+.field public final isZf:Z
 
 .field private final mArrayBj:[B
 
@@ -212,13 +212,13 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->a:[B
+    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBa:[B
 
-    iput-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->d:Z
+    iput-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->isZd:Z
 
-    iput-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->e:Z
+    iput-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->isZe:Z
 
-    iput-boolean v1, p0, Lcom/tencent/wxop/stat/b/ICk;->f:Z
+    iput-boolean v1, p0, Lcom/tencent/wxop/stat/b/ICk;->isZf:Z
 
     sget-object v0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBh:[B
 
@@ -232,7 +232,7 @@
 
     iput v1, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->e:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -266,7 +266,7 @@
 
     iget-object v7, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBl:[B
 
-    iget-object v8, p0, Lcom/tencent/wxop/stat/b/ICk;->a:[B
+    iget-object v8, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBa:[B
 
     iget v2, p0, Lcom/tencent/wxop/stat/b/ICk;->mIk:I
 
@@ -326,7 +326,7 @@
 
     if-nez v2, :cond_14
 
-    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->f:Z
+    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->isZf:Z
 
     if-eqz v2, :cond_1
 
@@ -418,7 +418,7 @@
 
     if-nez v0, :cond_13
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->f:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->isZf:Z
 
     if-eqz v0, :cond_12
 
@@ -562,7 +562,7 @@
 
     aput-byte v4, v8, v2
 
-    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->d:Z
+    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->isZd:Z
 
     if-eqz v2, :cond_3
 
@@ -579,11 +579,11 @@
     aput-byte v4, v8, v2
 
     :cond_3
-    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->e:Z
+    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->isZe:Z
 
     if-eqz v2, :cond_5
 
-    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->f:Z
+    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->isZf:Z
 
     if-eqz v2, :cond_4
 
@@ -707,7 +707,7 @@
 
     aput-byte v0, v8, v4
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->d:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->isZd:Z
 
     if-eqz v0, :cond_11
 
@@ -718,11 +718,11 @@
     aput-byte v4, v8, v2
 
     :goto_7
-    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->e:Z
+    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->isZe:Z
 
     if-eqz v2, :cond_a
 
-    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->f:Z
+    iget-boolean v2, p0, Lcom/tencent/wxop/stat/b/ICk;->isZf:Z
 
     if-eqz v2, :cond_9
 
@@ -763,7 +763,7 @@
     goto :goto_6
 
     :cond_d
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->e:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->isZe:Z
 
     if-eqz v0, :cond_6
 
@@ -773,7 +773,7 @@
 
     if-eq v6, v0, :cond_6
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->f:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->isZf:Z
 
     if-eqz v0, :cond_10
 
@@ -802,7 +802,7 @@
     throw v0
 
     :cond_f
-    iput v5, p0, Lcom/tencent/wxop/stat/b/ICk;->b:I
+    iput v5, p0, Lcom/tencent/wxop/stat/b/ICk;->mIb:I
 
     iput v6, p0, Lcom/tencent/wxop/stat/b/ICk;->mIk:I
 

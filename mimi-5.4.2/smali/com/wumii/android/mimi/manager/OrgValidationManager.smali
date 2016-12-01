@@ -26,7 +26,7 @@
     aget-object v3, v1, v0
 
     .line 24
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a()Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->c:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventc:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-direct {v1, v0, v2, v3}, Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/OrgValidationEvent;)V
 
@@ -141,7 +141,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEvente:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/OrgValidationEvent;)V
 
@@ -166,7 +166,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->d:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventd:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/OrgValidationEvent;)V
 
@@ -191,7 +191,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventb:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/OrgValidationEvent;)V
 
@@ -212,7 +212,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventb:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b()Ljava/lang/String;
 
@@ -234,7 +234,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->d:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventd:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b()Ljava/lang/String;
 
@@ -253,7 +253,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEvente:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b()Ljava/lang/String;
 
@@ -272,7 +272,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->c:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventc:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b()Ljava/lang/String;
 
@@ -332,15 +332,15 @@
     .line 42
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
-    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->c:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventc:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->c:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventc:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b()Ljava/lang/String;
 
@@ -351,7 +351,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 43
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -381,15 +381,15 @@
     .line 32
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
-    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventb:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventb:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b()Ljava/lang/String;
 
@@ -400,7 +400,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 33
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -441,15 +441,15 @@
     .line 51
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
-    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->d:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventd:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->d:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEventd:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b()Ljava/lang/String;
 
@@ -460,7 +460,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 52
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -501,15 +501,15 @@
     .line 60
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
-    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEvente:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mOrgValidationEvente:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/OrgValidationEvent;->b()Ljava/lang/String;
 
@@ -520,7 +520,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 61
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 

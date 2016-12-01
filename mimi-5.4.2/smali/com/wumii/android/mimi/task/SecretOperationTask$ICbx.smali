@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final enum a:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
-
-.field public static final enum b:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
-
-.field public static final enum c:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
-
-.field public static final enum d:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
-
-.field public static final enum e:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
-
 .field private static final synthetic mArrayICbxh:[Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+
+.field public static final enum mICbxa:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+
+.field public static final enum mICbxb:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+
+.field public static final enum mICbxc:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+
+.field public static final enum mICbxd:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+
+.field public static final enum mICbxe:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
 
 # instance fields
@@ -60,7 +60,7 @@
 
     invoke-direct {v0, v1, v4, v2, v3}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->a:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxa:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     .line 16
     new-instance v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
@@ -73,7 +73,7 @@
 
     invoke-direct {v0, v1, v5, v2, v3}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->b:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxb:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     .line 17
     new-instance v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
@@ -86,7 +86,7 @@
 
     invoke-direct {v0, v1, v6, v2, v3}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->c:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxc:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     .line 18
     new-instance v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
@@ -99,7 +99,7 @@
 
     invoke-direct {v0, v1, v7, v2, v3}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->d:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxd:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     .line 19
     new-instance v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
@@ -112,30 +112,30 @@
 
     invoke-direct {v0, v1, v8, v2, v3}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->e:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxe:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     .line 13
     const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
-    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->a:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxa:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->b:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxb:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->c:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxc:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->d:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxd:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->e:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mICbxe:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     aput-object v1, v0, v8
 

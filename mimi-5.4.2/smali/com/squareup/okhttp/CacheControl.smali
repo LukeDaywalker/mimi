@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:Lcom/squareup/okhttp/CacheControl;
+.field public static final mCacheControla:Lcom/squareup/okhttp/CacheControl;
 
-.field public static final b:Lcom/squareup/okhttp/CacheControl;
+.field public static final mCacheControlb:Lcom/squareup/okhttp/CacheControl;
 
 
 # instance fields
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/CacheControl;->a:Lcom/squareup/okhttp/CacheControl;
+    sput-object v0, Lcom/squareup/okhttp/CacheControl;->mCacheControla:Lcom/squareup/okhttp/CacheControl;
 
     .line 28
     new-instance v0, Lcom/squareup/okhttp/CacheControl$ICf;
@@ -79,7 +79,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/CacheControl;->b:Lcom/squareup/okhttp/CacheControl;
+    sput-object v0, Lcom/squareup/okhttp/CacheControl;->mCacheControlb:Lcom/squareup/okhttp/CacheControl;
 
     .line 28
     return-void

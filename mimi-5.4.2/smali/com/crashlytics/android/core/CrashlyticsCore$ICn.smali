@@ -75,7 +75,7 @@
     .line 912
     iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
-    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsData;->c:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsData;->mPromptSettingsDatac:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     invoke-static {v0, v1, v2}, Lcom/crashlytics/android/core/CrashlyticsCore;->a(Lcom/crashlytics/android/core/CrashlyticsCore;Landroid/app/Activity;Lio/fabric/sdk/android/services/settings/PromptSettingsData;)Z
 

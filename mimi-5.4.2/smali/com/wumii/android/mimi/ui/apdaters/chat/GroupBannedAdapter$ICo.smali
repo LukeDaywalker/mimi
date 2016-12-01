@@ -86,7 +86,7 @@
     .line 146
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter$ICo;->mGroupBannedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->a:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mContexta:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 

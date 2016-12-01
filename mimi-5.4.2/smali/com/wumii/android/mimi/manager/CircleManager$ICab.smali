@@ -53,7 +53,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/CircleManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/CircleManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->a()Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -83,7 +83,7 @@
     .line 346
     iget-object v2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/manager/CircleManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, v2, Lcom/wumii/android/mimi/manager/CircleManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 

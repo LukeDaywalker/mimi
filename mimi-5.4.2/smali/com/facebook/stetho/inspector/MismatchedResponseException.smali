@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:J
+.field public mJa:J
 
 
 # direct methods
@@ -40,7 +40,7 @@
     invoke-direct {p0, v0}, Lcom/facebook/stetho/inspector/MessageHandlingException;-><init>(Ljava/lang/String;)V
 
     .line 10
-    iput-wide p1, p0, Lcom/facebook/stetho/inspector/MismatchedResponseException;->a:J
+    iput-wide p1, p0, Lcom/facebook/stetho/inspector/MismatchedResponseException;->mJa:J
 
     .line 11
     return-void

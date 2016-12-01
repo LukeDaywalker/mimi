@@ -33,7 +33,7 @@
 
     const/4 v3, 0x0
 
-    iget v4, p0, Lcom/umeng/analytics/Gender$ICe;->d:I
+    iget v4, p0, Lcom/umeng/analytics/Gender$ICe;->mId:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

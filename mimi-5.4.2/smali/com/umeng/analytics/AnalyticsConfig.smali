@@ -4,41 +4,41 @@
 
 
 # static fields
-.field public static a:Ljava/lang/String;
+.field public static isZj:Z
 
-.field public static b:Ljava/lang/String;
+.field public static isZk:Z
 
-.field public static c:I
+.field public static isZl:Z
 
-.field public static d:Ljava/lang/String;
-
-.field public static e:Ljava/lang/String;
-
-.field public static f:Lcom/umeng/analytics/Gender;
-
-.field public static g:I
-
-.field public static h:Ljava/lang/String;
-
-.field public static i:Ljava/lang/String;
-
-.field public static j:Z
-
-.field public static k:Z
-
-.field public static l:Z
-
-.field public static m:Z
+.field public static isZm:Z
 
 .field private static mArrayDq:[D
 
 .field private static mArrayIr:[I
 
+.field public static mGenderf:Lcom/umeng/analytics/Gender;
+
+.field public static mIc:I
+
+.field public static mIg:I
+
+.field public static mJn:J
+
+.field public static mStringa:Ljava/lang/String;
+
+.field public static mStringb:Ljava/lang/String;
+
+.field public static mStringd:Ljava/lang/String;
+
+.field public static mStringe:Ljava/lang/String;
+
+.field public static mStringh:Ljava/lang/String;
+
+.field public static mStringi:Ljava/lang/String;
+
 .field private static mStringo:Ljava/lang/String;
 
 .field private static mStringp:Ljava/lang/String;
-
-.field public static n:J
 
 
 # direct methods
@@ -57,40 +57,40 @@
     sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringp:Ljava/lang/String;
 
     .line 11
-    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->a:Ljava/lang/String;
+    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringa:Ljava/lang/String;
 
     .line 12
-    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->b:Ljava/lang/String;
+    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringb:Ljava/lang/String;
 
     .line 16
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->d:Ljava/lang/String;
+    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringd:Ljava/lang/String;
 
     .line 17
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->e:Ljava/lang/String;
+    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringe:Ljava/lang/String;
 
     .line 51
     sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mArrayDq:[D
 
     .line 84
-    sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->j:Z
+    sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->isZj:Z
 
     .line 85
-    sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->k:Z
+    sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->isZk:Z
 
     .line 86
-    sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->l:Z
+    sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->isZl:Z
 
     .line 87
-    sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->m:Z
+    sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->isZm:Z
 
     .line 88
     const-wide/16 v0, 0x7530
 
-    sput-wide v0, Lcom/umeng/analytics/AnalyticsConfig;->n:J
+    sput-wide v0, Lcom/umeng/analytics/AnalyticsConfig;->mJn:J
 
     return-void
 .end method

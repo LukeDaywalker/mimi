@@ -57,7 +57,7 @@
     move-result-object v0
 
     .line 427
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     if-nez v2, :cond_0
 
@@ -72,12 +72,12 @@
 
     .line 430
     :cond_0
-    iget-short v2, v0, Lu/aly/TField;->c:S
+    iget-short v2, v0, Lu/aly/TField;->mSc:S
 
     packed-switch v2, :pswitch_data_0
 
     .line 497
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -89,7 +89,7 @@
 
     .line 432
     :pswitch_0
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     const/16 v3, 0xb
 
@@ -109,7 +109,7 @@
 
     .line 436
     :cond_1
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -117,7 +117,7 @@
 
     .line 440
     :pswitch_1
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     if-ne v2, v6, :cond_3
 
@@ -129,7 +129,7 @@
     .line 443
     new-instance v0, Ljava/util/ArrayList;
 
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(I)V
 
@@ -139,7 +139,7 @@
 
     .line 444
     :goto_2
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     if-ge v0, v3, :cond_2
 
@@ -172,7 +172,7 @@
 
     .line 455
     :cond_3
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -180,7 +180,7 @@
 
     .line 459
     :pswitch_2
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     if-ne v2, v6, :cond_5
 
@@ -192,7 +192,7 @@
     .line 462
     new-instance v0, Ljava/util/ArrayList;
 
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(I)V
 
@@ -202,7 +202,7 @@
 
     .line 463
     :goto_3
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     if-ge v0, v3, :cond_4
 
@@ -235,7 +235,7 @@
 
     .line 474
     :cond_5
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 
@@ -243,7 +243,7 @@
 
     .line 478
     :pswitch_3
-    iget-byte v2, v0, Lu/aly/TField;->b:B
+    iget-byte v2, v0, Lu/aly/TField;->mBb:B
 
     if-ne v2, v6, :cond_7
 
@@ -255,7 +255,7 @@
     .line 481
     new-instance v0, Ljava/util/ArrayList;
 
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(I)V
 
@@ -265,7 +265,7 @@
 
     .line 482
     :goto_4
-    iget v3, v2, Lu/aly/TList;->b:I
+    iget v3, v2, Lu/aly/TList;->mIb:I
 
     if-ge v0, v3, :cond_6
 
@@ -298,7 +298,7 @@
 
     .line 493
     :cond_7
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     invoke-static {p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;B)V
 

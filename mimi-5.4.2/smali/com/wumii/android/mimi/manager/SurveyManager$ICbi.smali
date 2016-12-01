@@ -65,7 +65,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->c()Ljava/lang/String;
 
@@ -91,7 +91,7 @@
     .line 78
     iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
@@ -113,7 +113,7 @@
     .line 80
     iget-object v4, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v4, v4, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v4, v4, Lcom/wumii/android/mimi/manager/SurveyManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
@@ -131,14 +131,14 @@
 
     move-result-object v3
 
-    sget-object v5, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v5, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-virtual {v4, v2, v3, v5}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
     .line 83
     iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
@@ -160,7 +160,7 @@
     .line 85
     iget-object v3, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, v3, Lcom/wumii/android/mimi/manager/SurveyManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
@@ -178,7 +178,7 @@
 
     move-result-object v0
 
-    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mFeedEventb:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-virtual {v3, v2, v0, v4}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
     :try_end_0

@@ -110,7 +110,7 @@
     move-result-object v0
 
     .line 276
-    sget-object v1, Lokio/Timeout;->b:Lokio/Timeout;
+    sget-object v1, Lokio/Timeout;->mTimeoutb:Lokio/Timeout;
 
     invoke-virtual {p1, v1}, Lokio/ForwardingTimeout;->a(Lokio/Timeout;)Lokio/ForwardingTimeout;
 
@@ -310,7 +310,7 @@
     iput v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mIg:I
 
     .line 113
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
@@ -384,7 +384,7 @@
     if-eqz v1, :cond_0
 
     .line 221
-    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v1, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     invoke-virtual {v1, p1, v0}, Lcom/squareup/okhttp/internal/Internal;->a(Lcom/squareup/okhttp/Headers$ICab;Ljava/lang/String;)V
 
@@ -563,7 +563,7 @@
 
     .prologue
     .line 137
-    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mConnectionb:Lcom/squareup/okhttp/Connection;
 
@@ -858,21 +858,21 @@
 
     invoke-direct {v1}, Lcom/squareup/okhttp/Response$ICau;-><init>()V
 
-    iget-object v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->a:Lcom/squareup/okhttp/Protocol;
+    iget-object v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     .line 194
     invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$ICau;
 
     move-result-object v1
 
-    iget v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->b:I
+    iget v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mIb:I
 
     .line 195
     invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(I)Lcom/squareup/okhttp/Response$ICau;
 
     move-result-object v1
 
-    iget-object v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->c:Ljava/lang/String;
+    iget-object v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mStringc:Ljava/lang/String;
 
     .line 196
     invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Ljava/lang/String;)Lcom/squareup/okhttp/Response$ICau;
@@ -888,9 +888,9 @@
     invoke-virtual {p0, v2}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/Headers$ICab;)V
 
     .line 200
-    sget-object v3, Lcom/squareup/okhttp/internal/http/OkHeaders;->d:Ljava/lang/String;
+    sget-object v3, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringd:Ljava/lang/String;
 
-    iget-object v4, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->a:Lcom/squareup/okhttp/Protocol;
+    iget-object v4, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     invoke-virtual {v4}, Lcom/squareup/okhttp/Protocol;->toString()Ljava/lang/String;
 
@@ -906,7 +906,7 @@
     invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$ICau;
 
     .line 203
-    iget v0, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->b:I
+    iget v0, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mIb:I
 
     const/16 v2, 0x64
 
@@ -951,7 +951,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
+    sget-object v3, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
     iget-object v4, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mConnectionb:Lcom/squareup/okhttp/Connection;
 

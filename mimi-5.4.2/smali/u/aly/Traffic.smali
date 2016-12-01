@@ -143,7 +143,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 115
-    sget-object v1, Lu/aly/Traffic$ICep;->a:Lu/aly/Traffic$ICep;
+    sget-object v1, Lu/aly/Traffic$ICep;->mICepa:Lu/aly/Traffic$ICep;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -158,7 +158,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 117
-    sget-object v1, Lu/aly/Traffic$ICep;->b:Lu/aly/Traffic$ICep;
+    sget-object v1, Lu/aly/Traffic$ICep;->mICepb:Lu/aly/Traffic$ICep;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

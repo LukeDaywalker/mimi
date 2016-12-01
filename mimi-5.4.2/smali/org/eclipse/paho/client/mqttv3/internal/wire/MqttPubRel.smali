@@ -28,7 +28,7 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPubRel;->a:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPubRel;->mIa:I
 
     .line 49
     invoke-virtual {v1}, Ljava/io/DataInputStream;->close()V
@@ -64,7 +64,7 @@
 
     .prologue
     .line 57
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPubRel;->b:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPubRel;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPubRel;->a:I
+    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPubRel;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 

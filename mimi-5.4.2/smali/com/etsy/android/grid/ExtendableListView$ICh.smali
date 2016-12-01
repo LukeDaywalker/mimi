@@ -108,7 +108,7 @@
 
     iget-object v4, p0, Lcom/etsy/android/grid/ExtendableListView$ICh;->mExtendableListViewb:Lcom/etsy/android/grid/ExtendableListView;
 
-    iget v4, v4, Lcom/etsy/android/grid/ExtendableListView;->b:I
+    iget v4, v4, Lcom/etsy/android/grid/ExtendableListView;->mIb:I
 
     add-int/2addr v4, v1
 

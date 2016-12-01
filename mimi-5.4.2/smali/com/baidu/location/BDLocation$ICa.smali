@@ -5,15 +5,15 @@
 # instance fields
 .field public byte:Ljava/lang/String;
 
-.field public do:Ljava/lang/String;
-
 .field public for:Ljava/lang/String;
-
-.field public if:Ljava/lang/String;
 
 .field public int:Ljava/lang/String;
 
 .field final synthetic mBDLocationa:Lcom/baidu/location/BDLocation;
+
+.field public mStringdo:Ljava/lang/String;
+
+.field public mStringif:Ljava/lang/String;
 
 .field public new:Ljava/lang/String;
 
@@ -30,7 +30,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation$ICa;->mStringif:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
@@ -38,7 +38,7 @@
 
     iput-object v0, p0, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation$ICa;->mStringdo:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 

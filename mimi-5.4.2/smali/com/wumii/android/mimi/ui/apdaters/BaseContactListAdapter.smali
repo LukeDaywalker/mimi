@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Landroid/view/LayoutInflater;
+.field protected mLayoutInflatera:Landroid/view/LayoutInflater;
 
 .field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 19
     new-instance v0, Ljava/util/ArrayList;

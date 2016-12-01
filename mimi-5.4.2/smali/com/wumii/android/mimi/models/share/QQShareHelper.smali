@@ -4,7 +4,7 @@
 
 
 # static fields
-.field protected static final a:Lorg/slf4j/Logger;
+.field protected static final mLoggera:Lorg/slf4j/Logger;
 
 .field private static mQQShareHelperb:Lcom/wumii/android/mimi/models/share/QQShareHelper;
 
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method

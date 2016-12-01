@@ -88,7 +88,7 @@
 
     if-eqz v2, :cond_0
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;->mIe:I
 
     :goto_0
     invoke-virtual {v4, v2}, Landroid/widget/TextView;->setTextColor(I)V
@@ -109,7 +109,7 @@
 
     .line 27
     :cond_0
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;->f:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;->mIf:I
 
     goto :goto_0
 .end method

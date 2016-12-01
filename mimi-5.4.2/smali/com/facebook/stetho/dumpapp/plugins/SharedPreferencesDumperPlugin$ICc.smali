@@ -15,19 +15,19 @@
 
 
 # static fields
-.field public static final enum a:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
-
-.field public static final enum b:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
-
-.field public static final enum c:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
-
-.field public static final enum d:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
-
-.field public static final enum e:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
-
-.field public static final enum f:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
-
 .field private static final synthetic mArrayICch:[Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+
+.field public static final enum mICca:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+
+.field public static final enum mICcb:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+
+.field public static final enum mICcc:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+
+.field public static final enum mICcd:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+
+.field public static final enum mICce:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+
+.field public static final enum mICcf:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
 
 # instance fields
@@ -58,7 +58,7 @@
 
     invoke-direct {v0, v1, v4, v2}, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->a:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICca:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     .line 198
     new-instance v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
@@ -69,7 +69,7 @@
 
     invoke-direct {v0, v1, v5, v2}, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->b:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICcb:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     .line 199
     new-instance v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
@@ -80,7 +80,7 @@
 
     invoke-direct {v0, v1, v6, v2}, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->c:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICcc:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     .line 200
     new-instance v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
@@ -91,7 +91,7 @@
 
     invoke-direct {v0, v1, v7, v2}, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->d:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICcd:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     .line 201
     new-instance v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
@@ -102,7 +102,7 @@
 
     invoke-direct {v0, v1, v8, v2}, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->e:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICce:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     .line 202
     new-instance v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
@@ -115,36 +115,36 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->f:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICcf:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     .line 196
     const/4 v0, 0x6
 
     new-array v0, v0, [Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
-    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->a:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICca:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->b:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICcb:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->c:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICcc:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->d:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICcd:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->e:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICce:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     aput-object v1, v0, v8
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->f:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sget-object v2, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mICcf:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     aput-object v2, v0, v1
 

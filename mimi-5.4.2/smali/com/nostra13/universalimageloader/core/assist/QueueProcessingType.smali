@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final enum a:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
-
-.field public static final enum b:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
-
 .field private static final synthetic mArrayQueueProcessingTypec:[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+
+.field public static final enum mQueueProcessingTypea:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+
+.field public static final enum mQueueProcessingTypeb:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->a:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->mQueueProcessingTypea:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
@@ -46,18 +46,18 @@
 
     invoke-direct {v0, v1, v3}, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->b:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->mQueueProcessingTypeb:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     .line 24
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->a:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->mQueueProcessingTypea:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->b:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->mQueueProcessingTypeb:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     aput-object v1, v0, v3
 

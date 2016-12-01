@@ -19,15 +19,15 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/InstantMsg$ICcn;
-
-.field public static final enum b:Lu/aly/InstantMsg$ICcn;
-
-.field public static final enum c:Lu/aly/InstantMsg$ICcn;
-
-.field public static final enum d:Lu/aly/InstantMsg$ICcn;
-
 .field private static final synthetic mArrayICcnh:[Lu/aly/InstantMsg$ICcn;
+
+.field public static final enum mICcna:Lu/aly/InstantMsg$ICcn;
+
+.field public static final enum mICcnb:Lu/aly/InstantMsg$ICcn;
+
+.field public static final enum mICcnc:Lu/aly/InstantMsg$ICcn;
+
+.field public static final enum mICcnd:Lu/aly/InstantMsg$ICcn;
 
 .field private static final mMape:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -72,7 +72,7 @@
 
     invoke-direct {v0, v1, v6, v3, v2}, Lu/aly/InstantMsg$ICcn;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/InstantMsg$ICcn;->a:Lu/aly/InstantMsg$ICcn;
+    sput-object v0, Lu/aly/InstantMsg$ICcn;->mICcna:Lu/aly/InstantMsg$ICcn;
 
     .line 54
     new-instance v0, Lu/aly/InstantMsg$ICcn;
@@ -83,7 +83,7 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/InstantMsg$ICcn;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/InstantMsg$ICcn;->b:Lu/aly/InstantMsg$ICcn;
+    sput-object v0, Lu/aly/InstantMsg$ICcn;->mICcnb:Lu/aly/InstantMsg$ICcn;
 
     .line 55
     new-instance v0, Lu/aly/InstantMsg$ICcn;
@@ -94,7 +94,7 @@
 
     invoke-direct {v0, v1, v4, v5, v2}, Lu/aly/InstantMsg$ICcn;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/InstantMsg$ICcn;->c:Lu/aly/InstantMsg$ICcn;
+    sput-object v0, Lu/aly/InstantMsg$ICcn;->mICcnc:Lu/aly/InstantMsg$ICcn;
 
     .line 56
     new-instance v0, Lu/aly/InstantMsg$ICcn;
@@ -105,24 +105,24 @@
 
     invoke-direct {v0, v1, v5, v7, v2}, Lu/aly/InstantMsg$ICcn;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/InstantMsg$ICcn;->d:Lu/aly/InstantMsg$ICcn;
+    sput-object v0, Lu/aly/InstantMsg$ICcn;->mICcnd:Lu/aly/InstantMsg$ICcn;
 
     .line 52
     new-array v0, v7, [Lu/aly/InstantMsg$ICcn;
 
-    sget-object v1, Lu/aly/InstantMsg$ICcn;->a:Lu/aly/InstantMsg$ICcn;
+    sget-object v1, Lu/aly/InstantMsg$ICcn;->mICcna:Lu/aly/InstantMsg$ICcn;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lu/aly/InstantMsg$ICcn;->b:Lu/aly/InstantMsg$ICcn;
+    sget-object v1, Lu/aly/InstantMsg$ICcn;->mICcnb:Lu/aly/InstantMsg$ICcn;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lu/aly/InstantMsg$ICcn;->c:Lu/aly/InstantMsg$ICcn;
+    sget-object v1, Lu/aly/InstantMsg$ICcn;->mICcnc:Lu/aly/InstantMsg$ICcn;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lu/aly/InstantMsg$ICcn;->d:Lu/aly/InstantMsg$ICcn;
+    sget-object v1, Lu/aly/InstantMsg$ICcn;->mICcnd:Lu/aly/InstantMsg$ICcn;
 
     aput-object v1, v0, v5
 

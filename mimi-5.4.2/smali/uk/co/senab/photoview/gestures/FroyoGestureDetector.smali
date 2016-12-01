@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field protected final f:Landroid/view/ScaleGestureDetector;
+.field protected final mScaleGestureDetectorf:Landroid/view/ScaleGestureDetector;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v1, p1, v0}, Landroid/view/ScaleGestureDetector;-><init>(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;)V
 
-    iput-object v1, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->f:Landroid/view/ScaleGestureDetector;
+    iput-object v1, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->mScaleGestureDetectorf:Landroid/view/ScaleGestureDetector;
 
     .line 50
     return-void
@@ -44,7 +44,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->f:Landroid/view/ScaleGestureDetector;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->mScaleGestureDetectorf:Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {v0}, Landroid/view/ScaleGestureDetector;->isInProgress()Z
 
@@ -58,7 +58,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->f:Landroid/view/ScaleGestureDetector;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->mScaleGestureDetectorf:Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {v0, p1}, Landroid/view/ScaleGestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 

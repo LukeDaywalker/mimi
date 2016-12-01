@@ -12,7 +12,7 @@
 
     .prologue
     .line 37
-    sget-object v5, Lio/fabric/sdk/android/services/network/HttpMethod;->b:Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v5, Lio/fabric/sdk/android/services/network/HttpMethod;->mHttpMethodb:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     move-object v0, p0
 
@@ -37,7 +37,7 @@
     .line 74
     const-string/jumbo v0, "X-CRASHLYTICS-API-KEY"
 
-    iget-object v1, p2, Lcom/crashlytics/android/core/CreateReportRequest;->a:Ljava/lang/String;
+    iget-object v1, p2, Lcom/crashlytics/android/core/CreateReportRequest;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Lio/fabric/sdk/android/services/network/HttpRequest;->a(Ljava/lang/String;Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest;
 
@@ -66,7 +66,7 @@
     move-result-object v0
 
     .line 79
-    iget-object v1, p2, Lcom/crashlytics/android/core/CreateReportRequest;->b:Lcom/crashlytics/android/core/Report;
+    iget-object v1, p2, Lcom/crashlytics/android/core/CreateReportRequest;->mReportb:Lcom/crashlytics/android/core/Report;
 
     invoke-interface {v1}, Lcom/crashlytics/android/core/Report;->e()Ljava/util/Map;
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p2, Lcom/crashlytics/android/core/CreateReportRequest;->b:Lcom/crashlytics/android/core/Report;
+    iget-object v0, p2, Lcom/crashlytics/android/core/CreateReportRequest;->mReportb:Lcom/crashlytics/android/core/Report;
 
     .line 90
     const-string/jumbo v1, "report[file]"

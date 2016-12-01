@@ -15,51 +15,51 @@
 
 
 # static fields
-.field public static final enum a:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum b:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum c:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum d:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum e:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum f:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum g:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum h:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum i:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum j:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum k:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field public static final enum m:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
 .field private static final synthetic mArrayErrorCodev:[Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
-.field public static final enum n:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+.field public static final enum mErrorCodea:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
-.field public static final enum o:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+.field public static final enum mErrorCodeb:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
-.field public static final enum p:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+.field public static final enum mErrorCodec:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
-.field public static final enum q:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+.field public static final enum mErrorCoded:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
-.field public static final enum r:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+.field public static final enum mErrorCodee:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodef:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodeg:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodeh:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodei:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodej:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodek:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodem:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCoden:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodeo:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodep:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCodeq:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
+.field public static final enum mErrorCoder:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
 
 # instance fields
-.field public final s:I
+.field public final mIs:I
 
-.field public final t:I
+.field public final mIt:I
 
-.field public final u:I
+.field public final mIu:I
 
 
 # direct methods
@@ -88,7 +88,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->a:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodea:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 23
     new-instance v5, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -103,7 +103,7 @@
 
     invoke-direct/range {v5 .. v10}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v5, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->b:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v5, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeb:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 26
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -120,7 +120,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->c:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodec:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 29
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -137,7 +137,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->d:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCoded:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 32
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -154,7 +154,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->e:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodee:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 35
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -171,7 +171,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->f:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodef:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 37
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -188,7 +188,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->g:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeg:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 39
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -205,7 +205,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->h:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeh:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 41
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -222,7 +222,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->i:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodei:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 43
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -239,7 +239,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->j:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodej:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 45
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -256,7 +256,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->k:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodek:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 47
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -273,7 +273,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 49
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -290,7 +290,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->m:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodem:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 51
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -307,7 +307,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->n:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCoden:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 53
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -324,7 +324,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->o:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeo:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 55
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -341,7 +341,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->p:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodep:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 57
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -358,7 +358,7 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->q:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeq:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 59
     new-instance v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -375,110 +375,110 @@
 
     invoke-direct/range {v8 .. v13}, Lcom/squareup/okhttp/internal/spdy/ErrorCode;-><init>(Ljava/lang/String;IIII)V
 
-    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->r:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v8, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCoder:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     .line 19
     const/16 v0, 0x12
 
     new-array v0, v0, [Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->a:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodea:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->b:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeb:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->c:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodec:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v1, v0, v14
 
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->d:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCoded:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v1, v0, v15
 
     const/4 v1, 0x4
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->e:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodee:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->f:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodef:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->g:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeg:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->h:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeh:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->i:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodei:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->j:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodej:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->k:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodek:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xc
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->m:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodem:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xd
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->n:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCoden:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xe
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->o:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeo:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xf
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->p:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodep:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x10
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->q:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCodeq:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x11
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->r:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mErrorCoder:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     aput-object v2, v0, v1
 
@@ -500,13 +500,13 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 66
-    iput p3, p0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->s:I
+    iput p3, p0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIs:I
 
     .line 67
-    iput p4, p0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->t:I
+    iput p4, p0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIt:I
 
     .line 68
-    iput p5, p0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->u:I
+    iput p5, p0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIu:I
 
     .line 69
     return-void
@@ -533,7 +533,7 @@
     aget-object v0, v2, v1
 
     .line 73
-    iget v4, v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->t:I
+    iget v4, v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIt:I
 
     if-ne v4, p0, :cond_0
 
@@ -577,7 +577,7 @@
     aget-object v0, v2, v1
 
     .line 80
-    iget v4, v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->s:I
+    iget v4, v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIs:I
 
     if-ne v4, p0, :cond_0
 
@@ -621,7 +621,7 @@
     aget-object v0, v2, v1
 
     .line 87
-    iget v4, v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->u:I
+    iget v4, v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mIu:I
 
     if-ne v4, p0, :cond_0
 

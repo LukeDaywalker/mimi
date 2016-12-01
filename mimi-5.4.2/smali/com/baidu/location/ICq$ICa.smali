@@ -22,7 +22,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICq$ICa;->cZ:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/location/ICq$ICa;->mListcZ:Ljava/util/List;
 
     return-void
 .end method
@@ -36,9 +36,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICq$ICa;->cX:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICq$ICa;->mStringcX:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICa;->cZ:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICa;->mListcZ:Ljava/util/List;
 
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -66,7 +66,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICa;->cY:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICa;->mHttpEntitycY:Lorg/apache/http/HttpEntity;
 
     if-eqz v0, :cond_0
 

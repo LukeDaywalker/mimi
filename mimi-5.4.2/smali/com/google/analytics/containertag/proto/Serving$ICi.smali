@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final a:[Lcom/google/analytics/containertag/proto/Serving$ICi;
+.field public static final mArrayICia:[Lcom/google/analytics/containertag/proto/Serving$ICi;
 
 
 # instance fields
-.field public b:Ljava/lang/String;
+.field public mICbc:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
-.field public c:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+.field public mICed:Lcom/google/analytics/containertag/proto/Serving$ICe;
 
-.field public d:Lcom/google/analytics/containertag/proto/Serving$ICe;
+.field public mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     new-array v0, v0, [Lcom/google/analytics/containertag/proto/Serving$ICi;
 
-    sput-object v0, Lcom/google/analytics/containertag/proto/Serving$ICi;->a:[Lcom/google/analytics/containertag/proto/Serving$ICi;
+    sput-object v0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mArrayICia:[Lcom/google/analytics/containertag/proto/Serving$ICi;
 
     return-void
 .end method
@@ -42,13 +42,13 @@
     .line 2282
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mStringb:Ljava/lang/String;
 
     .line 2285
-    iput-object v1, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->c:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iput-object v1, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICbc:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     .line 2288
-    iput-object v1, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->d:Lcom/google/analytics/containertag/proto/Serving$ICe;
+    iput-object v1, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICed:Lcom/google/analytics/containertag/proto/Serving$ICe;
 
     .line 2279
     return-void
@@ -87,38 +87,38 @@
     check-cast p1, Lcom/google/analytics/containertag/proto/Serving$ICi;
 
     .line 2304
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mStringb:Ljava/lang/String;
 
     if-nez v2, :cond_4
 
-    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->b:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->mStringb:Ljava/lang/String;
 
     if-nez v2, :cond_3
 
     :goto_1
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->c:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICbc:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     if-nez v2, :cond_5
 
-    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->c:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICbc:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     if-nez v2, :cond_3
 
     :goto_2
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->d:Lcom/google/analytics/containertag/proto/Serving$ICe;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICed:Lcom/google/analytics/containertag/proto/Serving$ICe;
 
     if-nez v2, :cond_6
 
-    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->d:Lcom/google/analytics/containertag/proto/Serving$ICe;
+    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICed:Lcom/google/analytics/containertag/proto/Serving$ICe;
 
     if-nez v2, :cond_3
 
     :goto_3
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->s:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mLists:Ljava/util/List;
 
     if-nez v2, :cond_7
 
-    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->s:Ljava/util/List;
+    iget-object v2, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->mLists:Ljava/util/List;
 
     if-eqz v2, :cond_0
 
@@ -128,9 +128,9 @@
     goto :goto_0
 
     :cond_4
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mStringb:Ljava/lang/String;
 
-    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->b:Ljava/lang/String;
+    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -141,9 +141,9 @@
     goto :goto_1
 
     :cond_5
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->c:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICbc:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
-    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->c:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICbc:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     invoke-virtual {v2, v3}, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->equals(Ljava/lang/Object;)Z
 
@@ -154,9 +154,9 @@
     goto :goto_2
 
     :cond_6
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->d:Lcom/google/analytics/containertag/proto/Serving$ICe;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICed:Lcom/google/analytics/containertag/proto/Serving$ICe;
 
-    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->d:Lcom/google/analytics/containertag/proto/Serving$ICe;
+    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICed:Lcom/google/analytics/containertag/proto/Serving$ICe;
 
     invoke-virtual {v2, v3}, Lcom/google/analytics/containertag/proto/Serving$ICe;->equals(Ljava/lang/Object;)Z
 
@@ -167,9 +167,9 @@
     goto :goto_3
 
     :cond_7
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->s:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mLists:Ljava/util/List;
 
-    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->s:Ljava/util/List;
+    iget-object v3, p1, Lcom/google/analytics/containertag/proto/Serving$ICi;->mLists:Ljava/util/List;
 
     invoke-interface {v2, v3}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -188,7 +188,7 @@
 
     .line 2311
     .line 2312
-    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mStringb:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -200,7 +200,7 @@
     .line 2313
     mul-int/lit8 v2, v0, 0x1f
 
-    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->c:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICbc:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     if-nez v0, :cond_1
 
@@ -212,7 +212,7 @@
     .line 2314
     mul-int/lit8 v2, v0, 0x1f
 
-    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->d:Lcom/google/analytics/containertag/proto/Serving$ICe;
+    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICed:Lcom/google/analytics/containertag/proto/Serving$ICe;
 
     if-nez v0, :cond_2
 
@@ -224,7 +224,7 @@
     .line 2315
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->s:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mLists:Ljava/util/List;
 
     if-nez v2, :cond_3
 
@@ -236,7 +236,7 @@
 
     .line 2312
     :cond_0
-    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -246,7 +246,7 @@
 
     .line 2313
     :cond_1
-    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->c:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICbc:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     invoke-virtual {v0}, Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;->hashCode()I
 
@@ -256,7 +256,7 @@
 
     .line 2314
     :cond_2
-    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->d:Lcom/google/analytics/containertag/proto/Serving$ICe;
+    iget-object v0, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mICed:Lcom/google/analytics/containertag/proto/Serving$ICe;
 
     invoke-virtual {v0}, Lcom/google/analytics/containertag/proto/Serving$ICe;->hashCode()I
 
@@ -266,7 +266,7 @@
 
     .line 2315
     :cond_3
-    iget-object v1, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->s:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/analytics/containertag/proto/Serving$ICi;->mLists:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->hashCode()I
 

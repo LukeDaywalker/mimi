@@ -4,7 +4,7 @@
 
 
 # static fields
-.field protected static final a:Lorg/slf4j/Logger;
+.field protected static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserBase;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserBase;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method

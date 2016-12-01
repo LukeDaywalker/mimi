@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field public a:I
-
-.field public b:I
-
-.field public c:J
-
 .field private mContexth:Landroid/content/Context;
+
+.field public mIa:I
+
+.field public mIb:I
 
 .field private final mId:I
 
 .field private mIe:I
+
+.field public mJc:J
 
 .field private mJf:J
 
@@ -121,7 +121,7 @@
 
     move-result v1
 
-    iput v1, p0, Lu/aly/StatTracer;->a:I
+    iput v1, p0, Lu/aly/StatTracer;->mIa:I
 
     .line 42
     const-string/jumbo v1, "failed_requests "
@@ -130,7 +130,7 @@
 
     move-result v1
 
-    iput v1, p0, Lu/aly/StatTracer;->b:I
+    iput v1, p0, Lu/aly/StatTracer;->mIb:I
 
     .line 44
     const-string/jumbo v1, "last_request_spent_ms"
@@ -150,7 +150,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lu/aly/StatTracer;->c:J
+    iput-wide v0, p0, Lu/aly/StatTracer;->mJc:J
 
     .line 46
     return-void
@@ -163,7 +163,7 @@
 
     .prologue
     .line 53
-    iget-wide v0, p0, Lu/aly/StatTracer;->c:J
+    iget-wide v0, p0, Lu/aly/StatTracer;->mJc:J
 
     const-wide/16 v2, 0x0
 
@@ -187,16 +187,16 @@
 
     .prologue
     .line 57
-    iget v0, p0, Lu/aly/StatTracer;->a:I
+    iget v0, p0, Lu/aly/StatTracer;->mIa:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lu/aly/StatTracer;->a:I
+    iput v0, p0, Lu/aly/StatTracer;->mIa:I
 
     .line 59
     iget-wide v0, p0, Lu/aly/StatTracer;->mJf:J
 
-    iput-wide v0, p0, Lu/aly/StatTracer;->c:J
+    iput-wide v0, p0, Lu/aly/StatTracer;->mJc:J
 
     .line 60
     return-void
@@ -207,11 +207,11 @@
 
     .prologue
     .line 63
-    iget v0, p0, Lu/aly/StatTracer;->b:I
+    iget v0, p0, Lu/aly/StatTracer;->mIb:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lu/aly/StatTracer;->b:I
+    iput v0, p0, Lu/aly/StatTracer;->mIb:I
 
     .line 64
     return-void
@@ -271,7 +271,7 @@
 
     const-string/jumbo v1, "successful_request"
 
-    iget v2, p0, Lu/aly/StatTracer;->a:I
+    iget v2, p0, Lu/aly/StatTracer;->mIa:I
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
@@ -279,7 +279,7 @@
 
     const-string/jumbo v1, "failed_requests "
 
-    iget v2, p0, Lu/aly/StatTracer;->b:I
+    iget v2, p0, Lu/aly/StatTracer;->mIb:I
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
@@ -295,7 +295,7 @@
 
     const-string/jumbo v1, "last_request_time"
 
-    iget-wide v2, p0, Lu/aly/StatTracer;->c:J
+    iget-wide v2, p0, Lu/aly/StatTracer;->mJc:J
 
     invoke-interface {v0, v1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 

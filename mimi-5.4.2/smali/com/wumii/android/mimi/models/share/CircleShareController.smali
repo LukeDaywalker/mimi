@@ -96,7 +96,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->mActivitya:Landroid/app/Activity;
 
     const-string/jumbo v1, "user_sms"
 
@@ -119,7 +119,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/CircleShareController;->o()Ljava/lang/String;
 
@@ -257,7 +257,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->c:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->mAppConfigModulec:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->getCircleSecretSharePrefix()Ljava/lang/String;
 

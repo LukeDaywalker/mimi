@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field protected e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
-
-.field protected f:Lcom/wumii/android/mimi/util/ContextToast;
-
-.field protected g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
-
-.field protected h:Z
-
-.field protected i:Lcom/wumii/android/mimi/models/AppFacade;
-
 .field private isZa:Z
+
+.field protected isZh:Z
+
+.field protected mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
+
+.field protected mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
+
+.field protected mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+
+.field protected mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 
 # direct methods
@@ -65,39 +65,39 @@
     invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/task/BaseAsyncTask;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
     .line 70
-    iput-boolean p3, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->h:Z
+    iput-boolean p3, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZh:Z
 
     .line 71
     new-instance v0, Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 72
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->i:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 75
     return-void
@@ -161,7 +161,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
 
@@ -192,7 +192,7 @@
     if-eqz v1, :cond_0
 
     .line 259
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -256,7 +256,7 @@
 
     .prologue
     .line 133
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZh:Z
 
     if-nez v0, :cond_0
 
@@ -267,7 +267,7 @@
     if-eqz v0, :cond_0
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const/4 v1, 0x0
 
@@ -381,7 +381,7 @@
     if-eqz v0, :cond_2
 
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
@@ -390,12 +390,12 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;)V
 
     .line 142
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZh:Z
 
     if-nez v0, :cond_0
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060395
 
@@ -417,7 +417,7 @@
     if-eqz v0, :cond_4
 
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
@@ -426,12 +426,12 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;)V
 
     .line 149
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZh:Z
 
     if-nez v0, :cond_3
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060396
 
@@ -450,7 +450,7 @@
     if-eqz v0, :cond_5
 
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextb:Landroid/content/Context;
 
     const v1, 0x7f060367
 
@@ -459,7 +459,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextb:Landroid/content/Context;
 
     instance-of v0, v0, Landroid/app/Activity;
 
@@ -468,7 +468,7 @@
     .line 159
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextb:Landroid/content/Context;
 
     const-class v2, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
@@ -485,7 +485,7 @@
     invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 162
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -550,7 +550,7 @@
     if-eqz v0, :cond_8
 
     .line 186
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-interface {v2, v0}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;)V
 
@@ -565,7 +565,7 @@
     if-ne v1, v2, :cond_9
 
     .line 190
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -599,7 +599,7 @@
     if-eqz v0, :cond_b
 
     .line 202
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
@@ -608,12 +608,12 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;)V
 
     .line 203
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZh:Z
 
     if-nez v0, :cond_1
 
     .line 204
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {v0, v2, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
@@ -637,7 +637,7 @@
     if-eqz v0, :cond_d
 
     .line 215
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->b:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafb:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "HttpAsyncTask EOF Exception"
 
@@ -650,12 +650,12 @@
     if-eqz v0, :cond_e
 
     .line 219
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZh:Z
 
     if-nez v0, :cond_1
 
     .line 220
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->f:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextToastf:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {v0, v2, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
@@ -670,7 +670,7 @@
     if-nez v0, :cond_1
 
     .line 229
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->c:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mLoggerc:Lorg/slf4j/Logger;
 
     invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -746,12 +746,12 @@
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZh:Z
 
     if-nez v0, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->mContextb:Landroid/content/Context;
 
     const v1, 0x7f060395
 

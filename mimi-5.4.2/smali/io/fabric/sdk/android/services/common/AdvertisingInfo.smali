@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final isZb:Z
 
-.field public final b:Z
+.field public final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 25
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     .line 26
-    iput-boolean p2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->b:Z
+    iput-boolean p2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->isZb:Z
 
     .line 27
     return-void
@@ -69,9 +69,9 @@
     check-cast p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;
 
     .line 36
-    iget-boolean v2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->b:Z
+    iget-boolean v2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->isZb:Z
 
-    iget-boolean v3, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->b:Z
+    iget-boolean v3, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->isZb:Z
 
     if-eq v2, v3, :cond_4
 
@@ -81,13 +81,13 @@
 
     .line 37
     :cond_4
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     if-eqz v2, :cond_5
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
-    iget-object v3, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v3, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -103,7 +103,7 @@
 
     .line 37
     :cond_5
-    iget-object v2, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v2, p1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
@@ -117,11 +117,11 @@
     const/4 v1, 0x0
 
     .line 46
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->a:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -131,7 +131,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->b:Z
+    iget-boolean v2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->isZb:Z
 
     if-eqz v2, :cond_0
 

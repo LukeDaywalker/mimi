@@ -192,7 +192,7 @@
 
     .prologue
     .line 63
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->b:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->mQueueProcessingTypeb:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     if-ne p2, v0, :cond_0
 

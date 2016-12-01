@@ -34,7 +34,7 @@
 .method public a()Lcom/tencent/stat/b/ICf;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/b/ICf;->b:Lcom/tencent/stat/b/ICf;
+    sget-object v0, Lcom/tencent/stat/b/ICf;->mICfb:Lcom/tencent/stat/b/ICf;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 
     const-string/jumbo v0, "ut"
 
-    iget-object v1, p0, Lcom/tencent/stat/b/ICe;->e:Lcom/tencent/stat/a/ICn;
+    iget-object v1, p0, Lcom/tencent/stat/b/ICe;->mICne:Lcom/tencent/stat/a/ICn;
 
     invoke-virtual {v1}, Lcom/tencent/stat/a/ICn;->c()I
 

@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field protected final a:F
+.field protected final mBitmapShadere:Landroid/graphics/BitmapShader;
 
-.field protected final b:I
+.field protected final mFa:F
 
-.field protected final c:Landroid/graphics/RectF;
+.field protected final mIb:I
 
-.field protected final d:Landroid/graphics/RectF;
+.field protected final mPaintf:Landroid/graphics/Paint;
 
-.field protected final e:Landroid/graphics/BitmapShader;
+.field protected final mRectFc:Landroid/graphics/RectF;
 
-.field protected final f:Landroid/graphics/Paint;
+.field protected final mRectFd:Landroid/graphics/RectF;
 
 
 # direct methods
@@ -32,15 +32,15 @@
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->c:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mRectFc:Landroid/graphics/RectF;
 
     .line 75
     int-to-float v0, p2
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->a:F
+    iput v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mFa:F
 
     .line 76
-    iput p3, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->b:I
+    iput p3, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mIb:I
 
     .line 78
     new-instance v0, Landroid/graphics/BitmapShader;
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, p1, v1, v2}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->e:Landroid/graphics/BitmapShader;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mBitmapShadere:Landroid/graphics/BitmapShader;
 
     .line 79
     new-instance v0, Landroid/graphics/RectF;
@@ -78,34 +78,34 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->d:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mRectFd:Landroid/graphics/RectF;
 
     .line 81
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->f:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mPaintf:Landroid/graphics/Paint;
 
     .line 82
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mPaintf:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v5}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 83
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mPaintf:Landroid/graphics/Paint;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->e:Landroid/graphics/BitmapShader;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mBitmapShadere:Landroid/graphics/BitmapShader;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
     .line 84
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mPaintf:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v5}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
     .line 85
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mPaintf:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v5}, Landroid/graphics/Paint;->setDither(Z)V
 
@@ -120,13 +120,13 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->c:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mRectFc:Landroid/graphics/RectF;
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->a:F
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mFa:F
 
-    iget v2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->a:F
+    iget v2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mFa:F
 
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->f:Landroid/graphics/Paint;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mPaintf:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
@@ -152,13 +152,13 @@
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
     .line 91
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->c:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mRectFc:Landroid/graphics/RectF;
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->b:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mIb:I
 
     int-to-float v1, v1
 
-    iget v2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->b:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mIb:I
 
     int-to-float v2, v2
 
@@ -166,7 +166,7 @@
 
     move-result v3
 
-    iget v4, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->b:I
+    iget v4, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mIb:I
 
     sub-int/2addr v3, v4
 
@@ -176,7 +176,7 @@
 
     move-result v4
 
-    iget v5, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->b:I
+    iget v5, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mIb:I
 
     sub-int/2addr v4, v5
 
@@ -190,16 +190,16 @@
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     .line 95
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->d:Landroid/graphics/RectF;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mRectFd:Landroid/graphics/RectF;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->c:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mRectFc:Landroid/graphics/RectF;
 
     sget-object v3, Landroid/graphics/Matrix$ScaleToFit;->FILL:Landroid/graphics/Matrix$ScaleToFit;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/graphics/Matrix;->setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
 
     .line 96
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->e:Landroid/graphics/BitmapShader;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mBitmapShadere:Landroid/graphics/BitmapShader;
 
     invoke-virtual {v1, v0}, Landroid/graphics/BitmapShader;->setLocalMatrix(Landroid/graphics/Matrix;)V
 
@@ -212,7 +212,7 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mPaintf:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setAlpha(I)V
 
@@ -225,7 +225,7 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->mPaintf:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 

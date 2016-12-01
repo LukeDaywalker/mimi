@@ -48,7 +48,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->mContextb:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->mStringd:Ljava/lang/String;
 

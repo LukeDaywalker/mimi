@@ -420,7 +420,7 @@
     check-cast v0, Landroid/widget/LinearLayout$LayoutParams;
 
     .line 77
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->f:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     const/high16 v3, 0x42b00000    # 88.0f
 

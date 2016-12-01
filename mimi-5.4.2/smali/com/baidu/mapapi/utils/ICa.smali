@@ -3,8 +3,6 @@
 
 
 # static fields
-.field public static a:I
-
 .field private static isZt:Z
 
 .field private static isZu:Z
@@ -14,6 +12,8 @@
 .field private static mICae:Lcom/baidu/a/a/a/ICa;
 
 .field private static mICbd:Lcom/baidu/a/a/a/ICb;
+
+.field public static mIa:I
 
 .field private static mIf:I
 
@@ -73,7 +73,7 @@
 
     const/4 v0, -0x1
 
-    sput v0, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v0, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
@@ -339,7 +339,7 @@
     :pswitch_0
     const/4 v1, 0x0
 
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -356,56 +356,56 @@
     const/4 v1, 0x1
 
     :try_start_1
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     goto :goto_0
 
     :pswitch_2
     const/4 v1, 0x2
 
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     goto :goto_0
 
     :pswitch_3
     const/4 v1, 0x3
 
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     goto :goto_0
 
     :pswitch_4
     const/4 v1, 0x4
 
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     goto :goto_0
 
     :pswitch_5
     const/4 v1, 0x5
 
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     goto :goto_0
 
     :pswitch_6
     const/4 v1, 0x6
 
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     goto :goto_0
 
     :pswitch_7
     const/4 v1, 0x7
 
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     goto :goto_0
 
     :pswitch_8
     const/16 v1, 0x8
 
-    sput v1, Lcom/baidu/mapapi/utils/ICa;->a:I
+    sput v1, Lcom/baidu/mapapi/utils/ICa;->mIa:I
 
     goto :goto_0
 

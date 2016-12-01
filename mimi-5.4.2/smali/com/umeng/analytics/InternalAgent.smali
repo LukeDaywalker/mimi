@@ -223,7 +223,7 @@
 
     .line 107
     :cond_0
-    sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->j:Z
+    sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->isZj:Z
 
     if-eqz v0, :cond_1
 
@@ -415,7 +415,7 @@
 
     .line 132
     :cond_0
-    sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->j:Z
+    sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->isZj:Z
 
     if-eqz v0, :cond_1
 

@@ -299,7 +299,7 @@
     if-nez v1, :cond_0
 
     .line 80
-    sget-object v0, Lcom/crashlytics/android/core/UserMetaData;->a:Lcom/crashlytics/android/core/UserMetaData;
+    sget-object v0, Lcom/crashlytics/android/core/UserMetaData;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
     .line 92
     :goto_0
@@ -365,7 +365,7 @@
     invoke-static {v1, v0}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Ljava/io/Closeable;Ljava/lang/String;)V
 
     .line 92
-    sget-object v0, Lcom/crashlytics/android/core/UserMetaData;->a:Lcom/crashlytics/android/core/UserMetaData;
+    sget-object v0, Lcom/crashlytics/android/core/UserMetaData;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
     goto :goto_0
 

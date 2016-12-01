@@ -604,7 +604,7 @@
 
     .line 159
     :cond_0
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->f:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICaff:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v3, "Cookie\u4e3anull"
 
@@ -681,7 +681,7 @@
     invoke-interface {v1, v2, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 171
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->f:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICaff:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "WebView\u8bbe\u7f6eCookie\u5931\u8d25"
 

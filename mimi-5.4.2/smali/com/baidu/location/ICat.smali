@@ -28,8 +28,6 @@
 # instance fields
 .field private char:Z
 
-.field protected g:I
-
 .field private final goto:D
 
 .field private isZf:Z
@@ -43,6 +41,8 @@
 .field private final mIa:I
 
 .field private final mIc:I
+
+.field protected mIg:I
 
 .field private mJh:J
 
@@ -345,7 +345,7 @@
 .method protected a(I)V
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/ICat;->g:I
+    iput p1, p0, Lcom/baidu/location/ICat;->mIg:I
 
     return-void
 .end method
@@ -673,7 +673,7 @@
 .method protected try()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICat;->g:I
+    iget v0, p0, Lcom/baidu/location/ICat;->mIg:I
 
     return v0
 .end method

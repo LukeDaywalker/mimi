@@ -32,11 +32,11 @@
     .line 32
     iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mActivitya:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mActivitya:Landroid/app/Activity;
 
     const v2, 0x7f060348
 

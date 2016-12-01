@@ -324,7 +324,7 @@
 
     new-instance v1, Ljava/lang/String;
 
-    sget-object v2, Lcom/squareup/okhttp/internal/Util;->c:Ljava/nio/charset/Charset;
+    sget-object v2, Lcom/squareup/okhttp/internal/Util;->mCharsetc:Ljava/nio/charset/Charset;
 
     invoke-direct {v1, v0, v2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 

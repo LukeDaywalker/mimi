@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public a:I
+.field public mIa:I
 
-.field public b:Ljava/lang/String;
+.field public mStringb:Ljava/lang/String;
 
-.field public c:Ljava/lang/String;
+.field public mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 30
-    iput-object p2, p0, Lcom/tencent/tauth/Pro$ICc;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/tencent/tauth/Pro$ICc;->mStringb:Ljava/lang/String;
 
     .line 31
-    iput p1, p0, Lcom/tencent/tauth/Pro$ICc;->a:I
+    iput p1, p0, Lcom/tencent/tauth/Pro$ICc;->mIa:I
 
     .line 32
-    iput-object p3, p0, Lcom/tencent/tauth/Pro$ICc;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/tencent/tauth/Pro$ICc;->mStringc:Ljava/lang/String;
 
     .line 33
     return-void

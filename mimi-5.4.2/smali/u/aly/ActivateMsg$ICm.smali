@@ -19,9 +19,9 @@
 
 
 # static fields
-.field public static final enum a:Lu/aly/ActivateMsg$ICm;
-
 .field private static final synthetic mArrayICme:[Lu/aly/ActivateMsg$ICm;
+
+.field public static final enum mICma:Lu/aly/ActivateMsg$ICm;
 
 .field private static final mMapb:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -60,12 +60,12 @@
 
     invoke-direct {v0, v1, v3, v4, v2}, Lu/aly/ActivateMsg$ICm;-><init>(Ljava/lang/String;ISLjava/lang/String;)V
 
-    sput-object v0, Lu/aly/ActivateMsg$ICm;->a:Lu/aly/ActivateMsg$ICm;
+    sput-object v0, Lu/aly/ActivateMsg$ICm;->mICma:Lu/aly/ActivateMsg$ICm;
 
     .line 46
     new-array v0, v4, [Lu/aly/ActivateMsg$ICm;
 
-    sget-object v1, Lu/aly/ActivateMsg$ICm;->a:Lu/aly/ActivateMsg$ICm;
+    sget-object v1, Lu/aly/ActivateMsg$ICm;->mICma:Lu/aly/ActivateMsg$ICm;
 
     aput-object v1, v0, v3
 

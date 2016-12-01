@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field protected a:Landroid/content/Context;
-
 .field private mActivityEventManagerc:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
 .field private mAlertDialogd:Landroid/app/AlertDialog;
+
+.field protected mContexta:Landroid/content/Context;
 
 .field private mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
@@ -44,7 +44,7 @@
     iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mIe:I
 
     .line 29
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mContexta:Landroid/content/Context;
 
     .line 30
     iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
@@ -150,7 +150,7 @@
     const/high16 v2, 0x41880000    # 17.0f
 
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mContexta:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 

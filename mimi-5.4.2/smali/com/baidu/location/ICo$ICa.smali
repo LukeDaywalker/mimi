@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/ICo$ICa;->mStringdh:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/ICo$ICa;->c4:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICo$ICa;->mStringc4:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -72,11 +72,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICo$ICa;->cX:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICo$ICa;->mStringcX:Ljava/lang/String;
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/baidu/location/ICo$ICa;->c8:I
+    iput v0, p0, Lcom/baidu/location/ICo$ICa;->mIc8:I
 
     return-void
 .end method

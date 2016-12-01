@@ -88,9 +88,9 @@
 
     iget-object v2, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-wide v4, v2, Lcom/baidu/platform/comapi/map/B;->d:D
+    iget-wide v4, v2, Lcom/baidu/platform/comapi/map/B;->mDd:D
 
-    iget-wide v6, v2, Lcom/baidu/platform/comapi/map/B;->e:D
+    iget-wide v6, v2, Lcom/baidu/platform/comapi/map/B;->mDe:D
 
     new-instance v0, Landroid/graphics/PointF;
 
@@ -100,7 +100,7 @@
 
     sub-double v4, v8, v4
 
-    iget-wide v8, v2, Lcom/baidu/platform/comapi/map/B;->n:D
+    iget-wide v8, v2, Lcom/baidu/platform/comapi/map/B;->mDn:D
 
     div-double/2addr v4, v8
 
@@ -112,7 +112,7 @@
 
     sub-double/2addr v4, v6
 
-    iget-wide v6, v2, Lcom/baidu/platform/comapi/map/B;->n:D
+    iget-wide v6, v2, Lcom/baidu/platform/comapi/map/B;->mDn:D
 
     div-double/2addr v4, v6
 

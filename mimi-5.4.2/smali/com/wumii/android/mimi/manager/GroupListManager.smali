@@ -47,28 +47,28 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/manager/BaseManager;-><init>()V
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "organization/suggestions"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group/joinable"
 
     invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group/my"
 
@@ -99,7 +99,7 @@
 
     .line 85
     :try_start_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mTypeReferencei:Lcom/fasterxml/jackson/core/type/TypeReference;
 
@@ -117,7 +117,7 @@
 
     .line 87
     :try_start_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -188,7 +188,7 @@
 
     .line 69
     :try_start_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v0}, Lcom/fasterxml/jackson/databind/JsonNode;->toString()Ljava/lang/String;
 
@@ -215,7 +215,7 @@
 
     .line 71
     :try_start_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/FriendGroupChatListResp;->getTm()Ljava/lang/Long;
 
@@ -226,7 +226,7 @@
     invoke-virtual {v2, v0, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -424,7 +424,7 @@
 
     .line 124
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->a()Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -476,7 +476,7 @@
     invoke-virtual {v2, v3, v1}, Lcom/wumii/android/mimi/models/entities/SectionMap;->add(Ljava/lang/Object;Ljava/util/List;)V
 
     .line 134
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -498,7 +498,7 @@
     invoke-virtual {v2, v1, v0}, Lcom/wumii/android/mimi/models/entities/SectionMap;->add(Ljava/lang/Object;Ljava/util/List;)V
 
     .line 139
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mAppFacadeg:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -586,11 +586,11 @@
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     .line 168
-    iget-object v6, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v6, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "chat/group/my"
 
@@ -640,7 +640,7 @@
     .line 154
     const-string/jumbo v0, "tm"
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/Long;
 
@@ -698,11 +698,11 @@
     invoke-interface {v5, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 163
-    iget-object v6, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v6, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "chat/group/joinable"
 

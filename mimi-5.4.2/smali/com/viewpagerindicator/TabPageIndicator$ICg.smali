@@ -60,7 +60,7 @@
     .line 278
     iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
-    iget v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->d:I
+    iget v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->mId:I
 
     if-lez v0, :cond_0
 
@@ -70,14 +70,14 @@
 
     iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
-    iget v1, v1, Lcom/viewpagerindicator/TabPageIndicator;->d:I
+    iget v1, v1, Lcom/viewpagerindicator/TabPageIndicator;->mId:I
 
     if-le v0, v1, :cond_0
 
     .line 279
     iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
-    iget v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->d:I
+    iget v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->mId:I
 
     const/high16 v1, 0x40000000    # 2.0f
 

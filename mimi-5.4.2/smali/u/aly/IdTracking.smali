@@ -185,7 +185,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 118
-    sget-object v1, Lu/aly/IdTracking$ICbs;->a:Lu/aly/IdTracking$ICbs;
+    sget-object v1, Lu/aly/IdTracking$ICbs;->mICbsa:Lu/aly/IdTracking$ICbs;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -210,7 +210,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 122
-    sget-object v1, Lu/aly/IdTracking$ICbs;->b:Lu/aly/IdTracking$ICbs;
+    sget-object v1, Lu/aly/IdTracking$ICbs;->mICbsb:Lu/aly/IdTracking$ICbs;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -233,7 +233,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v1, Lu/aly/IdTracking$ICbs;->c:Lu/aly/IdTracking$ICbs;
+    sget-object v1, Lu/aly/IdTracking$ICbs;->mICbsc:Lu/aly/IdTracking$ICbs;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -279,13 +279,13 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lu/aly/IdTracking$ICbs;->b:Lu/aly/IdTracking$ICbs;
+    sget-object v2, Lu/aly/IdTracking$ICbs;->mICbsb:Lu/aly/IdTracking$ICbs;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x1
 
-    sget-object v2, Lu/aly/IdTracking$ICbs;->c:Lu/aly/IdTracking$ICbs;
+    sget-object v2, Lu/aly/IdTracking$ICbs;->mICbsc:Lu/aly/IdTracking$ICbs;
 
     aput-object v2, v0, v1
 

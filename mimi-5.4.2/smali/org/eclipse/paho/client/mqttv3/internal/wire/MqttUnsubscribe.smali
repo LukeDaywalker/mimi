@@ -36,7 +36,7 @@
 
     move-result v1
 
-    iput v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->a:I
+    iput v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mIa:I
 
     .line 55
     iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mId:I
@@ -105,7 +105,7 @@
 
     .prologue
     .line 86
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->b:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -185,7 +185,7 @@
     invoke-direct {v1, v0}, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
 
     .line 93
-    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->a:I
+    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mIa:I
 
     invoke-virtual {v1, v2}, Ljava/io/DataOutputStream;->writeShort(I)V
 

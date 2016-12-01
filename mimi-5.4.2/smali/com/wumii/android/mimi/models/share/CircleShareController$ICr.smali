@@ -38,7 +38,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/CircleShareController;->a:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/CircleShareController;->mActivitya:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->mICqb:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
 

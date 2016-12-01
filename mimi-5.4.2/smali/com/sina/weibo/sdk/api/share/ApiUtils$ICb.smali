@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mIb:I
 
-.field public b:I
+.field public mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->b:I
+    iget v1, p0, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mIb:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

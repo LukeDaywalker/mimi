@@ -13,9 +13,9 @@
     .end annotation
 .end field
 
-.field public id:Ljava/lang/Object;
-
 .field protected idWritten:Z
+
+.field public mObjectid:Ljava/lang/Object;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->id:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->mObjectid:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -80,7 +80,7 @@
     if-eqz v0, :cond_1
 
     .line 57
-    iget-object v0, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->id:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->mObjectid:Ljava/lang/Object;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -106,7 +106,7 @@
     .line 64
     iget-object v0, p3, Lcom/fasterxml/jackson/databind/ser/impl/ObjectIdWriter;->serializer:Lcom/fasterxml/jackson/databind/JsonSerializer;
 
-    iget-object v1, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->id:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->mObjectid:Ljava/lang/Object;
 
     invoke-virtual {v0, v1, p1, p2}, Lcom/fasterxml/jackson/databind/JsonSerializer;->serialize(Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
 
@@ -118,7 +118,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->id:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->mObjectid:Ljava/lang/Object;
 
     if-eqz v0, :cond_2
 
@@ -139,7 +139,7 @@
     if-eqz v0, :cond_1
 
     .line 33
-    iget-object v0, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->id:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->mObjectid:Ljava/lang/Object;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -159,7 +159,7 @@
     :cond_1
     iget-object v0, p3, Lcom/fasterxml/jackson/databind/ser/impl/ObjectIdWriter;->serializer:Lcom/fasterxml/jackson/databind/JsonSerializer;
 
-    iget-object v1, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->id:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;->mObjectid:Ljava/lang/Object;
 
     invoke-virtual {v0, v1, p1, p2}, Lcom/fasterxml/jackson/databind/JsonSerializer;->serialize(Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
 

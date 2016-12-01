@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field public a:Landroid/support/v7/widget/RecyclerView$ICbg;
+.field public mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
-.field public b:I
+.field public mIb:I
 
-.field public c:I
+.field public mIc:I
 
-.field public d:I
+.field public mId:I
 
-.field public e:I
+.field public mIe:I
 
 
 # direct methods
@@ -24,19 +24,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 57
-    iput-object p1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iput-object p1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     .line 58
-    iput p2, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->b:I
+    iput p2, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mIb:I
 
     .line 59
-    iput p3, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->c:I
+    iput p3, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mIc:I
 
     .line 60
-    iput p4, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->d:I
+    iput p4, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mId:I
 
     .line 61
-    iput p5, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->e:I
+    iput p5, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->mIe:I
 
     .line 62
     return-void

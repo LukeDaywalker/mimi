@@ -216,7 +216,7 @@
 
     move-result-object v2
 
-    iget-object v3, p1, Lio/fabric/sdk/android/services/settings/AppSettingsData;->c:Ljava/lang/String;
+    iget-object v3, p1, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringc:Ljava/lang/String;
 
     iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->mHttpRequestFactorya:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
@@ -250,7 +250,7 @@
     .line 155
     const-string/jumbo v1, "new"
 
-    iget-object v2, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->b:Ljava/lang/String;
+    iget-object v2, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -302,7 +302,7 @@
     :cond_2
     const-string/jumbo v1, "configured"
 
-    iget-object v2, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->b:Ljava/lang/String;
+    iget-object v2, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -323,7 +323,7 @@
 
     .line 170
     :cond_3
-    iget-boolean v1, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->e:Z
+    iget-boolean v1, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->isZe:Z
 
     if-eqz v1, :cond_0
 
@@ -379,7 +379,7 @@
 
     move-result-object v2
 
-    iget-object v3, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->c:Ljava/lang/String;
+    iget-object v3, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->mStringc:Ljava/lang/String;
 
     iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->mHttpRequestFactorya:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
@@ -789,7 +789,7 @@
     move-result-object v0
 
     .line 112
-    iget-object v3, v3, Lio/fabric/sdk/android/services/settings/SettingsData;->a:Lio/fabric/sdk/android/services/settings/AppSettingsData;
+    iget-object v3, v3, Lio/fabric/sdk/android/services/settings/SettingsData;->mAppSettingsDataa:Lio/fabric/sdk/android/services/settings/AppSettingsData;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 

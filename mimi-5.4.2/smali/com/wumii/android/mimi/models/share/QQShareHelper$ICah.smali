@@ -38,9 +38,9 @@
 
     .prologue
     .line 101
-    sget-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mLoggera:Lorg/slf4j/Logger;
 
-    iget-object v1, p1, Lcom/tencent/tauth/Pro$ICc;->b:Ljava/lang/String;
+    iget-object v1, p1, Lcom/tencent/tauth/Pro$ICc;->mStringb:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->error(Ljava/lang/String;)V
 

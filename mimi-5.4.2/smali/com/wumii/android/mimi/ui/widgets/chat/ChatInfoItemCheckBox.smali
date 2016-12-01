@@ -100,7 +100,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
     .line 38
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->d:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mId:I
 
     invoke-virtual {v0, v2, v5, v5, v5}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
@@ -117,7 +117,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/CheckBox;->setButtonDrawable(I)V
 
     .line 41
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->b:Landroid/widget/RelativeLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 

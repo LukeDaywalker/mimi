@@ -27,7 +27,7 @@
 
     .prologue
     .line 289
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->mPreferencesHelperg:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -113,7 +113,7 @@
     .line 284
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "logout"
 
@@ -128,7 +128,7 @@
     move-exception v0
 
     .line 281
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->c:Lorg/slf4j/Logger;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->mLoggerc:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "mqtt cache file is broken!"
 

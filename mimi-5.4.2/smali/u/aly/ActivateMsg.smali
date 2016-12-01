@@ -128,7 +128,7 @@
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 109
-    sget-object v1, Lu/aly/ActivateMsg$ICm;->a:Lu/aly/ActivateMsg$ICm;
+    sget-object v1, Lu/aly/ActivateMsg$ICm;->mICma:Lu/aly/ActivateMsg$ICm;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

@@ -12,7 +12,9 @@
 
 
 # instance fields
-.field protected a:Ljava/util/concurrent/BlockingQueue;
+.field private isZh:Z
+
+.field protected mBlockingQueuea:Ljava/util/concurrent/BlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/BlockingQueue",
@@ -21,19 +23,17 @@
     .end annotation
 .end field
 
-.field protected b:Landroid/os/Handler;
-
-.field protected c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
-
-.field protected d:Lcom/wumii/android/soundtouch/SoundTouchThread;
-
-.field private isZh:Z
+.field protected mHandlerb:Landroid/os/Handler;
 
 .field private mHandleri:Landroid/os/Handler;
+
+.field protected mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
 .field private mMediaPlayerg:Landroid/media/MediaPlayer;
 
 .field private mRecordThreadf:Lcom/wumii/android/soundtouch/RecordThread;
+
+.field protected mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
 .field private mStringj:Ljava/lang/String;
 
@@ -67,14 +67,14 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->a:Ljava/util/concurrent/BlockingQueue;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mBlockingQueuea:Ljava/util/concurrent/BlockingQueue;
 
     .line 28
     new-instance v0, Lcom/wumii/android/soundtouch/RecordClient$ICd;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/soundtouch/RecordClient$ICd;-><init>(Lcom/wumii/android/soundtouch/RecordClient;)V
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->b:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mHandlerb:Landroid/os/Handler;
 
     .line 56
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
@@ -254,9 +254,9 @@
     .line 80
     new-instance v0, Lcom/wumii/android/soundtouch/RecordThread;
 
-    iget-object v1, p0, Lcom/wumii/android/soundtouch/RecordClient;->b:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/wumii/android/soundtouch/RecordClient;->mHandlerb:Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/wumii/android/soundtouch/RecordClient;->a:Ljava/util/concurrent/BlockingQueue;
+    iget-object v2, p0, Lcom/wumii/android/soundtouch/RecordClient;->mBlockingQueuea:Ljava/util/concurrent/BlockingQueue;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/soundtouch/RecordThread;-><init>(Landroid/os/Handler;Ljava/util/concurrent/BlockingQueue;)V
 
@@ -270,16 +270,16 @@
     .line 86
     new-instance v0, Lcom/wumii/android/soundtouch/SoundTouchThread;
 
-    iget-object v1, p0, Lcom/wumii/android/soundtouch/RecordClient;->b:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/wumii/android/soundtouch/RecordClient;->mHandlerb:Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/wumii/android/soundtouch/RecordClient;->a:Ljava/util/concurrent/BlockingQueue;
+    iget-object v2, p0, Lcom/wumii/android/soundtouch/RecordClient;->mBlockingQueuea:Ljava/util/concurrent/BlockingQueue;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/soundtouch/SoundTouchThread;-><init>(Landroid/os/Handler;Ljava/util/concurrent/BlockingQueue;)V
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;->pitch()F
 
@@ -288,7 +288,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/soundtouch/SoundTouchThread;->a(F)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;->tempo()F
 
@@ -297,7 +297,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/soundtouch/SoundTouchThread;->b(F)V
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -310,12 +310,12 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/soundtouch/SoundTouchThread;->a(Ljava/lang/String;)V
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/SoundTouchThread;->start()V
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/SoundTouchThread;->a()Ljava/lang/String;
 
@@ -332,7 +332,7 @@
 
     .prologue
     .line 113
-    iput-object p2, p0, Lcom/wumii/android/soundtouch/RecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iput-object p2, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     .line 115
     const/4 v0, 0x1
@@ -418,7 +418,7 @@
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/RecordThread;->a()V
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mSoundTouchThreadd:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/soundtouch/SoundTouchThread;->a(Z)V
 
@@ -469,19 +469,19 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/soundtouch/RecordClient;->a(Landroid/media/MediaPlayer;)V
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     if-eqz v0, :cond_0
 
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/MediaPlayCallback;->a()V
 
     .line 140
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     .line 143
     :cond_0
@@ -539,19 +539,19 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/soundtouch/RecordClient;->a(Landroid/media/MediaPlayer;)V
 
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     if-eqz v0, :cond_0
 
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/MediaPlayCallback;->b()V
 
     .line 164
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayCallbackc:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 
     .line 166
     :cond_0

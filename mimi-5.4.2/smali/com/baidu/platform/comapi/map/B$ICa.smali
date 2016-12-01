@@ -3,23 +3,23 @@
 
 
 # instance fields
-.field public a:J
-
-.field public b:J
-
-.field public c:J
-
-.field public d:J
-
-.field public e:Lcom/baidu/mapapi/model/inner/Point;
-
-.field public f:Lcom/baidu/mapapi/model/inner/Point;
-
-.field public g:Lcom/baidu/mapapi/model/inner/Point;
-
-.field public h:Lcom/baidu/mapapi/model/inner/Point;
-
 .field final synthetic mBi:Lcom/baidu/platform/comapi/map/B;
+
+.field public mJa:J
+
+.field public mJb:J
+
+.field public mJc:J
+
+.field public mJd:J
+
+.field public mPointe:Lcom/baidu/mapapi/model/inner/Point;
+
+.field public mPointf:Lcom/baidu/mapapi/model/inner/Point;
+
+.field public mPointg:Lcom/baidu/mapapi/model/inner/Point;
+
+.field public mPointh:Lcom/baidu/mapapi/model/inner/Point;
 
 
 # direct methods
@@ -34,37 +34,37 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide v2, p0, Lcom/baidu/platform/comapi/map/B$ICa;->a:J
+    iput-wide v2, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mJa:J
 
-    iput-wide v2, p0, Lcom/baidu/platform/comapi/map/B$ICa;->b:J
+    iput-wide v2, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mJb:J
 
-    iput-wide v2, p0, Lcom/baidu/platform/comapi/map/B$ICa;->c:J
+    iput-wide v2, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mJc:J
 
-    iput-wide v2, p0, Lcom/baidu/platform/comapi/map/B$ICa;->d:J
-
-    new-instance v0, Lcom/baidu/mapapi/model/inner/Point;
-
-    invoke-direct {v0, v1, v1}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
-
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B$ICa;->e:Lcom/baidu/mapapi/model/inner/Point;
+    iput-wide v2, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mJd:J
 
     new-instance v0, Lcom/baidu/mapapi/model/inner/Point;
 
     invoke-direct {v0, v1, v1}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B$ICa;->f:Lcom/baidu/mapapi/model/inner/Point;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
 
     new-instance v0, Lcom/baidu/mapapi/model/inner/Point;
 
     invoke-direct {v0, v1, v1}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B$ICa;->g:Lcom/baidu/mapapi/model/inner/Point;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
 
     new-instance v0, Lcom/baidu/mapapi/model/inner/Point;
 
     invoke-direct {v0, v1, v1}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B$ICa;->h:Lcom/baidu/mapapi/model/inner/Point;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
+
+    new-instance v0, Lcom/baidu/mapapi/model/inner/Point;
+
+    invoke-direct {v0, v1, v1}, Lcom/baidu/mapapi/model/inner/Point;-><init>(II)V
+
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
 
     return-void
 .end method

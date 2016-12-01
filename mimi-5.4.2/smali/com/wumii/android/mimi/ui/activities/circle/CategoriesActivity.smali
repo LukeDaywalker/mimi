@@ -44,9 +44,9 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -71,7 +71,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -97,11 +97,11 @@
     invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircleCategoryAdaptero:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->q:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircleStorageq:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -114,7 +114,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a(Ljava/util/List;)V
 
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircleCategoryAdaptero:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->getCount()I
 
@@ -123,7 +123,7 @@
     if-nez v0, :cond_0
 
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->s:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mTextViews:Landroid/widget/TextView;
 
     const v1, 0x7f060065
 
@@ -133,7 +133,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -148,7 +148,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mXListViewn:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     const/4 v1, 0x0
 
@@ -167,7 +167,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->onDestroy()V
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/CircleManager;->f()V
 
@@ -192,11 +192,11 @@
     if-eqz v0, :cond_1
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircleCategoryAdaptero:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->q:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircleStorageq:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -209,7 +209,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a(Ljava/util/List;)V
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircleCategoryAdaptero:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->getCount()I
 
@@ -218,7 +218,7 @@
     if-nez v0, :cond_0
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->s:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mTextViews:Landroid/widget/TextView;
 
     const v1, 0x7f060065
 
@@ -226,7 +226,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mCircler:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -241,7 +241,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mXListViewn:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     const/4 v1, 0x0
 
@@ -249,7 +249,7 @@
 
     .line 53
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->C:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mProgressingDialogC:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -258,7 +258,7 @@
 
     .line 47
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mXListViewn:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->getResources()Landroid/content/res/Resources;
 
@@ -273,7 +273,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setDivider(Landroid/graphics/drawable/Drawable;)V
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->s:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->mTextViews:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/CategoriesActivity;->j()Ljava/lang/String;
 

@@ -113,7 +113,7 @@
     move-result-object v0
 
     .line 109
-    iget-byte v1, v0, Lu/aly/TField;->b:B
+    iget-byte v1, v0, Lu/aly/TField;->mBb:B
 
     if-nez v1, :cond_1
 
@@ -124,7 +124,7 @@
 
     .line 112
     :cond_1
-    iget-byte v0, v0, Lu/aly/TField;->b:B
+    iget-byte v0, v0, Lu/aly/TField;->mBb:B
 
     add-int/lit8 v1, p2, -0x1
 
@@ -143,19 +143,19 @@
 
     .line 120
     :goto_2
-    iget v2, v1, Lu/aly/TMap;->c:I
+    iget v2, v1, Lu/aly/TMap;->mIc:I
 
     if-ge v0, v2, :cond_2
 
     .line 121
-    iget-byte v2, v1, Lu/aly/TMap;->a:B
+    iget-byte v2, v1, Lu/aly/TMap;->mBa:B
 
     add-int/lit8 v3, p2, -0x1
 
     invoke-static {p0, v2, v3}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;BI)V
 
     .line 122
-    iget-byte v2, v1, Lu/aly/TMap;->b:B
+    iget-byte v2, v1, Lu/aly/TMap;->mBb:B
 
     add-int/lit8 v3, p2, -0x1
 
@@ -180,12 +180,12 @@
 
     .line 129
     :goto_3
-    iget v2, v1, Lu/aly/TSet;->b:I
+    iget v2, v1, Lu/aly/TSet;->mIb:I
 
     if-ge v0, v2, :cond_3
 
     .line 130
-    iget-byte v2, v1, Lu/aly/TSet;->a:B
+    iget-byte v2, v1, Lu/aly/TSet;->mBa:B
 
     add-int/lit8 v3, p2, -0x1
 
@@ -210,12 +210,12 @@
 
     .line 137
     :goto_4
-    iget v2, v1, Lu/aly/TList;->b:I
+    iget v2, v1, Lu/aly/TList;->mIb:I
 
     if-ge v0, v2, :cond_4
 
     .line 138
-    iget-byte v2, v1, Lu/aly/TList;->a:B
+    iget-byte v2, v1, Lu/aly/TList;->mBa:B
 
     add-int/lit8 v3, p2, -0x1
 

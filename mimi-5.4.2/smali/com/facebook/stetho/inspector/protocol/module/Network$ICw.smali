@@ -4,37 +4,37 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public mDd:D
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public b:Ljava/lang/String;
+.field public mICvf:Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public c:Ljava/lang/String;
+.field public mICye:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public d:D
+.field public mStringa:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public e:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+.field public mStringb:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation
 .end field
 
-.field public f:Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;
+.field public mStringc:Ljava/lang/String;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
         a = true
     .end annotation

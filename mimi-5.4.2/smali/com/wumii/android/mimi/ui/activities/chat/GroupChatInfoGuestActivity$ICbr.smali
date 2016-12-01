@@ -30,7 +30,7 @@
 
     .prologue
     .line 151
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mICaad:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     if-ne p2, v0, :cond_0
 

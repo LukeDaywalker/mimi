@@ -30,7 +30,7 @@
     .line 319
     new-instance v0, Lcom/tencent/connect/common/Pro$ICd;
 
-    iget-object v1, p1, Lcom/tencent/connect/common/Pro;->d:Landroid/content/Context;
+    iget-object v1, p1, Lcom/tencent/connect/common/Pro;->mContextd:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 

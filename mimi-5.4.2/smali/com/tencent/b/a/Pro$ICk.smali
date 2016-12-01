@@ -7,19 +7,19 @@
 
 
 # static fields
-.field protected static final b:Lcom/tencent/b/a/Pro$ICb;
+.field protected static final mICbb:Lcom/tencent/b/a/Pro$ICb;
 
-.field protected static final c:Lcom/tencent/b/a/Pro$ICb;
+.field protected static final mICbc:Lcom/tencent/b/a/Pro$ICb;
 
 
 # instance fields
-.field protected d:Lcom/tencent/b/a/Pro;
-
 .field private volatile isZa:Z
 
 .field private volatile isZe:Z
 
 .field private volatile isZf:Z
+
+.field protected mProd:Lcom/tencent/b/a/Pro;
 
 
 # direct methods
@@ -55,7 +55,7 @@
 
     invoke-direct/range {v0 .. v11}, Lcom/tencent/b/a/Pro$ICb;-><init>(Ljava/io/File;IIILjava/lang/String;JILjava/lang/String;J)V
 
-    sput-object v0, Lcom/tencent/b/a/Pro$ICk;->b:Lcom/tencent/b/a/Pro$ICb;
+    sput-object v0, Lcom/tencent/b/a/Pro$ICk;->mICbb:Lcom/tencent/b/a/Pro$ICb;
 
     .line 130
     new-instance v0, Lcom/tencent/b/a/Pro$ICb;
@@ -66,7 +66,7 @@
 
     invoke-direct/range {v0 .. v11}, Lcom/tencent/b/a/Pro$ICb;-><init>(Ljava/io/File;IIILjava/lang/String;JILjava/lang/String;J)V
 
-    sput-object v0, Lcom/tencent/b/a/Pro$ICk;->c:Lcom/tencent/b/a/Pro$ICb;
+    sput-object v0, Lcom/tencent/b/a/Pro$ICk;->mICbc:Lcom/tencent/b/a/Pro$ICb;
 
     .line 133
     return-void
@@ -108,7 +108,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v2, Lcom/tencent/b/b/Pro$ICb;->a:Ljava/lang/String;
+    sget-object v2, Lcom/tencent/b/b/Pro$ICb;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -204,7 +204,7 @@
     if-eqz v0, :cond_2
 
     .line 172
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICk;->d:Lcom/tencent/b/a/Pro;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICk;->mProd:Lcom/tencent/b/a/Pro;
 
     if-nez v0, :cond_1
 
@@ -215,7 +215,7 @@
 
     .line 175
     :cond_1
-    iget-object v1, p0, Lcom/tencent/b/a/Pro$ICk;->d:Lcom/tencent/b/a/Pro;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro$ICk;->mProd:Lcom/tencent/b/a/Pro;
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -244,7 +244,7 @@
     if-eqz v0, :cond_0
 
     .line 181
-    sget-object v1, Lcom/tencent/b/a/Pro$ICf;->a:Lcom/tencent/b/a/Pro$ICf;
+    sget-object v1, Lcom/tencent/b/a/Pro$ICf;->mICfa:Lcom/tencent/b/a/Pro$ICf;
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -272,17 +272,17 @@
 
     .prologue
     .line 149
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICk;->d:Lcom/tencent/b/a/Pro;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICk;->mProd:Lcom/tencent/b/a/Pro;
 
     if-eqz v0, :cond_0
 
     .line 151
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICk;->d:Lcom/tencent/b/a/Pro;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICk;->mProd:Lcom/tencent/b/a/Pro;
 
     invoke-virtual {v0}, Lcom/tencent/b/a/Pro;->a()V
 
     .line 152
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICk;->d:Lcom/tencent/b/a/Pro;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICk;->mProd:Lcom/tencent/b/a/Pro;
 
     invoke-virtual {v0}, Lcom/tencent/b/a/Pro;->b()V
 
@@ -371,7 +371,7 @@
     invoke-virtual {p0, v1, v2, v3, v4}, Lcom/tencent/b/a/Pro$ICk;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 232
-    iget-object v1, p0, Lcom/tencent/b/a/Pro$ICk;->d:Lcom/tencent/b/a/Pro;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro$ICk;->mProd:Lcom/tencent/b/a/Pro;
 
     invoke-virtual {v1, v0}, Lcom/tencent/b/a/Pro;->a(I)V
 

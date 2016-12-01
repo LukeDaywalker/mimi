@@ -32,7 +32,7 @@
     move-result-object v0
 
     .line 285
-    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->a:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v1, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mICaya:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     if-ne v0, v1, :cond_0
 
@@ -120,7 +120,7 @@
     .line 303
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->mPreferencesHelperw:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "unread_notification_count"
 
@@ -156,7 +156,7 @@
     .line 309
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;->getErrMsg()Ljava/lang/String;
 
@@ -218,7 +218,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->mContextToastB:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06038d
 

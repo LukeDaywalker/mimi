@@ -43,7 +43,7 @@
     .line 31
     iget-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;->mNetworkManagera:Lcom/wumii/android/mimi/network/NetworkManager;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/network/NetworkManager;->a:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/network/NetworkManager;->mNetworkHelpera:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 

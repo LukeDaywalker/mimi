@@ -47,7 +47,7 @@
     :cond_0
     iget-object v0, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v0, v0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
+    iget-object v0, v0, Lokio/RealBufferedSource;->mBuffera:Lokio/Buffer;
 
     iget-wide v0, v0, Lokio/Buffer;->mJb:J
 
@@ -100,7 +100,7 @@
     :cond_0
     iget-object v0, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v0, v0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
+    iget-object v0, v0, Lokio/RealBufferedSource;->mBuffera:Lokio/Buffer;
 
     iget-wide v0, v0, Lokio/Buffer;->mJb:J
 
@@ -113,11 +113,11 @@
     .line 338
     iget-object v0, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v0, v0, Lokio/RealBufferedSource;->b:Lokio/Source;
+    iget-object v0, v0, Lokio/RealBufferedSource;->mSourceb:Lokio/Source;
 
     iget-object v1, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v1, v1, Lokio/RealBufferedSource;->a:Lokio/Buffer;
+    iget-object v1, v1, Lokio/RealBufferedSource;->mBuffera:Lokio/Buffer;
 
     const-wide/16 v2, 0x800
 
@@ -141,7 +141,7 @@
     :cond_1
     iget-object v0, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v0, v0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
+    iget-object v0, v0, Lokio/RealBufferedSource;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->j()B
 
@@ -188,7 +188,7 @@
     .line 348
     iget-object v0, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v0, v0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
+    iget-object v0, v0, Lokio/RealBufferedSource;->mBuffera:Lokio/Buffer;
 
     iget-wide v0, v0, Lokio/Buffer;->mJb:J
 
@@ -201,11 +201,11 @@
     .line 349
     iget-object v0, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v0, v0, Lokio/RealBufferedSource;->b:Lokio/Source;
+    iget-object v0, v0, Lokio/RealBufferedSource;->mSourceb:Lokio/Source;
 
     iget-object v1, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v1, v1, Lokio/RealBufferedSource;->a:Lokio/Buffer;
+    iget-object v1, v1, Lokio/RealBufferedSource;->mBuffera:Lokio/Buffer;
 
     const-wide/16 v2, 0x800
 
@@ -229,7 +229,7 @@
     :cond_1
     iget-object v0, p0, Lokio/RealBufferedSource$ICx;->mRealBufferedSourcea:Lokio/RealBufferedSource;
 
-    iget-object v0, v0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
+    iget-object v0, v0, Lokio/RealBufferedSource;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->a([BII)I
 

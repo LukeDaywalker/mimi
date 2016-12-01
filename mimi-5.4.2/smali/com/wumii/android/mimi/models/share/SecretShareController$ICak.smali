@@ -34,7 +34,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICak;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;-><init>(Landroid/app/Activity;)V
 

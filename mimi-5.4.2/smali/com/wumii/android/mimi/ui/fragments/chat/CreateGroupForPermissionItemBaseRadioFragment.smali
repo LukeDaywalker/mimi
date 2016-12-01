@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
-
 .field private mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+
+.field protected mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
 
 # direct methods
@@ -182,7 +182,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     .line 37
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
@@ -199,7 +199,7 @@
 
     .line 46
     :cond_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->f()Ljava/util/List;
 

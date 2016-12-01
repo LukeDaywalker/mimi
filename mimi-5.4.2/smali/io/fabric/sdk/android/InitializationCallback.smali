@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final d:Lio/fabric/sdk/android/InitializationCallback;
+.field public static final mInitializationCallbackd:Lio/fabric/sdk/android/InitializationCallback;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/InitializationCallback$ICn;-><init>(Lio/fabric/sdk/android/InitializationCallback$ICm;)V
 
-    sput-object v0, Lio/fabric/sdk/android/InitializationCallback;->d:Lio/fabric/sdk/android/InitializationCallback;
+    sput-object v0, Lio/fabric/sdk/android/InitializationCallback;->mInitializationCallbackd:Lio/fabric/sdk/android/InitializationCallback;
 
     return-void
 .end method

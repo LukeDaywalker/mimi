@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:[I
+.field public static final mArrayIa:[I
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$FragmentTag;->a:[I
+    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$FragmentTag;->mArrayIa:[I
 
     return-void
 
