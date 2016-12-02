@@ -3,7 +3,7 @@
 .source "DebugActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
 
 
 # instance fields
@@ -57,7 +57,7 @@
     .line 48
     const/4 v0, 0x0
 
-    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$MCb;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$MCb;
 
     move-result-object v1
 
@@ -72,20 +72,20 @@
     invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;-><init>(Landroid/content/Context;)V
 
     .line 50
-    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$MCb;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$MCb;
 
     move-result-object v3
 
     aget-object v3, v3, v0
 
-    invoke-virtual {v3}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->a()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/wumii/android/mimi/debug/DebugActivity$MCb;->a()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setName(Ljava/lang/String;)V
 
     .line 51
-    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$MCb;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$MCb;
 
     move-result-object v3
 
@@ -94,7 +94,7 @@
     invoke-virtual {v2, v3}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setTag(Ljava/lang/Object;)V
 
     .line 52
-    invoke-virtual {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
+    invoke-virtual {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;)V
 
     .line 53
     iget-object v3, p0, Lcom/wumii/android/mimi/debug/DebugActivity;->mLinearLayoutn:Landroid/widget/LinearLayout;
@@ -122,12 +122,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    check-cast v0, Lcom/wumii/android/mimi/debug/DebugActivity$MCb;
 
     .line 62
-    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICa;->mArrayIa:[I
+    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$MCa;->mArrayIa:[I
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->ordinal()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/debug/DebugActivity$MCb;->ordinal()I
 
     move-result v0
 

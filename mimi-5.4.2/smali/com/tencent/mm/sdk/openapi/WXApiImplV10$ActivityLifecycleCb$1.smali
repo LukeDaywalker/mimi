@@ -56,7 +56,7 @@
 
     const-string/jumbo v1, "onBackground_WX"
 
-    invoke-static {v0, v1}, Lcom/tencent/wxop/stat/ICx;->a(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/wxop/stat/MCx;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10$ActivityLifecycleCb$1;->this$0:Lcom/tencent/mm/sdk/openapi/WXApiImplV10$ActivityLifecycleCb;
 

@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Lu/aly/ClientStats;",
-        "Lu/aly/ClientStats$ICaa;",
+        "Lu/aly/ClientStats$MCaa;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Lu/aly/ClientStats$ICaa;",
+            "Lu/aly/ClientStats$MCaa;",
             "Lu/aly/FieldMetaData;",
             ">;"
         }
@@ -69,7 +69,7 @@
 
 .field private j:B
 
-.field private k:[Lu/aly/ClientStats$ICaa;
+.field private k:[Lu/aly/ClientStats$MCaa;
 
 
 # direct methods
@@ -135,9 +135,9 @@
 
     const-class v1, Lu/aly/StandardScheme;
 
-    new-instance v2, Lu/aly/ClientStats$ICx;
+    new-instance v2, Lu/aly/ClientStats$MCx;
 
-    invoke-direct {v2, v3}, Lu/aly/ClientStats$ICx;-><init>(Lu/aly/ClientStats$ICv;)V
+    invoke-direct {v2, v3}, Lu/aly/ClientStats$MCx;-><init>(Lu/aly/ClientStats$MCv;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -146,21 +146,21 @@
 
     const-class v1, Lu/aly/TupleScheme;
 
-    new-instance v2, Lu/aly/ClientStats$ICz;
+    new-instance v2, Lu/aly/ClientStats$MCz;
 
-    invoke-direct {v2, v3}, Lu/aly/ClientStats$ICz;-><init>(Lu/aly/ClientStats$ICv;)V
+    invoke-direct {v2, v3}, Lu/aly/ClientStats$MCz;-><init>(Lu/aly/ClientStats$MCv;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 121
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Lu/aly/ClientStats$ICaa;
+    const-class v1, Lu/aly/ClientStats$MCaa;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 122
-    sget-object v1, Lu/aly/ClientStats$ICaa;->mICaaa:Lu/aly/ClientStats$ICaa;
+    sget-object v1, Lu/aly/ClientStats$MCaa;->mMCaaa:Lu/aly/ClientStats$MCaa;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -175,7 +175,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 124
-    sget-object v1, Lu/aly/ClientStats$ICaa;->mICaab:Lu/aly/ClientStats$ICaa;
+    sget-object v1, Lu/aly/ClientStats$MCaa;->mMCaab:Lu/aly/ClientStats$MCaa;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -190,7 +190,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 126
-    sget-object v1, Lu/aly/ClientStats$ICaa;->mICaac:Lu/aly/ClientStats$ICaa;
+    sget-object v1, Lu/aly/ClientStats$MCaa;->mMCaac:Lu/aly/ClientStats$MCaa;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -237,13 +237,13 @@
     .line 118
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lu/aly/ClientStats$ICaa;
+    new-array v0, v0, [Lu/aly/ClientStats$MCaa;
 
-    sget-object v1, Lu/aly/ClientStats$ICaa;->mICaac:Lu/aly/ClientStats$ICaa;
+    sget-object v1, Lu/aly/ClientStats$MCaa;->mMCaac:Lu/aly/ClientStats$MCaa;
 
     aput-object v1, v0, v2
 
-    iput-object v0, p0, Lu/aly/ClientStats;->k:[Lu/aly/ClientStats$ICaa;
+    iput-object v0, p0, Lu/aly/ClientStats;->k:[Lu/aly/ClientStats$MCaa;
 
     .line 133
     iput v2, p0, Lu/aly/ClientStats;->a:I

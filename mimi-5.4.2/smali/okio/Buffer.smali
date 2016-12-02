@@ -2006,9 +2006,9 @@
 
     .prologue
     .line 68
-    new-instance v0, Lokio/Buffer$ICg;
+    new-instance v0, Lokio/Buffer$MCg;
 
-    invoke-direct {v0, p0}, Lokio/Buffer$ICg;-><init>(Lokio/Buffer;)V
+    invoke-direct {v0, p0}, Lokio/Buffer$MCg;-><init>(Lokio/Buffer;)V
 
     return-object v0
 .end method
@@ -2637,9 +2637,9 @@
 
     .prologue
     .line 110
-    new-instance v0, Lokio/Buffer$ICh;
+    new-instance v0, Lokio/Buffer$MCh;
 
-    invoke-direct {v0, p0}, Lokio/Buffer$ICh;-><init>(Lokio/Buffer;)V
+    invoke-direct {v0, p0}, Lokio/Buffer$MCh;-><init>(Lokio/Buffer;)V
 
     return-object v0
 .end method

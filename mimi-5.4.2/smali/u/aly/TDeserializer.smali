@@ -15,9 +15,9 @@
 
     .prologue
     .line 48
-    new-instance v0, Lu/aly/TCompactProtocol$ICgp;
+    new-instance v0, Lu/aly/TCompactProtocol$MCgp;
 
-    invoke-direct {v0}, Lu/aly/TCompactProtocol$ICgp;-><init>()V
+    invoke-direct {v0}, Lu/aly/TCompactProtocol$MCgp;-><init>()V
 
     invoke-direct {p0, v0}, Lu/aly/TDeserializer;-><init>(Lu/aly/TProtocolFactory;)V
 

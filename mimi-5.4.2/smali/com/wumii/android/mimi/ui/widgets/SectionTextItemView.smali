@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private mICbrd:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+.field private mMCbrd:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
 
 .field private mTextViewe:Landroid/widget/TextView;
 
@@ -50,12 +50,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
     .locals 1
 
     .prologue
     .line 11
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mICbrd:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mMCbrd:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
 
     return-object v0
 .end method
@@ -65,9 +65,9 @@
 
     .prologue
     .line 58
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbq;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;-><init>(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbq;-><init>(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;)V
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -105,9 +105,9 @@
     iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mTextViewe:Landroid/widget/TextView;
 
     .line 42
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mICbnc:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mMCbnc:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$MCbn;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$MCbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mTextViewe:Landroid/widget/TextView;
 
@@ -145,12 +145,12 @@
     return-object v0
 .end method
 
-.method public setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
+.method public setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;)V
     .locals 0
 
     .prologue
     .line 34
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mICbrd:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->mMCbrd:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
 
     .line 35
     return-void

@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Lu/aly/Traffic;",
-        "Lu/aly/Traffic$ICep;",
+        "Lu/aly/Traffic$MCep;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Lu/aly/Traffic$ICep;",
+            "Lu/aly/Traffic$MCep;",
             "Lu/aly/FieldMetaData;",
             ">;"
         }
@@ -118,9 +118,9 @@
 
     const-class v1, Lu/aly/StandardScheme;
 
-    new-instance v2, Lu/aly/Traffic$ICem;
+    new-instance v2, Lu/aly/Traffic$MCem;
 
-    invoke-direct {v2, v3}, Lu/aly/Traffic$ICem;-><init>(Lu/aly/Traffic$ICek;)V
+    invoke-direct {v2, v3}, Lu/aly/Traffic$MCem;-><init>(Lu/aly/Traffic$MCek;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -129,21 +129,21 @@
 
     const-class v1, Lu/aly/TupleScheme;
 
-    new-instance v2, Lu/aly/Traffic$ICeo;
+    new-instance v2, Lu/aly/Traffic$MCeo;
 
-    invoke-direct {v2, v3}, Lu/aly/Traffic$ICeo;-><init>(Lu/aly/Traffic$ICek;)V
+    invoke-direct {v2, v3}, Lu/aly/Traffic$MCeo;-><init>(Lu/aly/Traffic$MCek;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 114
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Lu/aly/Traffic$ICep;
+    const-class v1, Lu/aly/Traffic$MCep;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 115
-    sget-object v1, Lu/aly/Traffic$ICep;->mICepa:Lu/aly/Traffic$ICep;
+    sget-object v1, Lu/aly/Traffic$MCep;->mMCepa:Lu/aly/Traffic$MCep;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -158,7 +158,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 117
-    sget-object v1, Lu/aly/Traffic$ICep;->mICepb:Lu/aly/Traffic$ICep;
+    sget-object v1, Lu/aly/Traffic$MCep;->mMCepb:Lu/aly/Traffic$MCep;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

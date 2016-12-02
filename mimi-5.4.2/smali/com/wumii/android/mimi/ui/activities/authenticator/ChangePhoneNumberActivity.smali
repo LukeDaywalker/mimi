@@ -478,18 +478,18 @@
     .line 94
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->mTextViewr:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICe;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCe;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICe;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCe;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 101
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->mTextViewr:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICf;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICf;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCf;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -518,20 +518,20 @@
     .line 118
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->mEditTextD:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICg;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCg;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICg;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCg;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 125
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->mCountDownTimerViewC:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCh;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICx;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$MCx;)V
 
     .line 132
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
@@ -673,9 +673,9 @@
     if-nez v0, :cond_0
 
     .line 189
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCi;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$MCi;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;Landroid/app/Activity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->mChangePnoTaskE:Lcom/wumii/android/mimi/task/ChangePnoTask;
 

@@ -77,9 +77,9 @@
 
     .prologue
     .line 25
-    new-instance v0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;
+    new-instance v0, Lcom/crashlytics/android/answers/SessionEventsHandler$MCv;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;-><init>(Lcom/crashlytics/android/answers/SessionEventsHandler;Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/crashlytics/android/answers/SessionEventsHandler$MCv;-><init>(Lcom/crashlytics/android/answers/SessionEventsHandler;Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;Ljava/lang/String;)V
 
     invoke-super {p0, v0}, Lio/fabric/sdk/android/services/events/EventsHandler;->b(Ljava/lang/Runnable;)V
 

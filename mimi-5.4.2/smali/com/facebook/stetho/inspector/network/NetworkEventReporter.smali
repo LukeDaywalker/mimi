@@ -7,10 +7,10 @@
 .method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/io/InputStream;Lcom/facebook/stetho/inspector/network/ResponseHandler;)Ljava/io/InputStream;
 .end method
 
-.method public abstract a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;)V
+.method public abstract a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;)V
 .end method
 
-.method public abstract a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;)V
+.method public abstract a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;)V
 .end method
 
 .method public abstract a(Ljava/lang/String;)V

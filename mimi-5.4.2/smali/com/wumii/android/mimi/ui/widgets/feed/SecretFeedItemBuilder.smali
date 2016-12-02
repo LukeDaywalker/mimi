@@ -11,7 +11,7 @@
 
 .field private mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private mICzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+.field private mMCzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;
 
 .field private mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
@@ -123,9 +123,9 @@
     .line 45
     check-cast v2, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mICzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mMCzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;
 
-    invoke-virtual {v2, v5}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->setOnSecretCardClickListener(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
+    invoke-virtual {v2, v5}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->setOnSecretCardClickListener(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;)V
 
     .line 47
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mSete:Ljava/util/Set;
@@ -185,12 +185,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;)V
     .locals 0
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mICzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mMCzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;
 
     .line 55
     return-void

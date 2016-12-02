@@ -1138,9 +1138,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/security/KeyStore;->load(Ljava/io/InputStream;[C)V
 
     .line 331
-    new-instance v2, Lcom/sina/weibo/sdk/net/HttpManager$ICe;
+    new-instance v2, Lcom/sina/weibo/sdk/net/HttpManager$MCe;
 
-    invoke-direct {v2, v0}, Lcom/sina/weibo/sdk/net/HttpManager$ICe;-><init>(Ljava/security/KeyStore;)V
+    invoke-direct {v2, v0}, Lcom/sina/weibo/sdk/net/HttpManager$MCe;-><init>(Ljava/security/KeyStore;)V
 
     sput-object v2, Lcom/sina/weibo/sdk/net/HttpManager;->mSSLSocketFactoryd:Lorg/apache/http/conn/ssl/SSLSocketFactory;
     :try_end_0
@@ -1172,7 +1172,7 @@
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 335
-    invoke-static {}, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->getSocketFactory()Lorg/apache/http/conn/ssl/SSLSocketFactory;
+    invoke-static {}, Lcom/sina/weibo/sdk/net/HttpManager$MCe;->getSocketFactory()Lorg/apache/http/conn/ssl/SSLSocketFactory;
 
     move-result-object v0
 

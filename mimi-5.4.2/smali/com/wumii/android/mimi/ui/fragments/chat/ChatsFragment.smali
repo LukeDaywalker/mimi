@@ -5,8 +5,8 @@
 # interfaces
 .implements Landroid/widget/AbsListView$OnScrollListener;
 .implements Landroid/widget/AdapterView$OnItemLongClickListener;
-.implements Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
-.implements Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+.implements Lcom/wumii/android/mimi/task/RemoveChatsTask$MCbl;
+.implements Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;
 
 
 # instance fields
@@ -20,11 +20,11 @@
 
 .field protected mContextToasta:Lcom/wumii/android/mimi/util/ContextToast;
 
-.field private mICdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
-
-.field private mICdp:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
-
 .field private mListViewb:Landroid/widget/ListView;
+
+.field private mMCdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
+
+.field private mMCdp:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
 .field private mOnSharedPreferenceChangeListenerm:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
@@ -44,25 +44,25 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;-><init>()V
 
     .line 403
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICm;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCm;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICm;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCm;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mChatObservern:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
     .line 421
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICc;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCc;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICc;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCc;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mICdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mMCdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
     .line 429
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICd;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCd;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICd;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCd;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mICdp:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mMCdp:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
     return-void
 .end method
@@ -72,19 +72,19 @@
 
     .prologue
     .line 347
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICl;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCl;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1, p1, p2}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICl;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;Ljava/lang/String;)V
+    invoke-direct {v0, p0, v1, p1, p2}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCl;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;->getChatId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p2}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICl;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p2}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCl;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 356
     return-void
@@ -298,9 +298,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mICdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mMCdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 204
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
@@ -309,9 +309,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mICdp:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mMCdp:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 205
     return-void
@@ -345,9 +345,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mICdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mMCdo:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 210
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mAppFacadei:Lcom/wumii/android/mimi/models/AppFacade;
@@ -356,9 +356,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mICdp:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mMCdp:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 211
     return-void
@@ -421,15 +421,15 @@
 
     .prologue
     .line 233
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICh;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCh;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICh;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCh;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICh;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCh;->j()V
 
     .line 246
     return-void
@@ -440,15 +440,15 @@
 
     .prologue
     .line 250
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCi;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCi;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCi;->j()V
 
     .line 267
     return-void
@@ -692,7 +692,7 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2, p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;Ljava/util/List;)V
+    invoke-direct {v1, v2, p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;Ljava/util/List;)V
 
     iput-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mChatListAdapterk:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
@@ -731,9 +731,9 @@
 
     move-result-object v0
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICe;
+    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCe;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICe;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCe;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -744,9 +744,9 @@
 
     move-result-object v0
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICf;
+    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCf;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICf;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCf;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -776,9 +776,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->e()V
 
     .line 152
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICg;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCg;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICg;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCg;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
     const-wide/16 v2, 0xc8
 
@@ -883,9 +883,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 95
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICb;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCb;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICb;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCb;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->mOnSharedPreferenceChangeListenerm:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
@@ -1081,9 +1081,9 @@
 
     .line 297
     :goto_1
-    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
+    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCj;
 
-    invoke-direct {v3, p0, v0, v4}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;Lcom/wumii/android/mimi/models/entities/chat/ChatSession;Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
+    invoke-direct {v3, p0, v0, v4}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$MCj;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;Lcom/wumii/android/mimi/models/entities/chat/ChatSession;Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     invoke-virtual {v5, v1, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

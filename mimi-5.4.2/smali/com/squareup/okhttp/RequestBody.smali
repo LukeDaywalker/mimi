@@ -116,9 +116,9 @@
     invoke-static/range {v0 .. v5}, Lcom/squareup/okhttp/internal/Util;->a(JJJ)V
 
     .line 86
-    new-instance v0, Lcom/squareup/okhttp/RequestBody$ICar;
+    new-instance v0, Lcom/squareup/okhttp/RequestBody$MCar;
 
-    invoke-direct {v0, p0, p3, p1, p2}, Lcom/squareup/okhttp/RequestBody$ICar;-><init>(Lcom/squareup/okhttp/MediaType;I[BI)V
+    invoke-direct {v0, p0, p3, p1, p2}, Lcom/squareup/okhttp/RequestBody$MCar;-><init>(Lcom/squareup/okhttp/MediaType;I[BI)V
 
     return-object v0
 .end method

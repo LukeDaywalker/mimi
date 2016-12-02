@@ -64,7 +64,7 @@
 
     const-string/jumbo v2, "checkArgs fail, messageAction is too long"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -86,7 +86,7 @@
 
     const-string/jumbo v2, "checkArgs fail, messageExt is too long"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

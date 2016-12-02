@@ -11,8 +11,6 @@
 
 .field private mFe:F
 
-.field private mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
-
 .field private mId:I
 
 .field private mIg:I
@@ -20,6 +18,8 @@
 .field private mIh:I
 
 .field private mIi:I
+
+.field private mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
 .field private mOnScrollListenerb:Landroid/widget/AbsListView$OnScrollListener;
 
@@ -124,9 +124,9 @@
 
     .line 125
     :goto_0
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
-    invoke-interface {v1, p1, p2, p0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->a(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-interface {v1, p1, p2, p0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;->a(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v1
 
@@ -235,7 +235,7 @@
     invoke-super {p0, p1}, Landroid/widget/ListView;->dispatchDraw(Landroid/graphics/Canvas;)V
 
     .line 153
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
     if-eqz v0, :cond_0
 
@@ -336,13 +336,13 @@
 
     .line 76
     :cond_0
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
-    invoke-interface {v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->getCount()I
+    invoke-interface {v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;->getCount()I
 
     move-result v1
 
@@ -399,16 +399,16 @@
     sub-int v1, p2, v1
 
     .line 90
-    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
-    invoke-interface {v2, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->d(I)I
+    invoke-interface {v2, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;->d(I)I
 
     move-result v2
 
     .line 91
-    iget-object v3, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v3, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
-    invoke-interface {v3, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->a_(I)I
+    invoke-interface {v3, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;->a_(I)I
 
     move-result v3
 
@@ -444,9 +444,9 @@
     if-ge v0, v2, :cond_7
 
     .line 99
-    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
-    invoke-interface {v2, v0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->c(I)Z
+    invoke-interface {v2, v0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;->c(I)Z
 
     move-result v2
 
@@ -576,9 +576,9 @@
     move-object v0, p1
 
     .line 66
-    check-cast v0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    check-cast v0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
-    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mMCdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCd;
 
     .line 67
     invoke-super {p0, p1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
@@ -587,14 +587,14 @@
     return-void
 .end method
 
-.method public setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;)V
+.method public setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCb;)V
     .locals 1
 
     .prologue
     .line 212
-    new-instance v0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;
+    new-instance v0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCa;
 
-    invoke-direct {v0, p0, p1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;-><init>(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;)V
+    invoke-direct {v0, p0, p1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCa;-><init>(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCb;)V
 
     invoke-super {p0, v0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -602,7 +602,7 @@
     return-void
 .end method
 
-.method public setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICc;)V
+.method public setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$MCc;)V
     .locals 0
 
     .prologue

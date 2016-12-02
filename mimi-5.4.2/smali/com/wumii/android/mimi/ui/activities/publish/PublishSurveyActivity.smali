@@ -508,9 +508,9 @@
     .line 276
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mEditTexto:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$MCx;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$MCx;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -539,9 +539,9 @@
     .line 297
     const v1, 0x7f070004
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$MCy;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$MCy;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setItems(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -638,11 +638,11 @@
     .line 168
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mProcessImageTaskC:Lcom/wumii/android/mimi/task/ProcessImageTask;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICw;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$MCw;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICw;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$MCw;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;)V
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/task/ProcessImageTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/task/ProcessImageTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/ProcessImageTask$MCax;)V
 
     goto :goto_0
 

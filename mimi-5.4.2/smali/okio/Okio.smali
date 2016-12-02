@@ -126,9 +126,9 @@
 
     .line 71
     :cond_1
-    new-instance v0, Lokio/Okio$ICr;
+    new-instance v0, Lokio/Okio$MCr;
 
-    invoke-direct {v0, p1, p0}, Lokio/Okio$ICr;-><init>(Lokio/Timeout;Ljava/io/OutputStream;)V
+    invoke-direct {v0, p1, p0}, Lokio/Okio$MCr;-><init>(Lokio/Timeout;Ljava/io/OutputStream;)V
 
     return-object v0
 .end method
@@ -216,9 +216,9 @@
 
     .line 130
     :cond_1
-    new-instance v0, Lokio/Okio$ICs;
+    new-instance v0, Lokio/Okio$MCs;
 
-    invoke-direct {v0, p1, p0}, Lokio/Okio$ICs;-><init>(Lokio/Timeout;Ljava/io/InputStream;)V
+    invoke-direct {v0, p1, p0}, Lokio/Okio$MCs;-><init>(Lokio/Timeout;Ljava/io/InputStream;)V
 
     return-object v0
 .end method
@@ -266,9 +266,9 @@
 
     .prologue
     .line 203
-    new-instance v0, Lokio/Okio$ICt;
+    new-instance v0, Lokio/Okio$MCt;
 
-    invoke-direct {v0, p0}, Lokio/Okio$ICt;-><init>(Ljava/net/Socket;)V
+    invoke-direct {v0, p0}, Lokio/Okio$MCt;-><init>(Ljava/net/Socket;)V
 
     return-object v0
 .end method

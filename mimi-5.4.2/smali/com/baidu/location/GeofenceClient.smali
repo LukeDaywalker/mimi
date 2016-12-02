@@ -2,8 +2,8 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/baidu/location/ICa0;
-.implements Lcom/baidu/location/ICn;
+.implements Lcom/baidu/location/MCa0;
+.implements Lcom/baidu/location/MCn;
 
 
 # static fields
@@ -19,7 +19,7 @@
 
 .field private mContextbh:Landroid/content/Context;
 
-.field private mICabo:Lcom/baidu/location/GeofenceClient$ICa;
+.field private mMCabo:Lcom/baidu/location/GeofenceClient$MCa;
 
 .field private mMessengerbk:Landroid/os/Messenger;
 
@@ -54,15 +54,15 @@
 
     iput-object v1, p0, Lcom/baidu/location/GeofenceClient;->mMessengerbm:Landroid/os/Messenger;
 
-    new-instance v0, Lcom/baidu/location/GeofenceClient$ICa;
+    new-instance v0, Lcom/baidu/location/GeofenceClient$MCa;
 
-    invoke-direct {v0, p0, v1}, Lcom/baidu/location/GeofenceClient$ICa;-><init>(Lcom/baidu/location/GeofenceClient;Lcom/baidu/location/GeofenceClient$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/baidu/location/GeofenceClient$MCa;-><init>(Lcom/baidu/location/GeofenceClient;Lcom/baidu/location/GeofenceClient$1;)V
 
-    iput-object v0, p0, Lcom/baidu/location/GeofenceClient;->mICabo:Lcom/baidu/location/GeofenceClient$ICa;
+    iput-object v0, p0, Lcom/baidu/location/GeofenceClient;->mMCabo:Lcom/baidu/location/GeofenceClient$MCa;
 
     new-instance v0, Landroid/os/Messenger;
 
-    iget-object v1, p0, Lcom/baidu/location/GeofenceClient;->mICabo:Lcom/baidu/location/GeofenceClient$ICa;
+    iget-object v1, p0, Lcom/baidu/location/GeofenceClient;->mMCabo:Lcom/baidu/location/GeofenceClient$MCa;
 
     invoke-direct {v0, v1}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 
@@ -94,7 +94,7 @@
 
     iget-object v1, p0, Lcom/baidu/location/GeofenceClient;->mContextbh:Landroid/content/Context;
 
-    const-class v2, Lcom/baidu/location/ICf;
+    const-class v2, Lcom/baidu/location/MCf;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -251,26 +251,26 @@
 
     const-string/jumbo v0, "geofence is null"
 
-    invoke-static {p1, v0}, Lcom/baidu/location/ICaq;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lcom/baidu/location/MCaq;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
-    instance-of v0, p1, Lcom/baidu/location/ICat;
+    instance-of v0, p1, Lcom/baidu/location/MCat;
 
     const-string/jumbo v1, "BDGeofence must be created using BDGeofence.Builder"
 
-    invoke-static {v0, v1}, Lcom/baidu/location/ICaq;->if(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/baidu/location/MCaq;->if(ZLjava/lang/Object;)V
 
     :cond_0
     iget-object v0, p0, Lcom/baidu/location/GeofenceClient;->mContextbh:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/baidu/location/ICax;->for(Landroid/content/Context;)Lcom/baidu/location/ICax;
+    invoke-static {v0}, Lcom/baidu/location/MCax;->for(Landroid/content/Context;)Lcom/baidu/location/MCax;
 
     move-result-object v0
 
-    check-cast p1, Lcom/baidu/location/ICat;
+    check-cast p1, Lcom/baidu/location/MCat;
 
-    invoke-virtual {v0, p1, p2}, Lcom/baidu/location/ICax;->if(Lcom/baidu/location/ICat;Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;)V
+    invoke-virtual {v0, p1, p2}, Lcom/baidu/location/MCax;->if(Lcom/baidu/location/MCat;Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;)V
 
     return-void
 .end method
@@ -301,11 +301,11 @@
 
     iget-object v0, p0, Lcom/baidu/location/GeofenceClient;->mContextbh:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/baidu/location/ICax;->for(Landroid/content/Context;)Lcom/baidu/location/ICax;
+    invoke-static {v0}, Lcom/baidu/location/MCax;->for(Landroid/content/Context;)Lcom/baidu/location/MCax;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lcom/baidu/location/ICax;->if(Ljava/util/List;Lcom/baidu/location/GeofenceClient$OnRemoveBDGeofencesResultListener;)V
+    invoke-virtual {v0, p1, p2}, Lcom/baidu/location/MCax;->if(Ljava/util/List;Lcom/baidu/location/GeofenceClient$OnRemoveBDGeofencesResultListener;)V
 
     return-void
 .end method
@@ -332,13 +332,13 @@
 
     const-string/jumbo v1, "OnGeofenceTriggerListener not register!"
 
-    invoke-static {v0, v1}, Lcom/baidu/location/ICaq;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Lcom/baidu/location/MCaq;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/baidu/location/GeofenceClient;->mICabo:Lcom/baidu/location/GeofenceClient$ICa;
+    iget-object v0, p0, Lcom/baidu/location/GeofenceClient;->mMCabo:Lcom/baidu/location/GeofenceClient$MCa;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/baidu/location/GeofenceClient$ICa;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v0, v1}, Lcom/baidu/location/GeofenceClient$MCa;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 

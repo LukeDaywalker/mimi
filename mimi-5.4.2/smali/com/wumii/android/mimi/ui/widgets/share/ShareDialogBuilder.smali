@@ -174,9 +174,9 @@
     invoke-virtual {v4, v3}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     .line 134
-    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;
+    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$MCh;
 
-    invoke-direct {v3, p0, p3}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;-><init>(Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
+    invoke-direct {v3, p0, p3}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$MCh;-><init>(Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
     invoke-virtual {v4, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

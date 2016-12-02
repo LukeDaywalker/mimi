@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+.field private mMCqa:Lcom/google/i18n/phonenumbers/RegexCache$MCq;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/a/a/q",
@@ -26,11 +26,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    new-instance v0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    new-instance v0, Lcom/google/i18n/phonenumbers/RegexCache$MCq;
 
-    invoke-direct {v0, p1}, Lcom/google/i18n/phonenumbers/RegexCache$ICq;-><init>(I)V
+    invoke-direct {v0, p1}, Lcom/google/i18n/phonenumbers/RegexCache$MCq;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mMCqa:Lcom/google/i18n/phonenumbers/RegexCache$MCq;
 
     .line 33
     return-void
@@ -43,9 +43,9 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mMCqa:Lcom/google/i18n/phonenumbers/RegexCache$MCq;
 
-    invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/RegexCache$MCq;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -60,9 +60,9 @@
     move-result-object v0
 
     .line 39
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mMCqa:Lcom/google/i18n/phonenumbers/RegexCache$MCq;
 
-    invoke-virtual {v1, p1, v0}, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->a(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {v1, p1, v0}, Lcom/google/i18n/phonenumbers/RegexCache$MCq;->a(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 41
     :cond_0

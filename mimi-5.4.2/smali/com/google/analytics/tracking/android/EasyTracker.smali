@@ -134,9 +134,9 @@
     invoke-direct {p0, p1, p2, p4}, Lcom/google/analytics/tracking/android/EasyTracker;->a(Landroid/content/Context;Lcom/google/analytics/tracking/android/ParameterLoader;Lcom/google/analytics/tracking/android/ServiceManager;)V
 
     .line 110
-    new-instance v0, Lcom/google/analytics/tracking/android/EasyTracker$ICq;
+    new-instance v0, Lcom/google/analytics/tracking/android/EasyTracker$MCq;
 
-    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/EasyTracker$ICq;-><init>(Lcom/google/analytics/tracking/android/EasyTracker;)V
+    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/EasyTracker$MCq;-><init>(Lcom/google/analytics/tracking/android/EasyTracker;)V
 
     iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mClockm:Lcom/google/analytics/tracking/android/Clock;
 
@@ -173,7 +173,7 @@
     return-object v0
 .end method
 
-.method private a(Ljava/lang/String;)Lcom/google/analytics/tracking/android/Logger$ICat;
+.method private a(Ljava/lang/String;)Lcom/google/analytics/tracking/android/Logger$MCat;
     .locals 1
 
     .prologue
@@ -183,7 +183,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/analytics/tracking/android/Logger$ICat;->valueOf(Ljava/lang/String;)Lcom/google/analytics/tracking/android/Logger$ICat;
+    invoke-static {v0}, Lcom/google/analytics/tracking/android/Logger$MCat;->valueOf(Ljava/lang/String;)Lcom/google/analytics/tracking/android/Logger$MCat;
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -402,7 +402,7 @@
     if-eqz v0, :cond_3
 
     .line 236
-    invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/EasyTracker;->a(Ljava/lang/String;)Lcom/google/analytics/tracking/android/Logger$ICat;
+    invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/EasyTracker;->a(Ljava/lang/String;)Lcom/google/analytics/tracking/android/Logger$MCat;
 
     move-result-object v0
 
@@ -437,7 +437,7 @@
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lcom/google/analytics/tracking/android/Logger;->a(Lcom/google/analytics/tracking/android/Logger$ICat;)V
+    invoke-interface {v1, v0}, Lcom/google/analytics/tracking/android/Logger;->a(Lcom/google/analytics/tracking/android/Logger$MCat;)V
 
     .line 243
     :cond_3
@@ -873,9 +873,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICanai:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCanai:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 330
     invoke-direct {p0}, Lcom/google/analytics/tracking/android/EasyTracker;->c()V
@@ -1054,9 +1054,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICanaj:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCanaj:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 357
     iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
@@ -1094,11 +1094,11 @@
     invoke-direct {p0}, Lcom/google/analytics/tracking/android/EasyTracker;->c()V
 
     .line 368
-    new-instance v0, Lcom/google/analytics/tracking/android/EasyTracker$ICr;
+    new-instance v0, Lcom/google/analytics/tracking/android/EasyTracker$MCr;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/google/analytics/tracking/android/EasyTracker$ICr;-><init>(Lcom/google/analytics/tracking/android/EasyTracker;Lcom/google/analytics/tracking/android/EasyTracker$ICq;)V
+    invoke-direct {v0, p0, v1}, Lcom/google/analytics/tracking/android/EasyTracker$MCr;-><init>(Lcom/google/analytics/tracking/android/EasyTracker;Lcom/google/analytics/tracking/android/EasyTracker$MCq;)V
 
     iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mTimerTasko:Ljava/util/TimerTask;
 

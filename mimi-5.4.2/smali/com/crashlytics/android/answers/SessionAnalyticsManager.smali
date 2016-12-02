@@ -87,9 +87,9 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICra:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCra:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v1
 
@@ -189,9 +189,9 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICrg:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCrg:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v1
 
@@ -233,9 +233,9 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICre:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCre:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v1
 
@@ -256,9 +256,9 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICrc:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCrc:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v1
 
@@ -279,9 +279,9 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICrd:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCrd:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v1
 
@@ -302,9 +302,9 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICrb:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCrb:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v1
 
@@ -325,9 +325,9 @@
 
     iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->mSessionEventMetadataa:Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICrf:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v2, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCrf:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v1
 

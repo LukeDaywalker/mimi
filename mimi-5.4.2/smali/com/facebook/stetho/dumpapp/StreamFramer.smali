@@ -34,13 +34,13 @@
 
     new-instance v1, Ljava/io/BufferedOutputStream;
 
-    new-instance v2, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;
+    new-instance v2, Lcom/facebook/stetho/dumpapp/StreamFramer$MCk;
 
     iget-object v3, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     const/16 v4, 0x31
 
-    invoke-direct {v2, p0, v3, v4}, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;-><init>(Lcom/facebook/stetho/dumpapp/StreamFramer;Ljava/io/DataOutputStream;B)V
+    invoke-direct {v2, p0, v3, v4}, Lcom/facebook/stetho/dumpapp/StreamFramer$MCk;-><init>(Lcom/facebook/stetho/dumpapp/StreamFramer;Ljava/io/DataOutputStream;B)V
 
     invoke-direct {v1, v2}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
 
@@ -51,13 +51,13 @@
     .line 48
     new-instance v0, Ljava/io/PrintStream;
 
-    new-instance v1, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;
+    new-instance v1, Lcom/facebook/stetho/dumpapp/StreamFramer$MCk;
 
     iget-object v2, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     const/16 v3, 0x32
 
-    invoke-direct {v1, p0, v2, v3}, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;-><init>(Lcom/facebook/stetho/dumpapp/StreamFramer;Ljava/io/DataOutputStream;B)V
+    invoke-direct {v1, p0, v2, v3}, Lcom/facebook/stetho/dumpapp/StreamFramer$MCk;-><init>(Lcom/facebook/stetho/dumpapp/StreamFramer;Ljava/io/DataOutputStream;B)V
 
     invoke-direct {v0, v1}, Ljava/io/PrintStream;-><init>(Ljava/io/OutputStream;)V
 

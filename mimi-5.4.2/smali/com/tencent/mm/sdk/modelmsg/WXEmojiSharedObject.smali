@@ -84,7 +84,7 @@
 
     const-string/jumbo v1, "checkArgs fail, packageid or thumburl is invalid"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 

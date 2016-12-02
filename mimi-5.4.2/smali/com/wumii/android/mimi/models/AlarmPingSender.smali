@@ -71,16 +71,16 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mStringh:Ljava/lang/String;
 
     .line 50
-    new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;
+    new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$MCb;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$MCb;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mHandleri:Landroid/os/Handler;
 
     .line 174
-    new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;
+    new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$MCd;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$MCd;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mRunnablej:Ljava/lang/Runnable;
 
@@ -268,9 +268,9 @@
 
     .line 148
     :goto_2
-    new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;
+    new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$MCc;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$MCc;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 
     invoke-interface {v2, v0}, Lorg/eclipse/paho/client/mqttv3/IMqttToken;->a(Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;)V
 
@@ -352,7 +352,7 @@
 
     .prologue
     .line 79
-    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->mStringb:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/Constants$MCr;->mStringb:Ljava/lang/String;
 
     .line 80
     sget-object v1, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;
@@ -498,9 +498,9 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mClientCommsb:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     .line 74
-    new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;
+    new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$MCe;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$MCe;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mBroadcastReceiverd:Landroid/content/BroadcastReceiver;
 

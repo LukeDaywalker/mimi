@@ -134,9 +134,9 @@
     .line 45
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mEditTextn:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$ICaz;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$MCaz;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$ICaz;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$MCaz;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

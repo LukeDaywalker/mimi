@@ -304,9 +304,9 @@
     check-cast v0, Landroid/widget/LinearLayout;
 
     .line 67
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity$ICaq;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity$MCaq;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity$ICaq;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity$MCaq;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;)V
 
     .line 74
     array-length v4, v3

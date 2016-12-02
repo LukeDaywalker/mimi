@@ -1,5 +1,5 @@
 .class public Lcom/baidu/mapapi/navi/BaiduMapNavigation;
-.super Lcom/baidu/mapapi/a/a/ICa;
+.super Lcom/baidu/mapapi/a/a/MCa;
 
 
 # static fields
@@ -20,7 +20,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/baidu/mapapi/a/a/ICa;-><init>()V
+    invoke-direct {p0}, Lcom/baidu/mapapi/a/a/MCa;-><init>()V
 
     return-void
 .end method
@@ -412,7 +412,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-static {p0}, Lcom/baidu/mapapi/utils/ICa;->a(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/baidu/mapapi/utils/MCa;->a(Landroid/content/Context;)V
 
     :cond_0
     return-void
@@ -467,7 +467,7 @@
 
     const/16 v0, 0x8
 
-    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/ICa;->a(Lcom/baidu/mapapi/navi/NaviParaOption;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/MCa;->a(Lcom/baidu/mapapi/navi/NaviParaOption;Landroid/content/Context;I)Z
 
     move-result v0
 
@@ -542,7 +542,7 @@
 
     const/4 v0, 0x5
 
-    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/ICa;->a(Lcom/baidu/mapapi/navi/NaviParaOption;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/MCa;->a(Lcom/baidu/mapapi/navi/NaviParaOption;Landroid/content/Context;I)Z
 
     move-result v0
 
@@ -647,7 +647,7 @@
 
     const/4 v0, 0x7
 
-    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/ICa;->a(Lcom/baidu/mapapi/navi/NaviParaOption;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/MCa;->a(Lcom/baidu/mapapi/navi/NaviParaOption;Landroid/content/Context;I)Z
 
     move-result v0
 

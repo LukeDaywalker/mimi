@@ -23,7 +23,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;ILcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+.method public a(Ljava/lang/String;ILcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
     .locals 0
 
     .prologue
@@ -37,7 +37,7 @@
     iput p2, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->mIe:I
 
     .line 27
-    invoke-virtual {p0, p3}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, p3}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 28
     return-void

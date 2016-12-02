@@ -118,9 +118,9 @@
     iput-boolean v0, p0, Lcom/wumii/android/soundtouch/RecordThread;->isZe:Z
 
     .line 37
-    new-instance v0, Lcom/wumii/android/soundtouch/RecordThread$ICf;
+    new-instance v0, Lcom/wumii/android/soundtouch/RecordThread$MCf;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/soundtouch/RecordThread$ICf;-><init>(Lcom/wumii/android/soundtouch/RecordThread;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/soundtouch/RecordThread$MCf;-><init>(Lcom/wumii/android/soundtouch/RecordThread;)V
 
     iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordThread;->mRunnablen:Ljava/lang/Runnable;
 

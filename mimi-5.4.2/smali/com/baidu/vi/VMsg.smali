@@ -79,7 +79,7 @@
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    new-instance v0, Lcom/baidu/vi/VMsg$ICa;
+    new-instance v0, Lcom/baidu/vi/VMsg$MCa;
 
     sget-object v1, Lcom/baidu/vi/VMsg;->mHandlerThreadc:Landroid/os/HandlerThread;
 
@@ -87,7 +87,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/baidu/vi/VMsg$ICa;-><init>(Landroid/os/Looper;)V
+    invoke-direct {v0, v1}, Lcom/baidu/vi/VMsg$MCa;-><init>(Landroid/os/Looper;)V
 
     sput-object v0, Lcom/baidu/vi/VMsg;->mHandlerb:Landroid/os/Handler;
 

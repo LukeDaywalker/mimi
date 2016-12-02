@@ -82,11 +82,11 @@
     move-result-object v0
 
     .line 142
-    sget-object v1, Lcom/facebook/stetho/inspector/ChromeDevtoolsServer$ICb;->mArrayIa:[I
+    sget-object v1, Lcom/facebook/stetho/inspector/ChromeDevtoolsServer$MCb;->mArrayIa:[I
 
-    iget-object v2, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mICca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    iget-object v2, v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mMCca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$MCc;
 
-    invoke-virtual {v2}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->ordinal()I
+    invoke-virtual {v2}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$MCc;->ordinal()I
 
     move-result v2
 

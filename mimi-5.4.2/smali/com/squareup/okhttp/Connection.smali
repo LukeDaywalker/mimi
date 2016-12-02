@@ -200,23 +200,23 @@
 
     move v7, p6
 
-    invoke-virtual/range {v0 .. v7}, Lcom/squareup/okhttp/internal/http/SocketConnector;->a(IIILcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Route;Ljava/util/List;Z)Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;
+    invoke-virtual/range {v0 .. v7}, Lcom/squareup/okhttp/internal/http/SocketConnector;->a(IIILcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Route;Ljava/util/List;Z)Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;
 
     move-result-object v0
 
     .line 155
     :goto_0
-    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mSocketb:Ljava/net/Socket;
+    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;->mSocketb:Ljava/net/Socket;
 
     iput-object v1, p0, Lcom/squareup/okhttp/Connection;->mSocketc:Ljava/net/Socket;
 
     .line 156
-    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mHandshaked:Lcom/squareup/okhttp/Handshake;
+    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;->mHandshaked:Lcom/squareup/okhttp/Handshake;
 
     iput-object v1, p0, Lcom/squareup/okhttp/Connection;->mHandshakei:Lcom/squareup/okhttp/Handshake;
 
     .line 157
-    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mProtocolc:Lcom/squareup/okhttp/Protocol;
+    iget-object v1, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     if-nez v1, :cond_4
 
@@ -248,7 +248,7 @@
     invoke-virtual {v0, v1}, Ljava/net/Socket;->setSoTimeout(I)V
 
     .line 163
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$MCak;
 
     iget-object v1, p0, Lcom/squareup/okhttp/Connection;->mRouteb:Lcom/squareup/okhttp/Route;
 
@@ -260,16 +260,16 @@
 
     iget-object v3, p0, Lcom/squareup/okhttp/Connection;->mSocketc:Ljava/net/Socket;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;-><init>(Ljava/lang/String;ZLjava/net/Socket;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$MCak;-><init>(Ljava/lang/String;ZLjava/net/Socket;)V
 
     iget-object v1, p0, Lcom/squareup/okhttp/Connection;->mProtocolg:Lcom/squareup/okhttp/Protocol;
 
     .line 164
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$MCak;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/internal/spdy/SpdyConnection$MCak;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->a()Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$MCak;->a()Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
     move-result-object v0
 
@@ -332,7 +332,7 @@
     :cond_3
     iget-object v1, p0, Lcom/squareup/okhttp/Connection;->mRouteb:Lcom/squareup/okhttp/Route;
 
-    invoke-virtual {v0, p1, p2, v1}, Lcom/squareup/okhttp/internal/http/SocketConnector;->a(IILcom/squareup/okhttp/Route;)Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;
+    invoke-virtual {v0, p1, p2, v1}, Lcom/squareup/okhttp/internal/http/SocketConnector;->a(IILcom/squareup/okhttp/Route;)Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;
 
     move-result-object v0
 
@@ -340,7 +340,7 @@
 
     .line 157
     :cond_4
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;->mProtocolc:Lcom/squareup/okhttp/Protocol;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;->mProtocolc:Lcom/squareup/okhttp/Protocol;
 
     goto :goto_1
 

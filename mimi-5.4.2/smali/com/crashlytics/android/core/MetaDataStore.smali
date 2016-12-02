@@ -47,11 +47,11 @@
 
     .prologue
     .line 147
-    new-instance v0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;
+    new-instance v0, Lcom/crashlytics/android/core/MetaDataStore$MCbc;
 
-    invoke-direct {v0, p0}, Lcom/crashlytics/android/core/MetaDataStore$ICbc;-><init>(Lcom/crashlytics/android/core/UserMetaData;)V
+    invoke-direct {v0, p0}, Lcom/crashlytics/android/core/MetaDataStore$MCbc;-><init>(Lcom/crashlytics/android/core/UserMetaData;)V
 
-    invoke-virtual {v0}, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/crashlytics/android/core/MetaDataStore$MCbc;->toString()Ljava/lang/String;
 
     move-result-object v0
 

@@ -13,9 +13,9 @@
 
     .prologue
     .line 76
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/PushObserver$ICx;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/PushObserver$MCx;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/internal/spdy/PushObserver$ICx;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/internal/spdy/PushObserver$MCx;-><init>()V
 
     sput-object v0, Lcom/squareup/okhttp/internal/spdy/PushObserver;->mPushObservera:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 

@@ -125,9 +125,9 @@
     invoke-static {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Landroid/content/Context;ZZ)V
 
     .line 41
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafai:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafai:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     .line 43
     :cond_0
@@ -159,9 +159,9 @@
     invoke-static {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Landroid/content/Context;ZZ)V
 
     .line 49
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafai:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafai:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     .line 51
     :cond_0

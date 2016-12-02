@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/squareup/okhttp/Headers$ICab;)V
+.method private constructor <init>(Lcom/squareup/okhttp/Headers$MCab;)V
     .locals 2
 
     .prologue
@@ -16,11 +16,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 52
-    invoke-static {p1}, Lcom/squareup/okhttp/Headers$ICab;->a(Lcom/squareup/okhttp/Headers$ICab;)Ljava/util/List;
+    invoke-static {p1}, Lcom/squareup/okhttp/Headers$MCab;->a(Lcom/squareup/okhttp/Headers$MCab;)Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {p1}, Lcom/squareup/okhttp/Headers$ICab;->a(Lcom/squareup/okhttp/Headers$ICab;)Ljava/util/List;
+    invoke-static {p1}, Lcom/squareup/okhttp/Headers$MCab;->a(Lcom/squareup/okhttp/Headers$MCab;)Ljava/util/List;
 
     move-result-object v1
 
@@ -42,12 +42,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/squareup/okhttp/Headers$ICab;Lcom/squareup/okhttp/Headers$ICaa;)V
+.method synthetic constructor <init>(Lcom/squareup/okhttp/Headers$MCab;Lcom/squareup/okhttp/Headers$MCaa;)V
     .locals 0
 
     .prologue
     .line 48
-    invoke-direct {p0, p1}, Lcom/squareup/okhttp/Headers;-><init>(Lcom/squareup/okhttp/Headers$ICab;)V
+    invoke-direct {p0, p1}, Lcom/squareup/okhttp/Headers;-><init>(Lcom/squareup/okhttp/Headers$MCab;)V
 
     return-void
 .end method
@@ -157,17 +157,17 @@
     return-object v0
 .end method
 
-.method public b()Lcom/squareup/okhttp/Headers$ICab;
+.method public b()Lcom/squareup/okhttp/Headers$MCab;
     .locals 3
 
     .prologue
     .line 121
-    new-instance v0, Lcom/squareup/okhttp/Headers$ICab;
+    new-instance v0, Lcom/squareup/okhttp/Headers$MCab;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/Headers$ICab;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/Headers$MCab;-><init>()V
 
     .line 122
-    invoke-static {v0}, Lcom/squareup/okhttp/Headers$ICab;->a(Lcom/squareup/okhttp/Headers$ICab;)Ljava/util/List;
+    invoke-static {v0}, Lcom/squareup/okhttp/Headers$MCab;->a(Lcom/squareup/okhttp/Headers$MCab;)Ljava/util/List;
 
     move-result-object v1
 

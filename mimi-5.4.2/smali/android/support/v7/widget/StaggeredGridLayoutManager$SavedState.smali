@@ -56,9 +56,9 @@
 
     .prologue
     .line 2759
-    new-instance v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbn;
+    new-instance v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$MCbn;
 
-    invoke-direct {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbn;-><init>()V
+    invoke-direct {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$MCbn;-><init>()V
 
     sput-object v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 

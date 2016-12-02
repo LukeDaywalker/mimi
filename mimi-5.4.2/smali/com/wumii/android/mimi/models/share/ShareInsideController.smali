@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;)V
+.method public a(Lcom/wumii/android/mimi/models/share/ShareInsideController$MCas;)V
     .locals 1
 
     .prologue
@@ -27,7 +27,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareInsideController;->mShareActionc:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
     .line 24
-    iget-object v0, p1, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;->a:Lcom/wumii/android/mimi/models/entities/share/ShareType;
+    iget-object v0, p1, Lcom/wumii/android/mimi/models/share/ShareInsideController$MCas;->a:Lcom/wumii/android/mimi/models/entities/share/ShareType;
 
     iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareInsideController;->mShareTypeb:Lcom/wumii/android/mimi/models/entities/share/ShareType;
 
@@ -37,7 +37,7 @@
     .line 26
     iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareInsideController;->mActivityd:Landroid/app/Activity;
 
-    invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;)V
+    invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/share/ShareInsideController$MCas;)V
 
     .line 27
     return-void

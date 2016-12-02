@@ -19,7 +19,7 @@
 
 .field public mLongitudeC:D
 
-.field public mNotifyCache:Lcom/baidu/location/ICab;
+.field public mNotifyCache:Lcom/baidu/location/MCab;
 
 .field public mRadius:F
 
@@ -56,7 +56,7 @@
 
     iput-boolean v3, p0, Lcom/baidu/location/BDNotifyListener;->isAdded:Z
 
-    iput-object v4, p0, Lcom/baidu/location/BDNotifyListener;->mNotifyCache:Lcom/baidu/location/ICab;
+    iput-object v4, p0, Lcom/baidu/location/BDNotifyListener;->mNotifyCache:Lcom/baidu/location/MCab;
 
     return-void
 .end method
@@ -144,9 +144,9 @@
 
     iput v0, p0, Lcom/baidu/location/BDNotifyListener;->Notified:I
 
-    iget-object v0, p0, Lcom/baidu/location/BDNotifyListener;->mNotifyCache:Lcom/baidu/location/ICab;
+    iget-object v0, p0, Lcom/baidu/location/BDNotifyListener;->mNotifyCache:Lcom/baidu/location/MCab;
 
-    invoke-virtual {v0, p0}, Lcom/baidu/location/ICab;->if(Lcom/baidu/location/BDNotifyListener;)V
+    invoke-virtual {v0, p0}, Lcom/baidu/location/MCab;->if(Lcom/baidu/location/BDNotifyListener;)V
 
     :cond_2
     return-void
@@ -187,7 +187,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/baidu/location/ICc;->do(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/baidu/location/MCc;->do(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

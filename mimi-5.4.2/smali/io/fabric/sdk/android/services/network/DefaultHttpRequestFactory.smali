@@ -245,7 +245,7 @@
     const/4 v2, 0x1
 
     .line 83
-    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
+    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$MCc;->mArrayIa:[I
 
     invoke-virtual {p1}, Lio/fabric/sdk/android/services/network/HttpMethod;->ordinal()I
 

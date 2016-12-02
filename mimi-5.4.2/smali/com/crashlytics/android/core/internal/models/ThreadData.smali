@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final mArrayICgc:[Lcom/crashlytics/android/core/internal/models/ThreadData$ICg;
+.field public final mArrayMCgc:[Lcom/crashlytics/android/core/internal/models/ThreadData$MCg;
 
 .field public final mIb:I
 

@@ -3,7 +3,7 @@
 .source "SingleChatActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
+.implements Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$MCay;
 
 
 # static fields
@@ -27,11 +27,11 @@
 
 .field private mCountDownProgressBarV:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
-.field private mICdan:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+.field private mMCdan:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-.field private mICedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+.field private mMCedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
 
-.field private mICvW:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+.field private mMCvW:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;
 
 .field private mNetworkObserveram:Lcom/wumii/android/mimi/network/NetworkObserver;
 
@@ -103,25 +103,25 @@
     iput-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->isZaj:Z
 
     .line 806
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICea;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCea;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICea;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCea;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mChatObserveral:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
     .line 1027
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICeb;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCeb;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICeb;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCeb;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mNetworkObserveram:Lcom/wumii/android/mimi/network/NetworkObserver;
 
     .line 1034
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICec;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCec;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICec;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCec;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICdan:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCdan:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
     return-void
 .end method
@@ -163,9 +163,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICdan:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCdan:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 338
     return-void
@@ -218,7 +218,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mSingleChatBaseY:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
-    sget-object v1, Lcom/wumii/android/mimi/util/Constants$ICs;->mLonga:Ljava/lang/Long;
+    sget-object v1, Lcom/wumii/android/mimi/util/Constants$MCs;->mLonga:Ljava/lang/Long;
 
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
@@ -299,7 +299,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;)V
 
     .line 402
     :cond_4
@@ -371,16 +371,16 @@
 
     .line 414
     :cond_7
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICvW:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCvW:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;
 
     if-nez v0, :cond_8
 
     .line 415
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdw;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdw;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdw;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdw;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICvW:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCvW:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;
 
     .line 459
     :cond_8
@@ -393,9 +393,9 @@
     .line 460
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mCountDownProgressBarV:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICvW:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCvW:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;
 
-    invoke-virtual {v0, v4}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;)V
+    invoke-virtual {v0, v4}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;)V
 
     .line 461
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mCountDownProgressBarV:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
@@ -791,9 +791,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdy;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdy;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdy;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdy;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -810,9 +810,9 @@
     move-result-object v0
 
     .line 668
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdz;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdz;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
@@ -1014,11 +1014,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->F()V
 
     .line 729
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;->removeMessages(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;->removeMessages(I)V
 
     .line 732
     :cond_0
@@ -1604,11 +1604,11 @@
 
     move-result-object v1
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdx;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdx;
 
-    invoke-direct {v3, p0, v0, v4}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdx;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v3, p0, v0, v4}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdx;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v1, p0, v3, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
+    invoke-virtual {v1, p0, v3, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$MCau;Z)V
 
     .line 547
     return-void
@@ -1997,12 +1997,12 @@
     return-void
 .end method
 
-.method static synthetic i(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+.method static synthetic i(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
     .locals 1
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
 
     return-object v0
 .end method
@@ -2240,9 +2240,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICdan:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCdan:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 331
     invoke-static {}, Lcom/wumii/android/mimi/network/NetworkManager;->a()Lcom/wumii/android/mimi/network/NetworkManager;
@@ -2649,9 +2649,9 @@
     if-nez v0, :cond_6
 
     .line 284
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdv;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdv;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdv;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdv;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
 
     .line 288
     :try_start_0
@@ -2751,11 +2751,11 @@
     .line 321
     :cond_7
     :goto_5
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
 
-    invoke-direct {v0, p0, v8}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdu;)V
+    invoke-direct {v0, p0, v8}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdu;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
 
     .line 322
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->z()V
@@ -2891,16 +2891,16 @@
 
     .prologue
     .line 358
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
 
     if-eqz v0, :cond_0
 
     .line 359
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
 
     const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;->sendEmptyMessage(I)Z
 
     .line 361
     :cond_0
@@ -3094,11 +3094,11 @@
     invoke-virtual {v2, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 199
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdu;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdu;
 
-    invoke-direct {v3, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdu;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-direct {v3, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCdu;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
-    invoke-virtual {v2, v1, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)V
+    invoke-virtual {v2, v1, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$MCf;)V
 
     .line 213
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->isFinishing()Z
@@ -3455,9 +3455,9 @@
     .line 596
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mICedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mMCedX:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$MCed;->a()V
 
     .line 597
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->D()V
@@ -3500,7 +3500,7 @@
     .line 592
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->mCountDownProgressBarV:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;)V
 
     goto :goto_0
 .end method
@@ -3748,9 +3748,9 @@
 
     .prologue
     .line 624
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->mMCaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->name()Ljava/lang/String;
 
     move-result-object v0
 

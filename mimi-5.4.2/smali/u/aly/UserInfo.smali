@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Lu/aly/UserInfo;",
-        "Lu/aly/UserInfo$ICfd;",
+        "Lu/aly/UserInfo$MCfd;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Lu/aly/UserInfo$ICfd;",
+            "Lu/aly/UserInfo$MCfd;",
             "Lu/aly/FieldMetaData;",
             ">;"
         }
@@ -73,7 +73,7 @@
 
 .field private l:B
 
-.field private m:[Lu/aly/UserInfo$ICfd;
+.field private m:[Lu/aly/UserInfo$MCfd;
 
 
 # direct methods
@@ -152,9 +152,9 @@
 
     const-class v1, Lu/aly/StandardScheme;
 
-    new-instance v2, Lu/aly/UserInfo$ICfa;
+    new-instance v2, Lu/aly/UserInfo$MCfa;
 
-    invoke-direct {v2, v3}, Lu/aly/UserInfo$ICfa;-><init>(Lu/aly/UserInfo$ICey;)V
+    invoke-direct {v2, v3}, Lu/aly/UserInfo$MCfa;-><init>(Lu/aly/UserInfo$MCey;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -163,21 +163,21 @@
 
     const-class v1, Lu/aly/TupleScheme;
 
-    new-instance v2, Lu/aly/UserInfo$ICfc;
+    new-instance v2, Lu/aly/UserInfo$MCfc;
 
-    invoke-direct {v2, v3}, Lu/aly/UserInfo$ICfc;-><init>(Lu/aly/UserInfo$ICey;)V
+    invoke-direct {v2, v3}, Lu/aly/UserInfo$MCfc;-><init>(Lu/aly/UserInfo$MCey;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 132
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Lu/aly/UserInfo$ICfd;
+    const-class v1, Lu/aly/UserInfo$MCfd;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 133
-    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfda:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$MCfd;->mMCfda:Lu/aly/UserInfo$MCfd;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -196,7 +196,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 135
-    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdb:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$MCfd;->mMCfdb:Lu/aly/UserInfo$MCfd;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -211,7 +211,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 137
-    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdc:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$MCfd;->mMCfdc:Lu/aly/UserInfo$MCfd;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -226,7 +226,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 139
-    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfdd:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$MCfd;->mMCfdd:Lu/aly/UserInfo$MCfd;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -273,31 +273,31 @@
     .line 129
     const/4 v0, 0x4
 
-    new-array v0, v0, [Lu/aly/UserInfo$ICfd;
+    new-array v0, v0, [Lu/aly/UserInfo$MCfd;
 
-    sget-object v1, Lu/aly/UserInfo$ICfd;->mICfda:Lu/aly/UserInfo$ICfd;
+    sget-object v1, Lu/aly/UserInfo$MCfd;->mMCfda:Lu/aly/UserInfo$MCfd;
 
     aput-object v1, v0, v2
 
     const/4 v1, 0x1
 
-    sget-object v2, Lu/aly/UserInfo$ICfd;->mICfdb:Lu/aly/UserInfo$ICfd;
+    sget-object v2, Lu/aly/UserInfo$MCfd;->mMCfdb:Lu/aly/UserInfo$MCfd;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Lu/aly/UserInfo$ICfd;->mICfdc:Lu/aly/UserInfo$ICfd;
+    sget-object v2, Lu/aly/UserInfo$MCfd;->mMCfdc:Lu/aly/UserInfo$MCfd;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Lu/aly/UserInfo$ICfd;->mICfdd:Lu/aly/UserInfo$ICfd;
+    sget-object v2, Lu/aly/UserInfo$MCfd;->mMCfdd:Lu/aly/UserInfo$MCfd;
 
     aput-object v2, v0, v1
 
-    iput-object v0, p0, Lu/aly/UserInfo;->m:[Lu/aly/UserInfo$ICfd;
+    iput-object v0, p0, Lu/aly/UserInfo;->m:[Lu/aly/UserInfo$MCfd;
 
     .line 146
     return-void

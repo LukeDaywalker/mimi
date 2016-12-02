@@ -21,9 +21,9 @@
 
     .prologue
     .line 48
-    new-instance v0, Lokio/Timeout$ICad;
+    new-instance v0, Lokio/Timeout$MCad;
 
-    invoke-direct {v0}, Lokio/Timeout$ICad;-><init>()V
+    invoke-direct {v0}, Lokio/Timeout$MCad;-><init>()V
 
     sput-object v0, Lokio/Timeout;->mTimeoutb:Lokio/Timeout;
 

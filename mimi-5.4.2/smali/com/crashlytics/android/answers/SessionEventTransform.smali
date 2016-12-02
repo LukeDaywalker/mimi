@@ -170,9 +170,9 @@
     .line 54
     const-string/jumbo v1, "type"
 
-    iget-object v2, p1, Lcom/crashlytics/android/answers/SessionEvent;->mICrc:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    iget-object v2, p1, Lcom/crashlytics/android/answers/SessionEvent;->mMCrc:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-virtual {v2}, Lcom/crashlytics/android/answers/SessionEvent$ICr;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/crashlytics/android/answers/SessionEvent$MCr;->toString()Ljava/lang/String;
 
     move-result-object v2
 

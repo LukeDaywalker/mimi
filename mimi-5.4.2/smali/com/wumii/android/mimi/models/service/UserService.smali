@@ -209,7 +209,7 @@
 
     invoke-virtual {v4, v5, v0}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 87
     :cond_0
@@ -227,7 +227,7 @@
     .line 92
     sget-object v4, Lcom/wumii/android/mimi/models/service/UserService;->mLoggera:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$MCg;->toString()Ljava/lang/String;
 
     move-result-object v5
 

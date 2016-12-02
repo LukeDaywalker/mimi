@@ -3,7 +3,7 @@
 .source "PrivacySettingsActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
 
 
 # instance fields
@@ -137,9 +137,9 @@
     .line 85
     const v0, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$MCs;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$MCs;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;)V
 
     invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -235,7 +235,7 @@
     .line 45
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->mSectionTextItemViewo:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;)V
 
     .line 46
     return-void

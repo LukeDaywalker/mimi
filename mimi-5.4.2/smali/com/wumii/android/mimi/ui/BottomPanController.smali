@@ -71,9 +71,9 @@
     .line 53
     check-cast p1, Landroid/app/Activity;
 
-    new-instance v0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;
+    new-instance v0, Lcom/wumii/android/mimi/ui/BottomPanController$MCj;
 
-    invoke-direct {v0, p0, p6}, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;-><init>(Lcom/wumii/android/mimi/ui/BottomPanController;Landroid/view/ViewGroup;)V
+    invoke-direct {v0, p0, p6}, Lcom/wumii/android/mimi/ui/BottomPanController$MCj;-><init>(Lcom/wumii/android/mimi/ui/BottomPanController;Landroid/view/ViewGroup;)V
 
     invoke-static {p1, p3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
 
@@ -358,21 +358,21 @@
     .line 102
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    instance-of v1, v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     if-eqz v1, :cond_0
 
     .line 103
-    check-cast v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    check-cast v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafah:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     if-ne v0, v1, :cond_0
 
     .line 104
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafah:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     .line 108
     :cond_0

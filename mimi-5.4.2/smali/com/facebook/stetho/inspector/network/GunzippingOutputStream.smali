@@ -76,9 +76,9 @@
     .line 34
     sget-object v2, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v3, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;
+    new-instance v3, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$MCe;
 
-    invoke-direct {v3, v0, p0}, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;-><init>(Ljava/io/InputStream;Ljava/io/OutputStream;)V
+    invoke-direct {v3, v0, p0}, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$MCe;-><init>(Ljava/io/InputStream;Ljava/io/OutputStream;)V
 
     invoke-interface {v2, v3}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
 

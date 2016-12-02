@@ -33,9 +33,9 @@
 
     .prologue
     .line 2062
-    new-instance v0, Landroid/support/v7/widget/LinearLayoutManager$ICw;
+    new-instance v0, Landroid/support/v7/widget/LinearLayoutManager$MCw;
 
-    invoke-direct {v0}, Landroid/support/v7/widget/LinearLayoutManager$ICw;-><init>()V
+    invoke-direct {v0}, Landroid/support/v7/widget/LinearLayoutManager$MCw;-><init>()V
 
     sput-object v0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 

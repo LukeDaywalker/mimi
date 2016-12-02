@@ -868,9 +868,9 @@
     .line 226
     iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/models/helper/NotificationHelper$ICz;
+    new-instance v1, Lcom/wumii/android/mimi/models/helper/NotificationHelper$MCz;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/helper/NotificationHelper$ICz;-><init>(Lcom/wumii/android/mimi/models/helper/NotificationHelper;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/helper/NotificationHelper$MCz;-><init>(Lcom/wumii/android/mimi/models/helper/NotificationHelper;)V
 
     const-string/jumbo v2, "group_chat_notification"
 

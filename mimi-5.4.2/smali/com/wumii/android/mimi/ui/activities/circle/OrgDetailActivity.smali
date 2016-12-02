@@ -582,9 +582,9 @@
     .line 175
     const v1, 0x7f060164
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$MCam;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$MCam;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -653,9 +653,9 @@
     .line 199
     const v1, 0x7f060164
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICap;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$MCap;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICap;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$MCap;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -823,9 +823,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->k()V
 
     .line 72
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICal;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$MCal;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICal;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$MCal;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mOnSharedPreferenceChangeListenerC:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 

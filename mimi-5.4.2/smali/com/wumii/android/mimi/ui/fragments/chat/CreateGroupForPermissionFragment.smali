@@ -3,8 +3,8 @@
 .source "CreateGroupForPermissionFragment.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$MCbk;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbp;
 
 
 # instance fields
@@ -340,12 +340,12 @@
     .line 63
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbp;)V
 
     .line 64
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewe:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbp;)V
 
     .line 66
     const v0, 0x7f0b01e2
@@ -397,7 +397,7 @@
     .line 73
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCheckBoxItemViewk:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$MCbk;)V
 
     .line 75
     const v0, 0x7f0b0132
@@ -476,9 +476,9 @@
     .line 84
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$ICt;
+    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$MCt;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$ICt;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$MCt;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

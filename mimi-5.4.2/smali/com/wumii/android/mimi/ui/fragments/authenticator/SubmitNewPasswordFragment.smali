@@ -308,13 +308,13 @@
     if-nez v0, :cond_4
 
     .line 75
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$MCb;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;-><init>(Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$MCb;-><init>(Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;Landroid/app/Activity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;->mResetPasswordTaskd:Lcom/wumii/android/mimi/task/ResetPasswordTask;
 

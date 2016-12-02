@@ -120,14 +120,14 @@
     sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->mArrayCipherSuitef:[Lcom/squareup/okhttp/CipherSuite;
 
     .line 55
-    new-instance v0, Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    new-instance v0, Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
-    invoke-direct {v0, v3}, Lcom/squareup/okhttp/ConnectionSpec$ICv;-><init>(Z)V
+    invoke-direct {v0, v3}, Lcom/squareup/okhttp/ConnectionSpec$MCv;-><init>(Z)V
 
     sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->mArrayCipherSuitef:[Lcom/squareup/okhttp/CipherSuite;
 
     .line 56
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a([Lcom/squareup/okhttp/CipherSuite;)Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a([Lcom/squareup/okhttp/CipherSuite;)Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
     move-result-object v0
 
@@ -146,28 +146,28 @@
     aput-object v2, v1, v5
 
     .line 57
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a([Lcom/squareup/okhttp/TlsVersion;)Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a([Lcom/squareup/okhttp/TlsVersion;)Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
     move-result-object v0
 
     .line 58
-    invoke-virtual {v0, v3}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a(Z)Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    invoke-virtual {v0, v3}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a(Z)Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
     move-result-object v0
 
     .line 59
-    invoke-virtual {v0}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a()Lcom/squareup/okhttp/ConnectionSpec;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a()Lcom/squareup/okhttp/ConnectionSpec;
 
     move-result-object v0
 
     sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpeca:Lcom/squareup/okhttp/ConnectionSpec;
 
     .line 62
-    new-instance v0, Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    new-instance v0, Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
     sget-object v1, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpeca:Lcom/squareup/okhttp/ConnectionSpec;
 
-    invoke-direct {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;-><init>(Lcom/squareup/okhttp/ConnectionSpec;)V
+    invoke-direct {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;-><init>(Lcom/squareup/okhttp/ConnectionSpec;)V
 
     new-array v1, v3, [Lcom/squareup/okhttp/TlsVersion;
 
@@ -176,28 +176,28 @@
     aput-object v2, v1, v4
 
     .line 63
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a([Lcom/squareup/okhttp/TlsVersion;)Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a([Lcom/squareup/okhttp/TlsVersion;)Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
     move-result-object v0
 
     .line 64
-    invoke-virtual {v0, v3}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a(Z)Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    invoke-virtual {v0, v3}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a(Z)Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
     move-result-object v0
 
     .line 65
-    invoke-virtual {v0}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a()Lcom/squareup/okhttp/ConnectionSpec;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a()Lcom/squareup/okhttp/ConnectionSpec;
 
     move-result-object v0
 
     sput-object v0, Lcom/squareup/okhttp/ConnectionSpec;->mConnectionSpecb:Lcom/squareup/okhttp/ConnectionSpec;
 
     .line 68
-    new-instance v0, Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    new-instance v0, Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
-    invoke-direct {v0, v4}, Lcom/squareup/okhttp/ConnectionSpec$ICv;-><init>(Z)V
+    invoke-direct {v0, v4}, Lcom/squareup/okhttp/ConnectionSpec$MCv;-><init>(Z)V
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a()Lcom/squareup/okhttp/ConnectionSpec;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a()Lcom/squareup/okhttp/ConnectionSpec;
 
     move-result-object v0
 
@@ -206,7 +206,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Lcom/squareup/okhttp/ConnectionSpec$ICv;)V
+.method private constructor <init>(Lcom/squareup/okhttp/ConnectionSpec$MCv;)V
     .locals 1
 
     .prologue
@@ -214,28 +214,28 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 84
-    invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a(Lcom/squareup/okhttp/ConnectionSpec$ICv;)Z
+    invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a(Lcom/squareup/okhttp/ConnectionSpec$MCv;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec;->isZd:Z
 
     .line 85
-    invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->b(Lcom/squareup/okhttp/ConnectionSpec$ICv;)[Ljava/lang/String;
+    invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->b(Lcom/squareup/okhttp/ConnectionSpec$MCv;)[Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec;->mArrayStringg:[Ljava/lang/String;
 
     .line 86
-    invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->c(Lcom/squareup/okhttp/ConnectionSpec$ICv;)[Ljava/lang/String;
+    invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->c(Lcom/squareup/okhttp/ConnectionSpec$MCv;)[Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec;->mArrayStringh:[Ljava/lang/String;
 
     .line 87
-    invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->d(Lcom/squareup/okhttp/ConnectionSpec$ICv;)Z
+    invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->d(Lcom/squareup/okhttp/ConnectionSpec$MCv;)Z
 
     move-result v0
 
@@ -245,12 +245,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/squareup/okhttp/ConnectionSpec$ICv;Lcom/squareup/okhttp/ConnectionSpec$ICu;)V
+.method synthetic constructor <init>(Lcom/squareup/okhttp/ConnectionSpec$MCv;Lcom/squareup/okhttp/ConnectionSpec$MCu;)V
     .locals 0
 
     .prologue
     .line 28
-    invoke-direct {p0, p1}, Lcom/squareup/okhttp/ConnectionSpec;-><init>(Lcom/squareup/okhttp/ConnectionSpec$ICv;)V
+    invoke-direct {p0, p1}, Lcom/squareup/okhttp/ConnectionSpec;-><init>(Lcom/squareup/okhttp/ConnectionSpec$MCv;)V
 
     return-void
 .end method
@@ -462,22 +462,22 @@
     check-cast v0, [Ljava/lang/String;
 
     .line 168
-    new-instance v2, Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    new-instance v2, Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
-    invoke-direct {v2, p0}, Lcom/squareup/okhttp/ConnectionSpec$ICv;-><init>(Lcom/squareup/okhttp/ConnectionSpec;)V
+    invoke-direct {v2, p0}, Lcom/squareup/okhttp/ConnectionSpec$MCv;-><init>(Lcom/squareup/okhttp/ConnectionSpec;)V
 
     .line 169
-    invoke-virtual {v2, v1}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a([Ljava/lang/String;)Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    invoke-virtual {v2, v1}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a([Ljava/lang/String;)Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
     move-result-object v1
 
     .line 170
-    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->b([Ljava/lang/String;)Lcom/squareup/okhttp/ConnectionSpec$ICv;
+    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->b([Ljava/lang/String;)Lcom/squareup/okhttp/ConnectionSpec$MCv;
 
     move-result-object v0
 
     .line 171
-    invoke-virtual {v0}, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a()Lcom/squareup/okhttp/ConnectionSpec;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/ConnectionSpec$MCv;->a()Lcom/squareup/okhttp/ConnectionSpec;
 
     move-result-object v0
 

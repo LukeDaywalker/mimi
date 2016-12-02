@@ -13,7 +13,7 @@
 
 .field private mEditTexto:Landroid/widget/EditText;
 
-.field private mICar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
+.field private mMCar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$MCa;
 
 .field private mMenuItemq:Landroid/view/MenuItem;
 
@@ -146,16 +146,16 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 43
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$MCa;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$MCa;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mICar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mMCar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$MCa;
 
     .line 44
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mICar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mMCar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$MCa;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->addObserver(Ljava/util/Observer;)V
 

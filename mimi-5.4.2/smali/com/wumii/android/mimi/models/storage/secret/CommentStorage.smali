@@ -129,9 +129,9 @@
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
     .line 99
-    new-instance v1, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;
+    new-instance v1, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$MCc;
 
-    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;-><init>(Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;Ljava/util/Map;)V
+    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$MCc;-><init>(Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;Ljava/util/Map;)V
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;)V
 
@@ -164,9 +164,9 @@
 
     const-string/jumbo v2, "localComments"
 
-    new-instance v3, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICd;
+    new-instance v3, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$MCd;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICd;-><init>(Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$MCd;-><init>(Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;)V
 
     invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 
@@ -719,9 +719,9 @@
     if-eqz v0, :cond_0
 
     .line 233
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 259
     :goto_0
@@ -833,9 +833,9 @@
     invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
     .line 258
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -892,9 +892,9 @@
     invoke-interface {v0, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 219
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 220
     return-void
@@ -937,9 +937,9 @@
     invoke-virtual {p0, p1, v0}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Ljava/lang/String;Ljava/util/Map;)V
 
     .line 168
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 169
     return-void
@@ -968,9 +968,9 @@
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 174
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 175
     return-void
@@ -1137,9 +1137,9 @@
     if-eqz v3, :cond_0
 
     .line 323
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 325
     :cond_0
@@ -1209,9 +1209,9 @@
     invoke-interface {v0, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 228
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 229
     return-void
@@ -1367,9 +1367,9 @@
     if-eqz v3, :cond_0
 
     .line 361
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     goto :goto_0
 

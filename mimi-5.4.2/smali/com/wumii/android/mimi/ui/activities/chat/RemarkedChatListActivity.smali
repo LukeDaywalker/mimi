@@ -24,9 +24,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 131
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$MCdp;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$MCdp;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatObserverr:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
@@ -383,9 +383,9 @@
     .line 51
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$MCdo;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$MCdo;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)V
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -399,7 +399,7 @@
 
     move-result-object v2
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;Ljava/util/List;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;Ljava/util/List;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 

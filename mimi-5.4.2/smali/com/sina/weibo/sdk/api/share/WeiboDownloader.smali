@@ -60,18 +60,18 @@
     move-result-object v2
 
     .line 71
-    new-instance v3, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICj;
+    new-instance v3, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$MCj;
 
-    invoke-direct {v3, p0}, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICj;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p0}, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$MCj;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {v2, v1, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
     .line 76
-    new-instance v2, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICk;
+    new-instance v2, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$MCk;
 
-    invoke-direct {v2, p1}, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICk;-><init>(Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;)V
+    invoke-direct {v2, p1}, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$MCk;-><init>(Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;)V
 
     invoke-virtual {v1, v0, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

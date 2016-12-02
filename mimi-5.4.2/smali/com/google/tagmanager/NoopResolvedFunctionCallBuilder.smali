@@ -31,7 +31,7 @@
     return-object v0
 .end method
 
-.method public a(Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;)V
+.method public a(Lcom/google/analytics/midtier/proto/containertag/TypeSystem$MCb;)V
     .locals 0
 
     .prologue

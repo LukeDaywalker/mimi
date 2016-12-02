@@ -3,7 +3,7 @@
 .source "ParseByteStream.java"
 
 # interfaces
-.implements Lcom/hp/hpl/sparta/ParseSource$ICp;
+.implements Lcom/hp/hpl/sparta/ParseSource$MCp;
 
 
 # instance fields

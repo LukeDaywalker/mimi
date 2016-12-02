@@ -345,9 +345,9 @@
     .line 86
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewg:Landroid/widget/TextView;
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;
+    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$MCa;
 
-    invoke-direct {v3, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
+    invoke-direct {v3, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$MCa;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -609,9 +609,9 @@
     .line 106
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewg:Landroid/widget/TextView;
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
+    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$MCb;
 
-    invoke-direct {v4, p0, v2, v3, v1}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-direct {v4, p0, v2, v3, v1}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$MCb;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

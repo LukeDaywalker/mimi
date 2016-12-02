@@ -20,14 +20,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 54
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$MCt;
 
-    invoke-direct {v0, p0, p1}, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;-><init>(Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;Lokio/Source;)V
+    invoke-direct {v0, p0, p1}, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$MCt;-><init>(Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;Lokio/Source;)V
 
     .line 65
-    new-instance v1, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICu;
+    new-instance v1, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$MCu;
 
-    invoke-direct {v1, p0}, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICu;-><init>(Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;)V
+    invoke-direct {v1, p0}, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$MCu;-><init>(Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;)V
 
     .line 77
     new-instance v2, Lokio/InflaterSource;

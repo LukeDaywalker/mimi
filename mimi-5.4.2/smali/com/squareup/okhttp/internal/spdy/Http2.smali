@@ -18,7 +18,7 @@
 
     .prologue
     .line 43
-    const-class v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;
+    const-class v0, Lcom/squareup/okhttp/internal/spdy/Http2$MCl;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -288,11 +288,11 @@
 
     .prologue
     .line 80
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICm;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/Http2$MCm;
 
     const/16 v1, 0x1000
 
-    invoke-direct {v0, p1, v1, p2}, Lcom/squareup/okhttp/internal/spdy/Http2$ICm;-><init>(Lokio/BufferedSource;IZ)V
+    invoke-direct {v0, p1, v1, p2}, Lcom/squareup/okhttp/internal/spdy/Http2$MCm;-><init>(Lokio/BufferedSource;IZ)V
 
     return-object v0
 .end method
@@ -302,9 +302,9 @@
 
     .prologue
     .line 84
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/Http2$MCn;
 
-    invoke-direct {v0, p1, p2}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;-><init>(Lokio/BufferedSink;Z)V
+    invoke-direct {v0, p1, p2}, Lcom/squareup/okhttp/internal/spdy/Http2$MCn;-><init>(Lokio/BufferedSink;Z)V
 
     return-object v0
 .end method

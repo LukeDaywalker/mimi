@@ -4,10 +4,10 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/tencent/c/Pro$ICh;)V
+.method public abstract a(Lcom/tencent/c/Pro$MCh;)V
 .end method
 
-.method public abstract a(Lcom/tencent/c/Pro$ICk;)V
+.method public abstract a(Lcom/tencent/c/Pro$MCk;)V
 .end method
 
 .method public abstract a(Ljava/io/IOException;)V

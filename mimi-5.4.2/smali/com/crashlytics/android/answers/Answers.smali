@@ -104,7 +104,7 @@
     move-result-object v3
 
     .line 200
-    sget-object v4, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaad:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v4, Lio/fabric/sdk/android/services/common/IdManager$MCaa;->mMCaad:Lio/fabric/sdk/android/services/common/IdManager$MCaa;
 
     invoke-interface {v2, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -113,7 +113,7 @@
     check-cast v4, Ljava/lang/String;
 
     .line 202
-    sget-object v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaag:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v5, Lio/fabric/sdk/android/services/common/IdManager$MCaa;->mMCaag:Lio/fabric/sdk/android/services/common/IdManager$MCaa;
 
     invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -122,7 +122,7 @@
     check-cast v5, Ljava/lang/String;
 
     .line 204
-    sget-object v6, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaac:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v6, Lio/fabric/sdk/android/services/common/IdManager$MCaa;->mMCaac:Lio/fabric/sdk/android/services/common/IdManager$MCaa;
 
     invoke-interface {v2, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -308,7 +308,7 @@
     return-object v0
 .end method
 
-.method public a(Lio/fabric/sdk/android/services/common/Crash$ICq;)V
+.method public a(Lio/fabric/sdk/android/services/common/Crash$MCq;)V
     .locals 2
 
     .prologue
@@ -320,7 +320,7 @@
     .line 110
     iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
-    invoke-virtual {p1}, Lio/fabric/sdk/android/services/common/Crash$ICq;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lio/fabric/sdk/android/services/common/Crash$MCq;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -331,7 +331,7 @@
     return-void
 .end method
 
-.method public a(Lio/fabric/sdk/android/services/common/Crash$ICr;)V
+.method public a(Lio/fabric/sdk/android/services/common/Crash$MCr;)V
     .locals 2
 
     .prologue
@@ -343,7 +343,7 @@
     .line 104
     iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
-    invoke-virtual {p1}, Lio/fabric/sdk/android/services/common/Crash$ICr;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lio/fabric/sdk/android/services/common/Crash$MCr;->a()Ljava/lang/String;
 
     move-result-object v1
 

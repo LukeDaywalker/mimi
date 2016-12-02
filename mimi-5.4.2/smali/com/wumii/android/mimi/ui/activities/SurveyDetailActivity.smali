@@ -159,11 +159,11 @@
     .line 58
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyCardViewp:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity$ICbj;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity$MCbj;
 
-    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity$ICbj;-><init>(Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;Landroid/content/Context;)V
+    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity$MCbj;-><init>(Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;Landroid/content/Context;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->setOnSurveyCardClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->setOnSurveyCardClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;)V
 
     .line 65
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyCardViewp:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;

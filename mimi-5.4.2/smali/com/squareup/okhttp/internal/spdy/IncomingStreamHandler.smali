@@ -13,9 +13,9 @@
 
     .prologue
     .line 23
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler$ICr;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler$MCr;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler$ICr;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler$MCr;-><init>()V
 
     sput-object v0, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;->mIncomingStreamHandlera:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 

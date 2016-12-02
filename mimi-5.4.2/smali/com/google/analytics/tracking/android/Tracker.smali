@@ -145,9 +145,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICank:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCank:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 167
     if-nez p2, :cond_0
@@ -193,9 +193,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICanl:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCanl:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 106
     new-instance v1, Ljava/util/HashMap;

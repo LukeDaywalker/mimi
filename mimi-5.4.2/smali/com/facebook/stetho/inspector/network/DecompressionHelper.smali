@@ -81,9 +81,9 @@
 
     .line 39
     :cond_2
-    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfb:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;->mMCfb:Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;->mMCgc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -113,7 +113,7 @@
 
     move-result-object v2
 
-    invoke-static {p0, v0, v1, v2}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;Ljava/lang/String;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;Ljava/lang/String;)V
 
     :cond_3
     move-object v3, p3

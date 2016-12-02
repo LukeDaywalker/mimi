@@ -24,9 +24,9 @@
     invoke-direct {p0, p1, p2}, Lcom/crashlytics/android/answers/SessionAnalyticsManager;-><init>(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEventsHandler;)V
 
     .line 24
-    new-instance v0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;
+    new-instance v0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$MCd;
 
-    invoke-direct {v0, p0}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;-><init>(Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;)V
+    invoke-direct {v0, p0}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$MCd;-><init>(Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;)V
 
     iput-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->mActivityLifecycleCallbackse:Landroid/app/Application$ActivityLifecycleCallbacks;
 

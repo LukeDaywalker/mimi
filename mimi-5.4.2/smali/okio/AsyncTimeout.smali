@@ -51,11 +51,11 @@
     sput-object v0, Lokio/AsyncTimeout;->mAsyncTimeouta:Lokio/AsyncTimeout;
 
     .line 77
-    new-instance v0, Lokio/AsyncTimeout$ICd;
+    new-instance v0, Lokio/AsyncTimeout$MCd;
 
-    invoke-direct {v0}, Lokio/AsyncTimeout$ICd;-><init>()V
+    invoke-direct {v0}, Lokio/AsyncTimeout$MCd;-><init>()V
 
-    invoke-virtual {v0}, Lokio/AsyncTimeout$ICd;->start()V
+    invoke-virtual {v0}, Lokio/AsyncTimeout$MCd;->start()V
 
     .line 80
     :cond_0
@@ -423,9 +423,9 @@
 
     .prologue
     .line 150
-    new-instance v0, Lokio/AsyncTimeout$ICb;
+    new-instance v0, Lokio/AsyncTimeout$MCb;
 
-    invoke-direct {v0, p0, p1}, Lokio/AsyncTimeout$ICb;-><init>(Lokio/AsyncTimeout;Lokio/Sink;)V
+    invoke-direct {v0, p0, p1}, Lokio/AsyncTimeout$MCb;-><init>(Lokio/AsyncTimeout;Lokio/Sink;)V
 
     return-object v0
 .end method
@@ -435,9 +435,9 @@
 
     .prologue
     .line 206
-    new-instance v0, Lokio/AsyncTimeout$ICc;
+    new-instance v0, Lokio/AsyncTimeout$MCc;
 
-    invoke-direct {v0, p0, p1}, Lokio/AsyncTimeout$ICc;-><init>(Lokio/AsyncTimeout;Lokio/Source;)V
+    invoke-direct {v0, p0, p1}, Lokio/AsyncTimeout$MCc;-><init>(Lokio/AsyncTimeout;Lokio/Source;)V
 
     return-object v0
 .end method

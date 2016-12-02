@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private notificationEvent:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+.field private notificationEvent:Lcom/wumii/android/mimi/manager/NotificationManager$MCay;
 
 .field private notifications:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$ICay;)V
+.method public constructor <init>(ILjava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/manager/NotificationManager$MCay;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -29,7 +29,7 @@
             "<",
             "Lcom/wumii/android/mimi/models/entities/notification/Notification;",
             ">;",
-            "Lcom/wumii/android/mimi/manager/NotificationManager$ICay;",
+            "Lcom/wumii/android/mimi/manager/NotificationManager$MCay;",
             ")V"
         }
     .end annotation
@@ -42,7 +42,7 @@
     iput-object p3, p0, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;->notifications:Ljava/util/List;
 
     .line 16
-    iput-object p4, p0, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;->notificationEvent:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    iput-object p4, p0, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;->notificationEvent:Lcom/wumii/android/mimi/manager/NotificationManager$MCay;
 
     .line 17
     return-void
@@ -50,12 +50,12 @@
 
 
 # virtual methods
-.method public getNotificationEvent()Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+.method public getNotificationEvent()Lcom/wumii/android/mimi/manager/NotificationManager$MCay;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;->notificationEvent:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/notification/NotificationResult;->notificationEvent:Lcom/wumii/android/mimi/manager/NotificationManager$MCay;
 
     return-object v0
 .end method

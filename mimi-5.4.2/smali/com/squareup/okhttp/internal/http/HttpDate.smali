@@ -37,9 +37,9 @@
     sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mTimeZonea:Ljava/util/TimeZone;
 
     .line 37
-    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpDate$ICp;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpDate$MCp;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/HttpDate$ICp;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/HttpDate$MCp;-><init>()V
 
     sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mThreadLocalb:Ljava/lang/ThreadLocal;
 

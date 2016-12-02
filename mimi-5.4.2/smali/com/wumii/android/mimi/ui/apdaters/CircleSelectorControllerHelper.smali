@@ -53,18 +53,18 @@
     .line 107
     const v1, 0x7f0600cb
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICl;
+    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$MCl;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICl;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$MCl;-><init>(Landroid/app/Activity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 113
     const v1, 0x7f060051
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICm;
+    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$MCm;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICm;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$MCm;-><init>(Landroid/app/Activity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -107,9 +107,9 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->a(I)V
 
     .line 41
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$MCh;
 
-    invoke-direct {v1, p0, p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICh;-><init>(Landroid/app/Activity;Landroid/app/Activity;Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
+    invoke-direct {v1, p0, p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$MCh;-><init>(Landroid/app/Activity;Landroid/app/Activity;Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->a(Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
 
@@ -156,9 +156,9 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->a(I)V
 
     .line 85
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICj;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$MCj;
 
-    invoke-direct {v1, p0, p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICj;-><init>(Landroid/app/Activity;Landroid/app/Activity;Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
+    invoke-direct {v1, p0, p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$MCj;-><init>(Landroid/app/Activity;Landroid/app/Activity;Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->a(Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
 

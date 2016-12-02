@@ -12,7 +12,7 @@
         value = {
             "Ljava/util/Set",
             "<",
-            "Lcom/crashlytics/android/answers/SessionEvent$ICr;",
+            "Lcom/crashlytics/android/answers/SessionEvent$MCr;",
             ">;"
         }
     .end annotation
@@ -29,9 +29,9 @@
 
     .prologue
     .line 19
-    new-instance v0, Lcom/crashlytics/android/answers/SamplingEventFilter$ICl;
+    new-instance v0, Lcom/crashlytics/android/answers/SamplingEventFilter$MCl;
 
-    invoke-direct {v0}, Lcom/crashlytics/android/answers/SamplingEventFilter$ICl;-><init>()V
+    invoke-direct {v0}, Lcom/crashlytics/android/answers/SamplingEventFilter$MCl;-><init>()V
 
     sput-object v0, Lcom/crashlytics/android/answers/SamplingEventFilter;->mSetb:Ljava/util/Set;
 
@@ -86,7 +86,7 @@
     .line 43
     sget-object v0, Lcom/crashlytics/android/answers/SamplingEventFilter;->mSetb:Ljava/util/Set;
 
-    iget-object v1, p1, Lcom/crashlytics/android/answers/SessionEvent;->mICrc:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    iget-object v1, p1, Lcom/crashlytics/android/answers/SessionEvent;->mMCrc:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 

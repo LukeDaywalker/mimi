@@ -6,9 +6,9 @@
 # instance fields
 .field private volatile isZb:Z
 
-.field private volatile mICdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
-
 .field private volatile mLocalSocketa:Landroid/net/LocalSocket;
+
+.field private volatile mMCdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCd;
 
 
 # direct methods
@@ -88,18 +88,18 @@
     move-result v0
 
     .line 31
-    new-instance v1, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
+    new-instance v1, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCd;
 
-    invoke-direct {v1, p1, v0, p2}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
+    invoke-direct {v1, p1, v0, p2}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCd;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
 
-    iput-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mICdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
+    iput-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mMCdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCd;
 
     .line 32
-    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mICdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
+    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mMCdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCd;
 
-    new-instance v2, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICe;
+    new-instance v2, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCe;
 
-    invoke-direct {v2, p1, v0, p2}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICe;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
+    invoke-direct {v2, p1, v0, p2}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCe;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
 
     invoke-virtual {p0, v1, v2, p2}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->init(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)V
 
@@ -130,9 +130,9 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mICdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mMCdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCd;
 
-    invoke-virtual {v0}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;->a()[B
+    invoke-virtual {v0}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$MCd;->a()[B
 
     move-result-object v0
 

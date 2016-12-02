@@ -9,7 +9,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;",
+            "Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;",
             ">;"
         }
     .end annotation
@@ -37,19 +37,19 @@
 
 
 # virtual methods
-.method protected a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+.method protected a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
     .locals 2
 
     .prologue
     .line 16
-    new-instance v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;
+    new-instance v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCe;
 
-    invoke-direct {v0, p1, p2}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;-><init>(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCe;-><init>(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 18
-    new-instance v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;
+    new-instance v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCb;
 
-    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;-><init>(Lcom/wumii/android/mimi/models/storage/BaseStorage;Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;)V
+    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCb;-><init>(Lcom/wumii/android/mimi/models/storage/BaseStorage;Lcom/wumii/android/mimi/models/storage/BaseStorage$MCe;)V
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/ThreadUtils;->b(Ljava/lang/Runnable;)V
 
@@ -57,7 +57,7 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+.method public a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
     .locals 2
 
     .prologue
@@ -112,7 +112,7 @@
     throw v0
 .end method
 
-.method public b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+.method public b(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
     .locals 3
 
     .prologue

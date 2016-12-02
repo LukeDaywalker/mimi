@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field private mICds:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;
-
-.field private mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
-
 .field private mListViewo:Landroid/widget/ListView;
+
+.field private mMCds:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCd;
+
+.field private mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
 .field private mMenuItemr:Landroid/view/MenuItem;
 
@@ -46,31 +46,31 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 222
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICc;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCc;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICc;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCc;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCd;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mICds:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mMCds:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCd;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;)Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCd;)Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCd;
     .locals 0
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mICds:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mMCds:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCd;
 
     return-object p1
 .end method
@@ -296,9 +296,9 @@
     .line 145
     const v1, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICb;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCb;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICb;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCb;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -334,9 +334,9 @@
     .line 63
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mListViewo:Landroid/widget/ListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICa;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCa;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCa;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -360,9 +360,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 76
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
@@ -378,11 +378,11 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->a(Ljava/util/List;)V
 
     .line 77
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICe;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCe;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICe;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCe;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICe;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$MCe;->j()V
 
     .line 78
     return-void
@@ -450,7 +450,7 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
     if-eqz v0, :cond_0
 
@@ -461,9 +461,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 86
     :cond_0
@@ -515,9 +515,9 @@
 
     .prologue
     .line 119
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->mMCaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->name()Ljava/lang/String;
 
     move-result-object v0
 

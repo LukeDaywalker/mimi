@@ -23,10 +23,6 @@
 
 .field public mFq:F
 
-.field public mICak:Lcom/baidu/platform/comapi/map/B$ICa;
-
-.field public mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
-
 .field public mIb:I
 
 .field public mIc:I
@@ -42,6 +38,10 @@
 .field public mJh:J
 
 .field public mJi:J
+
+.field public mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
+
+.field public mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
 .field public mStringp:Ljava/lang/String;
 
@@ -96,17 +96,17 @@
 
     iput v3, p0, Lcom/baidu/platform/comapi/map/B;->mIg:I
 
-    new-instance v0, Lcom/baidu/platform/comapi/map/B$ICb;
+    new-instance v0, Lcom/baidu/platform/comapi/map/B$MCb;
 
-    invoke-direct {v0, p0}, Lcom/baidu/platform/comapi/map/B$ICb;-><init>(Lcom/baidu/platform/comapi/map/B;)V
+    invoke-direct {v0, p0}, Lcom/baidu/platform/comapi/map/B$MCb;-><init>(Lcom/baidu/platform/comapi/map/B;)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    new-instance v0, Lcom/baidu/platform/comapi/map/B$ICa;
+    new-instance v0, Lcom/baidu/platform/comapi/map/B$MCa;
 
-    invoke-direct {v0, p0}, Lcom/baidu/platform/comapi/map/B$ICa;-><init>(Lcom/baidu/platform/comapi/map/B;)V
+    invoke-direct {v0, p0}, Lcom/baidu/platform/comapi/map/B$MCa;-><init>(Lcom/baidu/platform/comapi/map/B;)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
     iput-boolean v2, p0, Lcom/baidu/platform/comapi/map/B;->isZl:Z
 
@@ -115,7 +115,7 @@
 
 
 # virtual methods
-.method public a(Lcom/baidu/platform/comapi/map/ICc;)Landroid/os/Bundle;
+.method public a(Lcom/baidu/platform/comapi/map/MCc;)Landroid/os/Bundle;
     .locals 8
 
     const/16 v4, -0x2d
@@ -126,26 +126,26 @@
 
     iget v0, p0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
-    iget v3, p1, Lcom/baidu/platform/comapi/map/ICc;->mFb:F
+    iget v3, p1, Lcom/baidu/platform/comapi/map/MCc;->mFb:F
 
     cmpg-float v0, v0, v3
 
     if-gez v0, :cond_0
 
-    iget v0, p1, Lcom/baidu/platform/comapi/map/ICc;->mFb:F
+    iget v0, p1, Lcom/baidu/platform/comapi/map/MCc;->mFb:F
 
     iput v0, p0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
     :cond_0
     iget v0, p0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
-    iget v3, p1, Lcom/baidu/platform/comapi/map/ICc;->mFa:F
+    iget v3, p1, Lcom/baidu/platform/comapi/map/MCc;->mFa:F
 
     cmpl-float v0, v0, v3
 
     if-lez v0, :cond_1
 
-    iget v0, p1, Lcom/baidu/platform/comapi/map/ICc;->mFa:F
+    iget v0, p1, Lcom/baidu/platform/comapi/map/MCc;->mFa:F
 
     iput v0, p0, Lcom/baidu/platform/comapi/map/B;->mFa:F
 
@@ -226,33 +226,33 @@
 
     const-string/jumbo v0, "left"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mIa:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mIa:I
 
     invoke-virtual {v3, v0, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     const-string/jumbo v0, "right"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mIb:I
 
     invoke-virtual {v3, v0, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     const-string/jumbo v0, "top"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mIc:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mIc:I
 
     invoke-virtual {v3, v0, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     const-string/jumbo v0, "bottom"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mId:I
 
     invoke-virtual {v3, v0, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -266,51 +266,51 @@
 
     iget v0, p0, Lcom/baidu/platform/comapi/map/B;->mIf:I
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mIb:I
 
     if-gt v0, v4, :cond_5
 
     iget v0, p0, Lcom/baidu/platform/comapi/map/B;->mIg:I
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mId:I
 
     if-gt v0, v4, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
-
-    if-lez v0, :cond_5
-
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
-
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mIb:I
 
     if-lez v0, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mId:I
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    if-lez v0, :cond_5
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mIa:I
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
+
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mIb:I
+
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
+
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mIa:I
 
     sub-int/2addr v0, v4
 
     div-int/lit8 v0, v0, 0x2
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mId:I
 
-    iget-object v5, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v5, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v5, v5, Lcom/baidu/platform/comapi/map/B$ICb;->mIc:I
+    iget v5, v5, Lcom/baidu/platform/comapi/map/B$MCb;->mIc:I
 
     sub-int/2addr v4, v5
 
@@ -349,9 +349,9 @@
     :cond_5
     const-string/jumbo v0, "lbx"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$ICa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$MCa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -359,9 +359,9 @@
 
     const-string/jumbo v0, "lby"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$ICa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$MCa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -369,9 +369,9 @@
 
     const-string/jumbo v0, "ltx"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$ICa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$MCa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -379,9 +379,9 @@
 
     const-string/jumbo v0, "lty"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$ICa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$MCa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -389,9 +389,9 @@
 
     const-string/jumbo v0, "rtx"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$ICa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$MCa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -399,9 +399,9 @@
 
     const-string/jumbo v0, "rty"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$ICa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$MCa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -409,9 +409,9 @@
 
     const-string/jumbo v0, "rbx"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$ICa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$MCa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -419,9 +419,9 @@
 
     const-string/jumbo v0, "rby"
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$ICa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v4, v4, Lcom/baidu/platform/comapi/map/B$MCa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v4, v4, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -549,7 +549,7 @@
 
     iput-wide v4, p0, Lcom/baidu/platform/comapi/map/B;->mDe:D
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
     const-string/jumbo v3, "left"
 
@@ -557,9 +557,9 @@
 
     move-result v3
 
-    iput v3, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIa:I
+    iput v3, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mIa:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
     const-string/jumbo v3, "right"
 
@@ -567,9 +567,9 @@
 
     move-result v3
 
-    iput v3, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
+    iput v3, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mIb:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
     const-string/jumbo v3, "top"
 
@@ -577,9 +577,9 @@
 
     move-result v3
 
-    iput v3, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIc:I
+    iput v3, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mIc:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
     const-string/jumbo v3, "bottom"
 
@@ -587,7 +587,7 @@
 
     move-result v3
 
-    iput v3, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
+    iput v3, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mId:I
 
     const-string/jumbo v0, "xoffset"
 
@@ -605,37 +605,37 @@
 
     iput-wide v4, p0, Lcom/baidu/platform/comapi/map/B;->mJi:J
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
-
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mIb:I
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mId:I
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    if-eqz v0, :cond_0
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->mIa:I
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
+
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mIb:I
+
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
+
+    iget v3, v3, Lcom/baidu/platform/comapi/map/B$MCb;->mIa:I
 
     sub-int/2addr v0, v3
 
     div-int/lit8 v0, v0, 0x2
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/B$MCb;->mId:I
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/B$ICb;->mIc:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/B$MCb;->mIc:I
 
     sub-int/2addr v3, v4
 
@@ -660,7 +660,7 @@
     iput v0, p0, Lcom/baidu/platform/comapi/map/B;->mIg:I
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
     const-string/jumbo v3, "gleft"
 
@@ -668,9 +668,9 @@
 
     move-result-wide v4
 
-    iput-wide v4, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJa:J
+    iput-wide v4, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJa:J
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
     const-string/jumbo v3, "gright"
 
@@ -678,9 +678,9 @@
 
     move-result-wide v4
 
-    iput-wide v4, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJb:J
+    iput-wide v4, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJb:J
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
     const-string/jumbo v3, "gtop"
 
@@ -688,9 +688,9 @@
 
     move-result-wide v4
 
-    iput-wide v4, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJc:J
+    iput-wide v4, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJc:J
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
     const-string/jumbo v3, "gbottom"
 
@@ -698,63 +698,63 @@
 
     move-result-wide v4
 
-    iput-wide v4, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJd:J
+    iput-wide v4, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJd:J
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-wide v4, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJa:J
+    iget-wide v4, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJa:J
 
     cmp-long v0, v4, v8
 
     if-gtz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iput-wide v8, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJa:J
+    iput-wide v8, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJa:J
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-wide v4, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJb:J
+    iget-wide v4, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJb:J
 
     cmp-long v0, v4, v10
 
     if-ltz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iput-wide v10, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJb:J
+    iput-wide v10, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJb:J
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-wide v4, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJc:J
+    iget-wide v4, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJc:J
 
     cmp-long v0, v4, v10
 
     if-ltz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iput-wide v10, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJc:J
+    iput-wide v10, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJc:J
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-wide v4, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJd:J
+    iget-wide v4, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJd:J
 
     cmp-long v0, v4, v8
 
     if-gtz v0, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iput-wide v8, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mJd:J
+    iput-wide v8, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mJd:J
 
     :cond_4
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v3, "lbx"
 
@@ -764,9 +764,9 @@
 
     iput v3, v0, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mPointe:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v3, "lby"
 
@@ -776,9 +776,9 @@
 
     iput v3, v0, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v3, "ltx"
 
@@ -788,9 +788,9 @@
 
     iput v3, v0, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mPointf:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v3, "lty"
 
@@ -800,9 +800,9 @@
 
     iput v3, v0, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v3, "rtx"
 
@@ -812,9 +812,9 @@
 
     iput v3, v0, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mPointg:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v3, "rty"
 
@@ -824,9 +824,9 @@
 
     iput v3, v0, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v3, "rbx"
 
@@ -836,9 +836,9 @@
 
     iput v3, v0, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mICak:Lcom/baidu/platform/comapi/map/B$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/B;->mMCak:Lcom/baidu/platform/comapi/map/B$MCa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$MCa;->mPointh:Lcom/baidu/mapapi/model/inner/Point;
 
     const-string/jumbo v3, "rby"
 

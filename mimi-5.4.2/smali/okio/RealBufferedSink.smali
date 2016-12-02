@@ -387,9 +387,9 @@
 
     .prologue
     .line 188
-    new-instance v0, Lokio/RealBufferedSink$ICv;
+    new-instance v0, Lokio/RealBufferedSink$MCv;
 
-    invoke-direct {v0, p0}, Lokio/RealBufferedSink$ICv;-><init>(Lokio/RealBufferedSink;)V
+    invoke-direct {v0, p0}, Lokio/RealBufferedSink$MCv;-><init>(Lokio/RealBufferedSink;)V
 
     return-object v0
 .end method

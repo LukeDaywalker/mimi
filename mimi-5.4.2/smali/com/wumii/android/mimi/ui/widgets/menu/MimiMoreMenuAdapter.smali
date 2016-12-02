@@ -4,8 +4,6 @@
 
 
 # instance fields
-.field private mICahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
-
 .field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
 .field private mListb:Ljava/util/List;
@@ -18,6 +16,8 @@
         }
     .end annotation
 .end field
+
+.field private mMCahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;
 
 
 # direct methods
@@ -46,12 +46,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;
     .locals 1
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mICahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mMCahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;
 
     return-object v0
 .end method
@@ -90,12 +90,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;)V
     .locals 0
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mICahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mMCahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;
 
     .line 32
     return-void
@@ -169,9 +169,9 @@
     move-result-object p2
 
     .line 63
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$ICe;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$MCe;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$ICe;-><init>(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$MCe;-><init>(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;)V
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

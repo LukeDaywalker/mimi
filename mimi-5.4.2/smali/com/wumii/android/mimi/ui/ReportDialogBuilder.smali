@@ -89,7 +89,7 @@
 
     .line 28
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;
+    new-instance v0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$MCav;
 
     move-object v1, p0
 
@@ -101,7 +101,7 @@
 
     move-object v5, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;-><init>(Lcom/wumii/android/mimi/ui/ReportDialogBuilder;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$MCav;-><init>(Lcom/wumii/android/mimi/ui/ReportDialogBuilder;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {p0, v6, v0}, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

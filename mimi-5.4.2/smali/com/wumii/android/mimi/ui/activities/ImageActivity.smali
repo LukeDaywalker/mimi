@@ -134,9 +134,9 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICad;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/ImageActivity$MCad;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICad;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$MCad;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
@@ -241,9 +241,9 @@
     .line 81
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mPhotoViewn:Luk/co/senab/photoview/PhotoView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/ImageActivity$MCac;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$MCac;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
 
     invoke-virtual {v0, v1}, Luk/co/senab/photoview/PhotoView;->setOnPhotoTapListener(Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;)V
 
@@ -294,13 +294,13 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mDisplayImageOptionsp:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;
+    new-instance v4, Lcom/wumii/android/mimi/ui/activities/ImageActivity$MCae;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$MCae;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICaf;
+    new-instance v5, Lcom/wumii/android/mimi/ui/activities/ImageActivity$MCaf;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICaf;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$MCaf;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
 
     invoke-virtual/range {v0 .. v5}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingProgressListener;)V
 
@@ -383,19 +383,19 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mStringC:Ljava/lang/String;
 
     .line 62
-    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
-    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;-><init>()V
 
-    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 

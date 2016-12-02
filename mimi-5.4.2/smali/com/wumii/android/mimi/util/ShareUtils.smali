@@ -39,12 +39,12 @@
     return-void
 .end method
 
-.method public static a()Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+.method public static a()Lcom/wumii/android/mimi/util/ShareUtils$MCam;
     .locals 3
 
     .prologue
     .line 58
-    invoke-static {}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->values()[Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    invoke-static {}, Lcom/wumii/android/mimi/util/ShareUtils$MCam;->values()[Lcom/wumii/android/mimi/util/ShareUtils$MCam;
 
     move-result-object v0
 
@@ -223,12 +223,12 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+.method public static a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
     .locals 2
 
     .prologue
     .line 100
-    new-instance v1, Lcom/wumii/android/mimi/util/ShareUtils$ICal;
+    new-instance v1, Lcom/wumii/android/mimi/util/ShareUtils$MCal;
 
     move-object v0, p0
 
@@ -238,9 +238,9 @@
 
     move-result-object v0
 
-    invoke-direct {v1, p0, v0, p1, p2}, Lcom/wumii/android/mimi/util/ShareUtils$ICal;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/ui/ActivityEventManager;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-direct {v1, p0, v0, p1, p2}, Lcom/wumii/android/mimi/util/ShareUtils$MCal;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/ui/ActivityEventManager;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
-    invoke-static {p1, v1}, Lcom/wumii/android/mimi/util/SinaWeiboUtils;->a(Ljava/lang/String;Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;)V
+    invoke-static {p1, v1}, Lcom/wumii/android/mimi/util/SinaWeiboUtils;->a(Ljava/lang/String;Lcom/wumii/android/mimi/util/SinaWeiboUtils$MCaq;)V
 
     .line 106
     return-void
@@ -267,18 +267,18 @@
 
     .prologue
     .line 67
-    invoke-static {}, Lcom/wumii/android/mimi/util/ShareUtils;->a()Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    invoke-static {}, Lcom/wumii/android/mimi/util/ShareUtils;->a()Lcom/wumii/android/mimi/util/ShareUtils$MCam;
 
     move-result-object v0
 
     .line 68
     sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils;->mContexta:Landroid/content/Context;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/ShareUtils$MCam;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->b()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/ShareUtils$MCam;->b()I
 
     move-result v0
 

@@ -9,8 +9,6 @@
 # instance fields
 .field private mCircleManagerr:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field private mICabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;
-
 .field private mLists:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -21,6 +19,8 @@
         }
     .end annotation
 .end field
+
+.field private mMCabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;
 
 .field private mPinnedHeaderListViewp:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
@@ -165,11 +165,11 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mICabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mMCabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mLists:Ljava/util/List;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;->a(Ljava/util/List;)V
 
     .line 251
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mLists:Ljava/util/List;
@@ -292,9 +292,9 @@
     if-eqz v0, :cond_0
 
     .line 151
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaz:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafaz:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     .line 154
     :cond_0
@@ -309,9 +309,9 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->f(Z)V
 
     .line 156
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mICabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mMCabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;->a()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;->a()Ljava/util/List;
 
     move-result-object v1
 
@@ -441,9 +441,9 @@
     if-eqz v0, :cond_0
 
     .line 72
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafay:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafay:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     .line 75
     :cond_0
@@ -497,16 +497,16 @@
     invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->addHeaderView(Landroid/view/View;)V
 
     .line 85
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/OnCircleClickListener;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/OnCircleClickListener;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mICabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mMCabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;
 
     .line 86
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mPinnedHeaderListViewp:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mICabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mMCabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;
 
     invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -535,9 +535,9 @@
     .line 90
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mTextViewn:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICaa;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCaa;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICaa;-><init>(Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCaa;-><init>(Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -600,11 +600,11 @@
 
     .line 108
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mICabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mMCabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mLists:Ljava/util/List;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;->a(Ljava/util/List;)V
 
     .line 110
     invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
@@ -771,7 +771,7 @@
 
     .line 222
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mICabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->mMCabq:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadFollowCircles;->d()Ljava/util/List;
 
@@ -781,7 +781,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICab;->a(Ljava/util/List;Ljava/util/List;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$MCab;->a(Ljava/util/List;Ljava/util/List;)V
 
     .line 223
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->invalidateOptionsMenu()V

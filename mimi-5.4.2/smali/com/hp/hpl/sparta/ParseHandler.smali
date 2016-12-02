@@ -7,7 +7,7 @@
 .method public abstract a(Lcom/hp/hpl/sparta/Element;)V
 .end method
 
-.method public abstract a(Lcom/hp/hpl/sparta/ParseSource$ICp;)V
+.method public abstract a(Lcom/hp/hpl/sparta/ParseSource$MCp;)V
 .end method
 
 .method public abstract a([CII)V

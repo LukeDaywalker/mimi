@@ -134,7 +134,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/RecommendedCircle;
 
     .line 118
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
     .line 119
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/RecommendedCircle;->isNew()Z
@@ -144,7 +144,7 @@
     if-eqz v5, :cond_1
 
     .line 120
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICib:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCib:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
     .line 124
     :cond_0
@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    invoke-direct {v5, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;)V
+    invoke-direct {v5, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;)V
 
     invoke-interface {v3, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -176,12 +176,12 @@
 
     if-ne v2, v5, :cond_2
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICif:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCif:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
     goto :goto_2
 
     :cond_2
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICid:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCid:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
     goto :goto_2
 
@@ -287,9 +287,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mCircleManagerd:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 58
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$MCb;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$MCb;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
@@ -344,11 +344,11 @@
     .line 74
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mDropDownItemListb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICc;
+    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$MCc;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICc;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$MCc;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;)V
 
-    invoke-virtual {v1, v3}, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;)V
+    invoke-virtual {v1, v3}, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;)V
 
     .line 82
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mDropDownItemListb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;

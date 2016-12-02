@@ -22,7 +22,7 @@
 .method public abstract a(Lcom/squareup/okhttp/internal/http/RetryableSink;)V
 .end method
 
-.method public abstract b()Lcom/squareup/okhttp/Response$ICau;
+.method public abstract b()Lcom/squareup/okhttp/Response$MCau;
 .end method
 
 .method public abstract c()V

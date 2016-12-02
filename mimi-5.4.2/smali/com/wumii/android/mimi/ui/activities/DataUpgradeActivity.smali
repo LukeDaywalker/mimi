@@ -167,7 +167,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     .line 37
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$MCp;
 
     const-wide/16 v2, 0x1388
 
@@ -175,15 +175,15 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;-><init>(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;JJ)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$MCp;-><init>(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;JJ)V
 
     .line 50
     invoke-virtual {v0}, Landroid/os/CountDownTimer;->start()Landroid/os/CountDownTimer;
 
     .line 52
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$MCq;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;-><init>(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$MCq;-><init>(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;)V
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;)V
 

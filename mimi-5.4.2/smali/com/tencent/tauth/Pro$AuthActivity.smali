@@ -61,7 +61,7 @@
     move-result-object v1
 
     .line 59
-    invoke-static {v1}, Lcom/tencent/c/Pro$ICq;->a(Ljava/lang/String;)Landroid/os/Bundle;
+    invoke-static {v1}, Lcom/tencent/c/Pro$MCq;->a(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -123,7 +123,7 @@
     move-result-object v0
 
     .line 103
-    invoke-static {v0}, Lcom/tencent/c/Pro$ICp;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/tencent/c/Pro$MCp;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -139,7 +139,7 @@
 
     .line 108
     :cond_0
-    check-cast v0, Lcom/tencent/tauth/Pro$ICb;
+    check-cast v0, Lcom/tencent/tauth/Pro$MCb;
 
     .line 109
     const-string/jumbo v1, "result"
@@ -165,7 +165,7 @@
     if-eqz v3, :cond_2
 
     .line 113
-    invoke-interface {v0}, Lcom/tencent/tauth/Pro$ICb;->a()V
+    invoke-interface {v0}, Lcom/tencent/tauth/Pro$MCb;->a()V
 
     .line 129
     :cond_1
@@ -185,7 +185,7 @@
     if-eqz v3, :cond_3
 
     .line 115
-    new-instance v2, Lcom/tencent/tauth/Pro$ICc;
+    new-instance v2, Lcom/tencent/tauth/Pro$MCc;
 
     const/4 v3, -0x6
 
@@ -209,9 +209,9 @@
 
     move-result-object v1
 
-    invoke-direct {v2, v3, v4, v1}, Lcom/tencent/tauth/Pro$ICc;-><init>(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v3, v4, v1}, Lcom/tencent/tauth/Pro$MCc;-><init>(ILjava/lang/String;Ljava/lang/String;)V
 
-    invoke-interface {v0, v2}, Lcom/tencent/tauth/Pro$ICb;->a(Lcom/tencent/tauth/Pro$ICc;)V
+    invoke-interface {v0, v2}, Lcom/tencent/tauth/Pro$MCb;->a(Lcom/tencent/tauth/Pro$MCc;)V
 
     goto :goto_1
 
@@ -241,7 +241,7 @@
     invoke-direct {v1, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     .line 123
-    invoke-interface {v0, v1}, Lcom/tencent/tauth/Pro$ICb;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lcom/tencent/tauth/Pro$MCb;->a(Ljava/lang/Object;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -255,7 +255,7 @@
     invoke-virtual {v1}, Lorg/json/JSONException;->printStackTrace()V
 
     .line 126
-    new-instance v1, Lcom/tencent/tauth/Pro$ICc;
+    new-instance v1, Lcom/tencent/tauth/Pro$MCc;
 
     const/4 v3, -0x4
 
@@ -279,9 +279,9 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v3, v4, v2}, Lcom/tencent/tauth/Pro$ICc;-><init>(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v3, v4, v2}, Lcom/tencent/tauth/Pro$MCc;-><init>(ILjava/lang/String;Ljava/lang/String;)V
 
-    invoke-interface {v0, v1}, Lcom/tencent/tauth/Pro$ICb;->a(Lcom/tencent/tauth/Pro$ICc;)V
+    invoke-interface {v0, v1}, Lcom/tencent/tauth/Pro$MCb;->a(Lcom/tencent/tauth/Pro$MCc;)V
 
     goto :goto_1
 
@@ -296,7 +296,7 @@
 
     .prologue
     .line 72
-    invoke-static {}, Lcom/tencent/connect/b/Pro$ICq;->a()Lcom/tencent/connect/b/Pro$ICq;
+    invoke-static {}, Lcom/tencent/connect/b/Pro$MCq;->a()Lcom/tencent/connect/b/Pro$MCq;
 
     move-result-object v0
 
@@ -308,7 +308,7 @@
     move-result-object v1
 
     .line 74
-    invoke-virtual {v0, v1}, Lcom/tencent/connect/b/Pro$ICq;->a(Ljava/lang/String;)Lcom/tencent/connect/b/Pro$ICr;
+    invoke-virtual {v0, v1}, Lcom/tencent/connect/b/Pro$MCq;->a(Ljava/lang/String;)Lcom/tencent/connect/b/Pro$MCr;
 
     move-result-object v2
 
@@ -327,18 +327,18 @@
     if-eq v3, v4, :cond_1
 
     .line 77
-    iget-object v3, v2, Lcom/tencent/connect/b/Pro$ICr;->mICba:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v3, v2, Lcom/tencent/connect/b/Pro$MCr;->mMCba:Lcom/tencent/tauth/Pro$MCb;
 
-    invoke-interface {v3}, Lcom/tencent/tauth/Pro$ICb;->a()V
+    invoke-interface {v3}, Lcom/tencent/tauth/Pro$MCb;->a()V
 
     .line 78
-    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->mICkb:Lcom/tencent/connect/b/Pro$ICk;
+    iget-object v2, v2, Lcom/tencent/connect/b/Pro$MCr;->mMCkb:Lcom/tencent/connect/b/Pro$MCk;
 
-    invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$ICk;->dismiss()V
+    invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$MCk;->dismiss()V
 
     .line 96
     :goto_0
-    invoke-virtual {v0, v1}, Lcom/tencent/connect/b/Pro$ICq;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/tencent/connect/b/Pro$MCq;->b(Ljava/lang/String;)V
 
     .line 98
     :cond_0
@@ -361,9 +361,9 @@
     .line 82
     const-string/jumbo v4, "access_token"
 
-    iget-object v5, v2, Lcom/tencent/connect/b/Pro$ICr;->mStringc:Ljava/lang/String;
+    iget-object v5, v2, Lcom/tencent/connect/b/Pro$MCr;->mStringc:Ljava/lang/String;
 
-    invoke-virtual {v0, v3, v5}, Lcom/tencent/connect/b/Pro$ICq;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v3, v5}, Lcom/tencent/connect/b/Pro$MCq;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -371,7 +371,7 @@
 
     .line 84
     :cond_2
-    invoke-static {p1}, Lcom/tencent/c/Pro$ICq;->a(Landroid/os/Bundle;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/tencent/c/Pro$MCq;->a(Landroid/os/Bundle;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -381,7 +381,7 @@
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
     .line 86
-    invoke-static {v4, v3}, Lcom/tencent/c/Pro$ICq;->a(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-static {v4, v3}, Lcom/tencent/c/Pro$MCq;->a(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
 
@@ -402,26 +402,26 @@
     if-nez v5, :cond_3
 
     .line 89
-    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->mICkb:Lcom/tencent/connect/b/Pro$ICk;
+    iget-object v2, v2, Lcom/tencent/connect/b/Pro$MCr;->mMCkb:Lcom/tencent/connect/b/Pro$MCk;
 
     invoke-virtual {v3}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v4, v3}, Lcom/tencent/connect/b/Pro$ICk;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v4, v3}, Lcom/tencent/connect/b/Pro$MCk;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 92
     :cond_3
-    iget-object v4, v2, Lcom/tencent/connect/b/Pro$ICr;->mICba:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v4, v2, Lcom/tencent/connect/b/Pro$MCr;->mMCba:Lcom/tencent/tauth/Pro$MCb;
 
-    invoke-interface {v4, v3}, Lcom/tencent/tauth/Pro$ICb;->a(Ljava/lang/Object;)V
+    invoke-interface {v4, v3}, Lcom/tencent/tauth/Pro$MCb;->a(Ljava/lang/Object;)V
 
     .line 93
-    iget-object v2, v2, Lcom/tencent/connect/b/Pro$ICr;->mICkb:Lcom/tencent/connect/b/Pro$ICk;
+    iget-object v2, v2, Lcom/tencent/connect/b/Pro$MCr;->mMCkb:Lcom/tencent/connect/b/Pro$MCk;
 
-    invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$ICk;->dismiss()V
+    invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$MCk;->dismiss()V
 
     goto :goto_0
 .end method

@@ -56,9 +56,9 @@
     .line 68
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;
+    new-instance v1, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$MCd;
 
-    invoke-direct {v1, p0, p1}, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;-><init>(Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;Lio/fabric/sdk/android/services/common/AdvertisingInfo;)V
+    invoke-direct {v1, p0, p1}, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$MCd;-><init>(Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;Lio/fabric/sdk/android/services/common/AdvertisingInfo;)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 

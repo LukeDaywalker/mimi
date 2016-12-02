@@ -45,9 +45,9 @@
 
     .prologue
     .line 15
-    new-instance v0, Lcom/wumii/android/mimi/models/storage/TagStorage$ICp;
+    new-instance v0, Lcom/wumii/android/mimi/models/storage/TagStorage$MCp;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/storage/TagStorage$ICp;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/storage/TagStorage$MCp;-><init>()V
 
     sput-object v0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
@@ -141,7 +141,7 @@
     .line 34
     iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    sget-object v1, Lcom/wumii/android/mimi/util/Constants$ICt;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sget-object v1, Lcom/wumii/android/mimi/util/Constants$MCt;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     const-string/jumbo v2, "latest_tags"
 

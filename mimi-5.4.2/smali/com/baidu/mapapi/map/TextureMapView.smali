@@ -26,11 +26,11 @@
 
 .field private mFn:F
 
-.field private mICio:Lcom/baidu/platform/comapi/map/ICi;
-
 .field private mImageViewd:Landroid/widget/ImageView;
 
 .field private mImageViewl:Landroid/widget/ImageView;
+
+.field private mMCio:Lcom/baidu/platform/comapi/map/MCi;
 
 .field private mPointg:Landroid/graphics/Point;
 
@@ -634,11 +634,11 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mCb:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/MCc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->v()Lcom/baidu/platform/comapi/map/B;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCc;->v()Lcom/baidu/platform/comapi/map/B;
 
     move-result-object v0
 
@@ -648,11 +648,11 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mCb:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/MCc;
 
     move-result-object v0
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mFb:F
+    iget v0, v0, Lcom/baidu/platform/comapi/map/MCc;->mFb:F
 
     cmpg-float v0, v3, v0
 
@@ -667,11 +667,11 @@
 
     iget-object v4, p0, Lcom/baidu/mapapi/map/TextureMapView;->mCb:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v4}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
+    invoke-virtual {v4}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/MCc;
 
     move-result-object v4
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/ICc;->mFa:F
+    iget v4, v4, Lcom/baidu/platform/comapi/map/MCc;->mFa:F
 
     cmpl-float v3, v3, v4
 
@@ -704,17 +704,17 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mZoomControlsf:Landroid/widget/ZoomControls;
 
-    new-instance v1, Lcom/baidu/mapapi/map/ICl;
+    new-instance v1, Lcom/baidu/mapapi/map/MCl;
 
-    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/ICl;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
+    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/MCl;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ZoomControls;->setOnZoomOutClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mZoomControlsf:Landroid/widget/ZoomControls;
 
-    new-instance v1, Lcom/baidu/mapapi/map/ICm;
+    new-instance v1, Lcom/baidu/mapapi/map/MCm;
 
-    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/ICm;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
+    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/MCm;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ZoomControls;->setOnZoomInClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -734,7 +734,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/baidu/platform/comapi/map/C;-><init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/ICz;)V
+    invoke-direct {v0, p1, v1}, Lcom/baidu/platform/comapi/map/C;-><init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/MCz;)V
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mCb:Lcom/baidu/platform/comapi/map/C;
 
@@ -743,32 +743,32 @@
 
     invoke-virtual {p0, v0}, Lcom/baidu/mapapi/map/TextureMapView;->addView(Landroid/view/View;)V
 
-    new-instance v0, Lcom/baidu/mapapi/map/ICk;
+    new-instance v0, Lcom/baidu/mapapi/map/MCk;
 
-    invoke-direct {v0, p0}, Lcom/baidu/mapapi/map/ICk;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
+    invoke-direct {v0, p0}, Lcom/baidu/mapapi/map/MCk;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mICio:Lcom/baidu/platform/comapi/map/ICi;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mMCio:Lcom/baidu/platform/comapi/map/MCi;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mCb:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/MCc;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/TextureMapView;->mICio:Lcom/baidu/platform/comapi/map/ICi;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/TextureMapView;->mMCio:Lcom/baidu/platform/comapi/map/MCi;
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/platform/comapi/map/ICi;)V
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/MCc;->a(Lcom/baidu/platform/comapi/map/MCi;)V
 
     return-void
 
     :cond_0
     new-instance v0, Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {p2}, Lcom/baidu/mapapi/map/BaiduMapOptions;->a()Lcom/baidu/platform/comapi/map/ICz;
+    invoke-virtual {p2}, Lcom/baidu/mapapi/map/BaiduMapOptions;->a()Lcom/baidu/platform/comapi/map/MCz;
 
     move-result-object v1
 
-    invoke-direct {v0, p1, v1}, Lcom/baidu/platform/comapi/map/C;-><init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/ICz;)V
+    invoke-direct {v0, p1, v1}, Lcom/baidu/platform/comapi/map/C;-><init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/MCz;)V
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->mCb:Lcom/baidu/platform/comapi/map/C;
 
@@ -1396,11 +1396,11 @@
 
     iget-object v5, p0, Lcom/baidu/mapapi/map/TextureMapView;->mCb:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v5}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
+    invoke-virtual {v5}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/MCc;
 
     move-result-object v5
 
-    invoke-virtual {v5, v1}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Landroid/graphics/Point;
+    invoke-virtual {v5, v1}, Lcom/baidu/platform/comapi/map/MCc;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Landroid/graphics/Point;
 
     move-result-object v1
 

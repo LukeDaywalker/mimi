@@ -36,9 +36,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 36
-    new-instance v0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider$ICac;
+    new-instance v0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider$MCac;
 
-    invoke-direct {v0, p0}, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider$ICac;-><init>(Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;)V
+    invoke-direct {v0, p0}, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider$MCac;-><init>(Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;)V
 
     iput-object v0, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->mValueLoadera:Lio/fabric/sdk/android/services/cache/ValueLoader;
 

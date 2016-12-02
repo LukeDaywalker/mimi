@@ -8,7 +8,7 @@
 
 .field private mGroupListManagerr:Lcom/wumii/android/mimi/manager/GroupListManager;
 
-.field private mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+.field private mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
 .field private mObservers:Ljava/util/Observer;
 
@@ -28,11 +28,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 183
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdn;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$MCdn;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdn;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$MCdn;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
     return-void
 .end method
@@ -97,11 +97,11 @@
 
     const/4 v1, 0x0
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$MCdj;
 
-    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;)V
+    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$MCdj;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/task/SyncQuotaTask;->a(ZLcom/wumii/android/mimi/task/SyncQuotaTask$ICch;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/task/SyncQuotaTask;->a(ZLcom/wumii/android/mimi/task/SyncQuotaTask$MCch;)V
 
     .line 71
     return-void
@@ -266,9 +266,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     .line 163
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$MCdl;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$MCdl;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -403,9 +403,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mGroupListManagerr:Lcom/wumii/android/mimi/manager/GroupListManager;
 
     .line 90
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$MCdk;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$MCdk;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mObservers:Ljava/util/Observer;
 
@@ -423,9 +423,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 121
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mGroupListManagerr:Lcom/wumii/android/mimi/manager/GroupListManager;
@@ -454,9 +454,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mICdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->mMCdt:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 154
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
@@ -470,9 +470,9 @@
 
     .prologue
     .line 135
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mICaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->mMCaqc:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->name()Ljava/lang/String;
 
     move-result-object v0
 

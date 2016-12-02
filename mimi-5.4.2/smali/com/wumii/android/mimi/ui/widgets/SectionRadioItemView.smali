@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private mICbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
-
 .field private mImageViewe:Landroid/widget/ImageView;
+
+.field private mMCbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbp;
 
 
 # direct methods
@@ -44,9 +44,9 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 34
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbo;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;-><init>(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbo;-><init>(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)V
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -54,12 +54,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbp;
     .locals 1
 
     .prologue
     .line 14
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mICbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mMCbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbp;
 
     return-object v0
 .end method
@@ -106,9 +106,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
     .line 64
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mICbnc:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mMCbnc:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$MCbn;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$MCbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mImageViewe:Landroid/widget/ImageView;
 
@@ -166,12 +166,12 @@
     goto :goto_0
 .end method
 
-.method public setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;)V
+.method public setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbp;)V
     .locals 0
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mICbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mMCbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$MCbp;
 
     .line 47
     return-void

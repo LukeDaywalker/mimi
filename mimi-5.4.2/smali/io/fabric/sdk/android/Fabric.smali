@@ -210,15 +210,15 @@
     if-nez v0, :cond_0
 
     .line 303
-    new-instance v0, Lio/fabric/sdk/android/Fabric$ICi;
+    new-instance v0, Lio/fabric/sdk/android/Fabric$MCi;
 
-    invoke-direct {v0, p0}, Lio/fabric/sdk/android/Fabric$ICi;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lio/fabric/sdk/android/Fabric$MCi;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0, p1}, Lio/fabric/sdk/android/Fabric$ICi;->a([Lio/fabric/sdk/android/Kit;)Lio/fabric/sdk/android/Fabric$ICi;
+    invoke-virtual {v0, p1}, Lio/fabric/sdk/android/Fabric$MCi;->a([Lio/fabric/sdk/android/Kit;)Lio/fabric/sdk/android/Fabric$MCi;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lio/fabric/sdk/android/Fabric$ICi;->a()Lio/fabric/sdk/android/Fabric;
+    invoke-virtual {v0}, Lio/fabric/sdk/android/Fabric$MCi;->a()Lio/fabric/sdk/android/Fabric;
 
     move-result-object v0
 
@@ -523,11 +523,11 @@
     .line 357
     iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mActivityLifecycleManagerl:Lio/fabric/sdk/android/ActivityLifecycleManager;
 
-    new-instance v1, Lio/fabric/sdk/android/Fabric$ICg;
+    new-instance v1, Lio/fabric/sdk/android/Fabric$MCg;
 
-    invoke-direct {v1, p0}, Lio/fabric/sdk/android/Fabric$ICg;-><init>(Lio/fabric/sdk/android/Fabric;)V
+    invoke-direct {v1, p0}, Lio/fabric/sdk/android/Fabric$MCg;-><init>(Lio/fabric/sdk/android/Fabric;)V
 
-    invoke-virtual {v0, v1}, Lio/fabric/sdk/android/ActivityLifecycleManager;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;)Z
+    invoke-virtual {v0, v1}, Lio/fabric/sdk/android/ActivityLifecycleManager;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$MCd;)Z
 
     .line 375
     iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mContexte:Landroid/content/Context;
@@ -567,9 +567,9 @@
 
     .prologue
     .line 582
-    new-instance v0, Lio/fabric/sdk/android/Fabric$ICh;
+    new-instance v0, Lio/fabric/sdk/android/Fabric$MCh;
 
-    invoke-direct {v0, p0, p1}, Lio/fabric/sdk/android/Fabric$ICh;-><init>(Lio/fabric/sdk/android/Fabric;I)V
+    invoke-direct {v0, p0, p1}, Lio/fabric/sdk/android/Fabric$MCh;-><init>(Lio/fabric/sdk/android/Fabric;I)V
 
     return-object v0
 .end method

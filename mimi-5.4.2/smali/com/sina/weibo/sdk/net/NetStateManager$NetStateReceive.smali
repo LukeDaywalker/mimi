@@ -55,9 +55,9 @@
 
     .line 54
     :cond_0
-    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mICfa:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$MCf;->mMCfa:Lcom/sina/weibo/sdk/net/NetStateManager$MCf;
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->mICfa:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->mMCfa:Lcom/sina/weibo/sdk/net/NetStateManager$MCf;
 
     .line 57
     :cond_1

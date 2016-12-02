@@ -10,7 +10,7 @@
             "(",
             "Ljava/util/List",
             "<",
-            "Lcom/google/tagmanager/ResourceUtil$ICat;",
+            "Lcom/google/tagmanager/ResourceUtil$MCat;",
             ">;",
             "Ljava/util/List",
             "<",

@@ -94,9 +94,9 @@
 
     .prologue
     .line 64
-    new-instance v0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;
+    new-instance v0, Lio/fabric/sdk/android/services/events/EventsHandler$MCi;
 
-    invoke-direct {v0, p0, p1}, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;-><init>(Lio/fabric/sdk/android/services/events/EventsHandler;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1}, Lio/fabric/sdk/android/services/events/EventsHandler$MCi;-><init>(Lio/fabric/sdk/android/services/events/EventsHandler;Ljava/lang/Object;)V
 
     invoke-virtual {p0, v0}, Lio/fabric/sdk/android/services/events/EventsHandler;->a(Ljava/lang/Runnable;)V
 
@@ -114,9 +114,9 @@
 
     .prologue
     .line 46
-    new-instance v0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;
+    new-instance v0, Lio/fabric/sdk/android/services/events/EventsHandler$MCh;
 
-    invoke-direct {v0, p0, p1, p2}, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;-><init>(Lio/fabric/sdk/android/services/events/EventsHandler;Ljava/lang/Object;Z)V
+    invoke-direct {v0, p0, p1, p2}, Lio/fabric/sdk/android/services/events/EventsHandler$MCh;-><init>(Lio/fabric/sdk/android/services/events/EventsHandler;Ljava/lang/Object;Z)V
 
     invoke-virtual {p0, v0}, Lio/fabric/sdk/android/services/events/EventsHandler;->b(Ljava/lang/Runnable;)V
 
@@ -163,9 +163,9 @@
 
     .prologue
     .line 79
-    new-instance v0, Lio/fabric/sdk/android/services/events/EventsHandler$ICj;
+    new-instance v0, Lio/fabric/sdk/android/services/events/EventsHandler$MCj;
 
-    invoke-direct {v0, p0}, Lio/fabric/sdk/android/services/events/EventsHandler$ICj;-><init>(Lio/fabric/sdk/android/services/events/EventsHandler;)V
+    invoke-direct {v0, p0}, Lio/fabric/sdk/android/services/events/EventsHandler$MCj;-><init>(Lio/fabric/sdk/android/services/events/EventsHandler;)V
 
     invoke-virtual {p0, v0}, Lio/fabric/sdk/android/services/events/EventsHandler;->b(Ljava/lang/Runnable;)V
 
@@ -178,9 +178,9 @@
 
     .prologue
     .line 92
-    new-instance v0, Lio/fabric/sdk/android/services/events/EventsHandler$ICk;
+    new-instance v0, Lio/fabric/sdk/android/services/events/EventsHandler$MCk;
 
-    invoke-direct {v0, p0}, Lio/fabric/sdk/android/services/events/EventsHandler$ICk;-><init>(Lio/fabric/sdk/android/services/events/EventsHandler;)V
+    invoke-direct {v0, p0}, Lio/fabric/sdk/android/services/events/EventsHandler$MCk;-><init>(Lio/fabric/sdk/android/services/events/EventsHandler;)V
 
     invoke-virtual {p0, v0}, Lio/fabric/sdk/android/services/events/EventsHandler;->b(Ljava/lang/Runnable;)V
 

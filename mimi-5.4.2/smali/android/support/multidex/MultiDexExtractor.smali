@@ -1021,9 +1021,9 @@
     invoke-static {p0}, Landroid/support/multidex/MultiDexExtractor;->d(Ljava/io/File;)V
 
     .line 264
-    new-instance v0, Landroid/support/multidex/MultiDexExtractor$ICf;
+    new-instance v0, Landroid/support/multidex/MultiDexExtractor$MCf;
 
-    invoke-direct {v0, p1}, Landroid/support/multidex/MultiDexExtractor$ICf;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Landroid/support/multidex/MultiDexExtractor$MCf;-><init>(Ljava/lang/String;)V
 
     .line 271
     invoke-virtual {p0, v0}, Ljava/io/File;->listFiles(Ljava/io/FileFilter;)[Ljava/io/File;

@@ -2,8 +2,8 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/baidu/location/ICa0;
-.implements Lcom/baidu/location/ICn;
+.implements Lcom/baidu/location/MCa0;
+.implements Lcom/baidu/location/MCn;
 
 
 # static fields

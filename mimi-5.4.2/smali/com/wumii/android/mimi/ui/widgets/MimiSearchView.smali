@@ -6,11 +6,11 @@
 # instance fields
 .field private mEditTextb:Landroid/widget/EditText;
 
-.field private mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
-
 .field private mImageViewc:Landroid/widget/ImageView;
 
 .field private mLoggera:Lorg/slf4j/Logger;
+
+.field private mMCald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
 
 # direct methods
@@ -136,27 +136,27 @@
     .line 63
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCai;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCai;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 96
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCaj;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCaj;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 114
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mImageViewc:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCak;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCak;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -206,12 +206,12 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mMCald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
     return-object v0
 .end method
@@ -272,12 +272,12 @@
     return-void
 .end method
 
-.method public setListener(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
+.method public setListener(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;)V
     .locals 0
 
     .prologue
     .line 159
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mMCald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
     .line 160
     return-void
@@ -312,14 +312,14 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mMCald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
     if-eqz v0, :cond_0
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mMCald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;->a(Ljava/lang/String;)V
 
     .line 152
     :cond_0
@@ -341,14 +341,14 @@
 
     if-eq v0, v1, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mMCald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
     if-eqz v0, :cond_1
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mMCald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;->a()V
 
     .line 143
     :cond_0

@@ -284,9 +284,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 169
-    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICr;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCr;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICr;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCr;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -570,9 +570,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICs;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCs;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICs;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCs;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -660,9 +660,9 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICk;
+    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCk;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICk;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCk;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
 
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -673,9 +673,9 @@
 
     move-result-object v0
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICl;
+    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCl;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICl;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCl;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -781,9 +781,9 @@
     .line 83
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewn:Landroid/widget/TextView;
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
+    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCm;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$MCm;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

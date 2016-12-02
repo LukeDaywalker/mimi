@@ -76,11 +76,11 @@
     iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mStringh:Ljava/lang/String;
 
     .line 135
-    new-instance v0, Lorg/apache/commons/cli/HelpFormatter$ICg;
+    new-instance v0, Lorg/apache/commons/cli/HelpFormatter$MCg;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lorg/apache/commons/cli/HelpFormatter$ICg;-><init>(Lorg/apache/commons/cli/HelpFormatter$ICf;)V
+    invoke-direct {v0, v1}, Lorg/apache/commons/cli/HelpFormatter$MCg;-><init>(Lorg/apache/commons/cli/HelpFormatter$MCf;)V
 
     iput-object v0, p0, Lorg/apache/commons/cli/HelpFormatter;->mComparatori:Ljava/util/Comparator;
 

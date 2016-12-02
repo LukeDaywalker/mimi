@@ -222,16 +222,16 @@
     .line 52
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;->mEditTextn:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICr;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$MCr;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICr;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$MCr;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 68
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$MCs;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$MCs;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;->mOrgValidationObserverp:Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;
 

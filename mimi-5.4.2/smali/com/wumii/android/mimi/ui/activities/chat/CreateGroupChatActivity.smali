@@ -282,11 +282,11 @@
 
     .line 147
     :pswitch_0
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafg:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafg:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v1, "\u70b9\u51fb\u53d1\u8d77\u7fa4\u804a[\u4e0b\u4e00\u6b65]\u6309\u94ae"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 148
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->mGroupChatInfot:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
@@ -310,32 +310,32 @@
 
     .line 151
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$ICad;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$MCad;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$ICad;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$MCad;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;Landroid/app/Activity;)V
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->mGroupChatInfot:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$ICad;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$MCad;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;)V
 
     goto :goto_0
 
     .line 161
     :pswitch_1
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafg:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafg:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v1, "\u70b9\u51fb\u53d1\u8d77\u7fa4\u804a[\u53d1\u8d77]\u6309\u94ae"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 162
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$ICae;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$MCae;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$ICae;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$MCae;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;Landroid/app/Activity;)V
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->mGroupChatInfot:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$ICae;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$MCae;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;)V
 
     goto :goto_0
 

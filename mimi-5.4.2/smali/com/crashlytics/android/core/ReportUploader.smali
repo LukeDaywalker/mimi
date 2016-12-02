@@ -35,9 +35,9 @@
 
     .prologue
     .line 25
-    new-instance v0, Lcom/crashlytics/android/core/ReportUploader$ICbw;
+    new-instance v0, Lcom/crashlytics/android/core/ReportUploader$MCbw;
 
-    invoke-direct {v0}, Lcom/crashlytics/android/core/ReportUploader$ICbw;-><init>()V
+    invoke-direct {v0}, Lcom/crashlytics/android/core/ReportUploader$MCbw;-><init>()V
 
     sput-object v0, Lcom/crashlytics/android/core/ReportUploader;->mFilenameFilterb:Ljava/io/FilenameFilter;
 
@@ -288,9 +288,9 @@
     .line 55
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lcom/crashlytics/android/core/ReportUploader$ICbx;
+    new-instance v1, Lcom/crashlytics/android/core/ReportUploader$MCbx;
 
-    invoke-direct {v1, p0, p1}, Lcom/crashlytics/android/core/ReportUploader$ICbx;-><init>(Lcom/crashlytics/android/core/ReportUploader;F)V
+    invoke-direct {v1, p0, p1}, Lcom/crashlytics/android/core/ReportUploader$MCbx;-><init>(Lcom/crashlytics/android/core/ReportUploader;F)V
 
     const-string/jumbo v2, "Crashlytics Report Uploader"
 

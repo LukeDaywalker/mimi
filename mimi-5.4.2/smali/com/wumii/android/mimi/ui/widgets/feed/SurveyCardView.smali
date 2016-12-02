@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
-.implements Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbu;
+.implements Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$MCbu;
 
 
 # static fields
@@ -13,8 +13,6 @@
 
 # instance fields
 .field private mFeedTypem:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
-
-.field private mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
 .field private mImageViewk:Landroid/widget/ImageView;
 
@@ -29,6 +27,8 @@
 .field private mIr:I
 
 .field private mLinearLayoutg:Landroid/widget/LinearLayout;
+
+.field private mMCms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
 .field private mMimiTextViewf:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
@@ -164,12 +164,12 @@
     .line 87
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyOptionViewh:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->setOnSurveyOptionsViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbu;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->setOnSurveyOptionsViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$MCbu;)V
 
     .line 88
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyOptionViewi:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->setOnSurveyOptionsViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbu;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->setOnSurveyOptionsViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$MCbu;)V
 
     .line 90
     const v0, 0x7f0b017a
@@ -1106,7 +1106,7 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMCms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
     if-nez v0, :cond_0
 
@@ -1123,9 +1123,9 @@
 
     .line 130
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMCms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;->a(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -1135,7 +1135,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMCms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
     if-nez v0, :cond_1
 
@@ -1166,7 +1166,7 @@
     if-ne v0, v1, :cond_2
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMCms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
@@ -1174,7 +1174,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;->b(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1202,9 +1202,9 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 114
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMCms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     goto :goto_0
 
@@ -1235,19 +1235,19 @@
     if-eqz v0, :cond_0
 
     .line 118
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMCms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->b(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;->b(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     goto :goto_0
 .end method
 
-.method public setOnSurveyCardClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;)V
+.method public setOnSurveyCardClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;)V
     .locals 1
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMCms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
     .line 135
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;

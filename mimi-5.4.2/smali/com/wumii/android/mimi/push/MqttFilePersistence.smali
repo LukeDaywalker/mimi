@@ -26,9 +26,9 @@
 
     .prologue
     .line 65
-    new-instance v0, Lcom/wumii/android/mimi/push/MqttFilePersistence$ICb;
+    new-instance v0, Lcom/wumii/android/mimi/push/MqttFilePersistence$MCb;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/push/MqttFilePersistence$ICb;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/push/MqttFilePersistence$MCb;-><init>()V
 
     sput-object v0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilenameFiltere:Ljava/io/FilenameFilter;
 
@@ -104,9 +104,9 @@
     invoke-interface {v0, v2}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 288
-    new-instance v0, Lcom/wumii/android/mimi/push/MqttFilePersistence$ICc;
+    new-instance v0, Lcom/wumii/android/mimi/push/MqttFilePersistence$MCc;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/MqttFilePersistence$ICc;-><init>(Lcom/wumii/android/mimi/push/MqttFilePersistence;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/MqttFilePersistence$MCc;-><init>(Lcom/wumii/android/mimi/push/MqttFilePersistence;)V
 
     invoke-virtual {p1, v0}, Ljava/io/File;->listFiles(Ljava/io/FileFilter;)[Ljava/io/File;
 

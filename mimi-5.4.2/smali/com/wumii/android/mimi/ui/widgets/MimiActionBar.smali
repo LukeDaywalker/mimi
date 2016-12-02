@@ -13,8 +13,6 @@
 
 .field private mContexta:Landroid/content/Context;
 
-.field private mICahe:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
-
 .field private mInputMethodManagerb:Landroid/view/inputmethod/InputMethodManager;
 
 .field private mListd:Ljava/util/List;
@@ -27,6 +25,8 @@
         }
     .end annotation
 .end field
+
+.field private mMCahe:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;
 
 .field private mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -314,7 +314,7 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCag;)V
     .locals 2
 
     .prologue
@@ -339,9 +339,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCaf;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCaf;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCag;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -355,12 +355,12 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;)V
     .locals 1
 
     .prologue
     .line 121
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mICahe:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mMCahe:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;
 
     .line 123
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mMimiMoreMenui:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
@@ -370,7 +370,7 @@
     .line 124
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mMimiMoreMenui:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;)V
 
     .line 126
     :cond_0
@@ -445,7 +445,7 @@
     return-void
 .end method
 
-.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
+.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;)V
     .locals 3
 
     .prologue
@@ -456,7 +456,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setListener(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
+    invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setListener(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;)V
 
     .line 212
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mActionBarViewHolderc:Lcom/wumii/android/mimi/ui/ActionBarViewHolder;
@@ -969,14 +969,14 @@
 
     .line 139
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mICahe:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mMCahe:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;
 
     if-eqz v1, :cond_2
 
     .line 140
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mICahe:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->mMCahe:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$MCah;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 142
     :cond_2

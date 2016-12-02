@@ -10,5 +10,5 @@
 .method public abstract a()V
 .end method
 
-.method public abstract a(Lcom/squareup/okhttp/internal/spdy/FrameReader$ICc;)Z
+.method public abstract a(Lcom/squareup/okhttp/internal/spdy/FrameReader$MCc;)Z
 .end method

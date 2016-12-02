@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private mICxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
-
 .field private mLayoutInflatera:Landroid/view/LayoutInflater;
+
+.field private mMCxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;
 
 
 # direct methods
@@ -252,12 +252,12 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mICxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mMCxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;
 
     if-eqz v0, :cond_0
 
     .line 51
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mICxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mMCxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -265,19 +265,19 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;->a(Lcom/wumii/android/mimi/ui/widgets/CircleItem;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;->a(Lcom/wumii/android/mimi/ui/widgets/CircleItem;)V
 
     .line 53
     :cond_0
     return-void
 .end method
 
-.method public setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;)V
+.method public setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;)V
     .locals 0
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mICxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mMCxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;
 
     .line 46
     return-void

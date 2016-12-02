@@ -30,9 +30,9 @@
 
     .prologue
     .line 1247
-    new-instance v0, Lcom/etsy/android/grid/StaggeredGridView$ICo;
+    new-instance v0, Lcom/etsy/android/grid/StaggeredGridView$MCo;
 
-    invoke-direct {v0}, Lcom/etsy/android/grid/StaggeredGridView$ICo;-><init>()V
+    invoke-direct {v0}, Lcom/etsy/android/grid/StaggeredGridView$MCo;-><init>()V
 
     sput-object v0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 

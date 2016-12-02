@@ -55,7 +55,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lio/fabric/sdk/android/services/settings/Settings$ICr;)V
+.method synthetic constructor <init>(Lio/fabric/sdk/android/services/settings/Settings$MCr;)V
     .locals 0
 
     .prologue
@@ -70,7 +70,7 @@
 
     .prologue
     .line 55
-    invoke-static {}, Lio/fabric/sdk/android/services/settings/Settings$ICs;->a()Lio/fabric/sdk/android/services/settings/Settings;
+    invoke-static {}, Lio/fabric/sdk/android/services/settings/Settings$MCs;->a()Lio/fabric/sdk/android/services/settings/Settings;
 
     move-result-object v0
 
@@ -279,7 +279,7 @@
     throw v2
 .end method
 
-.method public a(Lio/fabric/sdk/android/services/settings/Settings$ICt;Ljava/lang/Object;)Ljava/lang/Object;
+.method public a(Lio/fabric/sdk/android/services/settings/Settings$MCt;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -308,7 +308,7 @@
     return-object p2
 
     :cond_0
-    invoke-interface {p1, v0}, Lio/fabric/sdk/android/services/settings/Settings$ICt;->b(Lio/fabric/sdk/android/services/settings/SettingsData;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lio/fabric/sdk/android/services/settings/Settings$MCt;->b(Lio/fabric/sdk/android/services/settings/SettingsData;)Ljava/lang/Object;
 
     move-result-object p2
 

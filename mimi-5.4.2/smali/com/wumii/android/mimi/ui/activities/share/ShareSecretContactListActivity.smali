@@ -70,9 +70,9 @@
     if-eqz v0, :cond_0
 
     .line 71
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$MCh;
 
-    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;Landroid/app/Activity;)V
+    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$MCh;-><init>(Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;Landroid/app/Activity;)V
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->mMultiSelectContactSectionedAdapterq:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->a(Ljava/util/Set;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$MCh;->a(Ljava/util/Set;Ljava/lang/String;)V
 
     .line 86
     :goto_0

@@ -9,7 +9,7 @@
         value = {
             "Ljava/util/Deque",
             "<",
-            "Lcom/squareup/okhttp/Call$ICj;",
+            "Lcom/squareup/okhttp/Call$MCj;",
             ">;"
         }
     .end annotation
@@ -20,7 +20,7 @@
         value = {
             "Ljava/util/Deque",
             "<",
-            "Lcom/squareup/okhttp/Call$ICj;",
+            "Lcom/squareup/okhttp/Call$MCj;",
             ">;"
         }
     .end annotation
@@ -136,10 +136,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/squareup/okhttp/Call$ICj;
+    check-cast v0, Lcom/squareup/okhttp/Call$MCj;
 
     .line 152
-    invoke-direct {p0, v0}, Lcom/squareup/okhttp/Dispatcher;->c(Lcom/squareup/okhttp/Call$ICj;)I
+    invoke-direct {p0, v0}, Lcom/squareup/okhttp/Dispatcher;->c(Lcom/squareup/okhttp/Call$MCj;)I
 
     move-result v2
 
@@ -177,7 +177,7 @@
     goto :goto_0
 .end method
 
-.method private c(Lcom/squareup/okhttp/Call$ICj;)I
+.method private c(Lcom/squareup/okhttp/Call$MCj;)I
     .locals 4
 
     .prologue
@@ -204,14 +204,14 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/squareup/okhttp/Call$ICj;
+    check-cast v0, Lcom/squareup/okhttp/Call$MCj;
 
     .line 166
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Call$ICj;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Call$MCj;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/squareup/okhttp/Call$ICj;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/squareup/okhttp/Call$MCj;->a()Ljava/lang/String;
 
     move-result-object v3
 
@@ -300,7 +300,7 @@
     throw v0
 .end method
 
-.method declared-synchronized a(Lcom/squareup/okhttp/Call$ICj;)V
+.method declared-synchronized a(Lcom/squareup/okhttp/Call$MCj;)V
     .locals 2
 
     .prologue
@@ -318,7 +318,7 @@
 
     if-ge v0, v1, :cond_0
 
-    invoke-direct {p0, p1}, Lcom/squareup/okhttp/Dispatcher;->c(Lcom/squareup/okhttp/Call$ICj;)I
+    invoke-direct {p0, p1}, Lcom/squareup/okhttp/Dispatcher;->c(Lcom/squareup/okhttp/Call$MCj;)I
 
     move-result v0
 
@@ -394,7 +394,7 @@
     throw v0
 .end method
 
-.method declared-synchronized b(Lcom/squareup/okhttp/Call$ICj;)V
+.method declared-synchronized b(Lcom/squareup/okhttp/Call$MCj;)V
     .locals 2
 
     .prologue

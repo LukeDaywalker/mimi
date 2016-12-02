@@ -221,7 +221,7 @@
 
     const/4 v0, 0x6
 
-    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/ICa;->a(Ljava/util/List;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/MCa;->a(Ljava/util/List;Landroid/content/Context;I)Z
 
     move-result v0
 
@@ -255,7 +255,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-static {p0}, Lcom/baidu/mapapi/utils/ICa;->a(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/baidu/mapapi/utils/MCa;->a(Landroid/content/Context;)V
 
     :cond_0
     return-void
@@ -331,7 +331,7 @@
 
     const/4 v0, 0x3
 
-    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/ICa;->a(Lcom/baidu/mapapi/utils/poi/PoiParaOption;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/MCa;->a(Lcom/baidu/mapapi/utils/poi/PoiParaOption;Landroid/content/Context;I)Z
 
     move-result v0
 
@@ -510,7 +510,7 @@
 
     const/4 v0, 0x4
 
-    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/ICa;->a(Lcom/baidu/mapapi/utils/poi/PoiParaOption;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/MCa;->a(Lcom/baidu/mapapi/utils/poi/PoiParaOption;Landroid/content/Context;I)Z
 
     move-result v0
 

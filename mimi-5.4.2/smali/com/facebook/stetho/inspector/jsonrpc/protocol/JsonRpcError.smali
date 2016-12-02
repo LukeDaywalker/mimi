@@ -13,14 +13,14 @@
 
 
 # instance fields
-.field public mICca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+.field public mJSONObjectc:Lorg/json/JSONObject;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
-        a = true
     .end annotation
 .end field
 
-.field public mJSONObjectc:Lorg/json/JSONObject;
+.field public mMCca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$MCc;
     .annotation runtime Lcom/facebook/stetho/json/annotation/JsonProperty;
+        a = true
     .end annotation
 .end field
 
@@ -43,7 +43,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;Ljava/lang/String;Lorg/json/JSONObject;)V
+.method public constructor <init>(Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$MCc;Ljava/lang/String;Lorg/json/JSONObject;)V
     .locals 0
 
     .prologue
@@ -51,7 +51,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 28
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mICca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mMCca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$MCc;
 
     .line 29
     iput-object p2, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mStringb:Ljava/lang/String;

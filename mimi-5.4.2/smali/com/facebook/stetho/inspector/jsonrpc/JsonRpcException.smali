@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mICca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    iget-object v1, p1, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;->mMCca:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$MCc;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

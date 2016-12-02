@@ -125,9 +125,9 @@
     .line 41
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mWebViewn:Landroid/webkit/WebView;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICh;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$MCh;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$MCh;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;)V
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
@@ -148,11 +148,11 @@
     if-nez v0, :cond_0
 
     .line 51
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$MCi;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$MCi;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$MCi;->j()V
 
     .line 56
     :goto_0

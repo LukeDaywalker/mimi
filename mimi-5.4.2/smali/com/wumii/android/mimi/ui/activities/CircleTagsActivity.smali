@@ -9,7 +9,7 @@
 # instance fields
 .field private mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
-.field private mIClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+.field private mMClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$MCl;
 
 
 # direct methods
@@ -193,14 +193,14 @@
     move-result-object v4
 
     .line 67
-    new-instance v5, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+    new-instance v5, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$MCl;
 
-    invoke-direct {v5, p0, v4, v1, v3}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;-><init>(Landroid/content/Context;Ljava/util/List;II)V
+    invoke-direct {v5, p0, v4, v1, v3}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$MCl;-><init>(Landroid/content/Context;Ljava/util/List;II)V
 
-    iput-object v5, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mIClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+    iput-object v5, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mMClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$MCl;
 
     .line 68
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mIClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mMClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$MCl;
 
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -277,9 +277,9 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mIClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mMClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$MCl;
 
-    invoke-virtual {v0, p3}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->a(I)Ljava/lang/String;
+    invoke-virtual {v0, p3}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$MCl;->a(I)Ljava/lang/String;
 
     move-result-object v0
 

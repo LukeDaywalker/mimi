@@ -25,10 +25,6 @@
 
 .field private mFc:F
 
-.field private mICcgg:Lcom/wumii/android/mimi/ui/widgets/XListView$ICcg;
-
-.field private mICchf:Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;
-
 .field private mIh:I
 
 .field private mIq:I
@@ -38,6 +34,10 @@
 .field private mIs:I
 
 .field private mIt:I
+
+.field private mMCcgg:Lcom/wumii/android/mimi/ui/widgets/XListView$MCcg;
+
+.field private mMCchf:Lcom/wumii/android/mimi/ui/widgets/XListView$MCch;
 
 .field private mOnScrollListenere:Landroid/widget/AbsListView$OnScrollListener;
 
@@ -199,7 +199,7 @@
     if-nez v0, :cond_0
 
     .line 238
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mICchf:Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mMCchf:Lcom/wumii/android/mimi/ui/widgets/XListView$MCch;
 
     if-eqz v0, :cond_2
 
@@ -314,9 +314,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/XListView$MCce;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;-><init>(Lcom/wumii/android/mimi/ui/widgets/XListView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/XListView$MCce;-><init>(Lcom/wumii/android/mimi/ui/widgets/XListView;)V
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
@@ -439,17 +439,17 @@
     .line 229
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mOnScrollListenere:Landroid/widget/AbsListView$OnScrollListener;
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICci;
+    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/XListView$MCci;
 
     if-eqz v0, :cond_0
 
     .line 230
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mOnScrollListenere:Landroid/widget/AbsListView$OnScrollListener;
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICci;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/XListView$MCci;
 
     .line 231
-    invoke-interface {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/XListView$ICci;->a(Landroid/view/View;)V
+    invoke-interface {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/XListView$MCci;->a(Landroid/view/View;)V
 
     .line 233
     :cond_0
@@ -549,7 +549,7 @@
     const/4 v1, 0x1
 
     .line 319
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mICcgg:Lcom/wumii/android/mimi/ui/widgets/XListView$ICcg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mMCcgg:Lcom/wumii/android/mimi/ui/widgets/XListView$MCcg;
 
     if-eqz v0, :cond_0
 
@@ -568,9 +568,9 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListViewFooter;->setState(I)V
 
     .line 322
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mICcgg:Lcom/wumii/android/mimi/ui/widgets/XListView$ICcg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mMCcgg:Lcom/wumii/android/mimi/ui/widgets/XListView$MCcg;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/XListView$ICcg;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/XListView$MCcg;->a()V
 
     .line 324
     :cond_0
@@ -741,9 +741,9 @@
     .line 166
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mXListViewFooterl:Lcom/wumii/android/mimi/ui/widgets/XListViewFooter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/XListView$ICcf;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/XListView$MCcf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/XListView$ICcf;-><init>(Lcom/wumii/android/mimi/ui/widgets/XListView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/XListView$MCcf;-><init>(Lcom/wumii/android/mimi/ui/widgets/XListView;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListViewFooter;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1266,14 +1266,14 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->setState(I)V
 
     .line 409
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mICchf:Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mMCchf:Lcom/wumii/android/mimi/ui/widgets/XListView$MCch;
 
     if-eqz v0, :cond_1
 
     .line 410
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mICchf:Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mMCchf:Lcom/wumii/android/mimi/ui/widgets/XListView$MCch;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/XListView$MCch;->a()V
 
     .line 413
     :cond_1
@@ -1550,23 +1550,23 @@
     return-void
 .end method
 
-.method public setOnLoadMoreListener(Lcom/wumii/android/mimi/ui/widgets/XListView$ICcg;)V
+.method public setOnLoadMoreListener(Lcom/wumii/android/mimi/ui/widgets/XListView$MCcg;)V
     .locals 0
 
     .prologue
     .line 504
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mICcgg:Lcom/wumii/android/mimi/ui/widgets/XListView$ICcg;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mMCcgg:Lcom/wumii/android/mimi/ui/widgets/XListView$MCcg;
 
     .line 505
     return-void
 .end method
 
-.method public setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;)V
+.method public setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/XListView$MCch;)V
     .locals 0
 
     .prologue
     .line 500
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mICchf:Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView;->mMCchf:Lcom/wumii/android/mimi/ui/widgets/XListView$MCch;
 
     .line 501
     return-void

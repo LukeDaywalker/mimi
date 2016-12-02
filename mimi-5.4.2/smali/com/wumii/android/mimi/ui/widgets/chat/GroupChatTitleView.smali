@@ -8,9 +8,9 @@
 
 .field private mDisplayMetricsg:Landroid/util/DisplayMetrics;
 
-.field private mICakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
-
 .field private mImageViewa:Landroid/widget/ImageView;
+
+.field private mMCakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;
 
 .field private mTextViewb:Landroid/widget/TextView;
 
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;)V
     .locals 1
 
     .prologue
@@ -28,7 +28,7 @@
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     .line 33
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mICakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mMCakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;
 
     .line 34
     const v0, 0x7f0300ce
@@ -86,12 +86,12 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;ILcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;ILcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;)V
     .locals 0
 
     .prologue
     .line 45
-    invoke-direct {p0, p1, p4}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;)V
+    invoke-direct {p0, p1, p4}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;)V
 
     .line 46
     invoke-virtual {p0, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->a(Ljava/lang/String;I)V
@@ -100,12 +100,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;
     .locals 1
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mICakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mMCakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;
 
     return-object v0
 .end method
@@ -275,9 +275,9 @@
     invoke-virtual {v0, v3}, Landroid/animation/AnimatorSet$Builder;->before(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
 
     .line 71
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICaj;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCaj;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICaj;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCaj;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;)V
 
     invoke-virtual {v1, v0}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -356,9 +356,9 @@
     if-gez v0, :cond_0
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mICakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mMCakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$MCak;->a()V
 
     goto :goto_0
 .end method

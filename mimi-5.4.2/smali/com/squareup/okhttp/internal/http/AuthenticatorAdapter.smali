@@ -195,19 +195,19 @@
     move-result-object v0
 
     .line 53
-    invoke-virtual {v10}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v10}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v1
 
     const-string/jumbo v2, "Authorization"
 
     .line 54
-    invoke-virtual {v1, v2, v0}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v1, v2, v0}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
     .line 55
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -346,19 +346,19 @@
     move-result-object v0
 
     .line 77
-    invoke-virtual {v10}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v10}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v1
 
     const-string/jumbo v2, "Proxy-Authorization"
 
     .line 78
-    invoke-virtual {v1, v2, v0}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v1, v2, v0}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
     .line 79
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 

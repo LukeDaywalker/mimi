@@ -38,11 +38,11 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    invoke-static {p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;
 
     move-result-object v0
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->mMCdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;
 
     if-ne v0, v1, :cond_0
 
@@ -301,7 +301,7 @@
     .line 80
     :cond_0
     :try_start_0
-    invoke-virtual {p0, v1, p1}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a(Ljava/io/InputStream;Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;)Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;
+    invoke-virtual {p0, v1, p1}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a(Ljava/io/InputStream;Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;)Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCc;
 
     move-result-object v2
 
@@ -311,7 +311,7 @@
     move-result-object v1
 
     .line 82
-    iget-object v0, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    iget-object v0, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCc;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {p0, v0, p1}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a(Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;)Landroid/graphics/BitmapFactory$Options;
 
@@ -357,13 +357,13 @@
 
     .line 91
     :cond_1
-    iget-object v1, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->mICbb:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+    iget-object v1, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCc;->mMCbb:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;
 
-    iget v1, v1, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->mIa:I
+    iget v1, v1, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;->mIa:I
 
-    iget-object v2, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;->mICbb:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+    iget-object v2, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCc;->mMCbb:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;
 
-    iget-boolean v2, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->isZb:Z
+    iget-boolean v2, v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;->isZb:Z
 
     invoke-virtual {p0, v0, p1, v1, v2}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a(Landroid/graphics/Bitmap;Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;IZ)Landroid/graphics/Bitmap;
 
@@ -490,7 +490,7 @@
     goto :goto_1
 .end method
 
-.method protected a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+.method protected a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;
     .locals 5
 
     .prologue
@@ -503,9 +503,9 @@
     :try_start_0
     new-instance v2, Landroid/media/ExifInterface;
 
-    sget-object v3, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v3, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->mMCdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;
 
-    invoke-virtual {v3, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -532,9 +532,9 @@
     .line 152
     :goto_1
     :pswitch_1
-    new-instance v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+    new-instance v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;
 
-    invoke-direct {v2, v1, v0}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;-><init>(IZ)V
+    invoke-direct {v2, v1, v0}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;-><init>(IZ)V
 
     return-object v2
 
@@ -598,7 +598,7 @@
     .end packed-switch
 .end method
 
-.method protected a(Ljava/io/InputStream;Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;)Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;
+.method protected a(Ljava/io/InputStream;Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;)Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCc;
     .locals 6
 
     .prologue
@@ -638,13 +638,13 @@
     if-eqz v2, :cond_0
 
     .line 110
-    invoke-virtual {p0, v0}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+    invoke-virtual {p0, v0}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder;->a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;
 
     move-result-object v0
 
     .line 114
     :goto_0
-    new-instance v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;
+    new-instance v2, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCc;
 
     new-instance v3, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
@@ -652,19 +652,19 @@
 
     iget v1, v1, Landroid/graphics/BitmapFactory$Options;->outHeight:I
 
-    iget v5, v0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;->mIa:I
+    iget v5, v0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;->mIa:I
 
     invoke-direct {v3, v4, v1, v5}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;-><init>(III)V
 
-    invoke-direct {v2, v3, v0}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICc;-><init>(Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;)V
+    invoke-direct {v2, v3, v0}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCc;-><init>(Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;)V
 
     return-object v2
 
     .line 112
     :cond_0
-    new-instance v0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;
 
-    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ICb;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$MCb;-><init>()V
 
     goto :goto_0
 .end method

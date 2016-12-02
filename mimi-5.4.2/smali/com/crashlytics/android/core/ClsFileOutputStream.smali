@@ -23,9 +23,9 @@
 
     .prologue
     .line 103
-    new-instance v0, Lcom/crashlytics/android/core/ClsFileOutputStream$ICe;
+    new-instance v0, Lcom/crashlytics/android/core/ClsFileOutputStream$MCe;
 
-    invoke-direct {v0}, Lcom/crashlytics/android/core/ClsFileOutputStream$ICe;-><init>()V
+    invoke-direct {v0}, Lcom/crashlytics/android/core/ClsFileOutputStream$MCe;-><init>()V
 
     sput-object v0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFilenameFiltera:Ljava/io/FilenameFilter;
 

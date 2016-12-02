@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/squareup/okhttp/Interceptor$ICag;)Lcom/squareup/okhttp/Response;
+.method public abstract a(Lcom/squareup/okhttp/Interceptor$MCag;)Lcom/squareup/okhttp/Response;
 .end method

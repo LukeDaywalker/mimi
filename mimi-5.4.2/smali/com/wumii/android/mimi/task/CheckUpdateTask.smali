@@ -114,9 +114,9 @@
     .line 62
     iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICw;
+    new-instance v1, Lcom/wumii/android/mimi/task/CheckUpdateTask$MCw;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICw;-><init>(Lcom/wumii/android/mimi/task/CheckUpdateTask;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/task/CheckUpdateTask$MCw;-><init>(Lcom/wumii/android/mimi/task/CheckUpdateTask;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -395,18 +395,18 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 141
-    new-instance v2, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICx;
+    new-instance v2, Lcom/wumii/android/mimi/task/CheckUpdateTask$MCx;
 
-    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICx;-><init>(Lcom/wumii/android/mimi/task/CheckUpdateTask;Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;)V
+    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/task/CheckUpdateTask$MCx;-><init>(Lcom/wumii/android/mimi/task/CheckUpdateTask;Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;)V
 
     invoke-virtual {v0, v9, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 149
     const v2, 0x7f0603e2
 
-    new-instance v3, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;
+    new-instance v3, Lcom/wumii/android/mimi/task/CheckUpdateTask$MCy;
 
-    invoke-direct {v3, p0, v1}, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;-><init>(Lcom/wumii/android/mimi/task/CheckUpdateTask;Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;)V
+    invoke-direct {v3, p0, v1}, Lcom/wumii/android/mimi/task/CheckUpdateTask$MCy;-><init>(Lcom/wumii/android/mimi/task/CheckUpdateTask;Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;)V
 
     invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -436,9 +436,9 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 159
-    new-instance v2, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICz;
+    new-instance v2, Lcom/wumii/android/mimi/task/CheckUpdateTask$MCz;
 
-    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICz;-><init>(Lcom/wumii/android/mimi/task/CheckUpdateTask;Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;)V
+    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/task/CheckUpdateTask$MCz;-><init>(Lcom/wumii/android/mimi/task/CheckUpdateTask;Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;)V
 
     invoke-virtual {v0, v9, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

@@ -91,9 +91,9 @@
     .line 30
     const v1, 0x7f0603df
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICr;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/DialogActivity$MCr;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICr;-><init>(Lcom/wumii/android/mimi/ui/activities/DialogActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/DialogActivity$MCr;-><init>(Lcom/wumii/android/mimi/ui/activities/DialogActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -102,9 +102,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICs;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/DialogActivity$MCs;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICs;-><init>(Lcom/wumii/android/mimi/ui/activities/DialogActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/DialogActivity$MCs;-><init>(Lcom/wumii/android/mimi/ui/activities/DialogActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -153,9 +153,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICt;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/DialogActivity$MCt;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICt;-><init>(Lcom/wumii/android/mimi/ui/activities/DialogActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/DialogActivity$MCt;-><init>(Lcom/wumii/android/mimi/ui/activities/DialogActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 

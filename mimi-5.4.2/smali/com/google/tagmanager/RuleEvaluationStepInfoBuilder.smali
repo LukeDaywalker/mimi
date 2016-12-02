@@ -13,7 +13,7 @@
             "(",
             "Ljava/util/Set",
             "<",
-            "Lcom/google/tagmanager/ResourceUtil$ICat;",
+            "Lcom/google/tagmanager/ResourceUtil$MCat;",
             ">;)V"
         }
     .end annotation

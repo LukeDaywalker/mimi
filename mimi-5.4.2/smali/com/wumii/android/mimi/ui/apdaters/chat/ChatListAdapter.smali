@@ -18,8 +18,6 @@
 
 .field private mContextd:Landroid/content/Context;
 
-.field private mICvi:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
-
 .field private mIj:I
 
 .field private mIk:I
@@ -44,6 +42,8 @@
         }
     .end annotation
 .end field
+
+.field private mMCvi:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;
 
 
 # direct methods
@@ -72,13 +72,13 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;Ljava/util/List;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;Ljava/util/List;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;",
+            "Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;",
             "Ljava/util/List",
             "<",
             "Lcom/wumii/android/mimi/models/entities/chat/ChatSession;",
@@ -101,7 +101,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->mContextd:Landroid/content/Context;
 
     .line 87
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->mICvi:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->mMCvi:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;
 
     .line 89
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -210,16 +210,16 @@
     move-result-object p2
 
     .line 190
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICf;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCf;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICf;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCf;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
 
     .line 191
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 195
     :goto_0
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICf;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCf;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
     .line 196
     return-object p2
@@ -230,7 +230,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICf;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCf;
 
     goto :goto_0
 .end method
@@ -279,16 +279,16 @@
     move-result-object p2
 
     .line 204
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICf;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCf;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICf;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCf;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
 
     .line 205
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 209
     :goto_0
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICf;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCf;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
     .line 210
     return-object p2
@@ -299,7 +299,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICf;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCf;
 
     goto :goto_0
 .end method
@@ -338,16 +338,16 @@
     move-result-object p2
 
     .line 218
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCh;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCh;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
 
     .line 219
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 223
     :goto_0
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCh;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
     .line 224
     return-object p2
@@ -358,7 +358,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCh;
 
     goto :goto_0
 .end method
@@ -417,16 +417,16 @@
     move-result-object p2
 
     .line 232
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICj;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCj;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICj;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCj;-><init>(Landroid/view/View;)V
 
     .line 233
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 237
     :goto_0
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICj;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCj;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
     .line 238
     return-object p2
@@ -437,7 +437,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICj;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCj;
 
     goto :goto_0
 .end method
@@ -472,9 +472,9 @@
     move-result-object p2
 
     .line 245
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICg;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCg;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICg;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCg;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
 
     .line 246
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -485,7 +485,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICg;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCg;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
     .line 251
     return-object p2
@@ -496,7 +496,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICg;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCg;
 
     goto :goto_0
 .end method
@@ -541,9 +541,9 @@
     move-result-object p2
 
     .line 258
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCi;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCi;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
 
     .line 259
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -554,9 +554,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->mICvi:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->mMCvi:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCi;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$MCv;)V
 
     .line 265
     return-object p2
@@ -567,7 +567,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$MCi;
 
     goto :goto_0
 .end method

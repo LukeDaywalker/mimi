@@ -26,9 +26,9 @@
 
     .prologue
     .line 121
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICac;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$MCac;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICac;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$MCac;-><init>()V
 
     sput-object v0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -53,7 +53,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICaa;)V
+.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$MCaa;)V
     .locals 0
 
     .prologue

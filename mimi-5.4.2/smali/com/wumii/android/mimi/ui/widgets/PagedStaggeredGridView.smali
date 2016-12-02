@@ -10,7 +10,7 @@
 
 .field private isZn:Z
 
-.field private mICatk:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICat;
+.field private mMCatk:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCat;
 
 .field private mPagedStaggeredGridViewFooterj:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;
 
@@ -59,9 +59,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->mPagedStaggeredGridViewFooterj:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;
 
     .line 32
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCar;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;-><init>(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCar;-><init>(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;)V
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
 
@@ -96,7 +96,7 @@
     const/4 v1, 0x1
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->mICatk:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->mMCatk:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCat;
 
     if-eqz v0, :cond_0
 
@@ -113,9 +113,9 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->setState(I)V
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->mICatk:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->mMCatk:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCat;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICat;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCat;->a()V
 
     .line 64
     :cond_0
@@ -176,9 +176,9 @@
     .line 78
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->mPagedStaggeredGridViewFooterj:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICas;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCas;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICas;-><init>(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCas;-><init>(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -255,12 +255,12 @@
     return-void
 .end method
 
-.method public setOnLoadMoreListener(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICat;)V
+.method public setOnLoadMoreListener(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCat;)V
     .locals 0
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->mICatk:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICat;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->mMCatk:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$MCat;
 
     .line 100
     return-void

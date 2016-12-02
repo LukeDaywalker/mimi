@@ -9,7 +9,7 @@
         value = {
             "Lcom/b/a/c/f/f",
             "<",
-            "Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;",
+            "Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;",
             ">;"
         }
     .end annotation
@@ -36,7 +36,7 @@
 
     const-string/jumbo v1, "text/css"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyb:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyb:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -45,7 +45,7 @@
 
     const-string/jumbo v1, "image/*"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyc:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyc:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -54,7 +54,7 @@
 
     const-string/jumbo v1, "application/x-javascript"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICye:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCye:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -63,7 +63,7 @@
 
     const-string/jumbo v1, "text/javascript"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyf:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyf:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -72,7 +72,7 @@
 
     const-string/jumbo v1, "application/json"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyf:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyf:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -81,7 +81,7 @@
 
     const-string/jumbo v1, "text/*"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICya:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCya:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -90,7 +90,7 @@
 
     const-string/jumbo v1, "*"
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyh:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyh:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     invoke-virtual {v0, v1, v2}, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -100,7 +100,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;)Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+.method public a(Ljava/lang/String;)Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
     .locals 2
 
     .prologue
@@ -116,7 +116,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    check-cast v0, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     return-object v0
 .end method

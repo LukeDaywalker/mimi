@@ -155,7 +155,7 @@
     return-object v0
 .end method
 
-.method public static a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/EmoticonUtils$ICr;II)Landroid/text/SpannableStringBuilder;
+.method public static a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/EmoticonUtils$MCr;II)Landroid/text/SpannableStringBuilder;
     .locals 11
 
     .prologue
@@ -344,7 +344,7 @@
 
     move-result-object v9
 
-    new-instance v0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICq;
+    new-instance v0, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCq;
 
     move v1, p3
 
@@ -352,7 +352,7 @@
 
     move-object v6, p1
 
-    invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICq;-><init>(ILandroid/text/SpannableStringBuilder;IIILcom/wumii/android/mimi/ui/EmoticonUtils$ICr;)V
+    invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCq;-><init>(ILandroid/text/SpannableStringBuilder;IIILcom/wumii/android/mimi/ui/EmoticonUtils$MCr;)V
 
     invoke-virtual {v8, v9, v0}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
@@ -375,7 +375,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, v1, p1}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/EmoticonUtils$ICr;II)Landroid/text/SpannableStringBuilder;
+    invoke-static {p0, v0, v1, p1}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/EmoticonUtils$MCr;II)Landroid/text/SpannableStringBuilder;
 
     move-result-object v0
 
@@ -518,18 +518,18 @@
     check-cast v1, Landroid/widget/ImageView;
 
     .line 241
-    new-instance v0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;
+    new-instance v0, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCn;
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;-><init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCn;-><init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
 
     invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 252
-    new-instance v0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICo;
+    new-instance v0, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCo;
 
     move-object v4, v6
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICo;-><init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCo;-><init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -689,13 +689,13 @@
     move-result v0
 
     .line 304
-    new-instance v1, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICp;
+    new-instance v1, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCp;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICp;-><init>(Landroid/widget/TextView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCp;-><init>(Landroid/widget/TextView;)V
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v1, v2, p2}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/EmoticonUtils$ICr;II)Landroid/text/SpannableStringBuilder;
+    invoke-static {p1, v1, v2, p2}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/EmoticonUtils$MCr;II)Landroid/text/SpannableStringBuilder;
 
     move-result-object v1
 
@@ -996,9 +996,9 @@
     move-result-object v0
 
     .line 93
-    new-instance v2, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICm;
+    new-instance v2, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCm;
 
-    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICm;-><init>()V
+    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/EmoticonUtils$MCm;-><init>()V
 
     const-string/jumbo v3, "recent_emoticons"
 

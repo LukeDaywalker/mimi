@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+.method public static a(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
     .locals 3
 
     .prologue
@@ -17,7 +17,7 @@
 
     .line 170
     :cond_0
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->name()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->name()Ljava/lang/String;
 
     move-result-object v0
 
@@ -26,7 +26,7 @@
     move-result-object v0
 
     .line 171
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -40,7 +40,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+.method public static a(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
     .locals 0
 
     .prologue
@@ -53,10 +53,10 @@
 
     .line 158
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->a(Ljava/lang/String;)V
 
     .line 159
-    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     goto :goto_0
 .end method
@@ -76,7 +76,7 @@
     return-void
 .end method
 
-.method public static b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+.method public static b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
     .locals 0
 
     .prologue
@@ -89,15 +89,15 @@
 
     .line 181
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->a(Ljava/lang/String;)V
 
     .line 182
-    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     goto :goto_0
 .end method
 
-.method public static onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+.method public static onEvent(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
     .locals 3
 
     .prologue
@@ -110,7 +110,7 @@
 
     .line 145
     :cond_0
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->name()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->name()Ljava/lang/String;
 
     move-result-object v0
 
@@ -119,7 +119,7 @@
     move-result-object v0
 
     .line 146
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->a()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -135,7 +135,7 @@
     invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/manager/AppEventManager;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 150
-    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     goto :goto_0
 .end method

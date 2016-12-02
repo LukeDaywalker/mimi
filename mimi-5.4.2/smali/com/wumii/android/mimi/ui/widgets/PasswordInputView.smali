@@ -6,7 +6,7 @@
 # instance fields
 .field private mArrayIa:[I
 
-.field private mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+.field private mMCazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;
 
 
 # direct methods
@@ -280,14 +280,14 @@
     .line 125
     if-nez v1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mMCazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;
 
     if-eqz v0, :cond_0
 
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mMCazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;->i()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;->i()V
 
     .line 131
     :cond_0
@@ -346,7 +346,7 @@
 
     .line 108
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mMCazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;
 
     if-eqz v0, :cond_4
 
@@ -403,13 +403,13 @@
 
     .line 115
     :cond_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mMCazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;->b(Ljava/lang/String;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;->b(Ljava/lang/String;)V
 
     .line 117
     :cond_4
@@ -497,12 +497,12 @@
     return-void
 .end method
 
-.method public setOnPasswordInputListener(Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;)V
+.method public setOnPasswordInputListener(Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;)V
     .locals 0
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mMCazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$MCaz;
 
     .line 34
     return-void

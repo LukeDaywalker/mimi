@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Lu/aly/ActivateMsg;",
-        "Lu/aly/ActivateMsg$ICm;",
+        "Lu/aly/ActivateMsg$MCm;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Lu/aly/ActivateMsg$ICm;",
+            "Lu/aly/ActivateMsg$MCm;",
             "Lu/aly/FieldMetaData;",
             ">;"
         }
@@ -103,9 +103,9 @@
 
     const-class v1, Lu/aly/StandardScheme;
 
-    new-instance v2, Lu/aly/ActivateMsg$ICj;
+    new-instance v2, Lu/aly/ActivateMsg$MCj;
 
-    invoke-direct {v2, v3}, Lu/aly/ActivateMsg$ICj;-><init>(Lu/aly/ActivateMsg$ICh;)V
+    invoke-direct {v2, v3}, Lu/aly/ActivateMsg$MCj;-><init>(Lu/aly/ActivateMsg$MCh;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -114,21 +114,21 @@
 
     const-class v1, Lu/aly/TupleScheme;
 
-    new-instance v2, Lu/aly/ActivateMsg$ICl;
+    new-instance v2, Lu/aly/ActivateMsg$MCl;
 
-    invoke-direct {v2, v3}, Lu/aly/ActivateMsg$ICl;-><init>(Lu/aly/ActivateMsg$ICh;)V
+    invoke-direct {v2, v3}, Lu/aly/ActivateMsg$MCl;-><init>(Lu/aly/ActivateMsg$MCh;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 108
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Lu/aly/ActivateMsg$ICm;
+    const-class v1, Lu/aly/ActivateMsg$MCm;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 109
-    sget-object v1, Lu/aly/ActivateMsg$ICm;->mICma:Lu/aly/ActivateMsg$ICm;
+    sget-object v1, Lu/aly/ActivateMsg$MCm;->mMCma:Lu/aly/ActivateMsg$MCm;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

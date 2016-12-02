@@ -232,9 +232,9 @@
     if-nez v0, :cond_0
 
     .line 78
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$ICk;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$MCk;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$ICk;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$MCk;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;Landroid/app/Activity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->mCircleAdviceTaskr:Lcom/wumii/android/mimi/task/CircleAdviceTask;
 

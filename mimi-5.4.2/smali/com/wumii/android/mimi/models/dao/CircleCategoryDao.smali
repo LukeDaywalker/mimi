@@ -15,7 +15,7 @@
     return-void
 .end method
 
-.method private a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/database/Cursor;
+.method private a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;)Landroid/database/Cursor;
     .locals 4
 
     .prologue
@@ -55,7 +55,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
+    invoke-virtual {p3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->ordinal()I
 
     move-result v2
 
@@ -95,7 +95,7 @@
     return-object v0
 .end method
 
-.method private b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/content/ContentValues;
+.method private b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;)Landroid/content/ContentValues;
     .locals 3
 
     .prologue
@@ -117,7 +117,7 @@
     .line 124
     const-string/jumbo v1, "relation"
 
-    invoke-virtual {p3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
+    invoke-virtual {p3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->ordinal()I
 
     move-result v2
 
@@ -166,9 +166,9 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v2, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->mMCcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->ordinal()I
 
     move-result v2
 
@@ -239,9 +239,9 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v2, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->mMCca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->ordinal()I
 
     move-result v2
 
@@ -324,9 +324,9 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->mMCca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;
 
-    invoke-virtual {v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
+    invoke-virtual {v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->ordinal()I
 
     move-result v3
 
@@ -393,9 +393,9 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->mMCcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;
 
-    invoke-virtual {v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->ordinal()I
+    invoke-virtual {v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->ordinal()I
 
     move-result v3
 
@@ -529,9 +529,9 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->mMCca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;
 
-    invoke-direct {p0, p1, v2, v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/database/Cursor;
+    invoke-direct {p0, p1, v2, v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;)Landroid/database/Cursor;
 
     move-result-object v2
 
@@ -553,9 +553,9 @@
 
     move-result-object v0
 
-    sget-object v6, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v6, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->mMCca:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;
 
-    invoke-direct {p0, p1, v0, v6}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/content/ContentValues;
+    invoke-direct {p0, p1, v0, v6}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;)Landroid/content/ContentValues;
 
     move-result-object v0
 
@@ -709,9 +709,9 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v3, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->mMCcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;
 
-    invoke-direct {p0, v2, p1, v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/database/Cursor;
+    invoke-direct {p0, v2, p1, v3}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;)Landroid/database/Cursor;
 
     move-result-object v2
 
@@ -733,9 +733,9 @@
 
     move-result-object v0
 
-    sget-object v6, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mICcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v6, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;->mMCcb:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;
 
-    invoke-direct {p0, v0, p1, v6}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;)Landroid/content/ContentValues;
+    invoke-direct {p0, v0, p1, v6}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->b(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$MCc;)Landroid/content/ContentValues;
 
     move-result-object v0
 

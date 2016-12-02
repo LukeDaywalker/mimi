@@ -3,7 +3,7 @@
 .source "PublishSecretActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
+.implements Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$MCay;
 
 
 # instance fields
@@ -20,10 +20,6 @@
 .field private mFrameLayoutG:Landroid/widget/FrameLayout;
 
 .field private mGuidanceW:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
-
-.field private mICtS:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
-
-.field private mICvT:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;
 
 .field private mImageViewC:Landroid/widget/ImageView;
 
@@ -51,6 +47,10 @@
 .end field
 
 .field private mLocationHelperN:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+
+.field private mMCtS:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCt;
+
+.field private mMCvT:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;
 
 .field private mMenuItemQ:Landroid/view/MenuItem;
 
@@ -513,16 +513,16 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;
+    check-cast v0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCs;
 
     .line 731
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;)Landroid/view/View;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCs;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCs;)Landroid/view/View;
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICi;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCi;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICi;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCi;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -537,7 +537,7 @@
     move v5, p6
 
     .line 739
-    invoke-virtual/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->a(ILandroid/view/View;III)V
+    invoke-virtual/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCs;->a(ILandroid/view/View;III)V
 
     goto :goto_0
 .end method
@@ -848,11 +848,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICn;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCn;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICn;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCn;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$MCau;Z)V
 
     .line 399
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mSenderRolead:Lcom/wumii/android/mimi/models/enum/SenderRole;
@@ -965,9 +965,9 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICf;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICf;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCf;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     const-wide/16 v2, 0x0
 
@@ -1174,27 +1174,27 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mImageViewD:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICp;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCp;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICp;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCp;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 465
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mImageViewC:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICq;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCq;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICq;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCq;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 489
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mImageViewH:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICr;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCr;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICr;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCr;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1230,9 +1230,9 @@
     .line 647
     const v1, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICg;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCg;
 
-    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICg;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Ljava/lang/String;)V
+    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCg;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1430,9 +1430,9 @@
 
     .prologue
     .line 603
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafac:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafac:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     .line 604
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->finish()V
@@ -1505,9 +1505,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 697
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCh;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1722,25 +1722,25 @@
     return-object v0
 .end method
 
-.method private s()Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;
+.method private s()Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;
     .locals 1
 
     .prologue
     .line 860
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mICvT:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mMCvT:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;
 
     if-nez v0, :cond_0
 
     .line 861
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mICvT:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mMCvT:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;
 
     .line 863
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mICvT:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mMCvT:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;
 
     return-object v0
 .end method
@@ -1971,22 +1971,22 @@
 
     .line 632
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mICtS:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mMCtS:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCt;
 
     if-nez v0, :cond_1
 
     .line 633
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCt;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCt;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mICtS:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mMCtS:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCt;
 
     .line 635
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mICtS:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mMCtS:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCt;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCt;->a(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -2139,19 +2139,19 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    sget-object v3, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaG:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v3, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafaG:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    sget-object v4, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaI:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v4, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafaI:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    sget-object v5, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaH:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v5, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafaH:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    new-instance v6, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICe;
+    new-instance v6, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCe;
 
-    invoke-direct {v6, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICe;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v6, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCe;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     move-object v0, p0
 
-    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/util/EventUtils$MCaf;Lcom/wumii/android/mimi/util/EventUtils$MCaf;Lcom/wumii/android/mimi/util/EventUtils$MCaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$MCaq;)V
 
     .line 244
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mUserServicev:Lcom/wumii/android/mimi/models/service/UserService;
@@ -2371,9 +2371,9 @@
 
     move-result-object v0
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICj;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCj;
 
-    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICj;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/os/Bundle;)V
+    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCj;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/os/Bundle;)V
 
     invoke-virtual {v0, v2}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
@@ -2396,29 +2396,29 @@
     .line 321
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mEditTextq:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/WMText$MCca;
 
     const/4 v3, 0x5
 
-    invoke-direct {v2, v3, v0}, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;-><init>(II)V
+    invoke-direct {v2, v3, v0}, Lcom/wumii/android/mimi/ui/widgets/WMText$MCca;-><init>(II)V
 
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setEditableFactory(Landroid/text/Editable$Factory;)V
 
     .line 322
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mEditTextq:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICk;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCk;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICk;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCk;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 342
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mEditTextq:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICl;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCl;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICl;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCl;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -2448,21 +2448,21 @@
     invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;-><init>(Landroid/app/Activity;Ljava/util/List;)V
 
     .line 354
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICm;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCm;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICm;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCm;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)V
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->a(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->a(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCf;)V
 
     .line 363
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->show()V
 
     .line 364
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafj:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v1, "\u65b0\u624b\u63d0\u95ee\u6d6e\u5c42\u51fa\u73b0\u7684\u6b21\u6570"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 367
     :cond_5
@@ -2606,11 +2606,11 @@
     if-eqz v0, :cond_0
 
     .line 563
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafj:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v1, "\u53d1\u5e03\u6309\u94ae\u7684\u70b9\u51fb\u6b21\u6570"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 567
     :cond_0
@@ -2668,7 +2668,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 571
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->s()Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->s()Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;
 
     move-result-object v0
 
@@ -2682,7 +2682,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCv;->a(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -2776,11 +2776,11 @@
     .line 424
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mViewM:Landroid/view/View;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCs;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->mViewM:Landroid/view/View;
 
-    invoke-direct {v1, p0, v2}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/view/View;)V
+    invoke-direct {v1, p0, v2}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$MCs;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/view/View;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 

@@ -38,9 +38,9 @@
 
     invoke-direct {p0}, Lcom/baidu/mapapi/map/Overlay;-><init>()V
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->mICff:Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v0, Lcom/baidu/platform/comapi/map/MCf;->mMCff:Lcom/baidu/platform/comapi/map/MCf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mMCfq:Lcom/baidu/platform/comapi/map/MCf;
 
     return-void
 .end method
@@ -158,9 +158,9 @@
 
     iput p1, p0, Lcom/baidu/mapapi/map/Arc;->mIa:I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$MCa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$MCa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -206,9 +206,9 @@
 
     iput-object p3, p0, Lcom/baidu/mapapi/map/Arc;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$MCa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$MCa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -220,9 +220,9 @@
 
     iput p1, p0, Lcom/baidu/mapapi/map/Arc;->mIb:I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$MCa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$MCa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     :cond_0
     return-void

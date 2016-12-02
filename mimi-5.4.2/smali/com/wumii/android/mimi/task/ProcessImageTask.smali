@@ -17,7 +17,7 @@
 # instance fields
 .field private mContextToaste:Lcom/wumii/android/mimi/util/ContextToast;
 
-.field private mICaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;
+.field private mMCaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$MCax;
 
 .field private mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
@@ -68,14 +68,14 @@
 
     .line 81
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mICaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mMCaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$MCax;
 
     if-eqz v0, :cond_0
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mICaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mMCaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$MCax;
 
-    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;->a(Landroid/graphics/Bitmap;)V
+    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/task/ProcessImageTask$MCax;->a(Landroid/graphics/Bitmap;)V
 
     goto :goto_0
 .end method
@@ -92,7 +92,7 @@
     return-void
 .end method
 
-.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;)V
+.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/task/ProcessImageTask$MCax;)V
     .locals 0
 
     .prologue
@@ -100,7 +100,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mStringa:Ljava/lang/String;
 
     .line 102
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mICaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mMCaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$MCax;
 
     .line 103
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ProcessImageTask;->j()V
@@ -116,7 +116,7 @@
     .line 93
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mICaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mMCaxd:Lcom/wumii/android/mimi/task/ProcessImageTask$MCax;
 
     .line 95
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
@@ -187,9 +187,9 @@
     .line 45
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/task/ProcessImageTask$ICaw;
+    new-instance v1, Lcom/wumii/android/mimi/task/ProcessImageTask$MCaw;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/task/ProcessImageTask$ICaw;-><init>(Lcom/wumii/android/mimi/task/ProcessImageTask;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/task/ProcessImageTask$MCaw;-><init>(Lcom/wumii/android/mimi/task/ProcessImageTask;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 

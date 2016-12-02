@@ -234,7 +234,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)Landroid/app/AlertDialog;
+.method public static a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$MCf;)Landroid/app/AlertDialog;
     .locals 3
 
     .prologue
@@ -269,7 +269,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 759
-    invoke-virtual {v1, v0, p3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)V
+    invoke-virtual {v1, v0, p3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$MCf;)V
 
     .line 760
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->create()Landroid/app/AlertDialog;
@@ -288,33 +288,33 @@
     const v1, 0x7f0200b2
 
     .line 502
-    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
-    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->c(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->b(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
@@ -322,11 +322,11 @@
 
     invoke-direct {v1, p0}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a(Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
@@ -1279,9 +1279,9 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/wumii/android/mimi/util/Utils$ICax;
+    new-instance v3, Lcom/wumii/android/mimi/util/Utils$MCax;
 
-    invoke-direct {v3, p1, v1, v0, p2}, Lcom/wumii/android/mimi/util/Utils$ICax;-><init>(Landroid/util/DisplayMetrics;Landroid/view/View;Landroid/view/View;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
+    invoke-direct {v3, p1, v1, v0, p2}, Lcom/wumii/android/mimi/util/Utils$MCax;-><init>(Landroid/util/DisplayMetrics;Landroid/view/View;Landroid/view/View;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
 
     invoke-virtual {v2, v3}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
@@ -1440,9 +1440,9 @@
 
     .prologue
     .line 127
-    new-instance v0, Lcom/wumii/android/mimi/util/Utils$ICaw;
+    new-instance v0, Lcom/wumii/android/mimi/util/Utils$MCaw;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/util/Utils$ICaw;-><init>(Landroid/view/View;I)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/util/Utils$MCaw;-><init>(Landroid/view/View;I)V
 
     invoke-virtual {p1, v0}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 

@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method public a(Lcom/squareup/okhttp/Interceptor$ICag;)Lcom/squareup/okhttp/Response;
+.method public a(Lcom/squareup/okhttp/Interceptor$MCag;)Lcom/squareup/okhttp/Response;
     .locals 9
 
     .prologue
@@ -60,7 +60,7 @@
     move-result-object v1
 
     .line 35
-    invoke-interface {p1}, Lcom/squareup/okhttp/Interceptor$ICag;->b()Lcom/squareup/okhttp/Request;
+    invoke-interface {p1}, Lcom/squareup/okhttp/Interceptor$MCag;->b()Lcom/squareup/okhttp/Request;
 
     move-result-object v3
 
@@ -77,17 +77,17 @@
     if-eqz v4, :cond_0
 
     .line 39
-    new-instance v4, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICc;
+    new-instance v4, Lcom/facebook/stetho/okhttp3/StethoInterceptor$MCc;
 
-    invoke-direct {v4, v1, v3}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICc;-><init>(Ljava/lang/String;Lcom/squareup/okhttp/Request;)V
+    invoke-direct {v4, v1, v3}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$MCc;-><init>(Ljava/lang/String;Lcom/squareup/okhttp/Request;)V
 
     .line 40
     iget-object v5, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
-    invoke-interface {v5, v4}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;)V
+    invoke-interface {v5, v4}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;)V
 
     .line 41
-    invoke-virtual {v4}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICc;->g()[B
+    invoke-virtual {v4}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$MCc;->g()[B
 
     move-result-object v4
 
@@ -102,7 +102,7 @@
     .line 49
     :cond_0
     :try_start_0
-    invoke-interface {p1, v3}, Lcom/squareup/okhttp/Interceptor$ICag;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response;
+    invoke-interface {p1, v3}, Lcom/squareup/okhttp/Interceptor$MCag;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -127,18 +127,18 @@
 
     .line 62
     :cond_1
-    invoke-interface {p1}, Lcom/squareup/okhttp/Interceptor$ICag;->a()Lcom/squareup/okhttp/Connection;
+    invoke-interface {p1}, Lcom/squareup/okhttp/Interceptor$MCag;->a()Lcom/squareup/okhttp/Connection;
 
     move-result-object v0
 
     .line 63
     iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
-    new-instance v5, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;
+    new-instance v5, Lcom/facebook/stetho/okhttp3/StethoInterceptor$MCd;
 
-    invoke-direct {v5, v1, v3, v6, v0}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;-><init>(Ljava/lang/String;Lcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Response;Lcom/squareup/okhttp/Connection;)V
+    invoke-direct {v5, v1, v3, v6, v0}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$MCd;-><init>(Ljava/lang/String;Lcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Response;Lcom/squareup/okhttp/Connection;)V
 
-    invoke-interface {v4, v5}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;)V
+    invoke-interface {v4, v5}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;)V
 
     .line 70
     invoke-virtual {v6}, Lcom/squareup/okhttp/Response;->h()Lcom/squareup/okhttp/ResponseBody;
@@ -191,19 +191,19 @@
     if-eqz v0, :cond_4
 
     .line 85
-    invoke-virtual {v6}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v6}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
-    new-instance v2, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;
+    new-instance v2, Lcom/facebook/stetho/okhttp3/StethoInterceptor$MCb;
 
-    invoke-direct {v2, v7, v0}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;-><init>(Lcom/squareup/okhttp/ResponseBody;Ljava/io/InputStream;)V
+    invoke-direct {v2, v7, v0}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$MCb;-><init>(Lcom/squareup/okhttp/ResponseBody;Ljava/io/InputStream;)V
 
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 

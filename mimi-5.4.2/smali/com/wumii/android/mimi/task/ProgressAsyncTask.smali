@@ -111,18 +111,18 @@
     .line 46
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;
+    new-instance v1, Lcom/wumii/android/mimi/task/ProgressAsyncTask$MCaz;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;-><init>(Lcom/wumii/android/mimi/task/ProgressAsyncTask;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/task/ProgressAsyncTask$MCaz;-><init>(Lcom/wumii/android/mimi/task/ProgressAsyncTask;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     .line 53
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->mProgressingDialogk:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;
+    new-instance v1, Lcom/wumii/android/mimi/task/ProgressAsyncTask$MCba;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;-><init>(Lcom/wumii/android/mimi/task/ProgressAsyncTask;Z)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/task/ProgressAsyncTask$MCba;-><init>(Lcom/wumii/android/mimi/task/ProgressAsyncTask;Z)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 

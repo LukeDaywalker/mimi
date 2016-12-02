@@ -22,9 +22,9 @@
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;-><init>()V
 
     .line 40
-    new-instance v0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager$ICn;
+    new-instance v0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager$MCn;
 
-    invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/network/NetworkPeerManager$ICn;-><init>(Lcom/facebook/stetho/inspector/network/NetworkPeerManager;)V
+    invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/network/NetworkPeerManager$MCn;-><init>(Lcom/facebook/stetho/inspector/network/NetworkPeerManager;)V
 
     iput-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mPeersRegisteredListenerc:Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;
 

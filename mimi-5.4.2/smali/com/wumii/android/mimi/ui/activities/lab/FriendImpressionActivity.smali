@@ -3,7 +3,7 @@
 .source "FriendImpressionActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+.implements Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
 
 # instance fields
@@ -170,9 +170,9 @@
 
     const v1, 0x7f06014d
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$MCg;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$MCg;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -446,13 +446,13 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/LoadUserProfileTask;-><init>(Landroid/app/Activity;)V
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$MCf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$MCf;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/task/LoadUserProfileTask$MCau;Z)V
 
     goto :goto_0
 

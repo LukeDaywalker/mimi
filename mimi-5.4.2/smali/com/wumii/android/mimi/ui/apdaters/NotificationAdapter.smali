@@ -103,7 +103,7 @@
     return v0
 .end method
 
-.method protected a(ILandroid/view/View;)Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;
+.method protected a(ILandroid/view/View;)Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$MCb;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -130,7 +130,7 @@
     aget-object v0, v0, v1
 
     .line 83
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->mArrayIa:[I
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$MCs;->mArrayIa:[I
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/NotificationType;->ordinal()I
 
@@ -167,9 +167,9 @@
 
     .line 85
     :pswitch_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$MCu;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;-><init>(Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$MCu;-><init>(Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;Landroid/view/View;)V
 
     .line 89
     :goto_0
@@ -177,17 +177,17 @@
 
     .line 87
     :pswitch_1
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$MCv;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$MCv;-><init>(Landroid/view/View;)V
 
     goto :goto_0
 
     .line 89
     :pswitch_2
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICt;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$MCt;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICt;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$MCt;-><init>(Landroid/view/View;)V
 
     goto :goto_0
 

@@ -14,7 +14,7 @@
 .method public static Coordinate_encryptEx(FFLjava/lang/String;)Lcom/baidu/mapapi/model/inner/Point;
     .locals 1
 
-    invoke-static {p0, p1, p2}, Lcom/baidu/platform/comapi/util/ICb;->a(FFLjava/lang/String;)Lcom/baidu/mapapi/model/inner/Point;
+    invoke-static {p0, p1, p2}, Lcom/baidu/platform/comapi/util/MCb;->a(FFLjava/lang/String;)Lcom/baidu/mapapi/model/inner/Point;
 
     move-result-object v0
 
@@ -24,7 +24,7 @@
 .method public static decodeLocation(Ljava/lang/String;)Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    invoke-static {p0}, Lcom/baidu/platform/comapi/util/ICb;->a(Ljava/lang/String;)Lcom/baidu/mapapi/model/LatLng;
+    invoke-static {p0}, Lcom/baidu/platform/comapi/util/MCb;->a(Ljava/lang/String;)Lcom/baidu/mapapi/model/LatLng;
 
     move-result-object v0
 
@@ -45,7 +45,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lcom/baidu/platform/comapi/util/ICb;->c(Ljava/lang/String;)Ljava/util/List;
+    invoke-static {p0}, Lcom/baidu/platform/comapi/util/MCb;->c(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lcom/baidu/platform/comapi/util/ICb;->d(Ljava/lang/String;)Ljava/util/List;
+    invoke-static {p0}, Lcom/baidu/platform/comapi/util/MCb;->d(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
 .method public static decodeNodeLocation(Ljava/lang/String;)Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    invoke-static {p0}, Lcom/baidu/platform/comapi/util/ICb;->b(Ljava/lang/String;)Lcom/baidu/mapapi/model/LatLng;
+    invoke-static {p0}, Lcom/baidu/platform/comapi/util/MCb;->b(Ljava/lang/String;)Lcom/baidu/mapapi/model/LatLng;
 
     move-result-object v0
 
@@ -88,7 +88,7 @@
 .method public static getDistance(Lcom/baidu/mapapi/model/inner/Point;Lcom/baidu/mapapi/model/inner/Point;)D
     .locals 2
 
-    invoke-static {p0, p1}, Lcom/baidu/platform/comjni/tools/ICa;->a(Lcom/baidu/mapapi/model/inner/Point;Lcom/baidu/mapapi/model/inner/Point;)D
+    invoke-static {p0, p1}, Lcom/baidu/platform/comjni/tools/MCa;->a(Lcom/baidu/mapapi/model/inner/Point;Lcom/baidu/mapapi/model/inner/Point;)D
 
     move-result-wide v0
 
@@ -98,7 +98,7 @@
 .method public static getMCDistanceByOneLatLngAndRadius(Lcom/baidu/mapapi/model/LatLng;I)I
     .locals 1
 
-    invoke-static {p0, p1}, Lcom/baidu/platform/comapi/util/ICb;->a(Lcom/baidu/mapapi/model/LatLng;I)I
+    invoke-static {p0, p1}, Lcom/baidu/platform/comapi/util/MCb;->a(Lcom/baidu/mapapi/model/LatLng;I)I
 
     move-result v0
 
@@ -108,7 +108,7 @@
 .method public static ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
     .locals 1
 
-    invoke-static {p0}, Lcom/baidu/platform/comapi/util/ICb;->a(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
+    invoke-static {p0}, Lcom/baidu/platform/comapi/util/MCb;->a(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v0
 
@@ -118,7 +118,7 @@
 .method public static ll2point(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/Point;
     .locals 1
 
-    invoke-static {p0}, Lcom/baidu/platform/comapi/util/ICb;->b(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/Point;
+    invoke-static {p0}, Lcom/baidu/platform/comapi/util/MCb;->b(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/Point;
 
     move-result-object v0
 
@@ -128,7 +128,7 @@
 .method public static mc2ll(Lcom/baidu/mapapi/model/inner/GeoPoint;)Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    invoke-static {p0}, Lcom/baidu/platform/comapi/util/ICb;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Lcom/baidu/mapapi/model/LatLng;
+    invoke-static {p0}, Lcom/baidu/platform/comapi/util/MCb;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Lcom/baidu/mapapi/model/LatLng;
 
     move-result-object v0
 

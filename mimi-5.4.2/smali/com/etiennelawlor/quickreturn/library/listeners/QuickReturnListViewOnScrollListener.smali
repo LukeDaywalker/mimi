@@ -38,7 +38,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;)V
+.method private constructor <init>(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;)V
     .locals 1
 
     .prologue
@@ -64,42 +64,42 @@
     iput-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;->mListj:Ljava/util/List;
 
     .line 34
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->a(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;)Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;->a(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;)Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;->mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     .line 35
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->b(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;)Landroid/view/View;
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;->b(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;)Landroid/view/View;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;->mViewb:Landroid/view/View;
 
     .line 36
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->c(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;)I
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;->c(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;)I
 
     move-result v0
 
     iput v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;->mIc:I
 
     .line 37
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->d(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;)Landroid/view/View;
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;->d(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;)Landroid/view/View;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;->mViewd:Landroid/view/View;
 
     .line 38
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->e(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;)I
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;->e(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;)I
 
     move-result v0
 
     iput v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;->mIe:I
 
     .line 39
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->f(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;)Z
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;->f(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;)Z
 
     move-result v0
 
@@ -109,12 +109,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;)V
+.method synthetic constructor <init>(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCb;)V
     .locals 0
 
     .prologue
     .line 16
-    invoke-direct {p0, p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;-><init>(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;)V
+    invoke-direct {p0, p1}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;-><init>(Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCc;)V
 
     return-void
 .end method
@@ -167,7 +167,7 @@
     if-eqz v1, :cond_1
 
     .line 152
-    sget-object v2, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
+    sget-object v2, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCb;->mArrayIa:[I
 
     iget-object v3, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;->mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
@@ -565,7 +565,7 @@
     div-int/lit8 v1, v1, 0x2
 
     .line 55
-    sget-object v2, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
+    sget-object v2, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$MCb;->mArrayIa:[I
 
     iget-object v3, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;->mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 

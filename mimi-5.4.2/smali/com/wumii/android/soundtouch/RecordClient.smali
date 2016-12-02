@@ -70,9 +70,9 @@
     iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mBlockingQueuea:Ljava/util/concurrent/BlockingQueue;
 
     .line 28
-    new-instance v0, Lcom/wumii/android/soundtouch/RecordClient$ICd;
+    new-instance v0, Lcom/wumii/android/soundtouch/RecordClient$MCd;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/soundtouch/RecordClient$ICd;-><init>(Lcom/wumii/android/soundtouch/RecordClient;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/soundtouch/RecordClient$MCd;-><init>(Lcom/wumii/android/soundtouch/RecordClient;)V
 
     iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mHandlerb:Landroid/os/Handler;
 

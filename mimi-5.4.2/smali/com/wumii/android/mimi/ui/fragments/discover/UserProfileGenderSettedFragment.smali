@@ -63,14 +63,14 @@
     return v0
 .end method
 
-.method protected c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
+.method protected c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$MCy;
     .locals 1
 
     .prologue
     .line 41
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICu;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$MCu;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICu;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$MCu;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;)V
 
     return-object v0
 .end method
@@ -80,9 +80,9 @@
 
     .prologue
     .line 51
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICv;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$MCv;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICv;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$MCv;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;)V
 
     return-object v0
 .end method

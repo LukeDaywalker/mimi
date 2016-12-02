@@ -8,8 +8,6 @@
 
 .field private mEditTextb:Landroid/widget/EditText;
 
-.field private mICaye:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;
-
 .field private mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -20,6 +18,8 @@
         }
     .end annotation
 .end field
+
+.field private mMCaye:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCay;
 
 
 # direct methods
@@ -161,9 +161,9 @@
     .line 71
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mEditTextb:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCav;
 
-    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;-><init>(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;I)V
+    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCav;-><init>(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;I)V
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -204,19 +204,19 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;)Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;)Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCay;
     .locals 1
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mICaye:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mMCaye:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCay;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public a(ILcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;)Landroid/app/AlertDialog$Builder;
+.method public a(ILcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCay;)Landroid/app/AlertDialog$Builder;
     .locals 1
 
     .prologue
@@ -229,19 +229,19 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0, p2}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {p0, v0, p2}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCay;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;)Landroid/app/AlertDialog$Builder;
+.method public a(Ljava/lang/CharSequence;Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCay;)Landroid/app/AlertDialog$Builder;
     .locals 1
 
     .prologue
     .line 162
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mICaye:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mMCaye:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCay;
 
     .line 163
     const/4 v0, 0x0
@@ -301,9 +301,9 @@
     .line 115
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mEditTextb:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICaw;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCaw;
 
-    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICaw;-><init>(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;Landroid/app/AlertDialog;)V
+    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCaw;-><init>(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;Landroid/app/AlertDialog;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
@@ -324,16 +324,16 @@
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 126
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mICaye:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mMCaye:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCay;
 
     if-eqz v1, :cond_0
 
     .line 127
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->mButtonc:Landroid/widget/Button;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICax;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCax;
 
-    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICax;-><init>(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;Landroid/app/AlertDialog;)V
+    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$MCax;-><init>(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;Landroid/app/AlertDialog;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

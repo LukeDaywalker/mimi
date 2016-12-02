@@ -62,112 +62,112 @@
 
     const-string/jumbo v1, "chat/previews"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 165
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/remark-previews"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 166
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/preview"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 167
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/inputting"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 168
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/summons"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 169
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/message"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 170
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/message/like"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 171
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/message/unlike"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 172
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/message/new_like_count"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 173
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/messages/status"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 174
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "status"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 176
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/new-messages"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 177
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/history-messages"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 178
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/detail"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 180
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/messages"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 182
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group/application/previews"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 184
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -1531,7 +1531,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/messages/status"
 
@@ -1539,7 +1539,7 @@
 
     const/4 v5, 0x0
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -1921,13 +1921,13 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     move-object v3, v2
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -2399,9 +2399,9 @@
     .line 975
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/manager/ChatManager$ICq;
+    new-instance v1, Lcom/wumii/android/mimi/manager/ChatManager$MCq;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/manager/ChatManager$ICq;-><init>(Lcom/wumii/android/mimi/manager/ChatManager;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/manager/ChatManager$MCq;-><init>(Lcom/wumii/android/mimi/manager/ChatManager;)V
 
     const-string/jumbo v3, "group_chat_notification"
 
@@ -3654,7 +3654,7 @@
     .line 497
     invoke-virtual {v2, v1}, Lcom/wumii/android/mimi/network/Result;->setData(Ljava/lang/Object;)V
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 502
     :cond_0
@@ -3788,9 +3788,9 @@
     .line 521
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    new-instance v4, Lcom/wumii/android/mimi/manager/ChatManager$ICp;
+    new-instance v4, Lcom/wumii/android/mimi/manager/ChatManager$MCp;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/manager/ChatManager$ICp;-><init>(Lcom/wumii/android/mimi/manager/ChatManager;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/manager/ChatManager$MCp;-><init>(Lcom/wumii/android/mimi/manager/ChatManager;)V
 
     const-string/jumbo v6, "group_chat_notification"
 
@@ -3826,7 +3826,7 @@
     :cond_1
     invoke-virtual {p0}, Lcom/wumii/android/mimi/manager/ChatManager;->a()V
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 536
     :cond_2
@@ -4540,7 +4540,7 @@
 
     invoke-virtual {v2, v3}, Lcom/wumii/android/mimi/network/Result;->setData(Ljava/lang/Object;)V
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 1497
     :cond_0
@@ -4845,7 +4845,7 @@
     .line 1540
     invoke-interface {v7, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_1
 
@@ -4856,7 +4856,7 @@
     .line 1549
     sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$MCg;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -4900,7 +4900,7 @@
 
     invoke-virtual {v0, v1, v8}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;->a(Ljava/lang/String;Ljava/util/Set;)V
     :try_end_1
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_1 .. :try_end_1} :catch_0
 
     goto/16 :goto_0
 
@@ -4978,9 +4978,9 @@
 
     .line 1577
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/manager/ChatManager$ICr;
+    new-instance v0, Lcom/wumii/android/mimi/manager/ChatManager$MCr;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/ChatManager$ICr;-><init>(Lcom/wumii/android/mimi/manager/ChatManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/ChatManager$MCr;-><init>(Lcom/wumii/android/mimi/manager/ChatManager;)V
 
     const-wide/16 v2, 0x7d0
 
@@ -5311,7 +5311,7 @@
     :cond_5
     invoke-interface {v8}, Ljava/util/List;->size()I
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v3
 
@@ -5492,7 +5492,7 @@
 
     invoke-virtual {v5, v4}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
     :try_end_1
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_1 .. :try_end_1} :catch_0
 
     goto/16 :goto_2
 
@@ -5609,7 +5609,7 @@
     .line 1744
     invoke-virtual {v1}, Lcom/wumii/android/mimi/network/domain/LoadHistoryMessagesResp;->isAllData()Z
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v1
 
@@ -5617,7 +5617,7 @@
     :try_start_1
     invoke-interface {v4}, Ljava/util/List;->size()I
     :try_end_1
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_1 .. :try_end_1} :catch_1
 
     move-result v4
 
@@ -5938,7 +5938,7 @@
     .line 1781
     invoke-virtual {v3, v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatDetailData;->setChatId(Ljava/lang/String;)V
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 1798
     :goto_1
@@ -5971,7 +5971,7 @@
 
     invoke-direct {p0, v0, v7, v5, v1}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Ljava/lang/String;Ljava/util/List;ZZ)V
     :try_end_1
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_1 .. :try_end_1} :catch_1
 
     move-object v0, v3
 
@@ -6088,7 +6088,7 @@
 
     invoke-virtual {v3, v8}, Lcom/wumii/android/mimi/models/entities/chat/SingleChatDetailData;->setChat(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
     :try_end_2
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_2 .. :try_end_2} :catch_0
 
     goto/16 :goto_1
 
@@ -6501,13 +6501,13 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/preview"
 
     const-string/jumbo v3, "chat/preview"
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -7248,13 +7248,13 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/summons"
 
     const-string/jumbo v3, "chat/summons"
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -7351,7 +7351,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/new-messages"
 
@@ -7375,7 +7375,7 @@
 
     move-object v5, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -7424,7 +7424,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/messages"
 
@@ -7432,7 +7432,7 @@
 
     move-object v4, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -7466,7 +7466,7 @@
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1267
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     .line 1268
     invoke-virtual {p2}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->isText()Z
@@ -7527,7 +7527,7 @@
 
     move-object v4, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -7613,7 +7613,7 @@
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1285
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCic:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     goto :goto_0
 
@@ -7824,7 +7824,7 @@
     invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1306
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCic:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     goto/16 :goto_0
 .end method
@@ -8229,11 +8229,11 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     move-object v3, v2
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -8366,7 +8366,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/messages"
 
@@ -8374,7 +8374,7 @@
 
     move-object v4, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -8888,7 +8888,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/inputting"
 
@@ -8896,7 +8896,7 @@
 
     const/4 v5, 0x0
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -9038,7 +9038,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "status"
 
@@ -9046,7 +9046,7 @@
 
     const/4 v5, 0x0
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -9349,13 +9349,13 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/message/new_like_count"
 
     const-string/jumbo v3, "chat/message/new_like_count"
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -9487,7 +9487,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/history-messages"
 
@@ -9509,7 +9509,7 @@
 
     move-result-object v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -9612,7 +9612,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/detail"
 
@@ -9634,7 +9634,7 @@
 
     move-result-object v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 

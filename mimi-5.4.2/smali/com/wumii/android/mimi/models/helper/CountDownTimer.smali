@@ -24,9 +24,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 83
-    new-instance v0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$MCe;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;-><init>(Lcom/wumii/android/mimi/models/helper/CountDownTimer;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer$MCe;-><init>(Lcom/wumii/android/mimi/models/helper/CountDownTimer;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->mHandlere:Landroid/os/Handler;
 

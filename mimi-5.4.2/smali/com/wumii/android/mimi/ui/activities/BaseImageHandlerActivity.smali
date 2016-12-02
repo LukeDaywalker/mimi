@@ -78,11 +78,11 @@
     .line 26
     new-instance v0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$ICi;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$MCi;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$ICi;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$MCi;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;)V
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$MCc;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->mCaptureImageHelpern:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 

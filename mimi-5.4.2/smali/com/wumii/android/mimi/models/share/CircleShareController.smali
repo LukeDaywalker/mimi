@@ -81,11 +81,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;
+    new-instance v1, Lcom/wumii/android/mimi/models/share/CircleShareController$MCo;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;-><init>(Lcom/wumii/android/mimi/models/share/CircleShareController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/CircleShareController$MCo;-><init>(Lcom/wumii/android/mimi/models/share/CircleShareController;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/CircleShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/CircleShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 32
     return-void
@@ -104,11 +104,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/CircleShareController$ICp;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/CircleShareController$MCp;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/CircleShareController$ICp;-><init>(Lcom/wumii/android/mimi/models/share/CircleShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/CircleShareController$MCp;-><init>(Lcom/wumii/android/mimi/models/share/CircleShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 42
     return-void
@@ -125,11 +125,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/CircleShareController$MCq;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;-><init>(Lcom/wumii/android/mimi/models/share/CircleShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/CircleShareController$MCq;-><init>(Lcom/wumii/android/mimi/models/share/CircleShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 57
     return-void

@@ -304,7 +304,7 @@
 
     .line 42
     :cond_0
-    invoke-static {p1}, Lcom/sina/weibo/sdk/api/share/ApiUtils;->a(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;
+    invoke-static {p1}, Lcom/sina/weibo/sdk/api/share/ApiUtils;->a(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/share/ApiUtils$MCb;
 
     move-result-object v2
 
@@ -320,7 +320,7 @@
 
     .line 48
     :cond_1
-    iget-object v2, v2, Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;->mStringa:Ljava/lang/String;
+    iget-object v2, v2, Lcom/sina/weibo/sdk/api/share/ApiUtils$MCb;->mStringa:Ljava/lang/String;
 
     invoke-static {p1, v2}, Lcom/sina/weibo/sdk/api/share/ApiUtils;->b(Landroid/content/Context;Ljava/lang/String;)Z
 

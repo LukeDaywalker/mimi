@@ -40,16 +40,16 @@
     iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mAtomicBooleand:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 115
-    new-instance v0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;
+    new-instance v0, Lcom/facebook/stetho/websocket/WebSocketSession$MCl;
 
-    invoke-direct {v0, p0}, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;-><init>(Lcom/facebook/stetho/websocket/WebSocketSession;)V
+    invoke-direct {v0, p0}, Lcom/facebook/stetho/websocket/WebSocketSession$MCl;-><init>(Lcom/facebook/stetho/websocket/WebSocketSession;)V
 
     iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mReadCallbackf:Lcom/facebook/stetho/websocket/ReadCallback;
 
     .line 177
-    new-instance v0, Lcom/facebook/stetho/websocket/WebSocketSession$ICm;
+    new-instance v0, Lcom/facebook/stetho/websocket/WebSocketSession$MCm;
 
-    invoke-direct {v0, p0}, Lcom/facebook/stetho/websocket/WebSocketSession$ICm;-><init>(Lcom/facebook/stetho/websocket/WebSocketSession;)V
+    invoke-direct {v0, p0}, Lcom/facebook/stetho/websocket/WebSocketSession$MCm;-><init>(Lcom/facebook/stetho/websocket/WebSocketSession;)V
 
     iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mWriteCallbackg:Lcom/facebook/stetho/websocket/WriteCallback;
 

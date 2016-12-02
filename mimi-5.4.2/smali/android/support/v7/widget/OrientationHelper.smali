@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected final mICara:Landroid/support/v7/widget/RecyclerView$ICar;
-
 .field private mIb:I
+
+.field protected final mMCara:Landroid/support/v7/widget/RecyclerView$MCar;
 
 
 # direct methods
-.method private constructor <init>(Landroid/support/v7/widget/RecyclerView$ICar;)V
+.method private constructor <init>(Landroid/support/v7/widget/RecyclerView$MCar;)V
     .locals 1
 
     .prologue
@@ -23,35 +23,35 @@
     iput v0, p0, Landroid/support/v7/widget/OrientationHelper;->mIb:I
 
     .line 45
-    iput-object p1, p0, Landroid/support/v7/widget/OrientationHelper;->mICara:Landroid/support/v7/widget/RecyclerView$ICar;
+    iput-object p1, p0, Landroid/support/v7/widget/OrientationHelper;->mMCara:Landroid/support/v7/widget/RecyclerView$MCar;
 
     .line 46
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/support/v7/widget/RecyclerView$ICar;Landroid/support/v7/widget/OrientationHelper$ICaa;)V
+.method synthetic constructor <init>(Landroid/support/v7/widget/RecyclerView$MCar;Landroid/support/v7/widget/OrientationHelper$MCaa;)V
     .locals 0
 
     .prologue
     .line 32
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/OrientationHelper;-><init>(Landroid/support/v7/widget/RecyclerView$ICar;)V
+    invoke-direct {p0, p1}, Landroid/support/v7/widget/OrientationHelper;-><init>(Landroid/support/v7/widget/RecyclerView$MCar;)V
 
     return-void
 .end method
 
-.method public static a(Landroid/support/v7/widget/RecyclerView$ICar;)Landroid/support/v7/widget/OrientationHelper;
+.method public static a(Landroid/support/v7/widget/RecyclerView$MCar;)Landroid/support/v7/widget/OrientationHelper;
     .locals 1
 
     .prologue
     .line 194
-    new-instance v0, Landroid/support/v7/widget/OrientationHelper$ICaa;
+    new-instance v0, Landroid/support/v7/widget/OrientationHelper$MCaa;
 
-    invoke-direct {v0, p0}, Landroid/support/v7/widget/OrientationHelper$ICaa;-><init>(Landroid/support/v7/widget/RecyclerView$ICar;)V
+    invoke-direct {v0, p0}, Landroid/support/v7/widget/OrientationHelper$MCaa;-><init>(Landroid/support/v7/widget/RecyclerView$MCar;)V
 
     return-object v0
 .end method
 
-.method public static a(Landroid/support/v7/widget/RecyclerView$ICar;I)Landroid/support/v7/widget/OrientationHelper;
+.method public static a(Landroid/support/v7/widget/RecyclerView$MCar;I)Landroid/support/v7/widget/OrientationHelper;
     .locals 2
 
     .prologue
@@ -69,7 +69,7 @@
 
     .line 179
     :pswitch_0
-    invoke-static {p0}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/support/v7/widget/RecyclerView$ICar;)Landroid/support/v7/widget/OrientationHelper;
+    invoke-static {p0}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/support/v7/widget/RecyclerView$MCar;)Landroid/support/v7/widget/OrientationHelper;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
     return-object v0
 
     :pswitch_1
-    invoke-static {p0}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/support/v7/widget/RecyclerView$ICar;)Landroid/support/v7/widget/OrientationHelper;
+    invoke-static {p0}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/support/v7/widget/RecyclerView$MCar;)Landroid/support/v7/widget/OrientationHelper;
 
     move-result-object v0
 
@@ -92,14 +92,14 @@
     .end packed-switch
 .end method
 
-.method public static b(Landroid/support/v7/widget/RecyclerView$ICar;)Landroid/support/v7/widget/OrientationHelper;
+.method public static b(Landroid/support/v7/widget/RecyclerView$MCar;)Landroid/support/v7/widget/OrientationHelper;
     .locals 1
 
     .prologue
     .line 270
-    new-instance v0, Landroid/support/v7/widget/OrientationHelper$ICab;
+    new-instance v0, Landroid/support/v7/widget/OrientationHelper$MCab;
 
-    invoke-direct {v0, p0}, Landroid/support/v7/widget/OrientationHelper$ICab;-><init>(Landroid/support/v7/widget/RecyclerView$ICar;)V
+    invoke-direct {v0, p0}, Landroid/support/v7/widget/OrientationHelper$MCab;-><init>(Landroid/support/v7/widget/RecyclerView$MCar;)V
 
     return-object v0
 .end method

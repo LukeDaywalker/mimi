@@ -6,7 +6,7 @@
 # instance fields
 .field private final mApplicationa:Landroid/app/Application;
 
-.field private mICbb:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+.field private mMCbb:Lio/fabric/sdk/android/ActivityLifecycleManager$MCb;
 
 
 # direct methods
@@ -34,13 +34,13 @@
     if-lt v0, v1, :cond_0
 
     .line 58
-    new-instance v0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+    new-instance v0, Lio/fabric/sdk/android/ActivityLifecycleManager$MCb;
 
     iget-object v1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mApplicationa:Landroid/app/Application;
 
-    invoke-direct {v0, v1}, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;-><init>(Landroid/app/Application;)V
+    invoke-direct {v0, v1}, Lio/fabric/sdk/android/ActivityLifecycleManager$MCb;-><init>(Landroid/app/Application;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mICbb:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+    iput-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mMCbb:Lio/fabric/sdk/android/ActivityLifecycleManager$MCb;
 
     .line 60
     :cond_0
@@ -49,18 +49,18 @@
 
 
 # virtual methods
-.method public a(Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;)Z
+.method public a(Lio/fabric/sdk/android/ActivityLifecycleManager$MCd;)Z
     .locals 1
 
     .prologue
     .line 68
-    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mICbb:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mMCbb:Lio/fabric/sdk/android/ActivityLifecycleManager$MCb;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mICbb:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mMCbb:Lio/fabric/sdk/android/ActivityLifecycleManager$MCb;
 
-    invoke-static {v0, p1}, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;)Z
+    invoke-static {v0, p1}, Lio/fabric/sdk/android/ActivityLifecycleManager$MCb;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$MCb;Lio/fabric/sdk/android/ActivityLifecycleManager$MCd;)Z
 
     move-result v0
 

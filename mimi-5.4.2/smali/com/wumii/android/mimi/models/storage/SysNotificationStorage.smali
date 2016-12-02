@@ -4,8 +4,6 @@
 
 
 # instance fields
-.field private mICnd:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$ICn;
-
 .field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -16,6 +14,8 @@
         }
     .end annotation
 .end field
+
+.field private mMCnd:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$MCn;
 
 .field private mSysNotificationDaoc:Lcom/wumii/android/mimi/models/dao/SysNotificationDao;
 
@@ -45,11 +45,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->mListb:Ljava/util/List;
 
     .line 24
-    new-instance v0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$ICn;
+    new-instance v0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$MCn;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$ICn;-><init>(Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$MCn;-><init>(Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->mICnd:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$ICn;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->mMCnd:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$MCn;
 
     .line 25
     return-void
@@ -62,16 +62,16 @@
     .line 32
     iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->mListb:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->mICnd:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$ICn;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->mMCnd:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$MCn;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 33
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 34
     return-void

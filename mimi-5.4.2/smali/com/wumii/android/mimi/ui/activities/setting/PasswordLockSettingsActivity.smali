@@ -112,9 +112,9 @@
 
     .prologue
     .line 67
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICrc:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$MCr;->mMCrc:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$MCr;
 
-    invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;)V
+    invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$MCr;)V
 
     .line 68
     return-void
@@ -141,20 +141,20 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICrb:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$MCr;->mMCrb:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$MCr;
 
     :goto_1
-    invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;)V
+    invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$MCr;)V
 
     .line 63
-    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafi:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafi:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     if-eqz v1, :cond_2
 
     const-string/jumbo v0, "0"
 
     :goto_2
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 64
     return-void
@@ -169,7 +169,7 @@
 
     .line 60
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mICra:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$MCr;->mMCra:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$MCr;
 
     goto :goto_1
 

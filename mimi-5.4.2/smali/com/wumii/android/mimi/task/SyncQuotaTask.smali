@@ -8,7 +8,7 @@
 
 .field private mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private mICchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+.field private mMCchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$MCch;
 
 .field private mNetworkHelperd:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
@@ -51,12 +51,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/task/SyncQuotaTask;)Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+.method static synthetic a(Lcom/wumii/android/mimi/task/SyncQuotaTask;)Lcom/wumii/android/mimi/task/SyncQuotaTask$MCch;
     .locals 1
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mICchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mMCchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$MCch;
 
     return-object v0
 .end method
@@ -165,7 +165,7 @@
 
 
 # virtual methods
-.method public a(ZLcom/wumii/android/mimi/task/SyncQuotaTask$ICch;)V
+.method public a(ZLcom/wumii/android/mimi/task/SyncQuotaTask$MCch;)V
     .locals 0
 
     .prologue
@@ -176,7 +176,7 @@
     iput-boolean p1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->isZk:Z
 
     .line 79
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mICchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mMCchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$MCch;
 
     .line 80
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/SyncQuotaTask;->j()V
@@ -242,16 +242,16 @@
 
     .line 47
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mICchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mMCchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$MCch;
 
     if-eqz v1, :cond_1
 
     .line 49
     iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mHandlerm:Landroid/os/Handler;
 
-    new-instance v2, Lcom/wumii/android/mimi/task/SyncQuotaTask$ICcg;
+    new-instance v2, Lcom/wumii/android/mimi/task/SyncQuotaTask$MCcg;
 
-    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/task/SyncQuotaTask$ICcg;-><init>(Lcom/wumii/android/mimi/task/SyncQuotaTask;I)V
+    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/task/SyncQuotaTask$MCcg;-><init>(Lcom/wumii/android/mimi/task/SyncQuotaTask;I)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

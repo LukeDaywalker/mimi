@@ -62,9 +62,9 @@
 
     .prologue
     .line 51
-    new-instance v0, Lcom/nostra13/universalimageloader/utils/MemoryCacheUtils$ICh;
+    new-instance v0, Lcom/nostra13/universalimageloader/utils/MemoryCacheUtils$MCh;
 
-    invoke-direct {v0}, Lcom/nostra13/universalimageloader/utils/MemoryCacheUtils$ICh;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/utils/MemoryCacheUtils$MCh;-><init>()V
 
     return-object v0
 .end method

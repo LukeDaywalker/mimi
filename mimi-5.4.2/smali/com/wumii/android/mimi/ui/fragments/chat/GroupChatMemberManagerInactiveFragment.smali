@@ -12,9 +12,9 @@
 
 .field private mGroupChatl:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-.field private mICaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
-
 .field private mListViewd:Landroid/widget/ListView;
+
+.field private mMCaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
 
 .field private mProgressBarj:Landroid/widget/ProgressBar;
 
@@ -75,12 +75,12 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;)Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;)Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
     .locals 1
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->c()Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->c()Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
 
     move-result-object v0
 
@@ -158,29 +158,29 @@
     return-object v0
 .end method
 
-.method private c()Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+.method private c()Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
     .locals 2
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mICaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mMCaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
 
     if-nez v0, :cond_0
 
     .line 134
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mICaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mMCaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
 
     .line 136
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mICaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mMCaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
 
     return-object v0
 .end method
@@ -270,18 +270,18 @@
     .line 82
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewc:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICan;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCan;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICan;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCan;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 91
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewk:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICao;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCao;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICao;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCao;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -292,9 +292,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICap;
+    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCap;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICap;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCap;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;)V
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;-><init>(Landroid/content/Context;Landroid/view/View$OnClickListener;)V
 
@@ -311,11 +311,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->b()V
 
     .line 123
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->c()Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->c()Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$MCaq;->j()V
 
     .line 124
     return-void

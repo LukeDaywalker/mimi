@@ -283,7 +283,7 @@
 
     .line 147
     :cond_4
-    new-instance v1, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$ICj;
+    new-instance v1, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$MCj;
 
     iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mIe:I
 
@@ -293,7 +293,7 @@
 
     add-int/lit8 v0, v0, 0x50
 
-    invoke-direct {v1, p0, v0}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$ICj;-><init>(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;I)V
+    invoke-direct {v1, p0, v0}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$MCj;-><init>(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;I)V
 
     .line 160
     :cond_5

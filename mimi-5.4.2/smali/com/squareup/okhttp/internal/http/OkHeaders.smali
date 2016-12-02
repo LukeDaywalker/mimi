@@ -30,9 +30,9 @@
 
     .prologue
     .line 25
-    new-instance v0, Lcom/squareup/okhttp/internal/http/OkHeaders$ICx;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/OkHeaders$MCx;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/OkHeaders$ICx;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/OkHeaders$MCx;-><init>()V
 
     sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mComparatore:Ljava/util/Comparator;
 
@@ -393,12 +393,12 @@
     return-object v0
 .end method
 
-.method public static a(Lcom/squareup/okhttp/Request$ICap;Ljava/util/Map;)V
+.method public static a(Lcom/squareup/okhttp/Request$MCap;Ljava/util/Map;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/squareup/okhttp/Request$ICap;",
+            "Lcom/squareup/okhttp/Request$MCap;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
@@ -482,7 +482,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v1, v0}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {p0, v1, v0}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     goto :goto_0
 

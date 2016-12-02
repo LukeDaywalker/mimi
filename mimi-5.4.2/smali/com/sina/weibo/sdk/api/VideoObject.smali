@@ -34,9 +34,9 @@
 
     .prologue
     .line 54
-    new-instance v0, Lcom/sina/weibo/sdk/api/VideoObject$ICe;
+    new-instance v0, Lcom/sina/weibo/sdk/api/VideoObject$MCe;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/VideoObject$ICe;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/VideoObject$MCe;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/VideoObject;->CREATOR:Landroid/os/Parcelable$Creator;
 

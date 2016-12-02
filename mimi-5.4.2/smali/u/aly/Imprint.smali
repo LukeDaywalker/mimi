@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Lu/aly/Imprint;",
-        "Lu/aly/Imprint$ICbz;",
+        "Lu/aly/Imprint$MCbz;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Lu/aly/Imprint$ICbz;",
+            "Lu/aly/Imprint$MCbz;",
             "Lu/aly/FieldMetaData;",
             ">;"
         }
@@ -147,9 +147,9 @@
 
     const-class v1, Lu/aly/StandardScheme;
 
-    new-instance v2, Lu/aly/Imprint$ICbw;
+    new-instance v2, Lu/aly/Imprint$MCbw;
 
-    invoke-direct {v2, v3}, Lu/aly/Imprint$ICbw;-><init>(Lu/aly/Imprint$ICbu;)V
+    invoke-direct {v2, v3}, Lu/aly/Imprint$MCbw;-><init>(Lu/aly/Imprint$MCbu;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -158,21 +158,21 @@
 
     const-class v1, Lu/aly/TupleScheme;
 
-    new-instance v2, Lu/aly/Imprint$ICby;
+    new-instance v2, Lu/aly/Imprint$MCby;
 
-    invoke-direct {v2, v3}, Lu/aly/Imprint$ICby;-><init>(Lu/aly/Imprint$ICbu;)V
+    invoke-direct {v2, v3}, Lu/aly/Imprint$MCby;-><init>(Lu/aly/Imprint$MCbu;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 118
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Lu/aly/Imprint$ICbz;
+    const-class v1, Lu/aly/Imprint$MCbz;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 119
-    sget-object v1, Lu/aly/Imprint$ICbz;->mICbza:Lu/aly/Imprint$ICbz;
+    sget-object v1, Lu/aly/Imprint$MCbz;->mMCbza:Lu/aly/Imprint$MCbz;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -199,7 +199,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 123
-    sget-object v1, Lu/aly/Imprint$ICbz;->mICbzb:Lu/aly/Imprint$ICbz;
+    sget-object v1, Lu/aly/Imprint$MCbz;->mMCbzb:Lu/aly/Imprint$MCbz;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -214,7 +214,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v1, Lu/aly/Imprint$ICbz;->mICbzc:Lu/aly/Imprint$ICbz;
+    sget-object v1, Lu/aly/Imprint$MCbz;->mMCbzc:Lu/aly/Imprint$MCbz;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

@@ -10,11 +10,11 @@
 # instance fields
 .field private mContexth:Landroid/content/Context;
 
-.field private mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
-
 .field private mIdTrackerf:Lu/aly/IdTracker;
 
 .field private mIg:I
+
+.field private mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
 .field private mMemoCachea:Lu/aly/MemoCache;
 
@@ -42,7 +42,7 @@
     iput-object v0, p0, Lu/aly/CacheImpl;->mNetworkHelperb:Lu/aly/NetworkHelper;
 
     .line 29
-    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
     .line 30
     iput-object v0, p0, Lu/aly/CacheImpl;->mStoreHelperd:Lcom/umeng/analytics/StoreHelper;
@@ -178,11 +178,11 @@
 
     .line 305
     :pswitch_0
-    new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICi;
+    new-instance v0, Lcom/umeng/analytics/ReportPolicy$MCi;
 
-    invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$ICi;-><init>()V
+    invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$MCi;-><init>()V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
     .line 309
     :goto_0
@@ -223,71 +223,71 @@
 
     .line 287
     :pswitch_1
-    new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICi;
+    new-instance v0, Lcom/umeng/analytics/ReportPolicy$MCi;
 
-    invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$ICi;-><init>()V
+    invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$MCi;-><init>()V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
     goto :goto_0
 
     .line 290
     :pswitch_2
-    new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICj;
+    new-instance v0, Lcom/umeng/analytics/ReportPolicy$MCj;
 
     iget-object v1, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     int-to-long v2, p2
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/umeng/analytics/ReportPolicy$ICj;-><init>(Lu/aly/StatTracer;J)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/umeng/analytics/ReportPolicy$MCj;-><init>(Lu/aly/StatTracer;J)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
     goto :goto_0
 
     .line 293
     :pswitch_3
-    new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICl;
+    new-instance v0, Lcom/umeng/analytics/ReportPolicy$MCl;
 
     iget-object v1, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
-    invoke-direct {v0, v1}, Lcom/umeng/analytics/ReportPolicy$ICl;-><init>(Lu/aly/StatTracer;)V
+    invoke-direct {v0, v1}, Lcom/umeng/analytics/ReportPolicy$MCl;-><init>(Lu/aly/StatTracer;)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
     goto :goto_0
 
     .line 296
     :pswitch_4
-    new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICm;
+    new-instance v0, Lcom/umeng/analytics/ReportPolicy$MCm;
 
-    invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$ICm;-><init>()V
+    invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$MCm;-><init>()V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
     goto :goto_0
 
     .line 299
     :pswitch_5
-    new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICn;
+    new-instance v0, Lcom/umeng/analytics/ReportPolicy$MCn;
 
     iget-object v1, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/umeng/analytics/ReportPolicy$ICn;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/umeng/analytics/ReportPolicy$MCn;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
     goto :goto_0
 
     .line 302
     :pswitch_6
-    new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICk;
+    new-instance v0, Lcom/umeng/analytics/ReportPolicy$MCk;
 
     iget-object v1, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
-    invoke-direct {v0, v1, p2}, Lcom/umeng/analytics/ReportPolicy$ICk;-><init>(Lu/aly/MemoCache;I)V
+    invoke-direct {v0, v1, p2}, Lcom/umeng/analytics/ReportPolicy$MCk;-><init>(Lu/aly/MemoCache;I)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
     goto :goto_0
 
@@ -367,9 +367,9 @@
 
     .line 202
     :cond_3
-    iget-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mMCmc:Lcom/umeng/analytics/ReportPolicy$MCm;
 
-    invoke-virtual {v0, p1}, Lcom/umeng/analytics/ReportPolicy$ICm;->a(Z)Z
+    invoke-virtual {v0, p1}, Lcom/umeng/analytics/ReportPolicy$MCm;->a(Z)Z
 
     move-result v0
 

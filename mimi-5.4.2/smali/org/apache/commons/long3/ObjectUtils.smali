@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final mICca:Lorg/apache/commons/long3/ObjectUtils$ICc;
+.field public static final mMCca:Lorg/apache/commons/long3/ObjectUtils$MCc;
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     .prologue
     .line 63
-    new-instance v0, Lorg/apache/commons/long3/ObjectUtils$ICc;
+    new-instance v0, Lorg/apache/commons/long3/ObjectUtils$MCc;
 
-    invoke-direct {v0}, Lorg/apache/commons/long3/ObjectUtils$ICc;-><init>()V
+    invoke-direct {v0}, Lorg/apache/commons/long3/ObjectUtils$MCc;-><init>()V
 
-    sput-object v0, Lorg/apache/commons/long3/ObjectUtils;->mICca:Lorg/apache/commons/long3/ObjectUtils$ICc;
+    sput-object v0, Lorg/apache/commons/long3/ObjectUtils;->mMCca:Lorg/apache/commons/long3/ObjectUtils$MCc;
 
     return-void
 .end method

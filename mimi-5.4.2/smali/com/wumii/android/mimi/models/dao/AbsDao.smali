@@ -75,7 +75,7 @@
 
     invoke-virtual {v0, p0, p1}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
     .line 46
     sget-object v1, Lcom/wumii/android/mimi/models/dao/AbsDao;->logger:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$MCg;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -122,7 +122,7 @@
 
     invoke-virtual {v0, p0, p1}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
@@ -137,7 +137,7 @@
     .line 28
     sget-object v1, Lcom/wumii/android/mimi/models/dao/AbsDao;->logger:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$MCg;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -167,7 +167,7 @@
 
     invoke-virtual {v0, p0}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
@@ -182,7 +182,7 @@
     .line 37
     sget-object v1, Lcom/wumii/android/mimi/models/dao/AbsDao;->logger:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$MCg;->toString()Ljava/lang/String;
 
     move-result-object v2
 

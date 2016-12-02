@@ -15,7 +15,7 @@
         value = {
             "Ljava/util/SortedSet",
             "<",
-            "Lcom/google/analytics/tracking/android/GAUsage$ICan;",
+            "Lcom/google/analytics/tracking/android/GAUsage$MCan;",
             ">;"
         }
     .end annotation
@@ -81,7 +81,7 @@
 
 
 # virtual methods
-.method public declared-synchronized a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+.method public declared-synchronized a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
     .locals 3
 
     .prologue
@@ -103,7 +103,7 @@
 
     const-string/jumbo v1, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
 
-    invoke-virtual {p1}, Lcom/google/analytics/tracking/android/GAUsage$ICan;->ordinal()I
+    invoke-virtual {p1}, Lcom/google/analytics/tracking/android/GAUsage$MCan;->ordinal()I
 
     move-result v2
 
@@ -192,7 +192,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    check-cast v0, Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
     .line 149
     iget-object v5, p0, Lcom/google/analytics/tracking/android/GAUsage;->mSortedSeta:Ljava/util/SortedSet;
@@ -200,7 +200,7 @@
     invoke-interface {v5, v0}, Ljava/util/SortedSet;->remove(Ljava/lang/Object;)Z
 
     .line 150
-    invoke-virtual {v0}, Lcom/google/analytics/tracking/android/GAUsage$ICan;->ordinal()I
+    invoke-virtual {v0}, Lcom/google/analytics/tracking/android/GAUsage$MCan;->ordinal()I
 
     move-result v5
 
@@ -228,7 +228,7 @@
     :cond_0
     const/4 v5, 0x1
 
-    invoke-virtual {v0}, Lcom/google/analytics/tracking/android/GAUsage$ICan;->ordinal()I
+    invoke-virtual {v0}, Lcom/google/analytics/tracking/android/GAUsage$MCan;->ordinal()I
 
     move-result v0
 

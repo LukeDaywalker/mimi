@@ -5,13 +5,13 @@
 # instance fields
 .field isZs:Z
 
-.field protected listener:Lcom/baidu/mapapi/map/Overlay$ICa;
+.field protected listener:Lcom/baidu/mapapi/map/Overlay$MCa;
 
 .field mBundlet:Landroid/os/Bundle;
 
-.field mICfq:Lcom/baidu/platform/comapi/map/ICf;
-
 .field mIr:I
+
+.field mMCfq:Lcom/baidu/platform/comapi/map/MCf;
 
 .field mStringp:Ljava/lang/String;
 
@@ -203,9 +203,9 @@
 
     const-string/jumbo v1, "type"
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Overlay;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Overlay;->mMCfq:Lcom/baidu/platform/comapi/map/MCf;
 
-    invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
+    invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/MCf;->ordinal()I
 
     move-result v2
 
@@ -225,9 +225,9 @@
 
     const-string/jumbo v0, "type"
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Overlay;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Overlay;->mMCfq:Lcom/baidu/platform/comapi/map/MCf;
 
-    invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
+    invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/MCf;->ordinal()I
 
     move-result v1
 
@@ -285,9 +285,9 @@
 .method public remove()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$MCa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->a(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$MCa;->a(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -305,9 +305,9 @@
 
     iput-boolean p1, p0, Lcom/baidu/mapapi/map/Overlay;->isZs:Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$MCa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$MCa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -317,9 +317,9 @@
 
     iput p1, p0, Lcom/baidu/mapapi/map/Overlay;->mIr:I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$MCa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$MCa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method

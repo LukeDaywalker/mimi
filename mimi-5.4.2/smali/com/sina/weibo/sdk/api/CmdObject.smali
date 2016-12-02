@@ -26,9 +26,9 @@
 
     .prologue
     .line 34
-    new-instance v0, Lcom/sina/weibo/sdk/api/CmdObject$ICa;
+    new-instance v0, Lcom/sina/weibo/sdk/api/CmdObject$MCa;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/CmdObject$ICa;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/CmdObject$MCa;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/CmdObject;->CREATOR:Landroid/os/Parcelable$Creator;
 

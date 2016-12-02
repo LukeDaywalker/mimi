@@ -60,11 +60,11 @@
 
     .prologue
     .line 58
-    invoke-virtual {p0}, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;->j_()Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    invoke-virtual {p0}, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;->j_()Lio/fabric/sdk/android/services/concurrency/AsyncTask$MCj;
 
     move-result-object v0
 
-    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mICja:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$MCj;->mMCja:Lio/fabric/sdk/android/services/concurrency/AsyncTask$MCj;
 
     if-eq v0, v1, :cond_0
 
@@ -124,9 +124,9 @@
 
     .prologue
     .line 42
-    new-instance v0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;
+    new-instance v0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$MCq;
 
-    invoke-direct {v0, p1, p0}, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;-><init>(Ljava/util/concurrent/Executor;Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;)V
+    invoke-direct {v0, p1, p0}, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$MCq;-><init>(Ljava/util/concurrent/Executor;Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;)V
 
     .line 43
     invoke-super {p0, v0, p2}, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->a(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Lio/fabric/sdk/android/services/concurrency/AsyncTask;

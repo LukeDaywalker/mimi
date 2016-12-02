@@ -131,11 +131,11 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 42
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->b(Lcom/wumii/android/mimi/models/entities/survey/Survey;)V
@@ -146,13 +146,13 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/SurveyDao;->b(Lcom/wumii/android/mimi/models/entities/survey/Survey;)V
 
     .line 45
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 46
     return-void

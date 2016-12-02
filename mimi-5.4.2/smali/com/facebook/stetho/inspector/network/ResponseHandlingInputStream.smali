@@ -243,9 +243,9 @@
     :try_start_3
     iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;->mMCfc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;
 
-    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;->mMCgc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -265,7 +265,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v2, v3, v0}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;Ljava/lang/String;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -364,9 +364,9 @@
     .line 262
     iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;->mMCfc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;->mMCgc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -386,7 +386,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;Ljava/lang/String;)V
 
     .line 268
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->b()V
@@ -482,9 +482,9 @@
     .line 174
     iget-object v2, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
-    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;->mMCfc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;
 
-    sget-object v4, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v4, Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;->mMCgc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -526,7 +526,7 @@
 
     move-result-object v0
 
-    invoke-static {v2, v3, v4, v0}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;Ljava/lang/String;)V
+    invoke-static {v2, v3, v4, v0}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

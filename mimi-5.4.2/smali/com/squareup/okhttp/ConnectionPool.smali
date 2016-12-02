@@ -163,9 +163,9 @@
     iput-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->mExecutore:Ljava/util/concurrent/Executor;
 
     .line 95
-    new-instance v0, Lcom/squareup/okhttp/ConnectionPool$ICs;
+    new-instance v0, Lcom/squareup/okhttp/ConnectionPool$MCs;
 
-    invoke-direct {v0, p0}, Lcom/squareup/okhttp/ConnectionPool$ICs;-><init>(Lcom/squareup/okhttp/ConnectionPool;)V
+    invoke-direct {v0, p0}, Lcom/squareup/okhttp/ConnectionPool$MCs;-><init>(Lcom/squareup/okhttp/ConnectionPool;)V
 
     iput-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->mRunnablef:Ljava/lang/Runnable;
 

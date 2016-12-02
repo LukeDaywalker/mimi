@@ -6,8 +6,6 @@
 # static fields
 .field private static mArrayBg:[B
 
-.field private static mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
-
 .field private static mIc:I
 
 .field private static mId:I
@@ -17,6 +15,8 @@
 .field private static mIf:I
 
 .field private static final mLoggera:Lorg/slf4j/Logger;
+
+.field private static mMCab:Lcom/hikvh/media/amr/AmrEncoder$MCa;
 
 
 # direct methods
@@ -34,9 +34,9 @@
     sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mLoggera:Lorg/slf4j/Logger;
 
     .line 29
-    sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mICah:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$MCa;->mMCah:Lcom/hikvh/media/amr/AmrEncoder$MCa;
 
-    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mMCab:Lcom/hikvh/media/amr/AmrEncoder$MCa;
 
     .line 30
     const/4 v0, 0x0
@@ -298,9 +298,9 @@
     new-array v4, v4, [B
 
     .line 88
-    sget-object v5, Lcom/wumii/android/soundtouch/AudioConvertor;->mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v5, Lcom/wumii/android/soundtouch/AudioConvertor;->mMCab:Lcom/hikvh/media/amr/AmrEncoder$MCa;
 
-    invoke-virtual {v5}, Lcom/hikvh/media/amr/AmrEncoder$ICa;->ordinal()I
+    invoke-virtual {v5}, Lcom/hikvh/media/amr/AmrEncoder$MCa;->ordinal()I
 
     move-result v5
 

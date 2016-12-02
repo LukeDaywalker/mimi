@@ -40,14 +40,14 @@
     return v0
 .end method
 
-.method protected c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
+.method protected c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$MCy;
     .locals 1
 
     .prologue
     .line 38
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$MCx;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$MCx;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;)V
 
     return-object v0
 .end method

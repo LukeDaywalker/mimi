@@ -217,9 +217,9 @@
     if-nez v0, :cond_0
 
     .line 86
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$ICbz;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$MCbz;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$ICbz;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$MCbz;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mRunnablei:Ljava/lang/Runnable;
 

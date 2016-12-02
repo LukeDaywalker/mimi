@@ -21,7 +21,7 @@
     return-void
 .end method
 
-.method private a(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;)V
+.method private a(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$MCag;)V
     .locals 4
 
     .prologue
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$MCag;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -44,9 +44,9 @@
     if-nez v1, :cond_0
 
     .line 35
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICaf;->mArrayIa:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$MCaf;->mArrayIa:[I
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->ordinal()I
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$MCag;->ordinal()I
 
     move-result v2
 
@@ -70,7 +70,7 @@
 
     const v2, 0x7f0b0054
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$MCag;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -243,10 +243,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;
+    check-cast v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$MCag;
 
     .line 24
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;)V
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$MCag;)V
 
     .line 25
     return-void

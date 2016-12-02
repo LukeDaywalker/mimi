@@ -51,33 +51,33 @@
 
     const-string/jumbo v1, "organization/suggestions"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 46
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 47
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group/joinable"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 48
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group/my"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 50
-    new-instance v0, Lcom/wumii/android/mimi/manager/GroupListManager$ICas;
+    new-instance v0, Lcom/wumii/android/mimi/manager/GroupListManager$MCas;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/GroupListManager$ICas;-><init>(Lcom/wumii/android/mimi/manager/GroupListManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/GroupListManager$MCas;-><init>(Lcom/wumii/android/mimi/manager/GroupListManager;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mTypeReferencei:Lcom/fasterxml/jackson/core/type/TypeReference;
 
@@ -590,7 +590,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/group/my"
 
@@ -598,7 +598,7 @@
 
     const/4 v5, 0x0
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -702,13 +702,13 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "chat/group/joinable"
 
     const-string/jumbo v3, "chat/group/joinable"
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 

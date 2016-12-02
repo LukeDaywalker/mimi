@@ -10,8 +10,6 @@
 
 .field private mEditTextb:Landroid/widget/EditText;
 
-.field private mICff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
-
 .field private mListe:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -22,6 +20,8 @@
         }
     .end annotation
 .end field
+
+.field private mMCff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCf;
 
 .field private mTextViewa:Landroid/widget/TextView;
 
@@ -154,12 +154,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCf;
     .locals 1
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mICff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mMCff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCf;
 
     return-object v0
 .end method
@@ -176,12 +176,12 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCf;)V
     .locals 0
 
     .prologue
     .line 137
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mICff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mMCff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCf;
 
     .line 138
     return-void
@@ -192,11 +192,11 @@
 
     .prologue
     .line 131
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafj:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v1, "\u53d6\u6d88\u65b0\u624b\u63d0\u95ee\u6d6e\u5c42\u7684\u6b21\u6570"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 132
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->dismiss()V
@@ -270,9 +270,9 @@
     check-cast v0, Landroid/widget/Button;
 
     .line 61
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICb;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCb;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICb;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCb;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -284,27 +284,27 @@
     .line 77
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mEditTextb:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICc;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCc;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICc;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCc;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 89
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mEditTextb:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICd;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCd;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICd;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCd;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mButtonc:Landroid/widget/Button;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICe;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCe;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICe;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$MCe;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

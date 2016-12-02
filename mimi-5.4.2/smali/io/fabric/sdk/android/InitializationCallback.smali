@@ -24,11 +24,11 @@
 
     .prologue
     .line 25
-    new-instance v0, Lio/fabric/sdk/android/InitializationCallback$ICn;
+    new-instance v0, Lio/fabric/sdk/android/InitializationCallback$MCn;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lio/fabric/sdk/android/InitializationCallback$ICn;-><init>(Lio/fabric/sdk/android/InitializationCallback$ICm;)V
+    invoke-direct {v0, v1}, Lio/fabric/sdk/android/InitializationCallback$MCn;-><init>(Lio/fabric/sdk/android/InitializationCallback$MCm;)V
 
     sput-object v0, Lio/fabric/sdk/android/InitializationCallback;->mInitializationCallbackd:Lio/fabric/sdk/android/InitializationCallback;
 

@@ -84,9 +84,9 @@
     if-nez v0, :cond_0
 
     .line 663
-    new-instance v0, Lcom/crashlytics/android/core/CodedOutputStream$ICg;
+    new-instance v0, Lcom/crashlytics/android/core/CodedOutputStream$MCg;
 
-    invoke-direct {v0}, Lcom/crashlytics/android/core/CodedOutputStream$ICg;-><init>()V
+    invoke-direct {v0}, Lcom/crashlytics/android/core/CodedOutputStream$MCg;-><init>()V
 
     throw v0
 

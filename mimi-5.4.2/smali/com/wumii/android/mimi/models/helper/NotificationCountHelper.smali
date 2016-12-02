@@ -109,9 +109,9 @@
 
     const-string/jumbo v1, "notifications_count"
 
-    new-instance v2, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper$ICx;
+    new-instance v2, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper$MCx;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper$ICx;-><init>(Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper$MCx;-><init>(Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 

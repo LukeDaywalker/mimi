@@ -64,7 +64,7 @@
     return-void
 .end method
 
-.method protected static a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+.method protected static a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
     .locals 3
 
     .prologue
@@ -80,7 +80,7 @@
 
     const v2, 0x7f02012d
 
-    invoke-virtual {v0, v1, v2, p2}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->a(Ljava/lang/String;ILcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {v0, v1, v2, p2}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->a(Ljava/lang/String;ILcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 54
     :goto_0
@@ -92,7 +92,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;-><init>(Landroid/app/Activity;)V
 
-    invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     goto :goto_0
 .end method
@@ -115,11 +115,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICc;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCc;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICc;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCc;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 115
     return-void
@@ -191,16 +191,16 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICb;
+    new-instance v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCb;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICb;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCb;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Lcom/wumii/android/mimi/util/AppConfigManager$ICb;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Lcom/wumii/android/mimi/util/AppConfigManager$MCb;)V
 
     goto :goto_0
 .end method
 
-.method protected a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+.method protected a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
     .locals 3
 
     .prologue
@@ -218,7 +218,7 @@
 
     const v2, 0x7f02012d
 
-    invoke-virtual {v0, v1, v2, p2}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->a(Ljava/lang/String;ILcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {v0, v1, v2, p2}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->a(Ljava/lang/String;ILcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 46
     :goto_0
@@ -232,7 +232,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;-><init>(Landroid/app/Activity;)V
 
-    invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     goto :goto_0
 .end method
@@ -260,11 +260,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCe;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCe;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 131
     return-void
@@ -279,11 +279,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;
+    new-instance v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCg;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCg;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 141
     return-void
@@ -298,11 +298,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICh;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCh;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 150
     return-void
@@ -321,11 +321,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCi;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$MCi;-><init>(Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 165
     return-void

@@ -13,11 +13,11 @@
 
     .prologue
     .line 36
-    new-instance v0, Lu/aly/TBaseHelper$ICfv;
+    new-instance v0, Lu/aly/TBaseHelper$MCfv;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lu/aly/TBaseHelper$ICfv;-><init>(Lu/aly/TBaseHelper$ICfu;)V
+    invoke-direct {v0, v1}, Lu/aly/TBaseHelper$MCfv;-><init>(Lu/aly/TBaseHelper$MCfu;)V
 
     sput-object v0, Lu/aly/TBaseHelper;->mComparatora:Ljava/util/Comparator;
 

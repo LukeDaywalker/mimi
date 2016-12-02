@@ -119,7 +119,7 @@
 
     invoke-virtual {v0, v3}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
@@ -181,20 +181,20 @@
     .line 64
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v4, "statistics/events"
 
     const-string/jumbo v5, "reportEvents"
 
-    invoke-direct {v0, v3, v4, v5, v1}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v0, v3, v4, v5, v1}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 65
-    new-instance v1, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;
+    new-instance v1, Lcom/wumii/android/mimi/manager/AppEventManager$MCc;
 
-    invoke-direct {v1, p0, v2}, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;-><init>(Lcom/wumii/android/mimi/manager/AppEventManager;Ljava/util/List;)V
+    invoke-direct {v1, p0, v2}, Lcom/wumii/android/mimi/manager/AppEventManager$MCc;-><init>(Lcom/wumii/android/mimi/manager/AppEventManager;Ljava/util/List;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/manager/AppEventManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/manager/AppEventManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     goto :goto_1
 .end method

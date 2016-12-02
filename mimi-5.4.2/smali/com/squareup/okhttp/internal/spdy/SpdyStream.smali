@@ -10,14 +10,6 @@
 # instance fields
 .field private mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
-.field final mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
-
-.field private final mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
-
-.field private final mICasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
-
-.field private final mICask:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
-
 .field private final mIe:I
 
 .field mJa:J
@@ -45,6 +37,14 @@
         }
     .end annotation
 .end field
+
+.field final mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
+
+.field private final mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
+
+.field private final mMCasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
+
+.field private final mMCask:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
 .field private final mSpdyConnectionf:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
@@ -104,18 +104,18 @@
     iput-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mJa:J
 
     .line 65
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
-    invoke-direct {v0, p0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;-><init>(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)V
+    invoke-direct {v0, p0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;-><init>(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
     .line 66
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
-    invoke-direct {v0, p0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;-><init>(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)V
+    invoke-direct {v0, p0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;-><init>(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICask:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCask:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
     .line 73
     iput-object v4, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mErrorCodel:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -163,7 +163,7 @@
     iput-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mJb:J
 
     .line 83
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
     iget-object v1, p2, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->mSettingse:Lcom/squareup/okhttp/internal/spdy/Settings;
 
@@ -174,26 +174,26 @@
 
     int-to-long v2, v1
 
-    invoke-direct {v0, p0, v2, v3, v4}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;-><init>(Lcom/squareup/okhttp/internal/spdy/SpdyStream;JLcom/squareup/okhttp/internal/spdy/SpdyStream$ICap;)V
+    invoke-direct {v0, p0, v2, v3, v4}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;-><init>(Lcom/squareup/okhttp/internal/spdy/SpdyStream;JLcom/squareup/okhttp/internal/spdy/SpdyStream$MCap;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
     .line 85
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
-    invoke-direct {v0, p0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;-><init>(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)V
+    invoke-direct {v0, p0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;-><init>(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
     .line 86
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
-    invoke-static {v0, p4}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;Z)Z
+    invoke-static {v0, p4}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;Z)Z
 
     .line 87
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
-    invoke-static {v0, p3}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;Z)Z
+    invoke-static {v0, p3}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;Z)Z
 
     .line 88
     iput-object p5, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mListg:Ljava/util/List;
@@ -222,12 +222,12 @@
     return v0
 .end method
 
-.method static synthetic c(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+.method static synthetic c(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
     return-object v0
 .end method
@@ -284,17 +284,17 @@
 
     .line 242
     :cond_1
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
-    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;)Z
+    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
-    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;)Z
+    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;)Z
 
     move-result v1
 
@@ -361,12 +361,12 @@
     return-void
 .end method
 
-.method static synthetic g(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+.method static synthetic g(Lcom/squareup/okhttp/internal/spdy/SpdyStream;)Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICask:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCask:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
     return-object v0
 .end method
@@ -408,33 +408,33 @@
 
     .line 451
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
-    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;)Z
+    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;)Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
-    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;)Z
+    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
-    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;)Z
+    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
-    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;)Z
+    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;)Z
 
     move-result v0
 
@@ -503,9 +503,9 @@
 
     .prologue
     .line 572
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
-    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;)Z
+    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;)Z
 
     move-result v0
 
@@ -522,9 +522,9 @@
 
     .line 574
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
-    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;)Z
+    invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;)Z
 
     move-result v0
 
@@ -837,11 +837,11 @@
 
     .line 285
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
     int-to-long v2, p2
 
-    invoke-virtual {v0, p1, v2, v3}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->a(Lokio/BufferedSource;J)V
+    invoke-virtual {v0, p1, v2, v3}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;->a(Lokio/BufferedSource;J)V
 
     .line 286
     return-void
@@ -899,35 +899,35 @@
     .line 109
     :cond_1
     :try_start_1
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
-    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;)Z
+    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
-    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;)Z
+    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;)Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
     :cond_2
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
     .line 110
-    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;)Z
+    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;)Z
 
     move-result v1
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
-    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;)Z
+    invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;->b(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;)Z
 
     move-result v1
 
@@ -1048,9 +1048,9 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;->c()V
+    invoke-virtual {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;->c()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -1077,9 +1077,9 @@
     move-exception v0
 
     :try_start_2
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
-    invoke-virtual {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;->b()V
+    invoke-virtual {v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;->b()V
 
     throw v0
     :try_end_2
@@ -1096,9 +1096,9 @@
     .line 142
     :cond_0
     :try_start_3
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;->b()V
+    invoke-virtual {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;->b()V
 
     .line 144
     iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mListh:Ljava/util/List;
@@ -1150,7 +1150,7 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCasj:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCas;
 
     return-object v0
 .end method
@@ -1160,7 +1160,7 @@
 
     .prologue
     .line 195
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
     return-object v0
 .end method
@@ -1210,7 +1210,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 210
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICaq;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCaqc:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCaq;
 
     return-object v0
 .end method
@@ -1242,11 +1242,11 @@
 
     .line 292
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mICari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->mMCari:Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICar;Z)Z
+    invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;->a(Lcom/squareup/okhttp/internal/spdy/SpdyStream$MCar;Z)Z
 
     .line 293
     invoke-virtual {p0}, Lcom/squareup/okhttp/internal/spdy/SpdyStream;->b()Z

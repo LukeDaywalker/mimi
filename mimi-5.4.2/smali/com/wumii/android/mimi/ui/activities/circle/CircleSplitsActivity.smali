@@ -145,9 +145,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mCircleTypen:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
     .line 36
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$ICl;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$MCl;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$ICl;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$MCl;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mOnSharedPreferenceChangeListenero:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 

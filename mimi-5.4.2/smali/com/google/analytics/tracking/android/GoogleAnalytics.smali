@@ -303,9 +303,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICanac:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCanac:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 136
     iput-boolean p1, p0, Lcom/google/analytics/tracking/android/GoogleAnalytics;->isZa:Z
@@ -323,9 +323,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICanad:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCanad:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 144
     iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GoogleAnalytics;->isZa:Z
@@ -342,9 +342,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICanR:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCanR:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 275
     iget-object v0, p0, Lcom/google/analytics/tracking/android/GoogleAnalytics;->mBooleand:Ljava/lang/Boolean;

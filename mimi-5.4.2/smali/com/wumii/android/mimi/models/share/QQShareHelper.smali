@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field private mICbc:Lcom/tencent/tauth/Pro$ICb;
+.field private mMCbc:Lcom/tencent/tauth/Pro$MCb;
 
 
 # direct methods
@@ -141,22 +141,22 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/tencent/connect/b/Pro$ICs;->a(Ljava/lang/String;Landroid/content/Context;)Lcom/tencent/connect/b/Pro$ICs;
+    invoke-static {v2, v3}, Lcom/tencent/connect/b/Pro$MCs;->a(Ljava/lang/String;Landroid/content/Context;)Lcom/tencent/connect/b/Pro$MCs;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$ICs;->a()Lcom/tencent/connect/b/Pro$ICt;
+    invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$MCs;->a()Lcom/tencent/connect/b/Pro$MCt;
 
     move-result-object v2
 
-    invoke-direct {v1, p5, v2}, Lcom/tencent/connect/c/Pro;-><init>(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+    invoke-direct {v1, p5, v2}, Lcom/tencent/connect/c/Pro;-><init>(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
 
     .line 61
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/QQShareHelper;->b()Lcom/tencent/tauth/Pro$ICb;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/QQShareHelper;->b()Lcom/tencent/tauth/Pro$MCb;
 
     move-result-object v2
 
-    invoke-virtual {v1, p5, v0, v2}, Lcom/tencent/connect/c/Pro;->a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/Pro$ICb;)V
+    invoke-virtual {v1, p5, v0, v2}, Lcom/tencent/connect/c/Pro;->a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/Pro$MCb;)V
 
     goto :goto_0
 .end method
@@ -166,7 +166,7 @@
 
     .prologue
     .line 40
-    invoke-static {p1}, Lcom/tencent/c/Pro$ICq;->a(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/tencent/c/Pro$MCq;->a(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -185,25 +185,25 @@
     goto :goto_0
 .end method
 
-.method public b()Lcom/tencent/tauth/Pro$ICb;
+.method public b()Lcom/tencent/tauth/Pro$MCb;
     .locals 1
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mICbc:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mMCbc:Lcom/tencent/tauth/Pro$MCb;
 
     if-nez v0, :cond_0
 
     .line 90
-    new-instance v0, Lcom/wumii/android/mimi/models/share/QQShareHelper$ICah;
+    new-instance v0, Lcom/wumii/android/mimi/models/share/QQShareHelper$MCah;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/share/QQShareHelper$ICah;-><init>(Lcom/wumii/android/mimi/models/share/QQShareHelper;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/share/QQShareHelper$MCah;-><init>(Lcom/wumii/android/mimi/models/share/QQShareHelper;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mICbc:Lcom/tencent/tauth/Pro$ICb;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mMCbc:Lcom/tencent/tauth/Pro$MCb;
 
     .line 106
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mICbc:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mMCbc:Lcom/tencent/tauth/Pro$MCb;
 
     return-object v0
 .end method
@@ -276,7 +276,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 83
-    new-instance v1, Lcom/tencent/connect/c/Pro$ICd;
+    new-instance v1, Lcom/tencent/connect/c/Pro$MCd;
 
     const-string/jumbo v2, "101041381"
 
@@ -284,22 +284,22 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/tencent/connect/b/Pro$ICs;->a(Ljava/lang/String;Landroid/content/Context;)Lcom/tencent/connect/b/Pro$ICs;
+    invoke-static {v2, v3}, Lcom/tencent/connect/b/Pro$MCs;->a(Ljava/lang/String;Landroid/content/Context;)Lcom/tencent/connect/b/Pro$MCs;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$ICs;->a()Lcom/tencent/connect/b/Pro$ICt;
+    invoke-virtual {v2}, Lcom/tencent/connect/b/Pro$MCs;->a()Lcom/tencent/connect/b/Pro$MCt;
 
     move-result-object v2
 
-    invoke-direct {v1, p5, v2}, Lcom/tencent/connect/c/Pro$ICd;-><init>(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+    invoke-direct {v1, p5, v2}, Lcom/tencent/connect/c/Pro$MCd;-><init>(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
 
     .line 84
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/QQShareHelper;->b()Lcom/tencent/tauth/Pro$ICb;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/share/QQShareHelper;->b()Lcom/tencent/tauth/Pro$MCb;
 
     move-result-object v2
 
-    invoke-virtual {v1, p5, v0, v2}, Lcom/tencent/connect/c/Pro$ICd;->a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/Pro$ICb;)V
+    invoke-virtual {v1, p5, v0, v2}, Lcom/tencent/connect/c/Pro$MCd;->a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/Pro$MCb;)V
 
     goto :goto_0
 .end method

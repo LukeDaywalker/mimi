@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/squareup/okhttp/Request$ICap;)V
+.method private constructor <init>(Lcom/squareup/okhttp/Request$MCap;)V
     .locals 1
 
     .prologue
@@ -30,45 +30,45 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 40
-    invoke-static {p1}, Lcom/squareup/okhttp/Request$ICap;->a(Lcom/squareup/okhttp/Request$ICap;)Lcom/squareup/okhttp/HttpUrl;
+    invoke-static {p1}, Lcom/squareup/okhttp/Request$MCap;->a(Lcom/squareup/okhttp/Request$MCap;)Lcom/squareup/okhttp/HttpUrl;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Request;->mHttpUrla:Lcom/squareup/okhttp/HttpUrl;
 
     .line 41
-    invoke-static {p1}, Lcom/squareup/okhttp/Request$ICap;->b(Lcom/squareup/okhttp/Request$ICap;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/squareup/okhttp/Request$MCap;->b(Lcom/squareup/okhttp/Request$MCap;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Request;->mStringb:Ljava/lang/String;
 
     .line 42
-    invoke-static {p1}, Lcom/squareup/okhttp/Request$ICap;->c(Lcom/squareup/okhttp/Request$ICap;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-static {p1}, Lcom/squareup/okhttp/Request$MCap;->c(Lcom/squareup/okhttp/Request$MCap;)Lcom/squareup/okhttp/Headers$MCab;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Headers$MCab;->a()Lcom/squareup/okhttp/Headers;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Request;->mHeadersc:Lcom/squareup/okhttp/Headers;
 
     .line 43
-    invoke-static {p1}, Lcom/squareup/okhttp/Request$ICap;->d(Lcom/squareup/okhttp/Request$ICap;)Lcom/squareup/okhttp/RequestBody;
+    invoke-static {p1}, Lcom/squareup/okhttp/Request$MCap;->d(Lcom/squareup/okhttp/Request$MCap;)Lcom/squareup/okhttp/RequestBody;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Request;->mRequestBodyd:Lcom/squareup/okhttp/RequestBody;
 
     .line 44
-    invoke-static {p1}, Lcom/squareup/okhttp/Request$ICap;->e(Lcom/squareup/okhttp/Request$ICap;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/squareup/okhttp/Request$MCap;->e(Lcom/squareup/okhttp/Request$MCap;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1}, Lcom/squareup/okhttp/Request$ICap;->e(Lcom/squareup/okhttp/Request$ICap;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/squareup/okhttp/Request$MCap;->e(Lcom/squareup/okhttp/Request$MCap;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -85,12 +85,12 @@
     goto :goto_0
 .end method
 
-.method synthetic constructor <init>(Lcom/squareup/okhttp/Request$ICap;Lcom/squareup/okhttp/Request$ICao;)V
+.method synthetic constructor <init>(Lcom/squareup/okhttp/Request$MCap;Lcom/squareup/okhttp/Request$MCao;)V
     .locals 0
 
     .prologue
     .line 28
-    invoke-direct {p0, p1}, Lcom/squareup/okhttp/Request;-><init>(Lcom/squareup/okhttp/Request$ICap;)V
+    invoke-direct {p0, p1}, Lcom/squareup/okhttp/Request;-><init>(Lcom/squareup/okhttp/Request$MCap;)V
 
     return-void
 .end method
@@ -273,16 +273,16 @@
     return-object v0
 .end method
 
-.method public g()Lcom/squareup/okhttp/Request$ICap;
+.method public g()Lcom/squareup/okhttp/Request$MCap;
     .locals 2
 
     .prologue
     .line 94
-    new-instance v0, Lcom/squareup/okhttp/Request$ICap;
+    new-instance v0, Lcom/squareup/okhttp/Request$MCap;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/squareup/okhttp/Request$ICap;-><init>(Lcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Request$ICao;)V
+    invoke-direct {v0, p0, v1}, Lcom/squareup/okhttp/Request$MCap;-><init>(Lcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Request$MCao;)V
 
     return-object v0
 .end method

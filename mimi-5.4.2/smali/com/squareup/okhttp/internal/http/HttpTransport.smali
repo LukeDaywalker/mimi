@@ -296,14 +296,14 @@
     return-void
 .end method
 
-.method public b()Lcom/squareup/okhttp/Response$ICau;
+.method public b()Lcom/squareup/okhttp/Response$MCau;
     .locals 1
 
     .prologue
     .line 80
     iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpTransport;->mHttpConnectionb:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->g()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->g()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 

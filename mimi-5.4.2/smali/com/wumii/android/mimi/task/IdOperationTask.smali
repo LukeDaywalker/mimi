@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private mICank:Lcom/wumii/android/mimi/task/IdOperationTask$ICan;
+.field private mMCank:Lcom/wumii/android/mimi/task/IdOperationTask$MCan;
 
 .field private mStringa:Ljava/lang/String;
 
@@ -50,9 +50,9 @@
     invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/HttpAsyncTask;->a(IILjava/lang/String;)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mICank:Lcom/wumii/android/mimi/task/IdOperationTask$ICan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mMCank:Lcom/wumii/android/mimi/task/IdOperationTask$MCan;
 
-    invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/task/IdOperationTask$ICan;->a(I)V
+    invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/task/IdOperationTask$MCan;->a(I)V
 
     .line 47
     return-void
@@ -80,7 +80,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mICank:Lcom/wumii/android/mimi/task/IdOperationTask$ICan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mMCank:Lcom/wumii/android/mimi/task/IdOperationTask$MCan;
 
     if-nez v0, :cond_1
 
@@ -91,14 +91,14 @@
 
     .line 40
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mICank:Lcom/wumii/android/mimi/task/IdOperationTask$ICan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mMCank:Lcom/wumii/android/mimi/task/IdOperationTask$MCan;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/task/IdOperationTask$ICan;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/task/IdOperationTask$MCan;->b()V
 
     goto :goto_0
 .end method
 
-.method public a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/task/IdOperationTask$ICan;)V
+.method public a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/task/IdOperationTask$MCan;)V
     .locals 0
 
     .prologue
@@ -112,7 +112,7 @@
     iput-object p2, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mStringd:Ljava/lang/String;
 
     .line 58
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mICank:Lcom/wumii/android/mimi/task/IdOperationTask$ICan;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/IdOperationTask;->mMCank:Lcom/wumii/android/mimi/task/IdOperationTask$MCan;
 
     .line 59
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/IdOperationTask;->j()V

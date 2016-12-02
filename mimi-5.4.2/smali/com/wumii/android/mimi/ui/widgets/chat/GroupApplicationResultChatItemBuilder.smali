@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private mICbd:Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;
+.field private mMCbd:Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$MCb;
 
 
 # direct methods
@@ -19,19 +19,19 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;)Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;)Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$MCb;
     .locals 1
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;->mICbd:Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;->mMCbd:Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$MCb;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method protected a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;)V
+.method protected a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$MCc;)V
     .locals 7
 
     .prologue
@@ -115,13 +115,13 @@
 
     move-result v1
 
-    const-class v4, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;
+    const-class v4, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$MCz;
 
     invoke-virtual {v3, v2, v1, v4}, Landroid/text/SpannableStringBuilder;->getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, [Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;
+    check-cast v1, [Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$MCz;
 
     .line 45
     array-length v4, v1
@@ -170,7 +170,7 @@
     if-eqz v2, :cond_2
 
     .line 52
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$MCz;
 
     invoke-virtual {v1}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
 
@@ -180,7 +180,7 @@
 
     move-result-object v5
 
-    invoke-direct {v2, p0, v4, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, p0, v4, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$MCz;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 53
     invoke-virtual {v1}, Ljava/util/regex/Matcher;->start()I
@@ -199,12 +199,12 @@
 
     .line 56
     :cond_2
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;->mTextViewa:Landroid/widget/TextView;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$MCc;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 57
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;->mTextViewa:Landroid/widget/TextView;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$MCc;->mTextViewa:Landroid/widget/TextView;
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
@@ -216,12 +216,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$MCb;)V
     .locals 0
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;->mICbd:Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;->mMCbd:Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$MCb;
 
     .line 33
     return-void

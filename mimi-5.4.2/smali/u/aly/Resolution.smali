@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Lu/aly/Resolution;",
-        "Lu/aly/Resolution$ICdt;",
+        "Lu/aly/Resolution$MCdt;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Lu/aly/Resolution$ICdt;",
+            "Lu/aly/Resolution$MCdt;",
             "Lu/aly/FieldMetaData;",
             ">;"
         }
@@ -118,9 +118,9 @@
 
     const-class v1, Lu/aly/StandardScheme;
 
-    new-instance v2, Lu/aly/Resolution$ICdq;
+    new-instance v2, Lu/aly/Resolution$MCdq;
 
-    invoke-direct {v2, v3}, Lu/aly/Resolution$ICdq;-><init>(Lu/aly/Resolution$ICdo;)V
+    invoke-direct {v2, v3}, Lu/aly/Resolution$MCdq;-><init>(Lu/aly/Resolution$MCdo;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -129,21 +129,21 @@
 
     const-class v1, Lu/aly/TupleScheme;
 
-    new-instance v2, Lu/aly/Resolution$ICds;
+    new-instance v2, Lu/aly/Resolution$MCds;
 
-    invoke-direct {v2, v3}, Lu/aly/Resolution$ICds;-><init>(Lu/aly/Resolution$ICdo;)V
+    invoke-direct {v2, v3}, Lu/aly/Resolution$MCds;-><init>(Lu/aly/Resolution$MCdo;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 114
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Lu/aly/Resolution$ICdt;
+    const-class v1, Lu/aly/Resolution$MCdt;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 115
-    sget-object v1, Lu/aly/Resolution$ICdt;->mICdta:Lu/aly/Resolution$ICdt;
+    sget-object v1, Lu/aly/Resolution$MCdt;->mMCdta:Lu/aly/Resolution$MCdt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -158,7 +158,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 117
-    sget-object v1, Lu/aly/Resolution$ICdt;->mICdtb:Lu/aly/Resolution$ICdt;
+    sget-object v1, Lu/aly/Resolution$MCdt;->mMCdtb:Lu/aly/Resolution$MCdt;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

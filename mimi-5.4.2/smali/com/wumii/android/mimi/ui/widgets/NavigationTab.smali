@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
-
 .field private mImageViewb:Landroid/widget/ImageView;
+
+.field private mMCaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
 .field private mTextViewc:Landroid/widget/TextView;
 
@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)V
+.method public constructor <init>(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;)V
     .locals 0
 
     .prologue
@@ -22,7 +22,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 46
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mMCaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
     .line 47
     return-void
@@ -136,9 +136,9 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mMCaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
-    iget v1, v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mIe:I
+    iget v1, v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->mIe:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -185,18 +185,18 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 78
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mMCaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)I
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 79
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mMCaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->b(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)I
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;->b(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;)I
 
     move-result v1
 
@@ -205,12 +205,12 @@
     goto :goto_0
 .end method
 
-.method public b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+.method public b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
     .locals 1
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mICaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->mMCaqd:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$MCaq;
 
     return-object v0
 .end method

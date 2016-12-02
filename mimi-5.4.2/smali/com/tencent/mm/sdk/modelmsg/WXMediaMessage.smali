@@ -91,7 +91,7 @@
 
     const-string/jumbo v2, "checkArgs fail, thumbData should not be null when send emoji"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -113,7 +113,7 @@
 
     const-string/jumbo v2, "checkArgs fail, thumbData is invalid"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -136,7 +136,7 @@
 
     const-string/jumbo v2, "checkArgs fail, title is invalid"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -159,7 +159,7 @@
 
     const-string/jumbo v2, "checkArgs fail, description is invalid"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -172,7 +172,7 @@
 
     const-string/jumbo v2, "checkArgs fail, mediaObject is null"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -195,7 +195,7 @@
 
     const-string/jumbo v2, "checkArgs fail, mediaTagName is too long"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -216,7 +216,7 @@
 
     const-string/jumbo v2, "checkArgs fail, messageAction is too long"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -237,7 +237,7 @@
 
     const-string/jumbo v2, "checkArgs fail, messageExt is too long"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -309,7 +309,7 @@
 
     const-string/jumbo v1, "put thumb failed"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

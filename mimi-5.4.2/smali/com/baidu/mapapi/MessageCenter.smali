@@ -14,7 +14,7 @@
 .method public static registMessage(ILandroid/os/Handler;)V
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/baidu/platform/comjni/engine/ICa;->a(ILandroid/os/Handler;)V
+    invoke-static {p0, p1}, Lcom/baidu/platform/comjni/engine/MCa;->a(ILandroid/os/Handler;)V
 
     return-void
 .end method
@@ -22,7 +22,7 @@
 .method public static unregistMessage(ILandroid/os/Handler;)V
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/baidu/platform/comjni/engine/ICa;->b(ILandroid/os/Handler;)V
+    invoke-static {p0, p1}, Lcom/baidu/platform/comjni/engine/MCa;->b(ILandroid/os/Handler;)V
 
     return-void
 .end method

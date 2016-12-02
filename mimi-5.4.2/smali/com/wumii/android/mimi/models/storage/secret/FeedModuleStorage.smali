@@ -186,9 +186,9 @@
     invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 54
-    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 55
     return-void

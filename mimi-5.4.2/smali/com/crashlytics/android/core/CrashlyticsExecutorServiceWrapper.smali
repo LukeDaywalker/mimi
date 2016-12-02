@@ -139,9 +139,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v1, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICu;
+    new-instance v1, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$MCu;
 
-    invoke-direct {v1, p0, p1}, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICu;-><init>(Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;Ljava/lang/Runnable;)V
+    invoke-direct {v1, p0, p1}, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$MCu;-><init>(Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;Ljava/lang/Runnable;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
     :try_end_0
@@ -193,9 +193,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v1, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICv;
+    new-instance v1, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$MCv;
 
-    invoke-direct {v1, p0, p1}, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICv;-><init>(Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;Ljava/util/concurrent/Callable;)V
+    invoke-direct {v1, p0, p1}, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$MCv;-><init>(Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;Ljava/util/concurrent/Callable;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
     :try_end_0

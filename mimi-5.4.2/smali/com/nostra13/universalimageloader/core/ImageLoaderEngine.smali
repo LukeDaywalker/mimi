@@ -311,9 +311,9 @@
     .line 69
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutord:Ljava/util/concurrent/Executor;
 
-    new-instance v1, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine$ICp;
+    new-instance v1, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine$MCp;
 
-    invoke-direct {v1, p0, p1}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine$ICp;-><init>(Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;)V
+    invoke-direct {v1, p0, p1}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine$MCp;-><init>(Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 

@@ -34,9 +34,9 @@
 
     .prologue
     .line 53
-    new-instance v0, Lcom/sina/weibo/sdk/api/MusicObject$ICc;
+    new-instance v0, Lcom/sina/weibo/sdk/api/MusicObject$MCc;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/MusicObject$ICc;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/MusicObject$MCc;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/MusicObject;->CREATOR:Landroid/os/Parcelable$Creator;
 

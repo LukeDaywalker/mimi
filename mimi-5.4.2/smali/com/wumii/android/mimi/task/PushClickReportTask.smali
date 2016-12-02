@@ -90,9 +90,9 @@
 
     const-string/jumbo v3, "cached_click_trackIds"
 
-    new-instance v4, Lcom/wumii/android/mimi/task/PushClickReportTask$ICbc;
+    new-instance v4, Lcom/wumii/android/mimi/task/PushClickReportTask$MCbc;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/task/PushClickReportTask$ICbc;-><init>(Lcom/wumii/android/mimi/task/PushClickReportTask;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/task/PushClickReportTask$MCbc;-><init>(Lcom/wumii/android/mimi/task/PushClickReportTask;)V
 
     invoke-virtual {v0, v3, v4}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 

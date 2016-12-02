@@ -190,11 +190,11 @@
 
     .prologue
     .line 103
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$MCc;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$MCc;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$MCc;->j()V
 
     .line 131
     return-void
@@ -239,9 +239,9 @@
     .line 48
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;->mEditTextn:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICb;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$MCb;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICb;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$MCb;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

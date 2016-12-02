@@ -26,27 +26,27 @@
     return-void
 .end method
 
-.method private a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;)Ljava/lang/String;
+.method private a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 268
     const-string/jumbo v0, "Content-Type"
 
-    invoke-interface {p1, v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {p1, v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static a(Lcom/facebook/stetho/inspector/network/NetworkPeerManager;Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;)Ljava/lang/String;
+.method private static a(Lcom/facebook/stetho/inspector/network/NetworkPeerManager;Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;)Ljava/lang/String;
     .locals 5
 
     .prologue
     .line 109
     :try_start_0
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;->g()[B
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;->g()[B
 
     move-result-object v1
 
@@ -71,9 +71,9 @@
     move-exception v0
 
     .line 114
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfb:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;->mMCfb:Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;->mMCgc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v1, v2, v0}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;Ljava/lang/String;)V
+    invoke-static {p0, v1, v2, v0}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;Ljava/lang/String;)V
 
     .line 120
     :cond_0
@@ -142,7 +142,7 @@
     throw v0
 .end method
 
-.method private static b(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;)Lorg/json/JSONObject;
+.method private static b(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;)Lorg/json/JSONObject;
     .locals 4
 
     .prologue
@@ -155,7 +155,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-interface {p0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;->a()I
+    invoke-interface {p0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;->a()I
 
     move-result v2
 
@@ -163,11 +163,11 @@
 
     .line 275
     :try_start_0
-    invoke-interface {p0, v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;->a(I)Ljava/lang/String;
+    invoke-interface {p0, v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;->a(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {p0, v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;->b(I)Ljava/lang/String;
+    invoke-interface {p0, v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;->b(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -209,12 +209,12 @@
     if-eqz v0, :cond_0
 
     .line 213
-    new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICs;
+    new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCs;
 
-    invoke-direct {v1}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICs;-><init>()V
+    invoke-direct {v1}, Lcom/facebook/stetho/inspector/protocol/module/Network$MCs;-><init>()V
 
     .line 214
-    iput-object p1, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICs;->mStringa:Ljava/lang/String;
+    iput-object p1, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCs;->mStringa:Ljava/lang/String;
 
     .line 215
     invoke-static {}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->e()J
@@ -227,7 +227,7 @@
 
     div-double/2addr v2, v4
 
-    iput-wide v2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICs;->mDb:D
+    iput-wide v2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCs;->mDb:D
 
     .line 216
     const-string/jumbo v2, "Network.loadingFinished"
@@ -280,12 +280,12 @@
     if-eqz v0, :cond_0
 
     .line 228
-    new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICr;
+    new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCr;
 
-    invoke-direct {v1}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICr;-><init>()V
+    invoke-direct {v1}, Lcom/facebook/stetho/inspector/protocol/module/Network$MCr;-><init>()V
 
     .line 229
-    iput-object p1, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICr;->mStringa:Ljava/lang/String;
+    iput-object p1, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCr;->mStringa:Ljava/lang/String;
 
     .line 230
     invoke-static {}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->e()J
@@ -298,15 +298,15 @@
 
     div-double/2addr v2, v4
 
-    iput-wide v2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICr;->mDb:D
+    iput-wide v2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCr;->mDb:D
 
     .line 231
-    iput-object p2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICr;->mStringc:Ljava/lang/String;
+    iput-object p2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCr;->mStringc:Ljava/lang/String;
 
     .line 232
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyh:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyh:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
-    iput-object v2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICr;->mICyd:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    iput-object v2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCr;->mMCyd:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     .line 233
     const-string/jumbo v2, "Network.loadingFailed"
@@ -390,7 +390,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, p2}, Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;->a(Ljava/lang/String;)Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    invoke-virtual {v1, p2}, Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;->a(Ljava/lang/String;)Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     move-result-object v1
 
@@ -403,7 +403,7 @@
     .line 173
     if-eqz v2, :cond_2
 
-    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyc:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyc:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     if-ne v2, v3, :cond_2
 
@@ -449,9 +449,9 @@
     move-exception v1
 
     .line 190
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->mICfc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;->mMCfc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;
 
-    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mICgc:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;->mMCgc:Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -471,12 +471,12 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/facebook/stetho/inspector/console/CLog;->a(Lcom/facebook/stetho/inspector/helper/ChromePeerManager;Lcom/facebook/stetho/inspector/protocol/module/Console$MCf;Lcom/facebook/stetho/inspector/protocol/module/Console$MCg;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
 
-.method public a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;)V
+.method public a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;)V
     .locals 10
 
     .prologue
@@ -491,69 +491,69 @@
     if-eqz v2, :cond_0
 
     .line 67
-    new-instance v3, Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;
+    new-instance v3, Lcom/facebook/stetho/inspector/protocol/module/Network$MCt;
 
-    invoke-direct {v3}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;-><init>()V
+    invoke-direct {v3}, Lcom/facebook/stetho/inspector/protocol/module/Network$MCt;-><init>()V
 
     .line 68
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;->e()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;->mStringa:Ljava/lang/String;
+    iput-object v0, v3, Lcom/facebook/stetho/inspector/protocol/module/Network$MCt;->mStringa:Ljava/lang/String;
 
     .line 69
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;->f()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;->f()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;->mStringb:Ljava/lang/String;
+    iput-object v0, v3, Lcom/facebook/stetho/inspector/protocol/module/Network$MCt;->mStringb:Ljava/lang/String;
 
     .line 70
-    invoke-static {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->b(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->b(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;->mJSONObjectc:Lorg/json/JSONObject;
+    iput-object v0, v3, Lcom/facebook/stetho/inspector/protocol/module/Network$MCt;->mJSONObjectc:Lorg/json/JSONObject;
 
     .line 71
-    invoke-static {v2, p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->a(Lcom/facebook/stetho/inspector/network/NetworkPeerManager;Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;)Ljava/lang/String;
+    invoke-static {v2, p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->a(Lcom/facebook/stetho/inspector/network/NetworkPeerManager;Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;->mStringd:Ljava/lang/String;
+    iput-object v0, v3, Lcom/facebook/stetho/inspector/protocol/module/Network$MCt;->mStringd:Ljava/lang/String;
 
     .line 75
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;->c()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;->c()Ljava/lang/String;
 
     move-result-object v4
 
     .line 76
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;->d()Ljava/lang/Integer;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;->d()Ljava/lang/Integer;
 
     move-result-object v0
 
     .line 77
-    new-instance v5, Lcom/facebook/stetho/inspector/protocol/module/Network$ICp;
+    new-instance v5, Lcom/facebook/stetho/inspector/protocol/module/Network$MCp;
 
-    invoke-direct {v5}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICp;-><init>()V
+    invoke-direct {v5}, Lcom/facebook/stetho/inspector/protocol/module/Network$MCp;-><init>()V
 
     .line 78
-    sget-object v6, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mICqb:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sget-object v6, Lcom/facebook/stetho/inspector/protocol/module/Network$MCq;->mMCqb:Lcom/facebook/stetho/inspector/protocol/module/Network$MCq;
 
-    iput-object v6, v5, Lcom/facebook/stetho/inspector/protocol/module/Network$ICp;->mICqa:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    iput-object v6, v5, Lcom/facebook/stetho/inspector/protocol/module/Network$MCp;->mMCqa:Lcom/facebook/stetho/inspector/protocol/module/Network$MCq;
 
     .line 79
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v6, v5, Lcom/facebook/stetho/inspector/protocol/module/Network$ICp;->mListb:Ljava/util/List;
+    iput-object v6, v5, Lcom/facebook/stetho/inspector/protocol/module/Network$MCp;->mListb:Ljava/util/List;
 
     .line 80
-    iget-object v6, v5, Lcom/facebook/stetho/inspector/protocol/module/Network$ICp;->mListb:Ljava/util/List;
+    iget-object v6, v5, Lcom/facebook/stetho/inspector/protocol/module/Network$MCp;->mListb:Ljava/util/List;
 
-    new-instance v7, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;
+    new-instance v7, Lcom/facebook/stetho/inspector/protocol/module/Console$MCc;
 
     if-eqz v0, :cond_1
 
@@ -562,41 +562,41 @@
     move-result v0
 
     :goto_0
-    invoke-direct {v7, v4, v4, v0, v1}, Lcom/facebook/stetho/inspector/protocol/module/Console$ICc;-><init>(Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-direct {v7, v4, v4, v0, v1}, Lcom/facebook/stetho/inspector/protocol/module/Console$MCc;-><init>(Ljava/lang/String;Ljava/lang/String;II)V
 
     invoke-interface {v6, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 85
-    new-instance v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;
+    new-instance v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;
 
-    invoke-direct {v0}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;-><init>()V
+    invoke-direct {v0}, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;-><init>()V
 
     .line 86
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;->b()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;->b()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mStringa:Ljava/lang/String;
+    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mStringa:Ljava/lang/String;
 
     .line 87
     const-string/jumbo v1, "1"
 
-    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mStringb:Ljava/lang/String;
+    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mStringb:Ljava/lang/String;
 
     .line 88
     const-string/jumbo v1, "1"
 
-    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mStringc:Ljava/lang/String;
+    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mStringc:Ljava/lang/String;
 
     .line 89
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;->e()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCj;->e()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mStringd:Ljava/lang/String;
+    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mStringd:Ljava/lang/String;
 
     .line 90
-    iput-object v3, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mICte:Lcom/facebook/stetho/inspector/protocol/module/Network$ICt;
+    iput-object v3, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mMCte:Lcom/facebook/stetho/inspector/protocol/module/Network$MCt;
 
     .line 91
     invoke-static {}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->e()J
@@ -609,20 +609,20 @@
 
     div-double/2addr v6, v8
 
-    iput-wide v6, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mDf:D
+    iput-wide v6, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mDf:D
 
     .line 92
-    iput-object v5, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mICpg:Lcom/facebook/stetho/inspector/protocol/module/Network$ICp;
+    iput-object v5, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mMCpg:Lcom/facebook/stetho/inspector/protocol/module/Network$MCp;
 
     .line 93
     const/4 v1, 0x0
 
-    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mICvh:Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;
+    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mMCvh:Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;
 
     .line 98
-    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyh:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyh:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
-    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICu;->mICyi:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    iput-object v1, v0, Lcom/facebook/stetho/inspector/protocol/module/Network$MCu;->mMCyi:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     .line 100
     const-string/jumbo v1, "Network.requestWillBeSent"
@@ -640,7 +640,7 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;)V
+.method public a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;)V
     .locals 10
 
     .prologue
@@ -653,40 +653,40 @@
     if-eqz v1, :cond_0
 
     .line 127
-    new-instance v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;
+    new-instance v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;
 
-    invoke-direct {v2}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;-><init>()V
+    invoke-direct {v2}, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;-><init>()V
 
     .line 128
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;->c()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;->c()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;->mStringa:Ljava/lang/String;
+    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;->mStringa:Ljava/lang/String;
 
     .line 129
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;->d()I
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;->d()I
 
     move-result v0
 
-    iput v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;->mIb:I
+    iput v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;->mIb:I
 
     .line 130
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;->e()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;->mStringc:Ljava/lang/String;
+    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;->mStringc:Ljava/lang/String;
 
     .line 131
-    invoke-static {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->b(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->b(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;->mJSONObjectd:Lorg/json/JSONObject;
+    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;->mJSONObjectd:Lorg/json/JSONObject;
 
     .line 132
-    invoke-direct {p0, p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICi;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCi;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -702,24 +702,24 @@
     move-result-object v0
 
     :goto_0
-    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;->mStringe:Ljava/lang/String;
+    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;->mStringe:Ljava/lang/String;
 
     .line 136
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;->f()Z
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;->f()Z
 
     move-result v0
 
-    iput-boolean v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;->isZf:Z
+    iput-boolean v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;->isZf:Z
 
     .line 137
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;->g()I
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;->g()I
 
     move-result v0
 
-    iput v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;->mIg:I
+    iput v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;->mIg:I
 
     .line 138
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;->h()Z
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;->h()Z
 
     move-result v0
 
@@ -727,29 +727,29 @@
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;->mBooleanh:Ljava/lang/Boolean;
+    iput-object v0, v2, Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;->mBooleanh:Ljava/lang/Boolean;
 
     .line 139
-    new-instance v4, Lcom/facebook/stetho/inspector/protocol/module/Network$ICw;
+    new-instance v4, Lcom/facebook/stetho/inspector/protocol/module/Network$MCw;
 
-    invoke-direct {v4}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICw;-><init>()V
+    invoke-direct {v4}, Lcom/facebook/stetho/inspector/protocol/module/Network$MCw;-><init>()V
 
     .line 140
-    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICk;->b()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter$MCk;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$ICw;->mStringa:Ljava/lang/String;
+    iput-object v0, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$MCw;->mStringa:Ljava/lang/String;
 
     .line 141
     const-string/jumbo v0, "1"
 
-    iput-object v0, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$ICw;->mStringb:Ljava/lang/String;
+    iput-object v0, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$MCw;->mStringb:Ljava/lang/String;
 
     .line 142
     const-string/jumbo v0, "1"
 
-    iput-object v0, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$ICw;->mStringc:Ljava/lang/String;
+    iput-object v0, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$MCw;->mStringc:Ljava/lang/String;
 
     .line 143
     invoke-static {}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->e()J
@@ -762,7 +762,7 @@
 
     div-double/2addr v6, v8
 
-    iput-wide v6, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$ICw;->mDd:D
+    iput-wide v6, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$MCw;->mDd:D
 
     .line 144
     if-eqz v3, :cond_2
@@ -771,15 +771,15 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;->a(Ljava/lang/String;)Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    invoke-virtual {v0, v3}, Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;->a(Ljava/lang/String;)Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     move-result-object v0
 
     :goto_1
-    iput-object v0, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$ICw;->mICye:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    iput-object v0, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$MCw;->mMCye:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     .line 147
-    iput-object v2, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$ICw;->mICvf:Lcom/facebook/stetho/inspector/protocol/module/Network$ICv;
+    iput-object v2, v4, Lcom/facebook/stetho/inspector/protocol/module/Network$MCw;->mMCvf:Lcom/facebook/stetho/inspector/protocol/module/Network$MCv;
 
     .line 148
     const-string/jumbo v0, "Network.responseReceived"
@@ -798,7 +798,7 @@
 
     .line 144
     :cond_2
-    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;->mICyh:Lcom/facebook/stetho/inspector/protocol/module/Page$ICy;
+    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;->mMCyh:Lcom/facebook/stetho/inspector/protocol/module/Page$MCy;
 
     goto :goto_1
 .end method
@@ -872,12 +872,12 @@
     if-eqz v0, :cond_0
 
     .line 255
-    new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICo;
+    new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCo;
 
-    invoke-direct {v1}, Lcom/facebook/stetho/inspector/protocol/module/Network$ICo;-><init>()V
+    invoke-direct {v1}, Lcom/facebook/stetho/inspector/protocol/module/Network$MCo;-><init>()V
 
     .line 256
-    iput-object p1, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICo;->mStringa:Ljava/lang/String;
+    iput-object p1, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCo;->mStringa:Ljava/lang/String;
 
     .line 257
     invoke-static {}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->e()J
@@ -890,13 +890,13 @@
 
     div-double/2addr v2, v4
 
-    iput-wide v2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICo;->mDb:D
+    iput-wide v2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCo;->mDb:D
 
     .line 258
-    iput p2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICo;->mIc:I
+    iput p2, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCo;->mIc:I
 
     .line 259
-    iput p3, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$ICo;->mId:I
+    iput p3, v1, Lcom/facebook/stetho/inspector/protocol/module/Network$MCo;->mId:I
 
     .line 260
     const-string/jumbo v2, "Network.dataReceived"

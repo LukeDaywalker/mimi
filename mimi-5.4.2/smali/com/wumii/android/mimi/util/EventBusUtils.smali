@@ -63,9 +63,9 @@
 
     .prologue
     .line 24
-    new-instance v0, Lcom/wumii/android/mimi/util/EventBusUtils$ICad;
+    new-instance v0, Lcom/wumii/android/mimi/util/EventBusUtils$MCad;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/util/EventBusUtils$ICad;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/util/EventBusUtils$MCad;-><init>(Ljava/lang/Object;)V
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/ThreadUtils;->b(Ljava/lang/Runnable;)V
 

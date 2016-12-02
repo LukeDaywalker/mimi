@@ -17,16 +17,16 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/util/Map;)Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+.method public abstract a(Ljava/util/Map;)Lcom/google/analytics/midtier/proto/containertag/TypeSystem$MCb;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
-            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;",
+            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$MCb;",
             ">;)",
-            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;"
+            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$MCb;"
         }
     .end annotation
 .end method

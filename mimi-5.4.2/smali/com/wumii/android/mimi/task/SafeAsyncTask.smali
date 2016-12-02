@@ -240,7 +240,7 @@
     .line 76
     new-instance v0, Ljava/util/concurrent/FutureTask;
 
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/task/SafeAsyncTask;->h()Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/task/SafeAsyncTask;->h()Lcom/wumii/android/mimi/task/SafeAsyncTask$MCbp;
 
     move-result-object v1
 
@@ -262,7 +262,7 @@
     return-void
 .end method
 
-.method protected h()Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+.method protected h()Lcom/wumii/android/mimi/task/SafeAsyncTask$MCbp;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -274,9 +274,9 @@
 
     .prologue
     .line 166
-    new-instance v0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+    new-instance v0, Lcom/wumii/android/mimi/task/SafeAsyncTask$MCbp;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;-><init>(Lcom/wumii/android/mimi/task/SafeAsyncTask;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/SafeAsyncTask$MCbp;-><init>(Lcom/wumii/android/mimi/task/SafeAsyncTask;)V
 
     return-object v0
 .end method

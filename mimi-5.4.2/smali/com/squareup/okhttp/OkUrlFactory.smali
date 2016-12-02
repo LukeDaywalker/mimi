@@ -182,9 +182,9 @@
     return-object v0
 
     :cond_0
-    new-instance v0, Lcom/squareup/okhttp/OkUrlFactory$ICal;
+    new-instance v0, Lcom/squareup/okhttp/OkUrlFactory$MCal;
 
-    invoke-direct {v0, p0, p1}, Lcom/squareup/okhttp/OkUrlFactory$ICal;-><init>(Lcom/squareup/okhttp/OkUrlFactory;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lcom/squareup/okhttp/OkUrlFactory$MCal;-><init>(Lcom/squareup/okhttp/OkUrlFactory;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

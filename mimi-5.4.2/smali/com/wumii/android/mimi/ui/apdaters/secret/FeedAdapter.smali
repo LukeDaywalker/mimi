@@ -10,10 +10,6 @@
 
 .field private mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private mICmf:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
-
-.field private mICze:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
-
 .field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -24,6 +20,10 @@
         }
     .end annotation
 .end field
+
+.field private mMCmf:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
+
+.field private mMCze:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;
 
 .field private mSetg:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -38,7 +38,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;)V
     .locals 1
 
     .prologue
@@ -52,7 +52,7 @@
     iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 40
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mICze:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mMCze:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;
 
     .line 41
     new-instance v0, Ljava/util/ArrayList;
@@ -97,12 +97,12 @@
     return-object v0
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;)V
     .locals 0
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mICmf:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mMCmf:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
     .line 48
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->notifyDataSetChanged()V
@@ -268,9 +268,9 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
 
     .line 111
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mICze:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mMCze:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;
 
-    invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
+    invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;)V
 
     .line 112
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
@@ -303,9 +303,9 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
 
     .line 116
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mICmf:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;->mMCmf:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
-    invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;)V
+    invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;)V
 
     goto :goto_0
 

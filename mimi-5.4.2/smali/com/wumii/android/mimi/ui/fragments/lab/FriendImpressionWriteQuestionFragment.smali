@@ -10,7 +10,7 @@
 # instance fields
 .field private mEditTexta:Landroid/widget/EditText;
 
-.field private mICeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+.field private mMCeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
 
 # direct methods
@@ -25,12 +25,12 @@
     return-void
 .end method
 
-.method private b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+.method private b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
     .locals 1
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mICeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mMCeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
     if-nez v0, :cond_0
 
@@ -40,13 +40,13 @@
     move-result-object v0
 
     .line 71
-    check-cast v0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    check-cast v0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mICeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mMCeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
     .line 73
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mICeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mMCeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
     return-object v0
 .end method
@@ -92,11 +92,11 @@
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;->h()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;->h()V
 
     .line 35
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -152,11 +152,11 @@
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;->g()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;->g()V
 
     .line 42
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -190,11 +190,11 @@
     if-eqz v0, :cond_0
 
     .line 58
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;->h()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;->h()V
 
     .line 62
     :goto_0
@@ -202,11 +202,11 @@
 
     .line 60
     :cond_0
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b()Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;->g()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$MCe;->g()V
 
     goto :goto_0
 .end method

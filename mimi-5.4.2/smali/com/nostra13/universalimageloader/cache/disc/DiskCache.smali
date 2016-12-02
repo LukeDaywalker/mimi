@@ -10,5 +10,5 @@
 .method public abstract a(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
 .end method
 
-.method public abstract a(Ljava/lang/String;Ljava/io/InputStream;Lcom/nostra13/universalimageloader/utils/IoUtils$ICe;)Z
+.method public abstract a(Ljava/lang/String;Ljava/io/InputStream;Lcom/nostra13/universalimageloader/utils/IoUtils$MCe;)Z
 .end method

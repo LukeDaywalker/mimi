@@ -732,9 +732,9 @@
 
     .prologue
     .line 248
-    new-instance v0, Lcom/google/analytics/tracking/android/GAThread$ICak;
+    new-instance v0, Lcom/google/analytics/tracking/android/GAThread$MCak;
 
-    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAThread$ICak;-><init>(Lcom/google/analytics/tracking/android/GAThread;)V
+    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAThread$MCak;-><init>(Lcom/google/analytics/tracking/android/GAThread;)V
 
     invoke-virtual {p0, v0}, Lcom/google/analytics/tracking/android/GAThread;->a(Ljava/lang/Runnable;)V
 
@@ -817,9 +817,9 @@
 
     .line 129
     :cond_1
-    new-instance v0, Lcom/google/analytics/tracking/android/GAThread$ICaj;
+    new-instance v0, Lcom/google/analytics/tracking/android/GAThread$MCaj;
 
-    invoke-direct {v0, p0, v1}, Lcom/google/analytics/tracking/android/GAThread$ICaj;-><init>(Lcom/google/analytics/tracking/android/GAThread;Ljava/util/Map;)V
+    invoke-direct {v0, p0, v1}, Lcom/google/analytics/tracking/android/GAThread$MCaj;-><init>(Lcom/google/analytics/tracking/android/GAThread;Ljava/util/Map;)V
 
     invoke-virtual {p0, v0}, Lcom/google/analytics/tracking/android/GAThread;->a(Ljava/lang/Runnable;)V
 
@@ -841,9 +841,9 @@
 
     .prologue
     .line 269
-    new-instance v0, Lcom/google/analytics/tracking/android/GAThread$ICal;
+    new-instance v0, Lcom/google/analytics/tracking/android/GAThread$MCal;
 
-    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAThread$ICal;-><init>(Lcom/google/analytics/tracking/android/GAThread;)V
+    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAThread$MCal;-><init>(Lcom/google/analytics/tracking/android/GAThread;)V
 
     invoke-virtual {p0, v0}, Lcom/google/analytics/tracking/android/GAThread;->a(Ljava/lang/Runnable;)V
 

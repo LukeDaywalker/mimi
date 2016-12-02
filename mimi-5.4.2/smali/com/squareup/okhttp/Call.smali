@@ -54,18 +54,18 @@
 
     .prologue
     .line 200
-    new-instance v0, Lcom/squareup/okhttp/Call$ICi;
+    new-instance v0, Lcom/squareup/okhttp/Call$MCi;
 
     const/4 v1, 0x0
 
     iget-object v2, p0, Lcom/squareup/okhttp/Call;->mRequestb:Lcom/squareup/okhttp/Request;
 
-    invoke-direct {v0, p0, v1, v2, p1}, Lcom/squareup/okhttp/Call$ICi;-><init>(Lcom/squareup/okhttp/Call;ILcom/squareup/okhttp/Request;Z)V
+    invoke-direct {v0, p0, v1, v2, p1}, Lcom/squareup/okhttp/Call$MCi;-><init>(Lcom/squareup/okhttp/Call;ILcom/squareup/okhttp/Request;Z)V
 
     .line 201
     iget-object v1, p0, Lcom/squareup/okhttp/Call;->mRequestb:Lcom/squareup/okhttp/Request;
 
-    invoke-interface {v0, v1}, Lcom/squareup/okhttp/Interceptor$ICag;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response;
+    invoke-interface {v0, v1}, Lcom/squareup/okhttp/Interceptor$MCag;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
@@ -280,7 +280,7 @@
     if-eqz v0, :cond_9
 
     .line 243
-    invoke-virtual {p1}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {p1}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v1
 
@@ -299,7 +299,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v3, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v1, v3, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 250
     :cond_0
@@ -321,16 +321,16 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v1, v0, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 253
     const-string/jumbo v0, "Transfer-Encoding"
 
-    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 259
     :goto_0
-    invoke-virtual {v1}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v1}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v2
 
@@ -387,12 +387,12 @@
 
     const-string/jumbo v2, "chunked"
 
-    invoke-virtual {v1, v0, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v1, v0, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 256
     const-string/jumbo v0, "Content-Length"
 
-    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     goto :goto_0
 
@@ -657,13 +657,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/squareup/okhttp/Call$ICj;
+    new-instance v1, Lcom/squareup/okhttp/Call$MCj;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, p1, p2, v2}, Lcom/squareup/okhttp/Call$ICj;-><init>(Lcom/squareup/okhttp/Call;Lcom/squareup/okhttp/Callback;ZLcom/squareup/okhttp/Call$ICh;)V
+    invoke-direct {v1, p0, p1, p2, v2}, Lcom/squareup/okhttp/Call$MCj;-><init>(Lcom/squareup/okhttp/Call;Lcom/squareup/okhttp/Callback;ZLcom/squareup/okhttp/Call$MCh;)V
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Dispatcher;->a(Lcom/squareup/okhttp/Call$ICj;)V
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Dispatcher;->a(Lcom/squareup/okhttp/Call$MCj;)V
 
     .line 116
     return-void

@@ -3,7 +3,7 @@
 .source "MyCircleActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
 
 
 # static fields
@@ -15,9 +15,9 @@
 
 .field private mCircleManagerE:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field private mICakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;
-
 .field private mLoadInvitationTaskC:Lcom/wumii/android/mimi/task/LoadInvitationTask;
+
+.field private mMCakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCak;
 
 .field private mMyCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;
 
@@ -109,9 +109,9 @@
 
     .line 165
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaf;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCaf;
 
-    invoke-direct {v0, p0, p0, p1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaf;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-direct {v0, p0, p0, p1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCaf;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -119,7 +119,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaf;->a(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCaf;->a(Ljava/lang/String;Z)V
 
     goto :goto_0
 .end method
@@ -143,13 +143,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICag;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCag;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICag;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCag;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;)V
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$MCau;Z)V
 
     .line 193
     return-void
@@ -259,11 +259,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICah;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCah;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICah;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCah;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->a(Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->a(Lcom/wumii/android/mimi/task/LoadInvitationTask$MCas;)V
 
     .line 207
     return-void
@@ -289,11 +289,11 @@
     if-nez v0, :cond_0
 
     .line 250
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCai;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, p0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Landroid/content/Context;Z)V
+    invoke-direct {v0, p0, p0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCai;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Landroid/content/Context;Z)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mLoadInvitationTaskC:Lcom/wumii/android/mimi/task/LoadInvitationTask;
 
@@ -414,9 +414,9 @@
     .line 314
     const-string/jumbo v1, "\u4fee\u590d"
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICy;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCy;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICy;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCy;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -454,9 +454,9 @@
     if-nez v0, :cond_0
 
     .line 354
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaa;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCaa;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaa;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCaa;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Landroid/app/Activity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mAbsCircleSelectorListenerD:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
 
@@ -494,16 +494,16 @@
     if-eqz v0, :cond_2
 
     .line 271
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mICakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mMCakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCak;
 
     if-nez v0, :cond_0
 
     .line 272
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCak;
 
-    invoke-direct {v0, p0, v4}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICx;)V
+    invoke-direct {v0, p0, v4}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCak;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCx;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mICakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mMCakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCak;
 
     .line 273
     new-instance v0, Landroid/content/IntentFilter;
@@ -522,7 +522,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mICakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mMCakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCak;
 
     invoke-virtual {v1, v2, v0}, Landroid/support/v4/content/LocalBroadcastManager;->a(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
@@ -534,11 +534,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaj;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCaj;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaj;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCaj;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$MCaq;)V
 
     .line 296
     :cond_1
@@ -1051,11 +1051,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICz;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCz;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICz;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCz;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$MCaq;)V
 
     .line 339
     :cond_0
@@ -1168,9 +1168,9 @@
 
     move-result-object v0
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICx;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCx;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICx;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCx;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1199,20 +1199,20 @@
     .line 121
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mSectionTextItemViewo:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;)V
 
     .line 122
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mSectionTextItemViewp:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;)V
 
     .line 124
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->h()V
 
     .line 126
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICac;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCac;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICac;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCac;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mOnSharedPreferenceChangeListenert:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
@@ -1226,9 +1226,9 @@
     .line 139
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCad;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCad;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;-><init>(Landroid/content/Context;Landroid/view/View$OnClickListener;)V
 
@@ -1246,13 +1246,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICae;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCae;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICae;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCae;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$MCau;Z)V
 
     .line 158
     return-void
@@ -1276,7 +1276,7 @@
     invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 347
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mICakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mMCakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCak;
 
     if-eqz v0, :cond_0
 
@@ -1285,7 +1285,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mICakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->mMCakF:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$MCak;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/content/LocalBroadcastManager;->a(Landroid/content/BroadcastReceiver;)V
 

@@ -12,7 +12,7 @@
 # instance fields
 .field private final mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
-.field private final mICda:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
+.field private final mMCda:Lio/fabric/sdk/android/ActivityLifecycleManager$MCd;
 
 
 # direct methods
@@ -24,19 +24,19 @@
     invoke-direct {p0}, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;-><init>()V
 
     .line 18
-    new-instance v0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;
+    new-instance v0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$MCc;
 
-    invoke-direct {v0, p0}, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;-><init>(Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;)V
+    invoke-direct {v0, p0}, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$MCc;-><init>(Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mICda:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
+    iput-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mMCda:Lio/fabric/sdk/android/ActivityLifecycleManager$MCd;
 
     .line 38
     iput-object p2, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
     .line 39
-    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mICda:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mMCda:Lio/fabric/sdk/android/ActivityLifecycleManager$MCd;
 
-    invoke-virtual {p1, v0}, Lio/fabric/sdk/android/ActivityLifecycleManager;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;)Z
+    invoke-virtual {p1, v0}, Lio/fabric/sdk/android/ActivityLifecycleManager;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$MCd;)Z
 
     .line 40
     return-void

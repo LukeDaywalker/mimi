@@ -88,7 +88,7 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType$ICj;->mArrayIa:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType$MCj;->mArrayIa:[I
 
     invoke-virtual {p0}, Landroid/widget/ImageView;->getScaleType()Landroid/widget/ImageView$ScaleType;
 

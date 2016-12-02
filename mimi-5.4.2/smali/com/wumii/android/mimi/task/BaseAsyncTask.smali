@@ -31,11 +31,11 @@
 
     .prologue
     .line 34
-    new-instance v0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICe;
+    new-instance v0, Lcom/wumii/android/mimi/task/BaseAsyncTask$MCe;
 
     const-string/jumbo v1, "file-logger"
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICe;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/BaseAsyncTask$MCe;-><init>(Ljava/lang/String;)V
 
     invoke-static {v0}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
 
@@ -376,9 +376,9 @@
     .line 204
     sget-object v0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v1, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;
+    new-instance v1, Lcom/wumii/android/mimi/task/BaseAsyncTask$MCf;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;-><init>(Lcom/wumii/android/mimi/task/BaseAsyncTask;Ljava/lang/Throwable;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/task/BaseAsyncTask$MCf;-><init>(Lcom/wumii/android/mimi/task/BaseAsyncTask;Ljava/lang/Throwable;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
@@ -415,7 +415,7 @@
 
     .prologue
     .line 130
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/task/BaseAsyncTask;->e()Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/task/BaseAsyncTask;->e()Lcom/wumii/android/mimi/task/BaseAsyncTask$MCg;
 
     move-result-object v0
 
@@ -429,7 +429,7 @@
     .line 132
     iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->a(Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;Ljava/util/concurrent/Future;)Ljava/util/concurrent/Future;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/task/BaseAsyncTask$MCg;->a(Lcom/wumii/android/mimi/task/BaseAsyncTask$MCg;Ljava/util/concurrent/Future;)Ljava/util/concurrent/Future;
 
     .line 133
     iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mFutureTaskp:Ljava/util/concurrent/FutureTask;
@@ -480,7 +480,7 @@
     goto :goto_0
 .end method
 
-.method protected e()Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;
+.method protected e()Lcom/wumii/android/mimi/task/BaseAsyncTask$MCg;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -492,9 +492,9 @@
 
     .prologue
     .line 138
-    new-instance v0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;
+    new-instance v0, Lcom/wumii/android/mimi/task/BaseAsyncTask$MCg;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;-><init>(Lcom/wumii/android/mimi/task/BaseAsyncTask;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/BaseAsyncTask$MCg;-><init>(Lcom/wumii/android/mimi/task/BaseAsyncTask;)V
 
     return-object v0
 .end method
@@ -564,12 +564,12 @@
     goto :goto_0
 .end method
 
-.method protected synthetic h()Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+.method protected synthetic h()Lcom/wumii/android/mimi/task/SafeAsyncTask$MCbp;
     .locals 1
 
     .prologue
     .line 29
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/task/BaseAsyncTask;->e()Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/task/BaseAsyncTask;->e()Lcom/wumii/android/mimi/task/BaseAsyncTask$MCg;
 
     move-result-object v0
 

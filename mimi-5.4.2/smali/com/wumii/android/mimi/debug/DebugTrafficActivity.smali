@@ -3,7 +3,7 @@
 .source "DebugTrafficActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
 
 
 # instance fields
@@ -234,7 +234,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setName(Ljava/lang/String;)V
 
     .line 50
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;)V
 
     .line 51
     const/4 v1, 0x1
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;
+    check-cast v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;
 
     .line 59
     new-instance v3, Ljava/lang/StringBuilder;
@@ -294,7 +294,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->b()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;->b()I
 
     move-result v4
 
@@ -308,7 +308,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;->a()Ljava/lang/String;
 
     move-result-object v4
 
@@ -322,7 +322,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->c()J
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;->c()J
 
     move-result-wide v4
 

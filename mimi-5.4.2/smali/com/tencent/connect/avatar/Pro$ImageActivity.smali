@@ -14,16 +14,6 @@
 
 .field private mHandlerd:Landroid/os/Handler;
 
-.field private mICbh:Lcom/tencent/connect/avatar/Pro$ICb;
-
-.field private mICbv:Lcom/tencent/tauth/Pro$ICb;
-
-.field private mICbw:Lcom/tencent/tauth/Pro$ICb;
-
-.field private mICce:Lcom/tencent/connect/avatar/Pro$ICc;
-
-.field private mICtb:Lcom/tencent/connect/b/Pro$ICt;
-
 .field private mIk:I
 
 .field private mIn:I
@@ -33,6 +23,16 @@
 .field private mIp:I
 
 .field private mJm:J
+
+.field private mMCbh:Lcom/tencent/connect/avatar/Pro$MCb;
+
+.field private mMCbv:Lcom/tencent/tauth/Pro$MCb;
+
+.field private mMCbw:Lcom/tencent/tauth/Pro$MCb;
+
+.field private mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
+
+.field private mMCtb:Lcom/tencent/connect/b/Pro$MCt;
 
 .field private mOnClickListenert:Landroid/view/View$OnClickListener;
 
@@ -91,32 +91,32 @@
     iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mRectq:Landroid/graphics/Rect;
 
     .line 434
-    new-instance v0, Lcom/tencent/connect/avatar/Pro$ICd;
+    new-instance v0, Lcom/tencent/connect/avatar/Pro$MCd;
 
-    invoke-direct {v0, p0}, Lcom/tencent/connect/avatar/Pro$ICd;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
+    invoke-direct {v0, p0}, Lcom/tencent/connect/avatar/Pro$MCd;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
 
     iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mOnClickListenert:Landroid/view/View$OnClickListener;
 
     .line 462
-    new-instance v0, Lcom/tencent/connect/avatar/Pro$ICf;
+    new-instance v0, Lcom/tencent/connect/avatar/Pro$MCf;
 
-    invoke-direct {v0, p0}, Lcom/tencent/connect/avatar/Pro$ICf;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
+    invoke-direct {v0, p0}, Lcom/tencent/connect/avatar/Pro$MCf;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
 
     iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mOnClickListeneru:Landroid/view/View$OnClickListener;
 
     .line 623
-    new-instance v0, Lcom/tencent/connect/avatar/Pro$ICh;
+    new-instance v0, Lcom/tencent/connect/avatar/Pro$MCh;
 
-    invoke-direct {v0, p0}, Lcom/tencent/connect/avatar/Pro$ICh;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
+    invoke-direct {v0, p0}, Lcom/tencent/connect/avatar/Pro$MCh;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
 
-    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICbv:Lcom/tencent/tauth/Pro$ICb;
+    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCbv:Lcom/tencent/tauth/Pro$MCb;
 
     .line 681
-    new-instance v0, Lcom/tencent/connect/avatar/Pro$ICi;
+    new-instance v0, Lcom/tencent/connect/avatar/Pro$MCi;
 
-    invoke-direct {v0, p0}, Lcom/tencent/connect/avatar/Pro$ICi;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
+    invoke-direct {v0, p0}, Lcom/tencent/connect/avatar/Pro$MCi;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
 
-    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICbw:Lcom/tencent/tauth/Pro$ICb;
+    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCbw:Lcom/tencent/tauth/Pro$MCb;
 
     return-void
 .end method
@@ -300,35 +300,35 @@
     invoke-virtual {v3, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
     .line 158
-    new-instance v3, Lcom/tencent/connect/avatar/Pro$ICc;
+    new-instance v3, Lcom/tencent/connect/avatar/Pro$MCc;
 
-    invoke-direct {v3, p0}, Lcom/tencent/connect/avatar/Pro$ICc;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p0}, Lcom/tencent/connect/avatar/Pro$MCc;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICce:Lcom/tencent/connect/avatar/Pro$ICc;
+    iput-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
 
     .line 159
-    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICce:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
 
-    invoke-virtual {v3, v1}, Lcom/tencent/connect/avatar/Pro$ICc;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v3, v1}, Lcom/tencent/connect/avatar/Pro$MCc;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 160
-    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICce:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
 
     sget-object v4, Landroid/widget/ImageView$ScaleType;->MATRIX:Landroid/widget/ImageView$ScaleType;
 
-    invoke-virtual {v3, v4}, Lcom/tencent/connect/avatar/Pro$ICc;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
+    invoke-virtual {v3, v4}, Lcom/tencent/connect/avatar/Pro$MCc;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 161
-    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICce:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
 
     invoke-virtual {v0, v3}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
     .line 163
-    new-instance v3, Lcom/tencent/connect/avatar/Pro$ICb;
+    new-instance v3, Lcom/tencent/connect/avatar/Pro$MCb;
 
-    invoke-direct {v3, p0}, Lcom/tencent/connect/avatar/Pro$ICb;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p0}, Lcom/tencent/connect/avatar/Pro$MCb;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICbh:Lcom/tencent/connect/avatar/Pro$ICb;
+    iput-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCbh:Lcom/tencent/connect/avatar/Pro$MCb;
 
     .line 164
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
@@ -346,12 +346,12 @@
     invoke-virtual {v3, v1, v8}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 170
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICbh:Lcom/tencent/connect/avatar/Pro$ICb;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCbh:Lcom/tencent/connect/avatar/Pro$MCb;
 
-    invoke-virtual {v1, v3}, Lcom/tencent/connect/avatar/Pro$ICb;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v3}, Lcom/tencent/connect/avatar/Pro$MCb;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 171
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICbh:Lcom/tencent/connect/avatar/Pro$ICb;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCbh:Lcom/tencent/connect/avatar/Pro$MCb;
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
@@ -365,7 +365,7 @@
 
     const/high16 v3, 0x42a00000    # 80.0f
 
-    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v3
 
@@ -400,11 +400,11 @@
     .line 186
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-static {p0, v6}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v6}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v4
 
-    invoke-static {p0, v6}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v6}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v5
 
@@ -440,7 +440,7 @@
     .line 195
     const/high16 v3, 0x40e00000    # 7.0f
 
-    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v3
 
@@ -495,7 +495,7 @@
 
     const/high16 v3, 0x42700000    # 60.0f
 
-    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v3
 
@@ -526,7 +526,7 @@
     .line 217
     const/high16 v1, 0x41200000    # 10.0f
 
-    invoke-static {p0, v1}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v1}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v1
 
@@ -539,21 +539,21 @@
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
     .line 220
-    new-instance v1, Lcom/tencent/connect/avatar/Pro$ICl;
+    new-instance v1, Lcom/tencent/connect/avatar/Pro$MCl;
 
-    invoke-direct {v1, p0, p0}, Lcom/tencent/connect/avatar/Pro$ICl;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;Landroid/content/Context;)V
+    invoke-direct {v1, p0, p0}, Lcom/tencent/connect/avatar/Pro$MCl;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;Landroid/content/Context;)V
 
     .line 222
     const/high16 v3, 0x41600000    # 14.0f
 
-    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v3
 
     .line 223
     const/high16 v4, 0x40e00000    # 7.0f
 
-    invoke-static {p0, v4}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v4}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v4
 
@@ -569,13 +569,13 @@
 
     const/high16 v6, 0x429c0000    # 78.0f
 
-    invoke-static {p0, v6}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v6}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v6
 
     const/high16 v7, 0x42340000    # 45.0f
 
-    invoke-static {p0, v7}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v7}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v7
 
@@ -611,7 +611,7 @@
     .line 236
     iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mButtong:Landroid/widget/Button;
 
-    invoke-virtual {v1, v5}, Lcom/tencent/connect/avatar/Pro$ICl;->b(Landroid/widget/Button;)V
+    invoke-virtual {v1, v5}, Lcom/tencent/connect/avatar/Pro$MCl;->b(Landroid/widget/Button;)V
 
     .line 237
     iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mButtong:Landroid/widget/Button;
@@ -630,13 +630,13 @@
 
     const/high16 v6, 0x429c0000    # 78.0f
 
-    invoke-static {p0, v6}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v6}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v6
 
     const/high16 v7, 0x42340000    # 45.0f
 
-    invoke-static {p0, v7}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v7}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v7
 
@@ -677,7 +677,7 @@
     .line 251
     iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mButtonf:Landroid/widget/Button;
 
-    invoke-virtual {v1, v3}, Lcom/tencent/connect/avatar/Pro$ICl;->a(Landroid/widget/Button;)V
+    invoke-virtual {v1, v3}, Lcom/tencent/connect/avatar/Pro$MCl;->a(Landroid/widget/Button;)V
 
     .line 252
     iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mButtonf:Landroid/widget/Button;
@@ -710,7 +710,7 @@
     .line 262
     const/high16 v3, 0x40400000    # 3.0f
 
-    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v3}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v3
 
@@ -772,12 +772,12 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Lcom/tencent/connect/avatar/Pro$ICb;
+.method static synthetic a(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Lcom/tencent/connect/avatar/Pro$MCb;
     .locals 1
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICbh:Lcom/tencent/connect/avatar/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCbh:Lcom/tencent/connect/avatar/Pro$MCb;
 
     return-object v0
 .end method
@@ -826,16 +826,16 @@
 
     .prologue
     .line 512
-    new-instance v0, Lcom/tencent/connect/avatar/Pro$ICk;
+    new-instance v0, Lcom/tencent/connect/avatar/Pro$MCk;
 
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICtb:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCtb:Lcom/tencent/connect/b/Pro$MCt;
 
-    invoke-direct {v0, p0, p0, v1}, Lcom/tencent/connect/avatar/Pro$ICk;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+    invoke-direct {v0, p0, p0, v1}, Lcom/tencent/connect/avatar/Pro$MCk;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
 
     .line 513
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICbv:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCbv:Lcom/tencent/tauth/Pro$MCb;
 
-    invoke-virtual {v0, p1, v1}, Lcom/tencent/connect/avatar/Pro$ICk;->a(Landroid/graphics/Bitmap;Lcom/tencent/tauth/Pro$ICb;)V
+    invoke-virtual {v0, p1, v1}, Lcom/tencent/connect/avatar/Pro$MCk;->a(Landroid/graphics/Bitmap;Lcom/tencent/tauth/Pro$MCb;)V
 
     .line 514
     return-void
@@ -868,9 +868,9 @@
     .line 542
     iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mHandlerd:Landroid/os/Handler;
 
-    new-instance v1, Lcom/tencent/connect/avatar/Pro$ICg;
+    new-instance v1, Lcom/tencent/connect/avatar/Pro$MCg;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/tencent/connect/avatar/Pro$ICg;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;Ljava/lang/String;I)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/tencent/connect/avatar/Pro$MCg;-><init>(Lcom/tencent/connect/avatar/Pro$ImageActivity;Ljava/lang/String;I)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -1073,11 +1073,11 @@
     .line 334
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICce:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
 
     iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mBitmaps:Landroid/graphics/Bitmap;
 
-    invoke-virtual {v0, v1}, Lcom/tencent/connect/avatar/Pro$ICc;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v0, v1}, Lcom/tencent/connect/avatar/Pro$MCc;->setImageBitmap(Landroid/graphics/Bitmap;)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -1148,11 +1148,11 @@
     .line 556
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-static {p0, v5}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v5}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v4
 
-    invoke-static {p0, v5}, Lcom/tencent/connect/avatar/Pro$ICm;->a(Landroid/content/Context;F)I
+    invoke-static {p0, v5}, Lcom/tencent/connect/avatar/Pro$MCm;->a(Landroid/content/Context;F)I
 
     move-result v5
 
@@ -1208,12 +1208,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic c(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Lcom/tencent/connect/avatar/Pro$ICc;
+.method static synthetic c(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Lcom/tencent/connect/avatar/Pro$MCc;
     .locals 1
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICce:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
 
     return-object v0
 .end method
@@ -1234,9 +1234,9 @@
     int-to-float v0, v0
 
     .line 474
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICce:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
 
-    invoke-virtual {v1}, Lcom/tencent/connect/avatar/Pro$ICc;->getImageMatrix()Landroid/graphics/Matrix;
+    invoke-virtual {v1}, Lcom/tencent/connect/avatar/Pro$MCc;->getImageMatrix()Landroid/graphics/Matrix;
 
     move-result-object v3
 
@@ -1512,14 +1512,14 @@
     .line 597
     new-instance v0, Lcom/tencent/connect/Pro;
 
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICtb:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCtb:Lcom/tencent/connect/b/Pro$MCt;
 
-    invoke-direct {v0, p0, v1}, Lcom/tencent/connect/Pro;-><init>(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+    invoke-direct {v0, p0, v1}, Lcom/tencent/connect/Pro;-><init>(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
 
     .line 598
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICbw:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCbw:Lcom/tencent/tauth/Pro$MCb;
 
-    invoke-virtual {v0, v1}, Lcom/tencent/connect/Pro;->a(Lcom/tencent/tauth/Pro$ICb;)V
+    invoke-virtual {v0, v1}, Lcom/tencent/connect/Pro;->a(Lcom/tencent/tauth/Pro$MCb;)V
 
     .line 599
     return-void
@@ -1622,13 +1622,13 @@
 
     .prologue
     .line 727
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICtb:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCtb:Lcom/tencent/connect/b/Pro$MCt;
 
-    invoke-virtual {v0}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/tencent/connect/b/Pro$MCt;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p0, p1, p2, p3, v0}, Lcom/tencent/c/Pro$ICq;->a(Landroid/content/Context;Ljava/lang/String;JLjava/lang/String;)V
+    invoke-static {p0, p1, p2, p3, v0}, Lcom/tencent/c/Pro$MCq;->a(Landroid/content/Context;Ljava/lang/String;JLjava/lang/String;)V
 
     .line 728
     return-void
@@ -1746,14 +1746,14 @@
     iput v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mIn:I
 
     .line 406
-    new-instance v0, Lcom/tencent/connect/b/Pro$ICt;
+    new-instance v0, Lcom/tencent/connect/b/Pro$MCt;
 
-    invoke-direct {v0, v1}, Lcom/tencent/connect/b/Pro$ICt;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/tencent/connect/b/Pro$MCt;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICtb:Lcom/tencent/connect/b/Pro$ICt;
+    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCtb:Lcom/tencent/connect/b/Pro$MCt;
 
     .line 407
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICtb:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCtb:Lcom/tencent/connect/b/Pro$MCt;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1783,12 +1783,12 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v2, v1}, Lcom/tencent/connect/b/Pro$ICt;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Lcom/tencent/connect/b/Pro$MCt;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 409
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICtb:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCtb:Lcom/tencent/connect/b/Pro$MCt;
 
-    invoke-virtual {v0, v3}, Lcom/tencent/connect/b/Pro$ICt;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v3}, Lcom/tencent/connect/b/Pro$MCt;->a(Ljava/lang/String;)V
 
     .line 411
     invoke-direct {p0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->b()V
@@ -1822,11 +1822,11 @@
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
     .line 428
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mICce:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mMCce:Lcom/tencent/connect/avatar/Pro$MCc;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/tencent/connect/avatar/Pro$ICc;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v0, v1}, Lcom/tencent/connect/avatar/Pro$MCc;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     .line 429
     iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ImageActivity;->mBitmaps:Landroid/graphics/Bitmap;

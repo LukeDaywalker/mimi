@@ -60,7 +60,7 @@
 .method public abstract a(Lcom/squareup/okhttp/ConnectionSpec;Ljavax/net/ssl/SSLSocket;Z)V
 .end method
 
-.method public abstract a(Lcom/squareup/okhttp/Headers$ICab;Ljava/lang/String;)V
+.method public abstract a(Lcom/squareup/okhttp/Headers$MCab;Ljava/lang/String;)V
 .end method
 
 .method public abstract a(Lcom/squareup/okhttp/OkHttpClient;Lcom/squareup/okhttp/Connection;Lcom/squareup/okhttp/internal/http/HttpEngine;Lcom/squareup/okhttp/Request;)V

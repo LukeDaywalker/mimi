@@ -337,7 +337,7 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Landroid/graphics/Bitmap;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+.method public a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Landroid/graphics/Bitmap;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
     .locals 0
 
     .prologue
@@ -351,7 +351,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     .line 40
-    invoke-virtual {p0, p3}, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, p3}, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 41
     return-void

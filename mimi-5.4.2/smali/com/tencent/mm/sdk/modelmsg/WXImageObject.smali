@@ -168,7 +168,7 @@
 
     const-string/jumbo v2, "checkArgs fail, all arguments are null"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -188,7 +188,7 @@
 
     const-string/jumbo v2, "checkArgs fail, content is too large"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -209,7 +209,7 @@
 
     const-string/jumbo v2, "checkArgs fail, path is invalid"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -230,7 +230,7 @@
 
     const-string/jumbo v2, "checkArgs fail, image content is too large"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -251,7 +251,7 @@
 
     const-string/jumbo v2, "checkArgs fail, url is invalid"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

@@ -98,7 +98,7 @@
 
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->mContentResolvercr:Landroid/content/ContentResolver;
 
-    sget-object v1, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/tencent/mm/sdk/c/MCa$MCb;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v5, v5}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -126,7 +126,7 @@
 
     iget-object v5, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->mContentResolvercr:Landroid/content/ContentResolver;
 
-    sget-object v6, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v6, Lcom/tencent/mm/sdk/c/MCa$MCb;->CONTENT_URI:Landroid/net/Uri;
 
     const-string/jumbo v7, "key = ?"
 
@@ -173,7 +173,7 @@
 
     const-string/jumbo v7, "unresolve failed, null value"
 
-    invoke-static {v1, v7}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     move v1, v2
 
@@ -187,7 +187,7 @@
 
     iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->mContentResolvercr:Landroid/content/ContentResolver;
 
-    sget-object v6, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v6, Lcom/tencent/mm/sdk/c/MCa$MCb;->CONTENT_URI:Landroid/net/Uri;
 
     const-string/jumbo v7, "key = ?"
 
@@ -284,7 +284,7 @@
 
     move-result-object v7
 
-    invoke-static {v1, v7}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Lcom/tencent/mm/sdk/b/MCa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     move v1, v2
 

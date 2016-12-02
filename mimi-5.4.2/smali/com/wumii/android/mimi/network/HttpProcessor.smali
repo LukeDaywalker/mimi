@@ -22,7 +22,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
-            "Lcom/wumii/android/mimi/network/HttpProcessor$ICf;",
+            "Lcom/wumii/android/mimi/network/HttpProcessor$MCf;",
             ">;"
         }
     .end annotation
@@ -220,9 +220,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$MCbr;->mMCbrb:Lcom/wumii/android/mimi/manager/UploadContactManager$MCbr;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$MCbr;)V
 
     goto :goto_0
 .end method
@@ -274,9 +274,9 @@
     .line 201
     iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHandlerc:Landroid/os/Handler;
 
-    new-instance v1, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;
+    new-instance v1, Lcom/wumii/android/mimi/network/HttpProcessor$MCc;
 
-    invoke-direct {v1, p0, p2, p1}, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/fasterxml/jackson/databind/JsonNode;Lcom/wumii/android/mimi/network/HttpRequest;)V
+    invoke-direct {v1, p0, p2, p1}, Lcom/wumii/android/mimi/network/HttpProcessor$MCc;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/fasterxml/jackson/databind/JsonNode;Lcom/wumii/android/mimi/network/HttpRequest;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -297,7 +297,7 @@
     const/16 v0, -0x3e9
 
     .line 225
-    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
+    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCo;
 
     if-eqz v1, :cond_0
 
@@ -324,18 +324,18 @@
     if-eqz v1, :cond_1
 
     .line 232
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafb:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafb:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v3, "HttpProcessor EOF Exception"
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 235
     :cond_1
     const/16 v3, -0x3ec
 
     .line 239
-    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICq;
+    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCq;
 
     if-eqz v1, :cond_2
 
@@ -358,13 +358,13 @@
     :goto_1
     iget-object v6, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHandlerc:Landroid/os/Handler;
 
-    new-instance v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICd;
+    new-instance v0, Lcom/wumii/android/mimi/network/HttpProcessor$MCd;
 
     move-object v1, p0
 
     move-object v2, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpProcessor$ICd;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/wumii/android/mimi/network/HttpRequest;ILjava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpProcessor$MCd;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/wumii/android/mimi/network/HttpRequest;ILjava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
 
     invoke-virtual {v6, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -372,7 +372,7 @@
 
     .line 242
     :cond_2
-    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCr;
 
     if-eqz v1, :cond_3
 
@@ -396,7 +396,7 @@
 
     .line 245
     :cond_3
-    instance-of v1, p2, Lcom/wumii/jackson/databind/JacksonMapper$ICg;
+    instance-of v1, p2, Lcom/wumii/jackson/databind/JacksonMapper$MCg;
 
     if-eqz v1, :cond_4
 
@@ -433,17 +433,17 @@
 
     .line 250
     :cond_5
-    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;
+    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCp;
 
     if-eqz v1, :cond_a
 
     move-object v0, p2
 
     .line 251
-    check-cast v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;
+    check-cast v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCp;
 
     .line 253
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->b()Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCp;->b()Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v4
 
@@ -531,7 +531,7 @@
 
     .line 277
     :cond_9
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->c()Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCp;->c()Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 
@@ -765,12 +765,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+.method public a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
     .locals 0
 
     .prologue
     .line 101
-    invoke-virtual {p1, p2}, Lcom/wumii/android/mimi/network/HttpRequest;->a(Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p1, p2}, Lcom/wumii/android/mimi/network/HttpRequest;->a(Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 102
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/network/HttpProcessor;->b(Lcom/wumii/android/mimi/network/HttpRequest;)V
@@ -835,7 +835,7 @@
     throw v0
 .end method
 
-.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
     .locals 1
 
     .prologue
@@ -855,11 +855,11 @@
     .line 106
     new-instance v0, Ljava/util/concurrent/FutureTask;
 
-    new-instance v1, Lcom/wumii/android/mimi/network/HttpProcessor$ICg;
+    new-instance v1, Lcom/wumii/android/mimi/network/HttpProcessor$MCg;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    invoke-direct {v1, p0, v2, p1}, Lcom/wumii/android/mimi/network/HttpProcessor$ICg;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/wumii/android/mimi/models/helper/HttpHelper;Lcom/wumii/android/mimi/network/HttpRequest;)V
+    invoke-direct {v1, p0, v2, p1}, Lcom/wumii/android/mimi/network/HttpProcessor$MCg;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/wumii/android/mimi/models/helper/HttpHelper;Lcom/wumii/android/mimi/network/HttpRequest;)V
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 

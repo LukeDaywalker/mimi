@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final mICbaa:Lcom/crashlytics/android/core/LogFileManager$ICba;
+.field private static final mMCbaa:Lcom/crashlytics/android/core/LogFileManager$MCba;
 
 
 # instance fields
@@ -21,13 +21,13 @@
 
     .prologue
     .line 19
-    new-instance v0, Lcom/crashlytics/android/core/LogFileManager$ICba;
+    new-instance v0, Lcom/crashlytics/android/core/LogFileManager$MCba;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/crashlytics/android/core/LogFileManager$ICba;-><init>(Lcom/crashlytics/android/core/LogFileManager$ICaz;)V
+    invoke-direct {v0, v1}, Lcom/crashlytics/android/core/LogFileManager$MCba;-><init>(Lcom/crashlytics/android/core/LogFileManager$MCaz;)V
 
-    sput-object v0, Lcom/crashlytics/android/core/LogFileManager;->mICbaa:Lcom/crashlytics/android/core/LogFileManager$ICba;
+    sput-object v0, Lcom/crashlytics/android/core/LogFileManager;->mMCbaa:Lcom/crashlytics/android/core/LogFileManager$MCba;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFilec:Ljava/io/File;
 
     .line 31
-    sget-object v0, Lcom/crashlytics/android/core/LogFileManager;->mICbaa:Lcom/crashlytics/android/core/LogFileManager$ICba;
+    sget-object v0, Lcom/crashlytics/android/core/LogFileManager;->mMCbaa:Lcom/crashlytics/android/core/LogFileManager$MCba;
 
     iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 
@@ -205,7 +205,7 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 42
-    sget-object v0, Lcom/crashlytics/android/core/LogFileManager;->mICbaa:Lcom/crashlytics/android/core/LogFileManager$ICba;
+    sget-object v0, Lcom/crashlytics/android/core/LogFileManager;->mMCbaa:Lcom/crashlytics/android/core/LogFileManager$MCba;
 
     iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 

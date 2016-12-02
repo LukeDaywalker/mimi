@@ -28,7 +28,7 @@
 
 .field private mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+.field private mMCbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;
 
 .field private mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
@@ -65,9 +65,9 @@
     iput-object p4, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mContextToastd:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 63
-    new-instance v0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbe;
+    new-instance v0, Lcom/wumii/android/mimi/task/ReadContactsTask$MCbe;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbe;-><init>(Lcom/wumii/android/mimi/task/ReadContactsTask;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/ReadContactsTask$MCbe;-><init>(Lcom/wumii/android/mimi/task/ReadContactsTask;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mTypeReferencee:Lcom/fasterxml/jackson/core/type/TypeReference;
 
@@ -81,9 +81,9 @@
     .line 67
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbf;
+    new-instance v1, Lcom/wumii/android/mimi/task/ReadContactsTask$MCbf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbf;-><init>(Lcom/wumii/android/mimi/task/ReadContactsTask;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/task/ReadContactsTask$MCbf;-><init>(Lcom/wumii/android/mimi/task/ReadContactsTask;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -96,12 +96,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/task/ReadContactsTask;)Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+.method static synthetic a(Lcom/wumii/android/mimi/task/ReadContactsTask;)Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;
     .locals 1
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mMCbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;
 
     return-object v0
 .end method
@@ -199,12 +199,12 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;)V
+.method public a(Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;)V
     .locals 0
 
     .prologue
     .line 207
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mMCbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;
 
     .line 208
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ReadContactsTask;->j()V
@@ -241,14 +241,14 @@
 
     .prologue
     .line 199
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mMCbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;
 
     if-eqz v0, :cond_0
 
     .line 200
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mMCbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;->a()V
 
     .line 203
     :cond_0
@@ -355,7 +355,7 @@
     .line 108
     invoke-interface {v2}, Ljava/util/Iterator;->remove()V
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
@@ -627,7 +627,7 @@
     .line 112
     invoke-direct {p0, v8}, Lcom/wumii/android/mimi/task/ReadContactsTask;->a(Ljava/util/List;)V
     :try_end_4
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_4 .. :try_end_4} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_4 .. :try_end_4} :catch_0
 
     goto/16 :goto_1
 
@@ -794,9 +794,9 @@
     .line 184
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mHandlerm:Landroid/os/Handler;
 
-    new-instance v1, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;
+    new-instance v1, Lcom/wumii/android/mimi/task/ReadContactsTask$MCbg;
 
-    invoke-direct {v1, p0, v2, v8}, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;-><init>(Lcom/wumii/android/mimi/task/ReadContactsTask;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct {v1, p0, v2, v8}, Lcom/wumii/android/mimi/task/ReadContactsTask$MCbg;-><init>(Lcom/wumii/android/mimi/task/ReadContactsTask;Ljava/util/List;Ljava/util/List;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

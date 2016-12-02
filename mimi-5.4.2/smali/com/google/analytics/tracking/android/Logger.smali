@@ -4,10 +4,10 @@
 
 
 # virtual methods
-.method public abstract a()Lcom/google/analytics/tracking/android/Logger$ICat;
+.method public abstract a()Lcom/google/analytics/tracking/android/Logger$MCat;
 .end method
 
-.method public abstract a(Lcom/google/analytics/tracking/android/Logger$ICat;)V
+.method public abstract a(Lcom/google/analytics/tracking/android/Logger$MCat;)V
 .end method
 
 .method public abstract a(Ljava/lang/String;)V

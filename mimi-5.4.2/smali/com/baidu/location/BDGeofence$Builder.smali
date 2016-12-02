@@ -108,7 +108,7 @@
     throw v0
 
     :cond_3
-    new-instance v0, Lcom/baidu/location/ICat;
+    new-instance v0, Lcom/baidu/location/MCat;
 
     iget-object v1, p0, Lcom/baidu/location/BDGeofence$Builder;->mStringdo:Ljava/lang/String;
 
@@ -122,7 +122,7 @@
 
     iget-object v9, p0, Lcom/baidu/location/BDGeofence$Builder;->int:Ljava/lang/String;
 
-    invoke-direct/range {v0 .. v9}, Lcom/baidu/location/ICat;-><init>(Ljava/lang/String;DDIJLjava/lang/String;)V
+    invoke-direct/range {v0 .. v9}, Lcom/baidu/location/MCat;-><init>(Ljava/lang/String;DDIJLjava/lang/String;)V
 
     return-object v0
 .end method

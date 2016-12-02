@@ -3,16 +3,16 @@
 
 
 # instance fields
-.field private mICaa:Lcom/baidu/platform/comjni/map/basemap/ICa;
+.field private mMCaa:Lcom/baidu/platform/comjni/map/basemap/MCa;
 
 
 # direct methods
-.method public constructor <init>(Lcom/baidu/platform/comjni/map/basemap/ICa;)V
+.method public constructor <init>(Lcom/baidu/platform/comjni/map/basemap/MCa;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/F;->mICaa:Lcom/baidu/platform/comjni/map/basemap/ICa;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/F;->mMCaa:Lcom/baidu/platform/comjni/map/basemap/MCa;
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, v1, v1}, Landroid/graphics/Point;-><init>(II)V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/F;->mICaa:Lcom/baidu/platform/comjni/map/basemap/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/F;->mMCaa:Lcom/baidu/platform/comjni/map/basemap/MCa;
 
     invoke-virtual {p1}, Lcom/baidu/mapapi/model/inner/GeoPoint;->getLongitudeE6()D
 
@@ -51,7 +51,7 @@
 
     double-to-int v3, v4
 
-    invoke-virtual {v1, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/ICa;->b(II)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/MCa;->b(II)Ljava/lang/String;
 
     move-result-object v1
 
@@ -95,9 +95,9 @@
 
     const-wide/16 v2, 0x0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/F;->mICaa:Lcom/baidu/platform/comjni/map/basemap/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/F;->mMCaa:Lcom/baidu/platform/comjni/map/basemap/MCa;
 
-    invoke-virtual {v0, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/ICa;->a(II)Ljava/lang/String;
+    invoke-virtual {v0, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/MCa;->a(II)Ljava/lang/String;
 
     move-result-object v1
 

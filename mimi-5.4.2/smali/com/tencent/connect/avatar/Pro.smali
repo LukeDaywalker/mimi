@@ -45,11 +45,11 @@
 
     iget-object v1, p0, Lcom/tencent/connect/avatar/Pro;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
-    invoke-static {v1}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->a(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Lcom/tencent/connect/avatar/Pro$ICb;
+    invoke-static {v1}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->a(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Lcom/tencent/connect/avatar/Pro$MCb;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/tencent/connect/avatar/Pro$ICb;->a()Landroid/graphics/Rect;
+    invoke-virtual {v1}, Lcom/tencent/connect/avatar/Pro$MCb;->a()Landroid/graphics/Rect;
 
     move-result-object v1
 
@@ -58,7 +58,7 @@
     .line 367
     iget-object v0, p0, Lcom/tencent/connect/avatar/Pro;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
-    invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->c(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Lcom/tencent/connect/avatar/Pro$ICc;
+    invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->c(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Lcom/tencent/connect/avatar/Pro$MCc;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/tencent/connect/avatar/Pro$ICc;->a(Landroid/graphics/Rect;)V
+    invoke-virtual {v0, v1}, Lcom/tencent/connect/avatar/Pro$MCc;->a(Landroid/graphics/Rect;)V
 
     .line 381
     return-void

@@ -69,9 +69,9 @@
 
     const-class v1, Lu/aly/StandardScheme;
 
-    new-instance v2, Lu/aly/TUnion$ICgd;
+    new-instance v2, Lu/aly/TUnion$MCgd;
 
-    invoke-direct {v2, v3}, Lu/aly/TUnion$ICgd;-><init>(Lu/aly/TUnion$ICgb;)V
+    invoke-direct {v2, v3}, Lu/aly/TUnion$MCgd;-><init>(Lu/aly/TUnion$MCgb;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -80,9 +80,9 @@
 
     const-class v1, Lu/aly/TupleScheme;
 
-    new-instance v2, Lu/aly/TUnion$ICgf;
+    new-instance v2, Lu/aly/TUnion$MCgf;
 
-    invoke-direct {v2, v3}, Lu/aly/TUnion$ICgf;-><init>(Lu/aly/TUnion$ICgb;)V
+    invoke-direct {v2, v3}, Lu/aly/TUnion$MCgf;-><init>(Lu/aly/TUnion$MCgb;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

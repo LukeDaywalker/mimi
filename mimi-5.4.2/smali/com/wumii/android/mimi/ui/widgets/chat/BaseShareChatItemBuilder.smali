@@ -27,21 +27,21 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->mLayoutInflaterf:Landroid/view/LayoutInflater;
 
     .line 25
-    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
-    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
@@ -59,11 +59,11 @@
 
     invoke-direct {v1, v2}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a(Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
 
 
 # virtual methods
-.method protected abstract a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;)V
+.method protected abstract a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$MCk;)V
 .end method
 
 .method public b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;
+    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$MCk;
 
     if-nez v0, :cond_1
 
@@ -108,9 +108,9 @@
     move-result-object p2
 
     .line 37
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$MCk;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$MCk;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p2, v3, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -120,10 +120,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$MCk;
 
     .line 41
-    invoke-virtual {p0, p1, p2, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;)V
+    invoke-virtual {p0, p1, p2, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$MCk;)V
 
     .line 42
     return-object p2

@@ -722,7 +722,7 @@
     throw v1
 .end method
 
-.method private b(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+.method private b(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
     .locals 3
 
     .prologue
@@ -736,17 +736,17 @@
     if-nez v0, :cond_0
 
     .line 208
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->mICra:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCr;->mMCra:Lcom/wumii/android/mimi/models/helper/HttpHelper$MCr;
 
     throw v0
 
     .line 211
     :cond_0
-    new-instance v0, Lcom/squareup/okhttp/Request$ICap;
+    new-instance v0, Lcom/squareup/okhttp/Request$MCap;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/Request$ICap;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/Request$MCap;-><init>()V
 
-    invoke-virtual {v0, p1}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, p1}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -754,7 +754,7 @@
 
     const-string/jumbo v2, "gzip,deflate"
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -767,7 +767,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 213
     return-object v0
@@ -810,7 +810,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -819,7 +819,7 @@
 
     const-string/jumbo v2, "text/plain;charset=UTF-8"
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 435
     const-string/jumbo v1, "text/plain;charset=UTF-8"
@@ -832,10 +832,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->a(Lcom/squareup/okhttp/RequestBody;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->a(Lcom/squareup/okhttp/RequestBody;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 436
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -884,7 +884,7 @@
     if-nez v0, :cond_0
 
     .line 461
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->mICra:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCr;->mMCra:Lcom/wumii/android/mimi/models/helper/HttpHelper$MCr;
 
     throw v0
     :try_end_0
@@ -979,7 +979,7 @@
     if-nez v0, :cond_0
 
     .line 481
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;->mICra:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCr;->mMCra:Lcom/wumii/android/mimi/models/helper/HttpHelper$MCr;
 
     throw v0
     :try_end_0
@@ -1015,7 +1015,7 @@
     if-nez v1, :cond_1
 
     .line 489
-    new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$ICg;
+    new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$MCg;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1039,7 +1039,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/wumii/jackson/databind/JacksonMapper$MCg;-><init>(Ljava/lang/String;)V
 
     throw v0
 
@@ -1148,21 +1148,21 @@
 
     .line 515
     :cond_2
-    new-instance v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCp;
 
-    invoke-direct {v0, v2, v1, v3}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;-><init>(ILcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    invoke-direct {v0, v2, v1, v3}, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCp;-><init>(ILcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JsonNode;)V
 
     throw v0
 
     .line 507
     :pswitch_1
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;->mICoa:Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCo;->mMCoa:Lcom/wumii/android/mimi/models/helper/HttpHelper$MCo;
 
     throw v0
 
     .line 518
     :cond_3
-    new-instance v1, Lcom/wumii/jackson/databind/JacksonMapper$ICg;
+    new-instance v1, Lcom/wumii/jackson/databind/JacksonMapper$MCg;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1182,7 +1182,7 @@
 
     move-result-object v0
 
-    invoke-direct {v1, v0}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/wumii/jackson/databind/JacksonMapper$MCg;-><init>(Ljava/lang/String;)V
 
     throw v1
 
@@ -1278,7 +1278,7 @@
     goto :goto_0
 .end method
 
-.method private e(Ljava/lang/String;Ljava/util/Map;)Lcom/squareup/okhttp/Request$ICap;
+.method private e(Ljava/lang/String;Ljava/util/Map;)Lcom/squareup/okhttp/Request$MCap;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1289,7 +1289,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/Object;",
             ">;)",
-            "Lcom/squareup/okhttp/Request$ICap;"
+            "Lcom/squareup/okhttp/Request$MCap;"
         }
     .end annotation
 
@@ -1313,7 +1313,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -1342,7 +1342,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -1351,7 +1351,7 @@
 
     const-string/jumbo v2, "application/x-www-form-urlencoded"
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 425
     const-string/jumbo v1, "application/x-www-form-urlencoded"
@@ -1374,10 +1374,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->a(Lcom/squareup/okhttp/RequestBody;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->a(Lcom/squareup/okhttp/RequestBody;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 426
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -1391,15 +1391,15 @@
 
     .prologue
     .line 221
-    new-instance v0, Lcom/squareup/okhttp/Request$ICap;
+    new-instance v0, Lcom/squareup/okhttp/Request$MCap;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/Request$ICap;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/Request$MCap;-><init>()V
 
     new-instance v1, Ljava/net/URL;
 
     invoke-direct {v1, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -1408,7 +1408,7 @@
 
     invoke-direct {v1}, Lcom/squareup/okhttp/OkHttpClient;-><init>()V
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -1482,11 +1482,11 @@
 
     .prologue
     .line 217
-    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->e(Ljava/lang/String;Ljava/util/Map;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->e(Ljava/lang/String;Ljava/util/Map;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -1527,12 +1527,12 @@
     return-object v0
 .end method
 
-.method public a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+.method public a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
     .locals 6
 
     .prologue
     .line 166
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v2
 
@@ -1547,7 +1547,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v2, v0, v1}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v2, v0, v1}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 169
     iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mMapf:Ljava/util/Map;
@@ -1590,7 +1590,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v1, v0}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v2, v1, v0}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     goto :goto_0
 
@@ -1624,7 +1624,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v1, v0}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v2, v1, v0}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 178
     :cond_1
@@ -1673,7 +1673,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v1, v3}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v2, v1, v3}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 184
     const-string/jumbo v1, "X-App-Latitude"
@@ -1686,7 +1686,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v1, v0}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v2, v1, v0}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 191
     :cond_3
@@ -1705,7 +1705,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v2, v0, v1}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v2, v0, v1}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 195
     :cond_4
@@ -1759,11 +1759,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/net/URL;)V
 
     .line 279
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafa:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v2, "HttpHelper SocketException"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 280
     iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
@@ -1773,13 +1773,13 @@
     invoke-interface {v1, v2, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 281
-    new-instance v1, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICq;
+    new-instance v1, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCq;
 
     invoke-virtual {v0}, Ljava/net/SocketException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v1, v0, v3}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICq;-><init>(Ljava/lang/String;Lcom/wumii/android/mimi/models/helper/HttpHelper$ICn;)V
+    invoke-direct {v1, v0, v3}, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCq;-><init>(Ljava/lang/String;Lcom/wumii/android/mimi/models/helper/HttpHelper$MCn;)V
 
     throw v1
 
@@ -1797,11 +1797,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/net/URL;)V
 
     .line 284
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafa:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v2, "HttpHelper SocketTimeoutException"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 285
     iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
@@ -1811,13 +1811,13 @@
     invoke-interface {v1, v2, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 286
-    new-instance v1, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICq;
+    new-instance v1, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCq;
 
     invoke-virtual {v0}, Ljava/net/SocketTimeoutException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v1, v0, v3}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICq;-><init>(Ljava/lang/String;Lcom/wumii/android/mimi/models/helper/HttpHelper$ICn;)V
+    invoke-direct {v1, v0, v3}, Lcom/wumii/android/mimi/models/helper/HttpHelper$MCq;-><init>(Ljava/lang/String;Lcom/wumii/android/mimi/models/helper/HttpHelper$MCn;)V
 
     throw v1
 
@@ -1835,11 +1835,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/net/URL;)V
 
     .line 289
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafa:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v2, "HttpHelper SSLException"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 290
     iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
@@ -1865,11 +1865,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/net/URL;)V
 
     .line 294
-    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafa:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
     const-string/jumbo v2, "HttpHelper IOException"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$MCaf;Ljava/lang/String;)V
 
     .line 295
     iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
@@ -1982,7 +1982,7 @@
     if-nez v0, :cond_0
 
     .line 537
-    new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$ICg;
+    new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$MCg;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2026,7 +2026,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/wumii/jackson/databind/JacksonMapper$MCg;-><init>(Ljava/lang/String;)V
 
     throw v0
 
@@ -2072,22 +2072,22 @@
 
     invoke-direct {v0, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
     .line 237
     const-string/jumbo v1, "User-Agent"
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 238
     const-string/jumbo v1, "User-Agent"
 
-    invoke-virtual {v0, v1, p2}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, p2}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 239
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -2453,7 +2453,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -2478,7 +2478,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v1, v4}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v4}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 361
     const-string/jumbo v1, "Content-Length"
@@ -2491,7 +2491,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v1, v4}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v4}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 362
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2524,10 +2524,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->a(Lcom/squareup/okhttp/RequestBody;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->a(Lcom/squareup/okhttp/RequestBody;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 364
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -2547,21 +2547,21 @@
 
     invoke-direct {v0, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
     .line 244
     const-string/jumbo v1, "Referer"
 
-    invoke-virtual {v0, v1, p2}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, p2}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 246
     const/4 v1, 0x0
 
     .line 248
     :try_start_0
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 

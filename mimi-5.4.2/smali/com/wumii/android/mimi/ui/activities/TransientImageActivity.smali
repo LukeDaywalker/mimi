@@ -60,9 +60,9 @@
     if-nez v0, :cond_0
 
     .line 138
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbr;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbr;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->mCountDownTimers:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
@@ -257,9 +257,9 @@
     .line 85
     const v1, 0x7f0602e3
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbp;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbp;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -281,11 +281,11 @@
     if-eqz v0, :cond_0
 
     .line 103
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbt;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbt;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbt;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbt;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbt;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbt;->j()V
 
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
@@ -316,9 +316,9 @@
     .line 113
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->mTextViewr:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbq;
 
-    invoke-direct {v1, p0, p3}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/graphics/Bitmap;)V
+    invoke-direct {v1, p0, p3}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbq;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/graphics/Bitmap;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -327,11 +327,11 @@
 
     .line 106
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbs;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbs;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbs;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbs;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbs;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$MCbs;->j()V
 
     .line 107
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;

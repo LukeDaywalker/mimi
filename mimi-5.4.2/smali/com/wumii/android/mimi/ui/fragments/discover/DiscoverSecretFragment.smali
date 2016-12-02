@@ -16,7 +16,7 @@
 
 .field private mFeedTypel:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private mICdj:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+.field private mMCdj:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
 .field private mXListViewb:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -83,18 +83,18 @@
 
     .prologue
     .line 87
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICh;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCh;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICh;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCh;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mDiscoverObservere:Lcom/wumii/android/mimi/models/observer/DiscoverObserver;
 
     .line 150
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICi;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCi;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICi;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCi;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mICdj:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mMCdj:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
     .line 160
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mDiscoverManagerd:Lcom/wumii/android/mimi/manager/DiscoverManager;
@@ -110,9 +110,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mICdj:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mMCdj:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 162
     return-void
@@ -143,15 +143,15 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mFeedTypel:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICj;
+    new-instance v3, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCj;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v4
 
-    invoke-direct {v3, p0, v4}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICj;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;Landroid/content/Context;)V
+    invoke-direct {v3, p0, v4}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCj;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;Landroid/content/Context;)V
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mFeedAdapterc:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
@@ -175,20 +175,20 @@
     .line 195
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mXListViewb:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICk;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCk;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICk;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCk;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/XListView$MCch;)V
 
     .line 201
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mXListViewb:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICl;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCl;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$ICl;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment$MCl;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnLoadMoreListener(Lcom/wumii/android/mimi/ui/widgets/XListView$ICcg;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnLoadMoreListener(Lcom/wumii/android/mimi/ui/widgets/XListView$MCcg;)V
 
     .line 207
     return-void
@@ -330,9 +330,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mICdj:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->mMCdj:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 214
     return-void

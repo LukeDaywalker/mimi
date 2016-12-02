@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;
+    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;
 
     if-nez v0, :cond_2
 
@@ -173,9 +173,9 @@
     move-result-object p2
 
     .line 44
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;-><init>(Landroid/view/View;)V
 
     .line 45
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -184,28 +184,28 @@
 
     .line 51
     :goto_0
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 52
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 53
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 54
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->d(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->d(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -248,7 +248,7 @@
     if-nez v2, :cond_3
 
     .line 64
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -258,14 +258,14 @@
 
     .line 70
     :goto_1
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
     invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 71
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -295,7 +295,7 @@
     if-eqz v0, :cond_a
 
     .line 101
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->e(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->e(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -306,7 +306,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 102
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->e(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->e(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -322,7 +322,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;
 
     move-object v1, v0
 
@@ -330,7 +330,7 @@
 
     .line 66
     :cond_3
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -339,7 +339,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 67
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -370,7 +370,7 @@
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 68
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -385,7 +385,7 @@
     if-ne v3, v2, :cond_6
 
     .line 73
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -415,7 +415,7 @@
     if-lez v2, :cond_5
 
     .line 75
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -447,21 +447,21 @@
 
     .line 79
     :goto_4
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
     invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 80
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
     invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 81
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -469,7 +469,7 @@
 
     .line 77
     :cond_5
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -486,7 +486,7 @@
     if-ne v3, v2, :cond_7
 
     .line 83
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -495,14 +495,14 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 84
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v2
 
     invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 85
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -510,7 +510,7 @@
 
     .line 87
     :cond_7
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -520,7 +520,7 @@
     if-ne v3, v4, :cond_9
 
     .line 89
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -531,7 +531,7 @@
     .line 93
     :cond_8
     :goto_5
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -546,7 +546,7 @@
     if-ne v3, v4, :cond_8
 
     .line 91
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -558,7 +558,7 @@
 
     .line 104
     :cond_a
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->e(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;->e(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$MCap;)Landroid/widget/TextView;
 
     move-result-object v0
 

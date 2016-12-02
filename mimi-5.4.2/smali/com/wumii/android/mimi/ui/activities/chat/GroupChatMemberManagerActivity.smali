@@ -135,7 +135,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->mCustomTabAdapterr:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$MCw;)V
 
     .line 62
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->mCustomTabPageIndicatorp:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;

@@ -24,9 +24,9 @@
 
     .prologue
     .line 49
-    new-instance v0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao$ICb;
+    new-instance v0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao$MCb;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao$ICb;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao$MCb;-><init>()V
 
     sput-object v0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 

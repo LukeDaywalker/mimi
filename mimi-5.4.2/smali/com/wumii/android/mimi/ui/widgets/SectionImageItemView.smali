@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private mICbmd:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbm;
-
 .field private mImageViewe:Landroid/widget/ImageView;
+
+.field private mMCbmd:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$MCbm;
 
 
 # direct methods
@@ -44,9 +44,9 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 33
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$MCbl;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;-><init>(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$MCbl;-><init>(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;)V
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -54,12 +54,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbm;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$MCbm;
     .locals 1
 
     .prologue
     .line 13
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->mICbmd:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->mMCbmd:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$MCbm;
 
     return-object v0
 .end method
@@ -94,9 +94,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
     .line 53
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->mICbnc:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->mMCbnc:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$MCbn;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$MCbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->mImageViewe:Landroid/widget/ImageView;
 
@@ -116,12 +116,12 @@
     return-object v0
 .end method
 
-.method public setListener(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbm;)V
+.method public setListener(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$MCbm;)V
     .locals 0
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->mICbmd:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->mMCbmd:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$MCbm;
 
     .line 46
     return-void

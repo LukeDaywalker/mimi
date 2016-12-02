@@ -251,9 +251,9 @@
 
     .line 114
     :cond_2
-    new-instance v0, Lcom/umeng/analytics/InternalAgent$ICr;
+    new-instance v0, Lcom/umeng/analytics/InternalAgent$MCr;
 
-    invoke-direct {v0, p0, p1}, Lcom/umeng/analytics/InternalAgent$ICr;-><init>(Lcom/umeng/analytics/InternalAgent;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p1}, Lcom/umeng/analytics/InternalAgent$MCr;-><init>(Lcom/umeng/analytics/InternalAgent;Landroid/content/Context;)V
 
     invoke-static {v0}, Lcom/umeng/analytics/QueuedWork;->a(Ljava/lang/Runnable;)V
     :try_end_0
@@ -443,9 +443,9 @@
 
     .line 139
     :cond_2
-    new-instance v0, Lcom/umeng/analytics/InternalAgent$ICs;
+    new-instance v0, Lcom/umeng/analytics/InternalAgent$MCs;
 
-    invoke-direct {v0, p0, p1}, Lcom/umeng/analytics/InternalAgent$ICs;-><init>(Lcom/umeng/analytics/InternalAgent;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p1}, Lcom/umeng/analytics/InternalAgent$MCs;-><init>(Lcom/umeng/analytics/InternalAgent;Landroid/content/Context;)V
 
     invoke-static {v0}, Lcom/umeng/analytics/QueuedWork;->a(Ljava/lang/Runnable;)V
     :try_end_0

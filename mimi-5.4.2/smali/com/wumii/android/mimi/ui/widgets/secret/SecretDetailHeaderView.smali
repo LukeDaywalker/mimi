@@ -235,9 +235,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 100
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$MCab;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;Lcom/wumii/android/mimi/models/entities/circle/Circle;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$MCab;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;Lcom/wumii/android/mimi/models/entities/circle/Circle;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -402,14 +402,14 @@
     return-object v0
 .end method
 
-.method public setOnSecretCardClickListener(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
+.method public setOnSecretCardClickListener(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;)V
     .locals 1
 
     .prologue
     .line 56
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->setOnSecretCardClickListener(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->setOnSecretCardClickListener(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$MCz;)V
 
     .line 57
     return-void

@@ -73,11 +73,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICy;
+    new-instance v1, Lcom/wumii/android/mimi/models/share/GuidenceShareController$MCy;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICy;-><init>(Lcom/wumii/android/mimi/models/share/GuidenceShareController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/GuidenceShareController$MCy;-><init>(Lcom/wumii/android/mimi/models/share/GuidenceShareController;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 45
     return-void
@@ -96,11 +96,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/GuidenceShareController$MCx;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;-><init>(Lcom/wumii/android/mimi/models/share/GuidenceShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/GuidenceShareController$MCx;-><init>(Lcom/wumii/android/mimi/models/share/GuidenceShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 35
     return-void
@@ -117,11 +117,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/GuidenceShareController$MCz;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;-><init>(Lcom/wumii/android/mimi/models/share/GuidenceShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/GuidenceShareController$MCz;-><init>(Lcom/wumii/android/mimi/models/share/GuidenceShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 60
     return-void

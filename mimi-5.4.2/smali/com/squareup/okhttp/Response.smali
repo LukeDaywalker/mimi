@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/squareup/okhttp/Response$ICau;)V
+.method private constructor <init>(Lcom/squareup/okhttp/Response$MCau;)V
     .locals 1
 
     .prologue
@@ -36,74 +36,74 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 51
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Request;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Response$MCau;)Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Response;->mRequesta:Lcom/squareup/okhttp/Request;
 
     .line 52
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->b(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Protocol;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->b(Lcom/squareup/okhttp/Response$MCau;)Lcom/squareup/okhttp/Protocol;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Response;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     .line 53
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->c(Lcom/squareup/okhttp/Response$ICau;)I
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->c(Lcom/squareup/okhttp/Response$MCau;)I
 
     move-result v0
 
     iput v0, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     .line 54
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->d(Lcom/squareup/okhttp/Response$ICau;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->d(Lcom/squareup/okhttp/Response$MCau;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Response;->mStringd:Ljava/lang/String;
 
     .line 55
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->e(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Handshake;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->e(Lcom/squareup/okhttp/Response$MCau;)Lcom/squareup/okhttp/Handshake;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Response;->mHandshakee:Lcom/squareup/okhttp/Handshake;
 
     .line 56
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->f(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->f(Lcom/squareup/okhttp/Response$MCau;)Lcom/squareup/okhttp/Headers$MCab;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Headers$MCab;->a()Lcom/squareup/okhttp/Headers;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Response;->mHeadersf:Lcom/squareup/okhttp/Headers;
 
     .line 57
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->g(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/ResponseBody;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->g(Lcom/squareup/okhttp/Response$MCau;)Lcom/squareup/okhttp/ResponseBody;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Response;->mResponseBodyg:Lcom/squareup/okhttp/ResponseBody;
 
     .line 58
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->h(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Response;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->h(Lcom/squareup/okhttp/Response$MCau;)Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Response;->mResponseh:Lcom/squareup/okhttp/Response;
 
     .line 59
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->i(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Response;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->i(Lcom/squareup/okhttp/Response$MCau;)Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/squareup/okhttp/Response;->mResponsei:Lcom/squareup/okhttp/Response;
 
     .line 60
-    invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->j(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Response;
+    invoke-static {p1}, Lcom/squareup/okhttp/Response$MCau;->j(Lcom/squareup/okhttp/Response$MCau;)Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
@@ -113,12 +113,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/squareup/okhttp/Response$ICau;Lcom/squareup/okhttp/Response$ICat;)V
+.method synthetic constructor <init>(Lcom/squareup/okhttp/Response$MCau;Lcom/squareup/okhttp/Response$MCat;)V
     .locals 0
 
     .prologue
     .line 36
-    invoke-direct {p0, p1}, Lcom/squareup/okhttp/Response;-><init>(Lcom/squareup/okhttp/Response$ICau;)V
+    invoke-direct {p0, p1}, Lcom/squareup/okhttp/Response;-><init>(Lcom/squareup/okhttp/Response$MCau;)V
 
     return-void
 .end method
@@ -357,16 +357,16 @@
     return-object v0
 .end method
 
-.method public i()Lcom/squareup/okhttp/Response$ICau;
+.method public i()Lcom/squareup/okhttp/Response$MCau;
     .locals 2
 
     .prologue
     .line 134
-    new-instance v0, Lcom/squareup/okhttp/Response$ICau;
+    new-instance v0, Lcom/squareup/okhttp/Response$MCau;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/squareup/okhttp/Response$ICau;-><init>(Lcom/squareup/okhttp/Response;Lcom/squareup/okhttp/Response$ICat;)V
+    invoke-direct {v0, p0, v1}, Lcom/squareup/okhttp/Response$MCau;-><init>(Lcom/squareup/okhttp/Response;Lcom/squareup/okhttp/Response$MCat;)V
 
     return-object v0
 .end method

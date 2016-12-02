@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final mICee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
-
 .field private mJc:J
+
+.field private final mMCee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$MCe;
 
 .field private final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -41,13 +41,13 @@
     iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mMapd:Ljava/util/Map;
 
     .line 34
-    new-instance v0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
+    new-instance v0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$MCe;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;-><init>(Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICd;)V
+    invoke-direct {v0, v1}, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$MCe;-><init>(Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$MCd;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mICee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mMCee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$MCe;
 
     .line 37
     iput-object p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
@@ -231,9 +231,9 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mICee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mMCee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$MCe;
 
-    invoke-virtual {v0}, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;->a()V
+    invoke-virtual {v0}, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$MCe;->a()V
 
     .line 72
     return-void

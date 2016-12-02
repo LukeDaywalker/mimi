@@ -55,9 +55,9 @@
 
     .prologue
     .line 102
-    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICr;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpEngine$MCr;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine$ICr;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine$MCr;-><init>()V
 
     sput-object v0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mResponseBodyd:Lcom/squareup/okhttp/ResponseBody;
 
@@ -266,9 +266,9 @@
     const/4 v0, 0x0
 
     .line 1025
-    new-instance v2, Lcom/squareup/okhttp/Headers$ICab;
+    new-instance v2, Lcom/squareup/okhttp/Headers$MCab;
 
-    invoke-direct {v2}, Lcom/squareup/okhttp/Headers$ICab;-><init>()V
+    invoke-direct {v2}, Lcom/squareup/okhttp/Headers$MCab;-><init>()V
 
     .line 1027
     invoke-virtual {p0}, Lcom/squareup/okhttp/Headers;->a()I
@@ -330,7 +330,7 @@
 
     .line 1034
     :cond_2
-    invoke-virtual {v2, v4, v5}, Lcom/squareup/okhttp/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-virtual {v2, v4, v5}, Lcom/squareup/okhttp/Headers$MCab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$MCab;
 
     goto :goto_1
 
@@ -377,13 +377,13 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/squareup/okhttp/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-virtual {v2, v3, v4}, Lcom/squareup/okhttp/Headers$MCab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$MCab;
 
     goto :goto_3
 
     .line 1048
     :cond_6
-    invoke-virtual {v2}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
+    invoke-virtual {v2}, Lcom/squareup/okhttp/Headers$MCab;->a()Lcom/squareup/okhttp/Headers;
 
     move-result-object v0
 
@@ -395,7 +395,7 @@
 
     .prologue
     .line 696
-    invoke-virtual {p1}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {p1}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -419,7 +419,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 702
     :cond_0
@@ -452,7 +452,7 @@
 
     const-string/jumbo v2, "Keep-Alive"
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 707
     :cond_2
@@ -474,7 +474,7 @@
 
     const-string/jumbo v2, "gzip"
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 712
     :cond_3
@@ -488,7 +488,7 @@
     if-eqz v1, :cond_4
 
     .line 717
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v2
 
@@ -512,7 +512,7 @@
     move-result-object v1
 
     .line 722
-    invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/http/OkHeaders;->a(Lcom/squareup/okhttp/Request$ICap;Ljava/util/Map;)V
+    invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/http/OkHeaders;->a(Lcom/squareup/okhttp/Request$MCap;Ljava/util/Map;)V
 
     .line 725
     :cond_4
@@ -531,11 +531,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 729
     :cond_5
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -588,12 +588,12 @@
     move-result-object v0
 
     .line 949
-    new-instance v2, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;
+    new-instance v2, Lcom/squareup/okhttp/internal/http/HttpEngine$MCs;
 
-    invoke-direct {v2, p0, v1, p1, v0}, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;-><init>(Lcom/squareup/okhttp/internal/http/HttpEngine;Lokio/BufferedSource;Lcom/squareup/okhttp/internal/http/CacheRequest;Lokio/BufferedSink;)V
+    invoke-direct {v2, p0, v1, p1, v0}, Lcom/squareup/okhttp/internal/http/HttpEngine$MCs;-><init>(Lcom/squareup/okhttp/internal/http/HttpEngine;Lokio/BufferedSource;Lcom/squareup/okhttp/internal/http/CacheRequest;Lokio/BufferedSink;)V
 
     .line 991
-    invoke-virtual {p2}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {p2}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
@@ -610,12 +610,12 @@
 
     invoke-direct {v1, v3, v2}, Lcom/squareup/okhttp/internal/http/RealResponseBody;-><init>(Lcom/squareup/okhttp/Headers;Lokio/BufferedSource;)V
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     .line 993
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object p2
 
@@ -893,17 +893,17 @@
     if-eqz v0, :cond_0
 
     .line 313
-    invoke-virtual {p0}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {p0}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object p0
 
@@ -1076,36 +1076,36 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/squareup/okhttp/Headers;->b()Lcom/squareup/okhttp/Headers$ICab;
+    invoke-virtual {v1}, Lcom/squareup/okhttp/Headers;->b()Lcom/squareup/okhttp/Headers$MCab;
 
     move-result-object v1
 
     const-string/jumbo v2, "Content-Encoding"
 
     .line 652
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Headers$ICab;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Headers$MCab;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Headers$MCab;
 
     move-result-object v1
 
     const-string/jumbo v2, "Content-Length"
 
     .line 653
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Headers$ICab;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Headers$MCab;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Headers$MCab;
 
     move-result-object v1
 
     .line 654
-    invoke-virtual {v1}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
+    invoke-virtual {v1}, Lcom/squareup/okhttp/Headers$MCab;->a()Lcom/squareup/okhttp/Headers;
 
     move-result-object v1
 
     .line 655
-    invoke-virtual {p1}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {p1}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v2
 
     .line 656
-    invoke-virtual {v2, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v2, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v2
 
@@ -1118,12 +1118,12 @@
 
     invoke-direct {v3, v1, v0}, Lcom/squareup/okhttp/internal/http/RealResponseBody;-><init>(Lcom/squareup/okhttp/Headers;Lokio/BufferedSource;)V
 
-    invoke-virtual {v2, v3}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v2, v3}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     .line 658
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object p1
 
@@ -1424,14 +1424,14 @@
     .line 917
     iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mTransportj:Lcom/squareup/okhttp/internal/http/Transport;
 
-    invoke-interface {v0}, Lcom/squareup/okhttp/internal/http/Transport;->b()Lcom/squareup/okhttp/Response$ICau;
+    invoke-interface {v0}, Lcom/squareup/okhttp/internal/http/Transport;->b()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestm:Lcom/squareup/okhttp/Request;
 
     .line 918
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
@@ -1442,7 +1442,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Handshake;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Handshake;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
@@ -1455,7 +1455,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
@@ -1470,12 +1470,12 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     .line 922
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
@@ -1485,7 +1485,7 @@
     if-nez v1, :cond_0
 
     .line 925
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
@@ -1496,12 +1496,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     .line 927
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
@@ -1800,11 +1800,11 @@
     move-result-wide v4
 
     .line 233
-    new-instance v6, Lcom/squareup/okhttp/internal/http/CacheStrategy$ICe;
+    new-instance v6, Lcom/squareup/okhttp/internal/http/CacheStrategy$MCe;
 
-    invoke-direct {v6, v4, v5, v2, v0}, Lcom/squareup/okhttp/internal/http/CacheStrategy$ICe;-><init>(JLcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Response;)V
+    invoke-direct {v6, v4, v5, v2, v0}, Lcom/squareup/okhttp/internal/http/CacheStrategy$MCe;-><init>(JLcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Response;)V
 
-    invoke-virtual {v6}, Lcom/squareup/okhttp/internal/http/CacheStrategy$ICe;->a()Lcom/squareup/okhttp/internal/http/CacheStrategy;
+    invoke-virtual {v6}, Lcom/squareup/okhttp/internal/http/CacheStrategy$MCe;->a()Lcom/squareup/okhttp/internal/http/CacheStrategy;
 
     move-result-object v4
 
@@ -2008,14 +2008,14 @@
     .line 290
     iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mResponsen:Lcom/squareup/okhttp/Response;
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestl:Lcom/squareup/okhttp/Request;
 
     .line 291
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
@@ -2026,7 +2026,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->c(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->c(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
@@ -2037,12 +2037,12 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->b(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->b(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     .line 294
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
@@ -2062,14 +2062,14 @@
 
     .line 297
     :cond_c
-    new-instance v0, Lcom/squareup/okhttp/Response$ICau;
+    new-instance v0, Lcom/squareup/okhttp/Response$MCau;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/Response$ICau;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/Response$MCau;-><init>()V
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestl:Lcom/squareup/okhttp/Request;
 
     .line 298
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
@@ -2080,40 +2080,40 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->c(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->c(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     sget-object v1, Lcom/squareup/okhttp/Protocol;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     .line 300
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     const/16 v1, 0x1f8
 
     .line 301
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(I)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(I)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     const-string/jumbo v1, "Unsatisfiable Request (only-if-cached)"
 
     .line 302
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Ljava/lang/String;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Ljava/lang/String;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     sget-object v1, Lcom/squareup/okhttp/internal/http/HttpEngine;->mResponseBodyd:Lcom/squareup/okhttp/ResponseBody;
 
     .line 303
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/ResponseBody;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     .line 304
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
@@ -2670,14 +2670,14 @@
     .line 801
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mResponsen:Lcom/squareup/okhttp/Response;
 
-    invoke-virtual {v1}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestl:Lcom/squareup/okhttp/Request;
 
     .line 802
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
@@ -2688,7 +2688,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->c(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->c(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
@@ -2707,7 +2707,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
@@ -2718,7 +2718,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->b(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->b(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
@@ -2727,12 +2727,12 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
     .line 807
-    invoke-virtual {v1}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v1}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object v1
 
@@ -2789,17 +2789,17 @@
     if-nez v0, :cond_4
 
     .line 760
-    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICt;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpEngine$MCt;
 
     const/4 v1, 0x0
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestm:Lcom/squareup/okhttp/Request;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/squareup/okhttp/internal/http/HttpEngine$ICt;-><init>(Lcom/squareup/okhttp/internal/http/HttpEngine;ILcom/squareup/okhttp/Request;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/squareup/okhttp/internal/http/HttpEngine$MCt;-><init>(Lcom/squareup/okhttp/internal/http/HttpEngine;ILcom/squareup/okhttp/Request;)V
 
     iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestm:Lcom/squareup/okhttp/Request;
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/http/HttpEngine$ICt;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/internal/http/HttpEngine$MCt;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
@@ -2869,7 +2869,7 @@
     .line 773
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestm:Lcom/squareup/okhttp/Request;
 
-    invoke-virtual {v2}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v2}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v2
 
@@ -2880,12 +2880,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v3, v0}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v2, v3, v0}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
     .line 775
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -2960,14 +2960,14 @@
 
     .line 823
     :cond_b
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->i()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestl:Lcom/squareup/okhttp/Request;
 
     .line 824
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
@@ -2978,7 +2978,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->c(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->c(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
@@ -2989,7 +2989,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->b(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->b(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
@@ -2998,12 +2998,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Response;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     .line 828
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
@@ -3284,7 +3284,7 @@
     :cond_7
     iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine;->mRequestl:Lcom/squareup/okhttp/Request;
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request;->g()Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -3304,22 +3304,22 @@
     .line 1108
     const-string/jumbo v3, "GET"
 
-    invoke-virtual {v0, v3, v1}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Lcom/squareup/okhttp/RequestBody;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v3, v1}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Lcom/squareup/okhttp/RequestBody;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 1109
     const-string/jumbo v1, "Transfer-Encoding"
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 1110
     const-string/jumbo v1, "Content-Length"
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 1111
     const-string/jumbo v1, "Content-Type"
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 1117
     :cond_8
@@ -3332,15 +3332,15 @@
     .line 1118
     const-string/jumbo v1, "Authorization"
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Request$MCap;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 1121
     :cond_9
-    invoke-virtual {v0, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 

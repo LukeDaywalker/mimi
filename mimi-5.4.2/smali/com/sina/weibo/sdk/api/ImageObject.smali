@@ -28,9 +28,9 @@
 
     .prologue
     .line 45
-    new-instance v0, Lcom/sina/weibo/sdk/api/ImageObject$ICb;
+    new-instance v0, Lcom/sina/weibo/sdk/api/ImageObject$MCb;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/ImageObject$ICb;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/ImageObject$MCb;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/ImageObject;->CREATOR:Landroid/os/Parcelable$Creator;
 

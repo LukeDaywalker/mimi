@@ -10,10 +10,6 @@
 
 
 # instance fields
-.field private mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
-
-.field private final mICgg:Lcom/baidu/platform/comapi/map/ICg;
-
 .field public mIa:I
 
 .field public mIb:I
@@ -21,6 +17,10 @@
 .field public mIc:I
 
 .field private mJe:J
+
+.field private mMCaf:Lcom/baidu/platform/comapi/map/MapRenderer$MCa;
+
+.field private final mMCgg:Lcom/baidu/platform/comapi/map/MCg;
 
 
 # direct methods
@@ -38,14 +38,14 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/baidu/platform/comapi/map/ICg;Lcom/baidu/platform/comapi/map/MapRenderer$ICa;)V
+.method public constructor <init>(Lcom/baidu/platform/comapi/map/MCg;Lcom/baidu/platform/comapi/map/MapRenderer$MCa;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
+    iput-object p2, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mMCaf:Lcom/baidu/platform/comapi/map/MapRenderer$MCa;
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mMCgg:Lcom/baidu/platform/comapi/map/MCg;
 
     return-void
 .end method
@@ -150,9 +150,9 @@
     iput v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mIc:I
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mMCaf:Lcom/baidu/platform/comapi/map/MapRenderer$MCa;
 
-    invoke-interface {v0}, Lcom/baidu/platform/comapi/map/MapRenderer$ICa;->c()V
+    invoke-interface {v0}, Lcom/baidu/platform/comapi/map/MapRenderer$MCa;->c()V
 
     iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
@@ -160,13 +160,13 @@
 
     move-result v1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mMCgg:Lcom/baidu/platform/comapi/map/MCg;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICg;->a()Lcom/baidu/platform/comapi/map/ICc;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCg;->a()Lcom/baidu/platform/comapi/map/MCc;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mListe:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/MCc;->mListe:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -183,15 +183,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
+    check-cast v0, Lcom/baidu/platform/comapi/map/MCi;
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mMCgg:Lcom/baidu/platform/comapi/map/MCg;
 
-    invoke-virtual {v3}, Lcom/baidu/platform/comapi/map/ICg;->a()Lcom/baidu/platform/comapi/map/ICc;
+    invoke-virtual {v3}, Lcom/baidu/platform/comapi/map/MCg;->a()Lcom/baidu/platform/comapi/map/MCc;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/baidu/platform/comapi/map/ICc;->y()Lcom/baidu/platform/comapi/map/B;
+    invoke-virtual {v3}, Lcom/baidu/platform/comapi/map/MCc;->y()Lcom/baidu/platform/comapi/map/B;
 
     move-result-object v3
 
@@ -209,7 +209,7 @@
 
     invoke-interface {p1, v4, v5, v5, v7}, Ljavax/microedition/khronos/opengles/GL10;->glRotatef(FFFF)V
 
-    invoke-interface {v0, p1, v3}, Lcom/baidu/platform/comapi/map/ICi;->a(Ljavax/microedition/khronos/opengles/GL10;Lcom/baidu/platform/comapi/map/B;)V
+    invoke-interface {v0, p1, v3}, Lcom/baidu/platform/comapi/map/MCi;->a(Ljavax/microedition/khronos/opengles/GL10;Lcom/baidu/platform/comapi/map/B;)V
 
     invoke-interface {p1}, Ljavax/microedition/khronos/opengles/GL10;->glPopMatrix()V
 
@@ -224,28 +224,28 @@
     goto :goto_1
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mMCgg:Lcom/baidu/platform/comapi/map/MCg;
 
     if-ne v1, v6, :cond_4
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICg;->requestRender()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCg;->requestRender()V
 
     goto :goto_0
 
     :cond_4
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mMCgg:Lcom/baidu/platform/comapi/map/MCg;
 
-    invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICg;->a()Lcom/baidu/platform/comapi/map/ICc;
+    invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/MCg;->a()Lcom/baidu/platform/comapi/map/MCc;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICc;->c()Z
+    invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/MCc;->c()Z
 
     move-result v1
 
     if-nez v1, :cond_5
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICg;->getRenderMode()I
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCg;->getRenderMode()I
 
     move-result v1
 
@@ -253,18 +253,18 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICg;->setRenderMode(I)V
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/MCg;->setRenderMode(I)V
 
     goto/16 :goto_0
 
     :cond_5
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICg;->getRenderMode()I
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCg;->getRenderMode()I
 
     move-result v1
 
     if-eq v1, v6, :cond_0
 
-    invoke-virtual {v0, v6}, Lcom/baidu/platform/comapi/map/ICg;->setRenderMode(I)V
+    invoke-virtual {v0, v6}, Lcom/baidu/platform/comapi/map/MCg;->setRenderMode(I)V
 
     goto/16 :goto_0
 .end method
@@ -305,9 +305,9 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mMCaf:Lcom/baidu/platform/comapi/map/MapRenderer$MCa;
 
-    invoke-interface {v0}, Lcom/baidu/platform/comapi/map/MapRenderer$ICa;->c()V
+    invoke-interface {v0}, Lcom/baidu/platform/comapi/map/MapRenderer$MCa;->c()V
 
     goto :goto_0
 .end method

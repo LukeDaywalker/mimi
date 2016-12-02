@@ -62,9 +62,9 @@
 
     .line 234
     :goto_0
-    new-instance v3, Lcom/squareup/okhttp/Request$ICap;
+    new-instance v3, Lcom/squareup/okhttp/Request$MCap;
 
-    invoke-direct {v3}, Lcom/squareup/okhttp/Request$ICap;-><init>()V
+    invoke-direct {v3}, Lcom/squareup/okhttp/Request$MCap;-><init>()V
 
     new-instance v4, Ljava/net/URL;
 
@@ -75,14 +75,14 @@
     invoke-direct {v4, v5, v1, v2, v6}, Ljava/net/URL;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
     .line 235
-    invoke-virtual {v3, v4}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v3, v4}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v1
 
     const-string/jumbo v2, "Host"
 
     .line 236
-    invoke-virtual {v1, v2, v0}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v1, v2, v0}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -91,7 +91,7 @@
     const-string/jumbo v2, "Keep-Alive"
 
     .line 237
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     move-result-object v0
 
@@ -108,7 +108,7 @@
     .line 242
     const-string/jumbo v2, "User-Agent"
 
-    invoke-virtual {v0, v2, v1}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v2, v1}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 246
     :cond_0
@@ -124,11 +124,11 @@
     .line 248
     const-string/jumbo v2, "Proxy-Authorization"
 
-    invoke-virtual {v0, v2, v1}, Lcom/squareup/okhttp/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
+    invoke-virtual {v0, v2, v1}, Lcom/squareup/okhttp/Request$MCap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$MCap;
 
     .line 251
     :cond_1
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Request$MCap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v0
 
@@ -245,15 +245,15 @@
     invoke-virtual {v4}, Lcom/squareup/okhttp/internal/http/HttpConnection;->d()V
 
     .line 185
-    invoke-virtual {v4}, Lcom/squareup/okhttp/internal/http/HttpConnection;->g()Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v4}, Lcom/squareup/okhttp/internal/http/HttpConnection;->g()Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$ICau;->a()Lcom/squareup/okhttp/Response;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/Response$MCau;->a()Lcom/squareup/okhttp/Response;
 
     move-result-object v6
 
@@ -489,7 +489,7 @@
 
 
 # virtual methods
-.method public a(IIILcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Route;Ljava/util/List;Z)Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;
+.method public a(IIILcom/squareup/okhttp/Request;Lcom/squareup/okhttp/Route;Ljava/util/List;Z)Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;
     .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -500,7 +500,7 @@
             "<",
             "Lcom/squareup/okhttp/ConnectionSpec;",
             ">;Z)",
-            "Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;"
+            "Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;"
         }
     .end annotation
 
@@ -846,11 +846,11 @@
     invoke-virtual {v3, v4, v10}, Lcom/squareup/okhttp/CertificatePinner;->a(Ljava/lang/String;Ljava/util/List;)V
 
     .line 130
-    new-instance v3, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;
+    new-instance v3, Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;
 
     move-object/from16 v0, p5
 
-    invoke-direct {v3, v0, v1, v2, v5}, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;-><init>(Lcom/squareup/okhttp/Route;Ljavax/net/ssl/SSLSocket;Lcom/squareup/okhttp/Protocol;Lcom/squareup/okhttp/Handshake;)V
+    invoke-direct {v3, v0, v1, v2, v5}, Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;-><init>(Lcom/squareup/okhttp/Route;Ljavax/net/ssl/SSLSocket;Lcom/squareup/okhttp/Protocol;Lcom/squareup/okhttp/Handshake;)V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
@@ -889,7 +889,7 @@
     goto :goto_1
 .end method
 
-.method public a(IILcom/squareup/okhttp/Route;)Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;
+.method public a(IILcom/squareup/okhttp/Route;)Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;
     .locals 2
 
     .prologue
@@ -899,9 +899,9 @@
     move-result-object v0
 
     .line 68
-    new-instance v1, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;
+    new-instance v1, Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;
 
-    invoke-direct {v1, p3, v0}, Lcom/squareup/okhttp/internal/http/SocketConnector$ICaf;-><init>(Lcom/squareup/okhttp/Route;Ljava/net/Socket;)V
+    invoke-direct {v1, p3, v0}, Lcom/squareup/okhttp/internal/http/SocketConnector$MCaf;-><init>(Lcom/squareup/okhttp/Route;Ljava/net/Socket;)V
 
     return-object v1
 .end method

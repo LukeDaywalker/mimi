@@ -76,9 +76,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 56
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICa;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$MCa;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$MCa;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->mTagObserverH:Lcom/wumii/android/mimi/models/observer/TagObserver;
 
@@ -532,11 +532,11 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->mLinearLayouto:Landroid/widget/LinearLayout;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$MCd;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$MCd;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->mTagSectionE:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
@@ -584,18 +584,18 @@
     .line 88
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->mEditTextp:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICb;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$MCb;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICb;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$MCb;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 105
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->mTextViewq:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICc;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$MCc;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICc;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$MCc;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

@@ -64,36 +64,36 @@
     .line 44
     const-class v1, Lcom/wumii/android/mimi/ui/OnResumeEvent;
 
-    new-instance v2, Lcom/wumii/android/mimi/util/ContextToast$ICw;
+    new-instance v2, Lcom/wumii/android/mimi/util/ContextToast$MCw;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/ContextToast$ICw;-><init>(Lcom/wumii/android/mimi/util/ContextToast;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/ContextToast$MCw;-><init>(Lcom/wumii/android/mimi/util/ContextToast;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a(Ljava/lang/Class;Lcom/wumii/android/mimi/ui/ActivityEventListener;)V
 
     .line 51
     const-class v1, Lcom/wumii/android/mimi/ui/OnActivityResultEvent;
 
-    new-instance v2, Lcom/wumii/android/mimi/util/ContextToast$ICx;
+    new-instance v2, Lcom/wumii/android/mimi/util/ContextToast$MCx;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/ContextToast$ICx;-><init>(Lcom/wumii/android/mimi/util/ContextToast;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/ContextToast$MCx;-><init>(Lcom/wumii/android/mimi/util/ContextToast;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a(Ljava/lang/Class;Lcom/wumii/android/mimi/ui/ActivityEventListener;)V
 
     .line 58
     const-class v1, Lcom/wumii/android/mimi/ui/OnPauseEvent;
 
-    new-instance v2, Lcom/wumii/android/mimi/util/ContextToast$ICy;
+    new-instance v2, Lcom/wumii/android/mimi/util/ContextToast$MCy;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/ContextToast$ICy;-><init>(Lcom/wumii/android/mimi/util/ContextToast;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/ContextToast$MCy;-><init>(Lcom/wumii/android/mimi/util/ContextToast;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a(Ljava/lang/Class;Lcom/wumii/android/mimi/ui/ActivityEventListener;)V
 
     .line 65
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 
-    new-instance v2, Lcom/wumii/android/mimi/util/ContextToast$ICz;
+    new-instance v2, Lcom/wumii/android/mimi/util/ContextToast$MCz;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/ContextToast$ICz;-><init>(Lcom/wumii/android/mimi/util/ContextToast;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/ContextToast$MCz;-><init>(Lcom/wumii/android/mimi/util/ContextToast;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a(Ljava/lang/Class;Lcom/wumii/android/mimi/ui/ActivityEventListener;)V
 

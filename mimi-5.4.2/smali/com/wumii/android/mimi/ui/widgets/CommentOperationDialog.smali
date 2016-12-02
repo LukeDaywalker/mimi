@@ -20,13 +20,13 @@
 
 .field private mDialogc:Landroid/app/Dialog;
 
-.field private mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
-
 .field private mId:I
 
 .field private mLayoutParamse:Landroid/widget/LinearLayout$LayoutParams;
 
 .field private mLayoutParamsf:Landroid/widget/LinearLayout$LayoutParams;
+
+.field private mMCuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCu;
 
 .field private mRectg:Landroid/graphics/Rect;
 
@@ -119,7 +119,7 @@
     return-void
 .end method
 
-.method private a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;)Landroid/view/View;
+.method private a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;)Landroid/view/View;
     .locals 4
 
     .prologue
@@ -163,12 +163,12 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 160
-    iget v3, p2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mIi:I
+    iget v3, p2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;->mIi:I
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 161
-    iget-object v3, p2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mStringh:Ljava/lang/String;
+    iget-object v3, p2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -241,7 +241,7 @@
             "Landroid/content/Context;",
             "Ljava/util/List",
             "<",
-            "Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;",
+            "Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;",
             ">;)V"
         }
     .end annotation
@@ -290,7 +290,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    check-cast v1, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;
 
     .line 130
     rem-int/lit8 v6, v3, 0x3
@@ -307,7 +307,7 @@
 
     .line 134
     :cond_0
-    invoke-direct {p0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;)Landroid/view/View;
+    invoke-direct {p0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;)Landroid/view/View;
 
     move-result-object v1
 
@@ -347,7 +347,7 @@
     if-ge v4, v0, :cond_2
 
     .line 141
-    invoke-direct {p0, p1, v5}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;)Landroid/view/View;
+    invoke-direct {p0, p1, v5}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;)Landroid/view/View;
 
     move-result-object v1
 
@@ -365,7 +365,7 @@
 
 
 # virtual methods
-.method public a(Landroid/content/Context;Landroid/graphics/Rect;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/Comment;Ljava/util/List;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;)V
+.method public a(Landroid/content/Context;Landroid/graphics/Rect;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/Comment;Ljava/util/List;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCu;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -376,9 +376,9 @@
             "Lcom/wumii/android/mimi/models/entities/secret/Comment;",
             "Ljava/util/List",
             "<",
-            "Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;",
+            "Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;",
             ">;",
-            "Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;",
+            "Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCu;",
             ")V"
         }
     .end annotation
@@ -424,7 +424,7 @@
     iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mCommenti:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 99
-    iput-object p6, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+    iput-object p6, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mMCuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCu;
 
     .line 101
     new-instance v0, Landroid/app/Dialog;
@@ -526,12 +526,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;
 
     .line 70
     if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mMCuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCu;
 
     if-nez v1, :cond_2
 
@@ -543,7 +543,7 @@
 
     .line 75
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mMCuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCu;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mRectg:Landroid/graphics/Rect;
 
@@ -551,7 +551,7 @@
 
     iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mCommenti:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-    invoke-virtual {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->a(Landroid/graphics/Rect;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;)V
+    invoke-virtual {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCu;->a(Landroid/graphics/Rect;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCt;)V
 
     .line 76
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->a()V
@@ -566,7 +566,7 @@
     const/4 v0, 0x0
 
     .line 81
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mMCuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$MCu;
 
     .line 82
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;

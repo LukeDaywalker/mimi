@@ -189,7 +189,7 @@
 
     .prologue
     .line 128
-    invoke-static {p3}, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->a(Lorg/apache/http/protocol/HttpContext;)Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;
+    invoke-static {p3}, Lcom/facebook/stetho/websocket/WebSocketHandler$MCj;->a(Lorg/apache/http/protocol/HttpContext;)Lcom/facebook/stetho/websocket/WebSocketHandler$MCj;
 
     move-result-object v0
 
@@ -238,7 +238,7 @@
 
     .line 141
     :cond_0
-    invoke-virtual {v0}, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->a()Lorg/apache/http/HttpServerConnection;
+    invoke-virtual {v0}, Lcom/facebook/stetho/websocket/WebSocketHandler$MCj;->a()Lorg/apache/http/HttpServerConnection;
 
     move-result-object v1
 
@@ -247,11 +247,11 @@
     .line 143
     new-instance v1, Lcom/facebook/stetho/websocket/WebSocketSession;
 
-    invoke-virtual {v0}, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->b()Ljava/io/InputStream;
+    invoke-virtual {v0}, Lcom/facebook/stetho/websocket/WebSocketHandler$MCj;->b()Ljava/io/InputStream;
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->c()Ljava/io/OutputStream;
+    invoke-virtual {v0}, Lcom/facebook/stetho/websocket/WebSocketHandler$MCj;->c()Ljava/io/OutputStream;
 
     move-result-object v0
 

@@ -7,7 +7,7 @@
 .method public abstract a()Lcom/google/tagmanager/ResolvedFunctionCallBuilder;
 .end method
 
-.method public abstract a(Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;)V
+.method public abstract a(Lcom/google/analytics/midtier/proto/containertag/TypeSystem$MCb;)V
 .end method
 
 .method public abstract b()Lcom/google/tagmanager/ResolvedFunctionCallBuilder;

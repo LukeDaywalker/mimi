@@ -100,9 +100,9 @@
 
     const v1, 0x7f0600d2
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICm;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$MCm;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICm;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$MCm;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -178,9 +178,9 @@
     .line 48
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mEditTextn:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$MCk;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$MCk;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -204,13 +204,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICl;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$MCl;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICl;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$MCl;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)V
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$MCau;Z)V
 
     .line 82
     return-void

@@ -6,7 +6,7 @@
 # instance fields
 .field private mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-.field private mICcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
+.field private mMCcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$MCcj;
 
 .field private mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -47,7 +47,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mICcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMCcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$MCcj;
 
     if-eqz v0, :cond_0
 
@@ -83,11 +83,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 48
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mICcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMCcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$MCcj;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$MCcj;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
 
     .line 50
     :cond_0
@@ -103,7 +103,7 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;ZLjava/lang/String;Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;)V
+.method public a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;ZLjava/lang/String;Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$MCcj;)V
     .locals 3
 
     .prologue
@@ -111,7 +111,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 61
-    iput-object p4, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mICcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
+    iput-object p4, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMCcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$MCcj;
 
     .line 62
     iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMapd:Ljava/util/Map;

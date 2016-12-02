@@ -487,9 +487,9 @@
     .line 109
     const/high16 v1, 0x7f070000
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICe;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$MCe;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICe;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$MCe;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setItems(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -549,11 +549,11 @@
 
     .prologue
     .line 162
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$MCf;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$MCf;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$MCf;->j()V
 
     .line 195
     return-void
@@ -653,9 +653,9 @@
     .line 77
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mEditTextp:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICd;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$MCd;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICd;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$MCd;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

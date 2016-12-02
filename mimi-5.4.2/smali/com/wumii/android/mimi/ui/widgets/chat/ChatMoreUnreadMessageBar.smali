@@ -248,9 +248,9 @@
     invoke-virtual {p0, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->setVisibility(I)V
 
     .line 84
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$ICt;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$MCt;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$ICt;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$MCt;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;)V
 
     const-wide/16 v2, 0x1388
 

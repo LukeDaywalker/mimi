@@ -21,14 +21,6 @@
 
 .field private mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
-.field private mICbhu:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
-
-.field private mICdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
-
-.field private mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
-
-.field private mICls:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICl;
-
 .field private mIw:I
 
 .field private mIx:I
@@ -92,6 +84,14 @@
     .end annotation
 .end field
 
+.field private mMCbhu:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$MCbh;
+
+.field private mMCdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;
+
+.field private mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
+
+.field private mMCls:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCl;
+
 .field private mScopedUserd:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
 .field private mSectionMapq:Lcom/wumii/android/mimi/models/entities/SectionMap;
@@ -99,7 +99,7 @@
         value = {
             "Lcom/wumii/android/mimi/models/entities/SectionMap",
             "<",
-            "Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;",
+            "Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;",
             "Ljava/lang/Object;",
             ">;"
         }
@@ -123,7 +123,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICl;Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCl;Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$MCbh;)V
     .locals 3
 
     .prologue
@@ -136,9 +136,9 @@
     iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->isZg:Z
 
     .line 113
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICea:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCea:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     .line 121
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mContexta:Landroid/content/Context;
@@ -155,13 +155,13 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     .line 123
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICls:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICl;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCls:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCl;
 
     .line 124
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;
 
     .line 125
-    iput-object p5, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICbhu:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iput-object p5, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCbhu:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$MCbh;
 
     .line 126
     iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mCirclee:Lcom/wumii/android/mimi/models/entities/circle/Circle;
@@ -225,11 +225,11 @@
     .line 139
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListo:Ljava/util/List;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
-    invoke-direct {v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;-><init>(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
+    invoke-direct {v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;-><init>(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;)V
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -279,7 +279,7 @@
     return-void
 .end method
 
-.method private a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)V
+.method private a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)V
     .locals 8
 
     .prologue
@@ -294,14 +294,14 @@
     const/4 v2, 0x0
 
     .line 546
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v3, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICea:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v3, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCea:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v3, :cond_0
 
     .line 547
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/ImageView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -320,12 +320,12 @@
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setX(F)V
 
     .line 548
-    iget-object v0, p1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->mTextViewa:Landroid/widget/TextView;
+    iget-object v0, p1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setSelected(Z)V
 
     .line 549
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -333,9 +333,9 @@
 
     .line 556
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v3, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v3, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v3, :cond_4
 
@@ -347,14 +347,14 @@
     if-ne v0, v3, :cond_1
 
     .line 558
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/ImageView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 559
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -370,7 +370,7 @@
 
     .line 564
     :goto_1
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/ImageView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/ImageView;
 
     move-result-object v3
 
@@ -390,7 +390,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 565
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -413,7 +413,7 @@
 
     .line 551
     :cond_0
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/ImageView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -436,12 +436,12 @@
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setX(F)V
 
     .line 552
-    iget-object v0, p1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->mTextViewa:Landroid/widget/TextView;
+    iget-object v0, p1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setSelected(Z)V
 
     .line 553
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -451,14 +451,14 @@
 
     .line 561
     :cond_1
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/ImageView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 562
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -495,14 +495,14 @@
     if-ne v0, v1, :cond_5
 
     .line 568
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/ImageView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 569
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -518,14 +518,14 @@
 
     .line 574
     :goto_5
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/ImageView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 575
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -535,14 +535,14 @@
 
     .line 571
     :cond_5
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/ImageView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 572
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -559,7 +559,7 @@
     goto :goto_5
 .end method
 
-.method private a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)V
+.method private a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)V
     .locals 4
 
     .prologue
@@ -568,30 +568,30 @@
     const/16 v2, 0x8
 
     .line 477
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;->a()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;->a()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     if-ne v0, v1, :cond_0
 
     .line 478
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 479
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/LinearLayout;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 480
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/ProgressBar;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
@@ -603,30 +603,30 @@
 
     .line 481
     :cond_0
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;->a()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;->a()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCjb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     if-ne v0, v1, :cond_1
 
     .line 482
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 483
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/LinearLayout;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 484
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/ProgressBar;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
@@ -636,30 +636,30 @@
 
     .line 485
     :cond_1
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;->a()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;->a()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICje:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCje:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     if-ne v0, v1, :cond_2
 
     .line 486
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 487
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/LinearLayout;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 488
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/ProgressBar;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
@@ -669,21 +669,21 @@
 
     .line 490
     :cond_2
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 491
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/LinearLayout;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 492
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/ProgressBar;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
@@ -692,7 +692,7 @@
     goto :goto_0
 .end method
 
-.method private a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)V
+.method private a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)V
     .locals 8
 
     .prologue
@@ -705,7 +705,7 @@
     const/4 v1, 0x0
 
     .line 449
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;)Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;)Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
     move-result-object v0
 
@@ -744,25 +744,25 @@
     invoke-virtual {v2, v1, v1, v4, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 453
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/TextView;
 
     move-result-object v4
 
     invoke-virtual {v4, v7, v7, v2, v7}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 454
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/TextView;
 
     move-result-object v2
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a()Ljava/lang/String;
 
     move-result-object v4
 
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 456
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/view/View;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/view/View;
 
     move-result-object v4
 
@@ -774,7 +774,7 @@
     invoke-static {v4, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 457
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/view/View;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/view/View;
 
     move-result-object v2
 
@@ -799,30 +799,30 @@
     invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 459
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->b()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->b()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     move-result-object v0
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCjb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     if-ne v0, v2, :cond_5
 
     .line 460
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ProgressBar;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 461
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ImageView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 462
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -830,11 +830,11 @@
 
     .line 473
     :goto_3
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/view/View;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;)Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;)Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
     move-result-object v1
 
@@ -863,30 +863,30 @@
 
     .line 463
     :cond_5
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->b()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->b()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     move-result-object v0
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjc:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCjc:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
     if-ne v0, v2, :cond_6
 
     .line 464
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ProgressBar;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 465
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ImageView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 466
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -896,21 +896,21 @@
 
     .line 468
     :cond_6
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ProgressBar;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 469
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ImageView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 470
-    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/TextView;
+    invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -1131,9 +1131,9 @@
     invoke-static {v1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 1212
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCb;
 
-    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;-><init>(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;Lcom/wumii/android/mimi/models/entities/secret/Sort;)V
+    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCb;-><init>(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;Lcom/wumii/android/mimi/models/entities/secret/Sort;)V
 
     invoke-static {v2, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -1326,9 +1326,9 @@
 
     .line 349
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_1
 
@@ -1402,10 +1402,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     .line 981
-    sget-object v4, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v4, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;->mMCkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     if-ne v0, v4, :cond_9
 
@@ -1466,9 +1466,9 @@
 
     .line 995
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v2, :cond_5
 
@@ -1629,9 +1629,9 @@
     .line 384
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICbhu:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCbhu:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$MCbh;
 
-    invoke-virtual {v0, v4}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->setSecretCommentViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;)V
+    invoke-virtual {v0, v4}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->setSecretCommentViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$MCbh;)V
 
     move-object p3, v1
 
@@ -1653,18 +1653,18 @@
     move-result-object p3
 
     .line 388
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;
 
     const/4 v0, 0x0
 
-    invoke-direct {v1, p3, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;-><init>(Landroid/view/View;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;)V
+    invoke-direct {v1, p3, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;-><init>(Landroid/view/View;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCb;)V
 
     move-object v0, v1
 
     .line 389
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/view/View;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)Landroid/view/View;
 
     move-result-object v0
 
@@ -1706,16 +1706,16 @@
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 394
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;
 
-    invoke-direct {v1, p3}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;-><init>(Landroid/view/View;)V
+    invoke-direct {v1, p3}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;-><init>(Landroid/view/View;)V
 
     move-object v0, v1
 
     .line 395
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -1819,21 +1819,21 @@
 
     .line 417
     :pswitch_4
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
-    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;
+    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;
 
-    invoke-direct {p0, v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)V
+    invoke-direct {p0, v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCi;)V
 
     goto/16 :goto_2
 
     .line 420
     :pswitch_5
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;
 
-    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;
+    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;
 
-    invoke-direct {p0, v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)V
+    invoke-direct {p0, v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCf;)V
 
     goto/16 :goto_2
 
@@ -1870,7 +1870,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     .line 512
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a_(I)I
@@ -1887,9 +1887,9 @@
 
     .line 535
     :goto_0
-    iget-object v2, v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICm;->mTextViewa:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCm;->mTextViewa:Landroid/widget/TextView;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1914,9 +1914,9 @@
     move-result-object p2
 
     .line 517
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICm;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCm;
 
-    invoke-direct {v1, p2, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICm;-><init>(Landroid/view/View;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;)V
+    invoke-direct {v1, p2, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCm;-><init>(Landroid/view/View;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCb;)V
 
     .line 518
     invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -1934,21 +1934,21 @@
     move-result-object p2
 
     .line 522
-    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;
+    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;
 
-    invoke-direct {v2, p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;-><init>(Landroid/view/View;)V
+    invoke-direct {v2, p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;-><init>(Landroid/view/View;)V
 
     .line 523
-    iget-object v1, v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICm;->mTextViewa:Landroid/widget/TextView;
+    iget-object v1, v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCm;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v1, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     move-object v1, v2
 
     .line 524
-    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;
+    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -1957,9 +1957,9 @@
     move-object v1, v2
 
     .line 525
-    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;
+    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/view/View;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)Landroid/view/View;
 
     move-result-object v1
 
@@ -1979,7 +1979,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICm;
+    check-cast v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCm;
 
     goto :goto_0
 
@@ -1992,9 +1992,9 @@
     move-object v0, v1
 
     .line 539
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)V
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCd;)V
 
     goto :goto_1
 
@@ -2036,9 +2036,9 @@
 
     .line 302
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_4
 
@@ -2211,7 +2211,7 @@
     .line 242
     sget-object v0, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->UP:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v0
 
@@ -2219,15 +2219,15 @@
     if-eqz v0, :cond_0
 
     .line 244
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;)V
 
     .line 246
     :cond_0
     sget-object v0, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->DOWN:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v0
 
@@ -2235,9 +2235,9 @@
     if-eqz v0, :cond_1
 
     .line 248
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;)V
 
     .line 250
     :cond_1
@@ -2284,9 +2284,9 @@
 
     .line 753
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_1
 
@@ -2454,14 +2454,14 @@
 
     .prologue
     .line 231
-    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v0
 
     .line 232
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICjb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCjb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;)V
 
     .line 233
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->notifyDataSetChanged()V
@@ -2470,12 +2470,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
+.method public a(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;)V
     .locals 1
 
     .prologue
     .line 254
-    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v0
 
@@ -2483,7 +2483,7 @@
     if-eqz v0, :cond_0
 
     .line 256
-    invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
+    invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;)V
 
     .line 258
     :cond_0
@@ -2504,15 +2504,15 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;)V
+.method public a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;)V
     .locals 1
 
     .prologue
     .line 586
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     .line 588
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne p1, v0, :cond_0
 
@@ -3091,9 +3091,9 @@
 
     .line 611
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_3
 
@@ -3117,7 +3117,7 @@
     goto :goto_2
 .end method
 
-.method public a(Ljava/util/List;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;Z)V
+.method public a(Ljava/util/List;Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;Z)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -3126,7 +3126,7 @@
             "<",
             "Lcom/wumii/android/mimi/models/entities/secret/Comment;",
             ">;",
-            "Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;",
+            "Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;",
             "Z)V"
         }
     .end annotation
@@ -3152,9 +3152,9 @@
     .line 265
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListo:Ljava/util/List;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;
 
-    invoke-direct {v1, p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;-><init>(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
+    invoke-direct {v1, p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;-><init>(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;)V
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -3250,9 +3250,9 @@
 
     .line 288
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_5
 
@@ -3446,9 +3446,9 @@
 
     .line 193
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_4
 
@@ -3480,7 +3480,7 @@
     .line 203
     sget-object v0, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->UP:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v0
 
@@ -3488,9 +3488,9 @@
     if-eqz v0, :cond_0
 
     .line 205
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mICja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;->mMCja:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCj;)V
 
     .line 207
     :cond_0
@@ -3550,10 +3550,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     .line 504
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;->mMCkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     if-ne v0, v1, :cond_0
 
@@ -3591,7 +3591,7 @@
 
     .line 362
     :cond_0
-    instance-of v1, v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    instance-of v1, v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     if-eqz v1, :cond_1
 
@@ -3602,7 +3602,7 @@
 
     .line 364
     :cond_1
-    instance-of v1, v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;
+    instance-of v1, v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;
 
     if-eqz v1, :cond_2
 
@@ -3670,14 +3670,14 @@
     return-wide v0
 .end method
 
-.method public b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+.method public b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
     .locals 3
 
     .prologue
     .line 1172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_1
 
@@ -3700,15 +3700,15 @@
     move-result-object v0
 
     .line 1174
-    instance-of v2, v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    instance-of v2, v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     if-eqz v2, :cond_0
 
     .line 1175
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     .line 1176
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;)Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;)Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
     move-result-object v2
 
@@ -3738,15 +3738,15 @@
     move-result-object v0
 
     .line 1183
-    instance-of v2, v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    instance-of v2, v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     if-eqz v2, :cond_2
 
     .line 1184
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     .line 1185
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;)Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;)Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
     move-result-object v2
 
@@ -3969,9 +3969,9 @@
     invoke-virtual {p2, v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->setBlocked(Z)V
 
     .line 784
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_1
 
@@ -4412,12 +4412,12 @@
     return-object v1
 .end method
 
-.method public h()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+.method public h()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
     .locals 1
 
     .prologue
     .line 899
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     return-object v0
 .end method
@@ -4493,9 +4493,9 @@
     const/4 v1, 0x0
 
     .line 915
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v3, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v3, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v2, v3, :cond_1
 
@@ -4513,7 +4513,7 @@
 
     move-result-object v2
 
-    instance-of v2, v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICg;
+    instance-of v2, v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCg;
 
     if-eqz v2, :cond_1
 
@@ -4570,7 +4570,7 @@
     if-nez v1, :cond_0
 
     .line 926
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICka:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;->mMCka:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListl:Ljava/util/List;
 
@@ -4578,9 +4578,9 @@
 
     .line 929
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v1, v2, :cond_4
 
@@ -4600,7 +4600,7 @@
     .line 931
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->UP:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v1
 
@@ -4610,17 +4610,17 @@
     .line 933
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListo:Ljava/util/List;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->UP:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-direct {v2, v3}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;-><init>(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
+    invoke-direct {v2, v3}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;-><init>(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
 
     invoke-interface {v1, v4, v2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 936
     :cond_1
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;->mMCkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListo:Ljava/util/List;
 
@@ -4629,9 +4629,9 @@
     .line 951
     :cond_2
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v1, v2, :cond_7
 
@@ -4651,7 +4651,7 @@
     .line 953
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->DOWN:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v1
 
@@ -4661,11 +4661,11 @@
     .line 955
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListo:Ljava/util/List;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->DOWN:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-direct {v2, v3}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;-><init>(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
+    invoke-direct {v2, v3}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;-><init>(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -4699,7 +4699,7 @@
     .line 939
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->UP:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v1
 
@@ -4707,11 +4707,11 @@
     if-nez v1, :cond_5
 
     .line 941
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->UP:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-direct {v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;-><init>(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
+    invoke-direct {v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;-><init>(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
 
     .line 942
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListm:Ljava/util/List;
@@ -4720,7 +4720,7 @@
 
     .line 945
     :cond_5
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;->mMCkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListm:Ljava/util/List;
 
@@ -4739,7 +4739,7 @@
     if-nez v1, :cond_2
 
     .line 948
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mICkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;->mMCkb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCk;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListn:Ljava/util/List;
 
@@ -4756,7 +4756,7 @@
     .line 960
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->DOWN:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->b(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     move-result-object v1
 
@@ -4764,11 +4764,11 @@
     if-nez v1, :cond_3
 
     .line 962
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->DOWN:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-direct {v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;-><init>(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
+    invoke-direct {v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCh;-><init>(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
 
     .line 963
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mListm:Ljava/util/List;
@@ -4783,9 +4783,9 @@
 
     .prologue
     .line 1164
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCev:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;->mICeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICe;
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;->mMCeb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCe;
 
     if-ne v0, v1, :cond_0
 
@@ -4816,9 +4816,9 @@
     if-ne v0, v1, :cond_1
 
     .line 431
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;
 
-    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;->c(Landroid/view/View;)V
+    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;->c(Landroid/view/View;)V
 
     .line 445
     :cond_0
@@ -4836,9 +4836,9 @@
     if-ne v0, v1, :cond_2
 
     .line 433
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;
 
-    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;->a(Landroid/view/View;)V
+    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;->a(Landroid/view/View;)V
 
     goto :goto_0
 
@@ -4853,9 +4853,9 @@
     if-ne v0, v1, :cond_3
 
     .line 435
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCdt:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;
 
-    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;->b(Landroid/view/View;)V
+    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$MCd;->b(Landroid/view/View;)V
 
     goto :goto_0
 
@@ -4870,9 +4870,9 @@
     if-ne v0, v1, :cond_4
 
     .line 437
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICls:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCls:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCl;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICl;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCl;->a()V
 
     goto :goto_0
 
@@ -4897,9 +4897,9 @@
     if-eqz v0, :cond_0
 
     .line 443
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mICls:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICl;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;->mMCls:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCl;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICl;->a(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$MCl;->a(Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
 
     goto :goto_0
 .end method

@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Ljava/lang/String;Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;)V
+.method public static a(Ljava/lang/String;Lcom/wumii/android/mimi/util/SinaWeiboUtils$MCaq;)V
     .locals 3
 
     .prologue

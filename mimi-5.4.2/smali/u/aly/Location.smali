@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Lu/aly/Location;",
-        "Lu/aly/Location$ICcu;",
+        "Lu/aly/Location$MCcu;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Lu/aly/Location$ICcu;",
+            "Lu/aly/Location$MCcu;",
             "Lu/aly/FieldMetaData;",
             ">;"
         }
@@ -135,9 +135,9 @@
 
     const-class v1, Lu/aly/StandardScheme;
 
-    new-instance v2, Lu/aly/Location$ICcr;
+    new-instance v2, Lu/aly/Location$MCcr;
 
-    invoke-direct {v2, v3}, Lu/aly/Location$ICcr;-><init>(Lu/aly/Location$ICcp;)V
+    invoke-direct {v2, v3}, Lu/aly/Location$MCcr;-><init>(Lu/aly/Location$MCcp;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -146,21 +146,21 @@
 
     const-class v1, Lu/aly/TupleScheme;
 
-    new-instance v2, Lu/aly/Location$ICct;
+    new-instance v2, Lu/aly/Location$MCct;
 
-    invoke-direct {v2, v3}, Lu/aly/Location$ICct;-><init>(Lu/aly/Location$ICcp;)V
+    invoke-direct {v2, v3}, Lu/aly/Location$MCct;-><init>(Lu/aly/Location$MCcp;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 120
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Lu/aly/Location$ICcu;
+    const-class v1, Lu/aly/Location$MCcu;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 121
-    sget-object v1, Lu/aly/Location$ICcu;->mICcua:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$MCcu;->mMCcua:Lu/aly/Location$MCcu;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -175,7 +175,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 123
-    sget-object v1, Lu/aly/Location$ICcu;->mICcub:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$MCcu;->mMCcub:Lu/aly/Location$MCcu;
 
     new-instance v2, Lu/aly/FieldMetaData;
 
@@ -190,7 +190,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v1, Lu/aly/Location$ICcu;->mICcuc:Lu/aly/Location$ICcu;
+    sget-object v1, Lu/aly/Location$MCcu;->mMCcuc:Lu/aly/Location$MCcu;
 
     new-instance v2, Lu/aly/FieldMetaData;
 

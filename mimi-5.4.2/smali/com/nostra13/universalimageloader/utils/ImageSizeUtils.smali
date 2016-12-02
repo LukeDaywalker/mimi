@@ -185,7 +185,7 @@
     move-result v5
 
     .line 99
-    sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils$ICc;->mArrayIa:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils$MCc;->mArrayIa:[I
 
     invoke-virtual {p2}, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->ordinal()I
 

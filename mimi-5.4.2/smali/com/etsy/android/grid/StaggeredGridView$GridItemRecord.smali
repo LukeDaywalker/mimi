@@ -33,9 +33,9 @@
 
     .prologue
     .line 109
-    new-instance v0, Lcom/etsy/android/grid/StaggeredGridView$ICm;
+    new-instance v0, Lcom/etsy/android/grid/StaggeredGridView$MCm;
 
-    invoke-direct {v0}, Lcom/etsy/android/grid/StaggeredGridView$ICm;-><init>()V
+    invoke-direct {v0}, Lcom/etsy/android/grid/StaggeredGridView$MCm;-><init>()V
 
     sput-object v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -95,7 +95,7 @@
     goto :goto_0
 .end method
 
-.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/etsy/android/grid/StaggeredGridView$ICl;)V
+.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/etsy/android/grid/StaggeredGridView$MCl;)V
     .locals 0
 
     .prologue

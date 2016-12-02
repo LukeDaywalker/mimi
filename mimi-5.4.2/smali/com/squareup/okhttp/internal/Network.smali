@@ -13,9 +13,9 @@
 
     .prologue
     .line 26
-    new-instance v0, Lcom/squareup/okhttp/internal/Network$ICf;
+    new-instance v0, Lcom/squareup/okhttp/internal/Network$MCf;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/internal/Network$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/internal/Network$MCf;-><init>()V
 
     sput-object v0, Lcom/squareup/okhttp/internal/Network;->mNetworka:Lcom/squareup/okhttp/internal/Network;
 

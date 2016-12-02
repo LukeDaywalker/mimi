@@ -120,13 +120,13 @@
     :cond_2
     iget-object v0, p0, Lcom/baidu/location/LocationClient$1;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
-    invoke-static {v0}, Lcom/baidu/location/LocationClient;->byte(Lcom/baidu/location/LocationClient;)Lcom/baidu/location/LocationClient$ICa;
+    invoke-static {v0}, Lcom/baidu/location/LocationClient;->byte(Lcom/baidu/location/LocationClient;)Lcom/baidu/location/LocationClient$MCa;
 
     move-result-object v0
 
     const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Lcom/baidu/location/LocationClient$ICa;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v0, v1}, Lcom/baidu/location/LocationClient$MCa;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 

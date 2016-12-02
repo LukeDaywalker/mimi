@@ -20,9 +20,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;-><init>()V
 
     .line 30
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICf;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$MCf;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICf;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$MCf;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleObserverk:Lcom/wumii/android/mimi/models/observer/CircleObserver;
 
@@ -95,9 +95,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICh;
+    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$MCh;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICh;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$MCh;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;)V
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/OnCircleClickListener;)V
 
@@ -192,9 +192,9 @@
     .line 76
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mListViewj:Landroid/widget/ListView;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICg;
+    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$MCg;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICg;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$MCg;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 

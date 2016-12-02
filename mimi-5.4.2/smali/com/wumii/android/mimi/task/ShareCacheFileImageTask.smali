@@ -21,7 +21,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
     .locals 0
 
     .prologue
@@ -32,7 +32,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->mStringd:Ljava/lang/String;
 
     .line 29
-    invoke-virtual {p0, p2}, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, p2}, Lcom/wumii/android/mimi/task/ShareCacheFileImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 30
     return-void

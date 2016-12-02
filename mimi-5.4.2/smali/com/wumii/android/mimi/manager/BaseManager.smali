@@ -3,7 +3,7 @@
 .source "BaseManager.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
+.implements Lcom/wumii/android/mimi/network/HttpProcessor$MCf;
 
 
 # instance fields
@@ -101,20 +101,20 @@
 
 
 # virtual methods
-.method protected a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+.method protected a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
     .locals 1
 
     .prologue
     .line 50
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
-    invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 51
     return-void
 .end method
 
-.method protected a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;ILcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+.method protected a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;ILcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
     .locals 3
 
     .prologue
@@ -131,9 +131,9 @@
 
     .line 59
     :goto_0
-    new-instance v1, Lcom/wumii/android/mimi/manager/BaseManager$ICl;
+    new-instance v1, Lcom/wumii/android/mimi/manager/BaseManager$MCl;
 
-    invoke-direct {v1, p0, p3}, Lcom/wumii/android/mimi/manager/BaseManager$ICl;-><init>(Lcom/wumii/android/mimi/manager/BaseManager;Lcom/wumii/android/mimi/network/HttpRequest;)V
+    invoke-direct {v1, p0, p3}, Lcom/wumii/android/mimi/manager/BaseManager$MCl;-><init>(Lcom/wumii/android/mimi/manager/BaseManager;Lcom/wumii/android/mimi/network/HttpRequest;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -143,11 +143,11 @@
     .line 67
     iget-object v1, p0, Lcom/wumii/android/mimi/manager/BaseManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
-    new-instance v2, Lcom/wumii/android/mimi/manager/BaseManager$ICm;
+    new-instance v2, Lcom/wumii/android/mimi/manager/BaseManager$MCm;
 
-    invoke-direct {v2, p0, p4, v0}, Lcom/wumii/android/mimi/manager/BaseManager$ICm;-><init>(Lcom/wumii/android/mimi/manager/BaseManager;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;)V
+    invoke-direct {v2, p0, p4, v0}, Lcom/wumii/android/mimi/manager/BaseManager$MCm;-><init>(Lcom/wumii/android/mimi/manager/BaseManager;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;)V
 
-    invoke-virtual {v1, p3, v2}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v1, p3, v2}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 79
     return-void
@@ -165,14 +165,14 @@
     goto :goto_0
 .end method
 
-.method protected a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+.method protected a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
     .locals 1
 
     .prologue
     .line 54
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, v0, p2, p3}, Lcom/wumii/android/mimi/manager/BaseManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;ILcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v0, p2, p3}, Lcom/wumii/android/mimi/manager/BaseManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;ILcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 55
     return-void

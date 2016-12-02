@@ -167,9 +167,9 @@
     move-result-object p2
 
     .line 62
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p2, v3, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -179,7 +179,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;
 
     .line 66
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter;->a(I)Lcom/wumii/android/mimi/models/entities/chat/ChatBannedMember;
@@ -199,7 +199,7 @@
 
     move-result-object v4
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->a(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;->a(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;)Landroid/widget/ImageView;
 
     move-result-object v5
 
@@ -208,11 +208,11 @@
     invoke-virtual {v3, v4, v5, v6}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 69
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;)Landroid/widget/TextView;
 
     move-result-object v3
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;)Landroid/widget/TextView;
 
     move-result-object v4
 
@@ -231,7 +231,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 70
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -252,7 +252,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 71
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->d(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;->d(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$MCs;)Landroid/widget/ImageView;
 
     move-result-object v3
 

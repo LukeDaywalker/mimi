@@ -82,9 +82,9 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 69
-    new-instance v2, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;
+    new-instance v2, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$MCh;
 
-    invoke-direct {v2, v0}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;-><init>(Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICg;)V
+    invoke-direct {v2, v0}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$MCh;-><init>(Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$MCg;)V
 
     .line 70
     new-instance v1, Landroid/content/Intent;
@@ -114,22 +114,22 @@
 
     .line 75
     :try_start_2
-    new-instance v3, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;
+    new-instance v3, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$MCi;
 
-    invoke-virtual {v2}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->a()Landroid/os/IBinder;
+    invoke-virtual {v2}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$MCh;->a()Landroid/os/IBinder;
 
     move-result-object v1
 
-    invoke-direct {v3, v1}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;-><init>(Landroid/os/IBinder;)V
+    invoke-direct {v3, v1}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$MCi;-><init>(Landroid/os/IBinder;)V
 
     .line 77
     new-instance v1, Lio/fabric/sdk/android/services/common/AdvertisingInfo;
 
-    invoke-virtual {v3}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->a()Ljava/lang/String;
+    invoke-virtual {v3}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$MCi;->a()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->b()Z
+    invoke-virtual {v3}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$MCi;->b()Z
 
     move-result v3
 

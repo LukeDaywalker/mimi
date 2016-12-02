@@ -67,9 +67,9 @@
 
     .prologue
     .line 99
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICaa;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/Spdy3$MCaa;
 
-    invoke-direct {v0, p1, p2}, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICaa;-><init>(Lokio/BufferedSource;Z)V
+    invoke-direct {v0, p1, p2}, Lcom/squareup/okhttp/internal/spdy/Spdy3$MCaa;-><init>(Lokio/BufferedSource;Z)V
 
     return-object v0
 .end method
@@ -79,9 +79,9 @@
 
     .prologue
     .line 103
-    new-instance v0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;
+    new-instance v0, Lcom/squareup/okhttp/internal/spdy/Spdy3$MCab;
 
-    invoke-direct {v0, p1, p2}, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;-><init>(Lokio/BufferedSink;Z)V
+    invoke-direct {v0, p1, p2}, Lcom/squareup/okhttp/internal/spdy/Spdy3$MCab;-><init>(Lokio/BufferedSink;Z)V
 
     return-object v0
 .end method

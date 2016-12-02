@@ -6,7 +6,7 @@
 # instance fields
 .field private isZa:Z
 
-.field private mICab:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;
+.field private mMCab:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$MCa;
 
 
 # direct methods
@@ -68,12 +68,12 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ListView;->onScrollChanged(IIII)V
 
     .line 41
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->mICab:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->mMCab:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$MCa;
 
     if-eqz v0, :cond_0
 
     .line 42
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->mICab:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->mMCab:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$MCa;
 
     move-object v1, p0
 
@@ -85,7 +85,7 @@
 
     move v5, p4
 
-    invoke-interface/range {v0 .. v5}, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;->a(Landroid/widget/ListView;IIII)V
+    invoke-interface/range {v0 .. v5}, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$MCa;->a(Landroid/widget/ListView;IIII)V
 
     .line 44
     :cond_0
@@ -144,12 +144,12 @@
     goto :goto_1
 .end method
 
-.method public setOnScrollChangedListener(Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;)V
+.method public setOnScrollChangedListener(Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$MCa;)V
     .locals 0
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->mICab:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;
+    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->mMCab:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$MCa;
 
     .line 64
     return-void

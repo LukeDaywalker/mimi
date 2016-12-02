@@ -44,9 +44,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICanH:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCanH:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 165
     new-instance v0, Lcom/google/analytics/tracking/android/MapBuilder;
@@ -120,9 +120,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICand:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCand:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 261
     invoke-static {p1}, Lcom/google/analytics/tracking/android/Utils;->b(Ljava/lang/String;)Ljava/lang/String;
@@ -275,9 +275,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mICana:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$MCan;->mMCana:Lcom/google/analytics/tracking/android/GAUsage$MCan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$MCan;)V
 
     .line 58
     if-eqz p1, :cond_0

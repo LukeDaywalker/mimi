@@ -306,7 +306,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(ILcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(ILcom/wumii/android/mimi/models/share/WeixinShareHelper$MCax;)V
 
     goto :goto_0
 .end method

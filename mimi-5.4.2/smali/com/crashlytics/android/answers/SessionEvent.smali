@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final mICrc:Lcom/crashlytics/android/answers/SessionEvent$ICr;
-
 .field public final mJb:J
+
+.field public final mMCrc:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
 .field public final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -40,14 +40,14 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/crashlytics/android/answers/SessionEventMetadata;JLcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)V
+.method private constructor <init>(Lcom/crashlytics/android/answers/SessionEventMetadata;JLcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/crashlytics/android/answers/SessionEventMetadata;",
             "J",
-            "Lcom/crashlytics/android/answers/SessionEvent$ICr;",
+            "Lcom/crashlytics/android/answers/SessionEvent$MCr;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
@@ -73,7 +73,7 @@
     iput-wide p2, p0, Lcom/crashlytics/android/answers/SessionEvent;->mJb:J
 
     .line 78
-    iput-object p4, p0, Lcom/crashlytics/android/answers/SessionEvent;->mICrc:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    iput-object p4, p0, Lcom/crashlytics/android/answers/SessionEvent;->mMCrc:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
     .line 79
     iput-object p5, p0, Lcom/crashlytics/android/answers/SessionEvent;->mMapd:Ljava/util/Map;
@@ -93,20 +93,20 @@
 
     .prologue
     .line 44
-    sget-object v0, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICrj:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v0, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCrj:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object v1
 
-    invoke-static {p0, v0, v1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {p0, v0, v1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
+.method public static a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Landroid/app/Activity;)Lcom/crashlytics/android/answers/SessionEvent;
     .locals 2
 
     .prologue
@@ -126,20 +126,20 @@
     move-result-object v0
 
     .line 40
-    invoke-static {p0, p1, v0}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {p0, p1, v0}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
+.method private static a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/crashlytics/android/answers/SessionEventMetadata;",
-            "Lcom/crashlytics/android/answers/SessionEvent$ICr;",
+            "Lcom/crashlytics/android/answers/SessionEvent$MCr;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
@@ -157,20 +157,20 @@
 
     move-result-object v1
 
-    invoke-static {p0, p1, p2, v0, v1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {p0, p1, p2, v0, v1}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
+.method private static a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/crashlytics/android/answers/SessionEventMetadata;",
-            "Lcom/crashlytics/android/answers/SessionEvent$ICr;",
+            "Lcom/crashlytics/android/answers/SessionEvent$MCr;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
@@ -204,7 +204,7 @@
 
     move-object v7, p4
 
-    invoke-direct/range {v0 .. v7}, Lcom/crashlytics/android/answers/SessionEvent;-><init>(Lcom/crashlytics/android/answers/SessionEventMetadata;JLcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct/range {v0 .. v7}, Lcom/crashlytics/android/answers/SessionEvent;-><init>(Lcom/crashlytics/android/answers/SessionEventMetadata;JLcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)V
 
     return-object v0
 .end method
@@ -221,9 +221,9 @@
     move-result-object v0
 
     .line 49
-    sget-object v1, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICrh:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v1, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCrh:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {p0, v1, v0}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {p0, v1, v0}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v0
 
@@ -242,9 +242,9 @@
     move-result-object v0
 
     .line 54
-    sget-object v1, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mICri:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v1, Lcom/crashlytics/android/answers/SessionEvent$MCr;->mMCri:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
-    invoke-static {p0, v1, v0}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$ICr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
+    invoke-static {p0, v1, v0}, Lcom/crashlytics/android/answers/SessionEvent;->a(Lcom/crashlytics/android/answers/SessionEventMetadata;Lcom/crashlytics/android/answers/SessionEvent$MCr;Ljava/util/Map;)Lcom/crashlytics/android/answers/SessionEvent;
 
     move-result-object v0
 
@@ -309,7 +309,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEvent;->mICrc:Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEvent;->mMCrc:Lcom/crashlytics/android/answers/SessionEvent$MCr;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -123,11 +123,11 @@
 
     invoke-direct {v7}, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;-><init>()V
 
-    new-instance v8, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor$ICx;
+    new-instance v8, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor$MCx;
 
     const/16 v0, 0xa
 
-    invoke-direct {v8, v0}, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor$ICx;-><init>(I)V
+    invoke-direct {v8, v0}, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor$MCx;-><init>(I)V
 
     move v2, p0
 

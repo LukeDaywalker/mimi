@@ -161,11 +161,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->a()Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->a()Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->a()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->a()I
 
     move-result v1
 
@@ -202,11 +202,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->a()Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->a()Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->a()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->a()I
 
     move-result v1
 

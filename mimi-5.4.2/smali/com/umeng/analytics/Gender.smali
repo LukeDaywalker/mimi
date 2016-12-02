@@ -40,29 +40,29 @@
     const/4 v2, 0x0
 
     .line 10
-    new-instance v0, Lcom/umeng/analytics/Gender$ICc;
+    new-instance v0, Lcom/umeng/analytics/Gender$MCc;
 
     const-string/jumbo v1, "Male"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/umeng/analytics/Gender$ICc;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/umeng/analytics/Gender$MCc;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/umeng/analytics/Gender;->mGendera:Lcom/umeng/analytics/Gender;
 
     .line 15
-    new-instance v0, Lcom/umeng/analytics/Gender$ICd;
+    new-instance v0, Lcom/umeng/analytics/Gender$MCd;
 
     const-string/jumbo v1, "Female"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/umeng/analytics/Gender$ICd;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v3, v4}, Lcom/umeng/analytics/Gender$MCd;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/umeng/analytics/Gender;->mGenderb:Lcom/umeng/analytics/Gender;
 
     .line 20
-    new-instance v0, Lcom/umeng/analytics/Gender$ICe;
+    new-instance v0, Lcom/umeng/analytics/Gender$MCe;
 
     const-string/jumbo v1, "Unknown"
 
-    invoke-direct {v0, v1, v4, v2}, Lcom/umeng/analytics/Gender$ICe;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v4, v2}, Lcom/umeng/analytics/Gender$MCe;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/umeng/analytics/Gender;->mGenderc:Lcom/umeng/analytics/Gender;
 
@@ -107,7 +107,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Ljava/lang/String;IILcom/umeng/analytics/Gender$ICc;)V
+.method synthetic constructor <init>(Ljava/lang/String;IILcom/umeng/analytics/Gender$MCc;)V
     .locals 0
 
     .prologue
@@ -122,7 +122,7 @@
 
     .prologue
     .line 54
-    sget-object v0, Lcom/umeng/analytics/Gender$ICf;->mArrayIa:[I
+    sget-object v0, Lcom/umeng/analytics/Gender$MCf;->mArrayIa:[I
 
     invoke-virtual {p0}, Lcom/umeng/analytics/Gender;->ordinal()I
 

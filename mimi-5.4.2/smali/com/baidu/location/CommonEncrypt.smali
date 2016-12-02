@@ -96,7 +96,7 @@
     :try_start_0
     const-string/jumbo v0, "UTF-8"
 
-    invoke-static {p0, v0}, Lcom/baidu/location/b/b/ICb;->a([BLjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lcom/baidu/location/b/b/MCb;->a([BLjava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 

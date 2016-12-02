@@ -12,9 +12,9 @@
 
 .field private mHandlerf:Landroid/os/Handler;
 
-.field private mICdc:Lcom/tencent/c/Pro$ICd;
-
 .field private mJe:J
+
+.field private mMCdc:Lcom/tencent/c/Pro$MCd;
 
 .field private mRunnableg:Ljava/lang/Runnable;
 
@@ -30,9 +30,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 140
-    new-instance v0, Lcom/tencent/c/Pro$ICc;
+    new-instance v0, Lcom/tencent/c/Pro$MCc;
 
-    invoke-direct {v0, p0}, Lcom/tencent/c/Pro$ICc;-><init>(Lcom/tencent/c/Pro;)V
+    invoke-direct {v0, p0}, Lcom/tencent/c/Pro$MCc;-><init>(Lcom/tencent/c/Pro;)V
 
     iput-object v0, p0, Lcom/tencent/c/Pro;->mRunnableg:Ljava/lang/Runnable;
 
@@ -40,13 +40,13 @@
     iput-object p1, p0, Lcom/tencent/c/Pro;->mActivitya:Landroid/app/Activity;
 
     .line 48
-    new-instance v0, Lcom/tencent/c/Pro$ICb;
+    new-instance v0, Lcom/tencent/c/Pro$MCb;
 
     invoke-virtual {p1}, Landroid/app/Activity;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/tencent/c/Pro$ICb;-><init>(Lcom/tencent/c/Pro;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/tencent/c/Pro$MCb;-><init>(Lcom/tencent/c/Pro;Landroid/os/Looper;)V
 
     iput-object v0, p0, Lcom/tencent/c/Pro;->mHandlerf:Landroid/os/Handler;
 
@@ -164,12 +164,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/tencent/c/Pro;)Lcom/tencent/c/Pro$ICd;
+.method static synthetic a(Lcom/tencent/c/Pro;)Lcom/tencent/c/Pro$MCd;
     .locals 1
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/tencent/c/Pro;->mICdc:Lcom/tencent/c/Pro$ICd;
+    iget-object v0, p0, Lcom/tencent/c/Pro;->mMCdc:Lcom/tencent/c/Pro$MCd;
 
     return-object v0
 .end method
@@ -216,7 +216,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;Lcom/tencent/c/Pro$ICd;)V
+.method public a(Ljava/lang/String;Lcom/tencent/c/Pro$MCd;)V
     .locals 3
 
     .prologue
@@ -244,7 +244,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    invoke-interface {p2, v0, v2}, Lcom/tencent/c/Pro$ICd;->a(ILjava/lang/String;)V
+    invoke-interface {p2, v0, v2}, Lcom/tencent/c/Pro$MCd;->a(ILjava/lang/String;)V
 
     .line 80
     :goto_0
@@ -252,7 +252,7 @@
 
     .line 69
     :cond_1
-    invoke-static {}, Lcom/tencent/c/Pro$ICq;->b()Z
+    invoke-static {}, Lcom/tencent/c/Pro$MCq;->b()Z
 
     move-result v0
 
@@ -261,7 +261,7 @@
     .line 70
     const/4 v0, 0x2
 
-    invoke-interface {p2, v0, v2}, Lcom/tencent/c/Pro$ICd;->a(ILjava/lang/String;)V
+    invoke-interface {p2, v0, v2}, Lcom/tencent/c/Pro$MCd;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
@@ -302,7 +302,7 @@
     iput-object p1, p0, Lcom/tencent/c/Pro;->mStringb:Ljava/lang/String;
 
     .line 78
-    iput-object p2, p0, Lcom/tencent/c/Pro;->mICdc:Lcom/tencent/c/Pro$ICd;
+    iput-object p2, p0, Lcom/tencent/c/Pro;->mMCdc:Lcom/tencent/c/Pro$MCd;
 
     .line 79
     new-instance v0, Ljava/lang/Thread;

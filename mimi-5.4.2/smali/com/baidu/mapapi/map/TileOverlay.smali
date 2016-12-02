@@ -305,15 +305,15 @@
 
     iget-object v1, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v1, v1, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v1, v1, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v1, v1, Lcom/baidu/platform/comapi/map/B$ICb;->mIb:I
+    iget v1, v1, Lcom/baidu/platform/comapi/map/B$MCb;->mIb:I
 
     iget-object v2, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/B$ICb;->mIa:I
+    iget v2, v2, Lcom/baidu/platform/comapi/map/B$MCb;->mIa:I
 
     sub-int/2addr v1, v2
 
@@ -323,15 +323,15 @@
 
     iget-object v2, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/B$ICb;->mId:I
+    iget v2, v2, Lcom/baidu/platform/comapi/map/B$MCb;->mId:I
 
     iget-object v0, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mICbj:Lcom/baidu/platform/comapi/map/B$ICb;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->mMCbj:Lcom/baidu/platform/comapi/map/B$MCb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->mIc:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$MCb;->mIc:I
 
     sub-int v0, v2, v0
 
@@ -376,7 +376,7 @@
 
     iget-object v6, p0, Lcom/baidu/mapapi/map/TileOverlay;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v0, Lcom/baidu/mapapi/map/ICn;
+    new-instance v0, Lcom/baidu/mapapi/map/MCn;
 
     move-object v1, p0
 
@@ -386,7 +386,7 @@
 
     move v4, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/baidu/mapapi/map/ICn;-><init>(Lcom/baidu/mapapi/map/TileOverlay;IIILjava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/baidu/mapapi/map/MCn;-><init>(Lcom/baidu/mapapi/map/TileOverlay;IIILjava/lang/String;)V
 
     invoke-interface {v6, v0}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
     :try_end_0

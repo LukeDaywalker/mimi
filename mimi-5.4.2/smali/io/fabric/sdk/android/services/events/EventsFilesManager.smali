@@ -584,9 +584,9 @@
     .line 201
     new-instance v1, Ljava/util/TreeSet;
 
-    new-instance v3, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICe;
+    new-instance v3, Lio/fabric/sdk/android/services/events/EventsFilesManager$MCe;
 
-    invoke-direct {v3, p0}, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICe;-><init>(Lio/fabric/sdk/android/services/events/EventsFilesManager;)V
+    invoke-direct {v3, p0}, Lio/fabric/sdk/android/services/events/EventsFilesManager$MCe;-><init>(Lio/fabric/sdk/android/services/events/EventsFilesManager;)V
 
     invoke-direct {v1, v3}, Ljava/util/TreeSet;-><init>(Ljava/util/Comparator;)V
 
@@ -618,9 +618,9 @@
     move-result-wide v4
 
     .line 211
-    new-instance v6, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;
+    new-instance v6, Lio/fabric/sdk/android/services/events/EventsFilesManager$MCf;
 
-    invoke-direct {v6, v0, v4, v5}, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;-><init>(Ljava/io/File;J)V
+    invoke-direct {v6, v0, v4, v5}, Lio/fabric/sdk/android/services/events/EventsFilesManager$MCf;-><init>(Ljava/io/File;J)V
 
     invoke-virtual {v1, v6}, Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z
 
@@ -648,10 +648,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;
+    check-cast v0, Lio/fabric/sdk/android/services/events/EventsFilesManager$MCf;
 
     .line 216
-    iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->mFilea:Ljava/io/File;
+    iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsFilesManager$MCf;->mFilea:Ljava/io/File;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

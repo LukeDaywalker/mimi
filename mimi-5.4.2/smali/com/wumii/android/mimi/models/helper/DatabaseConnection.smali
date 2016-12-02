@@ -10,7 +10,7 @@
 # instance fields
 .field private mContextc:Landroid/content/Context;
 
-.field private mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+.field private mMCgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$MCg;
 
 .field private mStringd:Ljava/lang/String;
 
@@ -61,29 +61,29 @@
 
 
 # virtual methods
-.method public a()Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+.method public a()Lcom/wumii/android/mimi/models/helper/DatabaseConnection$MCg;
     .locals 3
 
     .prologue
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mMCgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$MCg;
 
     if-nez v0, :cond_0
 
     .line 163
-    new-instance v0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$MCg;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mContextc:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mStringd:Ljava/lang/String;
 
-    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$MCg;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mMCgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$MCg;
 
     .line 165
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mMCgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$MCg;
 
     return-object v0
 .end method

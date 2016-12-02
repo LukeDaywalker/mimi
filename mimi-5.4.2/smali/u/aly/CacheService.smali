@@ -103,9 +103,9 @@
 
     .prologue
     .line 60
-    new-instance v0, Lu/aly/CacheService$IChr;
+    new-instance v0, Lu/aly/CacheService$MChr;
 
-    invoke-direct {v0, p0}, Lu/aly/CacheService$IChr;-><init>(Lu/aly/CacheService;)V
+    invoke-direct {v0, p0}, Lu/aly/CacheService$MChr;-><init>(Lu/aly/CacheService;)V
 
     invoke-static {v0}, Lcom/umeng/analytics/QueuedWork;->b(Ljava/lang/Runnable;)V
 
@@ -118,9 +118,9 @@
 
     .prologue
     .line 40
-    new-instance v0, Lu/aly/CacheService$IChq;
+    new-instance v0, Lu/aly/CacheService$MChq;
 
-    invoke-direct {v0, p0, p1}, Lu/aly/CacheService$IChq;-><init>(Lu/aly/CacheService;Lu/aly/IProtocol;)V
+    invoke-direct {v0, p0, p1}, Lu/aly/CacheService$MChq;-><init>(Lu/aly/CacheService;Lu/aly/IProtocol;)V
 
     invoke-static {v0}, Lcom/umeng/analytics/QueuedWork;->b(Ljava/lang/Runnable;)V
 

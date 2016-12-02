@@ -98,11 +98,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/share/SecretShareController$ICam;
+    new-instance v1, Lcom/wumii/android/mimi/models/share/SecretShareController$MCam;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/SecretShareController$ICam;-><init>(Lcom/wumii/android/mimi/models/share/SecretShareController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/share/SecretShareController$MCam;-><init>(Lcom/wumii/android/mimi/models/share/SecretShareController;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/SecretShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/share/SecretShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$MCl;)V
 
     .line 56
     return-void
@@ -126,11 +126,11 @@
     .line 36
     iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mActivitya:Landroid/app/Activity;
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/SecretShareController$ICak;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/SecretShareController$MCak;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/SecretShareController$ICak;-><init>(Lcom/wumii/android/mimi/models/share/SecretShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/SecretShareController$MCak;-><init>(Lcom/wumii/android/mimi/models/share/SecretShareController;)V
 
-    invoke-static {v1, v0, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v1, v0, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 47
     return-void
@@ -148,7 +148,7 @@
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/share/ShareInsideController;-><init>(Landroid/app/Activity;)V
 
     .line 61
-    new-instance v1, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICat;
+    new-instance v1, Lcom/wumii/android/mimi/models/share/ShareInsideController$MCat;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -168,9 +168,9 @@
 
     move-result-object v4
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICat;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/share/ShareInsideController$MCat;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/share/ShareInsideController;->a(Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/share/ShareInsideController;->a(Lcom/wumii/android/mimi/models/share/ShareInsideController$MCas;)V
 
     .line 62
     return-void
@@ -187,11 +187,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
+    new-instance v2, Lcom/wumii/android/mimi/models/share/SecretShareController$MCan;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;-><init>(Lcom/wumii/android/mimi/models/share/SecretShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/share/SecretShareController$MCan;-><init>(Lcom/wumii/android/mimi/models/share/SecretShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$ICan;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/util/ShareUtils$MCan;)V
 
     .line 77
     return-void

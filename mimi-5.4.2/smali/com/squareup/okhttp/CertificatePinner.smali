@@ -29,11 +29,11 @@
 
     .prologue
     .line 133
-    new-instance v0, Lcom/squareup/okhttp/CertificatePinner$ICn;
+    new-instance v0, Lcom/squareup/okhttp/CertificatePinner$MCn;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/CertificatePinner$ICn;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/CertificatePinner$MCn;-><init>()V
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/CertificatePinner$ICn;->a()Lcom/squareup/okhttp/CertificatePinner;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/CertificatePinner$MCn;->a()Lcom/squareup/okhttp/CertificatePinner;
 
     move-result-object v0
 
@@ -42,7 +42,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Lcom/squareup/okhttp/CertificatePinner$ICn;)V
+.method private constructor <init>(Lcom/squareup/okhttp/CertificatePinner$MCn;)V
     .locals 1
 
     .prologue
@@ -50,7 +50,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 138
-    invoke-static {p1}, Lcom/squareup/okhttp/CertificatePinner$ICn;->a(Lcom/squareup/okhttp/CertificatePinner$ICn;)Ljava/util/Map;
+    invoke-static {p1}, Lcom/squareup/okhttp/CertificatePinner$MCn;->a(Lcom/squareup/okhttp/CertificatePinner$MCn;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -64,12 +64,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/squareup/okhttp/CertificatePinner$ICn;Lcom/squareup/okhttp/CertificatePinner$ICm;)V
+.method synthetic constructor <init>(Lcom/squareup/okhttp/CertificatePinner$MCn;Lcom/squareup/okhttp/CertificatePinner$MCm;)V
     .locals 0
 
     .prologue
     .line 132
-    invoke-direct {p0, p1}, Lcom/squareup/okhttp/CertificatePinner;-><init>(Lcom/squareup/okhttp/CertificatePinner$ICn;)V
+    invoke-direct {p0, p1}, Lcom/squareup/okhttp/CertificatePinner;-><init>(Lcom/squareup/okhttp/CertificatePinner$MCn;)V
 
     return-void
 .end method

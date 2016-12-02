@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;)Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
+.method public static a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;)Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
     .locals 8
 
     .prologue
@@ -33,9 +33,9 @@
 
     invoke-direct {v3, v4, v5}, Lcom/wumii/android/mimi/models/entities/circle/Circle;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v4, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v4, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
-    invoke-direct {v0, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;)V
+    invoke-direct {v0, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;)V
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -83,9 +83,9 @@
     .line 91
     new-instance v4, Lcom/wumii/android/mimi/ui/widgets/CircleItem;
 
-    sget-object v5, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v5, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
-    invoke-direct {v4, v0, v5}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;)V
+    invoke-direct {v4, v0, v5}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;)V
 
     invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -137,10 +137,10 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICic:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCic:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
     :goto_1
-    invoke-direct {v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;)V
+    invoke-direct {v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;)V
 
     invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -186,9 +186,9 @@
     .line 106
     new-instance v5, Lcom/wumii/android/mimi/ui/widgets/CircleItem;
 
-    sget-object v6, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v6, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
-    invoke-direct {v5, v0, v6}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;)V
+    invoke-direct {v5, v0, v6}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;)V
 
     invoke-interface {v3, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -196,7 +196,7 @@
 
     .line 94
     :cond_2
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
     goto :goto_1
 
@@ -204,9 +204,9 @@
     :cond_3
     new-instance v3, Lcom/wumii/android/mimi/ui/widgets/CircleItem;
 
-    sget-object v4, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v4, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
-    invoke-direct {v3, v0, v4}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;)V
+    invoke-direct {v3, v0, v4}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;)V
 
     invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -246,9 +246,9 @@
     .line 99
     new-instance v4, Lcom/wumii/android/mimi/ui/widgets/CircleItem;
 
-    sget-object v5, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mICia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v5, Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;->mMCia:Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;
 
-    invoke-direct {v4, v0, v5}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;)V
+    invoke-direct {v4, v0, v5}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;-><init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$MCi;)V
 
     invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -274,7 +274,7 @@
 
     .line 115
     :cond_5
-    invoke-virtual {v1, p2}, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;)V
+    invoke-virtual {v1, p2}, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$MCx;)V
 
     .line 117
     return-object v1
@@ -302,7 +302,7 @@
     check-cast p0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 42
-    sget-object v1, Lcom/wumii/android/mimi/util/CircleUtils$ICo;->mArrayIa:[I
+    sget-object v1, Lcom/wumii/android/mimi/util/CircleUtils$MCo;->mArrayIa:[I
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getType()Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -434,9 +434,9 @@
     .line 123
     const v1, 0x7f0600ca
 
-    new-instance v2, Lcom/wumii/android/mimi/util/CircleUtils$ICn;
+    new-instance v2, Lcom/wumii/android/mimi/util/CircleUtils$MCn;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/CircleUtils$ICn;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/CircleUtils$MCn;-><init>(Landroid/app/Activity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

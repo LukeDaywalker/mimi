@@ -165,11 +165,11 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->a(Ljava/util/List;)V
 
     .line 48
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCcc:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 49
     return-void
@@ -272,7 +272,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
     .line 138
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;->getSecret()Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -282,7 +282,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 139
     const/4 v0, 0x1
@@ -406,7 +406,7 @@
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a(Lcom/wumii/android/mimi/models/entities/notification/Notification;)V
 
     .line 113
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;->getSecret()Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -416,7 +416,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 114
     const/4 v0, 0x1
@@ -508,9 +508,9 @@
     invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a(Lcom/wumii/android/mimi/models/entities/NotificationType;Ljava/lang/String;)I
 
     .line 64
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcb:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCcb:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 65
     const/4 v0, 0x1
@@ -602,9 +602,9 @@
     invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a(Lcom/wumii/android/mimi/models/entities/NotificationType;Ljava/lang/String;)I
 
     .line 85
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICcb:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCcb:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 86
     const/4 v0, 0x1

@@ -230,11 +230,11 @@
     iput v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mIf:I
 
     .line 234
-    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICl;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$MCl;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, p1, p2, v1}, Lcom/squareup/okhttp/internal/http/HttpConnection$ICl;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;JLcom/squareup/okhttp/internal/http/HttpConnection$ICh;)V
+    invoke-direct {v0, p0, p1, p2, v1}, Lcom/squareup/okhttp/internal/http/HttpConnection$MCl;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;JLcom/squareup/okhttp/internal/http/HttpConnection$MCh;)V
 
     return-object v0
 .end method
@@ -283,9 +283,9 @@
     iput v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mIf:I
 
     .line 252
-    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$MCk;
 
-    invoke-direct {v0, p0, p1}, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;Lcom/squareup/okhttp/internal/http/HttpEngine;)V
+    invoke-direct {v0, p0, p1}, Lcom/squareup/okhttp/internal/http/HttpConnection$MCk;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;Lcom/squareup/okhttp/internal/http/HttpEngine;)V
 
     return-object v0
 .end method
@@ -365,7 +365,7 @@
     return-void
 .end method
 
-.method public a(Lcom/squareup/okhttp/Headers$ICab;)V
+.method public a(Lcom/squareup/okhttp/Headers$MCab;)V
     .locals 2
 
     .prologue
@@ -386,7 +386,7 @@
     .line 221
     sget-object v1, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 
-    invoke-virtual {v1, p1, v0}, Lcom/squareup/okhttp/internal/Internal;->a(Lcom/squareup/okhttp/Headers$ICab;Ljava/lang/String;)V
+    invoke-virtual {v1, p1, v0}, Lcom/squareup/okhttp/internal/Internal;->a(Lcom/squareup/okhttp/Headers$MCab;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -617,9 +617,9 @@
     iput v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mIf:I
 
     .line 246
-    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICm;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$MCm;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/squareup/okhttp/internal/http/HttpConnection$ICm;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;J)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/squareup/okhttp/internal/http/HttpConnection$MCm;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;J)V
 
     return-object v0
 .end method
@@ -796,7 +796,7 @@
     goto :goto_0
 .end method
 
-.method public g()Lcom/squareup/okhttp/Response$ICau;
+.method public g()Lcom/squareup/okhttp/Response$MCau;
     .locals 5
 
     .prologue
@@ -854,38 +854,38 @@
     move-result-object v0
 
     .line 193
-    new-instance v1, Lcom/squareup/okhttp/Response$ICau;
+    new-instance v1, Lcom/squareup/okhttp/Response$MCau;
 
-    invoke-direct {v1}, Lcom/squareup/okhttp/Response$ICau;-><init>()V
+    invoke-direct {v1}, Lcom/squareup/okhttp/Response$MCau;-><init>()V
 
     iget-object v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mProtocola:Lcom/squareup/okhttp/Protocol;
 
     .line 194
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
     iget v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mIb:I
 
     .line 195
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(I)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(I)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
     iget-object v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mStringc:Ljava/lang/String;
 
     .line 196
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Ljava/lang/String;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Ljava/lang/String;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
     .line 198
-    new-instance v2, Lcom/squareup/okhttp/Headers$ICab;
+    new-instance v2, Lcom/squareup/okhttp/Headers$MCab;
 
-    invoke-direct {v2}, Lcom/squareup/okhttp/Headers$ICab;-><init>()V
+    invoke-direct {v2}, Lcom/squareup/okhttp/Headers$MCab;-><init>()V
 
     .line 199
-    invoke-virtual {p0, v2}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/Headers$ICab;)V
+    invoke-virtual {p0, v2}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/Headers$MCab;)V
 
     .line 200
     sget-object v3, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringd:Ljava/lang/String;
@@ -896,14 +896,14 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/squareup/okhttp/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-virtual {v2, v3, v4}, Lcom/squareup/okhttp/Headers$MCab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$MCab;
 
     .line 201
-    invoke-virtual {v2}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
+    invoke-virtual {v2}, Lcom/squareup/okhttp/Headers$MCab;->a()Lcom/squareup/okhttp/Headers;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$MCau;
 
     .line 203
     iget v0, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mIb:I
@@ -1027,11 +1027,11 @@
     iput v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mIf:I
 
     .line 228
-    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$MCj;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;Lcom/squareup/okhttp/internal/http/HttpConnection$ICh;)V
+    invoke-direct {v0, p0, v1}, Lcom/squareup/okhttp/internal/http/HttpConnection$MCj;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;Lcom/squareup/okhttp/internal/http/HttpConnection$MCh;)V
 
     return-object v0
 .end method
@@ -1080,11 +1080,11 @@
     iput v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection;->mIf:I
 
     .line 258
-    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;
+    new-instance v0, Lcom/squareup/okhttp/internal/http/HttpConnection$MCn;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;Lcom/squareup/okhttp/internal/http/HttpConnection$ICh;)V
+    invoke-direct {v0, p0, v1}, Lcom/squareup/okhttp/internal/http/HttpConnection$MCn;-><init>(Lcom/squareup/okhttp/internal/http/HttpConnection;Lcom/squareup/okhttp/internal/http/HttpConnection$MCh;)V
 
     return-object v0
 .end method

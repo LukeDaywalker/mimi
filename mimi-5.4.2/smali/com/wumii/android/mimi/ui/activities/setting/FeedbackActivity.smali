@@ -177,9 +177,9 @@
     .line 35
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mEditTextn:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity$ICg;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity$MCg;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity$ICg;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity$MCg;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

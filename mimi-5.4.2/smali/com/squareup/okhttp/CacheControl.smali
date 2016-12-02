@@ -41,27 +41,27 @@
 
     .prologue
     .line 20
-    new-instance v0, Lcom/squareup/okhttp/CacheControl$ICf;
+    new-instance v0, Lcom/squareup/okhttp/CacheControl$MCf;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/CacheControl$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/CacheControl$MCf;-><init>()V
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/CacheControl$ICf;->a()Lcom/squareup/okhttp/CacheControl$ICf;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/CacheControl$MCf;->a()Lcom/squareup/okhttp/CacheControl$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/squareup/okhttp/CacheControl$ICf;->c()Lcom/squareup/okhttp/CacheControl;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/CacheControl$MCf;->c()Lcom/squareup/okhttp/CacheControl;
 
     move-result-object v0
 
     sput-object v0, Lcom/squareup/okhttp/CacheControl;->mCacheControla:Lcom/squareup/okhttp/CacheControl;
 
     .line 28
-    new-instance v0, Lcom/squareup/okhttp/CacheControl$ICf;
+    new-instance v0, Lcom/squareup/okhttp/CacheControl$MCf;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/CacheControl$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/CacheControl$MCf;-><init>()V
 
     .line 29
-    invoke-virtual {v0}, Lcom/squareup/okhttp/CacheControl$ICf;->b()Lcom/squareup/okhttp/CacheControl$ICf;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/CacheControl$MCf;->b()Lcom/squareup/okhttp/CacheControl$MCf;
 
     move-result-object v0
 
@@ -70,12 +70,12 @@
     sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 30
-    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/CacheControl$ICf;->a(ILjava/util/concurrent/TimeUnit;)Lcom/squareup/okhttp/CacheControl$ICf;
+    invoke-virtual {v0, v1, v2}, Lcom/squareup/okhttp/CacheControl$MCf;->a(ILjava/util/concurrent/TimeUnit;)Lcom/squareup/okhttp/CacheControl$MCf;
 
     move-result-object v0
 
     .line 31
-    invoke-virtual {v0}, Lcom/squareup/okhttp/CacheControl$ICf;->c()Lcom/squareup/okhttp/CacheControl;
+    invoke-virtual {v0}, Lcom/squareup/okhttp/CacheControl$MCf;->c()Lcom/squareup/okhttp/CacheControl;
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Lcom/squareup/okhttp/CacheControl$ICf;)V
+.method private constructor <init>(Lcom/squareup/okhttp/CacheControl$MCf;)V
     .locals 2
 
     .prologue
@@ -95,17 +95,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 65
-    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->isZa:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$MCf;->isZa:Z
 
     iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZd:Z
 
     .line 66
-    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->isZb:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$MCf;->isZb:Z
 
     iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZe:Z
 
     .line 67
-    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->mIc:I
+    iget v0, p1, Lcom/squareup/okhttp/CacheControl$MCf;->mIc:I
 
     iput v0, p0, Lcom/squareup/okhttp/CacheControl;->mIf:I
 
@@ -124,22 +124,22 @@
     iput-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZj:Z
 
     .line 72
-    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->mId:I
+    iget v0, p1, Lcom/squareup/okhttp/CacheControl$MCf;->mId:I
 
     iput v0, p0, Lcom/squareup/okhttp/CacheControl;->mIk:I
 
     .line 73
-    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->mIe:I
+    iget v0, p1, Lcom/squareup/okhttp/CacheControl$MCf;->mIe:I
 
     iput v0, p0, Lcom/squareup/okhttp/CacheControl;->mIl:I
 
     .line 74
-    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->isZf:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$MCf;->isZf:Z
 
     iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZm:Z
 
     .line 75
-    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->isZg:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$MCf;->isZg:Z
 
     iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZn:Z
 
@@ -147,12 +147,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/squareup/okhttp/CacheControl$ICf;Lcom/squareup/okhttp/CacheControl$ICe;)V
+.method synthetic constructor <init>(Lcom/squareup/okhttp/CacheControl$MCf;Lcom/squareup/okhttp/CacheControl$MCe;)V
     .locals 0
 
     .prologue
     .line 14
-    invoke-direct {p0, p1}, Lcom/squareup/okhttp/CacheControl;-><init>(Lcom/squareup/okhttp/CacheControl$ICf;)V
+    invoke-direct {p0, p1}, Lcom/squareup/okhttp/CacheControl;-><init>(Lcom/squareup/okhttp/CacheControl$MCf;)V
 
     return-void
 .end method

@@ -9,7 +9,7 @@
 # instance fields
 .field private mContexta:Landroid/content/Context;
 
-.field private mICmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+.field private mMCmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
 
 # direct methods
@@ -50,9 +50,9 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
     .line 26
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->mICmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->mMCmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->setOnSurveyCardClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->setOnSurveyCardClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;)V
 
     .line 27
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Feed;->getSurvey()Lcom/wumii/android/mimi/models/entities/survey/Survey;
@@ -74,12 +74,12 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;)V
     .locals 0
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->mICmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->mMCmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$MCm;
 
     .line 34
     return-void

@@ -6,13 +6,13 @@
 # instance fields
 .field private mClocke:Lcom/google/tagmanager/Clock;
 
-.field private mICec:Lcom/google/tagmanager/Container$ICe;
-
-.field private mICjb:Lcom/google/analytics/containertag/proto/Serving$ICj;
-
 .field private volatile mIh:I
 
 .field private volatile mJg:J
+
+.field private mMCec:Lcom/google/tagmanager/Container$MCe;
+
+.field private mMCjb:Lcom/google/analytics/containertag/proto/Serving$MCj;
 
 .field private mRuntimed:Lcom/google/tagmanager/Runtime;
 
@@ -153,11 +153,11 @@
     .line 750
     iget-object v0, p0, Lcom/google/tagmanager/Container;->mTagManagera:Lcom/google/tagmanager/TagManager;
 
-    invoke-virtual {v0}, Lcom/google/tagmanager/TagManager;->a()Lcom/google/tagmanager/TagManager$ICbj;
+    invoke-virtual {v0}, Lcom/google/tagmanager/TagManager;->a()Lcom/google/tagmanager/TagManager$MCbj;
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/tagmanager/TagManager$ICbj;->mICbjb:Lcom/google/tagmanager/TagManager$ICbj;
+    sget-object v1, Lcom/google/tagmanager/TagManager$MCbj;->mMCbjb:Lcom/google/tagmanager/TagManager$MCbj;
 
     if-ne v0, v1, :cond_0
 
@@ -313,7 +313,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->mICec:Lcom/google/tagmanager/Container$ICe;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mMCec:Lcom/google/tagmanager/Container$MCe;
 
     if-eqz v0, :cond_0
 
@@ -324,13 +324,13 @@
     if-nez v0, :cond_0
 
     .line 633
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->mICec:Lcom/google/tagmanager/Container$ICe;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mMCec:Lcom/google/tagmanager/Container$MCe;
 
-    iget-object v1, p0, Lcom/google/tagmanager/Container;->mICjb:Lcom/google/analytics/containertag/proto/Serving$ICj;
+    iget-object v1, p0, Lcom/google/tagmanager/Container;->mMCjb:Lcom/google/analytics/containertag/proto/Serving$MCj;
 
-    iget-object v1, v1, Lcom/google/analytics/containertag/proto/Serving$ICj;->mStringd:Ljava/lang/String;
+    iget-object v1, v1, Lcom/google/analytics/containertag/proto/Serving$MCj;->mStringd:Ljava/lang/String;
 
-    invoke-interface {v0, p1, p2, v1}, Lcom/google/tagmanager/Container$ICe;->a(JLjava/lang/String;)V
+    invoke-interface {v0, p1, p2, v1}, Lcom/google/tagmanager/Container$MCe;->a(JLjava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -385,14 +385,14 @@
     iput-object p1, p0, Lcom/google/tagmanager/Container;->mStringf:Ljava/lang/String;
 
     .line 716
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->mICec:Lcom/google/tagmanager/Container$ICe;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mMCec:Lcom/google/tagmanager/Container$MCe;
 
     if-eqz v0, :cond_0
 
     .line 717
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->mICec:Lcom/google/tagmanager/Container$ICe;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mMCec:Lcom/google/tagmanager/Container$MCe;
 
-    invoke-interface {v0, p1}, Lcom/google/tagmanager/Container$ICe;->a(Ljava/lang/String;)V
+    invoke-interface {v0, p1}, Lcom/google/tagmanager/Container$MCe;->a(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

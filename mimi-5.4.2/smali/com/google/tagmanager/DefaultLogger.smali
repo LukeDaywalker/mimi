@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private mICaba:Lcom/google/tagmanager/Logger$ICab;
+.field private mMCaba:Lcom/google/tagmanager/Logger$MCab;
 
 
 # direct methods
@@ -19,9 +19,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 9
-    sget-object v0, Lcom/google/tagmanager/Logger$ICab;->mICabd:Lcom/google/tagmanager/Logger$ICab;
+    sget-object v0, Lcom/google/tagmanager/Logger$MCab;->mMCabd:Lcom/google/tagmanager/Logger$MCab;
 
-    iput-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mICaba:Lcom/google/tagmanager/Logger$ICab;
+    iput-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mMCaba:Lcom/google/tagmanager/Logger$MCab;
 
     return-void
 .end method
@@ -33,15 +33,15 @@
 
     .prologue
     .line 13
-    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mICaba:Lcom/google/tagmanager/Logger$ICab;
+    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mMCaba:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v0
 
-    sget-object v1, Lcom/google/tagmanager/Logger$ICab;->mICabe:Lcom/google/tagmanager/Logger$ICab;
+    sget-object v1, Lcom/google/tagmanager/Logger$MCab;->mMCabe:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v1
 
@@ -62,15 +62,15 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mICaba:Lcom/google/tagmanager/Logger$ICab;
+    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mMCaba:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v0
 
-    sget-object v1, Lcom/google/tagmanager/Logger$ICab;->mICabe:Lcom/google/tagmanager/Logger$ICab;
+    sget-object v1, Lcom/google/tagmanager/Logger$MCab;->mMCabe:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v1
 
@@ -91,15 +91,15 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mICaba:Lcom/google/tagmanager/Logger$ICab;
+    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mMCaba:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v0
 
-    sget-object v1, Lcom/google/tagmanager/Logger$ICab;->mICabd:Lcom/google/tagmanager/Logger$ICab;
+    sget-object v1, Lcom/google/tagmanager/Logger$MCab;->mMCabd:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v1
 
@@ -120,15 +120,15 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mICaba:Lcom/google/tagmanager/Logger$ICab;
+    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mMCaba:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v0
 
-    sget-object v1, Lcom/google/tagmanager/Logger$ICab;->mICabc:Lcom/google/tagmanager/Logger$ICab;
+    sget-object v1, Lcom/google/tagmanager/Logger$MCab;->mMCabc:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v1
 
@@ -149,15 +149,15 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mICaba:Lcom/google/tagmanager/Logger$ICab;
+    iget-object v0, p0, Lcom/google/tagmanager/DefaultLogger;->mMCaba:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v0}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v0
 
-    sget-object v1, Lcom/google/tagmanager/Logger$ICab;->mICaba:Lcom/google/tagmanager/Logger$ICab;
+    sget-object v1, Lcom/google/tagmanager/Logger$MCab;->mMCaba:Lcom/google/tagmanager/Logger$MCab;
 
-    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$ICab;->ordinal()I
+    invoke-virtual {v1}, Lcom/google/tagmanager/Logger$MCab;->ordinal()I
 
     move-result v1
 

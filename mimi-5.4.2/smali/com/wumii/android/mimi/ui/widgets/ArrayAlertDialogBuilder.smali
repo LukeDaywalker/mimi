@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)V
+.method public a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$MCf;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -34,7 +34,7 @@
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
             ">;",
-            "Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;",
+            "Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$MCf;",
             ")V"
         }
     .end annotation
@@ -87,9 +87,9 @@
 
     .line 26
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$MCe;
 
-    invoke-direct {v0, p0, p2, p1}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;-><init>(Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;Landroid/support/v4/util/SimpleArrayMap;)V
+    invoke-direct {v0, p0, p2, p1}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$MCe;-><init>(Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$MCf;Landroid/support/v4/util/SimpleArrayMap;)V
 
     invoke-super {p0, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

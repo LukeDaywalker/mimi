@@ -38,7 +38,7 @@
     return v0
 .end method
 
-.method protected a(ILandroid/view/View;)Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;
+.method protected a(ILandroid/view/View;)Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$MCb;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -54,9 +54,9 @@
 
     .prologue
     .line 49
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter$ICf;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter$MCf;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter$ICf;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter$MCf;-><init>(Landroid/view/View;)V
 
     return-object v0
 .end method

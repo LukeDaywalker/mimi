@@ -131,20 +131,20 @@
     .line 68
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCic:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v4, "survey"
 
     const-string/jumbo v5, "survey"
 
-    invoke-direct {v0, v3, v4, v5, v1}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v0, v3, v4, v5, v1}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 69
-    new-instance v1, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;
+    new-instance v1, Lcom/wumii/android/mimi/manager/SurveyManager$MCbi;
 
-    invoke-direct {v1, p0, p2, p3, v2}, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;-><init>(Lcom/wumii/android/mimi/manager/SurveyManager;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;Ljava/util/List;)V
+    invoke-direct {v1, p0, p2, p3, v2}, Lcom/wumii/android/mimi/manager/SurveyManager$MCbi;-><init>(Lcom/wumii/android/mimi/manager/SurveyManager;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;Ljava/util/List;)V
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 97
     return-void
@@ -167,20 +167,20 @@
     .line 103
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "survey"
 
     const-string/jumbo v4, "loadSurveyDetail"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 104
-    new-instance v0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;
+    new-instance v0, Lcom/wumii/android/mimi/manager/SurveyManager$MCbj;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;-><init>(Lcom/wumii/android/mimi/manager/SurveyManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/SurveyManager$MCbj;-><init>(Lcom/wumii/android/mimi/manager/SurveyManager;)V
 
-    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 119
     return-void
@@ -203,20 +203,20 @@
     .line 124
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "survey/vote"
 
     const-string/jumbo v4, "survey/vote"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 125
-    new-instance v0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;
+    new-instance v0, Lcom/wumii/android/mimi/manager/SurveyManager$MCbk;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;-><init>(Lcom/wumii/android/mimi/manager/SurveyManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/SurveyManager$MCbk;-><init>(Lcom/wumii/android/mimi/manager/SurveyManager;)V
 
-    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 149
     return-void
@@ -239,20 +239,20 @@
     .line 154
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "survey/unsubscribe"
 
     const-string/jumbo v4, "survey/unsubscribe"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 155
-    new-instance v0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;
+    new-instance v0, Lcom/wumii/android/mimi/manager/SurveyManager$MCbl;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;-><init>(Lcom/wumii/android/mimi/manager/SurveyManager;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/SurveyManager$MCbl;-><init>(Lcom/wumii/android/mimi/manager/SurveyManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 163
     return-void

@@ -36,42 +36,42 @@
 
     const-string/jumbo v1, "crowd/apply"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 84
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "crowds"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 85
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "user/profile"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 86
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "circle/splits"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 87
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "named/user"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 88
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager;->mHttpProcessora:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "named/user/sync"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 89
     return-void
@@ -82,11 +82,11 @@
 
     .prologue
     .line 337
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCab;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/CircleManager$ICab;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/CircleManager$MCab;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;)V
 
-    invoke-virtual {p0, p1, p2, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, p2, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 358
     return-void
@@ -323,7 +323,7 @@
 
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Ljava/lang/Object;)V
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
@@ -381,7 +381,7 @@
     .line 408
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "circle/subscription/recommendation"
 
@@ -391,14 +391,14 @@
 
     move-result-object v4
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 409
-    new-instance v1, Lcom/wumii/android/mimi/manager/CircleManager$ICae;
+    new-instance v1, Lcom/wumii/android/mimi/manager/CircleManager$MCae;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/manager/CircleManager$ICae;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/manager/CircleManager$MCae;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 432
     return-void
@@ -425,13 +425,13 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "circle/splits"
 
     move-object v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -466,13 +466,13 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "user/profile"
 
     move-object v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -487,7 +487,7 @@
     .line 435
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     sget-object v0, Lcom/wumii/android/mimi/models/entities/discover/RecommendType;->JOINABLE:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
@@ -502,14 +502,14 @@
 
     move-result-object v4
 
-    invoke-direct {v1, v2, v0, v3, v4}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v0, v3, v4}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 436
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCu;
 
-    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/manager/CircleManager$ICu;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Lcom/wumii/android/mimi/models/entities/discover/RecommendType;)V
+    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/manager/CircleManager$MCu;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Lcom/wumii/android/mimi/models/entities/discover/RecommendType;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 460
     return-void
@@ -649,13 +649,13 @@
     .line 249
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "named/user"
 
     move-object v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 250
     invoke-direct {p0, p1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;)V
@@ -698,14 +698,14 @@
 
     if-nez p3, :cond_2
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     :goto_0
     const-string/jumbo v2, "named/user/sync"
 
     move-object v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 243
     invoke-direct {p0, p1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;)V
@@ -715,7 +715,7 @@
 
     .line 241
     :cond_2
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICic:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCic:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     goto :goto_0
 .end method
@@ -768,20 +768,20 @@
     .line 386
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "organization/suggestions"
 
     const-string/jumbo v4, "getSuggestions"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 387
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICad;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCad;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/CircleManager$ICad;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/CircleManager$MCad;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 405
     return-void
@@ -813,20 +813,20 @@
     .line 180
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "circles"
 
     const-string/jumbo v4, "loadCategoryCircles"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 181
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICt;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCt;
 
-    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/manager/CircleManager$ICt;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/manager/CircleManager$MCt;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 205
     return-void
@@ -858,13 +858,13 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v2, "crowd/apply"
 
     move-object v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -889,20 +889,20 @@
     .line 265
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "organization/search"
 
     const-string/jumbo v4, "searchOrg"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 266
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICy;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCy;
 
-    invoke-direct {v0, p0, p2, p1}, Lcom/wumii/android/mimi/manager/CircleManager$ICy;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;ZLjava/lang/String;)V
+    invoke-direct {v0, p0, p2, p1}, Lcom/wumii/android/mimi/manager/CircleManager$MCy;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;ZLjava/lang/String;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 283
     return-void
@@ -1034,7 +1034,7 @@
 
     invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_1
 
@@ -1099,7 +1099,7 @@
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Ljava/lang/Object;)V
     :try_end_1
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 .end method
@@ -1121,13 +1121,13 @@
     .line 288
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "user/profile"
 
     const-string/jumbo v4, "userProfile"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 289
     invoke-direct {p0, p1, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;)V
@@ -1153,20 +1153,20 @@
     .line 210
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "circle/categories"
 
     const-string/jumbo v4, "loadCircleCategories"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 211
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCx;
 
-    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/manager/CircleManager$ICx;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/manager/CircleManager$MCx;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 231
     return-void
@@ -1192,20 +1192,20 @@
     .line 297
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "circle/search"
 
     const-string/jumbo v4, "searchCircle"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 298
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICz;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCz;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/CircleManager$ICz;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/CircleManager$MCz;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 334
     :goto_0
@@ -1220,20 +1220,20 @@
     .line 316
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "organization/search"
 
     const-string/jumbo v4, "searchOrg"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 317
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICaa;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCaa;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/CircleManager$ICaa;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/CircleManager$MCaa;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     goto :goto_0
 .end method
@@ -1268,20 +1268,20 @@
     .line 363
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "organization/apply"
 
     const-string/jumbo v4, "createOrg"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 364
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICac;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCac;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/CircleManager$ICac;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/CircleManager$MCac;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;)V
 
-    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 371
     return-void
@@ -1317,20 +1317,20 @@
     .line 466
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "circle/subscribe"
 
     const-string/jumbo v4, "subscribeCircle"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 467
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCv;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/CircleManager$ICv;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/CircleManager$MCv;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 475
     return-void
@@ -1366,20 +1366,20 @@
     .line 481
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "circle/unsubscribe"
 
     const-string/jumbo v4, "unSubscribeCircle"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 482
-    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$ICw;
+    new-instance v0, Lcom/wumii/android/mimi/manager/CircleManager$MCw;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/CircleManager$ICw;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/CircleManager$MCw;-><init>(Lcom/wumii/android/mimi/manager/CircleManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 490
     return-void

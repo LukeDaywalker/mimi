@@ -68,7 +68,7 @@
 .method protected abstract a()I
 .end method
 
-.method protected abstract a(ILandroid/view/View;)Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;
+.method protected abstract a(ILandroid/view/View;)Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$MCb;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -205,7 +205,7 @@
     move-result-object p2
 
     .line 85
-    invoke-virtual {p0, p1, p2}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->a(ILandroid/view/View;)Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;
+    invoke-virtual {p0, p1, p2}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter;->a(ILandroid/view/View;)Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$MCb;
 
     move-result-object v0
 
@@ -213,12 +213,12 @@
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 89
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$MCb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, p0}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 90
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$MCb;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, p0}, Landroid/widget/RelativeLayout;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
@@ -228,7 +228,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->e(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$MCb;->e(Ljava/lang/Object;)V
 
     .line 97
     return-object p2
@@ -239,7 +239,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$MCb;
 
     goto :goto_0
 .end method

@@ -14,7 +14,7 @@
 
 .field private final mHashtableg:Ljava/util/Hashtable;
 
-.field private mICue:Lcom/hp/hpl/sparta/Sparta$ICu;
+.field private mMCue:Lcom/hp/hpl/sparta/Sparta$MCu;
 
 .field private mStringd:Ljava/lang/String;
 
@@ -36,9 +36,9 @@
     sput-object v0, Lcom/hp/hpl/sparta/Document;->mIntegerb:Ljava/lang/Integer;
 
     .line 280
-    new-instance v0, Lcom/hp/hpl/sparta/Document$ICh;
+    new-instance v0, Lcom/hp/hpl/sparta/Document$MCh;
 
-    invoke-direct {v0}, Lcom/hp/hpl/sparta/Document$ICh;-><init>()V
+    invoke-direct {v0}, Lcom/hp/hpl/sparta/Document$MCh;-><init>()V
 
     sput-object v0, Lcom/hp/hpl/sparta/Document;->mEnumerationa:Ljava/util/Enumeration;
 
@@ -58,11 +58,11 @@
     iput-object v1, p0, Lcom/hp/hpl/sparta/Document;->mElementc:Lcom/hp/hpl/sparta/Element;
 
     .line 384
-    invoke-static {}, Lcom/hp/hpl/sparta/Sparta;->a()Lcom/hp/hpl/sparta/Sparta$ICu;
+    invoke-static {}, Lcom/hp/hpl/sparta/Sparta;->a()Lcom/hp/hpl/sparta/Sparta$MCu;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Document;->mICue:Lcom/hp/hpl/sparta/Sparta$ICu;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Document;->mMCue:Lcom/hp/hpl/sparta/Sparta$MCu;
 
     .line 385
     new-instance v0, Ljava/util/Vector;
@@ -96,11 +96,11 @@
     iput-object v1, p0, Lcom/hp/hpl/sparta/Document;->mElementc:Lcom/hp/hpl/sparta/Element;
 
     .line 384
-    invoke-static {}, Lcom/hp/hpl/sparta/Sparta;->a()Lcom/hp/hpl/sparta/Sparta$ICu;
+    invoke-static {}, Lcom/hp/hpl/sparta/Sparta;->a()Lcom/hp/hpl/sparta/Sparta$MCu;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Document;->mICue:Lcom/hp/hpl/sparta/Sparta$ICu;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Document;->mMCue:Lcom/hp/hpl/sparta/Sparta$MCu;
 
     .line 385
     new-instance v0, Ljava/util/Vector;
@@ -144,9 +144,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/hp/hpl/sparta/Document$ICe;
+    check-cast v0, Lcom/hp/hpl/sparta/Document$MCe;
 
-    invoke-interface {v0, p0}, Lcom/hp/hpl/sparta/Document$ICe;->a(Lcom/hp/hpl/sparta/Document;)V
+    invoke-interface {v0, p0}, Lcom/hp/hpl/sparta/Document$MCe;->a(Lcom/hp/hpl/sparta/Document;)V
 
     goto :goto_0
 

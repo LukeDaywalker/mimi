@@ -41,11 +41,11 @@
     .line 67
     new-instance v0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICab;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$MCab;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICab;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$MCab;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;)V
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$MCc;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mCaptureImageHelperq:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
@@ -82,9 +82,9 @@
     .line 81
     const v1, 0x7f070004
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$MCac;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$MCac;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setItems(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

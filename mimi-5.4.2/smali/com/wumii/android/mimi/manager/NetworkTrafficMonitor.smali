@@ -16,7 +16,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
-            "Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;",
+            "Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;",
             ">;"
         }
     .end annotation
@@ -213,15 +213,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;
+    check-cast v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;
 
     .line 105
     if-nez v0, :cond_0
 
     .line 106
-    new-instance v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;
+    new-instance v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;
 
-    invoke-direct {v0, p1}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;-><init>(Ljava/lang/String;)V
 
     .line 107
     iget-object v1, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor;->mMapc:Ljava/util/Map;
@@ -230,22 +230,22 @@
 
     .line 110
     :cond_0
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->b()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;->b()I
 
     move-result v1
 
     add-int/lit8 v1, v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;->a(I)V
 
     .line 111
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->c()J
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;->c()J
 
     move-result-wide v2
 
     add-long/2addr v2, p2
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->a(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;->a(J)V
 
     .line 112
     return-void
@@ -367,7 +367,7 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;",
+            "Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;",
             ">;"
         }
     .end annotation
@@ -400,7 +400,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;
+    check-cast v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$MCaw;
 
     .line 56
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z

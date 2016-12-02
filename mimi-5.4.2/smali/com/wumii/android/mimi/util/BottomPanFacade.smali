@@ -119,11 +119,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
     .line 92
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/WMText$MCca;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/WMText$MCca;-><init>(I)V
 
     invoke-virtual {p4, v0}, Landroid/widget/EditText;->setEditableFactory(Landroid/text/Editable$Factory;)V
 
@@ -403,9 +403,9 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$ICj;
+    new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$MCj;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$ICj;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$MCj;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
 
     const-wide/16 v2, 0x96
 
@@ -531,11 +531,11 @@
     .line 230
     iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mVoiceBottomPani:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$ICk;
+    new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$MCk;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$ICk;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$MCk;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$MCbt;)V
 
     .line 254
     iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mVoiceBottomPani:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
@@ -1020,18 +1020,18 @@
     .line 147
     iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewd:Landroid/view/View;
 
-    new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;
+    new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$MCg;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$MCg;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 163
     iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$MCh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$MCh;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -1048,9 +1048,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/util/BottomPanFacade$ICi;
+    new-instance v2, Lcom/wumii/android/mimi/util/BottomPanFacade$MCi;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$ICi;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/util/BottomPanFacade$MCi;-><init>(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
 
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
 

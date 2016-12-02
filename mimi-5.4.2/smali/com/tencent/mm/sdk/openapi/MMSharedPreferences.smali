@@ -88,7 +88,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->mContentResolvercr:Landroid/content/ContentResolver;
 
-    sget-object v1, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/tencent/mm/sdk/c/MCa$MCb;->CONTENT_URI:Landroid/net/Uri;
 
     iget-object v2, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->columns:[Ljava/lang/String;
 
@@ -142,7 +142,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/tencent/mm/sdk/c/ICa$ICa;->a(ILjava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/tencent/mm/sdk/c/MCa$MCa;->a(ILjava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -228,7 +228,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->mContentResolvercr:Landroid/content/ContentResolver;
 
-    sget-object v1, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/tencent/mm/sdk/c/MCa$MCb;->CONTENT_URI:Landroid/net/Uri;
 
     iget-object v2, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->columns:[Ljava/lang/String;
 
@@ -283,7 +283,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lcom/tencent/mm/sdk/c/ICa$ICa;->a(ILjava/lang/String;)Ljava/lang/Object;
+    invoke-static {v4, v5}, Lcom/tencent/mm/sdk/c/MCa$MCa;->a(ILjava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
 

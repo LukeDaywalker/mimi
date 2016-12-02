@@ -18,9 +18,9 @@
 
 .field private mFileHelpero:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private mICalF:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
-
 .field protected mListViewr:Landroid/widget/ListView;
+
+.field private mMCalF:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
 .field private mPinnedHeaderListViewq:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
@@ -54,11 +54,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 61
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCa;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCa;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mICalF:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mMCalF:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
     return-void
 .end method
@@ -309,19 +309,19 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mICbrc:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$MCbr;->mMCbrc:Lcom/wumii/android/mimi/manager/UploadContactManager$MCbr;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$MCbr;)V
 
     .line 239
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mReadContactsTaskC:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICf;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICf;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCf;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/ReadContactsTask;->a(Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/ReadContactsTask;->a(Lcom/wumii/android/mimi/task/ReadContactsTask$MCbh;)V
 
     .line 268
     return-void
@@ -351,9 +351,9 @@
 
     const v2, 0x7f060051
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICh;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCh;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCh;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -361,9 +361,9 @@
 
     const v2, 0x7f0602ee
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICg;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCg;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICg;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCg;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -493,9 +493,9 @@
     .line 126
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICb;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCb;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICb;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCb;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -576,18 +576,18 @@
     .line 146
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mQuickSelectionBarp:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCc;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCc;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->setOnItemSelectedListener(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->setOnItemSelectedListener(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$MCbd;)V
 
     .line 154
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mPinnedHeaderListViewq:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICd;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCd;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICd;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCd;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
     invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
@@ -616,11 +616,11 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mActivityEventManagerz:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICe;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCe;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICe;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$MCe;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$MCaq;)V
 
     .line 183
     return-void
@@ -637,9 +637,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mICalF:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->mMCalF:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$MCal;)V
 
     .line 199
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z

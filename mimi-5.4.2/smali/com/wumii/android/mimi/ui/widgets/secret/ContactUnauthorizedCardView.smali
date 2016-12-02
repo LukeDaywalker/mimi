@@ -92,9 +92,9 @@
     .line 40
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mViewd:Landroid/view/View;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$ICe;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$MCe;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$ICe;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$MCe;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

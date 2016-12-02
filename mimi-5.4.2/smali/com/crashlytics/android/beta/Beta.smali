@@ -746,7 +746,7 @@
             "()",
             "Ljava/util/Map",
             "<",
-            "Lio/fabric/sdk/android/services/common/IdManager$ICaa;",
+            "Lio/fabric/sdk/android/services/common/IdManager$MCaa;",
             "Ljava/lang/String;",
             ">;"
         }
@@ -784,7 +784,7 @@
     if-nez v2, :cond_0
 
     .line 121
-    sget-object v2, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mICaac:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v2, Lio/fabric/sdk/android/services/common/IdManager$MCaa;->mMCaac:Lio/fabric/sdk/android/services/common/IdManager$MCaa;
 
     invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

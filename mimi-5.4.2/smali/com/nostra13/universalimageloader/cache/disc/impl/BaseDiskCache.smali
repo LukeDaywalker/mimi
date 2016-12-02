@@ -212,7 +212,7 @@
     throw v0
 .end method
 
-.method public a(Ljava/lang/String;Ljava/io/InputStream;Lcom/nostra13/universalimageloader/utils/IoUtils$ICe;)Z
+.method public a(Ljava/lang/String;Ljava/io/InputStream;Lcom/nostra13/universalimageloader/utils/IoUtils$MCe;)Z
     .locals 6
 
     .prologue
@@ -268,7 +268,7 @@
     :try_start_1
     iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/BaseDiskCache;->mIe:I
 
-    invoke-static {p2, v5, p3, v0}, Lcom/nostra13/universalimageloader/utils/IoUtils;->a(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/nostra13/universalimageloader/utils/IoUtils$ICe;I)Z
+    invoke-static {p2, v5, p3, v0}, Lcom/nostra13/universalimageloader/utils/IoUtils;->a(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/nostra13/universalimageloader/utils/IoUtils$MCe;I)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

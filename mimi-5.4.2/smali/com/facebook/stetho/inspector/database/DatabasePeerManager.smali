@@ -48,9 +48,9 @@
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;-><init>()V
 
     .line 135
-    new-instance v0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager$ICb;
+    new-instance v0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager$MCb;
 
-    invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/database/DatabasePeerManager$ICb;-><init>(Lcom/facebook/stetho/inspector/database/DatabasePeerManager;)V
+    invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/database/DatabasePeerManager$MCb;-><init>(Lcom/facebook/stetho/inspector/database/DatabasePeerManager;)V
 
     iput-object v0, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->mPeerRegistrationListenerc:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 

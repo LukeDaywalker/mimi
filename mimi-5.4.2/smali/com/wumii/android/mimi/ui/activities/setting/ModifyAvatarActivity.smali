@@ -141,9 +141,9 @@
 
     const v1, 0x7f0600d2
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$MCj;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$MCj;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -229,13 +229,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$MCh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$MCh;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$MCau;Z)V
 
     .line 71
     return-void

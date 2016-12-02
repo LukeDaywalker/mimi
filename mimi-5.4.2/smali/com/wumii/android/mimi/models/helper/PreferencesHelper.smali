@@ -654,7 +654,7 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
@@ -902,7 +902,7 @@
 
     invoke-interface {v1, p2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_1 .. :try_end_1} :catch_1
 
     move-object p3, v0
 
@@ -1046,7 +1046,7 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_0
-    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$MCg; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 85
     return-void

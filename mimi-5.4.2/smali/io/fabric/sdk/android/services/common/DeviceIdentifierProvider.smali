@@ -10,7 +10,7 @@
             "()",
             "Ljava/util/Map",
             "<",
-            "Lio/fabric/sdk/android/services/common/IdManager$ICaa;",
+            "Lio/fabric/sdk/android/services/common/IdManager$MCaa;",
             "Ljava/lang/String;",
             ">;"
         }

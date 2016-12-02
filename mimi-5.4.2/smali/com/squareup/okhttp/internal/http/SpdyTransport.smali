@@ -220,7 +220,7 @@
     return-void
 .end method
 
-.method public static a(Ljava/util/List;Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$ICau;
+.method public static a(Ljava/util/List;Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$MCau;
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -231,7 +231,7 @@
             ">;",
             "Lcom/squareup/okhttp/Protocol;",
             ")",
-            "Lcom/squareup/okhttp/Response$ICau;"
+            "Lcom/squareup/okhttp/Response$MCau;"
         }
     .end annotation
 
@@ -245,9 +245,9 @@
     const-string/jumbo v1, "HTTP/1.1"
 
     .line 176
-    new-instance v6, Lcom/squareup/okhttp/Headers$ICab;
+    new-instance v6, Lcom/squareup/okhttp/Headers$MCab;
 
-    invoke-direct {v6}, Lcom/squareup/okhttp/Headers$ICab;-><init>()V
+    invoke-direct {v6}, Lcom/squareup/okhttp/Headers$MCab;-><init>()V
 
     .line 177
     sget-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringd:Ljava/lang/String;
@@ -256,7 +256,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v6, v0, v4}, Lcom/squareup/okhttp/Headers$ICab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-virtual {v6, v0, v4}, Lcom/squareup/okhttp/Headers$MCab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$MCab;
 
     .line 178
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -375,7 +375,7 @@
 
     move-result-object v10
 
-    invoke-virtual {v6, v10, v1}, Lcom/squareup/okhttp/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
+    invoke-virtual {v6, v10, v1}, Lcom/squareup/okhttp/Headers$MCab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$MCab;
 
     :cond_3
     move-object v1, v2
@@ -433,35 +433,35 @@
     move-result-object v0
 
     .line 200
-    new-instance v1, Lcom/squareup/okhttp/Response$ICau;
+    new-instance v1, Lcom/squareup/okhttp/Response$MCau;
 
-    invoke-direct {v1}, Lcom/squareup/okhttp/Response$ICau;-><init>()V
+    invoke-direct {v1}, Lcom/squareup/okhttp/Response$MCau;-><init>()V
 
     .line 201
-    invoke-virtual {v1, p1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, p1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
     iget v2, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mIb:I
 
     .line 202
-    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$ICau;->a(I)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Response$MCau;->a(I)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v1
 
     iget-object v0, v0, Lcom/squareup/okhttp/internal/http/StatusLine;->mStringc:Ljava/lang/String;
 
     .line 203
-    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$ICau;->a(Ljava/lang/String;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v1, v0}, Lcom/squareup/okhttp/Response$MCau;->a(Ljava/lang/String;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
     .line 204
-    invoke-virtual {v6}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
+    invoke-virtual {v6}, Lcom/squareup/okhttp/Headers$MCab;->a()Lcom/squareup/okhttp/Headers;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$ICau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-virtual {v0, v1}, Lcom/squareup/okhttp/Response$MCau;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 
@@ -1050,7 +1050,7 @@
     return-void
 .end method
 
-.method public b()Lcom/squareup/okhttp/Response$ICau;
+.method public b()Lcom/squareup/okhttp/Response$MCau;
     .locals 2
 
     .prologue
@@ -1067,7 +1067,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/http/SpdyTransport;->a(Ljava/util/List;Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$ICau;
+    invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/http/SpdyTransport;->a(Ljava/util/List;Lcom/squareup/okhttp/Protocol;)Lcom/squareup/okhttp/Response$MCau;
 
     move-result-object v0
 

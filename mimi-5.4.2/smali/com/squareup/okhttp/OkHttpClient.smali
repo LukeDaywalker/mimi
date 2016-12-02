@@ -174,9 +174,9 @@
     sput-object v0, Lcom/squareup/okhttp/OkHttpClient;->mListb:Ljava/util/List;
 
     .line 64
-    new-instance v0, Lcom/squareup/okhttp/OkHttpClient$ICaj;
+    new-instance v0, Lcom/squareup/okhttp/OkHttpClient$MCaj;
 
-    invoke-direct {v0}, Lcom/squareup/okhttp/OkHttpClient$ICaj;-><init>()V
+    invoke-direct {v0}, Lcom/squareup/okhttp/OkHttpClient$MCaj;-><init>()V
 
     sput-object v0, Lcom/squareup/okhttp/internal/Internal;->mInternalb:Lcom/squareup/okhttp/internal/Internal;
 

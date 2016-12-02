@@ -272,11 +272,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$MCv;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$MCv;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->a(Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->a(Lcom/wumii/android/mimi/models/helper/LocationHelper$MCu;)V
 
     .line 198
     return-void
@@ -494,16 +494,16 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICt;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$MCt;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICt;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$MCt;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 105
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$MCu;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$MCu;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->mOrgValidationObserverC:Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;
 

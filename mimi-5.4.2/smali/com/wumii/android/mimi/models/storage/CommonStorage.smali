@@ -201,13 +201,13 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 61
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->name()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 62
     return-void
@@ -404,13 +404,13 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 66
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;->mMCca:Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->name()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCc;Ljava/lang/String;)V
 
     .line 67
     return-void
@@ -1149,9 +1149,9 @@
     .line 213
     iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CommonStorage;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/models/storage/CommonStorage$ICh;
+    new-instance v1, Lcom/wumii/android/mimi/models/storage/CommonStorage$MCh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/storage/CommonStorage$ICh;-><init>(Lcom/wumii/android/mimi/models/storage/CommonStorage;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/storage/CommonStorage$MCh;-><init>(Lcom/wumii/android/mimi/models/storage/CommonStorage;)V
 
     const-string/jumbo v2, "app_report_events"
 

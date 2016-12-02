@@ -141,9 +141,9 @@
 
     .prologue
     .line 143
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$MCz;
 
-    invoke-direct {v0, p0, p0, p1, p2}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;Landroid/content/Context;Ljava/lang/String;Z)V
+    invoke-direct {v0, p0, p0, p1, p2}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$MCz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;Landroid/content/Context;Ljava/lang/String;Z)V
 
     .line 152
     invoke-virtual {v0}, Lcom/wumii/android/mimi/task/HttpAsyncTask;->j()V
@@ -731,9 +731,9 @@
     if-nez v0, :cond_0
 
     .line 214
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$MCaa;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$MCaa;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mRunnableD:Ljava/lang/Runnable;
 

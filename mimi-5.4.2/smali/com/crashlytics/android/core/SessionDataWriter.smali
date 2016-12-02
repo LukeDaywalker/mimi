@@ -210,7 +210,7 @@
             "IJJZ",
             "Ljava/util/Map",
             "<",
-            "Lio/fabric/sdk/android/services/common/IdManager$ICaa;",
+            "Lio/fabric/sdk/android/services/common/IdManager$MCaa;",
             "Ljava/lang/String;",
             ">;I",
             "Lcom/crashlytics/android/core/ByteString;",
@@ -319,7 +319,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    check-cast v2, Lio/fabric/sdk/android/services/common/IdManager$MCaa;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -327,7 +327,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-direct {p0, v2, v1}, Lcom/crashlytics/android/core/SessionDataWriter;->a(Lio/fabric/sdk/android/services/common/IdManager$ICaa;Ljava/lang/String;)I
+    invoke-direct {p0, v2, v1}, Lcom/crashlytics/android/core/SessionDataWriter;->a(Lio/fabric/sdk/android/services/common/IdManager$MCaa;Ljava/lang/String;)I
 
     move-result v1
 
@@ -561,14 +561,14 @@
     return v0
 .end method
 
-.method private a(Lio/fabric/sdk/android/services/common/IdManager$ICaa;Ljava/lang/String;)I
+.method private a(Lio/fabric/sdk/android/services/common/IdManager$MCaa;Ljava/lang/String;)I
     .locals 3
 
     .prologue
     .line 417
     const/4 v0, 0x1
 
-    iget v1, p1, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mIh:I
+    iget v1, p1, Lio/fabric/sdk/android/services/common/IdManager$MCaa;->mIh:I
 
     invoke-static {v0, v1}, Lcom/crashlytics/android/core/CodedOutputStream;->e(II)I
 
@@ -2614,7 +2614,7 @@
             "IJJZ",
             "Ljava/util/Map",
             "<",
-            "Lio/fabric/sdk/android/services/common/IdManager$ICaa;",
+            "Lio/fabric/sdk/android/services/common/IdManager$MCaa;",
             "Ljava/lang/String;",
             ">;I",
             "Ljava/lang/String;",
@@ -2785,7 +2785,7 @@
 
     move-result-object v5
 
-    check-cast v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    check-cast v5, Lio/fabric/sdk/android/services/common/IdManager$MCaa;
 
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -2795,7 +2795,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v5, v6}, Lcom/crashlytics/android/core/SessionDataWriter;->a(Lio/fabric/sdk/android/services/common/IdManager$ICaa;Ljava/lang/String;)I
+    invoke-direct {v0, v5, v6}, Lcom/crashlytics/android/core/SessionDataWriter;->a(Lio/fabric/sdk/android/services/common/IdManager$MCaa;Ljava/lang/String;)I
 
     move-result v5
 
@@ -2810,9 +2810,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    check-cast v5, Lio/fabric/sdk/android/services/common/IdManager$MCaa;
 
-    iget v5, v5, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mIh:I
+    iget v5, v5, Lio/fabric/sdk/android/services/common/IdManager$MCaa;->mIh:I
 
     move-object/from16 v0, p1
 

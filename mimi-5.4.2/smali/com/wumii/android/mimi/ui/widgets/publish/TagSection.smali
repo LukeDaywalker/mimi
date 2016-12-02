@@ -9,17 +9,17 @@
 # instance fields
 .field private mContexta:Landroid/content/Context;
 
-.field private mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
-
 .field private mId:I
 
 .field private mIe:I
+
+.field private mMCkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;
 
 .field private mViewGroupb:Landroid/view/ViewGroup;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;)V
     .locals 3
 
     .prologue
@@ -33,7 +33,7 @@
     iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mViewGroupb:Landroid/view/ViewGroup;
 
     .line 37
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mMCkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;
 
     .line 39
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -152,12 +152,12 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;)Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;)Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;
     .locals 1
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mMCkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;
 
     return-object v0
 .end method
@@ -238,9 +238,9 @@
     if-eqz p3, :cond_0
 
     .line 65
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICj;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCj;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICj;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCj;-><init>(Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;)V
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -345,12 +345,12 @@
 
     .prologue
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mMCkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;
 
     if-eqz v0, :cond_0
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mMCkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;
 
     check-cast p1, Landroid/widget/TextView;
 
@@ -362,7 +362,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;->a(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$MCk;->a(Ljava/lang/String;)V
 
     .line 101
     :cond_0

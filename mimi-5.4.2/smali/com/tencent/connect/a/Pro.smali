@@ -4,36 +4,36 @@
 
 
 # direct methods
-.method public static varargs a(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;Ljava/lang/String;[Ljava/lang/String;)V
+.method public static varargs a(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 65
-    invoke-static {p0, p1}, Lcom/tencent/connect/a/Pro;->b(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+    invoke-static {p0, p1}, Lcom/tencent/connect/a/Pro;->b(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
 
     .line 66
-    invoke-static {p0, p2, p3}, Lcom/tencent/stat/ICi;->a(Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-static {p0, p2, p3}, Lcom/tencent/stat/MCi;->a(Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 67
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)Z
+.method public static a(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)Z
     .locals 2
 
     .prologue
     .line 25
-    invoke-virtual {p1}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/tencent/connect/b/Pro$MCt;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/tencent/c/Pro$ICl;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/c/Pro$ICl;
+    invoke-static {p0, v0}, Lcom/tencent/c/Pro$MCl;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/c/Pro$MCl;
 
     move-result-object v0
 
     const-string/jumbo v1, "Common_ta_enable"
 
-    invoke-virtual {v0, v1}, Lcom/tencent/c/Pro$ICl;->d(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lcom/tencent/c/Pro$MCl;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -41,12 +41,12 @@
     return v0
 .end method
 
-.method public static b(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+.method public static b(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
     .locals 1
 
     .prologue
     .line 32
-    invoke-static {p0, p1}, Lcom/tencent/connect/a/Pro;->a(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)Z
+    invoke-static {p0, p1}, Lcom/tencent/connect/a/Pro;->a(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)Z
 
     move-result v0
 
@@ -55,7 +55,7 @@
     .line 33
     const/4 v0, 0x1
 
-    invoke-static {v0}, Lcom/tencent/stat/ICb;->a(Z)V
+    invoke-static {v0}, Lcom/tencent/stat/MCb;->a(Z)V
 
     .line 37
     :goto_0
@@ -65,20 +65,20 @@
     :cond_0
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lcom/tencent/stat/ICb;->a(Z)V
+    invoke-static {v0}, Lcom/tencent/stat/MCb;->a(Z)V
 
     goto :goto_0
 .end method
 
-.method public static c(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+.method public static c(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
     .locals 3
 
     .prologue
     .line 40
-    invoke-static {p0, p1}, Lcom/tencent/connect/a/Pro;->b(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+    invoke-static {p0, p1}, Lcom/tencent/connect/a/Pro;->b(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
 
     .line 41
-    invoke-virtual {p1}, Lcom/tencent/connect/b/Pro$ICt;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/tencent/connect/b/Pro$MCt;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -104,35 +104,35 @@
     .line 43
     const/4 v1, 0x0
 
-    invoke-static {v1}, Lcom/tencent/stat/ICb;->c(Z)V
+    invoke-static {v1}, Lcom/tencent/stat/MCb;->c(Z)V
 
     .line 44
     const/4 v1, 0x1
 
-    invoke-static {v1}, Lcom/tencent/stat/ICb;->b(Z)V
+    invoke-static {v1}, Lcom/tencent/stat/MCb;->b(Z)V
 
     .line 45
     const/16 v1, 0x5a0
 
-    invoke-static {v1}, Lcom/tencent/stat/ICb;->a(I)V
+    invoke-static {v1}, Lcom/tencent/stat/MCb;->a(I)V
 
     .line 46
-    sget-object v1, Lcom/tencent/stat/ICh;->mIChf:Lcom/tencent/stat/ICh;
+    sget-object v1, Lcom/tencent/stat/MCh;->mMChf:Lcom/tencent/stat/MCh;
 
-    invoke-static {v1}, Lcom/tencent/stat/ICb;->a(Lcom/tencent/stat/ICh;)V
+    invoke-static {v1}, Lcom/tencent/stat/MCb;->a(Lcom/tencent/stat/MCh;)V
 
     .line 47
     const-string/jumbo v1, "http://cgi.connect.qq.com/qqconnectutil/sdk"
 
-    invoke-static {v1}, Lcom/tencent/stat/ICb;->b(Ljava/lang/String;)V
+    invoke-static {v1}, Lcom/tencent/stat/MCb;->b(Ljava/lang/String;)V
 
     .line 50
     :try_start_0
     const-string/jumbo v1, "1.0.0"
 
-    invoke-static {p0, v0, v1}, Lcom/tencent/stat/ICi;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p0, v0, v1}, Lcom/tencent/stat/MCi;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     :try_end_0
-    .catch Lcom/tencent/stat/ICa; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/tencent/stat/MCa; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 54
     :goto_0
@@ -152,26 +152,26 @@
     goto :goto_0
 .end method
 
-.method public static d(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+.method public static d(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
     .locals 1
 
     .prologue
     .line 57
-    invoke-static {p0, p1}, Lcom/tencent/connect/a/Pro;->b(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V
+    invoke-static {p0, p1}, Lcom/tencent/connect/a/Pro;->b(Landroid/content/Context;Lcom/tencent/connect/b/Pro$MCt;)V
 
     .line 58
-    invoke-virtual {p1}, Lcom/tencent/connect/b/Pro$ICt;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/tencent/connect/b/Pro$MCt;->d()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 59
-    invoke-virtual {p1}, Lcom/tencent/connect/b/Pro$ICt;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/tencent/connect/b/Pro$MCt;->d()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/tencent/stat/ICi;->a(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/tencent/stat/MCi;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 61
     :cond_0

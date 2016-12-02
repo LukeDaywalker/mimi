@@ -233,13 +233,13 @@
 
     .prologue
     .line 85
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$MCb;->mArrayIa:[I
 
-    invoke-static {p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    invoke-static {p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->ordinal()I
+    invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->ordinal()I
 
     move-result v1
 
@@ -499,9 +499,9 @@
 
     .prologue
     .line 176
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->mMCdc:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;
 
-    invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -655,9 +655,9 @@
 
     .prologue
     .line 248
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICde:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->mMCde:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;
 
-    invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -680,9 +680,9 @@
 
     .prologue
     .line 261
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mICdf:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->mMCdf:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;
 
-    invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$MCd;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -14,7 +14,7 @@
 .method public static GetScreenSizeX()I
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->f()I
+    invoke-static {}, Lcom/baidu/platform/comapi/util/MCf;->f()I
 
     move-result v0
 
@@ -24,7 +24,7 @@
 .method public static GetScreenSizeY()I
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->h()I
+    invoke-static {}, Lcom/baidu/platform/comapi/util/MCf;->h()I
 
     move-result v0
 
@@ -34,7 +34,7 @@
 .method public static getDensity()F
     .locals 1
 
-    sget v0, Lcom/baidu/platform/comapi/util/ICf;->mFC:F
+    sget v0, Lcom/baidu/platform/comapi/util/MCf;->mFC:F
 
     return v0
 .end method
@@ -42,7 +42,7 @@
 .method public static getDensityDpi()I
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->j()I
+    invoke-static {}, Lcom/baidu/platform/comapi/util/MCf;->j()I
 
     move-result v0
 
@@ -52,7 +52,7 @@
 .method public static getDeviceID()Ljava/lang/String;
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->l()Ljava/lang/String;
+    invoke-static {}, Lcom/baidu/platform/comapi/util/MCf;->l()Ljava/lang/String;
 
     move-result-object v0
 
@@ -62,7 +62,7 @@
 .method public static getModuleFileName()Ljava/lang/String;
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->k()Ljava/lang/String;
+    invoke-static {}, Lcom/baidu/platform/comapi/util/MCf;->k()Ljava/lang/String;
 
     move-result-object v0
 

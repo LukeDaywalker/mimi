@@ -18,9 +18,9 @@
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;-><init>()V
 
     .line 58
-    new-instance v0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$ICb;
+    new-instance v0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$MCb;
 
-    invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$ICb;-><init>(Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;)V
+    invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$MCb;-><init>(Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;)V
 
     iput-object v0, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;->mPeerRegistrationListenerb:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 

@@ -301,9 +301,9 @@
 
     .prologue
     .line 240
-    new-instance v0, Lcom/squareup/okhttp/internal/Util$ICn;
+    new-instance v0, Lcom/squareup/okhttp/internal/Util$MCn;
 
-    invoke-direct {v0, p0, p1}, Lcom/squareup/okhttp/internal/Util$ICn;-><init>(Ljava/lang/String;Z)V
+    invoke-direct {v0, p0, p1}, Lcom/squareup/okhttp/internal/Util$MCn;-><init>(Ljava/lang/String;Z)V
 
     return-object v0
 .end method

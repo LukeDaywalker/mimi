@@ -3,7 +3,7 @@
 .source "BuildDocument.java"
 
 # interfaces
-.implements Lcom/hp/hpl/sparta/ICf;
+.implements Lcom/hp/hpl/sparta/MCf;
 .implements Lcom/hp/hpl/sparta/ParseHandler;
 
 
@@ -12,7 +12,7 @@
 
 .field private mElementd:Lcom/hp/hpl/sparta/Element;
 
-.field private mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
+.field private mMCpf:Lcom/hp/hpl/sparta/ParseSource$MCp;
 
 .field private final mParseLogc:Lcom/hp/hpl/sparta/ParseLog;
 
@@ -51,7 +51,7 @@
     iput-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mDocumente:Lcom/hp/hpl/sparta/Document;
 
     .line 120
-    iput-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
+    iput-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mMCpf:Lcom/hp/hpl/sparta/ParseSource$MCp;
 
     .line 26
     if-nez p1, :cond_0
@@ -107,17 +107,17 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/hp/hpl/sparta/ParseSource$ICp;)V
+.method public a(Lcom/hp/hpl/sparta/ParseSource$MCp;)V
     .locals 2
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mMCpf:Lcom/hp/hpl/sparta/ParseSource$MCp;
 
     .line 31
     iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mDocumente:Lcom/hp/hpl/sparta/Document;
 
-    invoke-interface {p1}, Lcom/hp/hpl/sparta/ParseSource$ICp;->toString()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/hp/hpl/sparta/ParseSource$MCp;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -211,7 +211,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mMCpf:Lcom/hp/hpl/sparta/ParseSource$MCp;
 
     if-eqz v0, :cond_0
 
@@ -226,9 +226,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mMCpf:Lcom/hp/hpl/sparta/ParseSource$MCp;
 
-    invoke-interface {v1}, Lcom/hp/hpl/sparta/ParseSource$ICp;->toString()Ljava/lang/String;
+    invoke-interface {v1}, Lcom/hp/hpl/sparta/ParseSource$MCp;->toString()Ljava/lang/String;
 
     move-result-object v1
 

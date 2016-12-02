@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private mICsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;
-
 .field private mLayoutInflaterf:Landroid/view/LayoutInflater;
 
 .field private mLinearLayoutg:Landroid/widget/LinearLayout;
+
+.field private mMCsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;
 
 .field private mResourcese:Landroid/content/res/Resources;
 
@@ -151,13 +151,13 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mLinearLayoutg:Landroid/widget/LinearLayout;
 
     .line 44
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mLinearLayoutg:Landroid/widget/LinearLayout;
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;-><init>(Landroid/view/View;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mICsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mMCsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;
 
     .line 46
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mLinearLayoutg:Landroid/widget/LinearLayout;
@@ -186,9 +186,9 @@
 
     .line 52
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mICsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mMCsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;->a(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;->a(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -215,9 +215,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mICsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mMCsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;->b(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;->b(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -254,9 +254,9 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mICsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->mMCsh:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;->c(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$ICs;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;->c(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView$MCs;)Landroid/widget/TextView;
 
     move-result-object v1
 

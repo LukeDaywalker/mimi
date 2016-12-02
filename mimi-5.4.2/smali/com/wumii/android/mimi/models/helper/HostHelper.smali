@@ -61,11 +61,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/helper/HostHelper$ICl;
+    new-instance v1, Lcom/wumii/android/mimi/models/helper/HostHelper$MCl;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/helper/HostHelper$ICl;-><init>(Lcom/wumii/android/mimi/models/helper/HostHelper;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/helper/HostHelper$MCl;-><init>(Lcom/wumii/android/mimi/models/helper/HostHelper;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/network/server/ServersStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/network/server/ServersStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$MCd;)V
 
     .line 48
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/HostHelper;->c()V

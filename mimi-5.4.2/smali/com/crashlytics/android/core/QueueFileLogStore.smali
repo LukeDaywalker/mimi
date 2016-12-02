@@ -147,11 +147,11 @@
     :try_start_0
     iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
 
-    new-instance v3, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;
+    new-instance v3, Lcom/crashlytics/android/core/QueueFileLogStore$MCbt;
 
-    invoke-direct {v3, p0, v2, v1}, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;-><init>(Lcom/crashlytics/android/core/QueueFileLogStore;[B[I)V
+    invoke-direct {v3, p0, v2, v1}, Lcom/crashlytics/android/core/QueueFileLogStore$MCbt;-><init>(Lcom/crashlytics/android/core/QueueFileLogStore;[B[I)V
 
-    invoke-virtual {v0, v3}, Lio/fabric/sdk/android/services/common/QueueFile;->a(Lio/fabric/sdk/android/services/common/QueueFile$ICah;)V
+    invoke-virtual {v0, v3}, Lio/fabric/sdk/android/services/common/QueueFile;->a(Lio/fabric/sdk/android/services/common/QueueFile$MCah;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 

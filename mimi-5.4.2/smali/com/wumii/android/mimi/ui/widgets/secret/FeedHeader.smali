@@ -155,9 +155,9 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICf;
+    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCf;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICf;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCf;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -258,9 +258,9 @@
     invoke-virtual {v0, v9}, Landroid/widget/TableLayout;->setStretchAllColumns(Z)V
 
     .line 151
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICi;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCi;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICi;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCi;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v5, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -328,16 +328,16 @@
 
     .line 126
     :cond_5
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICg;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCg;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICg;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCg;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v4, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 133
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICh;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCh;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICh;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCh;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v6, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -392,9 +392,9 @@
     invoke-virtual {v0, v9}, Landroid/widget/TableLayout;->setStretchAllColumns(Z)V
 
     .line 161
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCj;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$MCj;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v5, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

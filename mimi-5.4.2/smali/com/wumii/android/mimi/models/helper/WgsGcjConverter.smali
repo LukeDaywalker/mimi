@@ -4,17 +4,17 @@
 
 
 # direct methods
-.method private static a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;)D
+.method private static a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;)D
     .locals 5
 
     .prologue
     .line 102
-    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
     move-result-object v2
 
     .line 103
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a()D
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->a()D
 
     move-result-wide v0
 
@@ -23,7 +23,7 @@
     move-result-wide v0
 
     .line 104
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b()D
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->b()D
 
     move-result-wide v2
 
@@ -45,7 +45,7 @@
     goto :goto_0
 .end method
 
-.method public static a(DD)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+.method public static a(DD)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
     .locals 12
 
     .prologue
@@ -57,9 +57,9 @@
     if-eqz v0, :cond_0
 
     .line 60
-    new-instance v0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;-><init>(DD)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;-><init>(DD)V
 
     .line 73
     :goto_0
@@ -167,52 +167,52 @@
     add-double/2addr v2, p2
 
     .line 73
-    new-instance v0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
-    invoke-direct {v0, v4, v5, v2, v3}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;-><init>(DD)V
+    invoke-direct {v0, v4, v5, v2, v3}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;-><init>(DD)V
 
     goto :goto_0
 .end method
 
-.method public static b(DD)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+.method public static b(DD)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
     .locals 10
 
     .prologue
     .line 87
-    new-instance v2, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    new-instance v2, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
-    invoke-direct {v2, p0, p1, p2, p3}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;-><init>(DD)V
+    invoke-direct {v2, p0, p1, p2, p3}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;-><init>(DD)V
 
     .line 88
-    new-instance v1, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    new-instance v1, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
-    invoke-direct {v1, v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;-><init>(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;)V
+    invoke-direct {v1, v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;-><init>(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;)V
 
     .line 89
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a()D
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->a()D
 
     move-result-wide v4
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b()D
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->b()D
 
     move-result-wide v6
 
-    invoke-static {v4, v5, v6, v7}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter;->a(DD)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    invoke-static {v4, v5, v6, v7}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter;->a(DD)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
     move-result-object v0
 
     .line 90
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
     move-result-object v0
 
     .line 91
     :goto_0
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;)D
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;)D
 
     move-result-wide v4
 
@@ -223,25 +223,25 @@
     if-ltz v1, :cond_0
 
     .line 93
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a()D
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->a()D
 
     move-result-wide v4
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b()D
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->b()D
 
     move-result-wide v6
 
-    invoke-static {v4, v5, v6, v7}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter;->a(DD)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    invoke-static {v4, v5, v6, v7}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter;->a(DD)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
     move-result-object v1
 
     .line 94
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
     move-result-object v1
 
     .line 95
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;->a(Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;)Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$MCae;
 
     move-result-object v1
 

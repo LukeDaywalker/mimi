@@ -251,11 +251,11 @@
     invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->a(Ljava/lang/String;Ljava/util/List;)V
 
     .line 57
-    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;
+    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$MCad;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$MCad;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;)V
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/InviteList$MCf;)V
 
     .line 82
     return-object v1

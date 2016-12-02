@@ -108,20 +108,20 @@
     .line 135
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "comment/create"
 
     const-string/jumbo v4, "comment"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 136
-    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;
+    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$MCbe;
 
-    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
+    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/manager/SecretManager$MCbe;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 152
     return-void
@@ -166,18 +166,18 @@
     :goto_0
     new-instance v2, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v3, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v4, "removeComment"
 
-    invoke-direct {v2, v3, v0, v4, v1}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v2, v3, v0, v4, v1}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 176
-    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;
+    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$MCbg;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/manager/SecretManager$MCbg;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
-    invoke-virtual {p0, p1, v2, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v2, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 184
     return-void
@@ -210,20 +210,20 @@
     .line 158
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "comment/remove"
 
     const-string/jumbo v4, "removeComment"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 159
-    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;
+    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$MCbf;
 
-    invoke-direct {v0, p0, p3, p4}, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;Lcom/wumii/android/mimi/models/entities/secret/Comment;Z)V
+    invoke-direct {v0, p0, p3, p4}, Lcom/wumii/android/mimi/manager/SecretManager$MCbf;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;Lcom/wumii/android/mimi/models/entities/secret/Comment;Z)V
 
-    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 168
     return-void
@@ -273,20 +273,20 @@
     .line 92
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICib:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCib:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "comment/create"
 
     const-string/jumbo v4, "comment"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 93
-    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;
+    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$MCbd;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/wumii/android/mimi/manager/SecretManager$MCbd;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 124
     return-void
@@ -322,20 +322,20 @@
     .line 54
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$MCi;->mMCia:Lcom/wumii/android/mimi/network/HttpRequest$MCi;
 
     const-string/jumbo v3, "comment"
 
     const-string/jumbo v4, "loadCommentDetail"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$MCi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 55
-    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;
+    new-instance v0, Lcom/wumii/android/mimi/manager/SecretManager$MCbc;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/SecretManager$MCbc;-><init>(Lcom/wumii/android/mimi/manager/SecretManager;)V
 
-    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
+    invoke-virtual {p0, v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$MCf;)V
 
     .line 81
     return-void

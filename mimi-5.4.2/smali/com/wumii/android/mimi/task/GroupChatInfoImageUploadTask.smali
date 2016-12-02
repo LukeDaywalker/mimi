@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private mICajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;
+.field private mMCajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$MCaj;
 
 .field private mStringa:Ljava/lang/String;
 
@@ -39,7 +39,7 @@
 
     .line 48
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mICajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mMCajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$MCaj;
 
     if-eqz v0, :cond_0
 
@@ -89,19 +89,19 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 52
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mICajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mMCajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$MCaj;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$MCaj;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 53
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mICajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mMCajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$MCaj;
 
     goto :goto_0
 .end method
 
-.method public a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;)V
+.method public a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$MCaj;)V
     .locals 0
 
     .prologue
@@ -112,7 +112,7 @@
     iput-object p2, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mStringd:Ljava/lang/String;
 
     .line 30
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mICajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->mMCajq:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$MCaj;
 
     .line 31
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->j()V

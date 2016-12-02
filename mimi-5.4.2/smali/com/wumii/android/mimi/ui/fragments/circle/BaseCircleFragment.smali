@@ -112,9 +112,9 @@
     .line 49
     const v0, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;
+    new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$MCd;
 
-    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$MCd;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

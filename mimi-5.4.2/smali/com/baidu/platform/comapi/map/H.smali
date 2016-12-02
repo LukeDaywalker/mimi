@@ -1,12 +1,12 @@
 .class public Lcom/baidu/platform/comapi/map/H;
-.super Lcom/baidu/platform/comapi/map/ICb;
+.super Lcom/baidu/platform/comapi/map/MCb;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/baidu/platform/comapi/map/ICb;-><init>()V
+    invoke-direct {p0}, Lcom/baidu/platform/comapi/map/MCb;-><init>()V
 
     const/4 v0, 0x2
 

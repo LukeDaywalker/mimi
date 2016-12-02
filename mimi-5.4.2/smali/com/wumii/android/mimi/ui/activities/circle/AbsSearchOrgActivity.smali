@@ -3,7 +3,7 @@
 .source "AbsSearchOrgActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
+.implements Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$MCz;
 .implements Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
 
@@ -256,9 +256,9 @@
     if-eqz v0, :cond_0
 
     .line 48
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafar:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafar:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     .line 52
     :goto_0
@@ -266,9 +266,9 @@
 
     .line 50
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mICafaM:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$MCaf;->mMCafaM:Lcom/wumii/android/mimi/util/EventUtils$MCaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$MCaf;)V
 
     goto :goto_0
 .end method

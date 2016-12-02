@@ -202,36 +202,36 @@
 
     .line 599
     :cond_0
-    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
-    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;-><init>()V
 
-    invoke-virtual {v0, p3}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, p3}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->e(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->e(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$MCf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
     .line 601
-    new-instance v1, Lcom/nostra13/universalimageloader/core/ImageLoader$ICi;
+    new-instance v1, Lcom/nostra13/universalimageloader/core/ImageLoader$MCi;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader$ICi;-><init>(Lcom/nostra13/universalimageloader/core/ImageLoader$ICh;)V
+    invoke-direct {v1, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader$MCi;-><init>(Lcom/nostra13/universalimageloader/core/ImageLoader$MCh;)V
 
     .line 602
     invoke-virtual {p0, p1, p2, v0, v1}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
     .line 603
-    invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/ImageLoader$ICi;->a()Landroid/graphics/Bitmap;
+    invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/ImageLoader$MCi;->a()Landroid/graphics/Bitmap;
 
     move-result-object v0
 

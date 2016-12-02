@@ -85,7 +85,7 @@
     return v0
 .end method
 
-.method protected c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
+.method protected c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$MCy;
     .locals 1
 
     .prologue
@@ -185,7 +185,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->mExtentedRadioGroupa:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     .line 37
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$MCy;
 
     move-result-object v0
 
@@ -193,9 +193,9 @@
     if-nez v0, :cond_0
 
     .line 39
-    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment$ICv;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment$MCv;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment$ICv;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment$MCv;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;)V
 
     .line 46
     :cond_0
@@ -209,7 +209,7 @@
 
     move-result v4
 
-    invoke-virtual {v2, v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->setRadios(Ljava/util/List;ILcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;)V
+    invoke-virtual {v2, v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->setRadios(Ljava/util/List;ILcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$MCy;)V
 
     .line 47
     return-object v1

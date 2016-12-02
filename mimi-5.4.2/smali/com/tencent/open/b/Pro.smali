@@ -10,7 +10,7 @@
 # instance fields
 .field private isZc:Z
 
-.field private mICbd:Lcom/tencent/open/b/Pro$ICb;
+.field private mMCbd:Lcom/tencent/open/b/Pro$MCb;
 
 .field private mRectb:Landroid/graphics/Rect;
 
@@ -50,7 +50,7 @@
     iput-boolean v0, p0, Lcom/tencent/open/b/Pro;->isZc:Z
 
     .line 33
-    iput-object v1, p0, Lcom/tencent/open/b/Pro;->mICbd:Lcom/tencent/open/b/Pro$ICb;
+    iput-object v1, p0, Lcom/tencent/open/b/Pro;->mMCbd:Lcom/tencent/open/b/Pro$MCb;
 
     .line 38
     iget-object v0, p0, Lcom/tencent/open/b/Pro;->mRectb:Landroid/graphics/Rect;
@@ -124,7 +124,7 @@
     sub-int/2addr v0, v1
 
     .line 73
-    iget-object v2, p0, Lcom/tencent/open/b/Pro;->mICbd:Lcom/tencent/open/b/Pro$ICb;
+    iget-object v2, p0, Lcom/tencent/open/b/Pro;->mMCbd:Lcom/tencent/open/b/Pro$MCb;
 
     if-eqz v2, :cond_0
 
@@ -136,7 +136,7 @@
     if-le v0, v1, :cond_1
 
     .line 77
-    iget-object v0, p0, Lcom/tencent/open/b/Pro;->mICbd:Lcom/tencent/open/b/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/b/Pro;->mMCbd:Lcom/tencent/open/b/Pro$MCb;
 
     iget-object v1, p0, Lcom/tencent/open/b/Pro;->mRectb:Landroid/graphics/Rect;
 
@@ -160,7 +160,7 @@
 
     sub-int/2addr v1, v2
 
-    invoke-interface {v0, v1}, Lcom/tencent/open/b/Pro$ICb;->a(I)V
+    invoke-interface {v0, v1}, Lcom/tencent/open/b/Pro$MCb;->a(I)V
 
     .line 98
     :cond_0
@@ -172,9 +172,9 @@
 
     .line 83
     :cond_1
-    iget-object v0, p0, Lcom/tencent/open/b/Pro;->mICbd:Lcom/tencent/open/b/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/b/Pro;->mMCbd:Lcom/tencent/open/b/Pro$MCb;
 
-    invoke-interface {v0}, Lcom/tencent/open/b/Pro$ICb;->a()V
+    invoke-interface {v0}, Lcom/tencent/open/b/Pro$MCb;->a()V
 
     goto :goto_0
 .end method

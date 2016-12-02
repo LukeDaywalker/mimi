@@ -14,7 +14,7 @@
 
 .field private mEditTexto:Landroid/widget/EditText;
 
-.field private mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+.field private mMCts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
 .field private mMenuItemn:Landroid/view/MenuItem;
 
@@ -32,7 +32,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/app/Activity;Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public static a(Landroid/app/Activity;Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 2
 
     .prologue
@@ -173,9 +173,9 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mMCts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
-    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICta:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;->mMCta:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
     if-ne v0, v1, :cond_0
 
@@ -191,9 +191,9 @@
 
     .line 148
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mMCts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
-    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtb:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;->mMCtb:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
     if-ne v0, v1, :cond_1
 
@@ -204,9 +204,9 @@
 
     .line 150
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mMCts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
-    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mICtd:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;->mMCtd:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
     if-ne v0, v1, :cond_2
 
@@ -301,13 +301,13 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mMCts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity$ICac;
+    new-instance v4, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity$MCac;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity$ICac;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity$MCac;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;)V
 
-    invoke-virtual {v1, v2, v0, v3, v4}, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->a(Ljava/lang/String;Ljava/lang/Object;Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICs;)V
+    invoke-virtual {v1, v2, v0, v3, v4}, Lcom/wumii/android/mimi/task/ChatInfoEditTask;->a(Ljava/lang/String;Ljava/lang/Object;Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCs;)V
 
     .line 194
     return-void
@@ -371,9 +371,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    check-cast v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mICts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mMCts:Lcom/wumii/android/mimi/task/ChatInfoEditTask$MCt;
 
     .line 61
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mAppFacadeu:Lcom/wumii/android/mimi/models/AppFacade;
@@ -492,9 +492,9 @@
     .line 86
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->mEditTexto:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity$ICab;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity$MCab;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity$ICab;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity$MCab;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

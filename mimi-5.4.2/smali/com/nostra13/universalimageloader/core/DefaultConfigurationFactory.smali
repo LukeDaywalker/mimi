@@ -250,9 +250,9 @@
 
     .prologue
     .line 157
-    new-instance v0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$MCb;
 
-    invoke-direct {v0, p0, p1}, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;-><init>(ILjava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$MCb;-><init>(ILjava/lang/String;)V
 
     return-object v0
 .end method

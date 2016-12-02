@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private mICrb:Lcom/baidu/platform/comapi/map/ICr;
+.field private mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
 .field private mMKOfflineMapListenerc:Lcom/baidu/mapapi/map/offline/MKOfflineMapListener;
 
@@ -41,10 +41,10 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)Lcom/baidu/platform/comapi/map/ICr;
+.method static synthetic a(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)Lcom/baidu/platform/comapi/map/MCr;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
     return-object v0
 .end method
@@ -62,21 +62,21 @@
 .method public destroy()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICr;->d(I)Z
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/MCr;->d(I)Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICr;->b(Lcom/baidu/platform/comapi/map/ICv;)V
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/MCr;->b(Lcom/baidu/platform/comapi/map/MCv;)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICr;->b()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCr;->b()V
 
     invoke-static {}, Lcom/baidu/mapapi/BMapManager;->destroy()V
 
@@ -95,9 +95,9 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICr;->e()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCr;->e()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -128,13 +128,13 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/ICu;
+    check-cast v0, Lcom/baidu/platform/comapi/map/MCu;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICu;->a()Lcom/baidu/platform/comapi/map/ICt;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCu;->a()Lcom/baidu/platform/comapi/map/MCt;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getUpdatElementFromLocalMapElement(Lcom/baidu/platform/comapi/map/ICt;)Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;
+    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getUpdatElementFromLocalMapElement(Lcom/baidu/platform/comapi/map/MCt;)Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;
 
     move-result-object v0
 
@@ -160,9 +160,9 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICr;->c()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCr;->c()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -193,9 +193,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/ICq;
+    check-cast v0, Lcom/baidu/platform/comapi/map/MCq;
 
-    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/ICq;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
+    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/MCq;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
 
     move-result-object v0
 
@@ -221,9 +221,9 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICr;->d()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCr;->d()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -254,9 +254,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/ICq;
+    check-cast v0, Lcom/baidu/platform/comapi/map/MCq;
 
-    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/ICq;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
+    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/MCq;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
 
     move-result-object v0
 
@@ -273,9 +273,9 @@
 .method public getUpdateInfo(I)Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICr;->g(I)Lcom/baidu/platform/comapi/map/ICu;
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/MCr;->g(I)Lcom/baidu/platform/comapi/map/MCu;
 
     move-result-object v0
 
@@ -287,11 +287,11 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICu;->a()Lcom/baidu/platform/comapi/map/ICt;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCu;->a()Lcom/baidu/platform/comapi/map/MCt;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getUpdatElementFromLocalMapElement(Lcom/baidu/platform/comapi/map/ICt;)Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;
+    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getUpdatElementFromLocalMapElement(Lcom/baidu/platform/comapi/map/MCt;)Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;
 
     move-result-object v0
 
@@ -319,9 +319,9 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICr;->e()Ljava/util/ArrayList;
+    invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/MCr;->e()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -334,15 +334,15 @@
     move v1, v0
 
     :goto_0
-    iget-object v2, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, p1, v3}, Lcom/baidu/platform/comapi/map/ICr;->a(ZZ)Z
+    invoke-virtual {v2, p1, v3}, Lcom/baidu/platform/comapi/map/MCr;->a(ZZ)Z
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/ICr;->e()Ljava/util/ArrayList;
+    invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/MCr;->e()Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -368,13 +368,13 @@
 
     invoke-static {}, Lcom/baidu/mapapi/BMapManager;->init()V
 
-    invoke-static {}, Lcom/baidu/platform/comapi/map/ICr;->a()Lcom/baidu/platform/comapi/map/ICr;
+    invoke-static {}, Lcom/baidu/platform/comapi/map/MCr;->a()Lcom/baidu/platform/comapi/map/MCr;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
     if-nez v0, :cond_0
 
@@ -384,13 +384,13 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    new-instance v1, Lcom/baidu/mapapi/map/offline/ICa;
+    new-instance v1, Lcom/baidu/mapapi/map/offline/MCa;
 
-    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/offline/ICa;-><init>(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)V
+    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/offline/MCa;-><init>(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)V
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICr;->a(Lcom/baidu/platform/comapi/map/ICv;)V
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/MCr;->a(Lcom/baidu/platform/comapi/map/MCv;)V
 
     iput-object p1, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMKOfflineMapListenerc:Lcom/baidu/mapapi/map/offline/MKOfflineMapListener;
 
@@ -402,9 +402,9 @@
 .method public pause(I)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICr;->c(I)Z
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/MCr;->c(I)Z
 
     move-result v0
 
@@ -414,9 +414,9 @@
 .method public remove(I)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICr;->e(I)Z
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/MCr;->e(I)Z
 
     move-result v0
 
@@ -437,9 +437,9 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICr;->a(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/MCr;->a(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -470,9 +470,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/ICq;
+    check-cast v0, Lcom/baidu/platform/comapi/map/MCq;
 
-    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/ICq;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
+    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/MCq;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
 
     move-result-object v0
 
@@ -491,7 +491,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
     if-nez v0, :cond_0
 
@@ -501,17 +501,17 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICr;->e()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCr;->e()Ljava/util/ArrayList;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICr;->e()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCr;->e()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -530,48 +530,48 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/ICu;
+    check-cast v0, Lcom/baidu/platform/comapi/map/MCu;
 
-    iget-object v3, v0, Lcom/baidu/platform/comapi/map/ICu;->mICta:Lcom/baidu/platform/comapi/map/ICt;
+    iget-object v3, v0, Lcom/baidu/platform/comapi/map/MCu;->mMCta:Lcom/baidu/platform/comapi/map/MCt;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/ICt;->mIa:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/MCt;->mIa:I
 
     if-ne v3, p1, :cond_1
 
-    iget-object v2, v0, Lcom/baidu/platform/comapi/map/ICu;->mICta:Lcom/baidu/platform/comapi/map/ICt;
+    iget-object v2, v0, Lcom/baidu/platform/comapi/map/MCu;->mMCta:Lcom/baidu/platform/comapi/map/MCt;
 
-    iget-boolean v2, v2, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
+    iget-boolean v2, v2, Lcom/baidu/platform/comapi/map/MCt;->isZj:Z
 
     if-nez v2, :cond_2
 
-    iget-object v2, v0, Lcom/baidu/platform/comapi/map/ICu;->mICta:Lcom/baidu/platform/comapi/map/ICt;
+    iget-object v2, v0, Lcom/baidu/platform/comapi/map/MCu;->mMCta:Lcom/baidu/platform/comapi/map/MCt;
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/ICt;->mIl:I
+    iget v2, v2, Lcom/baidu/platform/comapi/map/MCt;->mIl:I
 
     const/4 v3, 0x2
 
     if-eq v2, v3, :cond_2
 
-    iget-object v2, v0, Lcom/baidu/platform/comapi/map/ICu;->mICta:Lcom/baidu/platform/comapi/map/ICt;
+    iget-object v2, v0, Lcom/baidu/platform/comapi/map/MCu;->mMCta:Lcom/baidu/platform/comapi/map/MCt;
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/ICt;->mIl:I
+    iget v2, v2, Lcom/baidu/platform/comapi/map/MCt;->mIl:I
 
     const/4 v3, 0x3
 
     if-eq v2, v3, :cond_2
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICu;->mICta:Lcom/baidu/platform/comapi/map/ICt;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/MCu;->mMCta:Lcom/baidu/platform/comapi/map/MCt;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/ICt;->mIl:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/MCt;->mIl:I
 
     const/4 v2, 0x6
 
     if-ne v0, v2, :cond_3
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICr;->b(I)Z
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/MCr;->b(I)Z
 
     move-result v0
 
@@ -583,9 +583,9 @@
     goto :goto_0
 
     :cond_4
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICr;->a(I)Z
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/MCr;->a(I)Z
 
     move-result v0
 
@@ -597,7 +597,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
     if-nez v0, :cond_0
 
@@ -607,17 +607,17 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICr;->e()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCr;->e()Ljava/util/ArrayList;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICr;->e()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/MCr;->e()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -636,23 +636,23 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/ICu;
+    check-cast v0, Lcom/baidu/platform/comapi/map/MCu;
 
-    iget-object v3, v0, Lcom/baidu/platform/comapi/map/ICu;->mICta:Lcom/baidu/platform/comapi/map/ICt;
+    iget-object v3, v0, Lcom/baidu/platform/comapi/map/MCu;->mMCta:Lcom/baidu/platform/comapi/map/MCt;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/ICt;->mIa:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/MCt;->mIa:I
 
     if-ne v3, p1, :cond_1
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICu;->mICta:Lcom/baidu/platform/comapi/map/ICt;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/MCu;->mMCta:Lcom/baidu/platform/comapi/map/MCt;
 
-    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/ICt;->isZj:Z
+    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/MCt;->isZj:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mICrb:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->mMCrb:Lcom/baidu/platform/comapi/map/MCr;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICr;->f(I)Z
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/MCr;->f(I)Z
 
     move-result v0
 

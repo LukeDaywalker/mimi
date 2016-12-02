@@ -31,9 +31,9 @@
 
     .prologue
     .line 39
-    new-instance v0, Lcom/tencent/connect/dataprovider/Pro$ICb;
+    new-instance v0, Lcom/tencent/connect/dataprovider/Pro$MCb;
 
-    invoke-direct {v0}, Lcom/tencent/connect/dataprovider/Pro$ICb;-><init>()V
+    invoke-direct {v0}, Lcom/tencent/connect/dataprovider/Pro$MCb;-><init>()V
 
     sput-object v0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->CREATOR:Landroid/os/Parcelable$Creator;
 

@@ -3,8 +3,8 @@
 .source "PushNotificationActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$MCbk;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;
 
 
 # static fields
@@ -214,7 +214,7 @@
     invoke-virtual {p1, v0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setChecked(Z)V
 
     .line 220
-    invoke-virtual {p1, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;)V
+    invoke-virtual {p1, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$MCbk;)V
 
     .line 221
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSparseArrayN:Landroid/util/SparseArray;
@@ -274,9 +274,9 @@
     .line 229
     new-instance v0, Landroid/app/TimePickerDialog;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICv;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$MCv;
 
-    invoke-direct {v2, p0, p1, p2}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICv;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;Ljava/lang/String;)V
+    invoke-direct {v2, p0, p1, p2}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$MCv;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;Ljava/lang/String;)V
 
     move-object v1, p0
 
@@ -832,9 +832,9 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICu;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$MCu;
 
-    invoke-direct {v3, p0, v0, p2, p1}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICu;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;Ljava/lang/String;ZLcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)V
+    invoke-direct {v3, p0, v0, p2, p1}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$MCu;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;Ljava/lang/String;ZLcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)V
 
     invoke-virtual {v2, v1, p2, v3}, Lcom/wumii/android/mimi/task/EnablePushSettingsTask;->a(Lcom/wumii/android/mimi/models/entities/push/PushSetting;ZLcom/wumii/android/mimi/task/HttpAsyncTaskCallback;)V
 
@@ -1008,19 +1008,19 @@
     .line 77
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewF:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;)V
 
     .line 78
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewG:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$MCbr;)V
 
     .line 80
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$MCw;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$MCw;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$MCw;->j()V
 
     .line 81
     return-void

@@ -289,9 +289,9 @@
     .line 139
     :goto_2
     :try_start_6
-    new-instance v0, Lcom/squareup/okhttp/internal/Platform$ICi;
+    new-instance v0, Lcom/squareup/okhttp/internal/Platform$MCi;
 
-    invoke-direct/range {v0 .. v6}, Lcom/squareup/okhttp/internal/Platform$ICi;-><init>(Lcom/squareup/okhttp/internal/OptionalMethod;Lcom/squareup/okhttp/internal/OptionalMethod;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Lcom/squareup/okhttp/internal/OptionalMethod;Lcom/squareup/okhttp/internal/OptionalMethod;)V
+    invoke-direct/range {v0 .. v6}, Lcom/squareup/okhttp/internal/Platform$MCi;-><init>(Lcom/squareup/okhttp/internal/OptionalMethod;Lcom/squareup/okhttp/internal/OptionalMethod;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Lcom/squareup/okhttp/internal/OptionalMethod;Lcom/squareup/okhttp/internal/OptionalMethod;)V
 
     .line 160
     :goto_3
@@ -448,9 +448,9 @@
     move-result-object v3
 
     .line 155
-    new-instance v0, Lcom/squareup/okhttp/internal/Platform$ICj;
+    new-instance v0, Lcom/squareup/okhttp/internal/Platform$MCj;
 
-    invoke-direct/range {v0 .. v5}, Lcom/squareup/okhttp/internal/Platform$ICj;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Class;)V
+    invoke-direct/range {v0 .. v5}, Lcom/squareup/okhttp/internal/Platform$MCj;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Class;)V
     :try_end_7
     .catch Ljava/lang/ClassNotFoundException; {:try_start_7 .. :try_end_7} :catch_2
     .catch Ljava/lang/NoSuchMethodException; {:try_start_7 .. :try_end_7} :catch_5

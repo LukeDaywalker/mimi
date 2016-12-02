@@ -626,9 +626,9 @@
 
     .prologue
     .line 334
-    new-instance v0, Lokio/RealBufferedSource$ICx;
+    new-instance v0, Lokio/RealBufferedSource$MCx;
 
-    invoke-direct {v0, p0}, Lokio/RealBufferedSource$ICx;-><init>(Lokio/RealBufferedSource;)V
+    invoke-direct {v0, p0}, Lokio/RealBufferedSource$MCx;-><init>(Lokio/RealBufferedSource;)V
 
     return-object v0
 .end method

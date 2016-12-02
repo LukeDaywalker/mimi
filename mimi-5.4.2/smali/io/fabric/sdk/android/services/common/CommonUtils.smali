@@ -52,9 +52,9 @@
     sput-object v2, Lio/fabric/sdk/android/services/common/CommonUtils;->mBooleane:Ljava/lang/Boolean;
 
     .line 713
-    new-instance v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICn;
+    new-instance v0, Lio/fabric/sdk/android/services/common/CommonUtils$MCn;
 
-    invoke-direct {v0}, Lio/fabric/sdk/android/services/common/CommonUtils$ICn;-><init>()V
+    invoke-direct {v0}, Lio/fabric/sdk/android/services/common/CommonUtils$MCn;-><init>()V
 
     sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mComparatora:Ljava/util/Comparator;
 
@@ -87,11 +87,11 @@
 
     .prologue
     .line 151
-    invoke-static {}, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->a()Lio/fabric/sdk/android/services/common/CommonUtils$ICo;
+    invoke-static {}, Lio/fabric/sdk/android/services/common/CommonUtils$MCo;->a()Lio/fabric/sdk/android/services/common/CommonUtils$MCo;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->ordinal()I
+    invoke-virtual {v0}, Lio/fabric/sdk/android/services/common/CommonUtils$MCo;->ordinal()I
 
     move-result v0
 
