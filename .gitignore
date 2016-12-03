@@ -2,4 +2,6 @@
 .gradle/
 build/
 gen/
+.DS_Store
+
 
